@@ -1,0 +1,7 @@
+공고 제목,요구 기술,우대 기술,직무,경력 수준
+백엔드 개발자 (Python/Django),"Python, Django, MySQL","Redis, Docker",백엔드 개발자,신입 (new)
+프론트엔드 개발자 (React),"JavaScript, React, HTML/CSS","TypeScript, Next.js",프론트엔드 개발자,신입 (new)
+AI 엔지니어,"Python, PyTorch, ML","TensorFlow, Docker",AI 엔지니어,주니어 (junior)
+데이터 분석가,"Python, SQL, Pandas","Tableau, Spark",데이터 분석가,무관 (any)
+풀스택 개발자,"Python, JavaScript, React, Django","Docker, AWS",풀스택 개발자,주니어 (junior)
+서버 개발자 (Java),"Java, Spring, MySQL","Redis, Kafka",백엔드 개발자,주니어 (junior)
