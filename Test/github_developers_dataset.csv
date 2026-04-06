@@ -1,0 +1,501 @@
+﻿github_id,total_repos_analyzed,top_languages,extracted_topics,target_role
+torvalds,11,"{'C': 9, 'OpenSCAD': 1, 'C++': 1}",[],Systems/Embedded
+karpathy,63,"{'Python': 26, 'Jupyter Notebook': 8, 'JavaScript': 6}","['bitcoin', 'deep-learning', 'crypto', 'elliptic-curves', 'arxiv', 'cryptocurrency', 'flask', 'machine-learning']",ML/AI Engineer
+yyx990803,100,"{'JavaScript': 57, 'TypeScript': 7, 'HTML': 4}",[],Web Frontend
+gaearon,100,"{'JavaScript': 34, 'TypeScript': 7, 'CSS': 3}","['javascript', 'vscode-theme', 'sublime', 'glossary', 'spacegray', 'claude-skills']",Web Frontend
+peng-zhihui,60,"{'C': 17, 'C++': 8, 'HTML': 2}",[],Systems/Embedded
+ruanyf,75,"{'JavaScript': 42, 'CSS': 8, 'Shell': 3}",['markdown'],Web Frontend
+sindresorhus,100,"{'JavaScript': 67, 'TypeScript': 9, 'Swift': 6}","['editorconfig', 'config', 'swifty', 'ink-component', 'windows', 'nodejs', 'concurrency', 'sublime-text', 'linux', 'clipboard']",Web Frontend
+bradtraversy,100,"{'JavaScript': 47, 'TypeScript': 16, 'HTML': 16}",[],Web Frontend
+JakeWharton,100,"{'Kotlin': 43, 'Java': 26, 'Python': 7}","['email', 'backup', 'google-photos', 'docker']",Mobile App
+rafaballerini,59,"{'CSS': 12, 'JavaScript': 7, 'TypeScript': 5}","['jarvis-assistant', 'bot', 'react-hooks', 'html-learning', 'react-component', 'analise-de-voos', 'profile-readme', 'ciencia-de-dados', 'youtube', 'spotify']",Web Frontend
+lucidrains,100,"{'Python': 87, 'Nim': 2, 'Jupyter Notebook': 2}","['reasoning', 'continual-learning', 'hierarchical-reinforcement-learning', 'evolutionary-strategies', 'transformer', 'behavioral-cloning', 'readout', 'attention-mechanisms', 'laparoscopy', 'adaptive-computation-time']",ML/AI Engineer
+hiteshchoudhary,100,"{'JavaScript': 39, 'TypeScript': 21, 'HTML': 7}","['backend', 'challenge-project', 'frontend', 'backend-api', 'api', 'website', 'mobile-development']",Web Frontend
+tj,100,"{'Go': 48, 'JavaScript': 35, 'Shell': 3}","['semver', 'vscode', 'vscode-snippets', 'config', 'build-system', 'natural', 'static-site-generator', 'natural-language', 'image-processing', 'input']",Web Backend
+IDouble,61,"{'Java': 11, 'HTML': 9, 'JavaScript': 9}","['paperjs', 'market', 'movements', 'inputs', 'nodejs', 'code', 'outputs', 'blazor-csharp', 'topic', 'currency']",Web3/Blockchain
+ThePrimeagen,100,"{'JavaScript': 18, 'Rust': 14, 'Lua': 12}",[],Web Frontend
+steipete,100,"{'TypeScript': 25, 'Swift': 24, 'Go': 21}","['hook', 'deliveroo', 'sonos', 'osc', 'places', 'development', 'say', 'clipboard', 'reviews', 'argument-parser']",Web Frontend
+geohot,100,"{'Python': 33, 'C': 17, 'C++': 12}",['covid-19'],Systems/Embedded
+addyosmani,100,"{'JavaScript': 43, 'TypeScript': 22, 'HTML': 6}","['gemini-live', 'puppeteer', 'scanning', 'ascii-fireworks', 'threejs', 'upscalerimage', 'chatbot', 'generative-ai', 'huggingface', 'agent-skills']",Web Frontend
+getify,73,"{'JavaScript': 52, 'HTML': 3, 'Go': 1}","['async-patterns', 'prototypes', 'state', 'credit-cards', 'dependency', 'inactive', 'wordle', 'linter', 'education', 'monad']",Web Frontend
+krishnaik06,100,"{'Jupyter Notebook': 42, 'Python': 33, 'CSS': 1}",[],Web Backend
+CodeWithHarry,40,"{'JavaScript': 16, 'HTML': 10, 'CSS': 4}",[],Web Frontend
+kamranahmedse,100,"{'JavaScript': 32, 'TypeScript': 14, 'Shell': 8}","['notifications', 'itomate', 'backend-roadmap', 'jekyll', 'toastr', 'markdown-blog', 'css-utilites', 'redux-persist-transform', 'growl-notifications', 'jquery-toast-plugin']",Web Frontend
+filipedeschamps,22,"{'JavaScript': 11, 'HTML': 2, 'Lua': 1}","['google', 'google-docs', 'markdown', 'google-docs-api', 'api', 'google-docs-api-format-text', 'json']",Web Frontend
+antfu,100,"{'TypeScript': 74, 'JavaScript': 7, 'Vue': 2}","['eslint-plugin', 'magic-string', 'vscode', 'llm', 'vite', 'changelog', 'sourcemaps', 'highlight', 'config', 'iconsets']",Web Frontend
+michaelliao,100,"{'HTML': 21, 'Java': 20, 'JavaScript': 16}","['orm', 'discussion', 'cloudflare', 'warp', 'smart-contracts', 'wechat', 'solidity', 'crypto', 'weixin', 'diagram']",Web Backend
+midudev,100,"{'TypeScript': 29, 'JavaScript': 28, 'Astro': 20}","['static-content', 'cloudflare', 'nodejs', 'curso-nodejs', 'libros', 'react-js', 'portfolio', 'datetime', 'programacion', 'covid-19-spain']",Web Frontend
+rasbt,100,"{'Jupyter Notebook': 36, 'Python': 26, 'Swift': 1}","['reasoning', 'jupyter', 'llm', 'vision', 'data-mining', 'supervised-learning', 'transformer', 'magic-extension', 'ai', 'machine-learning']",ML/AI Engineer
+kunal-kushwaha,48,"{'JavaScript': 8, 'Jupyter Notebook': 5, 'Java': 4}","['cloud-native', 'cloud', 'data-structures', 'java', 'math', 'k3s', 'ci-cd', 'linux', 'docker', 'networking']",Web Frontend
+llSourcell,100,"{'Python': 36, 'Jupyter Notebook': 12, 'JavaScript': 11}",[],Web Frontend
+adrianhajdin,100,"{'JavaScript': 45, 'TypeScript': 42, 'CSS': 3}","['backend', 'webscraping', 'zustand', 'animation', 'react-three-drei', 'smart-contracts', 'nike-website', 'nodejs', 'threejs', 'saas']",Web Frontend
+JohnMwendwa,100,"{'CSS': 25, 'JavaScript': 25, 'HTML': 23}","['css-flexbox', 'react-router-dom', 'react-hooks', 'form-validation', 'personal-website', 'nodejs', 'recursion-algorithm', 'framer-motion', 'javascript', 'reactjs']",Web Frontend
+dmalan,21,"{'C': 4, 'Python': 2, 'Shell': 1}",[],Systems/Embedded
+taylorotwell,33,"{'PHP': 15, 'JavaScript': 2, 'Go': 1}",[],Web Frontend
+wesbos,100,"{'TypeScript': 39, 'JavaScript': 13, 'HTML': 10}","['dad-jokes', 'cool', 'omg-seriously', 'vscode', 'cringe', 'prettier', 'dads', 'colour', 'canadians', 'metric-letters']",Web Frontend
+mouredev,52,"{'Swift': 13, 'Python': 11, 'Kotlin': 9}","['curso', 'backend', 'pynecone', 'android', 'nodejs', 'mvvm-architecture', 'curso-github', 'linux', 'reflex', 'ejerciciosresueltos']",Mobile App
+kentcdodds,100,"{'TypeScript': 42, 'JavaScript': 26, 'HTML': 2}","['macos', 'epic-stack-example', 'node', 'prisma', 'mdx-bundler', 'windows', 'personal-config', 'website', 'workshop', 'epic-stack']",Web Frontend
+ry,62,"{'TypeScript': 18, 'JavaScript': 8, 'C++': 6}",[],Web Frontend
+diego3g,75,"{'TypeScript': 48, 'JavaScript': 15, 'HTML': 1}","['clerk', 'typescript', 'node', 'shadcn-ui', 'ddd', 'nextjs13', 'prisma', 'react-native', 'react', 'responsive']",Web Frontend
+iamshaunjp,100,"{'HTML': 8, 'CSS': 6, 'JavaScript': 6}",[],Web Frontend
+WebDevSimplified,100,"{'TypeScript': 41, 'JavaScript': 37, 'HTML': 6}","['design-patterns', 'sql-exercises', 'mysql', 'sql', 'learn-sql', 'youtube-video']",Web Frontend
+paulirish,100,"{'JavaScript': 21, 'HTML': 8, 'Shell': 6}","['yay', 'gitlab', 'shell', 'dotfiles', 'bitbucket', 'git', 'tracing', 'lighthouse', 'profiling', 'chrome-devtools']",Web Frontend
+tiangolo,62,"{'Python': 31, 'Shell': 5, 'Dockerfile': 3}","['backend', 'puppeteer', 'traefik', 'flask-image', 'python-poetry', 'docker-volumes', 'windows', 'nodejs', 'issue-management', 'couchbase']",DevOps/SRE
+iam-veeramalla,88,"{'Python': 17, 'JavaScript': 6, 'HCL': 6}","['abhishek-veeramalla', 'cloudformation', 'aws', 'cdk', 'azure', 'gcp', 'demo-app', 'mlops-community', 'jenkins', 'website']",Web Frontend
+kennethreitz,76,"{'Python': 33, 'HTML': 4, 'Batchfile': 1}","['orm', 'shruti', 'audio', 'config', 'album', 'love', 'operator', 'k8s', 'android', 'windows']",Web Backend
+StephenGrider,100,"{'JavaScript': 59, 'TypeScript': 6, 'CSS': 6}",[],Web Frontend
+benawad,100,"{'TypeScript': 52, 'JavaScript': 29, 'HTML': 2}","['react-hooks', 'node', 'goaccess', 'react-native', 'nodejs', 'review', 'redux-saga', 'express', 'graphql', 'reactjs']",Web Frontend
+gamemann,100,"{'C': 16, 'Python': 13, 'Shell': 8}","['retro', 'clang', 'ddos-attacks', 'animation', 'nodejs', 'web-sockets', 'latency', 'sqlite', 'ssl', 'topic']",Systems/Embedded
+buckyroberts,45,"{'Python': 26, 'CSS': 5, 'HTML': 4}",[],Web Backend
+elyxdev,14,"{'Python': 9, 'PHP': 2, 'HTML': 1}","['config', 'github-config']",Web Backend
+geerlingguy,100,"{'Jinja': 32, 'Shell': 13, 'PHP': 5}","['ptp', 'elk', 'xdebug', 'ntp', 'rhel', 'computers', 'containerd', 'kubectl', 'development', 'shelly-plugs']",Systems/Embedded
+hadley,100,"{'R': 43, 'C': 2, 'C++': 2}","['r', 'data-science', 'book', 'programming', 'bookdown', 'shiny']",Data Scientist
+antirez,100,"{'C': 55, 'Python': 16, 'Ruby': 12}","['ml', 'ai', 'llm', 'gguf']",Systems/Embedded
+jwasham,30,"{'Python': 9, 'CSS': 3, 'C++': 3}","['interview-preparation', 'study-plan', 'algorithms', 'programming-interviews', 'software-engineering', 'data-structures', 'coding-interviews', 'interview-prep', 'coding-interview', 'algorithm']",Web Frontend
+gvanrossum,28,"{'Python': 15, 'C': 4, 'HTML': 2}",[],Web Backend
+ProgrammingHero1,100,"{'JavaScript': 60, 'HTML': 15, 'TypeScript': 1}",[],Web Frontend
+mrdoob,54,"{'JavaScript': 37, 'HTML': 4, 'TypeScript': 1}","['glb', 'draco', 'obj', 'animation', 'editing', 'svg', 'javascript', 'html5', 'canvas', 'webgl']",Web Frontend
+techwithtim,100,"{'Python': 79, 'TypeScript': 6, 'JavaScript': 5}",[],Web Backend
+daimajia,95,"{'Java': 31, 'JavaScript': 9, 'Python': 9}","['android-easing-functions', 'prgressbar', 'easing-functions', 'producthunt', 'numberprogressbar', 'products', 'animation', 'android', 'indiehackers', 'screenshot']",Web Backend
+BEPb,43,"{'Python': 21, 'Jupyter Notebook': 6, 'JavaScript': 2}","['py', 'hackerrank-all-solutions', 'django', 'config', 'cmd', 'study-project', 'hackerrank-problem-solutions', 'convert', 'script', 'hackerrank-sql']",Web Backend
+sdras,100,"{'JavaScript': 29, 'Vue': 25, 'HTML': 9}","['svg-animations', 'vscode-snippets', 'animationplayer', 'vuejs', 'background', 'animation', 'jamstack-storefront', 'vue-icon-system', 'code-structure', 'youtube']",Web Frontend
+mojombo,66,"{'Ruby': 20, 'Erlang': 9, 'JavaScript': 6}",[],Web Frontend
+mitsuhiko,100,"{'Rust': 26, 'Python': 14, 'JavaScript': 9}","['unified-diff', 'templates', 'rust', 'serialization', 'patch', 'vscode-extension', 'jinja', 'jinja2', 'diff', 'snapshot-tests']",Systems/Embedded
+hkirat,100,"{'TypeScript': 36, 'JavaScript': 20, 'Rust': 3}",[],Web Frontend
+kelseyhightower,100,"{'Go': 59, 'Shell': 14, 'Dockerfile': 3}","['istio', 'kubernetes-cluster', 'container-builder', 'tutorial', 'faas', 'serverless', 'riff', 'deployment-pipeline', 'cloudrun', 'kubernetes']",Web Backend
+SebLague,92,"{'C#': 74, 'JavaScript': 4, 'ShaderLab': 2}","['procedural-generation', 'unity-tutorial']",Game Dev
+mdo,33,"{'CSS': 15, 'JavaScript': 4, 'Shell': 3}","['shell', 'checklist', 'config', 'github', 'minecraft']",Web Frontend
+donnemartin,27,"{'Python': 12, 'Java': 4, 'C++': 3}","['interview-practice', 'cloudformation', 'keras', 'design-system', 'development', 'windows', 'nodejs', 'web-application', 'interview-questions', 'sublime-text']",Systems/Embedded
+keijiro,100,"{'C#': 62, 'HLSL': 8, 'C++': 4}","['codec', 'audio', 'unity-humanoid-animations', 'spout', 'animation', 'midi', 'fft', 'unity3d', 'graphics', 'unity']",Game Dev
+mli,20,"{'Jupyter Notebook': 3, 'Shell': 3, 'Python': 2}","['deep-learning', 'reading-list', 'paper']",ML/AI Engineer
+mbostock,88,"{'JavaScript': 60, 'TypeScript': 4, 'HTML': 2}",[],Web Frontend
+tpope,85,"{'Vim Script': 37, 'Ruby': 23, 'Vim script': 11}","['vim-plugin', 'vimscript-4504', 'vim']",Web Frontend
+codediodeio,65,"{'TypeScript': 25, 'HTML': 8, 'JavaScript': 7}","['firebase', 'gtag', 'angular', 'firestore', 'geolocation', 'rxjs', 'google-analytics', 'geojson']",Web Frontend
+jadijadi,100,"{'Python': 12, 'HTML': 10, 'JavaScript': 9}","['retro', 'gaming', 'game', 'rust']",Web Frontend
+defunkt,100,"{'Ruby': 46, 'JavaScript': 15, 'Emacs Lisp': 7}",[],Web Frontend
+chiphuyen,30,"{'Python': 13, 'Jupyter Notebook': 5, 'HTML': 3}","['agent', 'coding', 'coding-challenge', 'coding-interviews', 'nlp', 'ai', 'machine-learning', 'advanced-python', 'script', 'data-science']",ML/AI Engineer
+liyupi,99,"{'Java': 29, 'TypeScript': 11, 'JavaScript': 10}","['hive', 'backend', 'tencent', 'etcd', 'ddd', 'android', 'front-end', 'programmer', 'nodejs', 'code']",Web Frontend
+douglascrockford,20,"{'JavaScript': 9, 'C': 4, 'Assembly': 2}",[],Web Frontend
+brunosimon,84,"{'JavaScript': 62, 'HTML': 14, 'PHP': 3}","['upptime', 'status-page', 'uptime-monitor']",Web Frontend
+MorvanZhou,56,"{'Python': 42, 'Vue': 3, 'Jupyter Notebook': 2}","['sudoku-solver', 'ddpg', 'sudoku', 'transformer', 'xiaomi', 'nas', 'neural-network', 'evolutionary-algorithm', 'scrapy', 'numpy']",ML/AI Engineer
+cloudwu,100,"{'C': 66, 'Lua': 23, 'C++': 5}",[],Systems/Embedded
+mitchellh,100,"{'Go': 42, 'Zig': 15, 'C': 12}","['macos', 'hcl', 'wasi', 'epoll', 'c', 'licenses', 'protobuf', 'go', 'webassembly', 'build-tool']",Web Backend
+kenjinote,100,"{'C++': 81, 'C': 11, 'HTML': 4}","['web-browser', 'calculator', 'text-editor', 'screensaver', 'text-based', 'game', 'mathematics', 'chat', 'chatbot', 'developer-tools']",Systems/Embedded
+JacksonTian,100,"{'JavaScript': 67, 'HTML': 4, 'C': 3}","['kimi', 'moonshot-ai', 'ebnf', 'kimi-ai', 'cli']",Web Frontend
+xiaolai,100,"{'TypeScript': 11, 'Python': 10, 'JavaScript': 7}","['claude-agent-sdk', 'model-context-protocol', 'self-teaching', 'parenting', 'codex', 'claude-code', 'mcp-server', 'agent-sdk', 'codex-sdk', 'english']",Web Frontend
+lucast1574,32,"{'Python': 9, 'TypeScript': 7, 'Dart': 2}","['config', 'github-config']",Web Frontend
+lllyasviel,53,"{'Python': 28, 'HTML': 5, 'JavaScript': 2}",[],Web Backend
+Asabeneh,100,"{'JavaScript': 24, 'HTML': 21, 'Python': 19}","['database', 'javascript-for-everyone', 'challenge', 'react-router-dom', 'bitbucket', 'htmltags', 'angular', 'js-quiz', 'arrow-functions', 'webdevelopment']",Web Frontend
+AlexTheAnalyst,18,"{'Jupyter Notebook': 5, 'CSS': 2, 'HTML': 1}",[],Web Frontend
+john-smilga,100,"{'JavaScript': 46, 'CSS': 32, 'TypeScript': 17}",[],Web Frontend
+phodal,100,"{'TypeScript': 19, 'Rust': 13, 'HTML': 10}","['codeless', 'azure-iot', 'ide', 'knowledge-graph', 'platform', 'decision-records', 'editor', 'ddd', 'iot-framework', 'microfrontends']",Web Frontend
+developedbyed,21,"{'TypeScript': 9, 'JavaScript': 5, 'CSS': 3}",[],Web Frontend
+angelabauer,47,"{'Swift': 8, 'JavaScript': 7, 'HTML': 6}",[],Web Frontend
+Rich-Harris,100,"{'JavaScript': 50, 'Svelte': 15, 'TypeScript': 8}",[],Web Frontend
+standardgalactic,100,"{'TeX': 9, 'HTML': 5, 'Jupyter Notebook': 3}",[],Web Frontend
+loiane,100,"{'TypeScript': 36, 'Java': 21, 'JavaScript': 21}","['linked-list', 'curso', 'priority-queue', 'nodejs', 'angular-material', 'angular-reactive-forms', 'ngrx-store', 'cordova', 'angular4', 'graph']",Web Frontend
+shiffman,100,"{'JavaScript': 46, 'Processing': 8, 'HTML': 5}","['javascript', 'ml5', 'neural-network', 'genetic-algorithm', 'tensorflow-js', 'neuroevolution', 'p5js', 'machine-learning', 'tensorflow']",Web Frontend
+ggerganov,71,"{'C++': 35, 'C': 6, 'Shell': 5}","['doom', 'morse', 'wordgame', 'safe-prime', 'story', 'microphone-audio-capture', 'sound-library', 'ios', 'ascii', 'hacker-news']",Systems/Embedded
+jakevdp,100,"{'Python': 32, 'Jupyter Notebook': 17, 'TeX': 2}","['matplotlib', 'jupyter-notebook', 'numpy', 'python', 'scikit-learn', 'pandas']",Data Scientist
+mattt,100,"{'Swift': 41, 'Objective-C': 12, 'Ruby': 6}","['linked-list', 'macos', 'ruby', 'notation', 'unicode', 'toml', 'swift', 'typedstream', 'coercion', 'package-registry']",Mobile App
+jeresig,100,"{'JavaScript': 63, 'Shell': 12, 'HTML': 4}",[],Web Frontend
+chrisbanes,61,"{'Kotlin': 19, 'Java': 9, 'Go': 3}","['android-library', 'mobile', 'kotlin-coroutines', 'kotlin-multiplatform', 'compose-multiplatform', 'jetpack-compose', 'android-application', 'compose', 'android-ui', 'kotlin']",Mobile App
+sandhikagalih,99,"{'HTML': 38, 'PHP': 24, 'CSS': 8}","['materi', 'dasar', 'php']",Web Frontend
+esin,52,"{'Go': 9, 'HTML': 8, 'Shell': 7}","['dump1090', 'bash', 'jenkins-docker', 'icmp', 'kubectl', 'favicon', 'jenkins', 'pgadmin4', 'just-for-fun', 'html5']",DevOps/SRE
+t3dotgg,100,"{'TypeScript': 60, 'JavaScript': 14, 'Astro': 4}","['elixir', 'stripe', 'graphql', 'phoenix', 'nextjs', 'payments', 'typescript', 'node', 'golang', 't3-stack']",Web Frontend
+fchollet,16,"{'Python': 9, 'Jupyter Notebook': 1, 'JavaScript': 1}","['psychometrics', 'artificial-intelligence', 'program-synthesis', 'intelligence-testing']",Web Backend
+trekhleb,26,"{'TypeScript': 9, 'JavaScript': 6, 'Python': 2}","['giphy-api', 'best-practice', 'tree-structure', 'keras', 'covid19', 'transit', 'nodejs', 'threejs', 'restful-api', 'react-redux']",Web Frontend
+AUTOMATIC1111,43,"{'C#': 17, 'Python': 13, 'CSS': 2}","['ai-art', 'image2image', 'text2image', 'txt2img', 'pytorch', 'unstable', 'deep-learning', 'diffusion', 'image-generation', 'stable-diffusion']",Game Dev
+vczh,13,"{'C++': 4, 'TypeScript': 1, 'C': 1}",[],Systems/Embedded
+halfrost,34,"{'Go': 11, 'Jupyter Notebook': 2, 'HTML': 2}","['objc', 'ghost', 'swift', 'vuejs2', 'electron-app', 'resume', 'ios', 'vue-cli', 'vuejs', 'math']",Web Frontend
+ageron,90,"{'Python': 18, 'Jupyter Notebook': 11, 'Shell': 4}","['ml', 'archived', 'neural-network', 'deep-learning', 'distributed', 'jupyter-notebook', 'deprecated', 'python', 'scikit-learn', 'machine-learning']",ML/AI Engineer
+JeffreyWay,67,"{'PHP': 24, 'JavaScript': 21, 'AppleScript': 1}","['laravel', 'blog', 'laracasts']",Web Frontend
+justjavac,100,"{'TypeScript': 21, 'MoonBit': 19, 'Rust': 8}","['directory', 'moonbit', 'windows', 'android', 'wechat', 'query', 'rust-gui', 'cross-platform', 'linux', 'deepseek']",Web Frontend
+jackfrued,100,"{'Python': 10, 'Java': 2, 'JavaScript': 2}",[],Web Backend
+Trinea,24,"{'Java': 12, 'JavaScript': 4, 'PHP': 1}","['open-source-project', 'android']",Web Backend
+peter-kimanzi,100,"{'HTML': 32, 'JavaScript': 26, 'CSS': 21}","['javascript', 'html-css-javascript', 'html5', 'css', 'jquery-plugin', 'javascript-library', 'html', 'css3', 'js', 'ecommerce']",Web Frontend
+codingforentrepreneurs,100,"{'Python': 50, 'Jupyter Notebook': 14, 'HTML': 9}","['virtualenv', 'kubectl', 'keras', 'k8s', 'hello-world', 'django1-11', 'jupyter-notebook', 'containers', 'https', 'neon']",Web Backend
+atilsamancioglu,100,"{'Kotlin': 38, 'Python': 33, 'Jupyter Notebook': 9}",[],Mobile App
+rauchg,100,"{'JavaScript': 59, 'TypeScript': 11, 'HTML': 5}",[],Web Frontend
+maykbrito,100,"{'JavaScript': 32, 'TypeScript': 23, 'Astro': 11}","['shadcn-ui', 'figma', 'default-shortcuts', 'youtube', 'ai', 'javascript', 'frontend', 'tailwind', 'mini-video', 'react']",Web Frontend
+jlord,100,"{'JavaScript': 42, 'HTML': 18, 'CSS': 9}","['javascript', 'spreadsheet', 'git', 'hi', 'glitch', 'app', 'hello', 'sheetsee', 'learn-to-code', 'github']",Web Frontend
+spf13,100,"{'Go': 26, 'VimL': 15, 'JavaScript': 9}","['macos', 'golang-library', 'filename-utils', 'utility-library', 'antigen', 'posix-compliant-flags', 'filesystem', 'subcommands', 'windows', 'posix']",Web Backend
+wesm,100,"{'Python': 30, 'Shell': 21, 'C++': 10}",[],Web Backend
+LeaVerou,100,"{'JavaScript': 39, 'HTML': 22, 'CSS': 7}","['events', 'oop', 'observer', 'slideshow', 'dom', 'svg', 'range-slider', 'stats', 'presentation', 'mavo']",Web Frontend
+josevalim,70,"{'Elixir': 18, 'Ruby': 3, 'Erlang': 1}",[],Web Frontend
+isaacs,100,"{'JavaScript': 52, 'TypeScript': 33, 'Shell': 4}","['shell', 'node', 'nodejs', 'sea', 'versioning', 'lrucache', 'lru', 'zsh', 'subshell', 'parallel']",Web Frontend
+Ovilia,66,"{'JavaScript': 29, 'TypeScript': 7, 'Python': 5}","['book', 'mobile-app', 'image-processing', 'personal-website', 'website', 'echarts', 'portfolio', 'webgl', 'devtools', 'three-js']",Web Frontend
+OracleBrain,46,"{'CSS': 8, 'Python': 6, 'JavaScript': 6}",[],Web Frontend
+onevcat,100,"{'Swift': 33, 'TypeScript': 6, 'JavaScript': 6}","['macos', 'swift', 'kingfisher', 'ios', 'cleanup', 'auto-join', 'apng', 'console', 'cross-platform', 'extension']",Mobile App
+DIYgod,93,"{'JavaScript': 39, 'TypeScript': 8, 'HTML': 7}","['danmaku', 'zhihu', 'rss', 'bilibili', 'dribbble', 'youtube', 'spotify', 'browser-extension', 'wechat', 'html5']",Web Frontend
+Charles-Chrismann,28,"{'TypeScript': 10, 'JavaScript': 9, 'HTML': 3}","['javascript', 'turborepo', 'nextjs', 'drizzle', 'nestjs', 'postgresql', 'typescript', 'next', 'nest', 'postgres']",Web Frontend
+gopinav,81,"{'JavaScript': 29, 'TypeScript': 27, 'HTML': 9}",[],Web Frontend
+leerob,40,"{'TypeScript': 18, 'JavaScript': 11, 'Python': 2}","['create-react-app', 'google', 'firebase', 'swift', 'ios', 'aws', 'prisma', 'dart', 's3', 'google-places']",Web Frontend
+florinpop17,100,"{'JavaScript': 54, 'HTML': 19, 'TypeScript': 5}","['javascript', 'css', 'practice', 'codingchallenges', 'ideas', 'coding', 'applications', 'html', 'hacktoberfest']",Web Frontend
+ForrestKnight,42,"{'JavaScript': 9, 'Swift': 7, 'Python': 5}","['vscode-theme', 'vscode', 'vite', 'vscode-color-theme', 'tailwind', 'react', 'computer-science']",Web Frontend
+kubowania,100,"{'JavaScript': 65, 'TypeScript': 9, 'HTML': 8}",[],Web Frontend
+idimetrix,100,"{'TypeScript': 27, 'JavaScript': 4, 'Shell': 2}","['cv-creator', 'resume', 'resume-creator', 'github-rank', 'transformer', 'constant-case', 'snake-case', 'capital-case', 'convert', 'javascript']",Web Frontend
+mosh-hamedani,33,"{'TypeScript': 17, 'JavaScript': 5, 'Java': 3}",[],Web Frontend
+johnpapa,100,"{'TypeScript': 30, 'JavaScript': 11, 'Vue': 7}","['devserver', 'vsls', 'starwars-api', 'axios', 'vscode', 'github-webhooks', 'angular', 'angularjs', 'node', 'async-functions']",Web Frontend
+shadcn,100,"{'JavaScript': 31, 'TypeScript': 30, 'PHP': 7}","['dark-mode', 'wordpress', 'starter', 'nextjs', 'contentlayer', 'drupal', 'example', 'headless', 'template', 'decoupled']",Web Frontend
+in28minutes,100,"{'Java': 50, 'JavaScript': 10, 'HTML': 4}","['java-programming', 'spring-configuration', 'clarity', 'cloud', 'programming-exercises', 'spring-modules', 'servlet', 'aws', 'java', 'java-application']",Web Backend
+astaxie,83,"{'Go': 42, 'JavaScript': 3, 'Ruby': 2}",[],Web Backend
+danielmiessler,78,"{'Ruby': 11, 'Shell': 11, 'TypeScript': 5}","['life', 'work', 'purpose', 'productivity', 'flourishing', 'augmentation', 'humans', 'meaning', 'ai']",Web Frontend
+Klerith,100,"{'TypeScript': 47, 'HTML': 8, 'JavaScript': 7}","['config', 'github-config', 'flutter', 'fernandoherrera', 'dart', 'animations']",Web Frontend
+lydiahallie,62,"{'JavaScript': 33, 'TypeScript': 11, 'Python': 3}","['javascript', 'xss', 'css', 'csrf', 'security', 'html', 'performance', 'web', 'rendering']",Web Frontend
+acdlite,74,"{'JavaScript': 53, 'CSS': 4, 'CoffeeScript': 2}",[],Web Frontend
+matheusbattisti,100,"{'JavaScript': 39, 'HTML': 21, 'TypeScript': 15}",[],Web Frontend
+ChrisTitusTech,88,"{'Shell': 22, 'Lua': 8, 'PowerShell': 7}",['linux'],Systems/Embedded
+eust-w,100,"{'Go': 13, 'Python': 7, 'TypeScript': 4}",[],Web Backend
+feross,100,"{'JavaScript': 82, 'Shell': 4, 'HTML': 3}","['frame', 'dgram', 'audio', 'web-security', 'package', 'jekyll', 'spoof', 'youtube', 'nodejs', 'bonary']",Web Frontend
+RubyLouvre,100,"{'JavaScript': 77, 'CSS': 5, 'HTML': 3}","['wechat-mini-program', 'react', 'zhifubao-mini-program', 'anu']",Web Frontend
+taniarascia,49,"{'JavaScript': 20, 'PHP': 7, 'CSS': 5}","['css-framework', 'basic', 'vuejs', 'development', 'jekyll', 'code-themes', 'nodejs', 'restful-api', 'wordpress-boilerplate', 'pdo']",Web Frontend
+cassidoo,100,"{'JavaScript': 39, 'Astro': 12, 'TypeScript': 6}","['preact', 'obsidian-theme', 'word', 'tree-structure', 'cover-letter', 'coupon', 'threejs', 'guide', 'jobs', 'to-do-app']",Web Frontend
+anuraghazra,100,"{'JavaScript': 37, 'TypeScript': 23, 'HTML': 4}","['realtime', 'html5-canvas', 'verlet-drawing', 'nodejs', 'framer-motion', 'portfolio', 'serverless', 'particlesystem', 'dropdown', 'design-patterns']",Web Frontend
+sorrycc,100,"{'TypeScript': 31, 'JavaScript': 24, 'HTML': 2}",[],Web Frontend
+goodfeli,19,"{'Python': 13, 'TeX': 2, 'Java': 1}",[],Web Backend
+unclebob,77,"{'Clojure': 33, 'Java': 18, 'JavaScript': 4}","['clojure', 'more-speech', 'nostr', 'nostr-client']",Web Backend
+mustafacagri,41,"{'Vue': 17, 'JavaScript': 10, 'TypeScript': 4}","['vue3-admin', 'easel', 'vuejs', 'pinia', 'nodejs', 'threejs', 'freelancer', 'vuetify', 'redux-toolkit', 'firebase-realtime-database']",Web Frontend
+tannerlinsley,100,"{'TypeScript': 34, 'JavaScript': 31, 'HTML': 3}","['pooling', 'state-management', 'reusable', 'react-hooks', 'concurrency', 'workshop', 'javascript', 'state', 'await', 'react']",Web Frontend
+unknwon,48,"{'Go': 32, 'C#': 2, 'SCSS': 1}","['live-compile', 'high-availability', 'parser', 'book', 'aws', 'sourcegraph', 'gcp', 'go', 'flamego', 'hot-reload']",Web Backend
+Kwynto,20,"{'Go': 13, 'CSS': 1, 'PHP': 1}","['dbms', 'vql', 'session', 'gracefuldb', 'config', 'github-config', 'lru', 'golang', 'cache', 'go']",Web Backend
+davidfowl,100,"{'C#': 50, 'HTML': 5, 'TypeScript': 2}","['rest-api', 'webassembly', 'aspnetcore', 'transport', 'jwt', 'cookies', 'performance', 'sockets', 'protocols', 'opentelemetry']",Game Dev
+schacon,100,"{'Ruby': 26, 'JavaScript': 8, 'Rust': 7}",[],Web Frontend
+akitaonrails,100,"{'Ruby': 13, 'Crystal': 13, 'JavaScript': 8}",[],Web Frontend
+evanw,100,"{'JavaScript': 41, 'TypeScript': 10, 'C++': 9}","['javascript', 'css', 'commonjs', 'compiler', 'minifier', 'esm', 'typescript', 'react', 'tsx', 'bundler']",Web Frontend
+brianyu28,39,"{'TypeScript': 10, 'JavaScript': 10, 'Python': 9}","['macos', 'django', 'grammar', 'arpeggio', 'animation', 'timer', 'harvard', 'websockets', 'go', 'machine-learning']",Web Frontend
+Code-Bullet,25,"{'Processing': 11, 'JavaScript': 8, 'Python': 3}",[],Web Frontend
+simonw,100,"{'Python': 48, 'Shell': 8, 'HTML': 7}","['asgi', 'uv', 'django', 'datasette-plugin', 'datasette-io', 'screenshots', 'pyodide', 'playwright-python', 'san-francisco', 'click']",Web Backend
+yinwang0,19,"{'Java': 2, 'Scheme': 2, 'Racket': 1}","['ruby', 'code-analysis', 'code-intelligence', 'code-search', 'type-inference', 'index', 'static-analysis', 'code-index', 'python']",Web Backend
+acenelio,100,"{'Java': 52, 'C#': 14, 'HTML': 7}",[],Web Backend
+fengdu78,17,"{'Jupyter Notebook': 5, 'Python': 3, 'HTML': 2}","['deeplearning-ai', 'machine-learning', 'paddlepaddle', 'coursera']",ML/AI Engineer
+bailicangdu,22,"{'JavaScript': 9, 'Vue': 3, 'HTML': 3}","['vue-cli', 'node', 'koa', 'nodejs', 'express', 'graphql', 'vuex', 'react', 'webpack', 'es2015']",Web Frontend
+tomnomnom,100,"{'Go': 35, 'PHP': 25, 'JavaScript': 18}","['cli', 'json']",Web Backend
+jessfraz,100,"{'Go': 47, 'Shell': 5, 'Rust': 4}","['shell', 'dockerfile', 'macos', 'dotfiles', 'formlabs', 'swift', 'bash', 'linux', 'remarkable', 'remarkable-tablet']",Web Backend
+george0st,27,"{'Python': 10, 'Java': 1, 'Shell': 1}","['graphs', 'nifi-processor', 'multiprocessing', 'mlrun-test', 'machine-learning', 'quality-assessment', 'data-science', 'nifi', 'cassandra', 'meta-model']",ML/AI Engineer
+CoreyMSchafer,25,"{'HTML': 15, 'Python': 5, 'Shell': 1}",[],Web Frontend
+tjdevries,100,"{'Lua': 25, 'OCaml': 16, 'C': 5}","['hacktoberfest', 'hacktoberfest2022']",Web Frontend
+btholt,100,"{'JavaScript': 57, 'TypeScript': 14, 'Python': 8}","['javascript', 'reactjs', 'fem', 'jest', 'react-router', 'typescript', 'testing', 'redux', 'react', 'tailwindcss']",Web Frontend
+jonhoo,100,"{'Rust': 56, 'HTML': 3, 'Shell': 2}","['wordpress', 'database', 'notifications', 'webdriver', 'udp', 'ghost', 'crate', 'tcp', 'string', 'concurrency']",Systems/Embedded
+PanJiaChen,72,"{'JavaScript': 48, 'Vue': 6, 'CSS': 3}","['axios', 'vue-cli', 'element', 'dashboard', 'webpack4', 'admin-template', 'javascript', 'es6', 'vuex', 'xlsx']",Web Frontend
+fabpot,84,"{'PHP': 31, 'Python': 4, 'CSS': 4}","['composer', 'security', 'packagist', 'php']",Web Frontend
+jashkenas,23,"{'JavaScript': 9, 'Ruby': 4, 'HTML': 3}",['license'],Web Frontend
+knadh,64,"{'Go': 21, 'JavaScript': 12, 'Python': 10}","['css-framework', 'draggable', 'config', 'package', 'css-loader', 'typing-speed', 'alpinejs', 'versioning', 'csv-parser', 'digital-signature']",Web Backend
+abuanwar072,83,"{'Dart': 56, 'C++': 8, 'Swift': 6}","['swift', 'ios', 'watchos', 'flutteranimation', 'animation', 'shop-app', 'android', 'responsive-design', 'food', 'dashboard']",Mobile App
+mattn,100,"{'Go': 42, 'Vim Script': 13, 'C': 7}","['docx', 'semver', 'tflite', 'minio', 'mattn', 'jekyll', 'windows', 'mruby', 'sqlite', 'deep-learning']",Systems/Embedded
+egoist,100,"{'TypeScript': 60, 'JavaScript': 17, 'Rust': 3}","['directive', 'prismjs', 'vite', 'highlight', 'framework-agnostic', 'stylus', 'package', 'router', 'babel', 'rollup']",Web Frontend
+vbuterin,68,"{'Python': 20, 'JavaScript': 17, 'HTML': 6}",[],Web Frontend
+gitdagray,100,"{'JavaScript': 36, 'TypeScript': 34, 'HTML': 7}","['csv-parser', 'csv-parsing', 'csv-reading', 'sql-insert', 'sql-insert-queries', 'sql-insert-statements', 'csv-files', 'csv-converter', 'csv', 'csv-import']",Web Frontend
+adamwathan,100,"{'JavaScript': 32, 'Vue': 13, 'CSS': 11}",[],Web Frontend
+draveness,51,"{'Go': 10, 'Objective-C': 8, 'Swift': 6}","['ruby', 'swift', 'ios', 'animation-effects', 'animation', 'mode', 'string', 'night-mode', 'go', 'colors']",Web Backend
+yangshun,100,"{'JavaScript': 31, 'TypeScript': 14, 'HTML': 7}","['directory', 'interview-practice', 'front-end-development', 'coding-interviews', 'front-end', 'interview-questions', 'linux', 'forks', 'delete', 'boilerplate']",Web Frontend
+bradfitz,100,"{'Go': 49, 'HTML': 1, 'CSS': 1}","['btrfs', 'memcached-clients', 'virtual-machine', 'resize2fs', 'vms', 'gpt', 'lvm', 'qemu', 'mbr', 'resize']",Web Backend
+philipplackner,100,"{'Kotlin': 95, 'Java': 3, 'JavaScript': 1}",[],Mobile App
+soumith,100,"{'Python': 24, 'Lua': 19, 'Jupyter Notebook': 10}",[],Systems/Embedded
+rexim,79,"{'Emacs Lisp': 12, 'C++': 9, 'Python': 6}","['emulator', 'org-mode', 'qemu', 'android', 'hacktoberfest', 'x86', 'emacs-lisp']",Systems/Embedded
+nicknochnack,100,"{'Python': 44, 'Jupyter Notebook': 33, 'JavaScript': 10}",[],Web Backend
+hongyangAndroid,100,"{'Java': 55, 'JavaScript': 4, 'HTML': 3}",[],Web Backend
+rakyll,100,"{'Go': 58, 'Python': 3, 'HTML': 3}","['cgo', 'go', 'pprof', 'query-planner', 'embedded', 'linux', 'google-cloud', 'files', 'golang-database', 'profiling']",Web Backend
+angusshire,18,"{'C++': 6, 'Python': 4, 'Go': 1}",[],Systems/Embedded
+developit,100,"{'JavaScript': 47, 'TypeScript': 4, 'Shell': 1}","['karma-plugin', 'preact', 'virtual-dom', 'licenses', 'nodejs', 'workers', 'unistore', 'state', 'worker', 'tiny-modules']",Web Frontend
+miguelgrinberg,100,"{'Python': 60, 'JavaScript': 12, 'HTML': 6}","['database', 'low-latency', 'cloud', 'migrations', 'marshmallow', 'greenlet', 'authy-api', 'micropython', 'scale', 'cloudformation']",Web Backend
+mathiasbynens,100,"{'JavaScript': 52, 'HTML': 13, 'Shell': 3}","['unicode', 'macos', 'regex', 'bash', 'encode', 'regexp', 'javascript', 'code-generation', 'test262', 'utf8']",Web Frontend
+ashishps1,42,"{'Python': 12, 'C++': 7, 'Java': 6}","['database', 'backend', 'interview-practice', 'llm', 'leetcode-patterns', 'engineering', 'coding', 'software-engineering', 'data-structures', 'high-level-design']",Web Backend
+TheCherno,38,"{'C++': 21, 'Java': 10, 'C': 4}","['c-plus-plus', 'game-development', 'game-engine', 'sparky']",Systems/Embedded
+kevin-powell,100,"{'CSS': 35, 'HTML': 31, 'SCSS': 18}",[],Web Frontend
+haoel,24,"{'Go': 7, 'C++': 2, 'JavaScript': 2}","['golang', 'ltob', 'lttb', 'ltb', 'downsampling-algorithm', 'series-data']",Web Backend
+hakimel,31,"{'JavaScript': 13, 'HTML': 6, 'CSS': 3}","['slideshow', 'presentations', 'slides']",Web Frontend
+jrohitofficial,91,"{'JavaScript': 22, 'HTML': 16, 'Dart': 10}","['config', 'github-config']",Web Frontend
+skydoves,78,"{'Kotlin': 60, 'Java': 6, 'C#': 3}","['jetpackcompose', 'orm', 'landscapist', 'motions', 'animation', 'android', 'dependency-injection', 'compose-coil', 'medal-animation', 'mvvm-architecture']",Mobile App
+BYVoid,45,"{'C++': 9, 'JavaScript': 5, 'C#': 4}","['traditional-chinese', 'chinese-translation', 'simplified-chinese']",Systems/Embedded
+JohnHammond,73,"{'Python': 28, 'Shell': 7, 'PowerShell': 6}",[],Web Backend
+YunaiV,83,"{'Java': 42, 'JavaScript': 4, 'Kotlin': 1}","['metaq', 'tddl', 'spring-cloud-alibaba', 'flowable', 'elastic-job', 'apache-kafka', 'metamorphosis', 'sharding-sphere', 'mybatis-plus', 'dubbo']",Web Backend
+htr-tech,31,"{'Shell': 11, 'Python': 10, 'JavaScript': 5}","['ip-location', 'customizable', 'encode', 'vigenere', 'longitude', 'openssl', 'phishing-servers', 'youtube', 'port-forwarding', 'anonymous-mailer']",Systems/Embedded
+tqchen,48,"{'Python': 14, 'C++': 10, 'HTML': 2}","['language-server', 'ffi', 'deep-learning', 'nnvm', 'vscode-extension', 'computational-graphs', 'tvm']",ML/AI Engineer
+bojone,100,"{'Python': 86, 'JavaScript': 1, 'C': 1}","['vae', 'gan', 'encoder']",Web Backend
+shanselman,100,"{'C#': 22, 'JavaScript': 7, 'Python': 6}","['analog-clock', 'interview-questions', 'llm', 'vite', 'deep-learning', 'transformers', 'typescript', 'study-guide', 'nlp', 'react']",Game Dev
+easychen,100,"{'JavaScript': 25, 'TypeScript': 14, 'PHP': 8}","['bluesky-app', 'serverchan', 'book', 'coding', 'rss', 'character-card', 'aichat', 'sillytavern', 'roleplay', 'ai']",Web Frontend
+bedimcode,100,"{'CSS': 48, 'SCSS': 36, 'HTML': 15}","['sidebar-menu', 'navigation-bottom', 'tabbar-menu', 'responsive-card', 'css-card-animation', 'card-animation', 'testimonial-carousel', 'product-card', 'sidebar', 'resume-cv']",Web Frontend
+521xueweihan,100,"{'Python': 21, 'JavaScript': 5, 'TypeScript': 4}","['git', 'hosts', 'tornado', 'hellogithub', 'awesome', 'flask-web', 'heroku', 'shadowsocks', 'github', 'flask']",Web Backend
+laruence,27,"{'C': 16, 'PHP': 7, 'Shell': 2}","['yar-server', 'yaconf', 'c', 'yac', 'detect-xss-codes', 'concurrency', 'cms', '2006', 'php-framework', 'rpc-framework']",Systems/Embedded
+ibireme,23,"{'Objective-C': 13, 'C': 6, 'C++': 1}","['itoa', 'atoi', 'cross-platform', 'cpp', 'serialization', 'c', 'dtoa', 'performance', 'json5', 'strtod']",Systems/Embedded
+elder-plinius,44,"{'Python': 15, 'JavaScript': 4, 'HTML': 4}","['google', 'grok', 'system-prompts', 'llm', 'prompt-engineering', 'leaked', 'system-info', 'adversarial-attacks', 'roleplay', 'transparency']",Web Frontend
+BurntSushi,100,"{'Rust': 47, 'Go': 10, 'Python': 4}","['unicode', 'regex', 'substring-search', 'civil', 'iana', 'utf-8', 'jiff', 'time', 'automaton', 'substring-matching']",Systems/Embedded
+LukeSmithxyz,30,"{'Shell': 6, 'C': 6, 'TeX': 4}",[],Systems/Embedded
+robpike,21,{'Go': 20},[],Web Backend
+mnielsen,34,"{'Python': 11, 'JavaScript': 5, 'TeX': 2}",[],Web Frontend
+agentzh,68,"{'Perl': 27, 'C': 14, 'C++': 5}",[],Systems/Embedded
+Elfocrash,49,"{'C#': 21, 'Java': 5, 'PowerShell': 2}","['orm', 'object-mapper', 'acis', 'cosmosdb-resources', 'scale', 'aspnet-core', 'dotnetcore', 'aws', 'nosql', 'cosmos-db']",Systems/Embedded
+samyk,100,"{'Python': 13, 'C++': 11, 'C': 8}",[],Systems/Embedded
+topjohnwu,49,"{'C++': 11, 'Java': 9, 'C': 9}",[],Systems/Embedded
+KalleHallden,59,"{'Python': 18, 'Dart': 17, 'Java': 6}",[],Mobile App
+campusx-official,100,"{'Python': 48, 'Jupyter Notebook': 24, 'CSS': 5}",[],Web Backend
+bvaughn,100,"{'JavaScript': 57, 'TypeScript': 18, 'HTML': 4}","['database', 'suspense', 'windowing', 'performance', 'slideshow', 'resizable', 'slide', 'reactjs', 'virtualization', 'powerpoint']",Web Frontend
+mrdbourke,74,"{'Jupyter Notebook': 32, 'HTML': 8, 'Python': 7}","['machine-learning-tutorial', 'macos', 'llm', 'llamacpp', 'book', 'deployment-tutorial', 'tensorflow-tutorials', 'detectron2', 'writing', 'llama2']",ML/AI Engineer
+craftzdog,100,"{'JavaScript': 36, 'TypeScript': 19, 'Java': 5}","['database', 'vite', 'react-native-reanimated', 'react-native', 'lookingglass', 'react-three-fiber', 'nodejs', 'openai', 'threejs', 'ui']",Web Frontend
+mqyqingfeng,37,"{'JavaScript': 20, 'TypeScript': 2, 'Svelte': 1}","['lazyload', 'autotype', 'dom', 'learn-javascript', 'wheels', 'javascript', 'preload', 'javsascript', 'eventemitter', 'pulltorefresh']",Web Frontend
+iampawan,100,"{'Dart': 39, 'C++': 12, 'Swift': 5}","['material-design', 'music-player', 'firebase', 'fetch-songs', 'uikit', 'ios', 'package', 'dart', 'android', 'hacktoberfest']",Mobile App
+shradha-khapra,17,"{'HTML': 5, 'JavaScript': 3, 'Java': 3}",[],Web Frontend
+jakearchibald,100,"{'TypeScript': 26, 'JavaScript': 25, 'HTML': 12}",[],Web Frontend
+jhaddix,77,"{'Python': 11, 'Shell': 8, 'Go': 6}",[],Web Backend
+zenorocha,100,"{'JavaScript': 35, 'HTML': 15, 'TypeScript': 14}","['javascript', 'clipboard']",Web Frontend
+QianMo,37,"{'C++': 10, 'C#': 9, 'GLSL': 4}","['game-developing-notes', 'writing-shaders', 'posteffect', 'ebook', 'facade-pattern', 'blur', 'design-patterns', 'command-pattern', 'game-programmer', 'books']",Game Dev
+ChristianLempa,14,"{'Dockerfile': 3, 'Python': 2, 'Shell': 2}","['kasm', 'macos', 'ansible', 'dotfiles', 'ubuntu', 'linux', 'packer', 'cheat-sheets', 'second-brain', 'docker']",DevOps/SRE
+lilianweng,19,"{'Python': 12, 'HTML': 1, 'SCSS': 1}","['dcgan-tensorflow', 'wgan-gp', 'wgan', 'gan', 'deep-reinforcement-learning', 'deep-learning', 'lstm', 'tensorflow-tutorials', 'transformer', 'embeddings']",ML/AI Engineer
+XiaomingX,55,"{'Python': 27, 'JavaScript': 2, 'TypeScript': 2}","['ethical-hacking', 'web-security', 'cloudflare', 'money', 'indiehacker', 'youtube', 'downloader', 'exp', 'clone', 'rce']",Web Backend
+LaurieWired,37,"{'Python': 6, 'C++': 5, 'Java': 5}",[],Web Backend
+muan,100,"{'JavaScript': 41, 'HTML': 17, 'Ruby': 8}","['unicode', 'newbie', 'apple-shortcuts', 'bookmarklet', 'chartjs', 'jekyll', 'indieweb', 'personal-website', 'learning-go', 'browser-extension']",Web Frontend
+necolas,80,"{'JavaScript': 45, 'CSS': 6, 'HTML': 3}","['css', 'cross-platform', 'gui-framework', 'css-in-js', 'css-reset', 'react-native', 'react', 'react-native-web', 'react-ui', 'react-dom']",Web Frontend
+offensive-security,27,"{'Arduino': 2, 'PHP': 1, 'Python': 1}",[],Systems/Embedded
+jart,100,"{'Python': 16, 'C++': 13, 'C': 12}","['darwin', 'openbsd', 'linux', 'netbsd', 'libc', 'bios', 'efi', 'zip', 'windows', 'containers']",Systems/Embedded
+fouber,100,"{'JavaScript': 46, 'Python': 5, 'PHP': 4}","['lottery-draw', 'lottery-game', 'lottery', 'lottery-program']",Web Frontend
+ashishpatel26,100,"{'Python': 11, 'Jupyter Notebook': 10, 'HTML': 5}","['jax', 'model-hub', 'agno', 'a2a', 'andrewng', 'keras', 'transformer', 'coursera', 'visualize-networks', 'andrew-ng-course']",ML/AI Engineer
+amueller,100,"{'Python': 25, 'Jupyter Notebook': 18, 'HTML': 13}",[],Web Frontend
+PatrickAlphaC,100,"{'Solidity': 24, 'JavaScript': 17, 'Python': 10}","['solidity', 'chainlink', 'opensea', 'brownie', 'nft', 'python', 'ethbrownie']",Web Frontend
+shiftkey,100,"{'C#': 12, 'JavaScript': 9, 'TypeScript': 9}",[],Web Frontend
+mcollina,100,"{'JavaScript': 54, 'TypeScript': 17, 'CSS': 1}","['fastify-plugin', 'fastify']",Web Frontend
+noob-hackers,19,"{'Shell': 10, 'HTML': 4, 'Python': 3}","['noob', 'boot', 'noobhackers', 'spmming', 'android', 'instagram-bot', 'termux', 'repair', 'bash-hacks', 'linux']",Systems/Embedded
+rsc,100,"{'Go': 71, 'C': 5, 'C++': 3}",[],Web Backend
+chriscoyier,58,"{'JavaScript': 19, 'HTML': 10, 'PHP': 9}","['burgers', 'icons', 'wordpress', 'audio']",Web Frontend
+munificent,51,"{'Dart': 19, 'C#': 6, 'HTML': 4}","['parser', 'book', 'game-development', 'c', 'compiler', 'java', 'dart', 'optimization', 'c-plus-plus', 'scripting-language']",Mobile App
+f,100,"{'JavaScript': 29, 'TypeScript': 12, 'Swift': 8}","['clock', 'modelcontextprotocol', 'vue-smart-widget', 'windsurf', 'vue-boilerplate', 'windows', 'nodejs', 'github-pages', 'sqlite', 'prompts']",Web Frontend
+frontend-joe,99,"{'HTML': 30, 'CSS': 28, 'JavaScript': 18}",[],Web Frontend
+Snailclimb,19,"{'Java': 13, 'JavaScript': 2, 'HTML': 1}","['redisstreams', 'agent', 'java', 'spring-security-5', 'rag', 'spring-security-jwt', 'context-engineering', 'jieba', 'wordcloud', 'system']",Web Backend
+ErickWendel,100,"{'JavaScript': 68, 'HTML': 7, 'TypeScript': 4}","['deepseek-coder', 'demuxer', 'node-test-runner', 'acorn', 'traefik', 'rxjs', 'webm', 'web-ai', 'metabase', 'nodejs']",Web Frontend
+chenshuo,56,"{'C++': 15, 'C': 10, 'Jupyter Notebook': 3}",[],Systems/Embedded
+AllenDowney,100,"{'Jupyter Notebook': 55, 'TeX': 7, 'Python': 5}","['signal-processing', 'jupyter', 'bayesian-statistics', 'python', 'bayes']",Web Backend
+nishant-Tiwari24,77,"{'JavaScript': 20, 'TypeScript': 20, 'Python': 10}","['html-css-javascript', 'data-structures-oops', 'config', 'github-config', 'python-library', 'ui-design', 'python']",Web Frontend
+engindemirog,75,"{'C#': 26, 'Java': 23, 'JavaScript': 8}",[],Web Backend
+miloyip,29,"{'C++': 9, 'C': 6, 'HTML': 2}","['game', 'knowledge-graph', 'technology', 'knowledge-management', 'global-illumination', 'monte-carlo-integration', 'signed-distance-field', 'graphics2d', 'visualization', 'graphics-programming']",Systems/Embedded
+NeuralNine,19,"{'Python': 10, 'Jupyter Notebook': 1, 'TypeScript': 1}","['opencv', 'video', 'streaming', 'sockets', 'python']",Web Backend
+nzakas,77,"{'JavaScript': 43, 'Java': 5, 'TypeScript': 4}","['javascript', 'ebook', 'leanpub', 'zakas']",Web Frontend
+Pierian-Data,31,"{'Jupyter Notebook': 9, 'Python': 5, 'HTML': 3}",[],Web Frontend
+shahradelahi,100,"{'TypeScript': 80, 'Go': 3, 'Shell': 3}","['zustand', 'nodejs', 'toolkit', 'sqlite', 'deep-clone', 'slug', 'prettier', 'cross-platform', 'crypto', 'key-value']",Web Frontend
+jvns,100,"{'JavaScript': 14, 'Python': 12, 'Go': 11}",['dns'],Web Frontend
+aneagoie,100,"{'JavaScript': 45, 'CSS': 9, 'HTML': 7}",[],Web Frontend
+sungeer,11,{},[],Unknown
+romannurik,72,"{'JavaScript': 29, 'TypeScript': 20, 'Java': 7}","['sketch-plugin', 'contrast-ratio', 'sketchapp', 'data-uri', 'sketch', 'dataurl', 'data-url', 'figma-plugins', 'figma', 'webpack']",Web Frontend
+meliksahyorulmazlar,16,"{'Python': 8, 'HTML': 2, 'Jupyter Notebook': 2}",[],Web Backend
+bchiang7,63,"{'JavaScript': 28, 'HTML': 9, 'CSS': 9}","['firebase', 'ayu-mirage-theme', 'color-theme', 'spotify-profile', 'hypertheme', 'audio-features', 'halcyon-theme', 'chartjs', 'jekyll', 'nativescript']",Web Frontend
+alex,100,"{'Rust': 16, 'Python': 13, 'C': 4}",[],Systems/Embedded
+sofish,45,"{'JavaScript': 24, 'HTML': 3, 'TypeScript': 2}","['wysiwyg', 'pen', 'pen-editor', 'editor', 'golang']",Web Frontend
+simplesteph,71,"{'Java': 24, 'Python': 11, 'Scala': 6}","['kafka', 'kafka-consumer', 'source', 'java', 'protobuf-python', 'protobuf', 'udemy', 'kafka-client', 'protocol-buffers-course', 'kafka-rest-proxy']",Web Backend
+sophiebits,100,"{'JavaScript': 51, 'HTML': 4, 'TypeScript': 3}","['python', 'advent-of-code']",Web Frontend
+ishandutta2007,100,"{'Python': 35, 'C++': 17, 'TypeScript': 11}",[],Systems/Embedded
+mgechev,100,"{'TypeScript': 58, 'JavaScript': 22, 'Go': 2}","['intersection-observer', 'glob-pattern', 'dependency-injection', 'gotest', 'esm', 'linting', 'seed', 'practice', 'transfer-learning', 'typescript']",Web Frontend
+benbalter,100,"{'Ruby': 44, 'TypeScript': 15, 'HTML': 8}","['wordpress', 'libreoffice', 'ruby', 'ansible', 'imagemagick', 'bookmarklet', 'rgb-matrix', 'word', 'status', 'redirects']",Web Frontend
+wycats,100,"{'TypeScript': 26, 'Rust': 15, 'JavaScript': 12}",[],Web Frontend
+romainguy,20,"{'Kotlin': 10, 'Java': 6, 'C++': 1}","['ui-toolkit', 'text-layout', 'bytecode', 'keynote-presentation', 'graphics', 'kotlin-android', 'text', 'jetpack-compose', 'ui', 'keynote']",Mobile App
+Sentdex,52,"{'Python': 27, 'Jupyter Notebook': 10, 'C++': 1}","['brain-computer-interface', 'deep-learning', 'plotly', 'python3', 'qiskit', 'dashboards', 'neural-networks', 'quantum-computing', 'python', 'bci']",ML/AI Engineer
+jaredpalmer,100,"{'TypeScript': 28, 'JavaScript': 22, 'Python': 2}","['render-props', 'wordpress', 'higher-order-component', 'image-diff', 'state-management', 'react-hooks', 'form', 'preact', 'immer', 'suspense']",Web Frontend
+swisskyrepo,13,"{'Python': 6, 'HTML': 3, 'PHP': 1}","['detect-vulnerabilities', 'wordpress', 'payload', 'sql-injection', 'wordpress-scanner', 'privilege-escalation', 'payloads', 'static-analysis', 'capture-the-flag', 'hacktoberfest']",Web Backend
+wizardforcel,100,"{'JavaScript': 1, 'Python': 1}",[],Web Frontend
+matz,11,"{'C': 7, 'Ruby': 1}",[],Systems/Embedded
+0vm,11,"{'Python': 5, 'C#': 2, 'JavaScript': 2}","['ddos-protection', 'contributions-chart', 'ddos-mitigation', 'commit-graph', 'packet-analysis', 'commits', 'ddos', 'garbage-collection', 'username-checker', 'real-time-monitoring']",Systems/Embedded
+folke,100,"{'Lua': 46, 'TypeScript': 10, 'JavaScript': 3}","['dock', 'nvim', 'npm-scripts', 'nvim-plugin', 'nodejs', 'hyprland', 'linux', 'fish-shell', 'parallel', 'typescript']",Web Frontend
+typicode,77,"{'JavaScript': 49, 'HTML': 4, 'Lua': 2}","['hook', 'nvim', 'package', 'background', 'front-end', 'nodejs', 'border', 'upgrade', 'query', 'local-domain']",Web Frontend
+andrewrk,100,"{'Zig': 33, 'C': 20, 'JavaScript': 19}","['vulkan', 'xcb', 'game', 'raspberry-pi', 'webassembly', 'kernel', 'zig-package', 'aarch64', 'lua', 'operating-system']",Systems/Embedded
+abhishekkrthakur,88,"{'Python': 43, 'C++': 4, 'JavaScript': 3}","['machine-learning', 'tez', 'pytorch', 'quora', 'deep-learning', 'clickbait', 'docker', 'jupyterlab', 'classification', 'neural-networks']",ML/AI Engineer
+pjreddie,47,"{'C': 21, 'Python': 10, 'JavaScript': 3}",[],Systems/Embedded
+ai,100,"{'JavaScript': 35, 'Ruby': 16, 'TypeScript': 7}","['spellcheck', 'travis-ci', 'travis', 'spelling', 'hacktoberfest', 'github-actions', 'asdf']",Web Frontend
+joshlong,85,"{'Java': 46, 'JavaScript': 6, 'Shell': 5}",[],Web Backend
+s0md3v,56,"{'Python': 40, 'JavaScript': 4, 'Go': 3}","['directory', 'cloudflare', 'github-recon', 'android', 'scanning', 'xss', 'port-scanner', 'hash-lookup', 'sha256', 'nmap-alternative']",Web Backend
+CelaDaniel,100,"{'JavaScript': 5, 'TypeScript': 2, 'Java': 1}","['react-3-fiber', 'llm', 'vite', 'chartjs', 'prompt-engineering', 'nlp', 'ai-courses', 'profile-readme', 'nodejs', 'ai']",Web Frontend
+arthurspk,100,"{'JavaScript': 1, 'CSS': 1}","['backend', 'javascript-library', 'guia', 'front-end-development', 'c', 'java', 'anotacoes', 'nodejs', 'java-8', 'roadmaps']",Web Frontend
+ryanflorence,100,"{'TypeScript': 42, 'JavaScript': 30, 'CSS': 4}",[],Web Frontend
+bubbliiiing,100,{'Python': 94},[],Web Backend
+CoderMJLee,15,"{'Objective-C': 5, 'Java': 2, 'C++': 2}","['commandline-tool', 'macos', 'swift', 'dictionary', 'ios', 'c', 'obfuscator', 'java', 'cpp', 'binary-tree']",Mobile App
+hmaverickadams,20,"{'Python': 5, 'Shell': 1, 'JavaScript': 1}",[],Web Backend
+yihui,98,"{'R': 34, 'HTML': 15, 'JavaScript': 6}","['wordpress', 'latex', 'macos', 'chinese-book', 'minimalist', 'book', 'travis-ci', 'litedown', 'jekyll', 'texlive']",Data Scientist
+dennybritz,62,"{'JavaScript': 10, 'Jupyter Notebook': 9, 'Python': 8}",[],Web Frontend
+PKUFlyingPig,79,"{'Python': 10, 'Jupyter Notebook': 10, 'C++': 7}",[],Systems/Embedded
+colah,52,"{'Python': 11, 'Haskell': 7, 'JavaScript': 6}",[],Web Frontend
+Jack-Cherish,18,"{'Python': 10, 'C++': 4, ""Ren'Py"": 1}","['c', 'knn', 'regression', 'machine-learning', 'decision-tree', 'deep-learning', 'svm', 'smo', 'navie-bayes-algorithm', 'webspider']",ML/AI Engineer
+alyssaxuu,16,"{'JavaScript': 13, 'PureBasic': 1, 'Swift': 1}","['audio', 'google-slides', 'editor', 'animation', 'google-slides-api', 'google-maps', 'keyframes', 'leaflet', 'plastic', 'window-management']",Web Frontend
+toddmotto,76,"{'JavaScript': 44, 'TypeScript': 7, 'HTML': 5}","['es2015', 'firebase', 'angular', 'angularjs', 'typescript', 'ui-router', 'component-architecture']",Web Frontend
+djvelimir,36,"{'Java': 5, 'C#': 3, 'Kotlin': 2}","['config', 'demo', 'github-config']",Web Backend
+Connor9994,23,"{'Python': 9, 'PowerShell': 4, 'JavaScript': 3}",[],Web Backend
+ardalis,100,"{'C#': 53, 'JavaScript': 6, 'HTML': 2}","['clean-code', 'domain-driven', 'entity-framework-core', 'guard-clause', 'dnx', 'pluralsight', 'ddd', 'solid', 'web-api', 'netlify']",Game Dev
+iamapuneet,28,"{'Dart': 7, 'Java': 1}","['dsa-cpp', 'firebase', 'readmestats', 'dsa-practice', 'dotted-line', 'dart', 'notification', 'cpp', 'code', 'readme-stats']",Mobile App
+ustbhuangyi,75,"{'JavaScript': 52, 'TypeScript': 5, 'Vue': 4}","['ios', 'iscroll', 'vue', 'mobile-web', 'more-features', 'better-performance']",Web Frontend
+hwchase17,65,"{'Python': 28, 'Jupyter Notebook': 10, 'Shell': 2}",[],Web Backend
+wasabeef,59,"{'Java': 7, 'Dart': 6, 'Kotlin': 6}","['useragent', 'react-hooks', 'aac', 'android-studio', 'kotlin-android', 'wezterm', 'ios', 'java', 'dart', 'fresco']",Mobile App
+tenderlove,100,"{'Ruby': 45, 'C': 9, 'C++': 5}","['macos', 'ruby', 'http3', 'photos', 'uart', 'ascii', 'asm', 'image-processing', 'jit', 'esp32']",Systems/Embedded
+ElzeroWebSchool,23,"{'HTML': 9, 'CSS': 6, 'PHP': 2}",[],Web Frontend
+jordwalke,100,"{'OCaml': 27, 'JavaScript': 13, 'Vim script': 10}",[],Web Frontend
+jcjohnson,35,"{'Python': 13, 'Lua': 9, 'JavaScript': 4}",[],Web Backend
+twostraws,85,"{'Swift': 62, 'JavaScript': 2, 'Metal': 1}","['macos', 'vapor-swift', 'vapor-toolbox', 'swift', 'iphone', 'uikit', 'ios', 'server-side-swift', 'vapor', 'simulator']",Mobile App
+lucasmontano,39,"{'Kotlin': 9, 'Java': 4, 'TypeScript': 3}","['montano', 'openweather', 'weather', 'learn-to-code', 'learning', 'react']",Mobile App
+mohammadhasanii,47,"{'Go': 14, 'JavaScript': 8, 'TypeScript': 5}","['backend', 'cmd', 'chartjs', 'noise', 'digikala', 'prisma', 'rust-programming-language', 'golang-streams', 'iran-internet', 'windows']",Web Frontend
+sokra,100,"{'JavaScript': 60, 'TypeScript': 5, 'CoffeeScript': 3}",[],Web Frontend
+haileys,100,"{'Rust': 34, 'C': 8, 'Shell': 7}","['dbus', 'rust', 'prometheus-exporter', 'prometheus']",Systems/Embedded
+sebmarkbage,76,"{'JavaScript': 50, 'C#': 7, 'OCaml': 4}",[],Web Frontend
+macrozheng,20,"{'Java': 13, 'JavaScript': 3, 'Vue': 2}","['axios', 'elk', 'java', 'vuejs', 'k8s', 'mybatis-plus', 'vuex', 'v-charts', 'docker', 'uniapp']",Web Backend
+algorithmzuo,16,{'Java': 15},[],Web Backend
+dataprofessor,100,"{'Python': 76, 'Jupyter Notebook': 11, 'HTML': 1}","['machinelearning', 'llm', 'datascience', 'data-science-python', 'meta', 'gif', 'population', 'llama2', 'data-professor', 'dashboard']",Data Scientist
+K1rsN7,22,"{'Python': 7, 'Java': 4, 'Jupyter Notebook': 3}","['dock', 'windows', 'hackaton-project', 'college-practise', 'rofi', 'sport-analytics', 'deep-learning', 'portfolio', 'linux', 'e-shop']",Game Dev
+OfficialCodeVoyage,54,"{'Python': 14, 'TypeScript': 5, 'HTML': 2}","['ai', 'computer-vision', 'mediapipe']",Web Backend
+wintercn,52,"{'JavaScript': 24, 'HTML': 4, 'C#': 2}",[],Web Frontend
+dtolnay,100,"{'Rust': 88, 'Shell': 3, 'Starlark': 1}","['syn', 'pound-pound', 'proc-macro', 'bazel', 'toml', 'starlark', 'rust', 'performance', 'buck', 'cargo']",Systems/Embedded
+carpedm20,100,"{'Python': 50, 'Lua': 8, 'JavaScript': 6}","['google', 'nlp', 'memory-network', 'neural-architecture-search', 'neural-turing-machines', 'synthetic-images', 'hacking', 'began', 'gan', 'deep-learning']",ML/AI Engineer
+otaviossousa,52,"{'C': 14, 'Python': 11, 'C#': 4}","['config', 'github-config']",Systems/Embedded
+LondheShubham153,100,"{'Python': 17, 'HCL': 10, 'JavaScript': 10}","['agentic-ai', 'terraform-project', 'agentic-workflow', 'agent', 'temporal', 'strands-agents', 'nft', 'api-fest', 'aws', 'bedrock']",Web Frontend
+felangel,100,"{'Dart': 43, 'C++': 6, 'TypeScript': 3}","['templates', 'state-management', 'sealed', 'mustache-templates', 'dart-package', 'dart-library', 'router', 'navigation', 'dart', 'oauth2']",Mobile App
+vinta,28,"{'Python': 11, 'TypeScript': 3, 'JavaScript': 3}","['codetengu', 'macos', 'django', 'chrome-extensions', 'data-structures', 'collections', 'coding-interviews', 'python-frameworks', 'recommender-system', 'smart-contracts']",Web Backend
+evilsocket,100,"{'Python': 21, 'Go': 18, 'Rust': 15}","['shell', 'dirbuster', 'model-context-protocol', 'llm', 'handshakes', 'data-breach', 'agent', 'firewall-manager', 'dataset', 'ergo']",Web Backend
+i5ting,100,"{'JavaScript': 32, 'TypeScript': 12, 'MoonBit': 2}","['test', 'lowcode', 'vite', 'testng', 'node', 'koa', 'qunit', 'fastify', 'fullstack', 'nodejs']",Web Frontend
+UberGuidoZ,100,"{'Python': 22, 'C': 12, 'PowerShell': 7}",[],Systems/Embedded
+vjanz,19,"{'Python': 9, 'Go': 1, 'Markdown': 1}","['kustomize', 'cloud', 'asynchronous', 'nginx-ingress', 'cert-manager', 'development', 'helm', 'flask', 'celery', 'argocd']",DevOps/SRE
+youngyangyang04,71,"{'C++': 18, 'Java': 8, 'Python': 5}","['javascript', 'java', 'leetcode', 'python', 'offer', 'algorithm', 'programmer', 'cpp', 'interview', 'go']",Systems/Embedded
+chenglou,100,"{'JavaScript': 28, 'OCaml': 27, 'TypeScript': 8}","['game', 'polyfill', 'ocaml', 'bucklescript', 'ocaml-compiler', 'programming', 'reason', 'browser', 'require']",Web Frontend
+DIMFLIX,19,"{'Python': 9, 'Vue': 2, 'JavaScript': 1}","['svc-svm', 'realtime', 'uv', 'market', 'beautiful-profile-readme', 'qt', 'love', 'catboost-classifier', 'github-pages', 'neuralnetworks']",ML/AI Engineer
+dyc87112,70,"{'Java': 26, 'JavaScript': 11, 'Vue': 2}","['jdbctemplate', 'java', 'consul', 'zuul', 'spring-data-jpa', 'hystrix', 'free-tools', 'log4j', 'dubbo', 'rabbitmq']",Web Backend
+OneLoneCoder,13,"{'C++': 10, 'C': 1}","['cpp', 'synthesizer', 'audio-playback-library', 'audio']",Systems/Embedded
+AntonioErdeljac,100,"{'JavaScript': 47, 'TypeScript': 24, 'HTML': 5}","['javascript', 'database', 'reactjs', 'typescript', 'sdk', 'nodejs', 'ai', 'json']",Web Frontend
+rwieruch,100,"{'JavaScript': 59, 'TypeScript': 13, 'CSS': 3}","['babel-setup', 'nodejs', 'webpack-babel', 'restful-api', 'shuffle', 'chai', 'es6-javascript', 'react-redux', 'react-redux-starter-kit', 'dropdown']",Web Frontend
+sudheerj,70,"{'JavaScript': 18, 'TypeScript': 11, 'Java': 10}","['vuejs-tutorial', 'linkedlist', 'es2020-new-features', 'vuejs', 'rxjs', 'k8s', 'vuejs-todolist', 'allure-report', 'nodejs', 'interview-questions']",Web Frontend
+FiloSottile,100,"{'Go': 47, 'Shell': 5, 'Python': 4}","['tlog', 'macos', 'pqc', 'password-store', 'tls', 'histogram', 'ios', 'post-quantum', 'performance', 'root-ca']",Web Backend
+nunomaduro,100,"{'PHP': 46, 'TypeScript': 8, 'Blade': 8}","['pint', 'database', 'notifications', 'agent', 'preset', 'package', 'complexity', 'commands', 'quality', 'hacktoberfest']",Web Frontend
+jaywcjlove,100,"{'TypeScript': 32, 'Swift': 30, 'JavaScript': 19}","['semver', 'html-to-markdown', 'menuist', 'font-awesome', 'rehype', 'nodejs', 'github-pages', 'newfile', 'prettier', 'ttf']",Systems/Embedded
+igrigorik,81,"{'Ruby': 42, 'JavaScript': 10, 'HTML': 7}","['shopify-app', 'ruby', 'tls', 'security', 'decision-tree', 'shopify', 'machine-learning', 'rubyml']",Web Frontend
+H-K-R,57,"{'HTML': 19, 'JavaScript': 9, 'C++': 5}","['vlan', 'config', 'router', 'data-structures', 'prefix-tree', 'java', 'prefix', 'python-programming-language', 'responsive', 'digital-signal-processing']",Web Frontend
+teteusAraujo,18,"{'Java': 10, 'Kotlin': 2, 'CSS': 2}","['javascript', 'css', 'micronaut', 'portfolio', 'html', 'node', 'profile', 'github', 'java', 'readme']",Web Backend
+luizomf,100,"{'JavaScript': 34, 'Python': 24, 'TypeScript': 21}","['uv', 'python-packages', 'ssh-tunnel', 'sussu', 'tsv', 'django', 'whisper', 'loki', 'subtitles', 'ssh-keygen']",Web Frontend
+jamiebuilds,100,"{'JavaScript': 28, 'TypeScript': 17, 'HTML': 2}","['share', 'spies', 'state', 'code-splitting', 'adjacency-lists', 'graph', 'w3c', 'bin', 'polyfill', 'server-side-rendering']",Web Frontend
+fatih,65,"{'Go': 31, 'Vim script': 3, 'Vim Script': 2}","['hcl', 'waitgroup', 'navigation', 'static-analysis', 'errwrap', 'hacktoberfest', 'concurrency', 'vim-plugins', 'go', 'formatter']",Web Backend
+MisterBooo,89,"{'Objective-C': 34, 'C++': 8, 'Python': 8}","['demo', 'blog', 'runloop', 'objective-c', 'block', 'leetcode-c', 'ui', 'leetcode', 'runtime', 'animation']",Web Frontend
+GoesToEleven,53,"{'Go': 24, 'HTML': 6, 'CSS': 3}",[],Web Backend
+tw93,34,"{'JavaScript': 9, 'Python': 3, 'Ruby': 3}","['shell', 'macos', 'sensei', 'git-emoji', 'swift', 'cleaner', 'package', 'ios', 'editor', 'rss']",Systems/Embedded
+audreyt,100,"{'HTML': 16, 'JavaScript': 12, 'Perl': 10}",[],Web Frontend
+seehiong,28,"{'TypeScript': 10, 'Python': 6, 'Jupyter Notebook': 3}","['deepagents', 'agent-hierarchy', 'backend', 'llm-inference', 'cloudformation', 'kubectl', 'chartjs', 'vuejs', 'generative-art', 'sse']",Web Frontend
+lepture,100,"{'Python': 40, 'JavaScript': 13, 'HTML': 7}","['typlog-theme', 'oauth2', 'flask', 'sphinx-theme', 'oauth-client', 'sphinx', 'documentation', 'sphinx-extension', 'oauth2-provider', 'pygments-style']",Web Frontend
+ityouknow,28,"{'Java': 5, 'Python': 3, 'HTML': 2}","['fastdfs', 'swagger', 'book', 'docker-image', 'java', 'drools', 'thymeleaf', 'spring-cloud-demo', 'websocket', 'android']",Web Backend
+ahmetb,100,"{'Go': 44, 'Shell': 4, 'JavaScript': 3}","['kubebuilder', 'macos', 'crds', 'cloud-run', 'etcd', 'operator-sdk', 'kubectl', 'webcam-viewer', 'windows', 'kubernetes-clusters']",Web Backend
+CleverProgrammer,100,"{'Python': 23, 'JavaScript': 22, 'HTML': 12}",[],Web Frontend
+jamesmontemagno,100,"{'C#': 32, 'TypeScript': 11, 'Swift': 5}","['macos', 'tiny-tools', 'vscode', 'swift', 'vite', 'typescript', 'bingo', 'csharp', 'fire', 'react']",Game Dev
+Colt,100,"{'JavaScript': 20, 'HTML': 14, 'CSS': 11}",[],Web Frontend
+fat,57,"{'JavaScript': 35, 'TypeScript': 3, 'Ruby': 2}",[],Web Frontend
+brendangregg,42,"{'C': 12, 'Shell': 5, 'Perl': 4}","['benchmark', 'performance-test', 'performance']",Systems/Embedded
+machadop1407,100,"{'TypeScript': 47, 'JavaScript': 45, 'CSS': 1}","['reactjs', 'socket-io', 'chat', 'mysql', 'react', 'spotify-web-api', 'nodejs']",Web Frontend
+kamilmysliwiec,44,"{'TypeScript': 19, 'JavaScript': 6, 'C++': 4}","['typescript', 'nest-cqrs', 'nest', 'nodejs', 'cqrs']",Web Frontend
+eddiejaoude,97,"{'JavaScript': 25, 'PHP': 22, 'TypeScript': 6}","['macos', 'book', 'config', 'stargate-serverless', 'github-profiles', 'hacktoberfest', 'code', 'stargate', 'javascript', 'linux']",Web Frontend
+nahamsec,23,"{'Shell': 4, 'Ruby': 3, 'HTML': 3}","['hacking', 'xss', 'hackers', 'bugbounty', 'web-security', 'bug-bounty', 'education', 'learn2hack', 'bug-bounty-hunters', 'pentest']",Web Frontend
+justmarkham,40,"{'Jupyter Notebook': 14, 'Python': 9, 'R': 5}","['data-cleaning', 'data-school', 'clustering', 'dataset', 'ensemble-learning', 'linear-regression', 'machine-learning', 'requests', 'script', 'beautiful-soup']",Data Scientist
+Fndroid,64,"{'JavaScript': 17, 'Java': 14, 'Go': 6}",[],Web Frontend
+ChenYilong,33,"{'Objective-C': 25, 'Swift': 2, 'Dart': 1}","['objc', 'swift', 'uikit', 'ios', 'ios13', 'animation', 'darkmode', 'ui', 'lottie-ios', 'cocoapods']",Mobile App
+clementmihailescu,11,"{'JavaScript': 8, 'CSS': 1, 'Jupyter Notebook': 1}",[],Web Frontend
+junegunn,100,"{'Ruby': 22, 'Vim Script': 10, 'Clojure': 10}","['goyo', 'bash', 'debugging', 'clojure', 'unix', 'zsh', 'cli', 'tmux-plugin', 'neovim', 'go']",Web Backend
+wcandillon,100,"{'TypeScript': 28, 'JavaScript': 27, 'HTML': 4}","['progressive-image', 'image', 'react', 'react-native', 'cache']",Web Frontend
+chokcoco,68,"{'JavaScript': 40, 'HTML': 8, 'CSS': 7}","['javascript', 'animate', 'css', 'sizzle', 'jquery', 'pesudo', 'css3', 'swiper', 'boom', 'svg']",Web Frontend
+koush,100,"{'TypeScript': 23, 'JavaScript': 15, 'Python': 10}",[],Web Frontend
+amitshekhariitbhu,58,"{'Java': 26, 'Kotlin': 7, 'Markdown': 2}","['backend', 'interview-practice', 'llm-inference', 'alamofireimage', 'tflite', 'mvp-android', 'animation', 'priority-queue', 'android', 'experiments']",Mobile App
+yonggekkk,20,"{'Shell': 7, 'JavaScript': 4, 'Python': 1}","['ddns', 'x-ui', 'cloudflare', 'warp', 'nodejs', 'workers', 'argo', 'termux', 'xray-core', 'wireguard']",Systems/Embedded
+Fernanda-Kipper,82,"{'TypeScript': 26, 'Java': 23, 'JavaScript': 13}","['backend', 'ddd', 'responsive-design', 'redis-client', 'nodejs', 'zxing-qrcode', 'threejs', 'web-application', 'webgl', 'module-federation']",Web Frontend
+fengmk2,100,"{'TypeScript': 40, 'JavaScript': 10, 'Vue': 4}",[],Web Frontend
+liaohuqiu,100,"{'Java': 29, 'JavaScript': 16, 'Shell': 13}",['btc'],Web Backend
+rustdesk,11,"{'Rust': 4, 'Markdown': 1, 'HTML': 1}","['macos', 'vnc', 'ios', 'dart', 'remote-control', 'rdp', 'remote-desktop', 'android', 'windows', 'linux']",Mobile App
+skyzh,100,"{'Rust': 18, 'Python': 6, 'HTML': 6}","['climate-reporter', 'zoom', 'raytracing', 'qwen2', '3blue1brown', 'python-requests', 'numpy', 'yarn', 'canvas-lms', 'haskell']",Systems/Embedded
+daneden,100,"{'JavaScript': 26, 'Swift': 23, 'TypeScript': 17}","['zettelkasten', 'swift', 'nodejs', 'github-actions', 'javascript', 'sketch-plugin', 'sketch', 'twitter-api', 'react', 'twitter']",Web Frontend
+cusspvz,100,"{'JavaScript': 33, 'Go': 6, 'Shell': 6}","['recaptcha', 'nodemailer', 'error', 'package', 'babel', 'source', 'react-native', 'hot-reloading', 'microservice', 'packager']",Web Frontend
+drkostas,59,"{'Python': 26, 'Jupyter Notebook': 10, 'JavaScript': 5}","['cmd', 'ieee', 'dropbox', 'html5-canvas', 'android', 'multivariate-timeseries', 'ieeextreme', 'deep-learning', 'portfolio', 'timit']",Web Backend
+mschwarzmueller,60,"{'JavaScript': 17, 'TypeScript': 13, 'PHP': 9}",[],Web Frontend
+cyanharlow,17,"{'CSS': 9, 'HTML': 2, 'JavaScript': 1}","['js', 'font', 'css']",Web Frontend
+stefanprodan,80,"{'Go': 20, 'Shell': 18, 'Dockerfile': 6}","['high-availability', 'traefik', 'fargate', 'github-pages', 'faas', 'linkerd', 'backup', 'nexus', 'asp-net-core', 'owin-middleware']",DevOps/SRE
+jfullstackdev,30,"{'JavaScript': 4, 'PureBasic': 4, 'HTML': 3}","['java-education', 'backend', 'basic', 'java-game', 'trading-and-investing', 'nodejs', 'crypto-exchanges', 'github-script', 'random-generation', 'github-pages']",Web Frontend
+tiann,100,"{'Rust': 16, 'Java': 13, 'C++': 8}","['hook', 'codex', 'remote-control', 'android', 'epic', 'ebfp', 'dexposed', 'opencode', 'dirtypipe', 'xposed']",Systems/Embedded
+BilgisayarKavramlari,23,"{'Python': 8, 'Jupyter Notebook': 3, 'C#': 1}",[],Web Backend
+nihui,100,"{'C++': 26, 'C': 15, 'Python': 6}","['realtime', 'clang', 'video-matting', 'intel', 'styletransfer', 'windows', 'android', 'tts-engine', 'neural-network', 'deep-learning']",Systems/Embedded
+jhcloos,14,"{'C': 6, 'C++': 3, 'CSS': 1}",[],Systems/Embedded
+davidbombal,16,"{'Python': 6, 'JavaScript': 2, 'PowerShell': 1}","['hak5-rubber-ducky', 'hak5-ducky', 'hak5', 'powershell-scripts', 'powershell']",Web Backend
+mattpocock,100,"{'TypeScript': 78, 'Shell': 2, 'CSS': 1}","['ai', 'reset', 'typescript', 'evals']",Web Frontend
+springframeworkguru,100,"{'Java': 74, 'C#': 3, 'HTML': 1}","['springsecurity', 'spring-boot', 'springmvc', 'spring']",Web Backend
+rovo89,77,"{'Java': 9, 'C++': 8, 'TypeScript': 7}","['xposed', 'android']",Systems/Embedded
+Jarred-Sumner,100,"{'TypeScript': 22, 'JavaScript': 9, 'Zig': 8}","['chrome-extension', 'react-native-image', 'clone', 'github1s', 'editor', 'firefox-addon', 'github', 'pull-request', 'react-native', 'react']",Web Frontend
+mercyblitz,73,"{'Java': 37, 'HTML': 2, 'TypeScript': 1}","['book', 'java', 'samples', 'spring-cloud-alibaba', 'microservice', 'douyu', 'service-discovery', 'code-project', 'nacos-spring', 'jcp']",Web Backend
+safak,44,"{'JavaScript': 17, 'TypeScript': 14, 'HTML': 7}",[],Web Frontend
+cami-la,100,"{'Java': 51, 'TypeScript': 9, 'Kotlin': 6}","['alura', 'railway-app', 'macos', 'vscode', 'spring-boot-3', 'react18', 'eclipse-ide', 'banco-de-dados', 'h2-database', 'google-guava']",Web Backend
+dai-shi,100,"{'JavaScript': 43, 'TypeScript': 30, 'HTML': 9}","['react-context', 'state-management', 'react-hooks', 'suspense', 'apollo-link', 'context-api-react', 'zustand', 'react-native', 'hooks-api-react', 'svelte']",Web Frontend
+ethanflower1903,100,"{'Python': 4, 'Shell': 3, 'Java': 2}",[],Web Backend
+AsmrProg-YT,38,"{'CSS': 21, 'HTML': 10, 'JavaScript': 4}","['config', 'github-config']",Web Frontend
+Rafaelmdcarneiro,100,"{'Rust': 28, 'JavaScript': 8, 'Zig': 6}",[],Systems/Embedded
+shuding,100,"{'JavaScript': 48, 'TypeScript': 17, 'HTML': 6}","['vfx', 'react-hooks', 'typography', 'angular', 'cpu', 'asm', '3d-touch', 'static-site-generator', 'view-transitions', 'animation']",Web Frontend
+bigtreetech,100,"{'C': 13, 'Shell': 4, 'Python': 4}","['gcode', 'cura', 'plugins', 'icons']",Systems/Embedded
+ljharb,100,"{'JavaScript': 82, 'HTML': 3, 'TypeScript': 3}","['boxed', 'ideal', 'pushapply', 'package', 'builtin', 'element', 'nodejs', 'apply', 'descriptor', 'querystrings']",Web Frontend
+drakeet,18,"{'Java': 6, 'Kotlin': 3, 'Dart': 1}","['android-library', 'one2many', 'recyclerview', 'recyclerview-multi-type', 'one-to-many', 'multitype']",Mobile App
+DeborahK,96,"{'TypeScript': 40, 'HTML': 22, 'C#': 16}","['angular', 'signals', 'rxjs']",Web Frontend
+CarGuo,57,"{'Java': 22, 'Dart': 9, 'JavaScript': 6}","['kotlin-android', 'ios', 'baserecyclerviewadapterhelper', 'mobile-app', 'dart', 'ijkplayer', 'react-native', 'weex', 'fresco', '16k']",Mobile App
+rengwuxian,68,"{'Kotlin': 45, 'Java': 11, 'C': 3}","['compose', 'android']",Mobile App
+sharkdp,100,"{'Rust': 27, 'PureScript': 22, 'Python': 10}","['backtrace', 'binary-data', 'category-theory', 'leaflet', 'units', 'benchmark', 'search', 'exploration', 'parameter', 'hexagonal-grids']",Systems/Embedded
+LaravelDaily,100,"{'Blade': 48, 'PHP': 36, 'Vue': 5}",[],Web Frontend
+fazt,100,"{'JavaScript': 48, 'TypeScript': 32, 'Python': 10}","['crud', 'passport', 'dalle-2', 'passportjs', 'nodejs', 'openai', 'code', 'social-network', 'javascript', 'express']",Web Frontend
+Yangqing,53,"{'C++': 20, 'Python': 8, 'C': 6}",[],Systems/Embedded
+lemire,100,"{'C++': 18, 'Java': 15, 'Python': 14}","['c', 'performance', 'java', 'rng', 'bitset', 'lower-bounds', 'priority-queue', 'javascript', 'c-plus-plus', 'intersection']",Systems/Embedded
+remy,100,"{'JavaScript': 55, 'HTML': 7, 'Assembly': 5}","['macos', 'vscode', 'esp', 'light', 'watch', 'node', 'addon', 'hacktoberfest', 'duckypad', 'spectrum']",Web Frontend
+Germey,100,"{'Python': 26, 'JavaScript': 7, 'Jupyter Notebook': 4}","['javascript', 'ruby', 'awesome', 'web-scraping', 'golang', 'aswsome-list', 'api', 'midjourney', 'captcha', 'php']",Web Backend
+Nutlope,90,"{'TypeScript': 43, 'JavaScript': 19, 'Python': 8}","['prisma', 'vercel', 'serverless', 'nextjs']",Web Frontend
+Huxpro,98,"{'JavaScript': 26, 'HTML': 13, 'TypeScript': 9}","['javascript', 'jekyll-themes', 'service-worker', 'lynxjs', 'lynx', 'vue', 'jekyll-theme', 'blog-theme', 'slide']",Web Frontend
+joshwcomeau,100,"{'JavaScript': 51, 'TypeScript': 11, 'CSS': 11}","['gui', 'animation', 'spotify', 'nodejs', 'keyboard', 'redux-saga', 'tree-traversal', 'transition-animation', 'reactjs', 'rethinkdb']",Web Frontend
+rsms,100,"{'JavaScript': 22, 'C': 17, 'Go': 16}","['macos', 'cmake', 'parser', 'dawn', 'clang', 'compiler', 'c', 'websocket', 'design', 'javascript']",Systems/Embedded
+zcbenz,39,"{'JavaScript': 9, 'C++': 6, 'C': 2}",[],Web Frontend
+Shubhamsaboo,100,"{'Python': 2, 'TypeScript': 2, 'HTML': 1}","['python', 'llms', 'rag', 'agents']",Web Frontend
+felipefialho,37,"{'JavaScript': 7, 'HTML': 6, 'TypeScript': 4}","['no-javascript', 'challenge', 'css-components', 'stylus', 'pure-css', 'kratos', 'stars', 'awesome-opensource', 'yeoman-generator', 'canais']",Web Frontend
+rougier,100,"{'Emacs Lisp': 41, 'Python': 21, 'Jupyter Notebook': 6}","['frame', 'orgmode', 'pages', 'user-interface', 'numpy', 'vectorization', 'nano-emacs', 'svg-lib', 'agenda', 'making']",Systems/Embedded
+motanelson,100,"{'Python': 43, 'C': 26, 'Shell': 15}","['config', 'github-config']",Systems/Embedded
+mbahomaid,74,"{'HTML': 11, 'JavaScript': 10, 'CSS': 5}","['javascript', 'grid', 'css', 'css-flexbox', 'frontend', 'algorithms', 'config', 'github-config', 'html', 'data-structures']",Web Frontend
+ryanb,74,"{'Ruby': 44, 'JavaScript': 3, 'TypeScript': 2}",[],Web Frontend
+historicalsource,100,"{'C': 10, 'Scala': 4, 'Assembly': 3}","['bruce-daniels', 'tim-anderson', 'dave-lebling', 'zil', 'fantasy', 'z-machine', 'marc-blank', 'interactive-fiction', 'zork', 'infocom']",Systems/Embedded
+mxcl,73,"{'Objective-C': 15, 'Swift': 13, 'TypeScript': 6}","['terminal-colors', 'macos', 'semver', 'objc', 'swift', 'scripting', 'app', 'micro-framework', 'xcode', 'omg']",Mobile App
+emmabostian,61,"{'JavaScript': 38, 'CSS': 6, 'HTML': 4}","['web', 'html', 'flexbox-grid']",Web Frontend
+satya-nutella,100,"{'TypeScript': 7, 'JavaScript': 5, 'Python': 4}",[],Web Frontend
+emilk,76,"{'Rust': 22, 'C++': 11, 'Python': 4}","['game-d', 'wasm', 'gui', 'gamedev', 'egui', 'rust', 'game-development', 'profiling', 'imgui']",Systems/Embedded
+dabit3,100,"{'TypeScript': 46, 'JavaScript': 20, 'HTML': 3}","['llm', 'angular', 'a2a', 'aws', 'react-native', 'amazon-s3', 'ai', 'openai', 'appsync', 'express']",Web Frontend
+giswqs,100,"{'Python': 15, 'Jupyter Notebook': 14, 'HTML': 9}","['jupyter', 'database', 'obsidian-plugin', 'geemap', 'earthengine', 'kde', 'manjaro', 'postgis', 'visjs', 'website']",Systems/Embedded
+liuyubobobo,35,"{'C++': 9, 'Swift': 6, 'Python': 5}","['swing-gui', 'interview-practice', 'gui', 'data-structures', 'imooc', 'leetcode-cpp', 'java-8', 'machine-learning', 'c-plus-plus', 'interview-questions']",Systems/Embedded
+graydon,100,"{'Rust': 21, 'C++': 6, 'Python': 4}",['obsidian-plugin'],Systems/Embedded
+sebastianbergmann,71,"{'PHP': 57, 'Python': 7, 'HTML': 2}","['gcc', 'fs-uae', 'uuid-generator', 'software-metrics', 'amigaos', 'dockerfiles', 'csv-parser', 'lines-of-code', 'container', 'documentation']",Systems/Embedded
+itsKayWat,81,"{'Python': 47, 'HTML': 20, 'JavaScript': 10}",[],Web Frontend
+yetone,100,"{'TypeScript': 8, 'JavaScript': 7, 'Rust': 5}","['orm', 'nvim', 'selected-text', 'hooks-api-react', 'translator', 'react', 'vimrc', 'non-blocking-io', 'sstable', 'kv-database']",Web Frontend
+rrousselGit,69,"{'Dart': 43, 'HTML': 2, 'C++': 1}","['hook', 'code-generator', 'state-management', 'code-generation', 'code-reuse', 'union-types', 'flutter', 'riverpod', 'provider', 'dart']",Mobile App
+JCSIVO,34,"{'JavaScript': 11, 'C#': 10, 'HTML': 6}",[],Web Frontend
+bagder,52,"{'C': 18, 'Perl': 6, 'Python': 4}","['history', 'http3', 'mozilla', 'nroff', 'book', 'lessons-learned', 'decoding', 'c', 'diary', 'man-page']",Systems/Embedded
+hehonghui,100,"{'Java': 50, 'Python': 4, 'Objective-C': 3}","['tv', 'economist', 'backend', 'newsweek', 'mockservice', 'test', 'memory-analysis', 'ios', 'ebooks', 'development']",Web Backend
+U7P4L-IN,30,"{'Python': 10, 'CSS': 7, 'JavaScript': 6}","['banner', 'fb-bot-share', '2fa-security', 'information', 'solar-system', 'html-javascript', 'game-development', 'wifi-security', 'leyar4', 'github-user-information-genarator']",Web Frontend
+amusi,100,"{'Python': 23, 'C++': 15, 'Jupyter Notebook': 12}","['feature-detection', 'iccv2025', 'transformer', 'offer', 'labeling-tool', 'jobs', 'neural-network', 'deep-learning', 'object-detection', 'image-classification']",ML/AI Engineer
+abressiddique,100,"{'JavaScript': 24, 'TypeScript': 7, 'Python': 7}","['config', 'react', 'github-config']",Web Frontend
+JohnSundell,65,"{'Swift': 42, 'Objective-C': 10, 'Ruby': 1}","['coregraphics', 'package', 'scanning', 'codesamples', 'versioning', 'operators', 'publish', 'ui-testing', 'json-parsing', 'xcode']",Mobile App
+ip681,19,"{'Python': 10, 'Jupyter Notebook': 6, 'PLpgSQL': 1}",[],Web Backend
+arpitbbhayani,100,"{'Python': 24, 'Go': 14, 'Jupyter Notebook': 12}","['database', 'obsidian-plugin', 'ycombinator-hacker-news', 'engineering-blogs', 'coursework', 'epub-generation', 'hacktoberfest', 'kindle', 'distributed-systems', 'kvstore']",Web Backend
+rdpeng,91,"{'R': 41, 'HTML': 12, 'JavaScript': 5}","['exploratory-data-analysis', 'analytic-design-theory', 'data-analysis']",Data Scientist
+appleboy,100,"{'Go': 40, 'Dockerfile': 11, 'Shell': 7}","['android', 'llm-agents', 'graceful-stop', 'trigger', 'telegram-bot', 'bitbucket-api-v1', 'hugo', 'gtalk', 'postgresql', 'ssh']",Web Backend
+jtleek,100,"{'HTML': 25, 'R': 17, 'JavaScript': 4}",[],Web Frontend
+mjackson,100,"{'JavaScript': 56, 'TypeScript': 9, 'HTML': 5}",[],Web Frontend
+Shehab-Hegab,100,"{'Jupyter Notebook': 64, 'Python': 9, 'HTML': 2}",[],Web Backend
+loveBabbar,14,"{'Java': 6, 'JavaScript': 2, 'HTML': 2}",[],Web Backend
+learnwithsumit,76,"{'JavaScript': 53, 'HTML': 9, 'TypeScript': 1}",[],Web Frontend
+swyxio,100,"{'Python': 18, 'JavaScript': 17, 'TypeScript': 9}","['sveltekit-tailwindcss', 'jamstack', 'prompt-engineering', 'netlify', 'design', 'svelte', 'ai', 'openai', 'hacktoberfest', 'homepage']",Web Frontend
+willianjusten,100,"{'JavaScript': 32, 'HTML': 22, 'TypeScript': 14}","['notifications', 'nba', 'personal-blog', 'jekyll', 'svg', 'javascript', 'jekyll-themes', 'idle-user', 'inactivity', 'remix']",Web Frontend
+shengxinjing,100,"{'TypeScript': 19, 'JavaScript': 16, 'Vue': 10}",[],Web Frontend
+singwhatiwanna,26,"{'Java': 15, 'CSS': 1, 'Objective-C': 1}",[],Web Backend
+afc163,100,"{'JavaScript': 12, 'TypeScript': 8, 'HTML': 3}","['translator', 'surge-sh', 'command-line-tools', 'command-line', 'groq', 'translation', 'preview-deploy', 'chinese', 'nodejs', 'llama3']",Web Frontend
+LuNiZz,37,"{'JavaScript': 1, 'Dockerfile': 1}",['siberguvenlik'],Web Frontend
+dbunt1tled,51,"{'PHP': 12, 'Go': 8, 'TypeScript': 7}","['jwt', 'avatar-generator', 'symfony', 'websockets', 'go', 'json-api', 'streamlit', 'csv', 'rabbitmq', 'pydantic-v2']",Web Backend
+steveklabnik,100,"{'Rust': 44, 'Ruby': 8, 'HTML': 5}","['documentation-tool', 'rust', 'ember', 'data-structures', 'webserver', 'documentation', 'learning', 'web']",Systems/Embedded
+jph00,63,"{'Python': 14, 'Jupyter Notebook': 8, 'HTML': 4}",[],Web Frontend
+mattdesl,100,"{'JavaScript': 74, 'Python': 4, 'C': 2}",[],Web Frontend
+trinhminhtriet,97,"{'Rust': 27, 'Go': 17, 'Java': 7}","['git-statistics', 'disk-cleanup', 'pathfinding', 'disk-analyzer', 'interview-questions', 'jobs', 'cross-platform', 'repository-insights', 'github-integration', 'benchmark']",Systems/Embedded
+dalindev,42,"{'JavaScript': 14, 'Python': 4, 'TypeScript': 3}","['nanocurrency', 'cjs', 'dapp', 'data-mining', 'data-structures', 'gg', 'nano-cryptocurrency', 'website', 'nodejs', 'threejs']",Web Frontend
+overtrue,100,"{'PHP': 71, 'JavaScript': 8, 'Vue': 4}","['css-framework', 'socialite', 'laravel-uploader', 'vscode-snippets', 'laravel-resources', 'vote', 'voter-vote-status', 'payments', 'ueditor', 'vuejs']",Web Frontend
+TommyZihao,100,"{'Jupyter Notebook': 25, 'Python': 23, 'JavaScript': 3}",[],Web Backend
+apna-college,12,"{'JavaScript': 7, 'Java': 2, 'HTML': 1}",[],Web Frontend
+jdah,19,"{'C': 10, 'C++': 2, 'Java': 2}",[],Systems/Embedded
+nholuongut,100,"{'TypeScript': 18, 'Python': 16, 'Shell': 14}",[],Web Frontend
+omariosouto,100,"{'JavaScript': 33, 'TypeScript': 26, 'HTML': 9}","['javascript', 'css', 'blog', 'front', 'mario', 'imersaoreact', 'souto', 'experiment', 'front-end', 'soutomario']",Web Frontend
+phith0n,71,"{'Python': 15, 'JavaScript': 12, 'Go': 10}","['vscode', 'llm', 'htmlparser-purifier', 'whisper', 'java', 'jetbrains', 'go', 'swing', 'xss', 'serialization']",Web Backend
+yuanming-hu,50,"{'Python': 12, 'C++': 11, 'JavaScript': 6}","['computational-photography', 'gan', 'deep-learning', 'generative-adversarial-network', 'reinforcement-learning', 'image-processing']",Systems/Embedded
+byt3bl33d3r,86,"{'Python': 44, 'Nim': 5, 'PowerShell': 5}","['ansible', 'o365', 'llm', 'dlr', 'screenshots', 'dotnet-script', 'aws', 'windows', 'apigateway', 'ironpython']",Web Backend
+Jinjiang,78,"{'JavaScript': 22, 'TypeScript': 12, 'Vue': 5}","['component', 'ios', 'vue']",Web Frontend
+tangqiaoboy,44,"{'Objective-C': 23, 'JavaScript': 3, 'CSS': 2}",[],Web Frontend
+mckaywrigley,66,"{'TypeScript': 55, 'Python': 3}","['config', 'github-config']",Web Frontend
+SuperSimpleDev,12,"{'HTML': 5, 'JavaScript': 4}",[],Web Frontend
+Nakshatra05,76,"{'TypeScript': 25, 'JavaScript': 13, 'Python': 6}","['config', 'react', 'nextjs', 'github-config']",Web Frontend
+jeffheaton,65,"{'Jupyter Notebook': 15, 'Python': 9, 'Java': 9}","['convolutional-neural-networks', 'genetic-algorithms', 'pytorch', 'gan', 'deep-learning', 'neural-network', 'deeplearning', 'computer-vision', 'keras', 'cellular-automaton']",ML/AI Engineer
