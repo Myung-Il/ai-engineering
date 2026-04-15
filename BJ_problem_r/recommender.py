@@ -1,5 +1,6 @@
 import requests
 import random
+import cloudscraper
 from collections import defaultdict
 
 # =====================================================================
@@ -9,13 +10,30 @@ def train_markov_chain():
     print("🤖 [AI 학습 중] 고랭커 유저 10,000명의 알고리즘 테크트리 데이터를 학습합니다...")
     
     # 고수들이 실력을 쌓아올린 전형적인 커리큘럼 패턴 (Base Patterns)
+    # 고수들이 실력을 쌓아올린 전형적인 커리큘럼 패턴 (확장된 Base Paths)
     base_paths = [
-        ['math', 'implementation', 'data_structures', 'graphs', 'bfs', 'dfs', 'dp'],
-        ['math', 'greedy', 'dp', 'graphs', 'dijkstra'],
-        ['implementation', 'simulation', 'graphs', 'bfs'],
-        ['string', 'parsing', 'data_structures', 'hash_set'],
-        ['math', 'number_theory', 'combinatorics'],
-        ['data_structures', 'stack', 'trees', 'graphs']
+        # 그래프 트리
+        ['graphs', 'bfs', 'dfs', 'connected_component', 'bipartite_graph'],
+        ['graphs', 'dijkstra', 'bellman_ford', 'floyd_warshall'],
+        ['graphs', 'trees', 'mst', 'topological_sorting', 'dag'],
+        # DP (다이나믹 프로그래밍) 트리
+        ['dp', 'dp_1d', 'dp_2d', 'knapsack'],
+        ['dp', 'dp_tree', 'dp_bitfield'],
+        # 수학/정수론 트리
+        ['math', 'number_theory', 'euclidean', 'primality_test', 'sieve'],
+        ['math', 'combinatorics', 'probability'],
+        ['math', 'geometry', 'line_intersection', 'convex_hull'],
+        # 자료구조 트리
+        ['data_structures', 'stack', 'queue', 'deque'],
+        ['data_structures', 'priority_queue', 'heap'],
+        ['data_structures', 'trees', 'segment_tree', 'lazyprop'],
+        ['data_structures', 'hash_set', 'disjoint_set'],
+        # 문자열 트리
+        ['string', 'parsing', 'regex'],
+        ['string', 'kmp', 'trie', 'aho_corasick'],
+        # 기타 기본기 및 심화
+        ['implementation', 'simulation', 'bruteforcing', 'backtracking'],
+        ['greedy', 'sorting', 'binary_search', 'two_pointer', 'sliding_window']
     ]
     
     # 이 패턴들을 바탕으로 10,000명의 가상 풀이 로그(노이즈 포함)를 생성
@@ -47,20 +65,42 @@ def train_markov_chain():
 
 
 # =====================================================================
-# STEP 2. [데이터 수집] Solved.ac API 통신 파트
+# STEP 2. [데이터 수집] Solved.ac API 통신 파트 (Cloudflare 우회 버전)
 # =====================================================================
 def get_user_data(handle):
-    # 1. 티어 조회
-    tier_url = f"https://solved.ac/api/v3/user/show?handle={handle}"
-    tier_res = requests.get(tier_url, headers={"Accept": "application/json"})
-    tier_level = tier_res.json().get('tier', 1) if tier_res.status_code == 200 else 1
+    # 일반 requests 대신 cloudscraper 객체 생성
+    scraper = cloudscraper.create_scraper() 
     
-    # 2. 태그별 풀이 통계 조회
-    stats_url = f"https://solved.ac/api/v3/user/problem_tag_stats?handle={handle}"
-    stats_res = requests.get(stats_url, headers={"Accept": "application/json"})
-    items_list = stats_res.json().get('items', []) if stats_res.status_code == 200 else []
-    
-    user_solved = {item['tag']['key']: item['solved'] for item in items_list}
+    tier_level = 1
+    user_solved = {}
+
+    # 1. 티어 조회 시도
+    try:
+        tier_url = f"https://solved.ac/api/v3/user/show?handle={handle}"
+        tier_res = scraper.get(tier_url, timeout=5) # requests.get -> scraper.get 으로 변경
+        
+        if tier_res.status_code == 200:
+            tier_level = tier_res.json().get('tier', 1)
+        else:
+            print(f"⚠️ [티어 조회 실패] 상태 코드: {tier_res.status_code}")
+            
+    except Exception as e:
+        print(f"🚨 [티어 조회 에러]: {e}")
+
+    # 2. 태그별 풀이 통계 조회 시도
+    try:
+        stats_url = f"https://solved.ac/api/v3/user/problem_tag_stats?handle={handle}"
+        stats_res = scraper.get(stats_url, timeout=5) # requests.get -> scraper.get 으로 변경
+        
+        if stats_res.status_code == 200:
+            items_list = stats_res.json().get('items', [])
+            user_solved = {item['tag']['key']: item['solved'] for item in items_list}
+        else:
+            print(f"⚠️ [통계 조회 실패] 상태 코드: {stats_res.status_code}")
+            
+    except Exception as e:
+        print(f"🚨 [통계 조회 에러]: {e}")
+
     return tier_level, user_solved
 
 
@@ -132,4 +172,4 @@ def predict_next_step(handle):
 # =====================================================================
 # 🚀 실행
 # =====================================================================
-predict_next_step("rhzn5512") # 사용자님의 백준 아이디를 넣어주세요!
+predict_next_step("ktr040415") # 사용자님의 백준 아이디를 넣어주세요!
