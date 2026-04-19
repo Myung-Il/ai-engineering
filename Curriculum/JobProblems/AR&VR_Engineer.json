@@ -1,0 +1,3671 @@
+[
+  {
+    "question_id": 1,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "definition",
+    "category": "Graphics",
+    "subcategory": "Coordinate Systems",
+    "skills_required": ["3D Math", "Linear Algebra"],
+    "scenario": "3D 게임 엔진에서 오브젝트의 위치를 계산할 때 다양한 좌표계가 사용됩니다.",
+    "question": "로컬 좌표계(Local Space)의 정점 데이터를 월드 좌표계(World Space)로 변환하기 위해 곱해야 하는 행렬의 명칭은 무엇입니까?",
+    "choices": ["View Matrix", "Projection Matrix", "Model Matrix", "Normal Matrix"],
+    "correct_answer": "Model Matrix",
+    "explanation": "Model Matrix(또는 World Matrix)는 오브젝트 고유의 좌표계(Local/Model Space)를 전체 씬의 기준이 되는 World Space로 변환하는 데 사용됩니다."
+  },
+  {
+    "question_id": 2,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "concept_check",
+    "category": "Graphics",
+    "subcategory": "Rotation",
+    "skills_required": ["3D Math"],
+    "scenario": "3D 공간에서 회전을 구현할 때 오일러 각(Euler Angles)의 한계를 극복해야 합니다.",
+    "question": "오일러 각을 사용하여 세 축에 대해 회전을 순차적으로 적용할 때, 두 축이 겹쳐져 한 축의 자유도를 상실하는 현상을 무엇이라 합니까?",
+    "choices": ["Deadlock", "Gimbal Lock", "Axis Alignment", "Drift Error"],
+    "correct_answer": "Gimbal Lock",
+    "explanation": "짐벌 락(Gimbal Lock)은 오일러 각 방식에서 두 회전축이 일치하게 되어 3차원 공간에서의 자유도 하나를 잃어버리는 현상을 말하며, 쿼터니언을 통해 해결할 수 있습니다."
+  },
+  {
+    "question_id": 3,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "misconception_detection",
+    "category": "Rendering",
+    "subcategory": "Culling",
+    "skills_required": ["Rendering Pipeline"],
+    "scenario": "VR 헤드셋의 렌더링 성능을 최적화하기 위해 컬링(Culling) 기술을 검토 중입니다.",
+    "question": "프러스텀 컬링(Frustum Culling)에 대한 설명 중 잘못된 것은 무엇입니까?",
+    "choices": [
+      "카메라의 시야 범위(View Frustum) 밖에 있는 오브젝트는 렌더링에서 제외한다.",
+      "CPU 연산 부하를 줄이기 위해 사용된다.",
+      "오브젝트가 다른 큰 물체에 가려져 보이지 않을 때 이를 제거하는 기술이다.",
+      "바운딩 박스(Bounding Box) 연산을 통해 빠르게 판별할 수 있다."
+    ],
+    "correct_answer": "오브젝트가 다른 큰 물체에 가려져 보이지 않을 때 이를 제거하는 기술이다.",
+    "explanation": "다른 물체에 가려진 것을 제거하는 기술은 오클루전 컬링(Occlusion Culling)이며, 프러스텀 컬링은 카메라 가시 범위(절두체) 내에 있는지만을 판단합니다."
+  },
+  {
+    "question_id": 4,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "true_false",
+    "category": "AR Tech",
+    "subcategory": "Tracking",
+    "skills_required": ["ARCore", "ARKit"],
+    "scenario": "AR Foundation을 이용해 모바일 증강 현실 앱을 개발하려고 합니다.",
+    "question": "SLAM(Simultaneous Localization and Mapping) 기술은 사전에 정의된 마커(Marker)가 있어야만 공간의 특징점을 인식할 수 있다. (참/거짓)",
+    "choices": ["참", "거짓"],
+    "correct_answer": "거짓",
+    "explanation": "SLAM은 마커 없이도 주변 환경의 시각적 특징점(Feature Points)과 IMU 데이터를 결합하여 실시간으로 지도 작성과 위치 추정을 동시에 수행합니다."
+  },
+  {
+    "question_id": 5,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "multiple_choice",
+    "category": "Graphics",
+    "subcategory": "Shaders",
+    "skills_required": ["HLSL", "GLSL"],
+    "scenario": "셰이더 개발 시 정점(Vertex)과 픽셀(Pixel) 단계 사이의 데이터 처리를 이해해야 합니다.",
+    "question": "렌더링 파이프라인에서 3D 정점 데이터가 2D 화면 좌표로 변환된 후, 실제 픽셀 데이터로 변환되는 과정을 무엇이라 합니까?",
+    "choices": ["Tessellation", "Rasterization", "Ray Tracing", "Post-processing"],
+    "correct_answer": "Rasterization",
+    "explanation": "래스터화(Rasterization)는 기하학적 형태를 픽셀 단위의 이미지로 변환하는 핵심 단계입니다."
+  },
+  {
+    "question_id": 6,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "code_completion",
+    "category": "Programming",
+    "subcategory": "C# Scripting",
+    "skills_required": ["Unity", "C#"],
+    "scenario": "Unity에서 VR 사용자가 특정 버튼을 눌렀을 때 레이저 포인터 방향으로 오브젝트를 이동시키려 합니다.",
+    "question": "빈칸에 들어갈 코드로 가장 적절한 것은?\n\nVector3 targetPos = transform.position + (transform.forward * distance);\ntransform.position = Vector3.________(transform.position, targetPos, Time.deltaTime * speed);",
+    "choices": ["Dot", "Cross", "Lerp", "Normalize"],
+    "correct_answer": "Lerp",
+    "explanation": "두 지점 사이를 매끄럽게 선형 보간하며 이동시키기 위해서는 Vector3.Lerp 함수를 사용합니다."
+  },
+  {
+    "question_id": 7,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "code_output_prediction",
+    "category": "Math",
+    "subcategory": "Vectors",
+    "skills_required": ["Linear Algebra"],
+    "scenario": "두 벡터의 관계를 계산하여 조명 효과를 결정하려 합니다.",
+    "question": "두 단위 벡터(Unit Vector) A와 B의 내적(Dot Product) 값이 -1일 때, 두 벡터 사이의 각도는?",
+    "choices": ["0도", "45도", "90도", "180도"],
+    "correct_answer": "180도",
+    "explanation": "내적 값은 cos(theta)와 비례하며, cos(180도)가 -1이므로 두 벡터는 서로 정반대 방향을 가리킵니다."
+  },
+  {
+    "question_id": 8,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "debugging",
+    "category": "Development",
+    "subcategory": "Unity Basics",
+    "skills_required": ["Unity"],
+    "scenario": "Unity에서 스크립트를 작성했는데, 실행 시 'NullReferenceException'이 발생하며 UI 텍스트가 업데이트되지 않습니다.",
+    "question": "이 에러가 발생하는 가장 흔한 원인은 무엇입니까?",
+    "choices": [
+      "메모리가 부족하여 인스턴스를 생성하지 못함",
+      "인스펙터(Inspector) 창에서 해당 UI 컴포넌트 변수에 오브젝트를 할당하지 않음",
+      "스크립트 파일명이 클래스 이름과 다름",
+      "Update 함수 내에서 너무 많은 연산을 수행함"
+    ],
+    "correct_answer": "인스펙터(Inspector) 창에서 해당 UI 컴포넌트 변수에 오브젝트를 할당하지 않음",
+    "explanation": "NullReferenceException은 선언된 참조 변수가 실제 객체를 가리키고 있지 않을 때 발생하며, Unity에서는 드래그 앤 드롭으로 참조를 연결하지 않은 경우가 많습니다."
+  },
+  {
+    "question_id": 9,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "error_analysis",
+    "category": "Rendering",
+    "subcategory": "Z-Fighting",
+    "skills_required": ["Graphics"],
+    "scenario": "VR 환경에서 멀리 있는 두 개의 평면(Plane) 오브젝트가 겹쳐 보이면서 깜빡거리는 현상이 발생합니다.",
+    "question": "이 현상의 명칭과 주된 원인은 무엇입니까?",
+    "choices": [
+      "Aliasing - 해상도 부족",
+      "Z-Fighting - Depth Buffer의 정밀도 한계",
+      "Screen Tearing - 수직 동기화(V-Sync) 미비",
+      "Ghosting - 높은 지연 시간(Latency)"
+    ],
+    "correct_answer": "Z-Fighting - Depth Buffer의 정밀도 한계",
+    "explanation": "Z-Fighting은 두 폴리곤의 거리가 매우 가까울 때 뎁스 버퍼의 부동 소수점 정밀도 문제로 인해 어느 것이 앞에 있는지 판단하지 못해 발생하는 깜빡임 현상입니다."
+  },
+  {
+    "question_id": 10,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "log_analysis",
+    "category": "Development",
+    "subcategory": "Build",
+    "skills_required": ["Android", "SDK"],
+    "scenario": "안드로이드 기반 VR 기기용 빌드 중 다음 로그가 출력되며 실패했습니다: 'CommandInvokationFailure: Unable to merge android manifests.'",
+    "question": "이 문제를 해결하기 위해 가장 먼저 확인해야 할 사항은?",
+    "choices": [
+      "C# 코드의 문법 오류",
+      "3D 모델의 폴리곤 개수 초과",
+      "서로 다른 플러그인 간의 AndroidManifest.xml 설정 충돌",
+      "VR 헤드셋의 배터리 잔량"
+    ],
+    "correct_answer": "서로 다른 플러그인 간의 AndroidManifest.xml 설정 충돌",
+    "explanation": "Manifest merge 오류는 주로 여러 SDK를 사용할 때 각 SDK가 요구하는 권한이나 설정이 충돌하여 발생합니다."
+  },
+  {
+    "question_id": 11,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "junior_level",
+    "question_type": "configuration_problem",
+    "category": "AR Tech",
+    "subcategory": "AR Foundation",
+    "skills_required": ["Unity", "ARCore"],
+    "scenario": "AR 앱을 실행했을 때 카메라 화면은 나오지만 바닥 인식이 전혀 되지 않고 있습니다.",
+    "question": "AR Session과 AR Session Origin 설정이 올바르다고 가정할 때, 가장 먼저 확인해야 할 컴포넌트 설정은?",
+    "choices": [
+      "Light Estimation 모드 활성화 여부",
+      "AR Plane Manager의 Detection Mode가 Everything 또는 Horizontal로 설정되어 있는지 확인",
+      "Mesh Filter의 Mesh 데이터 존재 여부",
+      "Audio Listener 컴포넌트 부착 여부"
+    ],
+    "correct_answer": "AR Plane Manager의 Detection Mode가 Everything 또는 Horizontal로 설정되어 있는지 확인",
+    "explanation": "바닥 인식을 위해서는 AR Plane Manager 컴포넌트가 활성화되어 있어야 하며, 적절한 평면 탐지 모드가 설정되어야 합니다."
+  },
+  {
+    "question_id": 12,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "junior_level",
+    "question_type": "root_cause_analysis",
+    "category": "VR Tech",
+    "subcategory": "Interaction",
+    "skills_required": ["Unity", "Physics"],
+    "scenario": "VR 컨트롤러로 물체를 잡으려고 시도하는데, 물체에 손이 닿아도 아무런 반응이 없습니다. 레이캐스트(Raycast) 기반 시스템을 사용 중입니다.",
+    "question": "물체에 Layer가 올바르게 설정되어 있다면, 다음 중 가장 가능성 높은 원인은?",
+    "choices": [
+      "물체에 Rigidbody가 없음",
+      "물체에 Collider가 부착되어 있지 않음",
+      "오브젝트의 Scale이 1,1,1이 아님",
+      "Update 대신 FixedUpdate를 사용함"
+    ],
+    "correct_answer": "물체에 Collider가 부착되어 있지 않음",
+    "explanation": "레이캐스트는 물리적 충돌체(Collider)를 탐색하므로, 시각적으로는 보여도 Collider가 없으면 인식이 불가능합니다."
+  },
+  {
+    "question_id": 13,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "junior_level",
+    "question_type": "data_interpretation",
+    "category": "Performance",
+    "subcategory": "Profiling",
+    "skills_required": ["Unity Profiler"],
+    "scenario": "Unity Profiler의 CPU Usage 항목을 분석 중입니다. 'Gfx.WaitForPresentOnGfxThread' 항목이 매우 높게 나타나고 있습니다.",
+    "question": "이 지표가 의미하는 성능 병목의 원인은 무엇입니까?",
+    "choices": [
+      "CPU 로직 연산이 너무 많음",
+      "GPU에서 렌더링 작업이 지연되어 CPU가 대기 중임",
+      "메모리 가비지 컬렉션(GC) 발생",
+      "네트워크 패킷 손실"
+    ],
+    "correct_answer": "GPU에서 렌더링 작업이 지연되어 CPU가 대기 중임",
+    "explanation": "Gfx.WaitForPresent는 CPU가 다음 프레임을 처리하기 전에 GPU가 현재 프레임 렌더링을 마칠 때까지 기다리고 있음을 나타내며, 이는 GPU 병목(GPU Bound) 상황임을 뜻합니다."
+  },
+  {
+    "question_id": 14,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "junior_level",
+    "question_type": "scenario_based",
+    "category": "AR Tech",
+    "subcategory": "Occlusion",
+    "skills_required": ["AR Foundation", "Depth API"],
+    "scenario": "가상 가구가 실제 방의 벽 뒤로 숨겨지지 않고 벽 앞을 뚫고 나오는 문제가 발생하여 사용자가 불평하고 있습니다.",
+    "question": "이러한 '가상 오브젝트가 실제 지형지물에 의해 가려지는 현상'을 구현하기 위해 도입해야 하는 기능은?",
+    "choices": [
+      "AR Light Estimation",
+      "AR Occlusion (Depth API)",
+      "Object Tracking",
+      "Face Tracking"
+    ],
+    "correct_answer": "AR Occlusion (Depth API)",
+    "explanation": "AR Occlusion은 깊이 정보를 이용하여 실제 환경의 물체 뒤로 가상 물체를 숨겨 현실감을 높여주는 기능입니다."
+  },
+  {
+    "question_id": 15,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "junior_level",
+    "question_type": "real_world_case",
+    "category": "Deployment",
+    "subcategory": "Asset Management",
+    "skills_required": ["Addressables", "Memory Management"],
+    "scenario": "모바일 AR 앱의 초기 로딩 속도가 너무 느리고 앱 용량이 너무 커서 스토어 등록 거절 위기에 처했습니다.",
+    "question": "리소스를 효율적으로 관리하고 초기 다운로드 용량을 줄이기 위해 가장 권장되는 기술은?",
+    "choices": [
+      "Resources 폴더에 모든 에셋 저장",
+      "Addressable Asset System (어드레서블)",
+      "PlayerPrefs를 이용한 데이터 압축",
+      "모든 텍스처의 해상도를 256x256으로 강제 하향"
+    ],
+    "correct_answer": "Addressable Asset System (어드레서블)",
+    "explanation": "어드레서블 시스템을 사용하면 에셋을 번들화하여 클라우드에서 필요할 때 다운로드하도록 관리할 수 있어 초기 설치 용량과 메모리 관리에 유리합니다."
+  },
+  {
+    "question_id": 16,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "algorithm_design",
+    "category": "Optimization",
+    "subcategory": "LOD",
+    "skills_required": ["LOD", "Draw Calls"],
+    "scenario": "대규모 가상 도시 프로젝트에서 수천 개의 나무 오브젝트를 렌더링해야 하며, 프레임 드랍이 심각합니다.",
+    "question": "성능 최적화를 위해 LOD(Level of Detail)와 함께 적용했을 때 가장 효과적인 렌더링 기법은?",
+    "choices": [
+      "Dynamic Batching",
+      "GPU Instancing",
+      "Software Occlusion Culling",
+      "Screen Space Reflection"
+    ],
+    "correct_answer": "GPU Instancing",
+    "explanation": "동일한 메시와 재질을 가진 수많은 물체를 그릴 때는 GPU Instancing을 통해 한 번의 Draw Call로 수많은 인스턴스를 처리하는 것이 가장 효율적입니다."
+  },
+  {
+    "question_id": 17,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "performance_optimization",
+    "category": "Graphics",
+    "subcategory": "Shaders",
+    "skills_required": ["Shader Optimization", "Mobile GPU"],
+    "scenario": "모바일 VR 기기에서 커스텀 셰이더를 사용한 후 발열이 급증하고 프레임이 60fps에서 30fps로 떨어졌습니다. 셰이더 내부에서 `pow()`, `sin()`, `cos()` 연산을 매 픽셀마다 대량으로 수행하고 있습니다.",
+    "question": "성능 개선을 위해 가장 먼저 고려해야 할 리팩토링 전략은?",
+    "choices": [
+      "정밀도를 float에서 half 또는 fixed로 변경하고, 복잡한 수학 연산을 Lookup Texture(LUT)로 대체한다.",
+      "픽셀 셰이더의 코드를 그대로 정점 셰이더로 옮긴다.",
+      "Post-processing 효과를 추가하여 화면을 흐리게 처리한다.",
+      "Alpha Testing을 대신하여 Alpha Blending을 사용한다."
+    ],
+    "correct_answer": "정밀도를 float에서 half 또는 fixed로 변경하고, 복잡한 수학 연산을 Lookup Texture(LUT)로 대체한다.",
+    "explanation": "모바일 GPU는 부동 소수점 정밀도에 민감하며, 복잡한 연산은 미리 계산된 텍스처(LUT)를 참조하는 방식이 연산 부하를 줄이는 데 효과적입니다."
+  },
+  {
+    "question_id": 18,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "performance_estimation",
+    "category": "VR Tech",
+    "subcategory": "Latencies",
+    "skills_required": ["Motion-to-Photon Latency"],
+    "scenario": "VR 사용자가 머리를 움직일 때 화면이 늦게 따라오는 현상(Motion-to-Photon Latency) 때문에 멀미를 호소하고 있습니다.",
+    "question": "일반적으로 쾌적한 VR 경험을 위해 권장되는 Motion-to-Photon 지연 시간의 최대 임계값은 대략 얼마입니까?",
+    "choices": ["100ms", "50ms", "20ms", "5ms"],
+    "correct_answer": "20ms",
+    "explanation": "Motion-to-Photon 지연 시간이 20ms 이하로 유지되어야 사용자가 시각적 지연을 인지하지 못하고 멀미(VR Sickness)를 줄일 수 있습니다."
+  },
+  {
+    "question_id": 19,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "capacity_planning",
+    "category": "Networking",
+    "subcategory": "Multi-user VR",
+    "skills_required": ["Multiplayer", "Bandwidth"],
+    "scenario": "동시 접속자 50명이 한 방에 모여 상호작용하는 VR 메타버스 공간을 기획하고 있습니다.",
+    "question": "네트워크 트래픽을 최적화하기 위해, 거리가 먼 플레이어의 위치 업데이트 주기를 낮추는 기술의 명칭은?",
+    "choices": [
+      "Dead Reckoning",
+      "Network Relevance / Interest Management",
+      "Client-side Prediction",
+      "Lag Compensation"
+    ],
+    "correct_answer": "Network Relevance / Interest Management",
+    "explanation": "관심 영역 관리(Interest Management)를 통해 각 클라이언트에게 필요한 데이터만 필터링하여 전송함으로써 대역폭과 CPU 연산을 절약할 수 있습니다."
+  },
+  {
+    "question_id": 20,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "scalability_planning",
+    "category": "Cloud AR",
+    "subcategory": "Content Delivery",
+    "skills_required": ["Cloud Storage", "CDN"],
+    "scenario": "전 세계 사용자를 대상으로 하는 AR 마케팅 앱을 출시하려 합니다. 각 지역마다 최적의 속도로 고용량 3D 모델(약 50MB)을 제공해야 합니다.",
+    "question": "가장 적절한 아키텍처 구성은?",
+    "choices": [
+      "메인 DB 서버에 직접 3D 모델 바이너리 저장",
+      "클라우드 오브젝트 스토리지(S3 등)와 CDN(CloudFront 등)을 결합한 에셋 배포",
+      "앱 빌드 시 모든 에셋을 포함하여 배포",
+      "사용자가 접속할 때마다 실시간으로 서버에서 FBX를 파싱하여 전송"
+    ],
+    "correct_answer": "클라우드 오브젝트 스토리지(S3 등)와 CDN(CloudFront 등)을 결합한 에셋 배포",
+    "explanation": "전 세계적인 확장성을 보장하고 지연 시간을 최소화하기 위해서는 CDN을 통해 지리적으로 가까운 엣지 로케이션에서 에셋을 제공해야 합니다."
+  },
+  {
+    "question_id": 21,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "system_design",
+    "category": "Interaction",
+    "subcategory": "Input System",
+    "skills_required": ["OpenXR", "Action-based Input"],
+    "scenario": "다양한 제조사의 VR 기기(Oculus, Vive, WMR)를 동시에 지원해야 하는 멀티 플랫폼 VR 앱을 개발해야 합니다.",
+    "question": "하드웨어에 종속되지 않고 입력을 처리하기 위해 가장 권장되는 표준 API는?",
+    "choices": ["Oculus Integration", "SteamVR SDK", "OpenXR", "Windows Mixed Reality SDK"],
+    "correct_answer": "OpenXR",
+    "explanation": "OpenXR은 크로스 플랫폼 VR/AR 산업 표준으로, 한 번의 구현으로 다양한 벤더의 장치를 지원할 수 있도록 설계되었습니다."
+  },
+  {
+    "question_id": 22,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "architecture_decision",
+    "category": "AR Tech",
+    "subcategory": "Persistence",
+    "skills_required": ["Cloud Anchors", "VPS"],
+    "scenario": "특정 실제 카페 내부에 가상 메모를 남기면, 며칠 뒤 다른 사용자가 방문했을 때 동일한 위치에서 해당 메모를 볼 수 있어야 합니다.",
+    "question": "이 기능을 구현하기 위해 가장 핵심적으로 사용해야 할 기술은?",
+    "choices": [
+      "GPS 기반 위치 서비스",
+      "Azure Spatial Anchors 또는 ARCore Cloud Anchors",
+      "로컬 장치 저장소(PlayerPrefs)",
+      "QR 마커 부착"
+    ],
+    "correct_answer": "Azure Spatial Anchors 또는 ARCore Cloud Anchors",
+    "explanation": "클라우드 앵커 기술은 특정 공간의 특징 데이터를 클라우드에 공유하여, 서로 다른 장치나 시간에 관계없이 동일한 좌표계를 유지할 수 있게 해줍니다."
+  },
+  {
+    "question_id": 23,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "design_alternative_comparison",
+    "category": "Rendering",
+    "subcategory": "Lighting",
+    "skills_required": ["Lightmapping", "Real-time Lighting"],
+    "scenario": "모바일 VR의 성능을 최적화하기 위해 조명 설정을 변경하려 합니다. 환경 변화가 거의 없는 고정된 실내 씬입니다.",
+    "question": "Real-time Lighting과 비교했을 때 Baked Lightmap을 사용하는 것의 트레이드오프는?",
+    "choices": [
+      "실시간 연산량은 줄어들지만 빌드 시간이 늘어나고 정적 물체에만 그림자가 적용된다.",
+      "실시간 그림자 품질은 높아지지만 메모리 사용량이 극도로 줄어든다.",
+      "동적 물체에 대해 완벽한 조영 효과를 제공하지만 GPU 부하가 크다.",
+      "설정이 간편하지만 런타임에 드로우 콜이 크게 증가한다."
+    ],
+    "correct_answer": "실시간 연산량은 줄어들지만 빌드 시간이 늘어나고 정적 물체에만 그림자가 적용된다.",
+    "explanation": "베이크된 라이트맵은 조명 데이터를 텍스처에 미리 계산해두어 런타임 성능은 매우 뛰어나지만, 움직이는 물체에는 대응하기 어렵고 텍스처 메모리를 차지합니다."
+  },
+  {
+    "question_id": 24,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Networking",
+    "subcategory": "Sync",
+    "skills_required": ["UDP", "TCP"],
+    "scenario": "실시간 VR 격투 게임에서 플레이어의 손 위치를 동기화해야 합니다.",
+    "question": "TCP 대신 UDP(또는 Reliable UDP)를 사용하는 주된 이유는 무엇입니까?",
+    "choices": [
+      "데이터 손실 시 재전송을 보장하여 무결성을 높이기 위해",
+      "패킷 오더링을 강제하여 데이터 순서를 맞추기 위해",
+      "지연 시간(Latency)을 최소화하고 오래된 패킷을 폐기하기 위해",
+      "보안성이 뛰어나기 때문에"
+    ],
+    "correct_answer": "지연 시간(Latency)을 최소화하고 오래된 패킷을 폐기하기 위해",
+    "explanation": "실시간 게임에서는 신속함이 중요하므로, 유실된 이전 위치 데이터를 재전송받느라 대기하는 것보다 최신 데이터를 빨리 받는 것이 유리합니다."
+  },
+  {
+    "question_id": 25,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "risk_assessment",
+    "category": "VR Tech",
+    "subcategory": "Health and Safety",
+    "skills_required": ["User Experience", "Safety"],
+    "scenario": "사용자가 VR 내에서 아주 빠른 속도로 질주하거나 급회전하는 콘텐츠를 제작 중입니다.",
+    "question": "이 상황에서 발생할 수 있는 가장 큰 리스크와 이를 완화하기 위한 기법은?",
+    "choices": [
+      "배터리 과소모 - 화면 밝기 고정",
+      "사이버 멀미(Cybbersickness) - 이동 시 시야 범위를 좁히는 비네팅(Vignetting) 효과 적용",
+      "데이터 손실 - 클라우드 자동 저장",
+      "컨트롤러 연결 해제 - 진동 피드백 강화"
+    ],
+    "correct_answer": "사이버 멀미(Cybbersickness) - 이동 시 시야 범위를 좁히는 비네팅(Vignetting) 효과 적용",
+    "explanation": "시각적 이동과 실제 평형 감각의 불일치로 인한 멀미를 줄이기 위해, 움직임이 심할 때 주변 시야를 가리는 비네팅 효과가 널리 쓰입니다."
+  },
+  {
+    "question_id": 26,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "Rendering",
+    "subcategory": "Render Pipeline",
+    "skills_required": ["URP", "HDRP", "Custom Render Pass"],
+    "scenario": "고객사가 Meta Quest 3에서 실행될 하이엔드 건축 시각화 VR 솔루션을 요청했습니다. 실시간 빛 반사와 고품질 그림자가 필수적입니다.",
+    "question": "기본 렌더 파이프라인(Built-in) 대신 URP(Universal Render Pipeline)를 선택하고 커스텀 Scriptable Render Pass를 설계해야 하는 가장 큰 이유는?",
+    "choices": [
+      "URP가 HDRP보다 무조건 그래픽 품질이 높기 때문에",
+      "모바일 타겟 기기에서 멀티 렌더 타겟과 SRP Batcher를 활용해 드로우 콜을 줄이면서도 렌더링 과정을 제어하기 위해",
+      "C#이 아닌 C++로 셰이더를 작성하기 위해",
+      "VR 전용 엔진이기 때문에"
+    ],
+    "correct_answer": "모바일 타겟 기기에서 멀티 렌더 타겟과 SRP Batcher를 활용해 드로우 콜을 줄이면서도 렌더링 과정을 제어하기 위해",
+    "explanation": "URP는 모바일 및 VR 환경에서 성능 최적화에 최적화되어 있으며, SRP Batcher를 통해 CPU 오버헤드를 크게 줄일 수 있습니다."
+  },
+  {
+    "question_id": 27,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Cloud Rendering",
+    "subcategory": "Pixel Streaming",
+    "skills_required": ["WebRTC", "NVIDIA CloudXR"],
+    "scenario": "모바일 하드웨어 사양으로는 도저히 구동 불가능한 수억 개의 폴리곤을 가진 기계 설비 모델을 AR로 현장에서 점검해야 합니다.",
+    "question": "이 문제를 해결하기 위해 도입할 '원격 렌더링' 아키텍처의 핵심 동작 원리는?",
+    "choices": [
+      "모바일 기기에서 폴리곤을 실시간으로 단순화(Simplification)하여 렌더링",
+      "고성능 GPU 서버에서 영상을 렌더링한 후 WebRTC 등을 통해 결과 프레임을 클라이언트로 스트리밍",
+      "3D 모델 데이터를 잘게 쪼개어 부분적으로 로드",
+      "모바일 RAM을 가상 메모리로 확장하여 사용"
+    ],
+    "correct_answer": "고성능 GPU 서버에서 영상을 렌더링한 후 WebRTC 등을 통해 결과 프레임을 클라이언트로 스트리밍",
+    "explanation": "클라우드 렌더링(또는 픽셀 스트리밍) 기술은 연산을 서버에서 처리하고 결과 이미지만 전송하므로 클라이언트 사양 제약을 극복할 수 있습니다."
+  },
+  {
+    "question_id": 28,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "failure_mode_analysis",
+    "category": "Performance",
+    "subcategory": "Thermal Throttling",
+    "skills_required": ["Profiling", "Hardware Constraint"],
+    "scenario": "모바일 AR 앱이 실행 후 10분까지는 60fps를 유지하다가, 그 이후 갑자기 20fps 이하로 고정되며 기기가 매우 뜨거워집니다.",
+    "question": "이 현상의 근본 원인과 시니어 엔지니어로서 제시할 대응 전략은?",
+    "choices": [
+      "메모리 누수 - 가비지 컬렉터 강제 호출",
+      "Thermal Throttling(발열 제어) - 렌더링 해상도 동적 조절 및 타겟 프레임 제한",
+      "네트워크 혼잡 - 로컬 캐싱 강화",
+      "셰이더 컴파일 지연 - 셰이더 변동 최소화"
+    ],
+    "correct_answer": "Thermal Throttling(발열 제어) - 렌더링 해상도 동적 조절 및 타겟 프레임 제한",
+    "explanation": "모바일 기기는 발열이 일정 수준을 넘으면 하드웨어 손상을 막기 위해 클럭 성능을 강제로 낮춥니다. 이를 방지하기 위해 동적 해상도 스케일링 등을 통해 부하를 관리해야 합니다."
+  },
+  {
+    "question_id": 29,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "incident_response",
+    "category": "Operation",
+    "subcategory": "Deployment Failure",
+    "skills_required": ["CI/CD", "Asset Bundles"],
+    "scenario": "앱 업데이트 후 특정 기종의 VR 헤드셋에서만 화면이 분홍색(Pink)으로 출력된다는 리포트가 대량 발생했습니다.",
+    "question": "장애 원인을 추론하고 즉시 조치해야 할 사항은?",
+    "choices": [
+      "사운드 리소스 손상 - 오디오 설정 초기화",
+      "셰이더 변형(Shader Variant) 누락으로 인한 폴백(Fallback) 실패 - 해당 타겟용 셰이더 포함 재빌드",
+      "네트워크 속도 저하 - 서버 용량 증설",
+      "사용자 기기 고장 - 하드웨어 교체 권고"
+    ],
+    "correct_answer": "셰이더 변형(Shader Variant) 누락으로 인한 폴백(Fallback) 실패 - 해당 타겟용 셰이더 포함 재빌드",
+    "explanation": "Unity 등에서 특정 타겟이나 그래픽 API에 맞는 셰이더 변형이 포함되지 않으면 에러를 의미하는 핑크색 마젠타 색상으로 렌더링됩니다."
+  },
+  {
+    "question_id": 30,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "security_analysis",
+    "category": "Privacy",
+    "subcategory": "AR Data",
+    "skills_required": ["Data Privacy", "Computer Vision"],
+    "scenario": "엔터프라이즈 AR 솔루션 개발 시, 카메라 영상 데이터가 외부 서버로 전송되어 사생활 및 보안 침해 우려가 제기되었습니다.",
+    "question": "시니어 엔지니어로서 제안할 가장 안전한 데이터 처리 방식은?",
+    "choices": [
+      "모든 영상을 암호화하여 서버로 전송",
+      "카메라 영상을 전송하지 않고 기기 내부(On-device)에서만 특징점 추출 및 공간 계산 수행",
+      "사용자에게 정보 수집 동의만 받고 그대로 진행",
+      "저해상도 흑백 영상으로 변환하여 전송"
+    ],
+    "correct_answer": "카메라 영상을 전송하지 않고 기기 내부(On-device)에서만 특징점 추출 및 공간 계산 수행",
+    "explanation": "개인 정보 보호를 위해 원본 이미지 대신 수치화된 특징점 데이터만 사용하거나 온디바이스 처리를 수행하는 것이 업계 표준입니다."
+  },
+  {
+    "question_id": 31,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "definition",
+    "category": "Graphics",
+    "subcategory": "Materials",
+    "skills_required": ["PBR"],
+    "scenario": "최근 3D 렌더링에서 물리 기반 렌더링(PBR)이 널리 사용됩니다.",
+    "question": "PBR 워크플로우에서 표면의 반사율과 거칠기를 나타내는 주요 속성 두 가지는 무엇입니까?",
+    "choices": ["Diffuse, Ambient", "Specular, Emissive", "Albedo/Metallic, Roughness", "Opacity, Normal"],
+    "correct_answer": "Albedo/Metallic, Roughness",
+    "explanation": "PBR은 실제 물리 현상을 반영하기 위해 기본 색상(Albedo), 금속성(Metallic), 거칠기(Roughness) 등을 사용합니다."
+  },
+  {
+    "question_id": 32,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "junior_level",
+    "question_type": "debugging",
+    "category": "UI",
+    "subcategory": "Canvas",
+    "skills_required": ["Unity UI"],
+    "scenario": "VR 월드 스페이스 UI 버튼을 클릭하려고 하는데, 클릭 이벤트가 발생하지 않습니다.",
+    "question": "가장 먼저 확인해야 할 컴포넌트 구성 요소는?",
+    "choices": [
+      "Graphic Raycaster 컴포넌트 부착 여부",
+      "UI Text의 폰트 사이즈",
+      "Directional Light의 강도",
+      "Main Camera의 Tag 설정"
+    ],
+    "correct_answer": "Graphic Raycaster 컴포넌트 부착 여부",
+    "explanation": "Unity UI 상호작용을 위해서는 Canvas에 Graphic Raycaster가 있어야 클릭이나 터치 이벤트를 처리할 수 있습니다."
+  },
+  {
+    "question_id": 33,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "cost_optimization",
+    "category": "Cloud",
+    "subcategory": "Asset Hosting",
+    "skills_required": ["Cloud Storage", "Budget Management"],
+    "scenario": "AR 앱의 사용자 급증으로 인해 AWS S3에서 발생하는 에셋 다운로드 비용이 예산을 초과했습니다.",
+    "question": "비용을 절감하기 위해 취해야 할 가장 적절한 조치는?",
+    "choices": [
+      "S3 대신 로컬 서버 구축",
+      "CloudFront(CDN)를 도입하여 엣지 캐싱 활용 및 데이터 전송료 절감",
+      "모든 3D 모델을 저폴리곤으로 교체하여 다시 업로드",
+      "에셋 전송 시 매번 사용자 인증 단계를 추가"
+    ],
+    "correct_answer": "CloudFront(CDN)를 도입하여 엣지 캐싱 활용 및 데이터 전송료 절감",
+    "explanation": "CDN을 사용하면 원본 서버(S3)로의 직접 접근을 줄이고 캐싱된 데이터를 사용하여 전송 효율을 높이고 장기적으로 비용을 줄일 수 있습니다."
+  },
+  {
+    "question_id": 34,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "constraint_optimization",
+    "category": "Hardware",
+    "subcategory": "Display",
+    "skills_required": ["Foveated Rendering", "Eye Tracking"],
+    "scenario": "고해상도 VR 디스플레이에서 90fps를 유지하면서도 렌더링 부하를 획기적으로 줄여야 합니다.",
+    "question": "사용자의 시선이 머무는 중심부만 고해상도로 렌더링하고 주변부는 저해상도로 처리하는 기술은 무엇입니까?",
+    "choices": ["Anti-Aliasing", "Foveated Rendering", "Anisotropic Filtering", "MIP Mapping"],
+    "correct_answer": "Foveated Rendering",
+    "explanation": "포비에이티드 렌더링(Foveated Rendering)은 시선 추적 기술과 결합하여 인간의 시각 특성을 이용한 최적화 기법입니다."
+  },
+  {
+    "question_id": 35,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "monitoring_strategy",
+    "category": "Operation",
+    "subcategory": "Telemetry",
+    "skills_required": ["Analytics", "Performance Tracking"],
+    "scenario": "출시한 AR 앱이 특정 유저들의 기기에서만 유독 앱이 크래시(Crash)된다는 보고가 있습니다.",
+    "question": "원인 파악을 위해 구축해야 할 모니터링 전략 중 가장 효과적인 것은?",
+    "choices": [
+      "매 시간마다 사용자에게 설문조사 발송",
+      "Firebase Crashlytics 또는 Unity Cloud Diagnostics를 연동하여 실시간 호출 스택(Call Stack)과 기기 정보 수집",
+      "서버의 CPU 사용량만 모니터링",
+      "앱 스토어의 리뷰를 수동으로 분석"
+    ],
+    "correct_answer": "Firebase Crashlytics 또는 Unity Cloud Diagnostics를 연동하여 실시간 호출 스택(Call Stack)과 기기 정보 수집",
+    "explanation": "자동화된 크래시 리포팅 도구를 통해 에러 발생 지점과 OS 버전, 기기 모델 등 구체적인 컨텍스트를 파악해야 디버깅이 가능합니다."
+  },
+  {
+    "question_id": 36,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "testing_strategy",
+    "category": "QA",
+    "subcategory": "Automated Testing",
+    "skills_required": ["Unit Testing", "Play Mode Test"],
+    "scenario": "복잡한 상호작용이 많은 VR 프로젝트의 안정성을 확보하기 위해 자동화 테스트를 도입하려 합니다.",
+    "question": "AR/VR의 특성을 고려할 때, '물체가 올바르게 잡히는지'와 같은 로직을 테스트하기 위해 가장 적합한 방식은?",
+    "choices": [
+      "문서 기반 수동 테스트",
+      "Unity Test Framework를 사용한 Play Mode에서의 통합 테스트",
+      "단순한 텍스트 로그 비교 테스트",
+      "코드 정적 분석 도구만 사용"
+    ],
+    "correct_answer": "Unity Test Framework를 사용한 Play Mode에서의 통합 테스트",
+    "explanation": "물리 연산과 프레임 업데이트가 중요한 AR/VR에서는 실제 런타임 상황을 시뮬레이션하는 Play Mode 테스트가 필수적입니다."
+  },
+  {
+    "question_id": 37,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "refactoring_decision",
+    "category": "Architecture",
+    "subcategory": "Code Quality",
+    "skills_required": ["Design Patterns", "Clean Code"],
+    "scenario": "현재 AR 앱의 코드가 특정 제조사 SDK(예: ARCore)에 너무 밀접하게 결합되어 있어, 타사 기기 지원에 어려움을 겪고 있습니다.",
+    "question": "시니어로서 제안할 수 있는 리팩토링 설계 패턴은?",
+    "choices": [
+      "모든 코드를 하나의 거대한 싱글톤(Singleton) 클래스에 넣기",
+      "인터페이스와 추상화 계층을 도입하여 구체적인 SDK 로직을 분리(Strategy Pattern 또는 Bridge Pattern)",
+      "필요할 때마다 복사 붙여넣기로 대응",
+      "SDK 기능을 쓰지 않고 직접 원시 데이터를 처리하는 코드 작성"
+    ],
+    "correct_answer": "인터페이스와 추상화 계층을 도입하여 구체적인 SDK 로직을 분리(Strategy Pattern 또는 Bridge Pattern)",
+    "explanation": "의존성 역전 원칙을 적용하여 상위 로직은 인터페이스에 의존하게 하고, 하위 구현체에서 각 SDK에 맞는 처리를 하도록 설계해야 유지보수가 용이합니다."
+  },
+  {
+    "question_id": 38,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "dependency_analysis",
+    "category": "Deployment",
+    "subcategory": "Package Management",
+    "skills_required": ["UPM", "Git"],
+    "scenario": "여러 AR 프로젝트에서 공통으로 사용되는 'Core Module'을 관리하려 합니다. 한 프로젝트에서 모듈을 수정하면 다른 프로젝트에도 영향이 가되, 버전 관리가 필요합니다.",
+    "question": "Unity 환경에서 가장 효율적인 의존성 관리 방식은?",
+    "choices": [
+      "프로젝트마다 폴더를 직접 복사",
+      "Unity Package Manager(UPM)를 통한 Git URL 또는 Scoped Registry 활용",
+      "서버에서 매번 소스 코드를 다운로드하는 스크립트 작성",
+      "모든 소스를 하나의 거대한 레포지토리에 통합(Mono-repo)만 고집"
+    ],
+    "correct_answer": "Unity Package Manager(UPM)를 통한 Git URL 또는 Scoped Registry 활용",
+    "explanation": "UPM을 사용하면 패키지 단위로 버전을 관리하고 프로젝트 간 코드를 깔끔하게 공유할 수 있습니다."
+  },
+  {
+    "question_id": 39,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "best_practice_selection",
+    "category": "Graphics",
+    "subcategory": "Texture Optimization",
+    "skills_required": ["Texture Compression", "Memory Management"],
+    "scenario": "최신 VR 기기에서 텍스처 메모리 사용량이 너무 많아 앱이 비정상 종료됩니다.",
+    "question": "텍스처 최적화 시 가장 권장되는 압축 포맷 선택 기준은?",
+    "choices": [
+      "무조건 고화질인 PNG 사용",
+      "플랫폼별 하드웨어 가속 압축 포맷(Android는 ASTC, iOS는 PVRTC/ASTC 등) 사용",
+      "JPEG로 변환하여 런타임에 압축 해제",
+      "압축을 전혀 하지 않고 원본 사용"
+    ],
+    "correct_answer": "플랫폼별 하드웨어 가속 압축 포맷(Android는 ASTC, iOS는 PVRTC/ASTC 등) 사용",
+    "explanation": "ASTC와 같은 GPU 친화적 압축 포맷은 메모리 점유율을 대폭 줄이면서도 렌더링 성능을 보장합니다."
+  },
+  {
+    "question_id": 40,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "code_review",
+    "category": "Performance",
+    "subcategory": "Scripting",
+    "skills_required": ["C# Optimization"],
+    "scenario": "팀원의 코드를 리뷰하던 중 Update() 함수 내에서 다음과 같은 코드를 발견했습니다: `void Update() { GameObject.Find('Player').GetComponent<Renderer>().material.color = Color.red; }`",
+    "question": "이 코드의 문제점과 수정 권고 사항은?",
+    "choices": [
+      "문제 없음, 정상적인 코드임",
+      "Find와 GetComponent를 매 프레임 호출하여 오버헤드가 크므로, 변수에 캐싱(Caching)하여 사용 권고",
+      "Color.red 대신 Color.blue 사용 권고",
+      "Update 대신 Start에서 한 번만 호출하도록 강제"
+    ],
+    "correct_answer": "Find와 GetComponent를 매 프레임 호출하여 오버헤드가 크므로, 변수에 캐싱(Caching)하여 사용 권고",
+    "explanation": "GameObject.Find와 GetComponent는 연산 비용이 비싸므로 매 프레임 실행되는 Update문 안에서 사용하면 프레임 드랍의 원인이 됩니다."
+  },
+  {
+    "question_id": 41,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "concept_check",
+    "category": "AR Tech",
+    "subcategory": "Tracking",
+    "skills_required": ["AR Foundation"],
+    "scenario": "AR 앱에서 장치의 위치와 회전을 추적해야 합니다.",
+    "question": "장치의 이동(Translation)과 회전(Rotation)을 모두 포함하는 6자유도를 의미하는 용어는?",
+    "choices": ["3DOF", "6DOF", "9DOF", "12DOF"],
+    "correct_answer": "6DOF",
+    "explanation": "6자유도(Six Degrees of Freedom)는 3축 이동과 3축 회전을 모두 추적하는 것을 의미합니다."
+  },
+  {
+    "question_id": 42,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "junior_level",
+    "question_type": "api_design",
+    "category": "Programming",
+    "subcategory": "Architecture",
+    "skills_required": ["C#", "Events"],
+    "scenario": "VR 사용자가 트리거 버튼을 눌렀을 때 여러 개의 컴포넌트가 동시에 반응해야 하는 시스템을 설계 중입니다.",
+    "question": "컴포넌트 간 결합도를 낮추기 위해 가장 적합한 구현 방식은?",
+    "choices": [
+      "직접적인 참조(Reference) 호출",
+      "델리게이트(Delegate) 또는 이벤트를 활용한 옵저버 패턴(Observer Pattern)",
+      "SendMessage 함수 사용",
+      "모든 기능을 하나의 클래스에 구현"
+    ],
+    "correct_answer": "델리게이트(Delegate) 또는 이벤트를 활용한 옵저버 패턴(Observer Pattern)",
+    "explanation": "이벤트를 사용하면 발신자와 수신자가 서로의 구현 세부 사항을 알 필요 없이 상호작용할 수 있어 유연한 설계가 가능합니다."
+  },
+  {
+    "question_id": 43,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "database_schema_design",
+    "category": "Data Management",
+    "subcategory": "Asset Metadata",
+    "skills_required": ["Database", "Metadata"],
+    "scenario": "수만 개의 AR 에셋을 관리하는 CMS 시스템의 DB 스키마를 설계해야 합니다.",
+    "question": "에셋의 검색 속도와 버전 관리를 위해 반드시 포함되어야 할 필드 조합은?",
+    "choices": [
+      "에셋 바이너리 파일 자체",
+      "ID, 카테고리 태그, 에셋 URL, 버전 번호, 해시(Hash)값",
+      "생성 날짜와 제작자 이름만",
+      "사용자 전화번호"
+    ],
+    "correct_answer": "ID, 카테고리 태그, 에셋 URL, 버전 번호, 해시(Hash)값",
+    "explanation": "ID와 해시값은 에셋의 고유성과 무결성을 확인하는 데 필수적이며, 태그와 버전 번호는 관리 효율성을 높입니다."
+  },
+  {
+    "question_id": 44,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "distributed_system_reasoning",
+    "category": "Networking",
+    "subcategory": "Multi-user Synchronization",
+    "skills_required": ["Network Topology"],
+    "scenario": "100명의 유저가 한 공간에 참여하는 대규모 소셜 VR 서비스를 구축하려고 합니다.",
+    "question": "클라이언트 간 직접 통신(P2P) 방식보다 전용 서버(Dedicated Server) 방식을 선택했을 때의 가장 큰 이점은?",
+    "choices": [
+      "서버 유지 비용이 전혀 들지 않음",
+      "보안 및 월드 상태의 일관성(Authority) 유지에 유리함",
+      "네트워크 지연 시간이 무조건 줄어듦",
+      "클라이언트 개발이 훨씬 단순해짐"
+    ],
+    "correct_answer": "보안 및 월드 상태의 일관성(Authority) 유지에 유리함",
+    "explanation": "서버가 권한을 가짐으로써 부정행위 방지와 다수 참여자 간의 상태 동기화를 더 신뢰성 있게 관리할 수 있습니다."
+  },
+  {
+    "question_id": 45,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "documentation_analysis",
+    "category": "Development",
+    "subcategory": "SDK Updates",
+    "skills_required": ["Migration", "API Changes"],
+    "scenario": "Meta Quest SDK의 메이저 업데이트 로그에서 특정 API가 'Deprecated' 되었으며, 대신 새로운 'Interaction SDK' 사용을 권장하고 있습니다.",
+    "question": "기존 프로젝트를 마이그레이션할 때 가장 먼저 수행해야 할 리스크 관리 단계는?",
+    "choices": [
+      "즉시 모든 코드를 지우고 새로 작성",
+      "변경 사항이 기존 물리 엔진 및 입력 시스템에 미치는 영향도 분석 및 프로토타입 검증",
+      "업데이트를 무시하고 구버전 계속 사용",
+      "팀원들에게 통보 없이 SDK만 교체"
+    ],
+    "correct_answer": "변경 사항이 기존 물리 엔진 및 입력 시스템에 미치는 영향도 분석 및 프로토타입 검증",
+    "explanation": "메이저 SDK 업데이트는 기존 로직을 파괴할 수 있으므로, 영향 범위를 파악하고 작은 단위에서 먼저 검증하는 과정이 필요합니다."
+  },
+    {
+    "question_id": 46,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "definition",
+    "category": "Physics",
+    "subcategory": "Collision Detection",
+    "skills_required": ["Physics", "Raycasting"],
+    "scenario": "VR 사용자가 컨트롤러를 이용해 가상의 레이저 포인터로 메뉴 아이콘을 선택하려고 합니다.",
+    "question": "직선의 시작점과 방향을 정의하여 해당 직선이 3D 공간 상의 충돌체와 교차하는지 판별하는 기술은?",
+    "choices": ["Collision Matrix", "Raycasting", "Frustum Culling", "Baked Lighting"],
+    "correct_answer": "Raycasting",
+    "explanation": "레이캐스팅은 특정 지점에서 광선을 쏘아 오브젝트와 충돌하는 지점을 찾아내는 AR/VR 상호작용의 핵심 기술입니다."
+    },
+    {
+    "question_id": 47,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "concept_check",
+    "category": "Development",
+    "subcategory": "Prefabs",
+    "skills_required": ["Unity"],
+    "scenario": "동일한 디자인의 나무 오브젝트 100개를 숲 씬에 배치한 후, 모든 나무의 잎 색상을 한꺼번에 초록색에서 단풍색으로 바꾸려 합니다.",
+    "question": "하나의 원본을 수정하면 이를 복제한 모든 개체에 변경 사항이 반영되도록 돕는 Unity의 기능은?",
+    "choices": ["Package", "Asset Bundle", "Prefab", "Scene Template"],
+    "correct_answer": "Prefab",
+    "explanation": "프리팹(Prefab)은 재사용 가능한 에셋 시스템으로, 인스턴스화된 여러 오브젝트를 한 번에 관리하고 수정하는 데 용이합니다."
+    },
+    {
+    "question_id": 48,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "misconception_detection",
+    "category": "Math",
+    "subcategory": "Time",
+    "skills_required": ["C#", "Update Loop"],
+    "scenario": "매 프레임마다 물체를 특정 방향으로 이동시키는 코드를 작성 중입니다.",
+    "question": "다음 중 프레임률(FPS)이 다른 기기에서도 물체가 동일한 속도로 이동하게 하려면 곱해야 하는 값에 대한 설명으로 옳은 것은?",
+    "choices": [
+    "Time.fixedDeltaTime은 Update 함수에서만 사용해야 한다.",
+    "Time.deltaTime은 이전 프레임 완수까지 걸린 시간을 초 단위로 나타낸다.",
+    "프레임이 높을수록 Time.deltaTime 값은 커진다.",
+    "속도에 deltaTime을 곱하지 않아도 모든 기기에서 속도는 동일하다."
+    ],
+    "correct_answer": "Time.deltaTime은 이전 프레임 완수까지 걸린 시간을 초 단위로 나타낸다.",
+    "explanation": "Time.deltaTime을 곱해줌으로써 프레임 독립적인(Frame-rate independent) 이동을 구현할 수 있습니다."
+    },
+    {
+    "question_id": 49,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "true_false",
+    "category": "Graphics",
+    "subcategory": "Transparency",
+    "skills_required": ["Rendering"],
+    "scenario": "유리창이나 물 효과를 렌더링하기 위해 투명도를 조절하려 합니다.",
+    "question": "알파 블렌딩(Alpha Blending)은 렌더링 파이프라인에서 불투명(Opaque) 오브젝트보다 먼저 렌더링되어야 한다. (참/거짓)",
+    "choices": ["참", "거짓"],
+    "correct_answer": "거짓",
+    "explanation": "투명한 물체는 뒤에 있는 배경색과 섞여야 하므로, 일반적으로 불투명한 물체들을 먼저 그린 뒤(Depth Write) 나중에 소팅하여 렌더링합니다."
+    },
+    {
+    "question_id": 50,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "multiple_choice",
+    "category": "Graphics",
+    "subcategory": "Post-processing",
+    "skills_required": ["Rendering"],
+    "scenario": "VR 화면의 계단 현상(Aliasing)을 줄여 이미지 경계선을 매끄럽게 만들고 싶습니다.",
+    "question": "다음 중 가장 대표적인 안티앨리어싱(Anti-Aliasing) 기법이 아닌 것은?",
+    "choices": ["MSAA", "FXAA", "TAA", "PBR"],
+    "correct_answer": "PBR",
+    "explanation": "PBR은 물리 기반 렌더링(Physically Based Rendering)을 뜻하며, 나머지는 대표적인 안티앨리어싱 기법들입니다."
+    },
+    {
+    "question_id": 51,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "code_completion",
+    "category": "Programming",
+    "subcategory": "C#",
+    "skills_required": ["C#", "Unity"],
+    "scenario": "사용자가 화면을 터치했을 때 그 위치에서 가상의 물체를 생성하려고 합니다.",
+    "question": "빈칸에 들어갈 에셋 인스턴스화 함수는?\\n\\npublic GameObject objectToSpawn;\\nvoid Spawn() {\\n  **(objectToSpawn, Vector3.zero, Quaternion.identity);\\n}",
+    "choices": ["Create", "New", "Instantiate", "SpawnObject"],
+    "correct_answer": "Instantiate",
+    "explanation": "Unity에서 프리팹이나 오브젝트를 런타임에 생성할 때는 Instantiate 함수를 사용합니다."
+    },
+    {
+    "question_id": 52,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "code_output_prediction",
+    "category": "Math",
+    "subcategory": "Vectors",
+    "skills_required": ["3D Math"],
+    "scenario": "Vector3.forward는 (0, 0, 1)을 나타냅니다.",
+    "question": "Vector3.forward + Vector3.right의 결과 값은?",
+    "choices": ["(1, 1, 1)", "(1, 0, 1)", "(0, 1, 1)", "(1, 1, 0)"],
+    "correct_answer": "(1, 0, 1)",
+    "explanation": "forward(0,0,1)와 right(1,0,0)을 더하면 (1,0,1)이 됩니다."
+    },
+    {
+    "question_id": 53,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "debugging",
+    "category": "Physics",
+    "subcategory": "Trigger",
+    "skills_required": ["Unity Physics"],
+    "scenario": "두 오브젝트가 부딪혔을 때 OnTriggerEnter가 호출되지 않습니다. 두 오브젝트 모두 Collider가 있고, 그 중 하나는 'Is Trigger'가 체크되어 있습니다.",
+    "question": "이벤트가 발생하지 않는 가장 유력한 원인은?",
+    "choices": [
+    "두 물체 모두 'Is Trigger'가 체크되어야 함",
+    "적어도 하나의 물체에 Rigidbody 컴포넌트가 없음",
+    "두 물체의 태그가 다름",
+    "카메라가 물체를 비추고 있지 않음"
+    ],
+    "correct_answer": "적어도 하나의 물체에 Rigidbody 컴포넌트가 없음",
+    "explanation": "Unity 물리 엔진에서 충돌이나 트리거 이벤트를 감지하려면 최소 한쪽에는 움직임을 담당하는 Rigidbody 컴포넌트가 있어야 합니다."
+    },
+    {
+    "question_id": 54,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "error_analysis",
+    "category": "Development",
+    "subcategory": "Scripts",
+    "skills_required": ["C#"],
+    "scenario": "콘솔 창에 'The name 'PlayerTransform' does not exist in the current context'라는 에러가 뜹니다.",
+    "question": "이 에러의 의미는 무엇입니까?",
+    "choices": [
+    "메모리 할당 실패",
+    "변수 선언이 누락되었거나 변수명의 오타가 있음",
+    "파일이 하드디스크에서 삭제됨",
+    "인터넷 연결 끊김"
+    ],
+    "correct_answer": "변수 선언이 누락되었거나 변수명의 오타가 있음",
+    "explanation": "현재 스코프(Scope) 내에서 해당 이름의 식별자를 찾을 수 없을 때 발생하는 기본적인 컴파일 에러입니다."
+    },
+    {
+    "question_id": 55,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "log_analysis",
+    "category": "Performance",
+    "subcategory": "Optimization",
+    "skills_required": ["Stats Window"],
+    "scenario": "게임 실행 중 Statistics 창에서 'Batches' 수치가 너무 높게 나옵니다.",
+    "question": "이 현상이 지속될 경우 성능에 어떤 영향을 줍니까?",
+    "choices": [
+    "오디오 볼륨이 작아짐",
+    "CPU가 GPU에 명령을 내리는 횟수가 많아져 성능 저하 발생",
+    "하드웨어 수명이 급격히 단축됨",
+    "인터넷 핑(Ping)이 올라감"
+    ],
+    "correct_answer": "CPU가 GPU에 명령을 내리는 횟수가 많아져 성능 저하 발생",
+    "explanation": "배치(Batches)는 드로우 콜과 관련이 있으며, 이 수치가 높으면 CPU 오버헤드가 커져 프레임률이 떨어집니다."
+    },
+    {
+    "question_id": 56,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "definition",
+    "category": "AR Tech",
+    "subcategory": "Hardware",
+    "skills_required": ["AR Tech"],
+    "scenario": "사용자의 눈앞에 직접 영상을 투사하는 AR 글래스를 분류하려 합니다.",
+    "question": "현실 세계를 거울이나 렌즈를 통해 직접 보면서 가상 이미지를 겹쳐 보여주는 광학 방식을 무엇이라 합니까?",
+    "choices": [
+    "Video See-through (VST)",
+    "Optical See-through (OST)",
+    "Screen Space Overlay",
+    "Direct Retinal Projection"
+    ],
+    "correct_answer": "Optical See-through (OST)",
+    "explanation": "HoloLens나 Magic Leap처럼 현실의 빛을 직접 투과시키는 방식을 OST라고 합니다."
+    },
+    {
+    "question_id": 57,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "concept_check",
+    "category": "Graphics",
+    "subcategory": "Meshes",
+    "skills_required": ["3D Modeling Basics"],
+    "scenario": "3D 모델의 정밀도를 조절하려고 합니다.",
+    "question": "3D 모델을 구성하는 최소 단위인 세 개의 점(Vertex)으로 이루어진 면을 무엇이라 합니까?",
+    "choices": ["Pixel", "Polygon", "Voxel", "NURBS"],
+    "correct_answer": "Polygon",
+    "explanation": "폴리곤은 3D 공간에서 면을 형성하는 다각형 단위를 뜻합니다."
+    },
+    {
+    "question_id": 58,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "misconception_detection",
+    "category": "VR Tech",
+    "subcategory": "Tracking",
+    "skills_required": ["VR Tech"],
+    "scenario": "VR 헤드셋의 센서 방식을 공부하고 있습니다.",
+    "question": "인사이드-아웃(Inside-out) 트래킹 방식에 대한 설명으로 틀린 것은?",
+    "choices": [
+    "헤드셋에 내장된 카메라로 주변 환경을 파악한다.",
+    "별도의 외부 베이스 스테이션(Base Station) 설치가 필수적이다.",
+    "공간의 제약 없이 이동하며 사용할 수 있는 장점이 있다.",
+    "Meta Quest 시리즈가 이 방식을 사용한다."
+    ],
+    "correct_answer": "별도의 외부 베이스 스테이션(Base Station) 설치가 필수적이다.",
+    "explanation": "외부 설치 센서가 필요한 방식은 아웃사이드-인(Outside-in) 방식입니다."
+    },
+    {
+    "question_id": 59,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "true_false",
+    "category": "Development",
+    "subcategory": "Unity UI",
+    "skills_required": ["Unity UI"],
+    "scenario": "화면에 버튼을 배치하려고 합니다.",
+    "question": "Unity UI 시스템에서 모든 UI 요소는 반드시 Canvas(캔버스) 오브젝트의 자식으로 존재해야 한다. (참/거짓)",
+    "choices": ["참", "거짓"],
+    "correct_answer": "참",
+    "explanation": "UGUI 시스템에서 UI 렌더링을 위해서는 Canvas가 반드시 부모 계층에 존재해야 합니다."
+    },
+    {
+    "question_id": 60,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "multiple_choice",
+    "category": "Graphics",
+    "subcategory": "Materials",
+    "skills_required": ["Shader Basics"],
+    "scenario": "물체의 표면에 울퉁불퉁한 입체감을 표현하고 싶지만, 폴리곤 수를 늘리고 싶지는 않습니다.",
+    "question": "가장 적은 비용으로 표면의 굴곡을 눈속임하여 표현하는 텍스처 맵의 명칭은?",
+    "choices": ["Diffuse Map", "Normal Map", "Specular Map", "Ambient Map"],
+    "correct_answer": "Normal Map",
+    "explanation": "노멀 맵은 각 픽셀의 법선 정보를 저장하여 조명 연산을 통해 입체감을 표현합니다."
+    },
+    {
+    "question_id": 61,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "code_completion",
+    "category": "Programming",
+    "subcategory": "C#",
+    "skills_required": ["C#"],
+    "scenario": "리스트(List)에 데이터를 추가하고 개수를 확인하려 합니다.",
+    "question": "빈칸에 들어갈 프로퍼티는?\n\nList<string> items = new List<string>();\nitems.Add('AR');\nint count = items.;",
+    "choices": ["Length", "Count", "Size", "Capacity"],
+    "correct_answer": "Count",
+    "explanation": "C#의 List 컬렉션은 Count 프로퍼티를 통해 요소 개수를 반환합니다."
+    },
+    {
+    "question_id": 62,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "code_output_prediction",
+    "category": "Programming",
+    "subcategory": "Logic",
+    "skills_required": ["C#"],
+    "scenario": "반복문의 실행 횟수를 예측합니다.",
+    "question": "for (int i = 0; i < 5; i += 2) { ... } 블록은 총 몇 번 실행됩니까?",
+    "choices": ["2번", "3번", "5번", "0번"],
+    "correct_answer": "3번",
+    "explanation": "i가 0, 2, 4일 때 실행되므로 총 3번입니다."
+    },
+    {
+    "question_id": 63,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "university_level",
+    "question_type": "debugging",
+    "category": "Animation",
+    "subcategory": "Mecanim",
+    "skills_required": ["Unity Animation"],
+    "scenario": "캐릭터가 걷는 애니메이션은 재생되는데 위치가 제자리에서 움직이지 않습니다.",
+    "question": "애니메이션 데이터에 이동 값이 포함되어 있을 때, 이를 실제 오브젝트 좌표에 반영하기 위해 체크해야 할 옵션은?",
+    "choices": [
+    "Apply Root Motion",
+    "Loop Time",
+    "Culling Mode",
+    "Has Exit Time"
+    ],
+    "correct_answer": "Apply Root Motion",
+    "explanation": "Apply Root Motion 옵션이 켜져 있어야 애니메이션의 루트 노드 움직임이 실제 트랜스폼으로 변환됩니다."
+    },
+    {
+    "question_id": 64,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "junior_level",
+    "question_type": "configuration_problem",
+    "category": "AR Tech",
+    "subcategory": "Image Tracking",
+    "skills_required": ["ARKit", "AR Foundation"],
+    "scenario": "이미지 트래킹 기능을 구현했는데, 특정 이미지만 인식이 매우 느리고 불안정합니다.",
+    "question": "이 현상을 해결하기 위한 가장 적절한 조치는?",
+    "choices": [
+    "이미지의 해상도를 무조건 4K로 올린다.",
+    "인식 대상 이미지의 대비(Contrast)와 특징점(Feature Points)이 뚜렷한지 확인한다.",
+    "카메라의 노출값을 수동으로 낮춘다.",
+    "스마트폰의 블루투스를 끈다."
+    ],
+    "correct_answer": "인식 대상 이미지의 대비(Contrast)와 특징점(Feature Points)이 뚜렷한지 확인한다.",
+    "explanation": "이미지 트래킹은 시각적 특징점을 추출하여 인식하므로, 복잡한 패턴과 높은 대비가 있는 이미지가 유리합니다."
+    },
+    {
+    "question_id": 65,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "junior_level",
+    "question_type": "root_cause_analysis",
+    "category": "Rendering",
+    "subcategory": "Shader Errors",
+    "skills_required": ["Shader Graph", "URP"],
+    "scenario": "URP 환경에서 만든 재질이 에디터에서는 잘 보이지만, 빌드 후 실제 안드로이드 기기에서는 보라색(Magenta)으로 나타납니다.",
+    "question": "가장 높은 확률을 가진 원인은 무엇입니까?",
+    "choices": [
+    "기기의 액정 패널 불량",
+    "쉐이더가 타겟 플랫폼(GLES 3.0 등)을 지원하지 않거나 쉐이더 배리언트 누락",
+    "메인 카메라의 'Post-processing' 옵션이 꺼짐",
+    "C# 스크립트의 에러"
+    ],
+    "correct_answer": "쉐이더가 타겟 플랫폼(GLES 3.0 등)을 지원하지 않거나 쉐이더 배리언트 누락",
+    "explanation": "분홍/보라색 렌더링은 엔진이 해당 쉐이더를 로드하거나 처리할 수 없을 때 나타내는 폴백 현상입니다."
+    },
+    {
+    "question_id": 66,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "junior_level",
+    "question_type": "data_interpretation",
+    "category": "Performance",
+    "subcategory": "Memory",
+    "skills_required": ["Unity Profiler"],
+    "scenario": "프로파일러 확인 결과 'System Used Memory'는 일정한데 'GC Reserved Memory'가 계단식으로 계속 상승하고 있습니다.",
+    "question": "이 데이터가 시사하는 문제점은 무엇입니까?",
+    "choices": [
+    "메모리가 부족하여 하드스왑이 발생 중",
+    "함수 내에서 불필요한 객체 생성이 반복되어 가비지가 쌓이고 있음",
+    "GPU 텍스처 압축이 잘못됨",
+    "CPU 성능이 너무 좋아서 발생하는 현상"
+    ],
+    "correct_answer": "함수 내에서 불필요한 객체 생성이 반복되어 가비지가 쌓이고 있음",
+    "explanation": "매 프레임 New 연산 등을 통해 임시 객체를 생성하면 힙 메모리에 가비지가 쌓여 GC 예약을 늘리게 됩니다."
+    },
+    {
+    "question_id": 67,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "junior_level",
+    "question_type": "scenario_based",
+    "category": "Physics",
+    "subcategory": "Performance",
+    "skills_required": ["Colliders"],
+    "scenario": "복잡한 기계 장치 모델(폴리곤 10만 개)에 물리 충돌을 구현해야 합니다. 성능이 낮은 모바일 VR 기기를 타겟으로 합니다.",
+    "question": "어떤 충돌체(Collider) 구성을 사용하는 것이 가장 효율적입니까?",
+    "choices": [
+    "Mesh Collider (Convex 체크 해제)",
+    "Mesh Collider (Convex 체크)",
+    "Box, Sphere, Capsule 등 기본(Primitive) 충돌체의 조합",
+    "물리 충돌을 사용하지 않고 매 프레임 좌표 계산"
+    ],
+    "correct_answer": "Box, Sphere, Capsule 등 기본(Primitive) 충돌체의 조합",
+    "explanation": "복잡한 메쉬 콜라이더는 연산량이 매우 많으므로, 기본 형태의 콜라이더 여러 개를 조합하는 것이 성능상 유리합니다."
+    },
+    {
+    "question_id": 68,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "junior_level",
+    "question_type": "real_world_case",
+    "category": "VR Tech",
+    "subcategory": "Interaction",
+    "skills_required": ["XR Interaction Toolkit"],
+    "scenario": "VR에서 멀리 있는 물체를 광선으로 쏘아 잡는 기능을 구현했습니다. 그런데 물체를 잡았을 때 물체가 손 위치로 순간이동하지 않고 원래 자리에 가만히 있는 상태에서 회전만 됩니다.",
+    "question": "XR Grab Interactable 컴포넌트의 어떤 설정을 확인해야 합니까?",
+    "choices": [
+    "Movement Type을 Instantaneous 또는 Kinematic으로 변경",
+    "Interactable Layer Mask 설정",
+    "Select Trigger 모드 확인",
+    "Audio Clip 할당 여부"
+    ],
+    "correct_answer": "Movement Type을 Instantaneous 또는 Kinematic으로 변경",
+    "explanation": "Movement Type 설정에 따라 물리 법칙을 따를지, 즉시 손 위치로 추적할지가 결정됩니다."
+    },
+    {
+    "question_id": 69,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "junior_level",
+    "question_type": "code_completion",
+    "category": "Programming",
+    "subcategory": "Coroutines",
+    "skills_required": ["C#", "Unity"],
+    "scenario": "AR 오브젝트를 2초 뒤에 서서히 사라지게 하려고 합니다.",
+    "question": "빈칸에 들어갈 올바른 키워드는?\\n\\nIEnumerator FadeOut() {\\n  ________ new WaitForSeconds(2.0f);\\n  // 페이드 로직\\n}",
+    "choices": ["return", "yield return", "wait", "stop"],
+    "correct_answer": "yield return",
+    "explanation": "코루틴(Coroutine) 내에서 실행을 일시 중단하고 제어권을 엔진에 넘기려면 yield return 키워드를 사용해야 합니다."
+    },
+    {
+    "question_id": 70,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "junior_level",
+    "question_type": "error_analysis",
+    "category": "Networking",
+    "subcategory": "Socket",
+    "skills_required": ["TCP", "Firewall"],
+    "scenario": "멀티플레이 VR 앱에서 클라이언트가 서버에 접속을 시도하지만 'Connection Timeout' 에러가 계속 발생합니다. 서버 IP와 포트는 정확합니다.",
+    "question": "다음 중 가장 의심되는 네트워크 환경 설정은?",
+    "choices": [
+    "서버 측 방화벽(Firewall)에서 해당 포트의 인바운드 규칙 허용 여부",
+    "사용자의 마우스 드라이버 미설치",
+    "VR 헤드셋의 스피커 고장",
+    "USB 케이블 전압 부족"
+    ],
+    "correct_answer": "서버 측 방화벽(Firewall)에서 해당 포트의 인바운드 규칙 허용 여부",
+    "explanation": "IP/포트가 맞는데 타임아웃이 난다면, 방화벽이나 보안 그룹에서 트래픽을 차단하고 있을 가능성이 가장 큽니다."
+    },
+    {
+    "question_id": 71,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "junior_level",
+    "question_type": "concept_check",
+    "category": "AR Tech",
+    "subcategory": "Lighting",
+    "skills_required": ["AR Foundation"],
+    "scenario": "실제 방이 어두워지면 가상 오브젝트도 같이 어두워지게 하여 이질감을 줄이고 싶습니다.",
+    "question": "AR 시스템에서 실제 주변 광원 정보를 추정하여 가상 광원에 반영하는 기술 명칭은?",
+    "choices": ["Ray Tracing", "Light Estimation", "HDR Skybox", "Shadow Mapping"],
+    "correct_answer": "Light Estimation",
+    "explanation": "Light Estimation은 카메라 이미지를 분석하여 실제 조명의 강도와 색온도를 디지털 공간에 복제하는 기술입니다."
+    },
+    {
+    "question_id": 72,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "junior_level",
+    "question_type": "multiple_choice",
+    "category": "Development",
+    "subcategory": "Version Control",
+    "skills_required": ["Git", "Unity"],
+    "scenario": "팀 프로젝트를 진행하면서 .gitignored 파일에 Unity의 'Library' 폴더를 추가했습니다.",
+    "question": "Library 폴더를 제외하는 이유는 무엇입니까?",
+    "choices": [
+    "중요한 소스 코드가 들어있기 때문",
+    "로컬 에셋 임포트 시 생성되는 임시 캐시 데이터이며, 용량이 크고 기기마다 재생성 가능하기 때문",
+    "유료 SDK 라이선스 정보가 들어있어서",
+    "팀원들끼리 서로 다른 씬을 편집하지 못하게 막기 위해"
+    ],
+    "correct_answer": "로컬 에셋 임포트 시 생성되는 임시 캐시 데이터이며, 용량이 크고 기기마다 재생성 가능하기 때문",
+    "explanation": "Library 폴더는 에셋을 프로젝트에 맞게 변환한 결과물들을 담고 있어 공유할 필요가 없으며 용량만 차지합니다."
+    },
+    {
+    "question_id": 73,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "junior_level",
+    "question_type": "debugging",
+    "category": "Programming",
+    "subcategory": "Events",
+    "skills_required": ["C#"],
+    "scenario": "버튼을 클릭하면 `ScoreManager.UpdateScore()`가 실행되어야 하는데, 클릭해도 아무 반응이 없고 에러도 뜨지 않습니다.",
+    "question": "이 상황에서 가장 먼저 점검해야 할 논리적 오류는?",
+    "choices": [
+    "메모리 부족 현상",
+    "OnClick() 이벤트 리스너에 함수가 연결되어 있는지 확인",
+    "CPU 쿨러 작동 여부",
+    "스크립트 파일의 인코딩 형식"
+    ],
+    "correct_answer": "OnClick() 이벤트 리스너에 함수가 연결되어 있는지 확인",
+    "explanation": "에러 없이 반응이 없다면 코드가 실행되는 트리거 자체가 연결되지 않았을 가능성이 가장 큽니다."
+    },
+    {
+    "question_id": 74,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "junior_level",
+    "question_type": "api_design",
+    "category": "UI",
+    "subcategory": "UX Interaction",
+    "skills_required": ["Unity"],
+    "scenario": "VR 컨트롤러가 물체에 닿았을 때 짧게 진동 효과(Haptic Feedback)를 주려고 합니다.",
+    "question": "XR Interaction Toolkit에서 가장 범용적으로 쓰이는 진동 실행 메서드는?",
+    "choices": [
+    "AudioSource.Play()",
+    "XRBaseController.SendHapticImpulse()",
+    "Transform.Rotate()",
+    "Input.GetMouseButtonDown()"
+    ],
+    "correct_answer": "XRBaseController.SendHapticImpulse()",
+    "explanation": "XR Interaction Toolkit은 SendHapticImpulse 메서드를 통해 강도와 지속 시간을 매개변수로 진동을 구현합니다."
+    },
+    {
+    "question_id": 75,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "junior_level",
+    "question_type": "configuration_problem",
+    "category": "Deployment",
+    "subcategory": "iOS Build",
+    "skills_required": ["Xcode", "ARKit"],
+    "scenario": "유니티에서 iOS AR 앱 빌드 후 Xcode에서 컴파일 중 'Camera Usage Description' 관련 에러가 발생하며 빌드가 실패합니다.",
+    "question": "어느 설정을 수정해야 합니까?",
+    "choices": [
+    "Project Settings -> Player -> iOS -> Camera Usage Description 텍스트 입력",
+    "안드로이드 매니페스트 파일 수정",
+    "C# 코드의 Start 함수 삭제",
+    "Mac OS 업데이트"
+    ],
+    "correct_answer": "Project Settings -> Player -> iOS -> Camera Usage Description 텍스트 입력",
+    "explanation": "iOS 앱은 사생활 보호를 위해 카메라 사용 사유를 Info.plist에 명시해야 하며, 유니티 플레이어 세팅에서 이를 지정할 수 있습니다."
+    },
+    {
+    "question_id": 76,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "performance_optimization",
+    "category": "Graphics",
+    "subcategory": "Draw Calls",
+    "skills_required": ["Static Batching", "Dynamic Batching"],
+    "scenario": "오픈 월드 VR 맵에 수천 개의 정적인 건물과 돌이 배치되어 드로우 콜이 2000을 넘어가며 프레임이 뚝 떨어집니다.",
+    "question": "런타임 연산을 줄이기 위해 가장 먼저 적용해야 할 기술은?",
+    "choices": [
+    "Real-time GI 끄기",
+    "움직이지 않는 오브젝트들을 Static으로 설정하여 Static Batching 유도",
+    "모든 오브젝트의 Mesh Collider 제거",
+    "안티앨리어싱 모드 변경"
+    ],
+    "correct_answer": "움직이지 않는 오브젝트들을 Static으로 설정하여 Static Batching 유도",
+    "explanation": "Static Batching은 동일한 재질을 공유하는 정적 오브젝트들을 합쳐 드로우 콜을 획기적으로 줄여줍니다."
+    },
+    {
+    "question_id": 77,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "log_analysis",
+    "category": "Operation",
+    "subcategory": "Memory Leak",
+    "skills_required": ["Memory Profiler", "C#"],
+    "scenario": "앱을 30분 정도 사용하면 'Low Memory Warning' 로그와 함께 앱이 종료됩니다. 특정 씬을 반복해서 로드할 때 메모리 점유율이 계속 우상향하는 것을 확인했습니다.",
+    "question": "이 상황에서 가장 먼저 의심해야 할 패턴은?",
+    "choices": [
+    "텍스처 해상도가 너무 높음",
+    "씬 전환 시 해제되지 않은 정적(Static) 이벤트 리스너나 리스트 참조",
+    "물리 충돌체가 너무 많음",
+    "BGM 파일의 비트레이트가 높음"
+    ],
+    "correct_answer": "씬 전환 시 해제되지 않은 정적(Static) 이벤트 리스너나 리스트 참조",
+    "explanation": "정적 변수는 씬이 파괴되어도 참조를 유지하므로, 가비지 컬렉터가 해당 객체를 메모리에서 해제하지 못해 메모리 누수가 발생합니다."
+    },
+    {
+    "question_id": 78,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "algorithm_design",
+    "category": "AR Tech",
+    "subcategory": "Physics Interaction",
+    "skills_required": ["Raycasting", "Math"],
+    "scenario": "사용자가 AR 환경에서 바닥 평면을 터치하여 그 지점에 물체를 생성하려고 합니다.",
+    "question": "화면 터치 좌표(2D)를 실제 3D 공간 좌표로 변환하기 위한 논리적 순서는?",
+    "choices": [
+    "터치 위치에서 카메라 전방으로 Ray 생성 -> AR Plane Manager와 레이캐스트 충돌 검사 -> 충돌 지점(Hit Point) 좌표 반환",
+    "바닥 좌표 무작위 생성 -> 카메라가 바라보는지 확인",
+    "터치 좌표의 X, Y 값을 월드 좌표의 X, Y로 그대로 대입",
+    "가속도 센서값만 이용하여 위치 추정"
+    ],
+    "correct_answer": "터치 위치에서 카메라 전방으로 Ray 생성 -> AR Plane Manager와 레이캐스트 충돌 검사 -> 충돌 지점(Hit Point) 좌표 반환",
+    "explanation": "Screen Point to Ray와 AR Raycast 기술을 결합하여 평면 위 정확한 3D 좌표를 얻어낼 수 있습니다."
+    },
+    {
+    "question_id": 79,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "root_cause_analysis",
+    "category": "Graphics",
+    "subcategory": "Overdraw",
+    "skills_required": ["GPU Profiling", "Transparency"],
+    "scenario": "연기(Smoke) 이펙트가 화면 전체를 가릴 때만 프레임이 급격히 떨어집니다. 텍스처 해상도는 256x256으로 매우 낮습니다.",
+    "question": "이 현상의 주된 원인(GPU 병목 지점)은 무엇입니까?",
+    "choices": [
+    "Vertex Processing (폴리곤 과다)",
+    "Texture Fetching (대역폭 부족)",
+    "Overdraw (투명한 픽셀이 겹쳐서 반복 렌더링됨)",
+    "Draw Call (CPU 부하)"
+    ],
+    "correct_answer": "Overdraw (투명한 픽셀이 겹쳐서 반복 렌더링됨)",
+    "explanation": "오버드로우(Overdraw)는 동일한 픽셀 위치에 여러 겹의 투명 파티클이 그려지면서 GPU의 필레이트(Fill-rate) 부하를 일으키는 현상입니다."
+    },
+    {
+    "question_id": 80,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "architecture_decision",
+    "category": "Development",
+    "subcategory": "State Machine",
+    "skills_required": ["Design Patterns"],
+    "scenario": "복잡한 튜토리얼 단계를 가진 VR 교육 콘텐츠를 제작 중입니다. 조건에 따라 대기, 재생, 상호작용 확인, 다음 단계 이동 등의 로직이 얽혀 있습니다.",
+    "question": "이러한 흐름을 가장 유지보수하기 쉽게 설계하는 방식은?",
+    "choices": [
+    "하나의 Update 함수에 거대한 if-else 문 작성",
+    "유한 상태 머신(FSM) 아키텍처 도입",
+    "코루틴을 수백 개 중첩하여 사용",
+    "모든 오브젝트에 태그를 붙여서 매번 검색"
+    ],
+    "correct_answer": "유한 상태 머신(FSM) 아키텍처 도입",
+    "explanation": "FSM을 사용하면 각 상태의 로직을 독립적으로 분리하고 상태 전이 조건을 명확히 관리할 수 있습니다."
+    },
+    {
+    "question_id": 81,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "scenario_based",
+    "category": "Networking",
+    "subcategory": "Latency",
+    "skills_required": ["Networking", "Smoothing"],
+    "scenario": "멀티플레이 VR에서 상대방 아바타가 뚝뚝 끊기면서 텔레포트하듯 움직이는 현상이 발생합니다.",
+    "question": "네트워크 지연을 시각적으로 보완하여 아바타가 부드럽게 움직이도록 구현하는 기법은?",
+    "choices": [
+    "Interpolation (보간) 및 Dead Reckoning (추측 항법)",
+    "패킷 압축",
+    "서버 CPU 업그레이드",
+    "화면 프레임 제한"
+    ],
+    "correct_answer": "Interpolation (보간) 및 Dead Reckoning (추측 항법)",
+    "explanation": "보간은 데이터 사이의 값을 메꾸고, 추측 항법은 데이터가 오지 않을 때 이전 속도를 기반으로 다음 위치를 예측하여 움직임을 부드럽게 합니다."
+    },
+    {
+    "question_id": 82,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "design_alternative_comparison",
+    "category": "Graphics",
+    "subcategory": "Global Illumination",
+    "skills_required": ["Lighting", "Optimization"],
+    "scenario": "실시간 조명 변화가 필요한 AR 씬을 설계 중입니다. 성능과 품질 사이에서 고민하고 있습니다.",
+    "question": "Real-time GI(Global Illumination)를 사용하지 않고도 가상 오브젝트에 주변 환경의 반사광을 실시간으로 반영하는 가장 효율적인 대안은?",
+    "choices": [
+    "매 프레임 라이트맵 굽기",
+    "Reflection Probes (Real-time 또는 Baked) 사용",
+    "무조건적인 Emissive 머티리얼 사용",
+    "포스트 프로세싱의 Bloom 효과 극대화"
+    ],
+    "correct_answer": "Reflection Probes (Real-time 또는 Baked) 사용",
+    "explanation": "리플렉션 프로브를 사용하면 주변 환경의 큐브맵을 생성하여 물체에 반사 광원을 효율적으로 입힐 수 있습니다."
+    },
+    {
+    "question_id": 83,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Rendering",
+    "subcategory": "Stereo Rendering",
+    "skills_required": ["Single Pass Instancing"],
+    "scenario": "VR 렌더링 최적화를 위해 Multi-pass 방식에서 Single-pass Instanced 방식으로 전환하려 합니다.",
+    "question": "Single-pass Instanced 방식을 사용할 때 얻는 이득과 주의사항으로 옳은 것은?",
+    "choices": [
+    "드로우 콜이 절반으로 줄어들지만, 쉐이더가 인스턴싱을 지원하도록 작성되어야 한다.",
+    "화질이 2배 좋아지지만 CPU 사용량이 늘어난다.",
+    "모든 VR 헤드셋에서 무조건 지원되므로 범용성이 높다.",
+    "포스트 프로세싱을 전혀 사용할 수 없게 된다."
+    ],
+    "correct_answer": "드로우 콜이 절반으로 줄어들지만, 쉐이더가 인스턴싱을 지원하도록 작성되어야 한다.",
+    "explanation": "Single-pass Instancing은 양안을 한 번에 그려 CPU 부하를 낮추지만, 커스텀 쉐이더 작성 시 이를 고려한 처리가 필요합니다."
+    },
+    {
+    "question_id": 84,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "debugging",
+    "category": "Interaction",
+    "subcategory": "Physics",
+    "skills_required": ["Layer Mask", "Raycast"],
+    "scenario": "AR 레이캐스트를 쏘는데, 가상 오브젝트가 아닌 실제 인식된 평면만 계속 타격되고 물체는 무시됩니다.",
+    "question": "코드상에서 특정 레이어(예: AR_Object)만 감지하도록 제한하려면 어떤 파라미터를 수정해야 합니까?",
+    "choices": [
+    "Ray의 Max Distance",
+    "LayerMask를 활용한 비트 연산 필터 적용",
+    "물체의 트랜스폼 좌표",
+    "카메라의 Field of View"
+    ],
+    "correct_answer": "LayerMask를 활용한 비트 연산 필터 적용",
+    "explanation": "레이캐스트 함수 호출 시 레이어 마스크를 인자로 전달하여 특정 레이어만 선택적으로 충돌 판정을 할 수 있습니다."
+    },
+    {
+    "question_id": 85,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "data_interpretation",
+    "category": "AR Tech",
+    "subcategory": "Tracking",
+    "skills_required": ["AR Foundation", "Reliability"],
+    "scenario": "AR 세션 상태가 'Excessive Motion' 에러를 출력하며 트래킹이 자주 끊깁니다.",
+    "question": "이 로그 데이터가 나타내는 사용자 환경의 상태는?",
+    "choices": [
+    "주변이 너무 어두움",
+    "사용자가 기기를 너무 빠르게 흔들거나 이동하고 있음",
+    "특징점이 없는 흰 벽을 바라보고 있음",
+    "스마트폰 배터리가 5% 미만임"
+    ],
+    "correct_answer": "사용자가 기기를 너무 빠르게 흔들거나 이동하고 있음",
+    "explanation": "Excessive Motion은 센서가 처리할 수 있는 속도보다 더 큰 움직임이 발생하여 위치 추정이 불가능할 때 발생합니다."
+    },
+    {
+    "question_id": 86,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "risk_assessment",
+    "category": "Operation",
+    "subcategory": "Battery",
+    "skills_required": ["Mobile Optimization"],
+    "scenario": "실시간 조명, 물리 연산, 고해상도 텍스처를 모두 사용하는 화려한 AR 앱을 개발했습니다.",
+    "question": "사용성 테스트에서 발생할 가능성이 가장 높은 치명적인 운영 리스크는?",
+    "choices": [
+    "글꼴 가독성 부족",
+    "배터리 급방전 및 과열로 인한 앱 강제 종료",
+    "사운드 효과음의 중첩",
+    "버튼 아이콘의 디자인 불만족"
+    ],
+    "correct_answer": "배터리 급방전 및 과열로 인한 앱 강제 종료",
+    "explanation": "모바일 AR은 카메라, 센서, CPU, GPU를 모두 집중적으로 사용하여 전력 소모와 발열이 매우 심한 서비스입니다."
+    },
+    {
+    "question_id": 87,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "best_practice_selection",
+    "category": "Graphics",
+    "subcategory": "Meshes",
+    "skills_required": ["Optimization"],
+    "scenario": "VR 환경에서 손(Hand) 모델을 렌더링하려 합니다. 손은 카메라와 매우 가깝게 위치합니다.",
+    "question": "품질과 성능을 모두 잡기 위한 폴리곤 및 텍스처 전략으로 옳은 것은?",
+    "choices": [
+    "손 모델은 가장 높은 폴리곤을 할당하고, 배경 오브젝트는 과감히 단순화한다.",
+    "모든 오브젝트를 동일한 폴리곤 수로 유지한다.",
+    "손 모델도 저폴리곤으로 만들고 거친 텍스처를 쓴다.",
+    "오브젝트를 렌더링하지 않고 텍스트로만 표시한다."
+    ],
+    "correct_answer": "손 모델은 가장 높은 폴리곤을 할당하고, 배경 오브젝트는 과감히 단순화한다.",
+    "explanation": "사용자의 시선이 가장 많이 머물고 가까이 있는 물체(손, 도구)에 자원을 집중 배분하는 것이 효율적입니다."
+    },
+    {
+    "question_id": 88,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "code_review",
+    "category": "Programming",
+    "subcategory": "Strings",
+    "skills_required": ["C# Performance"],
+    "scenario": "Update() 함수 내에서 UI 텍스트를 다음과 같이 갱신하고 있습니다: `text.text = \"Score: \" + currentScore.ToString();`",
+    "question": "이 코드의 잠재적 문제점은?",
+    "choices": [
+    "점수가 음수일 때 에러 발생",
+    "매 프레임 문자열 할당(Allocation)이 발생하여 가비지 컬렉션 부하 유발",
+    "ToString() 함수는 UI에서 사용할 수 없음",
+    "문자열 결합(+) 연산은 C#에서 금지됨"
+    ],
+    "correct_answer": "매 프레임 문자열 할당(Allocation)이 발생하여 가비지 컬렉션 부하 유발",
+    "explanation": "C#의 string은 불변(Immutable) 객체이므로 매번 새로운 문자열을 생성하게 되어 메모리 파편화를 유발합니다. 값이 바뀔 때만 갱신하는 로직이 필요합니다."
+    },
+    {
+    "question_id": 89,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "incident_response",
+    "category": "Operation",
+    "subcategory": "Network Spike",
+    "skills_required": ["Load Balancing"],
+    "scenario": "동시 접속자가 갑자기 10배로 늘어나면서 멀티플레이 서버 지연 시간이 500ms 이상으로 치솟았습니다.",
+    "question": "개발팀이 즉시 고려해야 할 대응 전략은?",
+    "choices": [
+    "모든 유저에게 앱 재설치 공지",
+    "서버 스케일 아웃(Scale-out) 및 로드 밸런싱 적용",
+    "게임의 그래픽 옵션 하향 패치",
+    "서버의 데이터베이스 데이터를 모두 삭제"
+    ],
+    "correct_answer": "서버 스케일 아웃(Scale-out) 및 로드 밸런싱 적용",
+    "explanation": "트래픽 급증 시 서버 인스턴스를 늘리고 부하를 분산시켜 처리 용량을 확장해야 합니다."
+    },
+    {
+    "question_id": 90,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "configuration_problem",
+    "category": "Development",
+    "subcategory": "Unity Packages",
+    "skills_required": ["XR Plugin Management"],
+    "scenario": "Meta Quest용 빌드를 했는데 헤드셋에서 실행 시 VR 모드로 진입하지 않고 평면 화면(2D)으로만 나옵니다.",
+    "question": "Project Settings에서 확인해야 할 필수 항목은?",
+    "choices": [
+    "Audio Spatializer 설정",
+    "XR Plug-in Management에서 Oculus/Meta XR 체크 여부",
+    "Resolution Scaling 설정",
+    "Company Name 입력 여부"
+    ],
+    "correct_answer": "XR Plug-in Management에서 Oculus/Meta XR 체크 여부",
+    "explanation": "해당 플랫폼의 XR 플러그인이 활성화되어 있어야 엔진이 런타임에 스테레오 렌더링과 헤드 트래킹을 초기화합니다."
+    },
+    {
+    "question_id": 91,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "root_cause_analysis",
+    "category": "Graphics",
+    "subcategory": "Z-Buffer",
+    "skills_required": ["Rendering Pipeline"],
+    "scenario": "먼 곳의 산과 구름이 겹치는 부분에서 지직거리는 노이즈가 발생합니다. 카메라의 Clipping Plane 설정을 Near: 0.01, Far: 50000으로 잡았습니다.",
+    "question": "이 현상의 근본 원인은?",
+    "choices": [
+    "Near/Far 평면의 거리 차이가 너무 커서 뎁스 버퍼의 정밀도가 분산됨",
+    "하늘의 텍스처 해상도가 낮음",
+    "기기의 그래픽 칩셋 가열",
+    "안개(Fog) 효과 설정 미비"
+    ],
+    "correct_answer": "Near/Far 평면의 거리 차이가 너무 커서 뎁스 버퍼의 정밀도가 분산됨",
+    "explanation": "Near plane을 너무 낮게, Far plane을 너무 멀게 설정하면 좁은 비트의 뎁스 버퍼가 광범위한 거리를 표현해야 하므로 정밀도가 떨어져 Z-fighting이 발생합니다."
+    },
+    {
+    "question_id": 92,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "data_interpretation",
+    "category": "Analytics",
+    "subcategory": "User Behavior",
+    "skills_required": ["Heatmap"],
+    "scenario": "VR 전시관 앱에서 히트맵(Heatmap) 데이터를 분석한 결과, 사용자들이 전시관 정면만 보고 뒤쪽은 전혀 보지 않는다는 사실을 발견했습니다.",
+    "question": "이 데이터를 바탕으로 내릴 수 있는 UX 설계적 결론은?",
+    "choices": [
+    "전시관 뒤쪽에 더 밝은 조명이나 사운드 큐(Sound Cue)를 배치하여 시선을 유도해야 함",
+    "뒤쪽 공간을 아예 삭제하여 성능 최적화",
+    "사용자의 머리를 강제로 돌리는 코드를 넣어야 함",
+    "VR 헤드셋의 화각(FOV)이 좁아서 발생하는 기기 문제임"
+    ],
+    "correct_answer": "전시관 뒤쪽에 더 밝은 조명이나 사운드 큐(Sound Cue)를 배치하여 시선을 유도해야 함",
+    "explanation": "VR은 360도 공간이므로 시청각적 장치를 통해 사용자가 공간 전체를 탐색하도록 가이드하는 것이 중요합니다."
+    },
+    {
+    "question_id": 93,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "algorithm_design",
+    "category": "AR Tech",
+    "subcategory": "Measurement",
+    "skills_required": ["3D Math", "AR Foundation"],
+    "scenario": "AR을 이용해 두 벽면 사이의 거리를 측정하는 기능을 만들려 합니다.",
+    "question": "사용자가 두 지점을 터치했을 때 거리를 계산하는 올바른 알고리즘은?",
+    "choices": [
+    "두 지점의 월드 좌표를 Vector3.Distance()로 계산",
+    "화면상의 픽셀 거리 계산",
+    "가속도 센서의 변화량만 측정",
+    "사용자가 걸어간 발걸음 수 측정"
+    ],
+    "correct_answer": "두 지점의 월드 좌표를 Vector3.Distance()로 계산",
+    "explanation": "AR 시스템에 의해 실제 단위(Meter)로 정렬된 월드 좌표계 상의 두 점 사이 유클리드 거리를 구하면 됩니다."
+    },
+    {
+    "question_id": 94,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "real_world_case",
+    "category": "Physics",
+    "subcategory": "Rigidbodies",
+    "skills_required": ["Unity Physics"],
+    "scenario": "VR에서 사용자가 문을 열 때, 손의 움직임에 따라 문이 부드럽게 열려야 합니다. 문은 힌지(Hinge)로 고정되어 있습니다.",
+    "question": "가장 적절한 물리 컴포넌트 조합은?",
+    "choices": [
+    "Rigidbody + Hinge Joint",
+    "Mesh Collider + Box Collider",
+    "Transform.Rotate() 스크립트만 사용",
+    "Constant Force 컴포넌트"
+    ],
+    "correct_answer": "Rigidbody + Hinge Joint",
+    "explanation": "조인트(Joint) 시스템을 사용하면 회전축 제한과 물리적 저항을 실감 나게 구현할 수 있습니다."
+    },
+    {
+    "question_id": 95,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "performance_optimization",
+    "category": "Graphics",
+    "subcategory": "LOD",
+    "skills_required": ["Unity LOD Group"],
+    "scenario": "숲속에 수많은 나무가 있는데, 카메라와 멀리 있는 나무까지 정밀하게 렌더링하여 성능이 저하되고 있습니다.",
+    "question": "거리에 따라 메쉬의 복잡도를 자동으로 조절하는 기능을 구현하려면 무엇을 사용해야 합니까?",
+    "choices": ["Occlusion Culling", "LOD Group", "Mipmapping", "Anisotropic Filtering"],
+    "correct_answer": "LOD Group",
+    "explanation": "LOD(Level of Detail) Group 컴포넌트는 카메라와의 거리에 따라 미리 준비된 단계별 메쉬를 교체해 줍니다."
+    },
+    {
+    "question_id": 96,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "system_design",
+    "category": "Architecture",
+    "subcategory": "Asset Management",
+    "skills_required": ["Addressables", "Asset Bundles"],
+    "scenario": "매달 새로운 가구 에셋이 추가되는 AR 인테리어 앱을 설계 중입니다. 앱 업데이트 없이 에셋을 추가해야 합니다.",
+    "question": "어떤 시스템을 구축해야 합니까?",
+    "choices": [
+    "모든 에셋을 Resources 폴더에 저장",
+    "클라우드 서버에서 에셋 번들을 로드하는 Addressable Asset System",
+    "SQLite에 3D 모델 바이너리 직접 저장",
+    "매달 앱스토어 업데이트 진행"
+    ],
+    "correct_answer": "클라우드 서버에서 에셋 번들을 로드하는 Addressable Asset System",
+    "explanation": "어드레서블 시스템은 에셋의 위치와 독립적으로 참조를 관리하며 원격 로딩에 최적화되어 있습니다."
+    },
+    {
+    "question_id": 97,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Graphics",
+    "subcategory": "Post-processing",
+    "skills_required": ["Post-processing Stack"],
+    "scenario": "저사양 모바일 VR 기기에서 화면 품질을 높이기 위해 Bloom과 Color Grading을 적용하려 합니다.",
+    "question": "이때 고려해야 할 성능 트레이드오프는?",
+    "choices": [
+    "이미지 품질은 올라가지만, GPU 필레이트 부하와 메모리 대역폭 소비가 늘어남",
+    "용량은 줄어들지만 CPU 연산량이 줄어듦",
+    "배터리 수명은 늘어나지만 프레임이 불안정해짐",
+    "네트워크 속도가 느려짐"
+    ],
+    "correct_answer": "이미지 품질은 올라가지만, GPU 필레이트 부하와 메모리 대역폭 소비가 늘어남",
+    "explanation": "포스트 프로세싱은 화면을 다시 그리는 과정이므로 모바일 GPU에 상당한 부담을 줍니다."
+    },
+    {
+    "question_id": 98,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "error_analysis",
+    "category": "AR Tech",
+    "subcategory": "Plane Detection",
+    "skills_required": ["ARCore", "ARKit"],
+    "scenario": "유리 테이블 위에서는 AR 평면 인식이 전혀 되지 않는다는 클레임이 들어왔습니다.",
+    "question": "이 현상의 기술적 원인은?",
+    "choices": [
+    "기기의 센서 고장",
+    "유리의 투명함과 반사 특성으로 인해 컴퓨터 비전 기반의 특징점 추출이 불가능함",
+    "유리 테이블의 정전기가 센서를 방해함",
+    "유리의 온도가 너무 낮아서"
+    ],
+    "correct_answer": "유리의 투명함과 반사 특성으로 인해 컴퓨터 비전 기반의 특징점 추출이 불가능함",
+    "explanation": "현재의 SLAM 기반 AR 기술은 시각적 특징점을 필요로 하는데, 유리는 빛을 투과하고 반사하여 특징점을 고정할 수 없습니다."
+    },
+    {
+    "question_id": 99,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "design_alternative_comparison",
+    "category": "Development",
+    "subcategory": "Input System",
+    "skills_required": ["Input System Package"],
+    "scenario": "Unity의 Legacy Input 매니저 대신 새로운 Input System Package를 도입하려 합니다.",
+    "question": "새로운 Input System의 장점은?",
+    "choices": [
+    "성능이 10배 빠름",
+    "액션(Action) 기반 바인딩을 통해 멀티 플랫폼 및 다양한 컨트롤러 대응이 훨씬 유연함",
+    "코드가 더 짧아짐",
+    "그래픽 품질이 좋아짐"
+    ],
+    "correct_answer": "액션(Action) 기반 바인딩을 통해 멀티 플랫폼 및 다양한 컨트롤러 대응이 훨씬 유연함",
+    "explanation": "입력 하드웨어와 실제 행동 로직을 분리하여 관리할 수 있는 것이 새 인풋 시스템의 핵심 이점입니다."
+    },
+    {
+    "question_id": 100,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "scenario_based",
+    "category": "VR Tech",
+    "subcategory": "Interaction",
+    "skills_required": ["Spatial Audio"],
+    "scenario": "사용자가 VR 공간에서 멀어지는 헬리콥터 소리가 실제처럼 느껴지게 하고 싶습니다.",
+    "question": "가장 먼저 적용해야 할 기술 설정은?",
+    "choices": [
+    "Audio Source의 Spatial Blend를 3D로 설정하고 Distance Rolloff 곡선 조정",
+    "사운드 파일을 MP3에서 WAV로 변경",
+    "오디오 볼륨을 최대치로 고정",
+    "Reverb Zone을 전체 맵에 배치"
+    ],
+    "correct_answer": "Audio Source의 Spatial Blend를 3D로 설정하고 Distance Rolloff 곡선 조정",
+    "explanation": "3D Spatial Blend는 소리에 방향성과 거리에 따른 감쇄 효과를 부여합니다."
+    },
+    {
+    "question_id": 101,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "Architecture",
+    "subcategory": "Scalability",
+    "skills_required": ["Microservices", "Spatial Partitioning"],
+    "scenario": "서울 전체를 가상 공간으로 구현하여 수만 명이 동시 접속하는 메타버스를 설계하려 합니다.",
+    "question": "서버 부하를 분산하고 효율적으로 관리하기 위해 도입해야 할 공간 처리 방식은?",
+    "choices": [
+    "모든 유저를 하나의 서버 쓰레드에서 처리",
+    "공간 분할(Spatial Partitioning) 기반의 서버 샤딩(Sharding) 및 관심 지역(AOI) 관리",
+    "데이터베이스에만 의존하는 방식",
+    "클라이언트 측에서 모든 동기화 처리"
+    ],
+    "correct_answer": "공간 분할(Spatial Partitioning) 기반의 서버 샤딩(Sharding) 및 관심 지역(AOI) 관리",
+    "explanation": "광활한 월드를 격자나 트리 구조로 나누어 해당 구역의 데이터만 사용자에게 전송함으로써 대역폭과 서버 연산을 최적화합니다."
+    },
+    {
+    "question_id": 102,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "performance_optimization",
+    "category": "Rendering",
+    "subcategory": "Custom Pipeline",
+    "skills_required": ["SRP", "Graphics API"],
+    "scenario": "특정 산업용 VR 기기에서 기본 URP보다 더 높은 성능을 내기 위해 렌더링 파이프라인을 커스터마이징해야 합니다.",
+    "question": "이때 시니어 엔지니어가 취할 수 있는 가장 공격적인 최적화 기법은?",
+    "choices": [
+    "불필요한 렌더 패스(Render Pass)를 완전히 제거하고 전용 라이팅 쉐이더 작성",
+    "모든 텍스처를 1x1로 변경",
+    "엔진의 소스 코드를 수정하여 가비지 컬렉터 삭제",
+    "모든 모델을 2D 스플라이트로 대체"
+    ],
+    "correct_answer": "불필요한 렌더 패스(Render Pass)를 완전히 제거하고 전용 라이팅 쉐이더 작성",
+    "explanation": "범용 파이프라인인 URP에서 사용하지 않는 기능들을 걷어내고 하드웨어 특화된 쉐이더를 작성하여 불필요한 GPU 오버헤드를 줄입니다."
+    },
+    {
+    "question_id": 103,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "failure_mode_analysis",
+    "category": "Operation",
+    "subcategory": "Crash",
+    "skills_required": ["Memory Management", "Garbage Collection"],
+    "scenario": "장시간 구동 시 앱이 불규칙하게 꺼지는데, 로그에는 'Out of Memory'만 남습니다. 텍스처 메모리는 안정적입니다.",
+    "question": "시니어 레벨에서 의심해야 할 또 다른 원인은?",
+    "choices": [
+    "힙 메모리의 파편화(Fragmentation)로 인한 거대 객체 할당 실패",
+    "사용자의 기기 배터리 수명 다함",
+    "오디오 볼륨 과부하",
+    "UI 레이아웃의 중첩"
+    ],
+    "correct_answer": "힙 메모리의 파편화(Fragmentation)로 인한 거대 객체 할당 실패",
+    "explanation": "작은 메모리 해제와 할당이 반복되면 총 자유 메모리는 충분해도 연속된 메모리 공간이 부족하여 큰 객체(배열 등)를 할당할 때 OOM이 발생할 수 있습니다."
+    },
+    {
+    "question_id": 104,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "incident_response",
+    "category": "Operation",
+    "subcategory": "API Failure",
+    "skills_required": ["Backend Architecture", "Fault Tolerance"],
+    "scenario": "AR 앱의 핵심인 위치 기반 에셋 정보를 가져오는 외부 API 서버가 다운되었습니다.",
+    "question": "서비스 중단을 최소화하기 위한 가장 적절한 대응 설계는?",
+    "choices": [
+    "에러 메시지만 무한 반복 노출",
+    "서킷 브레이커(Circuit Breaker) 패턴을 적용하여 로컬에 캐싱된 에셋 또는 기본 데이터로 폴백 운영",
+    "서버가 복구될 때까지 앱 실행 차단",
+    "모든 API 요청을 1초 간격으로 재시도하도록 설정"
+    ],
+    "correct_answer": "서킷 브레이커(Circuit Breaker) 패턴을 적용하여 로컬에 캐싱된 에셋 또는 기본 데이터로 폴백 운영",
+    "explanation": "외부 시스템 장애가 전체 시스템의 장애로 전파되지 않도록 차단하고, 제한적인 기능을 제공하는 폴백 전략이 필요합니다."
+    },
+    {
+    "question_id": 105,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Graphics",
+    "subcategory": "Ray Tracing",
+    "skills_required": ["RTX", "Vulkan/DX12"],
+    "scenario": "차세대 VR 기기용 게임에서 리얼타임 레이 트레이싱 도입을 검토 중입니다.",
+    "question": "도입 시 가장 큰 기술적 트레이드오프는?",
+    "choices": [
+    "반사 및 조명 품질의 비약적 상승 vs 90fps 이상 유지를 위한 극심한 하드웨어 자원 점유",
+    "로딩 시간 단축 vs 사운드 품질 저하",
+    "코드 가독성 향상 vs 빌드 용량 증가",
+    "사용자 편의성 증대 vs 개발 기간 단축"
+    ],
+    "correct_answer": "반사 및 조명 품질의 비약적 상승 vs 90fps 이상 유지를 위한 극심한 하드웨어 자원 점유",
+    "explanation": "레이 트레이싱은 압도적인 시각적 이점을 제공하지만, 연산 부하가 매우 커서 높은 프레임률이 필수인 VR에서는 적용이 매우 까다롭습니다."
+    },
+    {
+    "question_id": 106,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "security_analysis",
+    "category": "Security",
+    "subcategory": "Code Injection",
+    "skills_required": ["Encryption", "Obfuscation"],
+    "scenario": "앱 내 구매 시스템이 포함된 VR 앱의 소스 코드가 리버싱(Reversing)되어 유료 에셋이 무단 유출될 위험이 있습니다.",
+    "question": "시니어로서 제안할 가장 강력한 방어 대책은?",
+    "choices": [
+    "코드 난독화(Obfuscation) 적용 및 중요한 비즈니스 로직은 서버 사이드(Server-side)에서 검증",
+    "모든 변수명을 한국어로 변경",
+    "인터넷 연결이 안 되면 앱이 안 켜지게 함",
+    "약관에 복제 금지 문구 추가"
+    ],
+    "correct_answer": "코드 난독화(Obfuscation) 적용 및 중요한 비즈니스 로직은 서버 사이드(Server-side)에서 검증",
+    "explanation": "난독화로 분석을 어렵게 하고, 클라이언트가 아닌 서버에서 최종 권한을 검증하는 것이 가장 표준적인 보안 방식입니다."
+    },
+    {
+    "question_id": 107,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Data Management",
+    "subcategory": "Big Data",
+    "skills_required": ["Data Warehouse", "ETL"],
+    "scenario": "수백만 명의 AR 사용자가 움직이는 동선 데이터를 수집하여 마케팅에 활용하려 합니다.",
+    "question": "데이터 수집 및 분석을 위한 가장 적합한 아키텍처는?",
+    "choices": [
+    "텍스트 파일로 저장하여 수동으로 합치기",
+    "클라이언트에서 직접 실시간으로 관계형 DB(MySQL)에 Insert",
+    "이벤트 스트림(Kafka 등)을 통해 로그를 수집하고 데이터 레이크(Data Lake)에 저장 후 분석",
+    "사용자 폰의 로컬 DB에만 저장"
+    ],
+    "correct_answer": "이벤트 스트림(Kafka 등)을 통해 로그를 수집하고 데이터 레이크(Data Lake)에 저장 후 분석",
+    "explanation": "대규모 로그 데이터는 비동기적으로 수집하여 버퍼링하고, 분석용 저장소에 쌓아두는 방식이 시스템 안정성과 확장성에 유리합니다."
+    },
+    {
+    "question_id": 108,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "AR Tech",
+    "subcategory": "Eye Safety",
+    "skills_required": ["Regulatory Compliance"],
+    "scenario": "시력 보호 기능이 중요한 의료용 AR 기기용 소프트웨어를 설계 중입니다.",
+    "question": "고려해야 할 가장 핵심적인 위험 요소는?",
+    "choices": [
+    "조절-수렴 불일치(Vergence-Accommodation Conflict, VAC)로 인한 시각적 피로와 장기적 시력 영향",
+    "배경 음악의 주파수 대역",
+    "UI 버튼의 색상 조합",
+    "컨트롤러의 무게 중심"
+    ],
+    "correct_answer": "조절-수렴 불일치(Vergence-Accommodation Conflict, VAC)로 인한 시각적 피로와 장기적 시력 영향",
+    "explanation": "VAC는 AR/VR의 고질적인 문제로, 실제 눈의 초점 조절 거리와 화면의 깊이 정보가 불일치하여 발생하는 생리적 피로 현상입니다."
+    },
+    {
+    "question_id": 109,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "cost_optimization",
+    "category": "Cloud Rendering",
+    "subcategory": "GPU Instances",
+    "skills_required": ["Cloud Cost Management"],
+    "scenario": "고성능 클라우드 렌더링 VR 서비스를 운영 중인데, GPU 인스턴스 비용이 매출의 80%를 차지합니다.",
+    "question": "품질을 유지하면서 비용을 절감할 가장 효과적인 시니어 레벨의 전략은?",
+    "choices": [
+    "서버 성능을 반으로 낮추고 프레임을 포기함",
+    "사용자 접속 밀집도에 따른 오토 스케일링(Auto-scaling) 정교화 및 유휴 자원 즉시 반납 로직 구현",
+    "유료 광고를 화면 곳곳에 배치",
+    "모든 유저를 강제로 한 서버에 몰아넣음"
+    ],
+    "correct_answer": "사용자 접속 밀집도에 따른 오토 스케일링(Auto-scaling) 정교화 및 유휴 자원 즉시 반납 로직 구현",
+    "explanation": "실시간 수요에 맞게 서버를 동적으로 켜고 끄는 기술과 예약 인스턴스 활용 등이 비용 최적화의 핵심입니다."
+    },
+    {
+    "question_id": 110,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "monitoring_strategy",
+    "category": "Operation",
+    "subcategory": "QoE",
+    "skills_required": ["Metrics", "Grafana"],
+    "scenario": "사용자가 느끼는 VR 경험의 질(QoE)을 실시간으로 모니터링하려 합니다.",
+    "question": "가장 핵심적으로 수집해야 할 클라이언트 측 지표 세트는?",
+    "choices": [
+    "FPS, Frame Timing, Motion-to-Photon Latency, 앱 크래시 율",
+    "사용자의 키와 몸무게",
+    "컨트롤러 버튼 클릭 횟수",
+    "배경 음악 재생 시간"
+    ],
+    "correct_answer": "FPS, Frame Timing, Motion-to-Photon Latency, 앱 크래시 율",
+    "explanation": "성능 지표(FPS, Latency)는 사용자의 멀미와 직접적으로 연결되므로 VR 서비스 품질 관리의 가장 중요한 척도입니다."
+    },
+    {
+    "question_id": 111,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "design_alternative_comparison",
+    "category": "Networking",
+    "subcategory": "Protocol",
+    "skills_required": ["WebRTC", "WebSockets"],
+    "scenario": "웹 기반 AR 메타버스(WebXR)를 개발하려 합니다. 낮은 지연 시간의 음성 및 영상 통신이 필수입니다.",
+    "question": "통신 프로토콜 선택 시 WebSockets 대비 WebRTC의 장점은?",
+    "choices": [
+    "P2P 연결을 지원하며 UDP 기반으로 실시간 미디어 스트리밍에 최적화된 저지연성을 제공함",
+    "보안성이 훨씬 낮아서 개발이 편함",
+    "모든 구형 브라우저에서 동일하게 작동함",
+    "서버 설정이 전혀 필요 없음"
+    ],
+    "correct_answer": "P2P 연결을 지원하며 UDP 기반으로 실시간 미디어 스트리밍에 최적화된 저지연성을 제공함",
+    "explanation": "WebRTC는 실시간 대화형 통신을 위해 설계되어 웹 환경에서 가장 낮은 지연 시간을 보장합니다."
+    },
+    {
+    "question_id": 112,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "scalability_planning",
+    "category": "Architecture",
+    "subcategory": "Global Service",
+    "skills_required": ["Multi-region", "Data Residency"],
+    "scenario": "한국에서 개발한 AR 게임을 전 세계에 동시 런칭하려고 합니다.",
+    "question": "글로벌 확장성을 고려한 아키텍처 설계 시 가장 먼저 해결해야 할 문제는?",
+    "choices": [
+    "지역별 지연 시간(Latency) 해결을 위한 멀티 리전(Multi-region) 배포 및 사용자 데이터 거버넌스 준수",
+    "게임의 주인공 이름 번역",
+    "유저 아바타의 옷 종류 늘리기",
+    "서버 하드웨어 직접 구매 및 수출"
+    ],
+    "correct_answer": "지역별 지연 시간(Latency) 해결을 위한 멀티 리전(Multi-region) 배포 및 사용자 데이터 거버넌스 준수",
+    "explanation": "물리적 거리에 따른 렉(Lag)을 줄이고 국가별 개인정보 보호법(GDPR 등)을 준수하는 것이 글로벌 서비스의 최우선 과제입니다."
+    },
+    {
+    "question_id": 113,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "refactoring_decision",
+    "category": "Development",
+    "subcategory": "Tech Debt",
+    "skills_required": ["Architecture Migration"],
+    "scenario": "3년 된 프로젝트가 수만 줄의 스파게티 코드로 인해 버그 수정 시 다른 곳이 터지는 상황입니다. 새로운 기능 추가가 불가능할 정도입니다.",
+    "question": "시니어 리드로서 팀에 제안할 전략은?",
+    "choices": [
+    "중요 도메인별로 모듈을 분리하고 점진적으로 인터페이스 기반의 클린 아키텍처로 전환",
+    "모든 개발자를 해고하고 새로 채용",
+    "문제가 되는 부분만 주석 처리하고 방치",
+    "코드 수정 없이 하드웨어 성능으로 커버"
+    ],
+    "correct_answer": "중요 도메인별로 모듈을 분리하고 점진적으로 인터페이스 기반의 클린 아키텍처로 전환",
+    "explanation": "빅뱅 방식의 전면 재개발은 리스크가 크므로, 핵심 로직부터 분리하여 테스트 가능한 구조로 리팩토링하는 것이 현실적입니다."
+    },
+    {
+    "question_id": 114,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "AR Tech",
+    "subcategory": "Real-world Interference",
+    "skills_required": ["Situational Awareness"],
+    "scenario": "야외에서 사용하는 AR 내비게이션 앱을 설계 중입니다.",
+    "question": "안전 측면에서 가장 주의해야 할 설계 원칙은?",
+    "choices": [
+    "현실의 위험(차량, 보행자)을 가리지 않도록 중요한 시야 범위를 투명하게 유지하고 과도한 몰입 차단",
+    "가장 화려한 그래픽으로 화면을 꽉 채우기",
+    "최대한 큰 소리로 알람 울리기",
+    "사용자가 화면만 보게 만들기"
+    ],
+    "correct_answer": "현실의 위험(차량, 보행자)을 가리지 않도록 중요한 시야 범위를 투명하게 유지하고 과도한 몰입 차단",
+    "explanation": "AR은 현실 위에 정보를 덧씌우기 때문에 사용자의 실제 안전을 위협하는 정보 차폐가 일어나지 않도록 UX를 설계해야 합니다."
+    },
+    {
+    "question_id": 115,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "capacity_planning",
+    "category": "Operation",
+    "subcategory": "Storage",
+    "skills_required": ["Cloud Storage Planning"],
+    "scenario": "사용자가 직접 3D 공간을 스캔하여 업로드하는 서비스를 운영하려 합니다. 매일 1TB의 데이터가 쌓일 것으로 예상됩니다.",
+    "question": "스토리지 설계 시 고려해야 할 사항은?",
+    "choices": [
+    "데이터 라이프사이클 정책을 통한 콜드 스토리지(Cold Storage) 계층화 및 비용 최적화",
+    "최대한 큰 하드디스크 구매",
+    "업로드된 모든 원본 데이터를 삭제 없이 메인 DB에 저장",
+    "사용자들에게 데이터 삭제 요청하기"
+    ],
+    "correct_answer": "데이터 라이프사이클 정책을 통한 콜드 스토리지(Cold Storage) 계층화 및 비용 최적화",
+    "explanation": "자주 쓰지 않는 과거 데이터는 저렴한 스토리지로 옮기는 자동화 정책이 대규모 데이터 운영의 핵심입니다."
+    },
+    {
+    "question_id": 116,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "code_output_prediction",
+    "category": "Programming",
+    "subcategory": "Math",
+    "skills_required": ["Quaternion", "Euler"],
+    "scenario": "오브젝트를 (0, 90, 0) 만큼 회전시키려 합니다.",
+    "question": "다음 중 transform.rotation = Quaternion.Euler(0, 90, 0)을 수행한 결과는?",
+    "choices": [
+    "Y축을 기준으로 90도 회전된 상태가 됨",
+    "X축을 기준으로 90도 회전된 상태가 됨",
+    "현재 회전값에 90도가 더해짐",
+    "아무 변화 없음"
+    ],
+    "correct_answer": "Y축을 기준으로 90도 회전된 상태가 됨",
+    "explanation": "Quaternion.Euler는 절대적인 회전 값을 설정합니다. (더하는 것은 * 연산 필요)"
+    },
+    {
+    "question_id": 117,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "debugging",
+    "category": "UI",
+    "subcategory": "Raycaster",
+    "skills_required": ["Unity UI"],
+    "scenario": "VR에서 캔버스의 버튼 뒤에 있는 3D 물체를 클릭했는데, 버튼은 무시되고 뒤의 물체만 반응합니다.",
+    "question": "무엇이 잘못되었을 가능성이 큽니다?",
+    "choices": [
+    "버튼의 Image 컴포넌트에 'Raycast Target' 옵션이 꺼져 있음",
+    "버튼 색상이 너무 밝음",
+    "물체의 콜라이더가 너무 큼",
+    "카메라 렌즈에 먼지가 묻음"
+    ],
+    "correct_answer": "버튼의 Image 컴포넌트에 'Raycast Target' 옵션이 꺼져 있음",
+    "explanation": "Raycast Target이 꺼져 있으면 UI 요소가 레이캐스트를 차단하지 못하고 통과시킵니다."
+    },
+    {
+    "question_id": 118,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "log_analysis",
+    "category": "Performance",
+    "subcategory": "V-Sync",
+    "skills_required": ["Profiler"],
+    "scenario": "프로파일러에서 'Wait For Target FPS' 항목이 전체 프레임 타임의 60%를 차지합니다.",
+    "question": "이 로그가 의미하는 바는?",
+    "choices": [
+    "성능에 여유가 있어 설정된 타겟 프레임률(예: 60fps)을 맞추기 위해 CPU가 대기 중임",
+    "CPU 성능이 부족하여 심각한 병목이 발생함",
+    "그래픽 카드가 고장나기 직전임",
+    "메모리 부족으로 스왑 발생 중"
+    ],
+    "correct_answer": "성능에 여유가 있어 설정된 타겟 프레임률(예: 60fps)을 맞추기 위해 CPU가 대기 중임",
+    "explanation": "이 수치가 높다는 것은 하드웨어가 목표 성능을 충분히 달성하고 대기하고 있다는 긍정적인 신호입니다."
+    },
+    {
+    "question_id": 119,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "scenario_based",
+    "category": "AR Tech",
+    "subcategory": "Hand Tracking",
+    "skills_required": ["Hand Tracking SDK"],
+    "scenario": "컨트롤러 없이 맨손으로 가상 버튼을 누르는 AR 앱을 개발 중입니다. 사용자가 손을 빠르게 움직이면 버튼이 잘 눌리지 않습니다.",
+    "question": "이를 개선하기 위해 고려할 수 있는 상호작용 설계는?",
+    "choices": [
+    "버튼의 물리 충돌 영역(Collider)을 시각적 크기보다 더 넓게 잡고, 입력 판정 프레임을 보간함",
+    "사용자에게 천천히 움직이라고 경고 문구 띄우기",
+    "버튼 크기를 화면의 절반으로 늘리기",
+    "손 트래킹을 끄고 음성 명령만 사용"
+    ],
+    "correct_answer": "버튼의 물리 충돌 영역(Collider)을 시각적 크기보다 더 넓게 잡고, 입력 판정 프레임을 보간함",
+    "explanation": "트래킹의 오차나 지연을 고려하여 관대한(Generous) 충돌 판정 범위를 제공하는 것이 VR/AR UX의 핵심입니다."
+    },
+    {
+    "question_id": 120,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "root_cause_analysis",
+    "category": "Networking",
+    "subcategory": "Synchronization",
+    "skills_required": ["Network Authority"],
+    "scenario": "멀티플레이에서 A 플레이어가 상자를 밀었는데, B 플레이어의 화면에서는 상자가 꿈쩍도 하지 않습니다.",
+    "question": "네트워크 관점에서 확인해야 할 핵심 개념은?",
+    "choices": [
+    "네트워크 소유권(Ownership/Authority) 설정이 올바른지 확인",
+    "서버의 운영 체제 버전",
+    "B 플레이어의 마우스 감도",
+    "상자의 텍스처 파일 형식"
+    ],
+    "correct_answer": "네트워크 소유권(Ownership/Authority) 설정이 올바른지 확인",
+    "explanation": "멀티플레이 시스템에서는 물체를 조작할 권한(Authority)이 있는 클라이언트의 변화만 서버로 전파됩니다."
+    },
+    {
+    "question_id": 121,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "middle_level",
+    "question_type": "multiple_choice",
+    "category": "Graphics",
+    "subcategory": "Shaders",
+    "skills_required": ["Compute Shaders"],
+    "scenario": "수만 개의 파티클 연산을 CPU가 아닌 GPU에서 병렬로 빠르게 처리하고 싶습니다.",
+    "question": "이때 사용하기 가장 적합한 쉐이더 유형은?",
+    "choices": ["Surface Shader", "Vertex Shader", "Compute Shader", "Fragment Shader"],
+    "correct_answer": "Compute Shader",
+    "explanation": "컴퓨트 쉐이더는 일반적인 렌더링 파이프라인 외부에서 GPU의 병렬 연산 능력을 범용 계산에 활용할 수 있게 해줍니다."
+    },
+    {
+    "question_id": 122,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "Architecture",
+    "subcategory": "Modularization",
+    "skills_required": ["Unity Packages", "CI/CD"],
+    "scenario": "회사의 여러 AR/VR 프로젝트에서 공통으로 쓰이는 'Hand Interaction 모듈'을 개발팀 전체가 공유하고 관리하려 합니다.",
+    "question": "가장 현대적이고 유지보수가 용이한 배포 방식은?",
+    "choices": [
+    "공용 서버에 소스 코드를 .zip 파일로 올리기",
+    "Private NPM Registry를 구축하여 Unity Package Manager(UPM)로 관리",
+    "프로젝트마다 수동으로 폴더 복사",
+    "메신저로 코드 조각 공유"
+    ],
+    "correct_answer": "Private NPM Registry를 구축하여 Unity Package Manager(UPM)로 관리",
+    "explanation": "UPM을 사용하면 의존성 관리, 버전 제어 및 업데이트가 매우 간편해집니다."
+    },
+    {
+    "question_id": 123,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Graphics",
+    "subcategory": "DirectX vs Vulkan",
+    "skills_required": ["Graphics APIs"],
+    "scenario": "안드로이드 기반의 독립형 VR 헤드셋을 위한 극한의 성능 최적화가 필요한 프로젝트를 시작합니다.",
+    "question": "OpenGLES 대비 Vulkan API를 선택했을 때의 기대 효과는?",
+    "choices": [
+        "CPU 오버헤드 감소 및 멀티쓰레딩 최적화를 통한 드로우 콜 병목 완화",
+        "코딩 난이도가 낮아져 개발 기간 단축",
+        "모든 구형 안드로이드 기기 지원",
+        "그래픽 품질의 자동 상향"
+    ],
+    "explanation": "Vulkan은 하드웨어에 더 가깝게 접근할 수 있어 CPU 오버헤드를 줄이고 효율적인 자원 관리가 가능하지만 구현 난이도가 높습니다.",
+    "correct_answer": "CPU 오버헤드 감소 및 멀티쓰레딩 최적화를 통한 드로우 콜 병목 완화"
+    },
+    {
+    "question_id": 124,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "tradeoff_analysis",
+    "category": "AR Tech",
+    "subcategory": "Cloud Anchors",
+    "skills_required": ["Cloud Anchors", "Privacy"],
+    "scenario": "다중 사용자 AR 공유 경험을 위해 Cloud Anchors를 도입하려 합니다.",
+    "question": "데이터 프라이버시 관점에서 시니어가 반드시 검토해야 할 사항은?",
+    "choices": [
+    "주변 환경의 시각적 특징점 데이터가 서버에 저장되는 방식과 법적 고지 여부",
+    "서버의 RAM 용량",
+    "데이터베이스의 인덱스 구조",
+    "사용자 아바타의 커스터마이징 범위"
+    ],
+    "correct_answer": "주변 환경의 시각적 특징점 데이터가 서버에 저장되는 방식과 법적 고지 여부",
+    "explanation": "클라우드 앵커는 공간 정보를 서버에 올리므로 사용자의 사적 공간 노출에 대한 법적/윤리적 검토가 필수입니다."
+    },
+    {
+    "question_id": 125,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "Hardware",
+    "subcategory": "Connectivity",
+    "skills_required": ["Bandwidth Analysis"],
+    "scenario": "고해상도 비디오 스트리밍을 포함한 AR 원격 협업 솔루션을 설계 중입니다. 현장 네트워크는 5G가 지원되지 않는 환경이 포함됩니다.",
+    "question": "이때 발생할 수 있는 가장 큰 리스크는?",
+    "choices": [
+    "불안정한 대역폭으로 인한 영상 끊김 및 지연(Latency)으로 협업 효율 저하",
+    "앱의 배경색이 어색해짐",
+    "스마트폰의 스피커 볼륨이 작아짐",
+    "화면 터치 인식이 느려짐"
+    ],
+    "correct_answer": "불안정한 대역폭으로 인한 영상 끊김 및 지연(Latency)으로 협업 효율 저하",
+    "explanation": "네트워크 환경에 따른 가변 비트레이트(ABR) 적용 등의 대응 전략이 설계에 포함되어야 합니다."
+    },
+    {
+    "question_id": 126,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "monitoring_strategy",
+    "category": "Operation",
+    "subcategory": "Performance Tracking",
+    "skills_required": ["Telemetry", "Remote Config"],
+    "scenario": "전 세계에 출시된 VR 앱의 특정 구역에서 프레임 드랍이 발생한다는 소수의 리포트가 있습니다.",
+    "question": "정확한 원인 파악을 위해 어떤 시스템을 활용해야 합니까?",
+    "choices": [
+    "기기별 성능 데이터를 수집하는 원격 텔레메트리(Telemetry) 시스템",
+    "사용자들에게 직접 전화하기",
+    "모든 코드를 처음부터 다시 읽기",
+    "사무실에서 테스트 기기로 재현될 때까지 기다리기"
+    ],
+    "correct_answer": "기기별 성능 데이터를 수집하는 원격 텔레메트리(Telemetry) 시스템",
+    "explanation": "실제 유저 환경의 성능 지표를 로그로 수집하여 분석해야만 재현하기 어려운 이슈를 해결할 수 있습니다."
+    },
+    {
+    "question_id": 127,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "scalability_planning",
+    "category": "Backend",
+    "subcategory": "Multiplayer",
+    "skills_required": ["Dedicated Server", "Matchmaking"],
+    "scenario": "VR 배틀로얄 게임을 준비 중입니다. 매치메이킹 시간이 길어지면 유저들이 이탈할 우려가 있습니다.",
+    "question": "확장성 있는 서버 구성을 위해 도입해야 할 기술은?",
+    "choices": [
+    "서버리스(Serverless) 기반 매치메이킹과 게임 세션용 컨테이너 오케스트레이션(K8s 등)",
+    "서버 한 대에 1만 명 몰아넣기",
+    "매치메이킹 없이 선착순 입장",
+    "모든 연산을 클라이언트에서 처리"
+    ],
+    "correct_answer": "서버리스(Serverless) 기반 매치메이킹과 게임 세션용 컨테이너 오케스트레이션(K8s 등)",
+    "explanation": "동적으로 변하는 접속자 수에 맞춰 게임 서버 인스턴스를 빠르게 생성하고 회수할 수 있는 인프라 구조가 필수적입니다."
+    },
+    {
+    "question_id": 128,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "incident_response",
+    "category": "Deployment",
+    "subcategory": "Rollback",
+    "skills_required": ["CI/CD Pipeline"],
+    "scenario": "신규 배포된 AR 앱 업데이트 직후, 최신형 스마트폰에서만 카메라 화면이 검게 나오는 치명적 결함이 발견되었습니다.",
+    "question": "가장 먼저 취해야 할 운영적 조치는?",
+    "choices": [
+    "즉시 이전 버전으로 롤백(Rollback) 수행 후 원인 분석",
+    "개발자들을 모아 밤샘 디버깅 시작",
+    "결함을 무시하고 다음 정기 업데이트까지 대기",
+    "사용자들에게 환불 처리만 진행"
+    ],
+    "correct_answer": "즉시 이전 버전으로 롤백(Rollback) 수행 후 원인 분석",
+    "explanation": "치명적 장애 시 서비스 복구가 최우선이며, 롤백 시스템이 갖춰져 있어야 합니다."
+    },
+    {
+    "question_id": 129,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "cost_optimization",
+    "category": "Asset Production",
+    "subcategory": "Photogrammetry",
+    "skills_required": ["Asset Pipeline Optimization"],
+    "scenario": "수천 개의 실제 유물을 AR 모델로 제작해야 합니다. 외주 제작 비용이 너무 커서 고민입니다.",
+    "question": "비용 효율적인 대규모 3D 에셋 제작 파이프라인으로 제안할 기술은?",
+    "choices": [
+    "AI 기반 Photogrammetry(사진 측량) 자동화 파이프라인 구축",
+    "모든 모델을 수동으로 모델링",
+    "저해상도 사진 한 장으로 대체",
+    "제작을 포기함"
+    ],
+    "correct_answer": "AI 기반 Photogrammetry(사진 측량) 자동화 파이프라인 구축",
+    "explanation": "사진 측량과 AI 리메싱 기술을 결합하면 수동 작업량을 대폭 줄여 비용을 최적화할 수 있습니다."
+    },
+    {
+    "question_id": 130,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "failure_mode_analysis",
+    "category": "AR Tech",
+    "subcategory": "Spatial Mapping",
+    "skills_required": ["Depth Sensors", "LiDAR"],
+    "scenario": "LiDAR 센서가 탑재된 기기에서 실내 공간 스캔 중, 검은색 가죽 소파 부분만 메쉬가 생성되지 않고 뚫려 보입니다.",
+    "question": "이 현상의 근본 원인은?",
+    "choices": [
+    "검은색 물체가 LiDAR 레이저를 대부분 흡수하여 센서로 되돌아오는 신호가 미약함",
+    "가죽 소파의 정전기 간섭",
+    "소프트웨어의 알고리즘 버그",
+    "기기의 배터리 부족"
+    ],
+    "correct_answer": "검은색 물체가 LiDAR 레이저를 대부분 흡수하여 센서로 되돌아오는 신호가 미약함",
+    "explanation": "LiDAR는 빛의 반사를 이용하는데, 검은색이나 거울 같은 재질은 빛을 흡수하거나 굴절시켜 데이터 획득을 방해합니다."
+    },
+    {
+    "question_id": 131,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "security_analysis",
+    "category": "Data Security",
+    "subcategory": "Deepfake/Spoofing",
+    "skills_required": ["Biometrics", "Face Tracking"],
+    "scenario": "VR 미팅 앱에서 아바타가 사용자의 실제 얼굴 표정을 실시간으로 복제합니다. 타인이 타인의 얼굴 데이터를 탈취하여 사칭할 위험이 제기되었습니다.",
+    "question": "보안 대책으로 적절하지 않은 것은?",
+    "choices": [
+    "얼굴 특징점 데이터를 로컬 장치에만 저장하고 전송 시 암호화",
+    "서버에서 표면적인 표정 데이터만 전송하고 원본 이미지는 즉시 폐기",
+    "사용자 인증 단계에 생체 인증 결합",
+    "모든 표정 데이터를 공개 API로 누구나 접근 가능하게 설정"
+    ],
+    "correct_answer": "모든 표정 데이터를 공개 API로 누구나 접근 가능하게 설정",
+    "explanation": "표정 데이터는 민감한 생체 정보와 연결될 수 있으므로 엄격한 권한 관리가 필요합니다."
+    },
+    {
+    "question_id": 132,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Rendering",
+    "subcategory": "Foveated Rendering",
+    "skills_required": ["Eye Tracking", "Rendering Pipeline"],
+    "scenario": "최신 하이엔드 VR 기기를 타겟으로 한 시뮬레이터를 개발 중입니다. 초고화질을 유지하면서 성능을 확보해야 합니다.",
+    "question": "Foveated Rendering 방식을 선택할 때, Fixed 방식보다 Eye-tracked 방식을 선택하는 이유는?",
+    "choices": [
+    "사용자의 시선이 머무는 지점을 정확히 추적하여 체감 화질을 극대화하고 연산량을 더 공격적으로 줄일 수 있음",
+    "구현이 훨씬 쉽기 때문",
+    "하드웨어 가격이 더 저렴해지기 때문",
+    "눈의 건강에 더 좋기 때문"
+    ],
+    "correct_answer": "사용자의 시선이 머무는 지점을 정확히 추적하여 체감 화질을 극대화하고 연산량을 더 공격적으로 줄일 수 있음",
+    "explanation": "고정 방식은 화면 중앙만 선명하지만, 시선 추적 방식은 사용자가 어디를 보든 선명함을 유지하면서 주변부 부하를 낮춥니다."
+    },
+    {
+    "question_id": 133,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Development",
+    "subcategory": "Scripting Backend",
+    "skills_required": ["IL2CPP", "Mono"],
+    "scenario": "Unity 빌드 시 스크립팅 백엔드를 Mono에서 IL2CPP로 변경하려 합니다.",
+    "question": "이 결정에 따른 주요 변화는?",
+    "choices": [
+    "빌드 시간은 늘어나고 코드 리버싱은 어려워지며, 런타임 성능(실행 속도)이 향상됨",
+    "빌드 속도가 빨라지고 보안이 취약해짐",
+    "C# 코드를 사용할 수 없게 됨",
+    "모든 에셋의 용량이 2배로 늘어남"
+    ],
+    "correct_answer": "빌드 시간은 늘어나고 코드 리버싱은 어려워지며, 런타임 성능(실행 속도)이 향상됨",
+    "explanation": "IL2CPP는 C#을 C++로 변환하여 컴파일하므로 보안과 성능 면에서 우수하지만 빌드 과정이 길어집니다."
+    },
+    {
+    "question_id": 134,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "refactoring_decision",
+    "category": "Architecture",
+    "subcategory": "ECS",
+    "skills_required": ["Unity DOTS", "ECS"],
+    "scenario": "수만 개의 독립적인 드론 오브젝트가 각각 물리 연산과 AI를 수행해야 하는 대규모 VR 전투 씬을 구현해야 합니다.",
+    "question": "전통적인 GameObject/MonoBehaviour 방식의 한계를 극복하기 위해 제안할 기술 스택은?",
+    "choices": [
+    "Unity DOTS (Entity Component System)",
+    "더 많은 코루틴 사용",
+    "오브젝트 풀링(Object Pooling)만 적용",
+    "스크립트를 모두 삭제하고 애니메이션으로만 처리"
+    ],
+    "correct_answer": "Unity DOTS (Entity Component System)",
+    "explanation": "DOTS는 데이터 지향 설계를 통해 캐시 효율을 극대화하고 멀티코어 성능을 최대한 활용하여 수만 개의 개체를 처리하게 해줍니다."
+    },
+    {
+    "question_id": 135,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "monitoring_strategy",
+    "category": "Backend",
+    "subcategory": "Logging",
+    "skills_required": ["ELK Stack", "CloudWatch"],
+    "scenario": "수천 명의 유저가 동시 접속 중인 VR 서버에서 불규칙적인 패킷 유실 원인을 파악해야 합니다.",
+    "question": "가장 효율적인 로그 수집 및 분석 체계는?",
+    "choices": [
+    "중앙 집중형 로그 수집(ELK 또는 Datadog)을 구축하고 네트워크 레이턴시와 패킷 드랍 지표 시각화",
+    "서버 터미널에서 실시간으로 텍스트 로그 읽기",
+    "유저들에게 패킷 유실 시 캡처해서 보내달라고 요청",
+    "서버의 모든 패킷을 바이너리로 하드디스크에 무기한 저장"
+    ],
+    "correct_answer": "중앙 집중형 로그 수집(ELK 또는 Datadog)을 구축하고 네트워크 레이턴시와 패킷 드랍 지표 시각화",
+    "explanation": "대규모 분산 환경에서는 로그를 중앙에서 검색 가능하게 만들고 대시보드로 추이를 보는 것이 필수입니다."
+    },
+    {
+    "question_id": 136,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "testing_strategy",
+    "category": "QA",
+    "subcategory": "Hardware Lab",
+    "skills_required": ["Cross-platform Testing"],
+    "scenario": "회사가 10종 이상의 서로 다른 VR 헤드셋을 지원해야 합니다.",
+    "question": "품질 보증(QA) 효율을 높이기 위한 전략은?",
+    "choices": [
+    "OpenXR 표준을 준수하여 개발하고, 에뮬레이터 및 자동화 헬멧 테스트 리그(Test Rig) 구축",
+    "가장 싼 기기 1종에서만 테스트",
+    "출시 후 유저들이 버그를 제보할 때까지 기다림",
+    "모든 기기를 모든 개발자의 책상 위에 두기"
+    ],
+    "correct_answer": "OpenXR 표준을 준수하여 개발하고, 에뮬레이터 및 자동화 헬멧 테스트 리그(Test Rig) 구축",
+    "explanation": "표준 규격 사용과 테스트 자동화는 파편화된 VR 하드웨어 시장에서 유지보수 비용을 줄이는 핵심입니다."
+    },
+    {
+    "question_id": 137,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "best_practice_selection",
+    "category": "Programming",
+    "subcategory": "Memory Management",
+    "skills_required": ["Object Pooling"],
+    "scenario": "VR 총싸움 게임에서 탄환이 초당 수백 발 생성되고 파괴됩니다. GC 피크(Peak)로 인해 화면이 멈칫거립니다.",
+    "question": "가장 먼저 도입해야 할 프로그래밍 기법은?",
+    "choices": [
+    "Object Pooling (오브젝트 풀링)",
+    "Destroy() 함수 호출 대신 숨기기만 하기",
+    "탄환 개수 제한을 1개로 줄이기",
+    "가비지 컬렉터를 아예 끄기"
+    ],
+    "correct_answer": "Object Pooling (오브젝트 풀링)",
+    "explanation": "객체를 매번 생성/삭제하지 않고 미리 만들어둔 리스트에서 활성화/비활성화하여 메모리 할당 부하를 없애야 합니다."
+    },
+    {
+    "question_id": 138,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "documentation_analysis",
+    "category": "Compliance",
+    "subcategory": "App Store Guidelines",
+    "skills_required": ["Store Submission"],
+    "scenario": "Apple Vision Pro용 앱을 App Store에 제출했으나 '가상 콘텐츠가 실제 세계와 겹칠 때의 경계 처리가 불분명함'을 이유로 거절되었습니다.",
+    "question": "시니어 엔지니어로서 수정해야 할 사항은?",
+    "choices": [
+    "현실과 가상의 경계를 명확히 하는 시각적 피드백(그림자, 아웃라인 등) 강화 및 가이드라인 준수",
+    "애플에 항의 메일 보내기",
+    "앱의 모든 그래픽을 만화처럼 변경",
+    "앱 이름을 변경하여 다시 제출"
+    ],
+    "correct_answer": "현실과 가상의 경계를 명확히 하는 시각적 피드백(그림자, 아웃라인 등) 강화 및 가이드라인 준수",
+    "explanation": "MR/AR 환경에서는 사용자가 현실과 가상을 혼동하지 않도록 돕는 안전 및 디자인 가이드라인이 엄격합니다."
+    },
+    {
+    "question_id": 139,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "distributed_system_reasoning",
+    "category": "Networking",
+    "subcategory": "Consistency",
+    "skills_required": ["CAP Theorem", "Multiplayer Consistency"],
+    "scenario": "전 세계 유저가 참여하는 VR 옥션(경매) 시스템을 개발 중입니다. 입찰 순서가 매우 중요합니다.",
+    "question": "이 분산 시스템에서 가장 우선시해야 할 가치는?",
+    "choices": [
+    "강한 일관성(Strong Consistency)과 이벤트 순서 보장",
+    "무조건적인 저지연성(Latency) 보장",
+    "아바타 그래픽의 화려함",
+    "클라이언트 측의 자유로운 수정"
+    ],
+    "correct_answer": "강한 일관성(Strong Consistency)과 이벤트 순서 보장",
+    "explanation": "경매처럼 결과의 공정성이 중요한 시스템에서는 속도보다 데이터의 정확한 동기화와 순서가 절대적으로 중요합니다."
+    },
+    {
+    "question_id": 140,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "api_design",
+    "category": "Architecture",
+    "subcategory": "Internal SDK",
+    "skills_required": ["API Design", "Abstraction"],
+    "scenario": "사내 개발자들이 사용할 'AR 가구 배치 라이브러리'를 제작하고 있습니다.",
+    "question": "사용자(개발자) 입장에서 가장 좋은 API 디자인 원칙은?",
+    "choices": [
+    "복잡한 내부 로직은 캡슐화하고, 직관적인 메서드(예: PlaceObjectAt)와 명확한 에러 코드를 제공",
+    "내부의 모든 변수를 public으로 공개하여 마음대로 수정하게 함",
+    "설명서 없이 코드만 전달",
+    "함수 이름을 최대한 길고 어렵게 지음"
+    ],
+    "correct_answer": "복잡한 내부 로직은 캡슐화하고, 직관적인 메서드(예: PlaceObjectAt)와 명확한 에러 코드를 제공",
+    "explanation": "좋은 SDK는 복잡성을 감추고 사용자가 최소한의 학습으로 기능을 구현할 수 있게 도와야 합니다."
+    },
+    {
+    "question_id": 141,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "performance_estimation",
+    "category": "Hardware",
+    "subcategory": "Thermal Limits",
+    "skills_required": ["Power Profiling"],
+    "scenario": "모바일 VR 기기에서 72fps를 유지하면서 AI 연산을 로컬에서 수행하려 합니다.",
+    "question": "배터리 소모와 발열을 고려할 때 시니어가 판단해야 할 임계치는?",
+    "choices": [
+    "지속 가능한 전력 소모량(Thermal Envelope) 내에서 연산 부하를 분배하고 프레임 드랍 발생 시 즉시 부하 차단",
+    "기기가 꺼질 때까지 최대한 가동",
+    "사용자가 뜨거움을 느낄 때까지 가동",
+    "성능을 무조건 100% 사용"
+    ],
+    "correct_answer": "지속 가능한 전력 소모량(Thermal Envelope) 내에서 연산 부하를 분배하고 프레임 드랍 발생 시 즉시 부하 차단",
+    "explanation": "모바일 환경은 방열 팬이 없는 경우가 많아, 소프트웨어적으로 발열을 예측하고 관리하는 것이 필수적입니다."
+    },
+    {
+    "question_id": 142,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "scalability_planning",
+    "category": "Cloud",
+    "subcategory": "Edge Computing",
+    "skills_required": ["Edge Computing", "5G"],
+    "scenario": "전국에 퍼진 스마트 시티 AR 가이드를 제작하려 합니다. 데이터 처리량이 방대합니다.",
+    "question": "중앙 집중 서버의 부하를 줄이고 응답 속도를 높이기 위한 전략은?",
+    "choices": [
+    "에지 컴퓨팅(Edge Computing)을 도입하여 지역별 로컬 허브에서 1차 데이터 처리",
+    "모든 데이터를 미국 본사 서버로 전송",
+    "사용자 폰의 CPU만 100% 사용",
+    "데이터 수집 주기를 1시간으로 늘리기"
+    ],
+    "correct_answer": "에지 컴퓨팅(Edge Computing)을 도입하여 지역별 로컬 허브에서 1차 데이터 처리",
+    "explanation": "사용자와 가까운 곳에서 데이터를 처리함으로써 네트워크 병목을 줄이고 실시간성을 확보할 수 있습니다."
+    },
+    {
+    "question_id": 143,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "incident_response",
+    "category": "Operation",
+    "subcategory": "Security Breach",
+    "skills_required": ["Incident Response", "Identity"],
+    "scenario": "VR 메타버스 내에서 특정 유저가 타인의 개인 공간에 무단으로 침입하거나 괴롭히는 버그(또는 공격)가 발생했습니다.",
+    "question": "시스템적으로 즉시 조치해야 할 사항은?",
+    "choices": [
+    "공간 격리(Isolating) 로직을 강제 적용하고 가해 유저 계정 일시 중지 및 권한 시스템 재검토",
+    "무시하고 서비스 계속 진행",
+    "해당 유저를 욕하는 전체 공지 띄우기",
+    "모든 유저의 접속을 차단하고 서비스 종료"
+    ],
+    "correct_answer": "공간 격리(Isolating) 로직을 강제 적용하고 가해 유저 계정 일시 중지 및 권한 시스템 재검토",
+    "explanation": "사용자 안전(Safety) 이슈는 서비스 신뢰도와 직결되므로 즉각적인 격리와 근본적인 권한 로직 수정이 필요합니다."
+    },
+    {
+    "question_id": 144,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "best_practice_selection",
+    "category": "UI",
+    "subcategory": "Accessibility",
+    "skills_required": ["Universal Design"],
+    "scenario": "다양한 신체 조건을 가진 사용자들이 참여하는 소셜 VR을 개발합니다.",
+    "question": "접근성(Accessibility)을 높이기 위한 최고의 실무 사례는?",
+    "choices": [
+    "앉아서 플레이 모드 제공, 색약 모드, 음성 텍스트 변환(STT), 컨트롤러 버튼 커스터마이징 제공",
+    "표준 체형의 성인 남성에게만 최적화",
+    "모든 글씨를 가장 작게 표기하여 화면 확보",
+    "소리만으로 모든 정보를 전달"
+    ],
+    "correct_answer": "앉아서 플레이 모드 제공, 색약 모드, 음성 텍스트 변환(STT), 컨트롤러 버튼 커스터마이징 제공",
+    "explanation": "누구나 차별 없이 VR 환경을 즐길 수 있도록 물리적, 감각적 제약을 고려한 설계를 포함해야 합니다."
+    },
+    {
+    "question_id": 145,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Graphics",
+    "subcategory": "Texture Streaming",
+    "skills_required": ["Texture Streaming", "VRAM Management"],
+    "scenario": "광대한 맵을 가진 VR 게임에서 8K 텍스처를 다수 사용하려 합니다. VRAM 용량이 부족합니다.",
+    "question": "Texture Streaming을 도입했을 때의 이득과 부작용은?",
+    "choices": [
+    "VRAM 사용량을 줄여 크래시를 방지하지만, 급격한 카메라 회전 시 저해상도 텍스처가 보이는 팝인(Pop-in) 현상 발생 가능",
+    "로딩 시간이 0초가 되지만 CPU가 타버림",
+    "그래픽이 무조건 좋아지지만 인터넷 속도가 느려짐",
+    "모든 텍스처가 선명해지지만 그림자가 사라짐"
+    ],
+    "correct_answer": "VRAM 사용량을 줄여 크래시를 방지하지만, 급격한 카메라 회전 시 저해상도 텍스처가 보이는 팝인(Pop-in) 현상 발생 가능",
+    "explanation": "필요한 부분만 메모리에 올리는 기술은 효율적이지만 시각적인 지연 현상을 동반할 수 있습니다."
+    },
+    {
+    "question_id": 146,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "Networking",
+    "subcategory": "Cheating",
+    "skills_required": ["Anti-cheat", "Physics"],
+    "scenario": "멀티플레이 VR 스포츠 게임에서 일부 유저가 클라이언트 코드를 조작하여 비정상적으로 빠른 속도로 이동합니다.",
+    "question": "이를 방지하기 위한 아키텍처적 해결책은?",
+    "choices": [
+    "이동 로직을 서버에서 시뮬레이션하고 검증(Server-side Validation)하는 권한 모델 도입",
+    "유저들에게 정직하게 해달라고 공지",
+    "해당 유저의 컴퓨터 전원을 원격으로 끔",
+    "모든 유저의 이동 속도를 0으로 고정"
+    ],
+    "correct_answer": "이동 로직을 서버에서 시뮬레이션하고 검증(Server-side Validation)하는 권한 모델 도입",
+    "explanation": "클라이언트는 신뢰할 수 없다는 전제하에 서버가 물리 법칙을 검증해야 핵(Hack)을 방지할 수 있습니다."
+    },
+    {
+    "question_id": 147,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "Architecture",
+    "subcategory": "Plugin System",
+    "skills_required": ["Modding", "DLL"],
+    "scenario": "사용자가 직접 만든 가상 공간(World)이나 아바타 기능을 추가할 수 있는 플랫폼을 설계 중입니다.",
+    "question": "보안과 확장성을 동시에 확보하는 모딩(Modding) 시스템 설계 방식은?",
+    "choices": [
+    "샌드박스(Sandbox) 환경에서 실행되는 스크립트 엔진이나 에셋 번들 기반의 런타임 로딩 시스템 구축",
+    "전체 소스 코드를 사용자에게 배포",
+    "사용자가 서버에 직접 코드를 업로드하게 허용",
+    "모든 기능을 하나의 실행 파일에 담기"
+    ],
+    "correct_answer": "샌드박스(Sandbox) 환경에서 실행되는 스크립트 엔진이나 에셋 번들 기반의 런타임 로딩 시스템 구축",
+    "explanation": "사용자 코드가 시스템 전체에 영향을 주지 않도록 격리된 환경에서 에셋과 로직을 불러와야 합니다."
+    },
+    {
+    "question_id": 148,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "performance_optimization",
+    "category": "Graphics",
+    "subcategory": "Occlusion Culling",
+    "skills_required": ["Software Occlusion Culling"],
+    "scenario": "복잡한 실내 VR 맵에서 가려진 물체들이 렌더링되어 성능이 떨어집니다. 하드웨어 오클루전 쿼리는 모바일에서 비용이 큽니다.",
+    "question": "시니어로서 제안할 수 있는 대안적인 최적화 방식은?",
+    "choices": [
+    "미리 계산된 데이터 기반의 오클루전 컬링(Pre-computed Visibility)이나 포털(Portal) 시스템 활용",
+    "모든 벽을 투명하게 만들기",
+    "모든 물체에 투명도 0을 적용",
+    "안티앨리어싱을 끄기"
+    ],
+    "correct_answer": "미리 계산된 데이터 기반의 오클루전 컬링(Pre-computed Visibility)이나 포털(Portal) 시스템 활용",
+    "explanation": "런타임 연산을 줄이기 위해 특정 위치에서 보이지 않는 영역을 미리 계산해두어 드로우 콜을 절약할 수 있습니다."
+    },
+    {
+    "question_id": 149,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "tradeoff_analysis",
+    "category": "AR Tech",
+    "subcategory": "Remote Rendering",
+    "skills_required": ["Cloud Rendering", "Edge VR"],
+    "scenario": "초저지연 5G 환경을 타겟으로 한 클라우드 AR 서비스를 기획 중입니다.",
+    "question": "클라이언트 연산(On-device)과 서버 연산(Cloud)을 나누는 기준은?",
+    "choices": [
+    "즉각적인 반응이 필요한 트래킹/입력은 로컬에서, 복잡한 비주얼/데이터 처리는 서버에서 수행하는 하이브리드 방식",
+    "모든 연산을 서버에서만 수행",
+    "모든 연산을 로컬에서만 수행",
+    "사용자의 기분 상태에 따라 결정"
+    ],
+    "correct_answer": "즉각적인 반응이 필요한 트래킹/입력은 로컬에서, 복잡한 비주얼/데이터 처리는 서버에서 수행하는 하이브리드 방식",
+    "explanation": "트래킹 지연은 멀미와 직접 연결되므로 로컬 처리가 필수이며, 렌더링 부하는 서버로 넘겨 고품질을 구현합니다."
+    },
+    {
+    "question_id": 150,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "Development",
+    "subcategory": "Third-party SDK",
+    "skills_required": ["Dependency Management"],
+    "scenario": "서비스의 핵심 기능이 중소 규모의 서드파티 AR SDK에 의존하고 있습니다. 해당 업체가 인수되거나 파산할 가능성이 제기되었습니다.",
+    "question": "기술 리스크 관리 차원에서 준비해야 할 사항은?",
+    "choices": [
+    "추상화 계층(Abstraction Layer)을 통해 다른 SDK로의 교체가 용이한 구조를 설계하고 소스 코드 에스크로 검토",
+    "해당 업체 주식 사기",
+    "문제가 생길 때까지 무조건 기다리기",
+    "서드파티 SDK를 아예 쓰지 않고 모두 직접 개발"
+    ],
+    "correct_answer": "추상화 계층(Abstraction Layer)을 통해 다른 SDK로의 교체가 용이한 구조를 설계하고 소스 코드 에스크로 검토",
+    "explanation": "특정 업체에 대한 기술 종속성(Vendor Lock-in)을 최소화하기 위해 인터페이스 기반의 설계가 필요합니다."
+    },
+    {
+    "question_id": 151,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "configuration_problem",
+    "category": "AR Tech",
+    "subcategory": "Environment Probe",
+    "skills_required": ["AR Foundation", "Reflection Probes"],
+    "scenario": "AR 환경에서 가상의 금속 공이 주변 실제 환경을 반사하지 않고 검게만 보입니다.",
+    "question": "어떤 컴포넌트를 추가하고 구성해야 합니까?",
+    "choices": [
+    "AR Environment Probe Manager를 추가하여 실제 환경 데이터를 큐브맵으로 런타임 생성",
+    "그림자 강도를 0으로 설정",
+    "금속 공의 재질을 투명하게 변경",
+    "카메라 해상도 높이기"
+    ],
+    "correct_answer": "AR Environment Probe Manager를 추가하여 실제 환경 데이터를 큐브맵으로 런타임 생성",
+    "explanation": "AR Foundation의 환경 프로브 기능을 사용하면 실제 카메라 영상을 바탕으로 가상 물체에 반사될 텍스처를 실시간으로 만들어줍니다."
+    },
+    {
+    "question_id": 152,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "root_cause_analysis",
+    "category": "Performance",
+    "subcategory": "Jank",
+    "skills_required": ["Frame Timing", "CPU Spikes"],
+    "scenario": "VR 앱이 잘 구동되다가 10초마다 한 번씩 0.5초 동안 화면이 멈추는 현상(Jank)이 발생합니다.",
+    "question": "가장 의심되는 소프트웨어적 원인은?",
+    "choices": [
+    "가비지 컬렉터(GC)의 Full Collection 발생으로 인한 Stop-the-world",
+    "배터리 절전 모드 진입",
+    "사용자가 눈을 감음",
+    "배경 음악의 루프 구간 에러"
+    ],
+    "correct_answer": "가비지 컬렉터(GC)의 Full Collection 발생으로 인한 Stop-the-world",
+    "explanation": "누적된 메모리 가비지가 한꺼번에 정리될 때 모든 쓰레드가 멈추며 프레임 드랍이 발생할 수 있습니다."
+    },
+    {
+    "question_id": 153,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "scenario_based",
+    "category": "Interaction",
+    "subcategory": "Haptics",
+    "skills_required": ["UX", "Haptics"],
+    "scenario": "VR에서 사용자가 무거운 상자와 가벼운 상자를 들었을 때의 차이를 시각적 효과 외에 전달하고 싶습니다.",
+    "question": "햅틱 피드백을 어떻게 설계해야 합니까?",
+    "choices": [
+    "상자의 무게에 비례하여 진동의 진폭(Amplitude)과 주파수(Frequency)를 다르게 출력",
+    "무거운 상자를 들 때만 최대 진동 출력",
+    "가벼운 상자를 들 때 소리를 지름",
+    "진동 없이 화면을 흔듦"
+    ],
+    "correct_answer": "상자의 무게에 비례하여 진동의 진폭(Amplitude)과 주파수(Frequency)를 다르게 출력",
+    "explanation": "진동의 패턴을 다양화하여 무게감이나 질감 같은 물리적 속성을 사용자에게 인지시킬 수 있습니다."
+    },
+    {
+    "question_id": 154,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "performance_optimization",
+    "category": "Rendering",
+    "subcategory": "Shader Variants",
+    "skills_required": ["Shader Stripping", "Build Time"],
+    "scenario": "빌드 시 쉐이더 컴파일 시간이 1시간 이상 걸리고 빌드 용량이 수 GB가 되었습니다.",
+    "question": "이 'Shader Variant Explosion' 문제를 해결하기 위해 시니어가 취할 조치는?",
+    "choices": [
+    "사용하지 않는 키워드 조합을 제외하는 Shader Stripping 스크립트 작성",
+    "모든 쉐이더 삭제",
+    "더 좋은 CPU를 가진 빌드 서버 구매",
+    "쉐이더 대신 모든 것을 텍스처로 베이크"
+    ],
+    "correct_answer": "사용하지 않는 키워드 조합을 제외하는 Shader Stripping 스크립트 작성",
+    "explanation": "쉐이더 키워드가 많아지면 조합의 수가 기하급수적으로 늘어나는데, 실제 사용되는 조합만 빌드에 포함시켜야 합니다."
+    },
+    {
+    "question_id": 155,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Networking",
+    "subcategory": "P2P vs Server",
+    "skills_required": ["Network Topology", "Cost"],
+    "scenario": "최대 4인이 즐기는 가벼운 VR 협동 게임을 출시하려 합니다. 서버 비용을 최소화하는 것이 경영상의 목표입니다.",
+    "question": "가장 적절한 네트워크 토폴로지는?",
+    "choices": [
+    "Listen Server (Host-Client) 방식 또는 P2P 방식",
+    "대규모 Dedicated Server 클러스터",
+    "모든 유저를 위한 1:1 서버 배정",
+    "오프라인 모드만 제공"
+    ],
+    "correct_answer": "Listen Server (Host-Client) 방식 또는 P2P 방식",
+    "explanation": "플레이어 중 한 명이 호스트가 되어 서버 역할을 수행하면 중앙 서버 비용을 획기적으로 줄일 수 있습니다."
+    },
+    {
+    "question_id": 156,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "Compliance",
+    "subcategory": "Health Safety",
+    "skills_required": ["User Safety Regulations"],
+    "scenario": "강렬한 섬광이 반복되는 VR 리듬 게임을 개발 중입니다.",
+    "question": "출시 전 반드시 수행해야 할 안전 검토 항목은?",
+    "choices": [
+    "광과민성 발작(Photosensitive Epilepsy) 유발 가능성 검증 및 경고 문구 삽입",
+    "사용자의 음악 취향 조사",
+    "헤드셋의 방수 등급 확인",
+    "배경 음악의 저작권 등록"
+    ],
+    "correct_answer": "광과민성 발작(Photosensitive Epilepsy) 유발 가능성 검증 및 경고 문구 삽입",
+    "explanation": "시각적 자극이 강한 VR 콘텐츠는 사용자의 건강에 치명적인 영향을 줄 수 있으므로 엄격한 안전 기준을 따라야 합니다."
+    },
+    {
+    "question_id": 157,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "AR Tech",
+    "subcategory": "Visual Search",
+    "skills_required": ["Computer Vision", "Deep Learning"],
+    "scenario": "사용자가 카메라로 실제 가구를 비추면 유사한 상품을 추천해주는 AR 기능을 설계합니다.",
+    "question": "전체적인 시스템 파이프라인으로 가장 적절한 것은?",
+    "choices": [
+    "기기 내 로컬 특징점 추출 -> 서버 전송 -> 벡터 DB 검색 -> 가전 상품 데이터와 AR 모델 반환",
+    "모든 상품 데이터를 스마트폰에 다운로드 후 직접 비교",
+    "사용자가 상품명을 직접 입력하게 함",
+    "색상 값만 추출하여 비슷한 색의 상품 무작위 추천"
+    ],
+    "correct_answer": "기기 내 로컬 특징점 추출 -> 서버 전송 -> 벡터 DB 검색 -> 가전 상품 데이터와 AR 모델 반환",
+    "explanation": "방대한 상품 데이터는 서버에서 관리하되, 빠른 검색을 위해 벡터 데이터베이스와 시각 지능(Visual AI)을 결합해야 합니다."
+    },
+    {
+    "question_id": 158,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "monitoring_strategy",
+    "category": "Operation",
+    "subcategory": "Error Logs",
+    "skills_required": ["Sentry", "Log Analysis"],
+    "scenario": "특정 국가의 유저들에게서만 결제 시 AR 에셋이 다운로드되지 않는다는 문의가 빗발칩니다.",
+    "question": "가장 먼저 확인해야 할 데이터는?",
+    "choices": [
+    "해당 지역 CDN(Content Delivery Network)의 장애 상태와 API 응답 로그의 HTTP 상태 코드",
+    "해당 국가의 날씨",
+    "사용자들의 스마트폰 색상",
+    "사무실의 인터넷 속도"
+    ],
+    "correct_answer": "해당 지역 CDN(Content Delivery Network)의 장애 상태와 API 응답 로그의 HTTP 상태 코드",
+    "explanation": "지역별 장애는 주로 인프라(CDN, 게이트웨이)나 현지 통신 환경과 연관되어 있으므로 로그를 통한 구간 분석이 필요합니다."
+    },
+    {
+    "question_id": 159,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Development",
+    "subcategory": "Language",
+    "skills_required": ["C++", "C#"],
+    "scenario": "성능이 극도로 중요한 VR 렌더링 엔진 코어 부분을 개발하려 합니다. C# 대신 C++를 도입할 때의 트레이드오프는?",
+    "choices": [
+    "메모리 관리의 세밀한 제어와 실행 속도 이득 vs 가비지 컬렉터의 부재로 인한 메모리 누수 위험 증가 및 개발 복잡도 상승",
+    "그래픽이 자동으로 좋아짐 vs 사운드가 안 나옴",
+    "빌드 속도가 100배 빨라짐 vs 용량이 줄어듦",
+    "코드가 짧아짐 vs 배우기 쉬움"
+    ],
+    "correct_answer": "메모리 관리의 세밀한 제어와 실행 속도 이득 vs 가비지 컬렉터의 부재로 인한 메모리 누수 위험 증가 및 개발 복잡도 상승",
+    "explanation": "C++는 성능 최적화에 유리하지만 수동 메모리 관리로 인해 개발 리스크가 커집니다."
+    },
+    {
+    "question_id": 160,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "best_practice_selection",
+    "category": "Physics",
+    "subcategory": "Interpolation",
+    "skills_required": ["FixedUpdate", "Physics Optimization"],
+    "scenario": "물리 기반으로 움직이는 VR 오브젝트의 움직임이 삐걱거리고 떨리는 현상(Jitter)이 발생합니다.",
+    "question": "물리 연산과 렌더링 프레임 간의 불일치를 해결하기 위한 가장 좋은 방법은?",
+    "choices": [
+    "Rigidbody의 Interpolation 옵션을 'Interpolate' 또는 'Extrapolate'로 설정",
+    "FixedUpdate의 주기를 0.0001초로 낮춤",
+    "물리 연산을 모두 Update 함수로 옮김",
+    "물체를 더 크게 만들기"
+    ],
+    "correct_answer": "Rigidbody의 Interpolation 옵션을 'Interpolate' 또는 'Extrapolate'로 설정",
+    "explanation": "보간(Interpolation)은 물리 프레임 사이의 위치를 렌더링 프레임에 맞춰 매끄럽게 채워줍니다."
+    },
+    {
+    "question_id": 161,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "Backend",
+    "subcategory": "Spatial Audio Server",
+    "skills_required": ["Voice over IP", "Spatialization"],
+    "scenario": "100명의 유저가 한 방에서 대화하는 소셜 VR의 음성 시스템을 설계합니다. 거리에 따라 목소리가 다르게 들려야 합니다.",
+    "question": "서버 부하와 지연을 최적화하기 위한 음성 처리 전략은?",
+    "choices": [
+    "서버에서 모든 유저의 음성을 믹싱하지 않고, 클라이언트에서 주변 유저들의 음성 스트림만 수신하여 로컬에서 3D 공간화",
+    "모든 유저의 소리를 하나로 합쳐서 전송",
+    "목소리를 텍스트로 바꿔서 전송 후 다시 읽어주기",
+    "가까운 유저끼리만 전화를 연결"
+    ],
+    "correct_answer": "서버에서 모든 유저의 음성을 믹싱하지 않고, 클라이언트에서 주변 유저들의 음성 스트림만 수신하여 로컬에서 3D 공간화",
+    "explanation": "서버 믹싱은 부하가 크고 개별 3D 오디오 효과 적용이 어렵습니다. 클라이언트에서 선택적 수신(Selective Forwarding) 후 처리하는 것이 일반적입니다."
+    },
+    {
+    "question_id": 162,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "real_world_case",
+    "category": "AR Tech",
+    "subcategory": "Persistent AR",
+    "skills_required": ["Visual Positioning System"],
+    "scenario": "강남역 사거리에 가상의 거대 로봇을 배치하여 누구나 언제든 같은 자리에서 볼 수 있게 만들려 합니다. GPS 오차(약 10m)가 너무 큽니다.",
+    "question": "정밀한 위치 고정을 위해 도입해야 할 기술은?",
+    "choices": [
+    "VPS (Visual Positioning System)",
+    "더 비싼 스마트폰 사용 권장",
+    "바닥에 거대한 QR 코드 그리기",
+    "나침반 센서값만 사용"
+    ],
+    "correct_answer": "VPS (Visual Positioning System)",
+    "explanation": "VPS는 카메라로 주변 건물의 특징점을 분석하여 GPS보다 훨씬 정밀한(cm 단위) 위치 정보를 제공합니다."
+    },
+    {
+    "question_id": 163,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "Operation",
+    "subcategory": "Device Fragmentation",
+    "skills_required": ["Hardware Abstraction"],
+    "scenario": "회사가 안드로이드, iOS, 윈도우, 독립형 헤드셋 등 5개 이상의 플랫폼에 동시 런칭을 계획하고 있습니다.",
+    "question": "개발 공수와 버그 발생 리스크를 줄이기 위해 시니어가 설계해야 할 구조는?",
+    "choices": [
+    "플랫폼별 핵심 기능을 인터페이스화하고 팩토리 패턴을 통해 런타임에 주입하는 하드웨어 추상화 계층(HAL) 구축",
+    "플랫폼마다 각각 다른 개발팀 배정",
+    "한 플랫폼 개발 완료 후 다른 플랫폼으로 복사 붙여넣기",
+    "가장 시장 점유율이 높은 플랫폼 하나만 개발"
+    ],
+    "correct_answer": "플랫폼별 핵심 기능을 인터페이스화하고 팩토리 패턴을 통해 런타임에 주입하는 하드웨어 추상화 계층(HAL) 구축",
+    "explanation": "공통 로직을 분리하고 하드웨어 종속적인 부분만 교체 가능하게 설계해야 유지보수가 가능합니다."
+    },
+    {
+    "question_id": 164,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Graphics",
+    "subcategory": "Anti-Aliasing",
+    "skills_required": ["MSAA", "Post-processing"],
+    "scenario": "VR에서 MSAA와 TAA 중 어떤 안티앨리어싱을 쓸지 결정해야 합니다.",
+    "question": "TAA(Temporal Anti-Aliasing)를 선택했을 때의 트레이드오프는?",
+    "choices": [
+    "적은 비용으로 훌륭한 계단 현상 제거 효과를 보지만, 움직임이 빠를 때 화면이 흐릿해지는 고스트(Ghosting) 현상 발생 가능",
+    "MSAA보다 연산량이 100배 많음",
+    "화면이 너무 날카로워져 눈이 아픔",
+    "모바일에서는 절대 작동하지 않음"
+    ],
+    "correct_answer": "적은 비용으로 훌륭한 계단 현상 제거 효과를 보지만, 움직임이 빠를 때 화면이 흐릿해지는 고스트(Ghosting) 현상 발생 가능",
+    "explanation": "TAA는 이전 프레임의 데이터를 재활용하므로 정적인 씬에는 좋지만 동적인 상황에서 잔상이 남을 수 있습니다."
+    },
+    {
+    "question_id": 165,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "Architecture",
+    "subcategory": "Save System",
+    "skills_required": ["Serialization", "Cloud Sync"],
+    "scenario": "VR RPG 게임의 방대한 사용자 데이터(인벤토리, 퀘스트 진행도, 하우징 위치 등)를 저장하고 여러 기기에서 동기화해야 합니다.",
+    "question": "가장 견고한 저장 시스템 설계 방식은?",
+    "choices": [
+    "바이너리 직렬화 후 클라우드 DB와 로컬 캐시를 양방향 동기화하며 충돌 해결 로직 포함",
+    "PlayerPrefs에 모든 텍스트 데이터 저장",
+    "사용자가 수동으로 텍스트 파일을 서버에 업로드",
+    "스크린샷으로 저장 내역 보관"
+    ],
+    "correct_answer": "바이너리 직렬화 후 클라우드 DB와 로컬 캐시를 양방향 동기화하며 충돌 해결 로직 포함",
+    "explanation": "대량의 복잡한 데이터는 효율적인 포맷으로 관리해야 하며, 데이터 유실 방지를 위한 동기화 전략이 필수입니다."
+    },
+    {
+    "question_id": 166,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "performance_optimization",
+    "category": "Graphics",
+    "subcategory": "Draw Calls",
+    "skills_required": ["GPU Instancing", "Draw Mesh Instanced"],
+    "scenario": "수만 개의 풀(Grass) 오브젝트가 바람에 흔들리는 VR 들판을 구현해야 합니다.",
+    "question": "GPU 부하를 최소화하면서 개별 풀의 움직임을 다르게 주려면?",
+    "choices": [
+    "GPU Instancing을 사용하고 속성 값(Offset)을 Material Property Block으로 전달",
+    "모든 풀에 각각 Rigidbody 부착",
+    "풀을 하나씩 별도의 드로우 콜로 그림",
+    "풀 애니메이션을 모두 영상으로 찍어 재생"
+    ],
+    "correct_answer": "GPU Instancing을 사용하고 속성 값(Offset)을 Material Property Block으로 전달",
+    "explanation": "동일한 메쉬를 공유하되, 개별적인 변형(위치, 색상, 오프셋)을 효율적으로 전달하여 한 번에 렌더링할 수 있습니다."
+    },
+    {
+    "question_id": 167,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Development",
+    "subcategory": "Multi-scene Management",
+    "skills_required": ["Additive Scene Loading"],
+    "scenario": "심리스(Seamless)한 오픈 월드 VR 게임을 개발합니다. 로딩 화면 없이 맵이 전환되어야 합니다.",
+    "question": "장면 관리 설계 방식은?",
+    "choices": [
+    "Additive Scene Loading을 사용하여 유저 위치 근처의 맵 조각을 백그라운드에서 동적으로 로드/언로드",
+    "모든 맵을 한 번에 로딩하여 RAM에 상주",
+    "맵 이동 시마다 10초간 검은 화면 보여주기",
+    "맵을 쪼개지 않고 하나로 거대하게 제작"
+    ],
+    "correct_answer": "Additive Scene Loading을 사용하여 유저 위치 근처의 맵 조각을 백그라운드에서 동적으로 로드/언로드",
+    "explanation": "메모리 한계를 극복하기 위해 필요한 부분만 실시간으로 갈아끼우는 기술이 필수적입니다."
+    },
+    {
+    "question_id": 168,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "Operation",
+    "subcategory": "Third-party Liability",
+    "skills_required": ["Privacy Policy", "Biometrics"],
+    "scenario": "사용자의 시선 데이터(Gaze Tracking)를 수집하여 UI 사용성을 개선하려 합니다.",
+    "question": "법적/윤리적으로 가장 위험한 사항은?",
+    "choices": [
+    "시선 정보는 민감한 생체 신호를 포함할 수 있으므로 명시적 동의 없이 비식별화되지 않은 상태로 수집하는 것",
+    "데이터 용량이 커지는 것",
+    "서버 CPU가 과부하 걸리는 것",
+    "사용자가 눈을 깜빡이는 것"
+    ],
+    "correct_answer": "시선 정보는 민감한 생체 신호를 포함할 수 있으므로 명시적 동의 없이 비식별화되지 않은 상태로 수집하는 것",
+    "explanation": "시선 정보는 사용자의 관심사뿐만 아니라 건강 상태 등을 유추할 수 있어 매우 엄격한 데이터 보호가 요구됩니다."
+    },
+    {
+    "question_id": 169,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "testing_strategy",
+    "category": "Performance",
+    "subcategory": "Automated Profiling",
+    "skills_required": ["CI/CD", "Automated Profiling"],
+    "scenario": "업데이트마다 성능이 조금씩 야금야금 떨어지는 '성능 퇴보(Performance Regression)'를 잡고 싶습니다.",
+    "question": "시니어가 구축해야 할 자동화 파이프라인은?",
+    "choices": [
+    "CI 단계에서 실기기 자동 빌드 및 특정 시나리오 실행 후 성능 지표(FPS, DrawCalls)를 DB에 저장하고 비교하는 대시보드 구축",
+    "매일 개발자들에게 성능 체크하라고 메일 보내기",
+    "느려지면 그때서야 원인 찾기",
+    "성능이 좋은 최신형 폰으로 교체하기"
+    ],
+    "correct_answer": "CI 단계에서 실기기 자동 빌드 및 특정 시나리오 실행 후 성능 지표(FPS, DrawCalls)를 DB에 저장하고 비교하는 대시보드 구축",
+    "explanation": "수치화된 성능 데이터를 자동으로 트래킹해야 어떤 커밋에서 성능이 저하되었는지 즉시 파악할 수 있습니다."
+    },
+    {
+    "question_id": 170,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "refactoring_decision",
+    "category": "Programming",
+    "subcategory": "Async/Await",
+    "skills_required": ["C# Async", "Thread Safety"],
+    "scenario": "네트워크 호출과 파일 입출력이 많아 메인 쓰레드가 자주 멈춥니다. 코루틴을 과도하게 사용하고 있습니다.",
+    "question": "더 깔끔하고 제어가 용이한 비동기 프로그래밍 방식으로의 전환 제안은?",
+    "choices": [
+    "C#의 Task 기반 Async/Await 도입 및 쓰레드 안전성 확보",
+    "모든 연산을 FixedUpdate로 옮기기",
+    "하드웨어를 업그레이드하기",
+    "비동기 작업을 모두 포기하고 동기적으로 처리"
+    ],
+    "correct_answer": "C#의 Task 기반 Async/Await 도입 및 쓰레드 안전성 확보",
+    "explanation": "Async/Await는 코루틴보다 에러 처리가 쉽고 가독성이 좋으며, 멀티쓰레드 활용에 더 적합합니다."
+    },
+    {
+    "question_id": 171,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "distributed_system_reasoning",
+    "category": "Networking",
+    "subcategory": "Rollback Networking",
+    "skills_required": ["Deterministic Lockstep", "Rollback"],
+    "scenario": "격투 게임이나 초정밀 상호작용이 필요한 VR 대전 게임을 설계합니다.",
+    "question": "가장 진보된 네트워크 동기화 방식은?",
+    "choices": [
+    "GGPO 방식의 롤백(Rollback) 네트워킹",
+    "단순 서버 중계 방식",
+    "상대방이 데이터를 보낼 때까지 무한 대기",
+    "매 프레임 전체 데이터를 전송"
+    ],
+    "correct_answer": "GGPO 방식의 롤백(Rollback) 네트워킹",
+    "explanation": "롤백 네트워킹은 입력을 즉시 실행하고 네트워크 지연 발생 시 과거 상태로 되돌려 다시 시뮬레이션함으로써 극도로 낮은 지연 체감을 제공합니다."
+    },
+    {
+    "question_id": 172,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "Architecture",
+    "subcategory": "Cross-platform Interaction",
+    "skills_required": ["Interaction Design"],
+    "scenario": "모바일 AR 유저와 VR 헤드셋 유저가 같은 공간에서 만나는 크로스 플랫폼 서비스를 설계합니다.",
+    "question": "상호작용 설계 시 가장 큰 도전 과제는?",
+    "choices": [
+    "기기별 서로 다른 입력 방식(터치 vs 6DOF 컨트롤러) 간의 상호작용 경험 통일 및 공정성 확보",
+    "사용자의 닉네임 색상 정하기",
+    "채팅창의 폰트 크기 조절",
+    "서버의 운영 체제 선택"
+    ],
+    "correct_answer": "기기별 서로 다른 입력 방식(터치 vs 6DOF 컨트롤러) 간의 상호작용 경험 통일 및 공정성 확보",
+    "explanation": "서로 다른 하드웨어의 제약을 극복하고 동일한 가상 세계에서 위화감 없이 소통하게 만드는 것이 기술적 난제입니다."
+    },
+    {
+    "question_id": 173,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "capacity_planning",
+    "category": "Graphics",
+    "subcategory": "VRAM Management",
+    "skills_required": ["Memory Budgeting"],
+    "scenario": "차세대 VR 기기용 고해상도 텍스처와 수많은 쉐이더를 도입하려 합니다.",
+    "question": "VRAM 부족으로 인한 크래시를 방지하기 위해 시니어가 수립해야 할 계획은?",
+    "choices": [
+    "엄격한 에셋 가이드라인(Budget) 수립 및 런타임 메모리 할당 모니터링 시스템 구축",
+    "사용자에게 RAM을 추가 구매하라고 알림",
+    "메모리가 부족하면 자동으로 앱 종료",
+    "모든 에셋을 흑백으로 변경"
+    ],
+    "correct_answer": "엄격한 에셋 가이드라인(Budget) 수립 및 런타임 메모리 할당 모니터링 시스템 구축",
+    "explanation": "아트 팀과 협의하여 각 씬당 최대 메모리 사용량을 정의하고 이를 강제하는 프로세스가 필요합니다."
+    },
+    {
+    "question_id": 174,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "cost_optimization",
+    "category": "Cloud",
+    "subcategory": "Data Transfer",
+    "skills_required": ["Data Compression"],
+    "scenario": "사용자가 업로드한 고용량 3D 스캔 데이터를 서버로 전송할 때 데이터 전송 비용이 과다하게 발생합니다.",
+    "question": "비용 절감을 위한 최적화 기법은?",
+    "choices": [
+    "Draco 또는 Meshoptimizer와 같은 기술로 메쉬 데이터를 압축하여 전송량 최소화",
+    "데이터를 10번에 나눠서 전송",
+    "낮 시간에만 업로드 허용",
+    "데이터를 전송하지 않고 삭제"
+    ],
+    "correct_answer": "Draco 또는 Meshoptimizer와 같은 기술로 메쉬 데이터를 압축하여 전송량 최소화",
+    "explanation": "전용 압축 알고리즘을 사용하면 시각적 손실 없이 데이터 크기를 1/10 이하로 줄일 수 있습니다."
+    },
+    {
+    "question_id": 175,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "AI",
+    "subcategory": "Edge AI",
+    "skills_required": ["CoreML", "TensorFlow Lite"],
+    "scenario": "AR에서 실시간으로 사용자의 옷 종류를 인식하여 가상 의상을 입혀주는 서비스를 기획합니다.",
+    "question": "지연 시간 최소화를 위한 AI 모델 배포 전략은?",
+    "choices": [
+    "기기 내 GPU/NPU를 활용하는 온디바이스(On-device) AI 모델 최적화 및 배포",
+    "무조건 서버로 이미지를 보내서 처리",
+    "사용자가 옷 이름을 말하게 하기",
+    "AI 없이 수동으로 선택하게 함"
+    ],
+    "correct_answer": "기기 내 GPU/NPU를 활용하는 온디바이스(On-device) AI 모델 최적화 및 배포",
+    "explanation": "실시간 트래킹이 중요한 기능은 네트워크 지연이 없는 온디바이스 처리가 사용자 경험에 가장 유리합니다."
+    },
+    {
+    "question_id": 176,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "Operation",
+    "subcategory": "Service EOL",
+    "skills_required": ["Legacy Migration"],
+    "scenario": "오래된 VR SDK를 기반으로 제작된 서비스의 하드웨어가 단종되고 지원이 종료되었습니다.",
+    "question": "기존 유저들의 데이터를 보존하며 최신 기기로 마이그레이션할 때 가장 큰 리스크는?",
+    "choices": [
+    "기존의 커스텀 물리 엔진 및 쉐이더가 최신 그래픽 API와 호환되지 않아 발생하는 대규모 재개발 비용",
+    "서버의 먼지",
+    "사용자의 비밀번호 유실",
+    "새 기기의 디자인 불만족"
+    ],
+    "correct_answer": "기존의 커스텀 물리 엔진 및 쉐이더가 최신 그래픽 API와 호환되지 않아 발생하는 대규모 재개발 비용",
+    "explanation": "기술 스택의 큰 변화는 단순 이식(Porting)을 넘어 전체 아키텍처 수정을 요구할 수 있습니다."
+    },
+    {
+    "question_id": 177,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "Architecture",
+    "subcategory": "Global State Sync",
+    "skills_required": ["CRDT", "Distributed Systems"],
+    "scenario": "수천 명이 동시에 접속하여 가상 세계를 실시간으로 건설(샌드박스)하는 VR 게임을 개발합니다.",
+    "question": "여러 유저의 동시 편집 충돌을 데이터 유실 없이 해결하기 위한 알고리즘은?",
+    "choices": [
+    "CRDT (Conflict-free Replicated Data Types) 또는 Operational Transformation",
+    "무조건 나중에 보낸 사람이 이기는 방식",
+    "먼저 보낸 사람이 이기는 방식",
+    "랜덤으로 한 명의 데이터를 선택"
+    ],
+    "correct_answer": "CRDT (Conflict-free Replicated Data Types) 또는 Operational Transformation",
+    "explanation": "분산 환경에서 여러 사용자가 동일한 데이터를 수정할 때 충돌을 수학적으로 해결하고 최종 일관성을 보장하는 기술입니다."
+    },
+    {
+    "question_id": 178,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "performance_optimization",
+    "category": "Graphics",
+    "subcategory": "Screen Space Effects",
+    "skills_required": ["Compute Shaders", "Optimization"],
+    "scenario": "고해상도 VR에서 실시간 앰비언트 오클루전(SSAO)을 적용하니 프레임이 반토막 났습니다.",
+    "question": "품질 하락을 최소화하며 성능을 개선할 시니어의 선택은?",
+    "choices": [
+    "저해상도 버퍼에서 연산 후 업스케일링 및 노이즈 제거(Denoising) 기법 적용",
+    "SSAO를 아예 끄기",
+    "해상도를 1/4로 줄이기",
+    "모든 물체를 밝게 만들기"
+    ],
+    "correct_answer": "저해상도 버퍼에서 연산 후 업스케일링 및 노이즈 제거(Denoising) 기법 적용",
+    "explanation": "비싼 연산은 작은 해상도에서 처리하고 결과만 원래 크기로 복원하는 것이 그래픽 최적화의 기본입니다."
+    },
+    {
+    "question_id": 179,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Development",
+    "subcategory": "Framework Choice",
+    "skills_required": ["Unity", "Unreal Engine", "WebXR"],
+    "scenario": "앱 설치 없이 브라우저에서 즉시 실행되는 고품질 VR 체험관을 만들려 합니다.",
+    "question": "WebXR 프레임워크를 선택할 때 네이티브 앱 대비 트레이드오프는?",
+    "choices": [
+    "접근성과 배포 용이성 극대화 vs 하드웨어 성능 활용의 제한 및 브라우저 파편화 이슈",
+    "성능이 무조건 더 좋음 vs 보안이 취약함",
+    "개발자가 필요 없음 vs 디자이너만 있으면 됨",
+    "전 세계 모든 사람이 사용 가능 vs 유료로만 제공 가능"
+    ],
+    "correct_answer": "접근성과 배포 용이성 극대화 vs 하드웨어 성능 활용의 제한 및 브라우저 파편화 이슈",
+    "explanation": "웹은 설치 과정이 없어 유입이 쉽지만, GPU 성능을 100% 쓰기 어렵고 브라우저마다 지원 정도가 다릅니다."
+    },
+    {
+    "question_id": 180,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "monitoring_strategy",
+    "category": "Operation",
+    "subcategory": "Heatmaps",
+    "skills_required": ["User Analytics"],
+    "scenario": "VR 게임 내에서 유저들이 특정 구간에서 유독 많이 이탈(Quit)합니다.",
+    "question": "원인을 찾기 위해 가장 먼저 분석해야 할 시각화 데이터는?",
+    "choices": [
+    "이탈 지점의 3D 히트맵과 해당 순간의 프레임률(FPS) 및 입력 지연 시간 데이터",
+    "유저들의 닉네임 리스트",
+    "게임의 총 판매 수익",
+    "유저들의 나이대"
+    ],
+    "correct_answer": "이탈 지점의 3D 히트맵과 해당 순간의 프레임률(FPS) 및 입력 지연 시간 데이터",
+    "explanation": "특정 구간의 성능 저하로 인한 멀미나 난이도 실패 지점을 정확히 짚어내야 합니다."
+    },
+    {
+    "question_id": 181,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Graphics",
+    "subcategory": "Lighting Systems",
+    "skills_required": ["HDRP", "Ray Tracing"],
+    "scenario": "실시간 조명 변화가 극심한 고화질 PC VR 게임을 설계합니다.",
+    "question": "Built-in 대신 HDRP(High Definition Render Pipeline)를 선택하는 결정적 이유는?",
+    "choices": [
+    "물리 기반 라이팅과 고차원 쉐이딩, 레이 트레이싱 등을 통한 실사급 그래픽 구현이 용이함",
+    "성능이 무조건 빠르기 때문",
+    "모바일에서 잘 돌아가기 때문",
+    "유니티에서 추천하기 때문"
+    ],
+    "correct_answer": "물리 기반 라이팅과 고차원 쉐이딩, 레이 트레이싱 등을 통한 실사급 그래픽 구현이 용이함",
+    "explanation": "HDRP는 고사양 PC 및 콘솔을 타겟으로 하여 최첨단 그래픽 기술을 제공합니다."
+    },
+    {
+    "question_id": 182,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "Project Management",
+    "subcategory": "Scope Creep",
+    "skills_required": ["Technical Leadership"],
+    "scenario": "기획팀에서 AR 앱에 현실과 똑같은 수준의 물리 엔진과 수만 개의 상호작용 개체를 넣어달라고 요청합니다.",
+    "question": "시니어 엔지니어로서의 올바른 대응은?",
+    "choices": [
+    "현재 타겟 하드웨어의 성능 한계를 공유하고, 핵심 상호작용에만 물리 엔진을 집중 적용하는 트레이드오프 제안",
+    "무조건 다 된다고 하기",
+    "기획팀과 싸우기",
+    "불가능하다고 말하고 퇴사하기"
+    ],
+    "correct_answer": "현재 타겟 하드웨어의 성능 한계를 공유하고, 핵심 상호작용에만 물리 엔진을 집중 적용하는 트레이드오프 제안",
+    "explanation": "기술적 한계를 명확히 인지시키고 가용 자원 내에서 최고의 품질을 낼 수 있는 방향을 제시해야 합니다."
+    },
+    {
+    "question_id": 183,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "best_practice_selection",
+    "category": "UI",
+    "subcategory": "VR UX",
+    "skills_required": ["Spatial UI Design"],
+    "scenario": "VR 사용자가 메뉴를 볼 때 눈의 피로감을 느낍니다.",
+    "question": "메뉴 배치에 대한 가장 좋은 실무 지침은?",
+    "choices": [
+    "사용자로부터 약 1~2m 거리에 배치하고, 시선 중심보다 약간 아래쪽에 위치시켜 목의 부담 최소화",
+    "눈 바로 앞에 메뉴를 띄우기",
+    "바닥에 메뉴를 깔기",
+    "사용자가 고개를 돌릴 때마다 아주 빠르게 따라오게 하기"
+    ],
+    "correct_answer": "사용자로부터 약 1~2m 거리에 배치하고, 시선 중심보다 약간 아래쪽에 위치시켜 목의 부담 최소화",
+    "explanation": "VR에서의 거리감과 인체공학적 시야각을 고려해야 장시간 사용 시 피로를 줄일 수 있습니다."
+    },
+    {
+    "question_id": 184,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Graphics",
+    "subcategory": "Global Illumination",
+    "skills_required": ["Real-time GI", "Baked GI"],
+    "scenario": "실시간으로 시간이 흐르는(낮과 밤) VR 시골 마을을 구현하려 합니다.",
+    "question": "조명 시스템 설계 시의 고민은?",
+    "choices": [
+    "실시간 조명의 역동성 확보 vs 연산 부하 및 그림자 노이즈 관리",
+    "조명을 끌지 켤지 고민",
+    "태양의 크기를 얼마나 크게 할지 고민",
+    "달의 색깔 고민"
+    ],
+    "correct_answer": "실시간 조명의 역동성 확보 vs 연산 부하 및 그림자 노이즈 관리",
+    "explanation": "동적인 환경 변화는 멋지지만, 성능 제약이 심한 VR에서는 매우 정교한 최적화가 필요합니다."
+    },
+    {
+    "question_id": 185,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "incident_response",
+    "category": "Operation",
+    "subcategory": "Data Loss",
+    "skills_required": ["Disaster Recovery"],
+    "scenario": "서버 장애로 인해 일부 VR 사용자의 커스텀 아바타 설정 데이터가 초기화되었습니다.",
+    "question": "장애 복구 단계에서 시니어가 해야 할 일은?",
+    "choices": [
+    "백업 데이터를 통한 신속한 복구 수행 및 장애 원인 분석(Post-mortem) 후 재발 방지 대책 수립",
+    "데이터가 삭제된 유저들을 차단",
+    "서버를 초기화하고 처음부터 다시 시작",
+    "데이터 유실 사실을 숨기기"
+    ],
+    "correct_answer": "백업 데이터를 통한 신속한 복구 수행 및 장애 원인 분석(Post-mortem) 후 재발 방지 대책 수립",
+    "explanation": "사후 분석을 통해 시스템의 취약점을 보완하는 것이 시니어의 핵심 역할 중 하나입니다."
+    },
+    {
+    "question_id": 186,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "Backend",
+    "subcategory": "Load Balancing",
+    "skills_required": ["Sticky Sessions", "WebSocket"],
+    "scenario": "수만 명이 동시 접속하는 AR 채팅 앱의 부하를 분산하려 합니다. 웹소켓을 사용합니다.",
+    "question": "로드 밸런서 설정 시 주의해야 할 사항은?",
+    "choices": [
+    "웹소켓은 연결 지향적이므로 Sticky Session 또는 세션 클러스터링을 통한 연결 유지 전략 필요",
+    "무작위로 서버에 할당하기",
+    "서버 한 대가 터지면 모든 유저를 내보내기",
+    "데이터를 암호화하지 않기"
+    ],
+    "correct_answer": "웹소켓은 연결 지향적이므로 Sticky Session 또는 세션 클러스터링을 통한 연결 유지 전략 필요",
+    "explanation": "한 번 연결된 소켓이 끊기지 않고 동일한 서버와 통신할 수 있도록 보장해야 실시간 데이터 동기화가 유지됩니다."
+    },
+    {
+    "question_id": 187,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "refactoring_decision",
+    "category": "Programming",
+    "subcategory": "C# Memory",
+    "skills_required": ["Struct vs Class", "Allocation"],
+    "scenario": "수천 개의 위치 데이터를 매 프레임 계산하는데 클래스(Class) 객체를 과도하게 생성하여 메모리 부하가 큽니다.",
+    "question": "구조적 리팩토링 제안은?",
+    "choices": [
+    "데이터 구조를 값 타입(Struct)으로 변경하고 배열이나 Span<T>을 사용하여 할당 없는 연산 유도",
+    "모든 변수를 string으로 저장",
+    "연산 횟수를 1/100로 줄이기",
+    "메모리를 128GB로 증설"
+    ],
+    "correct_answer": "데이터 구조를 값 타입(Struct)으로 변경하고 배열이나 Span<T>을 사용하여 할당 없는 연산 유도",
+    "explanation": "클래스(참조 타입) 대신 구조체(값 타입)를 쓰면 힙 메모리 할당을 피해 가비지 컬렉터 부하를 제거할 수 있습니다."
+    },
+    {
+    "question_id": 188,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "monitoring_strategy",
+    "category": "Operation",
+    "subcategory": "Alerting",
+    "skills_required": ["Prometheus", "Slack Integration"],
+    "scenario": "중요한 비즈니스 VR 미팅 서비스가 장애가 났을 때 개발팀이 즉시 알아야 합니다.",
+    "question": "가장 효과적인 알림 시스템 구성은?",
+    "choices": [
+    "에러 임계치 초과 시 슬랙(Slack)이나 문자 등으로 즉각 자동 알림 발송 및 에스컬레이션 체계 구축",
+    "사용자가 고객 센터에 전화하기를 기다림",
+    "주말마다 서버 상태를 확인하기",
+    "에러 로그를 무시하도록 설정"
+    ],
+    "correct_answer": "에러 임계치 초과 시 슬랙(Slack)이나 문자 등으로 즉각 자동 알림 발송 및 에스컬레이션 체계 구축",
+    "explanation": "장애 인지 시간을 단축하는 것이 서비스 가용성을 높이는 핵심입니다."
+    },
+    {
+    "question_id": 189,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Graphics",
+    "subcategory": "Volumetric Lighting",
+    "skills_required": ["Volumetric Effects"],
+    "scenario": "VR 숲속에 화려한 안개와 빛 갈라짐(God-rays) 효과를 넣으려 합니다.",
+    "question": "이때의 기술적 트레이드오프는?",
+    "choices": [
+    "공간감과 몰입감의 극대화 vs 레이마칭(Ray-marching) 연산으로 인한 극심한 GPU 부하",
+    "안개가 끼면 사용자가 길을 잃음 vs 사운드가 잘 안 들림",
+    "나무가 더 커 보임 vs 하늘이 안 보임",
+    "빌드 속도가 빨라짐 vs 용량이 줄어듦"
+    ],
+    "correct_answer": "공간감과 몰입감의 극대화 vs 레이마칭(Ray-marching) 연산으로 인한 극심한 GPU 부하",
+    "explanation": "볼륨메트릭 효과는 매우 아름답지만 픽셀마다 많은 샘플링 연산이 필요하여 VR에서는 매우 무거운 기술입니다."
+    },
+    {
+    "question_id": 190,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "Compliance",
+    "subcategory": "Content Moderation",
+    "skills_required": ["Trust and Safety"],
+    "scenario": "유저가 직접 그린 그림을 AR로 공유하는 기능을 제공합니다. 부적절한 콘텐츠가 공유될 위험이 있습니다.",
+    "question": "시스템적 리스크 관리 방안은?",
+    "choices": [
+    "AI 기반 이미지 필터링 도입, 유저 신고 시스템, 모니터링 관리 도구 구축",
+    "모든 유저를 믿기",
+    "그림 그리기 기능을 삭제하기",
+    "비밀번호를 어렵게 만들기"
+    ],
+    "correct_answer": "AI 기반 이미지 필터링 도입, 유저 신고 시스템, 모니터링 관리 도구 구축",
+    "explanation": "UGC(User Generated Content) 서비스는 부적절한 콘텐츠 노출에 대한 법적 책임과 커뮤니티 정화 시스템이 필수입니다."
+    },
+    {
+    "question_id": 191,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "Architecture",
+    "subcategory": "Micro-frontends for VR",
+    "skills_required": ["Module Federation", "WebXR"],
+    "scenario": "거대한 VR 포털 서비스를 만드는데, 각 월드(World)를 서로 다른 팀이 독립적으로 개발하고 배포하려 합니다.",
+    "question": "이를 가능케 하는 아키텍처는?",
+    "choices": [
+    "마이크로 프론트엔드 개념을 도입하여 독립적으로 빌드된 번들을 런타임에 통합 로드",
+    "모든 팀이 하나의 프로젝트 파일만 공유",
+    "모든 코드를 수동으로 병합",
+    "개발팀을 한 명으로 줄이기"
+    ],
+    "correct_answer": "마이크로 프론트엔드 개념을 도입하여 독립적으로 빌드된 번들을 런타임에 통합 로드",
+    "explanation": "팀 간의 간섭을 최소화하고 빠른 업데이트를 가능하게 하려면 모듈화된 독립 배포 구조가 유리합니다."
+    },
+    {
+    "question_id": 192,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "performance_optimization",
+    "category": "Physics",
+    "subcategory": "Broad-phase Physics",
+    "skills_required": ["Physics Layers", "Collision Matrix"],
+    "scenario": "수천 개의 물리 오브젝트가 있는 씬에서 물리 연산 부하가 너무 큽니다.",
+    "question": "가장 먼저 수행해야 할 최적화 설정은?",
+    "choices": [
+    "Collision Matrix에서 서로 충돌할 필요가 없는 레이어 간의 체크 해제",
+    "모든 물체의 질량(Mass)을 0으로 만듦",
+    "중력을 끄기",
+    "물리 주기를 1초로 변경"
+    ],
+    "correct_answer": "Collision Matrix에서 서로 충돌할 필요가 없는 레이어 간의 체크 해제",
+    "explanation": "불필요한 충돌 판정(Collision Check)을 제거하는 것만으로도 물리 엔진의 성능을 크게 높일 수 있습니다."
+    },
+    {
+    "question_id": 193,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Networking",
+    "subcategory": "Delta Compression",
+    "skills_required": ["Bandwidth Optimization"],
+    "scenario": "멀티플레이에서 아바타의 관절 데이터(뼈대 정보) 전송량이 너무 많습니다.",
+    "question": "데이터 압축 전략의 트레이드오프는?",
+    "choices": [
+    "델타 압축(변화량만 전송)을 통한 대역폭 절감 vs 계산 오차 누적 시 위치 어긋남 발생 가능성",
+    "전송 속도가 빨라짐 vs 사운드가 끊김",
+    "데이터가 선명해짐 vs 배터리가 빨리 닳음",
+    "보안이 좋아짐 vs 용량이 늘어남"
+    ],
+    "correct_answer": "델타 압축(변화량만 전송)을 통한 대역폭 절감 vs 계산 오차 누적 시 위치 어긋남 발생 가능성",
+    "explanation": "변화량만 보내면 효율적이지만, 패킷 손실 시 실제 위치와의 차이가 커질 수 있어 주기적인 풀 데이터 동기화가 병행되어야 합니다."
+    },
+    {
+    "question_id": 194,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "Hardware",
+    "subcategory": "Controller Drift",
+    "skills_required": ["Hardware Abstraction"],
+    "scenario": "장시간 사용 시 컨트롤러의 조이스틱이 쏠리는 현상(Drift)이 발생하여 유저들이 불편을 겪습니다.",
+    "question": "소프트웨어적으로 시니어가 제안할 완화 대책은?",
+    "choices": [
+    "데드존(Deadzone) 설정을 사용자가 직접 조절하거나 자동 캘리브레이션 기능 제공",
+    "조이스틱 사용을 금지함",
+    "새 컨트롤러를 사라고 팝업 띄우기",
+    "컨트롤러 연결을 끊어버림"
+    ],
+    "correct_answer": "데드존(Deadzone) 설정을 사용자가 직접 조절하거나 자동 캘리브레이션 기능 제공",
+    "explanation": "하드웨어 노후화로 인한 미세한 입력 오류를 무시할 수 있는 범위를 설정하여 수명을 연장할 수 있습니다."
+    },
+    {
+    "question_id": 195,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "Architecture",
+    "subcategory": "Plugin Architecture",
+    "skills_required": ["Dependency Injection", "Zenject"],
+    "scenario": "대규모 개발팀이 참여하는 VR 프로젝트에서 의존성 엉킴으로 인해 단위 테스트가 불가능합니다.",
+    "question": "시니어가 도입할 설계 기법은?",
+    "choices": [
+    "의존성 주입(Dependency Injection) 프레임워크 도입 및 인터페이스 기반 프로그래밍",
+    "모든 변수를 전역 변수로 선언",
+    "테스트를 포기하고 수동 확인",
+    "하나의 파일에 모든 코드를 넣기"
+    ],
+    "correct_answer": "의존성 주입(Dependency Injection) 프레임워크 도입 및 인터페이스 기반 프로그래밍",
+    "explanation": "객체 간의 결합도를 낮춰야 코드 재사용이 가능하고 독립적인 테스트를 수행할 수 있습니다."
+    },
+    {
+    "question_id": 196,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "monitoring_strategy",
+    "category": "Operation",
+    "subcategory": "App Store Reviews",
+    "skills_required": ["Sentiment Analysis", "NLP"],
+    "scenario": "매일 수천 개의 리뷰가 앱 스토어에 올라옵니다. 기술적인 문제를 빠르게 걸러내고 싶습니다.",
+    "question": "가장 효율적인 방식은?",
+    "choices": [
+    "자연어 처리(NLP) 기반의 감성 분석 및 키워드 추출 도구를 사용하여 특정 오류 키워드 급증 시 자동 알람",
+    "모든 리뷰를 개발자가 직접 읽기",
+    "리뷰를 아예 안 보기",
+    "별점 1점만 골라서 읽기"
+    ],
+    "correct_answer": "자연어 처리(NLP) 기반의 감성 분석 및 키워드 추출 도구를 사용하여 특정 오류 키워드 급증 시 자동 알람",
+    "explanation": "방대한 사용자 피드백에서 유의미한 정보를 기계학습으로 추출하여 대응 우선순위를 정할 수 있습니다."
+    },
+    {
+    "question_id": 197,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Graphics",
+    "subcategory": "Resolution Scaling",
+    "skills_required": ["DLSS", "FSR"],
+    "scenario": "저사양 GPU에서도 고해상도 느낌을 내고 싶습니다.",
+    "question": "AI 업스케일링(DLSS, FSR 등) 기술 도입의 트레이드오프는?",
+    "choices": [
+    "저해상도 렌더링 후 고해상도 복원으로 프레임 대폭 상승 vs 특정 씬에서의 아티팩트(뭉개짐) 발생 리스크",
+    "프레임이 빨라짐 vs 사운드 품질 향상",
+    "배터리가 10배 오래감 vs 용량이 늘어남",
+    "보안이 좋아짐 vs 인터넷 속도 저하"
+    ],
+    "correct_answer": "저해상도 렌더링 후 고해상도 복원으로 프레임 대폭 상승 vs 특정 씬에서의 아티팩트(뭉개짐) 발생 리스크",
+    "explanation": "업스케일링은 성능 확보를 위한 훌륭한 수단이지만, 복원 과정에서 시각적 결함이 생길 수 있습니다."
+    },
+    {
+    "question_id": 198,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "Networking",
+    "subcategory": "Server Location",
+    "skills_required": ["Cloud Regions"],
+    "scenario": "한국에만 서버가 있는 AR 게임을 북미에 런칭하려 합니다.",
+    "question": "북미 사용자가 겪을 가장 큰 불편함은?",
+    "choices": [
+    "200ms 이상의 높은 네트워크 지연 시간으로 인한 상호작용 지연 및 트래킹 어긋남",
+    "한국어를 못 알아듣는 것",
+    "서버의 시간이 한국 기준인 것",
+    "스마트폰의 시계가 안 맞는 것"
+    ],
+    "correct_answer": "200ms 이상의 높은 네트워크 지연 시간으로 인한 상호작용 지연 및 트래킹 어긋남",
+    "explanation": "물리적 거리는 속도와 직결되므로, 현지 서버 리전(Region) 구축이 필수입니다."
+    },
+    {
+    "question_id": 199,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "Architecture",
+    "subcategory": "Telemetry Architecture",
+    "skills_required": ["Data Pipeline", "BigQuery"],
+    "scenario": "AR 사용자의 초단위 이동 경로를 1년치 저장하고 분석하려 합니다.",
+    "question": "데이터 저장 아키텍처는?",
+    "choices": [
+    "스트리밍 데이터를 데이터 레이크에 저장 후 파티셔닝된 빅데이터 분석 도구(BigQuery 등) 활용",
+    "Excel 파일 하나에 계속 이어 쓰기",
+    "서버의 메모리에만 저장",
+    "모든 데이터를 사용자의 이메일로 발송"
+    ],
+    "correct_answer": "스트리밍 데이터를 데이터 레이크에 저장 후 파티셔닝된 빅데이터 분석 도구(BigQuery 등) 활용",
+    "explanation": "대규모 시계열 데이터는 비용 효율적이고 빠른 검색이 가능한 전용 분석 엔진을 써야 합니다."
+    },
+    {
+    "question_id": 200,
+    "job_role": "AR/VR Engineer",
+    "difficulty": "senior_level",
+    "question_type": "best_practice_selection",
+    "category": "Management",
+    "subcategory": "Code Review Culture",
+    "skills_required": ["Leadership"],
+    "scenario": "신입 엔지니어가 작성한 코드가 성능을 심각하게 저하시키고 있지만 기능은 잘 돌아갑니다.",
+    "question": "시니어로서 가장 바람직한 코드 리뷰 방식은?",
+    "choices": [
+    "성능 병목 지점(예: 매 프레임 할당)을 수치로 보여주고, 왜 최적화가 필요한지 원리를 설명하며 대안 제시",
+    "코드를 직접 다 고쳐버리고 아무 말 안 함",
+    "전체 회의에서 공개적으로 질책함",
+    "기능이 돌아가니 그냥 통과시킴"
+    ],
+    "correct_answer": "성능 병목 지점(예: 매 프레임 할당)을 수치로 보여주고, 왜 최적화가 필요한지 원리를 설명하며 대안 제시",
+    "explanation": "기술적 성장과 코드 품질을 동시에 챙기는 교육적인 리뷰 문화가 팀의 장기적 생산성을 높입니다."
+    }
+]

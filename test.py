@@ -1,0 +1,31 @@
+s = '''- AI Engineer
+- AR/VR Engineer
+- Backend Engineer
+- Big Data Engineer
+- Blockchain Engineer
+- Cloud Infrastructure Engineer
+- Computer Vision Engineer
+- Data Engineer
+- Data Scientist
+- Database Administrator
+- DevOps Engineer
+- Embedded Systems Engineer
+- Frontend Developer
+- Full Stack Engineer
+- Game Developer
+- IoT Engineer
+- Machine Learning Researcher
+- Mobile App Developer
+- Natural Language Processing Engineer
+- Network Engineer
+- Quality Assurance Engineer (QA)
+- Research Scientist
+- Robotics Engineer
+- Security Engineer
+- Site Reliability Engineer (SRE)
+- Software Architect
+- Software Engineer
+- Systems Engineer
+- Technical Program Manager
+- UI/UX Engineer'''.split('\n')
+print(len(s))

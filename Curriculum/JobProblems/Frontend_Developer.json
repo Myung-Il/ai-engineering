@@ -1,0 +1,1045 @@
+[
+{
+"question_id": 1,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "system_design",
+"category": "Architecture",
+"subcategory": "Micro Frontends",
+"skills_required": ["React", "Webpack Module Federation", "CDN", "CI/CD"],
+"scenario": "글로벌 이커머스 플랫폼의 프론트엔드 팀 리더를 맡고 있습니다. 현재 단일 Monolith React 애플리케이션으로 구성되어 있어 빌드 시간이 30분 이상 소요되고, 결제 팀과 상품 전시 팀의 배포 일정이 겹쳐 병목이 발생하고 있습니다. 또한 전 세계 사용자를 대상으로 하므로 초기 로딩 속도도 매우 중요합니다.",
+"question": "이러한 문제를 해결하기 위해 Micro Frontend 아키텍처를 도입하려고 합니다. 다음 중 성능 저하를 최소화하면서 독립적인 배포와 글로벌 캐싱을 가장 효율적으로 달성할 수 있는 설계는 무엇입니까?",
+"choices": [
+"Nginx를 리버스 프록시로 사용하여 URL 경로에 따라 각 팀의 개별 React 앱(SPA)으로 라우팅하고, 모든 정적 자산은 단일 S3 버킷에 통합하여 CloudFront로 배포한다.",
+"Iframe을 사용하여 메인 셸(Shell) 애플리케이션 내에 각 팀의 화면을 임베드하고, 상태 관리는 postMessage API를 통해 동기화한다.",
+"Webpack Module Federation을 적용하여 호스트 앱과 리모트 앱으로 분리하고, 각 리모트 앱의 빌드 결과물을 독립적인 S3 경로에 업로드한 뒤 Edge CDN을 통해 런타임에 동적으로 스크립트를 로드한다.",
+"모든 코드를 하나의 Next.js SSR 애플리케이션으로 마이그레이션하고, Vercel의 Edge Functions를 활용하여 팀별 라우팅을 런타임에 처리하도록 구성한다."
+],
+"correct_answer": "Webpack Module Federation을 적용하여 호스트 앱과 리모트 앱으로 분리하고, 각 리모트 앱의 빌드 결과물을 독립적인 S3 경로에 업로드한 뒤 Edge CDN을 통해 런타임에 동적으로 스크립트를 로드한다.",
+"explanation": "Webpack Module Federation은 런타임에 다른 Webpack 빌드의 코드를 동적으로 로드할 수 있게 해주는 기술로, 각 팀이 독립적으로 배포(S3+CDN)하면서도 브라우저 상에서는 하나의 애플리케이션처럼 매끄럽게 동작하게 합니다. Iframe은 성능과 UX 문제가 크고, Nginx 라우팅은 SPA 경험을 해치며, 단일 Next.js 마이그레이션은 모놀리스의 빌드 병목 문제를 근본적으로 해결하지 못합니다."
+},
+{
+"question_id": 2,
+"job_role": "Frontend Developer",
+"difficulty": "middle_level",
+"question_type": "performance_optimization",
+"category": "Performance",
+"subcategory": "Core Web Vitals",
+"skills_required": ["Browser Rendering", "Network", "Image Optimization"],
+"scenario": "마케팅 프로모션 랜딩 페이지를 런칭한 직후, 사용자 기기에서 LCP(Largest Contentful Paint) 지표가 평균 4.5초로 매우 나쁘게 측정되고 있습니다. 분석 결과, LCP 요소는 페이지 상단의 대형 프로모션 배너 이미지(Hero Image)이며, 이 이미지는 JavaScript가 실행된 후 클라이언트에서 API를 호출하여 이미지 URL을 받아온 뒤에야 렌더링이 시작됩니다.",
+"question": "LCP를 2.5초 이하로 개선하기 위해 적용할 수 있는 가장 효과적인 최적화 기법들의 조합은 무엇입니까?",
+"choices": [
+"배너 이미지에 loading=\"lazy\" 속성을 추가하고, 이미지 포맷을 PNG에서 WebP로 변경한다.",
+"API 응답에 Cache-Control 헤더를 설정하여 캐싱하고, 이미지 로딩 중에는 CSS 스켈레톤 UI를 보여준다.",
+"HTML의 <head>에 API 엔드포인트에 대한 <link rel=\"preconnect\">를 추가하고, 배너 이미지 URL을 빌드 타임에 주입하여 <link rel=\"preload\" as=\"image\">로 HTML 파싱 단계에서 미리 다운로드하도록 변경한다.",
+"JavaScript 번들 크기를 줄이기 위해 Code Splitting을 적용하고, 배너 이미지는 CSS background-image로 변경하여 렌더링을 최적화한다."
+],
+"correct_answer": "HTML의 <head>에 API 엔드포인트에 대한 <link rel=\"preconnect\">를 추가하고, 배너 이미지 URL을 빌드 타임에 주입하여 <link rel=\"preload\" as=\"image\">로 HTML 파싱 단계에서 미리 다운로드하도록 변경한다.",
+"explanation": "LCP의 지연 원인은 JS 실행 -> API 호출 -> 이미지 로드라는 워터폴(Waterfall) 현상 때문입니다. Hero Image는 페이지의 핵심이므로 lazy loading을 적용하면 오히려 LCP가 더 지연됩니다. HTML 파싱 시점에 preload를 통해 이미지 리소스를 즉시 다운로드하도록 만들면 Critical Rendering Path에서 이미지 다운로드 지연을 최소화하여 LCP를 극적으로 개선할 수 있습니다."
+},
+{
+"question_id": 3,
+"job_role": "Frontend Developer",
+"difficulty": "junior_level",
+"question_type": "error_analysis",
+"category": "React",
+"subcategory": "Hooks",
+"skills_required": ["React", "useEffect", "Memory Management"],
+"scenario": "대시보드 페이지에서 실시간 주식 가격을 보여주기 위해 WebSocket을 연결했습니다. 사용자가 대시보드 페이지와 설정 페이지를 여러 번 왔다 갔다 한 후, 브라우저 메모리 사용량이 급증하여 화면이 멈추는(Freeze) 현상이 발생했습니다. 개발자 도구의 Network 탭을 확인해 보니 동일한 WebSocket 연결이 수십 개 생성되어 있었습니다.",
+"question": "이 메모리 누수 및 네트워크 리소스 고갈의 가장 가능성 높은 원인은 무엇입니까?",
+"choices": [
+"React 상태(State) 업데이트가 너무 빠르게 발생하여 렌더링 큐가 막혔기 때문이다.",
+"useEffect 내부에서 WebSocket 인스턴스를 생성했지만, 클린업(cleanup) 함수에서 연결을 해제(close)하지 않아 컴포넌트가 언마운트될 때마다 연결이 누적되었기 때문이다.",
+"WebSocket 연결을 HTTP/2 기반의 Server-Sent Events(SSE)로 대체하지 않고 구형 프로토콜을 사용했기 때문이다.",
+"Redux 스토어에 너무 많은 실시간 데이터가 저장되어 가비지 컬렉터(GC)가 동작하지 못했기 때문이다."
+],
+"correct_answer": "useEffect 내부에서 WebSocket 인스턴스를 생성했지만, 클린업(cleanup) 함수에서 연결을 해제(close)하지 않아 컴포넌트가 언마운트될 때마다 연결이 누적되었기 때문이다.",
+"explanation": "React 컴포넌트가 마운트될 때 이벤트 리스너나 소켓 연결을 설정하고, 언마운트될 때 해제하지 않으면 메모리 누수(Memory Leak)가 발생합니다. 라우팅을 통해 페이지를 이동할 때마다 컴포넌트가 새롭게 마운트되면서 기존 연결이 살아있는 상태로 새로운 연결이 계속 생성되어 브라우저 리소스를 고갈시킨 것이 원인입니다."
+},
+{
+"question_id": 4,
+"job_role": "Frontend Developer",
+"difficulty": "university_level",
+"question_type": "concept_check",
+"category": "JavaScript",
+"subcategory": "DOM API",
+"skills_required": ["JavaScript", "Event Handling"],
+"scenario": "게시판 목록을 구현하고 있습니다. 각 게시물 행(row)마다 '삭제' 버튼이 있으며, 한 페이지에 100개의 게시물이 렌더링됩니다.",
+"question": "100개의 개별 '삭제' 버튼에 각각 이벤트 리스너를 등록하는 대신, 이들을 감싸고 있는 <ul> 또는 <tbody> 부모 요소에 단 하나의 이벤트 리스너만 등록하여 삭제 동작을 처리하려고 합니다. 이 기법을 무엇이라고 부릅니까?",
+"choices": [
+"이벤트 호이스팅 (Event Hoisting)",
+"이벤트 위임 (Event Delegation)",
+"이벤트 캡처링 (Event Capturing)",
+"이벤트 바인딩 (Event Binding)"
+],
+"correct_answer": "이벤트 위임 (Event Delegation)",
+"explanation": "이벤트 위임은 하위 요소에 각각 이벤트를 붙이지 않고, 상위 요소에서 하위 요소의 이벤트를 제어하는 방식입니다. 이는 이벤트 버블링(Event Bubbling) 메커니즘을 활용한 것으로, 메모리 사용량을 줄이고 동적으로 추가된 DOM 요소에 대해서도 이벤트를 처리할 수 있게 해줍니다."
+},
+{
+"question_id": 5,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "incident_response",
+"category": "Operations",
+"subcategory": "Error Handling & Resilience",
+"skills_required": ["Frontend Error Handling", "Circuit Breaker", "UX", "Network"],
+"scenario": "블랙프라이데이 이벤트 시작 직후, 트래픽이 폭증하면서 프론트엔드가 호출하는 BFF(Backend for Frontend) 서버군의 응답 시간이 10초 이상으로 지연되거나 502 Bad Gateway 에러를 반환하기 시작했습니다. 이로 인해 클라이언트 측 스크립트에서도 연쇄적으로 에러가 발생하여 사용자에게는 빈 하얀 화면(White Screen of Death)만 노출되고 있습니다.",
+"question": "이러한 대규모 장애 상황에서 프론트엔드 레벨에서 시스템의 회복탄력성(Resilience)을 높이고 사용자 경험의 치명적인 훼손을 막기 위해 취해야 할 가장 적절한 조치들의 조합은 무엇입니까?",
+"choices": [
+"API 응답 시간을 15초로 늘리고, 에러가 발생하면 window.location.reload()를 호출하여 사용자가 수동으로 새로고침하는 수고를 덜어준다.",
+"에러 바운더리(Error Boundary)를 적용하여 앱 전체가 크래시되는 것을 막고, API 호출 시 재시도 로직(Retry)에 지수 백오프(Exponential Backoff)를 적용하며 제한 횟수 초과 시 우회 UI(Fallback)를 제공한다.",
+"장애가 감지되면 즉시 모든 프론트엔드 라우팅을 차단하고, 서버가 복구될 때까지 1초마다 서버의 헬스체크 API를 폴링(Polling)하여 복구를 확인한다.",
+"Redux 상태를 즉시 초기화하여 클라이언트 메모리를 확보하고, 로딩 스피너를 무한정 띄워 사용자가 섣불리 페이지를 이탈하지 않도록 유도한다."
+],
+"correct_answer": "에러 바운더리(Error Boundary)를 적용하여 앱 전체가 크래시되는 것을 막고, API 호출 시 재시도 로직(Retry)에 지수 백오프(Exponential Backoff)를 적용하며 제한 횟수 초과 시 우회 UI(Fallback)를 제공한다.",
+"explanation": "장애 상황에서 흰 화면을 방지하려면 Error Boundary를 통해 Fallback UI를 렌더링해야 합니다. 또한, API 실패 시 즉각적이고 반복적인 재시도는 서버에 'Thundering Herd' 문제를 일으켜 장애를 가중시키므로, 점진적으로 대기 시간을 늘리는 지수 백오프(Exponential Backoff) 전략을 사용하는 것이 시스템 회복에 필수적입니다."
+},
+{
+"question_id": 6,
+"job_role": "Frontend Developer",
+"difficulty": "university_level",
+"question_type": "true_false",
+"category": "JavaScript",
+"subcategory": "Event Loop",
+"skills_required": ["JavaScript", "Event Loop", "Asynchronous Programming"],
+"scenario": "버튼 클릭 시 setTimeout을 이용해 0ms 지연 후 콘솔을 출력하고, 동시에 Promise를 이용해 콘솔을 출력하는 코드를 작성했습니다.",
+"question": "다음 중 JavaScript의 이벤트 루프 동작 방식에 대한 설명으로 올바른 것을 고르십시오.",
+"choices": [
+"setTimeout(..., 0)의 콜백은 매크로태스크 큐에 들어가고 Promise의 then 콜백은 마이크로태스크 큐에 들어가며, 마이크로태스크 큐가 항상 먼저 비워진다.",
+"두 콜백 모두 같은 태스크 큐에 들어가며, 소스 코드에 작성된 순서대로 실행된다.",
+"Promise 콜백은 브라우저 렌더링 스레드에서 실행되므로 setTimeout보다 늦게 실행된다.",
+"setTimeout(..., 0)은 지연 시간이 0이므로 마이크로태스크 큐에 우선 배정된다."
+],
+"correct_answer": "setTimeout(..., 0)의 콜백은 매크로태스크 큐에 들어가고 Promise의 then 콜백은 마이크로태스크 큐에 들어가며, 마이크로태스크 큐가 항상 먼저 비워진다.",
+"explanation": "JavaScript의 이벤트 루프는 콜 스택이 비어 있을 때 마이크로태스크 큐(Promise 등)를 먼저 확인하여 모두 처리한 후, 매크로태스크 큐(setTimeout 등)의 작업을 하나씩 처리합니다."
+},
+{
+"question_id": 7,
+"job_role": "Frontend Developer",
+"difficulty": "university_level",
+"question_type": "definition",
+"category": "Network",
+"subcategory": "Security",
+"skills_required": ["CORS", "HTTP Headers", "Browser Security"],
+"scenario": "로컬 환경(http://localhost:3000)에서 개발 중인 프론트엔드 앱이 개발 서버([https://api.dev.com](https://www.google.com/search?q=https://api.dev.com))로 API 요청을 보냈으나, 브라우저 콘솔에 붉은색 에러가 발생하며 응답을 받아오지 못했습니다.",
+"question": "브라우저가 다른 출처(Origin)의 리소스 요청을 제한하는 이 보안 정책의 이름은 무엇입니까?",
+"choices": [
+"XSS (Cross-Site Scripting)",
+"CSRF (Cross-Site Request Forgery)",
+"CORS (Cross-Origin Resource Sharing)",
+"CSP (Content Security Policy)"
+],
+"correct_answer": "CORS (Cross-Origin Resource Sharing)",
+"explanation": "CORS는 추가 HTTP 헤더를 사용하여 한 출처에서 실행 중인 웹 애플리케이션이 다른 출처의 선택한 자원에 접근할 수 있는 권한을 부여하도록 브라우저에 알려주는 체제입니다."
+},
+{
+"question_id": 8,
+"job_role": "Frontend Developer",
+"difficulty": "university_level",
+"question_type": "concept_check",
+"category": "CSS",
+"subcategory": "Box Model",
+"skills_required": ["CSS Box Model", "Layout"],
+"scenario": "디자이너가 너비 200px, 패딩 20px, 테두리 5px인 버튼을 요청했습니다. CSS에 width: 200px을 설정했지만 실제 브라우저에서는 버튼이 더 크게 렌더링되었습니다.",
+"question": "지정된 width 값 내에 패딩과 테두리를 포함시켜 요소의 전체 너비를 200px로 고정하려면 어떤 CSS 속성을 추가해야 합니까?",
+"choices": [
+"box-sizing: border-box;",
+"box-sizing: content-box;",
+"display: inline-block;",
+"position: absolute;"
+],
+"correct_answer": "box-sizing: border-box;",
+"explanation": "기본값인 content-box는 width에 패딩과 테두리를 더하여 전체 크기를 계산합니다. border-box를 지정하면 width 값 안에 패딩과 테두리가 포함되어 크기 계산이 직관적이게 됩니다."
+},
+{
+"question_id": 9,
+"job_role": "Frontend Developer",
+"difficulty": "university_level",
+"question_type": "code_output_prediction",
+"category": "JavaScript",
+"subcategory": "Promise",
+"skills_required": ["JavaScript", "Promise API"],
+"scenario": "세 개의 API 요청을 동시에 보내야 합니다. 각각 1초, 2초, 3초가 걸립니다.",
+"question": "Promise.all([req1, req2, req3])을 사용했을 때, 모든 요청이 성공적으로 완료되기까지 걸리는 총 시간은 대략 얼마입니까? (네트워크 오버헤드는 무시합니다)",
+"choices": [
+"1초",
+"3초",
+"6초",
+"예측할 수 없음"
+],
+"correct_answer": "3초",
+"explanation": "Promise.all은 배열로 전달된 모든 Promise를 병렬로 실행하므로, 가장 오래 걸리는 태스크(3초)가 완료되는 시점에 전체가 완료(resolved)됩니다."
+},
+{
+"question_id": 10,
+"job_role": "Frontend Developer",
+"difficulty": "university_level",
+"question_type": "misconception_detection",
+"category": "React",
+"subcategory": "Rendering",
+"skills_required": ["React", "Virtual DOM"],
+"scenario": "동료 주니어 개발자가 'React는 Virtual DOM을 사용하기 때문에 순수 JavaScript(Vanilla JS)로 DOM을 직접 조작하는 것보다 항상 더 빠르다'라고 주장합니다.",
+"question": "이 주장에 대한 설명으로 가장 올바른 것은 무엇입니까?",
+"choices": [
+"맞는 주장이다. Virtual DOM은 브라우저 렌더링 엔진을 우회하므로 항상 더 빠르다.",
+"틀린 주장이다. Virtual DOM은 메모리에 DOM 트리를 추가로 유지하고 비교(Diffing) 연산을 하므로, 최적화된 Vanilla JS 직접 조작보다 항상 빠를 수는 없다. 유지보수성과 개발 생산성을 위한 트레이드오프다.",
+"맞는 주장이다. React 18부터는 브라우저의 기본 DOM 연산을 완전히 대체하는 엔진이 탑재되었다.",
+"틀린 주장이다. Virtual DOM은 서버 사이드 렌더링(SSR)에서만 성능 이점이 있다."
+],
+"correct_answer": "틀린 주장이다. Virtual DOM은 메모리에 DOM 트리를 추가로 유지하고 비교(Diffing) 연산을 하므로, 최적화된 Vanilla JS 직접 조작보다 항상 빠를 수는 없다. 유지보수성과 개발 생산성을 위한 트레이드오프다.",
+"explanation": "Virtual DOM의 핵심 가치는 '무조건적인 성능 우위'가 아니라, 선언적 UI 작성을 가능하게 하여 개발 생산성을 높이면서도 '충분히 납득할 만한 성능'을 보장하는 데 있습니다."
+},
+{
+"question_id": 11,
+"job_role": "Frontend Developer",
+"difficulty": "university_level",
+"question_type": "multiple_choice",
+"category": "Network",
+"subcategory": "HTTP",
+"skills_required": ["HTTP Methods", "REST API"],
+"scenario": "사용자 프로필 페이지에서 사용자가 자신의 닉네임을 변경하려고 합니다. RESTful API 설계 원칙을 따르는 백엔드 서버와 통신해야 합니다.",
+"question": "기존 데이터의 일부(닉네임)만 수정할 때 사용하는 가장 적절한 HTTP 메서드는 무엇입니까?",
+"choices": [
+"GET",
+"POST",
+"PUT",
+"PATCH"
+],
+"correct_answer": "PATCH",
+"explanation": "REST 원칙에서 PUT은 리소스 전체를 교체할 때 사용하며, PATCH는 리소스의 부분 수정을 위해 사용됩니다."
+},
+{
+"question_id": 12,
+"job_role": "Frontend Developer",
+"difficulty": "junior_level",
+"question_type": "debugging",
+"category": "React",
+"subcategory": "State Management",
+"skills_required": ["React", "Immutability"],
+"scenario": "장바구니 배열 상태(cartItems)에 새로운 상품을 추가하기 위해 `cartItems.push(newItem)`을 호출한 후 `setCartItems(cartItems)`를 실행했습니다. 하지만 화면에 추가된 상품이 렌더링되지 않습니다.",
+"question": "화면이 업데이트되지 않는 가장 정확한 이유는 무엇입니까?",
+"choices": [
+"push 메서드는 배열의 맨 앞이 아닌 맨 뒤에 요소를 추가하기 때문이다.",
+"React는 상태의 불변성(Immutability)을 기반으로 객체의 참조값(Reference) 변화를 감지하여 리렌더링을 결정하는데, push는 기존 배열을 변형할 뿐 참조값은 그대로 유지되기 때문이다.",
+"setCartItems는 비동기로 동작하므로 렌더링이 즉시 발생하지 않기 때문이다.",
+"새로운 상품 객체에 고유한 key 속성이 없기 때문이다."
+],
+"correct_answer": "React는 상태의 불변성(Immutability)을 기반으로 객체의 참조값(Reference) 변화를 감지하여 리렌더링을 결정하는데, push는 기존 배열을 변형할 뿐 참조값은 그대로 유지되기 때문이다.",
+"explanation": "React에서 배열 상태를 업데이트할 때는 불변성을 지키기 위해 전개 연산자(`[...cartItems, newItem]`) 등을 사용하여 새로운 참조값을 가진 배열을 생성하여 setState에 전달해야 합니다."
+},
+{
+"question_id": 13,
+"job_role": "Frontend Developer",
+"difficulty": "junior_level",
+"question_type": "error_analysis",
+"category": "Tooling",
+"subcategory": "NPM",
+"skills_required": ["NPM", "Dependency Management"],
+"scenario": "새로운 UI 라이브러리를 설치하려고 `npm install`을 실행했으나, `ERESOLVE unable to resolve dependency tree` 에러가 발생하며 설치가 중단되었습니다. 로그를 보니 기존에 설치된 React 버전과 새 라이브러리가 요구하는 React 버전(peer dependencies)이 충돌하고 있습니다.",
+"question": "이 상황에서 기존 프로젝트의 의존성을 유지하면서 설치를 강제 진행하기 위해 실무에서 흔히 사용하는 npm 명령어 옵션은 무엇입니까?",
+"choices": [
+"--force 또는 --legacy-peer-deps",
+"--save-dev",
+"--no-audit",
+"--ignore-scripts"
+],
+"correct_answer": "--force 또는 --legacy-peer-deps",
+"explanation": "npm v7부터 peer dependencies를 자동으로 설치하고 엄격하게 체크합니다. 충돌이 발생할 경우 `--legacy-peer-deps`를 사용하여 npm v6처럼 peer dependency 충돌을 무시하고 설치를 진행할 수 있습니다."
+},
+{
+"question_id": 14,
+"job_role": "Frontend Developer",
+"difficulty": "junior_level",
+"question_type": "log_analysis",
+"category": "Build System",
+"subcategory": "Webpack",
+"skills_required": ["Webpack", "Optimization"],
+"scenario": "프로덕션 빌드(npm run build)를 실행했는데 콘솔 로그에 `WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).` 라는 경고가 여러 개 출력되었습니다.",
+"question": "이 경고가 의미하는 바와 이를 해결하기 위한 가장 기본적인 접근 방법은 무엇입니까?",
+"choices": [
+"빌드된 JavaScript 파일의 용량이 커서 초기 로딩 성능이 저하될 수 있음을 의미하며, Code Splitting(코드 분할)이나 Tree Shaking을 적용해 번들 사이즈를 줄여야 한다.",
+"서버의 디스크 용량이 부족함을 의미하며, 빌드 결과물을 압축하기 위해 서버 스토리지를 정리해야 한다.",
+"이미지 파일의 해상도가 너무 높다는 의미이며, 모든 이미지를 WebP 포맷으로 변환해야 한다.",
+"브라우저의 로컬 스토리지 한도를 초과했다는 의미이며, 상태 관리 라이브러리의 캐싱 설정을 꺼야 한다."
+],
+"correct_answer": "빌드된 JavaScript 파일의 용량이 커서 초기 로딩 성능이 저하될 수 있음을 의미하며, Code Splitting(코드 분할)이나 Tree Shaking을 적용해 번들 사이즈를 줄여야 한다.",
+"explanation": "Webpack의 performance hint는 번들 크기가 기본 권장 한도(보통 244~250KB)를 넘을 때 발생합니다. 이는 사용자의 초기 로드 성능에 악영향을 주므로, React.lazy 등을 통한 코드 스플리팅으로 청크를 분리하는 것이 정석입니다."
+},
+{
+"question_id": 15,
+"job_role": "Frontend Developer",
+"difficulty": "junior_level",
+"question_type": "configuration_problem",
+"category": "Version Control",
+"subcategory": "Git",
+"skills_required": ["Git", "Package Management"],
+"scenario": "동료와 협업 중 `package.json`에 새로운 패키지를 추가하고 원격 저장소에 Push했습니다. 동시에 동료도 다른 패키지를 추가하여 Merge 과정에서 `package-lock.json` 파일에 충돌(Conflict)이 발생했습니다.",
+"question": "이러한 상황에서 `package-lock.json` 충돌을 가장 안전하고 올바르게 해결하는 방법은 무엇입니까?",
+"choices": [
+"충돌이 난 package-lock.json 파일 내의 텍스트를 수동으로 수정하여 양쪽 변경 사항을 병합한다.",
+"package-lock.json 파일을 완전히 삭제하고 리포지토리에 반영한 뒤, 앞으로는 생성되지 않도록 설정한다.",
+"package.json 파일의 충돌을 먼저 해결한 뒤, npm install 명령어를 다시 실행하여 package-lock.json 파일이 자동으로 올바르게 재생성되도록 한다.",
+"동료의 변경 사항을 무시하고 나의 package-lock.json 파일만 강제로 push한다."
+],
+"correct_answer": "package.json 파일의 충돌을 먼저 해결한 뒤, npm install 명령어를 다시 실행하여 package-lock.json 파일이 자동으로 올바르게 재생성되도록 한다.",
+"explanation": "package-lock.json은 수동으로 수정하기 어렵고 오류가 발생하기 쉽습니다. 소스 파일인 package.json의 충돌을 병합한 후 패키지 매니저의 설치 명령(npm install 등)을 실행하면 락 파일이 안전하게 재계산 및 갱신됩니다."
+},
+{
+"question_id": 16,
+"job_role": "Frontend Developer",
+"difficulty": "junior_level",
+"question_type": "scenario_based",
+"category": "Authentication",
+"subcategory": "JWT",
+"skills_required": ["JWT", "Axios Interceptors", "Security"],
+"scenario": "사용자가 게시판에 글을 작성하는 도중 Access Token이 만료되어 API 요청 시 401 Unauthorized 에러가 발생했습니다. 사용자가 작성 중이던 데이터가 날아가지 않고 매끄럽게 처리가 이어지도록 구현해야 합니다.",
+"question": "이 상황을 해결하기 위해 프론트엔드에서 구현해야 할 가장 적절한 흐름은 무엇입니까?",
+"choices": [
+"401 에러 발생 시 즉시 로그아웃 처리하고 로그인 페이지로 리다이렉트시킨다.",
+"글 작성 버튼을 누를 때마다 사전에 Refresh Token으로 새 Access Token을 발급받고 나서 글 작성 API를 호출한다.",
+"Axios Interceptor를 사용하여 401 에러를 가로챈 뒤, Refresh Token으로 새로운 Access Token을 조용히 발급받아(Silent Refresh) 실패했던 원래의 글 작성 요청을 재시도한다.",
+"Access Token의 만료 시간을 무제한으로 설정해 달라고 백엔드 팀에 요청한다."
+],
+"correct_answer": "Axios Interceptor를 사용하여 401 에러를 가로챈 뒤, Refresh Token으로 새로운 Access Token을 조용히 발급받아(Silent Refresh) 실패했던 원래의 글 작성 요청을 재시도한다.",
+"explanation": "UX를 훼손하지 않으면서 보안을 유지하려면, API 클라이언트(예: Axios)의 인터셉터(Interceptor)에서 401 응답을 감지하고, 백그라운드에서 토큰을 갱신한 후 실패한 원래의 요청(Request)을 다시 보내는 것이 표준적인 구현 패턴입니다."
+},
+{
+"question_id": 17,
+"job_role": "Frontend Developer",
+"difficulty": "junior_level",
+"question_type": "true_false",
+"category": "HTML",
+"subcategory": "Accessibility",
+"skills_required": ["Web Accessibility (a11y)", "HTML"],
+"scenario": "모달(Modal) 창을 `<div>` 태그를 활용해 시각적으로 디자인했습니다. 스크린 리더 사용자에게 이 요소가 대화상자임을 명확히 알려주려고 합니다.",
+"question": "해당 `<div>` 요소에 `role=\"dialog\"`와 `aria-modal=\"true\"` 속성을 추가하면 스크린 리더가 이를 모달 대화상자로 인식하고, 모달 밖의 콘텐츠는 무시하도록 돕는다. (참/거짓)",
+"choices": [
+"참",
+"거짓"
+],
+"correct_answer": "참",
+"explanation": "WAI-ARIA 스펙에서 role=\"dialog\"와 aria-modal=\"true\"는 해당 요소가 모달 팝업임을 보조 기기에 알리고, 포커스가 모달 내부에 갇히도록 안내하는 데 필수적인 속성입니다."
+},
+{
+"question_id": 18,
+"job_role": "Frontend Developer",
+"difficulty": "middle_level",
+"question_type": "real_world_case",
+"category": "JavaScript",
+"subcategory": "Memory Management",
+"skills_required": ["JavaScript", "Memory Leak", "Closures", "SPA"],
+"scenario": "단일 페이지 애플리케이션(SPA)에서 사용자가 페이지를 이동할 때마다 브라우저의 메모리 사용량이 누적되어, 결국 브라우저 탭이 크래시(Crash)되는 현상이 보고되었습니다. Chrome DevTools의 Memory 탭을 통해 Heap Snapshot을 비교해 본 결과, 해제(Detached)된 DOM 노드들이 대량으로 메모리에 남아 있는 것이 확인되었습니다.",
+"question": "Detached DOM 노드로 인한 메모리 누수의 가장 흔한 원인 두 가지가 결합된 경우는 무엇입니까?",
+"choices": [
+"CSS 애니메이션이 무한 반복되고 있으며, 이미지 파일 사이즈가 너무 큰 경우.",
+"DOM 노드에 이벤트 리스너를 등록한 후 컴포넌트 파괴 시 removeEventListener를 호출하지 않았고, 해당 리스너의 클로저(Closure)가 DOM 노드를 참조하고 있는 경우.",
+"LocalStorage에 слишком 많은 데이터를 저장하고, Service Worker가 백그라운드에서 계속 실행 중인 경우.",
+"Redux 상태가 계속 추가되기만 하고 삭제되지 않으며, fetch API의 응답이 캐싱되는 경우."
+],
+"correct_answer": "DOM 노드에 이벤트 리스너를 등록한 후 컴포넌트 파괴 시 removeEventListener를 호출하지 않았고, 해당 리스너의 클로저(Closure)가 DOM 노드를 참조하고 있는 경우.",
+"explanation": "DOM 요소가 화면에서 제거(Detached)되었더라도, JavaScript 코드(특히 클로저를 포함하는 이벤트 리스너나 전역 변수)에서 해당 DOM 요소를 계속 참조하고 있으면 가비지 컬렉터(GC)가 이를 수거하지 못해 심각한 메모리 누수를 유발합니다."
+},
+{
+"question_id": 19,
+"job_role": "Frontend Developer",
+"difficulty": "middle_level",
+"question_type": "algorithm_design",
+"category": "UI/UX",
+"subcategory": "Performance",
+"skills_required": ["Virtual DOM", "Virtualization", "Intersection Observer"],
+"scenario": "채팅 애플리케이션에서 한 채팅방에 수만 개의 메시지 데이터가 존재합니다. 사용자가 스크롤을 올릴 때마다 이전 메시지를 렌더링해야 하는데, DOM 노드가 무한정 쌓이면서 스크롤 버벅임(Jank)과 브라우저 메모리 부족 현상이 발생하고 있습니다.",
+"question": "이러한 대량의 리스트 렌더링 성능을 최적화하기 위해 적용할 수 있는 가장 효과적인 기술적 접근은 무엇입니까?",
+"choices": [
+"requestAnimationFrame을 사용하여 스크롤 이벤트마다 DOM 업데이트를 강제 동기화한다.",
+"CSS의 will-change: transform 속성을 모든 메시지 노드에 적용하여 GPU 가속을 유도한다.",
+"Windowing(또는 Virtualization) 기법을 사용하여, 현재 뷰포트(화면)에 보이는 메시지 노드와 약간의 버퍼 영역만 DOM에 렌더링하고 보이지 않는 요소는 DOM에서 제거한다.",
+"모든 메시지를 하나의 큰 텍스트 문자열로 합쳐서 dangerouslySetInnerHTML을 통해 한 번에 렌더링한다."
+],
+"correct_answer": "Windowing(또는 Virtualization) 기법을 사용하여, 현재 뷰포트(화면)에 보이는 메시지 노드와 약간의 버퍼 영역만 DOM에 렌더링하고 보이지 않는 요소는 DOM에서 제거한다.",
+"explanation": "Virtualization(가상화)은 데이터가 수만 개라도 화면에 보이는 요소(예: 20개)만 실제 DOM 노드로 유지하고 스크롤 위치에 따라 데이터만 갈아끼우는 방식으로, DOM 노드 수를 극적으로 줄여 메모리와 렌더링 성능을 최적화합니다. (react-window, react-virtualized 등)"
+},
+{
+"question_id": 20,
+"job_role": "Frontend Developer",
+"difficulty": "middle_level",
+"question_type": "performance_optimization",
+"category": "JavaScript",
+"subcategory": "Event Handling",
+"skills_required": ["Debounce", "Throttle", "API Optimization"],
+"scenario": "검색창(Input)에 사용자가 타이핑할 때마다 백엔드에 자동완성 API를 호출하도록 구현되어 있습니다. 사용자가 '안녕하세요'를 빠르게 입력하면 'ㅇ', '아', '안', '안ㄴ' 등에 대해 불필요한 API 요청이 무수히 발생하여 백엔드 서버에 부하를 주고 클라이언트 성능도 떨어집니다.",
+"question": "사용자가 연속해서 타이핑하는 동안에는 API를 호출하지 않다가, 타이핑을 멈추고 일정 시간(예: 300ms)이 지난 후에만 마지막 입력값으로 단 한 번 API를 호출하도록 하는 최적화 기법은 무엇입니까?",
+"choices": [
+"디바운싱 (Debouncing)",
+"쓰로틀링 (Throttling)",
+"메모이제이션 (Memoization)",
+"폴링 (Polling)"
+],
+"correct_answer": "디바운싱 (Debouncing)",
+"explanation": "디바운싱은 연이어 호출되는 함수들 중 마지막(또는 처음) 함수만 실행되도록 하는 기법으로, 검색어 자동완성이나 리사이즈 이벤트 처리에 매우 효과적입니다. 반면 쓰로틀링은 일정한 시간 간격으로 함수가 최소 한 번씩 실행되도록 보장하는 기법입니다(예: 스크롤 로딩)."
+},
+{
+"question_id": 21,
+"job_role": "Frontend Developer",
+"difficulty": "middle_level",
+"question_type": "performance_estimation",
+"category": "Performance",
+"subcategory": "Metrics",
+"skills_required": ["Web Vitals", "TTI", "TBT", "JavaScript Parsing"],
+"scenario": "새로운 대규모 서드파티 차트 라이브러리(압축 전 2MB, gzip 압축 후 600KB)를 메인 페이지에 추가했습니다. 이후 마케팅 부서에서 '사용자가 페이지에 접속하자마자 버튼을 눌러도 반응하지 않고 한참 뒤에야 동작한다'는 불만을 제기했습니다.",
+"question": "이 라이브러리의 추가가 가장 직접적으로 악화시킨 사용자 중심 성능 지표(Web Vitals)는 무엇입니까?",
+"choices": [
+"FCP (First Contentful Paint)",
+"CLS (Cumulative Layout Shift)",
+"TTFB (Time to First Byte)",
+"TBT (Total Blocking Time) 및 TTI (Time to Interactive)"
+],
+"correct_answer": "TBT (Total Blocking Time) 및 TTI (Time to Interactive)",
+"explanation": "대용량 JavaScript 파일은 네트워크 다운로드 후 브라우저의 메인 스레드에서 파싱(Parsing), 컴파일(Compile), 실행(Execution) 과정을 거칩니다. 이 동안 메인 스레드가 차단(Block)되므로 화면은 보일지라도 사용자 상호작용(클릭, 스크롤)에 응답할 수 없는 상태인 TBT와 TTI가 크게 악화됩니다."
+},
+{
+"question_id": 22,
+"job_role": "Frontend Developer",
+"difficulty": "middle_level",
+"question_type": "capacity_planning",
+"category": "Storage",
+"subcategory": "Client-side Storage",
+"skills_required": ["IndexedDB", "LocalStorage", "Client Storage"],
+"scenario": "오프라인 상태에서도 동작해야 하는 노트 필기 웹 애플리케이션을 개발 중입니다. 사용자가 첨부한 고해상도 이미지와 대량의 텍스트 데이터를 클라이언트 브라우저에 저장해야 하며, 데이터 크기는 사용자당 수백 MB에서 최대 1GB에 달할 것으로 예상됩니다.",
+"question": "이러한 대용량 구조화 데이터를 브라우저에 저장하기 위해 선택해야 할 가장 적합한 클라이언트 측 스토리지 기술은 무엇입니까?",
+"choices": [
+"Cookies",
+"LocalStorage",
+"SessionStorage",
+"IndexedDB"
+],
+"correct_answer": "IndexedDB",
+"explanation": "LocalStorage와 SessionStorage는 브라우저당 약 5MB~10MB의 텍스트 데이터만 저장할 수 있으며 동기식으로 동작하여 메인 스레드를 블로킹합니다. 반면 IndexedDB는 수백 MB 이상의 구조화된 데이터 및 Blob(이미지/파일)을 비동기적으로 저장할 수 있는 브라우저 내장 데이터베이스입니다."
+},
+{
+"question_id": 23,
+"job_role": "Frontend Developer",
+"difficulty": "middle_level",
+"question_type": "root_cause_analysis",
+"category": "React",
+"subcategory": "Hooks",
+"skills_required": ["React", "useEffect", "Race Condition"],
+"scenario": "사용자 프로필 페이지에서 `useEffect`를 사용해 ID가 바뀔 때마다 데이터를 Fetch합니다. 사용자가 ID 1번 프로필을 클릭한 직후 빠르게 ID 2번 프로필을 클릭했습니다. 화면에는 ID 2번 사용자의 이름이 표시되다가, 잠시 후 갑자기 ID 1번 사용자의 데이터로 덮어씌워지는 버그가 발생했습니다.",
+"question": "이 현상(Race Condition)의 근본 원인과 React에서 이를 해결하는 가장 권장되는 패턴은 무엇입니까?",
+"choices": [
+"API 서버의 캐싱 오류 때문이며, 클라이언트 측 헤더에 Cache-Control: no-cache를 추가해야 한다.",
+"ID 1번의 API 응답이 네트워크 지연으로 인해 ID 2번 응답보다 늦게 도착하여 상태를 덮어썼기 때문이며, useEffect의 클린업(cleanup) 함수에서 boolean 플래그(예: ignore)를 두어 언마운트된 컴포넌트의 상태 업데이트를 무시하도록 처리해야 한다.",
+"상태 업데이트가 동기적으로 이루어지기 때문이며, setTimeout으로 상태 업데이트를 지연시켜야 한다.",
+"브라우저의 Event Loop가 꼬였기 때문이며, Promise.race를 사용해 첫 번째 응답만 처리해야 한다."
+],
+"correct_answer": "ID 1번의 API 응답이 네트워크 지연으로 인해 ID 2번 응답보다 늦게 도착하여 상태를 덮어썼기 때문이며, useEffect의 클린업(cleanup) 함수에서 boolean 플래그(예: ignore)를 두어 언마운트된 컴포넌트의 상태 업데이트를 무시하도록 처리해야 한다.",
+"explanation": "비동기 요청의 순서는 네트워크 상황에 따라 응답 순서와 일치하지 않을 수 있습니다(경쟁 상태). 이를 방지하기 위해 React에서는 useEffect 클린업 함수에서 의존성이 변경되거나 언마운트될 때 이전 요청의 상태 업데이트를 무시(또는 AbortController로 요청 취소)하는 패턴을 사용해야 합니다."
+},
+{
+"question_id": 24,
+"job_role": "Frontend Developer",
+"difficulty": "middle_level",
+"question_type": "data_interpretation",
+"category": "Performance",
+"subcategory": "Lighthouse",
+"skills_required": ["Lighthouse", "Web Performance"],
+"scenario": "Lighthouse 성능 측정 결과 다음과 같은 수치를 얻었습니다.\\n- FCP (First Contentful Paint): 1.2s\\n- LCP (Largest Contentful Paint): 5.8s\\n- CLS (Cumulative Layout Shift): 0.85\\n- TBT (Total Blocking Time): 50ms\\n이 웹 페이지의 체감 성능에 대한 해석으로 가장 타당한 것은 무엇입니까?",
+"question": "Lighthouse 데이터를 기반으로 현재 페이지의 가장 심각한 문제점과 그로 인해 예상되는 사용자 경험은 무엇입니까?",
+"choices": [
+"TBT가 낮으므로 사용자가 상호작용하기는 좋으나, FCP가 느려 화면이 백지로 오래 남아 답답함을 느낀다.",
+"모든 지표가 양호하여 사용자 경험에 문제가 없다.",
+"LCP가 느려 핵심 콘텐츠(예: 메인 이미지)가 늦게 뜨며, CLS가 매우 높아 폰트 로드나 이미지 로드 시 화면 레이아웃이 덜컹거려 사용자가 잘못된 버튼을 클릭할 위험이 크다.",
+"JS 실행 시간이 너무 길어 스크롤이 끊기는 현상이 발생할 것이다."
+],
+"correct_answer": "LCP가 느려 핵심 콘텐츠(예: 메인 이미지)가 늦게 뜨며, CLS가 매우 높아 폰트 로드나 이미지 로드 시 화면 레이아웃이 덜컹거려 사용자가 잘못된 버튼을 클릭할 위험이 크다.",
+"explanation": "LCP 5.8s는 'Poor(나쁨)' 상태로 핵심 콘텐츠 로딩이 지연되고 있음을 나타냅니다. 특히 CLS 0.85는 기준치(0.1)를 한참 초과하는 매우 심각한 수치로, 시각적 불안정성(레이아웃 시프트)으로 인한 최악의 UX(Miss click 등)를 유발합니다. TBT는 50ms로 매우 양호합니다."
+},
+{
+"question_id": 25,
+"job_role": "Frontend Developer",
+"difficulty": "middle_level",
+"question_type": "dependency_analysis",
+"category": "Build System",
+"subcategory": "Tree Shaking",
+"skills_required": ["Webpack", "Tree Shaking", "ES Modules"],
+"scenario": "유틸리티 함수 100개가 모여 있는 `utils.js` 라이브러리를 만들었습니다. 프로젝트에서 `import { formatTime } from './utils'` 와 같이 단 하나의 함수만 가져와 사용했는데, 빌드 번들을 분석(Bundle Analyzer)해 보니 사용하지 않은 나머지 99개의 함수까지 모두 최종 번들에 포함되어 있었습니다.",
+"question": "불필요한 코드를 제거하는 '트리 쉐이킹(Tree Shaking)'이 동작하지 않은 가장 가능성 높은 이유는 무엇입니까?",
+"choices": [
+"utils 라이브러리가 CommonJS 형식(module.exports)으로 작성되어 있거나 Babel이 ES Modules(import/export) 문법을 CommonJS로 변환하도록 설정되어 있기 때문이다.",
+"package.json의 sideEffects 속성이 true로 설정되어 있어 Webpack이 모든 코드를 필수 코드로 인식했기 때문이다.",
+"Webpack 설정에서 mode가 'development'로 되어 있어서 압축 및 최적화가 비활성화되었기 때문이다.",
+"위의 세 가지 모두 트리 쉐이킹이 실패할 수 있는 원인이다."
+],
+"correct_answer": "위의 세 가지 모두 트리 쉐이킹이 실패할 수 있는 원인이다.",
+"explanation": "트리 쉐이킹이 성공하려면 1) ES Modules 기반의 정적 구조를 유지해야 하고(Babel 설정 주의), 2) 해당 모듈에 사이드 이펙트가 없음을 명시(sideEffects: false)해야 하며, 3) 빌드 도구의 최적화 설정(production 모드의 Terser 등)이 켜져 있어야 합니다."
+},
+{
+"question_id": 26,
+"job_role": "Frontend Developer",
+"difficulty": "middle_level",
+"question_type": "best_practice_selection",
+"category": "React",
+"subcategory": "State Management",
+"skills_required": ["State Management", "Redux", "Zustand", "Context API"],
+"scenario": "사내 관리자 어드민 페이지를 개발 중입니다. 각 페이지(예: 유저 관리, 주문 관리) 내부에서만 쓰이는 모달의 열림/닫힘 상태, 탭 선택 상태 등 매우 빈번하게 변경되는 UI 상태들이 있습니다.",
+"question": "이러한 '특정 도메인 화면에 종속된 UI 상태'를 관리하기 위한 가장 적절하고 성능 친화적인 방법은 무엇입니까?",
+"choices": [
+"모든 UI 상태를 Redux의 단일 글로벌 스토어에 넣어 통합 관리한다.",
+"Context API를 최상위(App.js)에 선언하여 전체 앱에서 접근 가능하게 한다.",
+"해당 페이지나 컴포넌트 내부에서 useState나 useReducer를 사용해 지역 상태(Local State)로 관리한다.",
+"브라우저의 SessionStorage에 저장하여 새로고침 시에도 유지되도록 한다."
+],
+"correct_answer": "해당 페이지나 컴포넌트 내부에서 useState나 useReducer를 사용해 지역 상태(Local State)로 관리한다.",
+"explanation": "모든 상태를 글로벌(Redux/Context)로 올리는 것은 불필요한 보일러플레이트를 양산하고, 관련 없는 컴포넌트까지 리렌더링시킬 위험이 있습니다. 모달 열림/닫힘 같은 지역적인 UI 상태는 해당 컴포넌트 트리 내에서 Local State로 관리하는 것이 모범 사례입니다."
+},
+{
+"question_id": 27,
+"job_role": "Frontend Developer",
+"difficulty": "middle_level",
+"question_type": "code_review",
+"category": "React",
+"subcategory": "Optimization",
+"skills_required": ["React", "useMemo", "useCallback"],
+"scenario": "주니어 개발자의 PR(Pull Request)을 리뷰 중입니다. 해당 개발자는 '성능 최적화'를 명목으로 컴포넌트 내의 모든 단순 산술 연산(예: `const sum = a + b`)과 모든 이벤트 핸들러(예: `const handleClick = () => {...}`)를 `useMemo`와 `useCallback`으로 감싸놓았습니다.",
+"question": "이 코드에 대한 피드백으로 가장 적절한 내용은 무엇입니까?",
+"choices": [
+"훌륭한 최적화입니다. 모든 값과 함수를 메모이제이션하면 리렌더링 성능이 극대화됩니다.",
+"useMemo와 useCallback 자체도 의존성 배열 비교와 메모리 할당이라는 비용(Cost)이 발생하므로, 무거운 연산이나 자식 컴포넌트에 props로 전달되어 불필요한 리렌더링을 막아야 하는 상황 등 꼭 필요한 곳에만 선택적으로 사용해야 합니다.",
+"useCallback 대신 항상 useMemo를 반환하도록 변경해야 메모리 누수를 막을 수 있습니다.",
+"React 18부터는 컴파일러가 알아서 최적화해주므로 useMemo와 useCallback은 더 이상 지원되지 않는(Deprecated) API입니다. 삭제하십시오."
+],
+"correct_answer": "useMemo와 useCallback 자체도 의존성 배열 비교와 메모리 할당이라는 비용(Cost)이 발생하므로, 무거운 연산이나 자식 컴포넌트에 props로 전달되어 불필요한 리렌더링을 막아야 하는 상황 등 꼭 필요한 곳에만 선택적으로 사용해야 합니다.",
+"explanation": "메모이제이션은 '공짜'가 아닙니다. 가벼운 연산의 경우 매번 새로 계산하거나 함수를 재생성하는 것이 메모이제이션 훅을 실행하고 의존성을 비교하는 비용보다 쌉니다. 맹목적인 사용은 오히려 초기 렌더링을 느리게 하고 메모리 사용량을 늘립니다."
+},
+{
+"question_id": 28,
+"job_role": "Frontend Developer",
+"difficulty": "middle_level",
+"question_type": "testing_strategy",
+"category": "QA",
+"subcategory": "Testing",
+"skills_required": ["Unit Test", "E2E Test", "Jest", "Cypress"],
+"scenario": "새로운 프론트엔드 프로젝트를 시작하며 테스트 전략을 수립하고 있습니다. 일정과 리소스가 제한적이어서 모든 것을 테스트할 수는 없습니다. 복잡한 날짜 포맷팅 함수, 금액 계산 로직, 그리고 핵심 사용자 시나리오인 '장바구니 담기 및 결제 흐름'이 존재합니다.",
+"question": "효율성과 신뢰성을 고려할 때 가장 적절한 테스트 분배 전략(Test Pyramid 기반)은 무엇입니까?",
+"choices": [
+"모든 로직을 사용자의 브라우저 환경에서 검증해야 하므로 Cypress를 이용한 E2E 테스트로만 100% 커버리지를 달성한다.",
+"날짜나 금액 계산 같은 순수 함수 형태의 비즈니스 로직은 Jest를 이용해 빠르고 저렴한 단위 테스트(Unit Test)로 많이 작성하고, 결제 흐름 같은 핵심 사용자 여정은 뼈대가 되는 E2E 테스트(Cypress/Playwright) 몇 개로 커버한다.",
+"프론트엔드에서는 테스트 코드를 작성하지 않고, QA 팀이 직접 브라우저에서 수동으로 테스트하도록 일임하는 것이 가장 비용 효율적이다.",
+"단위 테스트는 무시하고, 백엔드 API와의 연동 테스트(Integration Test)에 모든 테스트 리소스를 집중한다."
+],
+"correct_answer": "날짜나 금액 계산 같은 순수 함수 형태의 비즈니스 로직은 Jest를 이용해 빠르고 저렴한 단위 테스트(Unit Test)로 많이 작성하고, 결제 흐름 같은 핵심 사용자 여정은 뼈대가 되는 E2E 테스트(Cypress/Playwright) 몇 개로 커버한다.",
+"explanation": "테스트 피라미드 전략에 따라, 실행이 빠르고 비용이 적은 Unit Test로 비즈니스 로직(순수 함수)을 촘촘하게 검증하고, 실행 비용이 높고 깨지기 쉬운 E2E 테스트는 사용자의 핵심 결제 흐름 등 중요한 통합 여정에 선별적으로 적용하는 것이 가장 실무적입니다."
+},
+{
+"question_id": 29,
+"job_role": "Frontend Developer",
+"difficulty": "middle_level",
+"question_type": "refactoring_decision",
+"category": "React",
+"subcategory": "Architecture",
+"skills_required": ["React", "Refactoring", "Custom Hooks"],
+"scenario": "레거시 프로젝트를 유지보수 중입니다. 500줄이 넘는 복잡한 컴포넌트 안에 API 호출, 데이터 가공 로직, 스크롤 이벤트 리스너, 그리고 UI 렌더링 코드가 한데 섞여 있어 가독성이 매우 떨어지고 다른 곳에서 로직을 재사용할 수 없습니다.",
+"question": "이 컴포넌트의 유지보수성과 재사용성을 높이기 위해 수행할 가장 올바른 리팩토링 접근 방식은 무엇입니까?",
+"choices": [
+"모든 비즈니스 로직과 API 호출 로직을 Redux 스토어로 옮기고 컴포넌트에는 UI만 남긴다.",
+"UI와 무관한 비즈니스 로직(상태 관리, API 호출, 이벤트 리스너 등)을 성격에 맞게 여러 개의 Custom Hooks(예: useUserData, useScrollHandler)로 분리하여 추출(Extract)하고, 컴포넌트는 이를 호출하여 UI 렌더링에만 집중하도록 한다.",
+"컴포넌트를 더 이상 쪼개지 않고, 각 로직 블록 위에 상세한 주석을 달아 다음 개발자가 이해하기 쉽게 만든다.",
+"이 컴포넌트를 Class 기반 컴포넌트로 다시 작성하여 라이프사이클 메서드로 로직을 분리한다."
+],
+"correct_answer": "UI와 무관한 비즈니스 로직(상태 관리, API 호출, 이벤트 리스너 등)을 성격에 맞게 여러 개의 Custom Hooks(예: useUserData, useScrollHandler)로 분리하여 추출(Extract)하고, 컴포넌트는 이를 호출하여 UI 렌더링에만 집중하도록 한다.",
+"explanation": "React Hooks의 가장 큰 장점 중 하나는 컴포넌트에서 상태 관련 로직을 추상화하여 Custom Hook으로 분리할 수 있다는 것입니다. 이를 통해 '관심사의 분리(Separation of Concerns)'를 달성하고 비즈니스 로직을 독립적으로 테스트 및 재사용할 수 있습니다."
+},
+{
+"question_id": 30,
+"job_role": "Frontend Developer",
+"difficulty": "middle_level",
+"question_type": "database_schema_design",
+"category": "API",
+"subcategory": "GraphQL vs REST",
+"skills_required": ["GraphQL", "REST", "Over-fetching"],
+"scenario": "모바일 웹 환경의 메인 화면을 개발 중입니다. 화면에서는 사용자의 '이름'과 '최근 읽은 글 1개'만 보여주면 됩니다. 하지만 기존 REST API인 `/api/users/me`를 호출하면 사용자의 상세 정보(주소, 전화번호, 포인트 내역 등 50여 개 필드) 전체가 응답으로 오고 있습니다. 이로 인해 느린 모바일 네트워크에서 페이로드 낭비가 발생합니다.",
+"question": "이러한 'Over-fetching' 문제를 근본적으로 해결하기 위해 프론트엔드 주도적으로 도입을 검토할 수 있는 기술 및 아키텍처는 무엇입니까?",
+"choices": [
+"WebSocket을 연결하여 실시간으로 데이터 변경만 푸시받는다.",
+"Service Worker를 이용해 기존 REST API 응답을 캐싱해둔다.",
+"GraphQL을 도입하거나, 백엔드와 협의하여 BFF(Backend for Frontend) 계층을 두어 프론트엔드가 정확히 필요한 필드만 쿼리하거나 가공된 경량 페이로드를 받도록 한다.",
+"프론트엔드 코드 내에서 JSON.parse() 실행 전에 문자열 정규식을 돌려 필요 없는 필드를 잘라낸다."
+],
+"correct_answer": "GraphQL을 도입하거나, 백엔드와 협의하여 BFF(Backend for Frontend) 계층을 두어 프론트엔드가 정확히 필요한 필드만 쿼리하거나 가공된 경량 페이로드를 받도록 한다.",
+"explanation": "클라이언트가 불필요한 데이터를 너무 많이 받아오는 것을 Over-fetching이라고 합니다. 이를 해결하기 위해 클라이언트가 응답 구조를 결정할 수 있는 GraphQL을 도입하거나, 클라이언트 맞춤형으로 API를 조합/가공해주는 중간 계층인 BFF 패턴을 적용하는 것이 아키텍처 관점의 올바른 해결책입니다."
+},
+{
+"question_id": 31,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "scalability_planning",
+"category": "Architecture",
+"subcategory": "BFF (Backend for Frontend)",
+"skills_required": ["BFF", "Microservices", "API Gateway"],
+"scenario": "당사의 서비스가 급격히 성장하여 모바일 앱, 데스크탑 웹, 스마트 TV 등 다양한 클라이언트를 지원하게 되었습니다. 백엔드는 마이크로서비스(MSA)로 분리되어 상품, 결제, 리뷰 API가 각각 다릅니다. 현재 데스크탑 웹 프론트엔드에서 하나의 화면을 그리기 위해 서로 다른 7개의 마이크로서비스 API를 직접 호출하고 있어, 네트워크 오버헤드와 비즈니스 로직 복잡도가 극심해졌습니다.",
+"question": "클라이언트의 복잡도를 낮추고 각 디바이스(Web, App, TV) 환경에 최적화된 데이터를 제공하기 위해 채택해야 할 가장 적합한 아키텍처 패턴은 무엇입니까?",
+"choices": [
+"모든 프론트엔드 코드를 하나의 모놀리틱(Monolithic) 애플리케이션으로 다시 통합한다.",
+"BFF (Backend for Frontend) 패턴을 도입하여, 데스크탑 웹 전용 Node.js 중간 서버를 두고 해당 서버가 여러 마이크로서비스를 조합(Aggregation)하여 프론트엔드에 필요한 데이터만 단일 API로 제공하도록 한다.",
+"프론트엔드에서 Web Worker를 7개 생성하여 각각의 API를 완전히 병렬로 호출하는 방식으로 네트워크 오버헤드를 극복한다.",
+"모든 백엔드 데이터베이스를 프론트엔드와 직접 연결(Direct DB Connection)하여 API 호출 과정을 생략한다."
+],
+"correct_answer": "BFF (Backend for Frontend) 패턴을 도입하여, 데스크탑 웹 전용 Node.js 중간 서버를 두고 해당 서버가 여러 마이크로서비스를 조합(Aggregation)하여 프론트엔드에 필요한 데이터만 단일 API로 제공하도록 한다.",
+"explanation": "BFF 아키텍처는 각 클라이언트(웹, 앱 등)를 위한 전용 백엔드 계층을 두어, 복잡한 MSA API 호출과 데이터 취합(Aggregation), 필터링 로직을 클라이언트가 아닌 중간 서버(BFF)가 담당하게 함으로써 프론트엔드를 가볍게 유지하고 네트워크 페이로드를 최적화합니다."
+},
+{
+"question_id": 32,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "architecture_decision",
+"category": "Architecture",
+"subcategory": "Rendering Strategies",
+"skills_required": ["Next.js", "SSR", "SSG", "ISR", "SEO"],
+"scenario": "콘텐츠 기반의 뉴스 플랫폼을 Next.js로 새로 구축하고 있습니다. 수십만 개의 기사 페이지가 존재하며, 트래픽이 매우 높고 SEO(검색엔진 최적화)가 절대적으로 중요합니다. 기사 내용은 한 번 발행되면 수정되는 일이 드물지만, 오타 수정 등 가끔 업데이트가 발생할 수 있습니다. 각 페이지 요청 시 DB를 조회하여 SSR(Server-Side Rendering)을 적용했더니 서버 부하가 커져 응답 지연이 발생하고 있습니다.",
+"question": "서버 부하를 최소화하면서도 SEO를 만족하고, 기사 수정 시 일정 시간 내에 변경 사항이 반영되도록 하기 위한 최적의 렌더링 전략은 무엇입니까?",
+"choices": [
+"100% Client-Side Rendering (CSR)로 전환하고, 구글 봇을 위해 React Helmet을 적극 사용한다.",
+"모든 페이지를 빌드 타임에 한 번만 생성하는 정적 사이트 생성(SSG)을 적용하고, 수정이 발생하면 전체 사이트를 재빌드(Rebuild)한다.",
+"증분 정적 재생성(ISR, Incremental Static Regeneration)을 적용하여, 페이지를 기본적으로 정적(SSG)으로 서빙하되 설정된 유효 시간(revalidate)이 지나면 백그라운드에서 해당 페이지만 재생성하여 캐시를 업데이트한다.",
+"SSR을 유지하되, 서버의 CPU 사양을 10배로 스케일 업(Scale-up)하여 트래픽을 감당한다."
+],
+"correct_answer": "증분 정적 재생성(ISR, Incremental Static Regeneration)을 적용하여, 페이지를 기본적으로 정적(SSG)으로 서빙하되 설정된 유효 시간(revalidate)이 지나면 백그라운드에서 해당 페이지만 재생성하여 캐시를 업데이트한다.",
+"explanation": "ISR(Incremental Static Regeneration)은 정적 페이지의 빠른 로딩 속도(CDN 캐싱)와 SEO 이점을 누리면서도, 주기적으로(또는 온디맨드로) 백그라운드에서 페이지를 재생성하여 수십만 개의 페이지를 매번 전체 재빌드할 필요 없이 최신 데이터를 유지할 수 있는 이상적인 전략입니다."
+},
+{
+"question_id": 33,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "design_alternative_comparison",
+"category": "Architecture",
+"subcategory": "Repository Management",
+"skills_required": ["Monorepo", "Turborepo", "Yarn Workspaces", "CI/CD"],
+"scenario": "회사가 성장하면서 프론트엔드 팀이 B2C 서비스, B2B 어드민, 그리고 디자인 시스템 컴포넌트 라이브러리까지 총 3개의 별도 Git 저장소(Polyrepo)를 관리하게 되었습니다. 디자인 시스템을 업데이트할 때마다 패키지를 npm에 배포하고, B2C와 B2B 저장소에서 버전을 올리고(npm install) 각각 테스트해야 하는 비효율이 심각합니다.",
+"question": "이러한 파편화 문제를 해결하기 위해 Monorepo 아키텍처를 도입하려고 합니다. 다음 중 Monorepo 도입 시 얻을 수 있는 가장 핵심적인 장점과 그를 위한 대표적인 도구의 조합으로 올바른 것은 무엇입니까?",
+"choices": [
+"장점: 모든 코드가 하나로 합쳐져 단일 배포 파일(Single Bundle)로 만들어지므로 빌드 속도가 매우 빨라진다. / 도구: Webpack 단독 사용.",
+"장점: 공통 의존성(디자인 시스템 등)의 변경 사항이 즉시 참조되어 별도의 npm 배포 없이 통합 테스트 및 리팩토링이 가능하고, 코드 중복을 줄일 수 있다. / 도구: Turborepo, Nx, Yarn/pnpm Workspaces.",
+"장점: 프론트엔드와 백엔드 코드를 무조건 같은 언어로 작성해야 하므로 기술 스택이 강제로 통일된다. / 도구: Docker Compose.",
+"장점: 권한 관리가 세분화되어 팀별로 특정 폴더에만 접근하게 제한할 수 있다. / 도구: Git Submodules."
+],
+"correct_answer": "장점: 공통 의존성(디자인 시스템 등)의 변경 사항이 즉시 참조되어 별도의 npm 배포 없이 통합 테스트 및 리팩토링이 가능하고, 코드 중복을 줄일 수 있다. / 도구: Turborepo, Nx, Yarn/pnpm Workspaces.",
+"explanation": "Monorepo(모노레포)는 여러 프로젝트를 하나의 Git 저장소에서 관리하는 방식입니다. 이를 통해 로컬 패키지 간의 심볼릭 링크(Workspaces)를 활용하여 의존성 업데이트의 지연(NPM Publish 과정)을 없애고 통합적인 CI/CD와 리팩토링을 용이하게 합니다. 이를 돕는 도구가 Turborepo, Nx 등입니다."
+},
+{
+"question_id": 34,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "tradeoff_analysis",
+"category": "Network",
+"subcategory": "Real-time Communication",
+"skills_required": ["WebSockets", "SSE", "Polling", "Network"],
+"scenario": "주식 거래 앱에서 실시간 호가 데이터를 차트에 렌더링해야 합니다. 백엔드에서 1초에 여러 번 호가 데이터가 갱신됩니다. 클라이언트에서 서버로 메시지를 보낼 일은 없고(단방향), 오직 서버에서 클라이언트로만 데이터를 밀어줍니다(Push).",
+"question": "네트워크 연결 오버헤드를 최소화하고 방화벽 이슈를 피하면서, 서버에서 클라이언트로의 실시간 단방향 데이터 스트리밍에 가장 최적화된 프로토콜 기술은 무엇입니까?",
+"choices": [
+"Short Polling",
+"WebSockets",
+"Server-Sent Events (SSE)",
+"WebRTC"
+],
+"correct_answer": "Server-Sent Events (SSE)",
+"explanation": "SSE는 HTTP 기반으로 동작하여 방화벽이나 프록시(CORS 설정 용이)를 무사통과하기 쉽고, 클라이언트로의 단방향 데이터 스트리밍에 최적화되어 있습니다. WebSocket은 양방향 통신에 유리하지만 연결 유지 및 오버헤드가 더 큽니다. 단방향 호가 데이터 푸시에는 SSE가 아키텍처적으로 더 가볍고 적합합니다."
+},
+{
+"question_id": 35,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "risk_assessment",
+"category": "Security",
+"subcategory": "XSS",
+"skills_required": ["Security", "XSS", "React", "dangerouslySetInnerHTML"],
+"scenario": "마케팅 팀의 요청으로 외부 제휴사에서 제공하는 HTML 배너 코드를 데이터베이스에 저장한 뒤, 이를 프론트엔드 React 앱에서 `dangerouslySetInnerHTML`을 사용해 화면에 그대로 렌더링하는 기능이 배포되었습니다.",
+"question": "이 아키텍처 결함으로 인해 발생할 수 있는 가장 치명적인 보안 리스크와 이를 완화하기 위한 조치로 올바른 것은 무엇입니까?",
+"choices": [
+"리스크: SQL Injection. 조치: 프론트엔드에서 HTML 태그를 모두 대문자로 치환하여 렌더링한다.",
+"리스크: CSRF (Cross-Site Request Forgery). 조치: HTML 코드 내에 랜덤한 토큰을 삽입한다.",
+"리스크: Stored XSS (Cross-Site Scripting). 조치: DOMPurify 등의 라이브러리를 사용하여 렌더링 전에 악의적인 <script> 태그 및 이벤트 핸들러 속성을 제거(Sanitize)하거나, Iframe의 sandbox 속성 안에서 격리하여 렌더링한다.",
+"리스크: DDoS 공격. 조치: 배너 렌더링 함수에 디바운싱(Debouncing)을 적용한다."
+],
+"correct_answer": "리스크: Stored XSS (Cross-Site Scripting). 조치: DOMPurify 등의 라이브러리를 사용하여 렌더링 전에 악의적인 <script> 태그 및 이벤트 핸들러 속성을 제거(Sanitize)하거나, Iframe의 sandbox 속성 안에서 격리하여 렌더링한다.",
+"explanation": "외부에서 주입된 검증되지 않은 HTML을 React의 dangerouslySetInnerHTML로 렌더링하면, 그 안에 포함된 악성 스크립트가 사용자의 브라우저에서 실행되어 세션 탈취 등을 일으키는 Stored XSS 취약점이 발생합니다. 이를 막으려면 반드시 HTML Sanitization 과정을 거쳐야 합니다."
+},
+{
+"question_id": 36,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "failure_mode_analysis",
+"category": "Operations",
+"subcategory": "CDN",
+"skills_required": ["CDN", "Fallback Strategy", "High Availability"],
+"scenario": "서비스의 모든 정적 자산(JS, CSS, 이미지)이 특정 글로벌 CDN(예: Cloudflare)을 통해 서빙되고 있습니다. 그러나 CDN 엣지 서버 측에 장애가 발생하여 메인 JavaScript 번들이 로드되지 않아 사용자들이 흰 화면만 보게 되는 장애 시나리오가 제기되었습니다.",
+"question": "이러한 단일 장애점(SPOF, Single Point of Failure) 리스크를 프론트엔드 단에서 완화(Mitigation)하기 위한 설계 패턴으로 가장 적절한 것은 무엇입니까?",
+"choices": [
+"HTML의 <script> 태그에 onerror 이벤트를 설정하여 메인 CDN 로드 실패 시 예비용(Fallback) 다른 CDN 또는 Origin 서버의 URL로 스크립트를 동적으로 다시 주입하여 로드하는 로직을 삽입한다.",
+"Service Worker를 사용하여 실패한 네트워크 요청을 무시하고 사용자에게 오프라인 게임을 제공한다.",
+"CDN 제공업체에 전화하여 SLA 위반에 대한 배상을 청구한다.",
+"모든 정적 자산을 HTML 내부에 Base64 형식으로 인라인화(Inline)하여 배포한다."
+],
+"correct_answer": "HTML의 <script> 태그에 onerror 이벤트를 설정하여 메인 CDN 로드 실패 시 예비용(Fallback) 다른 CDN 또는 Origin 서버의 URL로 스크립트를 동적으로 다시 주입하여 로드하는 로직을 삽입한다.",
+"explanation": "고가용성(HA)을 보장하기 위해 엔터프라이즈 프론트엔드 환경에서는 메인 CDN 실패 시 스크립트의 `onerror` 핸들러를 이용해 Multi-CDN 환경으로 폴백(Fallback)하거나 직접 Origin 서버로 스크립트를 재요청하도록 HTML 자체에 작은 인라인 복구 스크립트를 삽입합니다."
+},
+{
+"question_id": 37,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "incident_response",
+"category": "Operations",
+"subcategory": "Traffic Spike",
+"skills_required": ["Retry Logic", "Jitter", "API Management"],
+"scenario": "선착순 이벤트 당일 12:00 정각에 수만 명의 사용자가 동시에 접속했습니다. 프론트엔드 앱은 API 요청이 실패하면 1초 뒤에 즉시 재시도(Retry)하도록 설정되어 있습니다. 백엔드 서버가 일시적으로 과부하로 503 에러를 반환하자, 수만 대의 클라이언트가 1초마다 동시에 일제히 재시도 요청을 보내면서 백엔드 서버가 영구적으로 다운(Thundering Herd / Cache Stampede)되었습니다.",
+"question": "API 재시도 로직으로 인한 2차 장애를 막기 위해 프론트엔드 네트워크 요청 클라이언트에 반드시 구현해야 할 두 가지 핵심 개념은 무엇입니까?",
+"choices": [
+"Long Polling 과 WebRTC",
+"Exponential Backoff (지수 백오프) 와 Jitter (무작위 지연 시간 추가)",
+"GraphQL 과 Apollo Cache",
+"Mutual TLS (mTLS) 와 HTTP/3"
+],
+"correct_answer": "Exponential Backoff (지수 백오프) 와 Jitter (무작위 지연 시간 추가)",
+"explanation": "장애 시 클라이언트의 동시다발적인 재요청은 백엔드를 죽게 만듭니다. 이를 방지하려면 재시도 간격을 점진적으로 늘리는 'Exponential Backoff'와, 요청이 한순간에 몰리지 않도록 재시도 타이밍에 난수를 섞어 분산시키는 'Jitter'를 결합하는 것이 대규모 분산 시스템의 표준 장애 대응 패턴입니다."
+},
+{
+"question_id": 38,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "security_analysis",
+"category": "Security",
+"subcategory": "CSRF & Cookies",
+"skills_required": ["CSRF", "Cookies", "SameSite", "Authentication"],
+"scenario": "로그인 세션을 쿠키로 관리하는 서비스에서 사용자가 로그인된 상태로 해커가 만든 악성 웹사이트에 접속했습니다. 악성 웹사이트에 숨겨진 폼(Form)이 자동으로 서밋되어, 사용자의 권한으로 원본 서비스의 '계좌 이체 API(POST /transfer)'가 실행되는 사고가 발생했습니다.",
+"question": "이러한 CSRF(Cross-Site Request Forgery) 공격을 브라우저 수준에서 가장 근본적이고 효과적으로 방어하기 위해 세션 쿠키 발급 시 설정해야 할 속성은 무엇입니까?",
+"choices": [
+"HttpOnly 속성 추가",
+"Secure 속성 추가",
+"SameSite=Strict 또는 SameSite=Lax 속성 추가",
+"Max-Age 값을 5분으로 짧게 설정"
+],
+"correct_answer": "SameSite=Strict 또는 SameSite=Lax 속성 추가",
+"explanation": "CSRF는 타 사이트에서 전송되는 요청에도 브라우저가 대상 사이트의 쿠키를 자동으로 첨부하는 특성을 악용합니다. 쿠키에 SameSite 속성을 설정하면 타 도메인(Cross-Site)에서 발생하는 요청에 쿠키가 전송되지 않도록 브라우저 레벨에서 차단하여 CSRF를 원천 봉쇄할 수 있습니다. (HttpOnly는 XSS 방어용입니다)"
+},
+{
+"question_id": 39,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "cost_optimization",
+"category": "Infrastructure",
+"subcategory": "Cloud Costs",
+"skills_required": ["SSR Cost", "Cloud Architecture", "Next.js"],
+"scenario": "모든 페이지를 getServerSideProps로 매 요청마다 서버에서 렌더링(SSR)하는 Next.js 애플리케이션을 AWS Lambda(Serverless) 위에 배포했습니다. 트래픽이 증가하면서 Lambda 호출 비용과 NAT Gateway 데이터 전송 비용이 예산을 10배 이상 초과하는 사태가 발생했습니다.",
+"question": "비용을 획기적으로 절감하면서도 최신 데이터를 제공해야 하는 프론트엔드 아키텍처 전환 방안으로 가장 적절한 것은 무엇입니까?",
+"choices": [
+"모든 Lambda 메모리 설정을 128MB로 최소화하여 실행 단가를 낮춘다.",
+"SSR을 포기하고 모든 코드를 로컬 데스크탑 서버에서 구동하여 터널링으로 서빙한다.",
+"개별 사용자 인증이 필요 없는 퍼블릭 페이지들은 정적 생성(SSG) + ISR로 전환하여 연산 없이 CDN(CloudFront)에서 캐시로 서빙되게 하고, 사용자 맞춤형 데이터는 클라이언트 사이드 렌더링(CSR)으로 전환하여 컴퓨팅 부하를 브라우저로 오프로딩한다.",
+"React 대신 Vue.js로 전체 프로젝트를 재작성한다."
+],
+"correct_answer": "개별 사용자 인증이 필요 없는 퍼블릭 페이지들은 정적 생성(SSG) + ISR로 전환하여 연산 없이 CDN(CloudFront)에서 캐시로 서빙되게 하고, 사용자 맞춤형 데이터는 클라이언트 사이드 렌더링(CSR)으로 전환하여 컴퓨팅 부하를 브라우저로 오프로딩한다.",
+"explanation": "SSR은 매 요청마다 서버 리소스(CPU/메모리)와 API 네트워크 통신을 발생시켜 클라우드 비용을 급증시킵니다. 비용 최적화의 핵심은 컴퓨팅 연산을 엣지 캐시(CDN)로 위임(SSG/ISR)하거나, 클라이언트(사용자 기기)로 떠넘기는(CSR) 아키텍처를 적절히 혼합하는 것입니다."
+},
+{
+"question_id": 40,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "constraint_optimization",
+"category": "Performance",
+"subcategory": "Web Workers",
+"skills_required": ["Web Workers", "Multithreading", "Performance"],
+"scenario": "웹 기반의 동영상 편집기를 개발 중입니다. 사용자가 필터를 적용할 때마다 프론트엔드에서 수십 메가바이트의 픽셀 데이터를 JavaScript로 직접 연산합니다. 이로 인해 필터를 적용하는 수 초 동안 브라우저 메인 스레드가 완전히 블로킹되어 마우스 클릭이나 스크롤이 전혀 작동하지 않는 제약 상황에 직면했습니다.",
+"question": "UI 블로킹 현상을 해결하고 원활한 사용자 상호작용을 보장하기 위해 무거운 데이터 연산을 격리시키는 가장 적절한 브라우저 API는 무엇입니까?",
+"choices": [
+"Service Workers",
+"Web Workers",
+"requestIdleCallback",
+"MutationObserver"
+],
+"correct_answer": "Web Workers",
+"explanation": "JavaScript는 단일 스레드(Single-threaded) 환경이므로 무거운 연산을 메인 스레드에서 수행하면 UI 렌더링이 멈춥니다. Web Workers API를 사용하면 별도의 백그라운드 스레드를 생성하여 무거운 CPU 연산을 메인 스레드와 병렬로 수행하게 함으로써 UI 멈춤 현상(Jank)을 방지할 수 있습니다."
+},
+{
+"question_id": 41,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "monitoring_strategy",
+"category": "Operations",
+"subcategory": "Frontend Monitoring",
+"skills_required": ["Error Tracking", "Sentry", "Source Maps"],
+"scenario": "프로덕션 환경에서 원인을 알 수 없는 JavaScript 런타임 에러가 간헐적으로 발생하고 있습니다. 하지만 코드가 난독화(Minification) 및 압축되어 있어, 브라우저 콘솔에는 `TypeError: Cannot read properties of undefined (reading 'x') at a.b (main.12345.js:1:234)` 처럼 의미 없는 스택 트레이스만 나타나 분석이 불가능합니다.",
+"question": "Sentry나 Datadog 같은 프론트엔드 모니터링 도구에서 이 에러 로그를 실제 개발 소스 코드의 원본 위치(파일명, 줄 번호)로 매핑하여 보여주기 위해 빌드 및 배포 파이프라인에 반드시 추가해야 하는 설정은 무엇입니까?",
+"choices": [
+"Babel의 loose 모드를 활성화한다.",
+"Webpack/Vite 빌드 시 Source Map 파일을 생성하고, 이를 모니터링 시스템(Sentry 등)에 업로드한 뒤, 일반 사용자에게 노출되지 않도록 프로덕션 서버에서는 Source Map 파일 접근을 차단한다.",
+"TypeScript의 strict 옵션을 false로 변경하여 에러 자체를 억제한다.",
+"모든 JavaScript 코드를 try-catch로 감싸서 console.log에 수동으로 파일명을 하드코딩해 출력한다."
+],
+"correct_answer": "Webpack/Vite 빌드 시 Source Map 파일을 생성하고, 이를 모니터링 시스템(Sentry 등)에 업로드한 뒤, 일반 사용자에게 노출되지 않도록 프로덕션 서버에서는 Source Map 파일 접근을 차단한다.",
+"explanation": "난독화된 코드를 원래의 소스 코드 라인으로 역추적하려면 Source Map(소스 맵)이 필수적입니다. 단, 소스 맵이 퍼블릭하게 노출되면 비즈니스 로직이 유출될 수 있으므로, CI/CD 과정에서 Sentry 등의 에러 트래킹 시스템에만 업로드하고 웹 서버에서는 서빙하지 않는 것이 핵심 모니터링/보안 전략입니다."
+},
+{
+"question_id": 42,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "documentation_analysis",
+"category": "React",
+"subcategory": "Concurrent Features",
+"skills_required": ["React 18", "useTransition", "useDeferredValue"],
+"scenario": "React 18 공식 문서를 읽고 있습니다. 문서에는 'Concurrent Mode를 활용하면 무거운 렌더링 작업이 화면 업데이트를 차단하지 않도록 우선순위를 조절할 수 있다'고 되어 있습니다. 검색창에 글자를 입력하면 하단에 수천 개의 추천 리스트가 필터링되어 렌더링되는데, 타이핑할 때마다 입력창에 글자가 버벅거리며 늦게 찍히는 문제가 있습니다.",
+"question": "입력창의 상태 업데이트(긴급함)는 즉시 처리하고, 아래의 수천 개 리스트 필터링 및 렌더링(덜 긴급함)은 백그라운드에서 지연시켜 입력의 버벅임을 없애기 위해 사용해야 하는 React 18의 Hook은 무엇입니까?",
+"choices": [
+"useMemo",
+"useTransition (또는 useDeferredValue)",
+"useLayoutEffect",
+"useReducer"
+],
+"correct_answer": "useTransition (또는 useDeferredValue)",
+"explanation": "React 18의 Concurrent 기능을 대표하는 useTransition(또는 useDeferredValue)을 사용하면, 특정 상태 업데이트를 'Transition(덜 긴급한 작업)'으로 마킹할 수 있습니다. React는 메인 스레드가 바쁠 때 Transition 렌더링을 일시 중단하고 타이핑 같은 긴급한 이벤트를 먼저 처리하여 UI 응답성을 유지합니다."
+},
+{
+"question_id": 43,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "api_design",
+"category": "Network",
+"subcategory": "Idempotency",
+"skills_required": ["Idempotency", "API Integration", "Payment Systems"],
+"scenario": "전자상거래 결제 페이지에서 사용자가 '결제하기' 버튼을 눌렀지만 네트워크 불안정으로 인해 브라우저가 타임아웃 에러를 띄웠습니다. 사용자가 당황하여 버튼을 여러 번 다시 클릭했습니다. 백엔드에서 결제가 중복으로 승인되어 사용자의 카드에서 돈이 3번 출금되는 치명적인 장애가 발생했습니다.",
+"question": "네트워크 재시도나 중복 클릭 상황에서도 결제가 중복 처리되지 않도록(멱등성, Idempotency) 보장하기 위해 프론트엔드와 백엔드가 협력하여 설계해야 할 가장 올바른 API 통신 규약은 무엇입니까?",
+"choices": [
+"프론트엔드는 결제 버튼을 누르는 순간 버튼을 비활성화(disabled) 처리하기만 하면 모든 문제가 해결된다.",
+"프론트엔드에서 결제 요청 시 고유한 난수나 주문번호 기반의 'Idempotency Key(멱등성 키)'를 HTTP 헤더에 담아 전송하고, 백엔드는 이 키를 기준으로 이미 처리된 요청인지 판별하여 동일한 응답을 반환하도록 설계한다.",
+"결제 API 요청을 POST가 아닌 GET 메서드로 변경하여 브라우저가 알아서 캐싱하도록 만든다.",
+"결제가 완료될 때까지 브라우저 화면에 '새로고침 금지'라는 경고창(alert)을 무한 루프로 띄운다."
+],
+"correct_answer": "프론트엔드에서 결제 요청 시 고유한 난수나 주문번호 기반의 'Idempotency Key(멱등성 키)'를 HTTP 헤더에 담아 전송하고, 백엔드는 이 키를 기준으로 이미 처리된 요청인지 판별하여 동일한 응답을 반환하도록 설계한다.",
+"explanation": "프론트엔드에서의 UI 비활성화만으로는 네트워크 단절 후의 자동 재시도 로직이나 악의적인 요청을 막을 수 없습니다. 여러 번 요청해도 한 번의 효과만 발생함을 보장하는 '멱등성(Idempotency)'을 확보하기 위해 클라이언트가 생성한 고유 키(Idempotency Key)를 헤더에 포함하는 것이 결제 시스템 연동의 글로벌 표준입니다."
+},
+{
+"question_id": 44,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "distributed_system_reasoning",
+"category": "UX/UI",
+"subcategory": "Optimistic UI",
+"skills_required": ["Optimistic Updates", "UX", "State Management"],
+"scenario": "인스타그램이나 페이스북 같은 SNS에서 사용자가 '좋아요(Like)' 버튼을 눌렀습니다. 글로벌 서비스 특성상 백엔드 서버가 멀리 있어 API 응답이 오기까지 평균 1~2초가 걸립니다. 이 대기 시간 동안 사용자가 버튼이 작동하지 않은 줄 알고 계속 누르게 됩니다.",
+"question": "시스템의 최종 일관성(Eventual Consistency) 모델 하에서, 네트워크 지연을 감추고 사용자에게 즉각적인 피드백을 제공하기 위한 프론트엔드 설계 패턴을 무엇이라고 부릅니까?",
+"choices": [
+"비관적 업데이트 (Pessimistic Update)",
+"낙관적 업데이트 (Optimistic Update/UI)",
+"서버 사이드 렌더링 (SSR)",
+"스켈레톤 UI (Skeleton UI)"
+],
+"correct_answer": "낙관적 업데이트 (Optimistic Update/UI)",
+"explanation": "낙관적 업데이트는 '서버 요청이 성공할 것'이라고 낙관적으로 가정하고, API 응답을 기다리지 않고 즉시 클라이언트의 UI 상태(좋아요 하트 색상 변경 등)를 먼저 변경하는 기법입니다. 만약 API가 최종적으로 실패하면 그때 조용히 롤백(Rollback)하여 원상복구합니다."
+},
+{
+"question_id": 45,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "system_design",
+"category": "Architecture",
+"subcategory": "PWA",
+"skills_required": ["Service Workers", "PWA", "Offline-first"],
+"scenario": "오프라인 환경(예: 비행기 안, 통신 음영 지역)에서도 사용자가 이전에 조회했던 문서를 읽고, 새로운 문서를 작성하여 '저장' 버튼을 누를 수 있는 오프라인 우선(Offline-first) 웹 애플리케이션을 설계하려고 합니다.",
+"question": "네트워크 단절 상태에서도 웹이 구동되고, 오프라인에서 발생한 작성/수정 요청을 네트워크가 복구되었을 때 백그라운드에서 안정적으로 서버에 동기화하기 위한 기술 스택의 조합으로 가장 올바른 것은 무엇입니까?",
+"choices": [
+"AppCache API와 SessionStorage를 활용한다.",
+"Service Worker의 Cache API(정적 파일 서빙용)와 IndexedDB(데이터 저장용)를 사용하고, Service Worker의 Background Sync API를 활용하여 오프라인에서 실패한 API 요청을 네트워크 연결 시 재시도한다.",
+"웹소켓(WebSocket)을 사용해 연결이 복구될 때까지 핑(Ping)을 계속 보낸다.",
+"Local Storage에 데이터를 모두 넣고 setInterval로 1초마다 네트워크 상태(navigator.onLine)를 검사하여 fetch를 날린다."
+],
+"correct_answer": "Service Worker의 Cache API(정적 파일 서빙용)와 IndexedDB(데이터 저장용)를 사용하고, Service Worker의 Background Sync API를 활용하여 오프라인에서 실패한 API 요청을 네트워크 연결 시 재시도한다.",
+"explanation": "PWA(Progressive Web App)의 핵심은 Service Worker입니다. 네트워크 프록시 역할을 하는 Service Worker로 정적 에셋과 API 응답을 캐싱하고(IndexedDB 사용), Background Sync API를 통해 브라우저가 백그라운드에서 나중에 안정적으로 서버와 동기화하게 만드는 것이 오프라인 우선 설계의 정석입니다."
+},
+{
+"question_id": 46,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "architecture_decision",
+"category": "Performance",
+"subcategory": "WebAssembly",
+"skills_required": ["WebAssembly (Wasm)", "Performance", "JavaScript Execution"],
+"scenario": "웹 기반으로 피그마(Figma)와 유사한 고성능 벡터 그래픽 에디터를 개발하고 있습니다. 대규모 그래픽 렌더링, 폰트 파싱, 복잡한 물리 엔진 계산 등이 포함되어 있어 순수 JavaScript만으로는 브라우저의 프레임 드랍(60fps 이하)을 피할 수 없는 한계에 도달했습니다.",
+"question": "기존 웹 기술의 성능 한계를 극복하기 위해, C++이나 Rust 등 네이티브 언어로 작성된 엔진을 웹 브라우저에서 네이티브에 가까운 속도로 실행시킬 수 있게 해주는 웹 표준 기술은 무엇입니까?",
+"choices": [
+"WebGL",
+"WebRTC",
+"WebAssembly (Wasm)",
+"ActiveX"
+],
+"correct_answer": "WebAssembly (Wasm)",
+"explanation": "WebAssembly는 C, C++, Rust 등의 언어를 컴파일하여 브라우저에서 네이티브에 가까운 속도로 실행할 수 있게 해주는 바이너리 명령어 형식입니다. Figma, 웹 기반 AutoCAD, 비디오 인코딩 등 무거운 CPU 연산이 필요한 프론트엔드 아키텍처에 필수적으로 채택되고 있습니다."
+},
+{
+"question_id": 47,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "tradeoff_analysis",
+"category": "Architecture",
+"subcategory": "Web Components",
+"skills_required": ["Web Components", "Micro Frontends", "Framework Agnostic"],
+"scenario": "회사의 여러 프론트엔드 팀이 각자 React, Vue, Angular 등 서로 다른 프레임워크를 사용하고 있습니다. 디자인 시스템 팀에서 회사의 모든 제품에 통일된 디자인의 '공통 버튼과 모달 컴포넌트'를 제공하려는데, 각 프레임워크별로 3벌의 라이브러리를 유지보수하는 것은 비효율적입니다.",
+"question": "프레임워크에 종속되지 않고(Framework-Agnostic) 모든 웹 프로젝트에서 재사용 가능한 공통 UI 요소를 만들기 위해 사용할 수 있는 브라우저 네이티브 기술과 그에 대한 트레이드오프로 올바른 것은 무엇입니까?",
+"choices": [
+"기술: Iframe. / 트레이드오프: 모든 프레임워크에서 불러올 수 있으나 부모 창과 CSS/상태 공유가 불가능하다.",
+"기술: Web Components (Custom Elements, Shadow DOM). / 트레이드오프: 프레임워크에 구애받지 않고 네이티브하게 동작하지만, React 등 특정 프레임워크에서는 복잡한 데이터(객체/배열 props) 전달이나 이벤트 처리가 매끄럽지 않아 추가 래핑(Wrapping) 작업이 필요할 수 있다.",
+"기술: WebAssembly. / 트레이드오프: 속도가 매우 빠르지만 CSS 스타일링이 불가능하다.",
+"기술: jQuery 플러그인. / 트레이드오프: 가벼우나 Virtual DOM과 충돌을 일으킨다."
+],
+"correct_answer": "기술: Web Components (Custom Elements, Shadow DOM). / 트레이드오프: 프레임워크에 구애받지 않고 네이티브하게 동작하지만, React 등 특정 프레임워크에서는 복잡한 데이터(객체/배열 props) 전달이나 이벤트 처리가 매끄럽지 않아 추가 래핑(Wrapping) 작업이 필요할 수 있다.",
+"explanation": "Web Components는 브라우저 표준 API이므로 어떤 프레임워크에서든 `<my-button>` 처럼 사용할 수 있습니다. Shadow DOM을 통해 스타일 충돌도 완벽히 막아줍니다. 다만, React(특히 19 이전 버전) 등 일부 프레임워크의 합성 이벤트(Synthetic Event) 시스템과 완벽히 호환되지 않는 미세한 트레이드오프가 존재합니다."
+},
+{
+"question_id": 48,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "risk_assessment",
+"category": "Security",
+"subcategory": "Supply Chain Attack",
+"skills_required": ["npm", "Security", "Supply Chain Attack"],
+"scenario": "최근 유명한 오픈소스 npm 패키지(예: event-stream, colors.js 등)의 유지보수자가 계정을 해킹당하거나 악의적인 의도로 패키지에 암호화폐 채굴 스크립트 등을 심어 배포한 사건들이 발생했습니다.",
+"question": "이러한 '소프트웨어 공급망 공격(Supply Chain Attack)'으로부터 프론트엔드 프로젝트를 보호하기 위해 실무에서 도입해야 할 방어 체계로 가장 거리가 먼 것은 무엇입니까?",
+"choices": [
+"package-lock.json 이나 yarn.lock 파일을 커밋하여 동일한 의존성 버전과 무결성 해시(Integrity Hash)를 강제한다.",
+"CI/CD 파이프라인에 npm audit 또는 Snyk 같은 보안 취약점 스캐닝 도구를 연동하여 위험한 패키지 배포를 차단한다.",
+"모든 서드파티 패키지의 소스 코드를 프론트엔드 개발팀이 매일 한 줄씩 전부 수동으로 코드 리뷰한다.",
+"중요한 프로덕션 환경에서는 내부 패키지 레지스트리(Nexus, Artifactory 등)를 구성하여 검증된 패키지 버전만 캐싱해서 사용한다."
+],
+"correct_answer": "모든 서드파티 패키지의 소스 코드를 프론트엔드 개발팀이 매일 한 줄씩 전부 수동으로 코드 리뷰한다.",
+"explanation": "현대의 프론트엔드 프로젝트는 수만 개의 직간접 의존성 패키지 트리를 가집니다. 이를 매일 사람이 수동으로 리뷰하는 것은 물리적으로 불가능하며 비현실적입니다. 락 파일 사용(무결성 검증), 자동화된 보안 스캐너(SCA) 도입, 내부 레지스트리 캐싱이 현실적이고 강력한 보안 대응책입니다."
+},
+{
+"question_id": 49,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "failure_mode_analysis",
+"category": "Operations",
+"subcategory": "DNS Fallback",
+"skills_required": ["DNS", "Network Resilience", "Frontend Architecting"],
+"scenario": "프론트엔드 애플리케이션에서 백엔드 API를 `https://api.mycompany.com`으로 호출하고 있습니다. 하지만 간혹 글로벌 DNS 인프라(예: Route53 장애 등)에 장애가 발생하여 사용자의 기기에서 `api.mycompany.com`의 IP 주소를 해석하지 못해 모든 통신이 끊기는 상황이 발생했습니다.",
+"question": "DNS 해석 장애 상황에서도 앱이 생존할 수 있도록(Resilience) 프론트엔드 클라이언트에 설계할 수 있는 극단적이지만 유효한 Fallback 메커니즘은 무엇입니까?",
+"choices": [
+"API 요청 실패 시 사용자에게 브라우저 DNS 캐시를 플러시(Flush)하라는 팝업을 띄운다.",
+"프론트엔드 코드 내부에 백엔드 서버의 고정 IP 주소(예: 192.168.x.x)를 하드코딩해 두고 즉시 IP로 요청한다.",
+"메인 API 도메인 실패 시, 다른 최상위 도메인(TLD)이나 완전히 다른 DNS 제공업체에 등록된 백업 도메인(예: [https://api.mycompany.net](https://www.google.com/search?q=https://api.mycompany.net))으로 요청을 재시도(Fallback)하도록 Axios 등의 HTTP 클라이언트에 로직을 구성한다.",
+"DNS는 프론트엔드가 제어할 수 없는 영역이므로 아무것도 하지 않고 서버 팀의 복구만을 기다린다."
+],
+"correct_answer": "메인 API 도메인 실패 시, 다른 최상위 도메인(TLD)이나 완전히 다른 DNS 제공업체에 등록된 백업 도메인(예: [https://api.mycompany.net](https://www.google.com/search?q=https://api.mycompany.net))으로 요청을 재시도(Fallback)하도록 Axios 등의 HTTP 클라이언트에 로직을 구성한다.",
+"explanation": "고도로 이중화된 글로벌 서비스에서는 메인 도메인의 DNS 장애를 대비해 서로 다른 TLD(.com, .net)와 서로 다른 DNS Provider에 백업 API 도메인을 설정해두고, 프론트엔드 레벨에서 Network Error 발생 시 백업 도메인으로 라우팅을 우회하는 Multi-Domain Fallback 전략을 사용합니다."
+},
+{
+"question_id": 50,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "incident_response",
+"category": "Operations",
+"subcategory": "Deployment Strategies",
+"skills_required": ["CI/CD", "Rollback", "Blue/Green Deployment"],
+"scenario": "금요일 오후, 프론트엔드의 새로운 버전을 프로덕션에 배포했습니다. 배포 직후, 결제 페이지에서 `undefined is not a function` 에러가 발생하며 결제가 전면 중단되는 치명적인 장애(Sev1)가 발생했습니다. 코드의 어디가 잘못되었는지 찾는 데 최소 1~2시간이 걸릴 것으로 보입니다.",
+"question": "서비스의 비즈니스 임팩트를 최소화하기 위해 리더로서 즉각적으로 취해야 할 가장 올바른 조치(Incident Response)는 무엇입니까?",
+"choices": [
+"원인을 찾을 때까지 서비스를 점검 중 페이지로 전환하여 추가 피해를 막고 디버깅에 전념한다.",
+"장애 원인 파악을 중단하고 즉시 이전의 정상 버전(안정된 빌드)으로 파이프라인을 롤백(Rollback)하여 1~2분 내로 결제 시스템을 정상화한 뒤, 로컬이나 Staging 환경에서 원인을 분석한다.",
+"코드를 급하게 핫픽스(Hotfix)하여 직접 마스터 브랜치에 푸시하고 다시 빌드를 태운다.",
+"서버의 데이터베이스 롤백을 백엔드 팀에 요청한다."
+],
+"correct_answer": "장애 원인 파악을 중단하고 즉시 이전의 정상 버전(안정된 빌드)으로 파이프라인을 롤백(Rollback)하여 1~2분 내로 결제 시스템을 정상화한 뒤, 로컬이나 Staging 환경에서 원인을 분석한다.",
+"explanation": "치명적인 프로덕션 장애 발생 시 가장 최우선 목표는 '서비스의 빠른 정상화(MTTR 단축)'입니다. 불확실한 핫픽스(Roll-forward)나 서비스 중단은 비즈니스 손실을 키우므로, 즉시 안전한 이전 버전으로 롤백(Rollback)하고 분석은 그 후에 진행하는 것이 시니어의 올바른 장애 대응 원칙입니다."
+},
+{
+"question_id": 51,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "security_analysis",
+"category": "Security",
+"subcategory": "CSP (Content Security Policy)",
+"skills_required": ["CSP", "Security Headers", "Web Security"],
+"scenario": "보안 감사를 받은 후, 애플리케이션에 CSP(Content Security Policy) 헤더를 도입하기로 했습니다. 백엔드 팀이 응답 헤더에 `Content-Security-Policy: default-src 'self'`를 적용하여 배포했습니다. 그 직후 Google Analytics, 외부 폰트(Google Fonts), CDN에서 로드하는 이미지 등 모든 서드파티 리소스의 로드가 브라우저에 의해 차단되었습니다.",
+"question": "이러한 부작용 없이 서드파티 리소스를 허용하면서도 불법적인 스크립트 실행을 막기 위한 CSP 운영 및 설계 전략으로 가장 적절한 것은 무엇입니까?",
+"choices": [
+"모든 서드파티 스크립트를 다운로드하여 프로젝트 내부에 포함시키고 'self' 정책만 유지한다.",
+"CSP 헤더의 값을 default-src '*' 로 변경하여 모든 접근을 허용하게 한다.",
+"먼저 Content-Security-Policy-Report-Only 헤더를 적용하여 차단 없이 위반 로그(Report)만 수집한 후, 이를 바탕으로 허용할 도메인들(예: script-src 'self' [https://www.google-analytics.com](https://www.google-analytics.com))을 세밀하게 화이트리스트로 작성하여 점진적으로 본 정책을 적용한다.",
+"프론트엔드 코드 내부의 모든 <img> 태그에 csp=\"bypass\" 속성을 추가한다."
+],
+"correct_answer": "먼저 Content-Security-Policy-Report-Only 헤더를 적용하여 차단 없이 위반 로그(Report)만 수집한 후, 이를 바탕으로 허용할 도메인들(예: script-src 'self' [https://www.google-analytics.com](https://www.google-analytics.com))을 세밀하게 화이트리스트로 작성하여 점진적으로 본 정책을 적용한다.",
+"explanation": "CSP를 운영 환경에 처음 도입할 때 갑자기 강력한 정책('self')을 적용하면 서비스가 마비될 수 있습니다. `Report-Only` 모드로 배포하여 실제 위반 사례를 안전하게 수집하고 분석한 뒤, 필요한 외부 도메인을 명시적으로 허용(Whitelist)하는 정교한 정책을 구축하는 것이 모범 사례입니다."
+},
+{
+"question_id": 52,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "cost_optimization",
+"category": "Infrastructure",
+"subcategory": "Bandwidth Optimization",
+"skills_required": ["Compression", "Brotli", "Image Optimization", "CDN"],
+"scenario": "동남아시아, 아프리카 등 네트워크 환경이 열악한 국가로 글로벌 서비스를 확장했습니다. 하지만 기존에 사용하던 대용량 배경 이미지와 Gzip 압축된 JS 번들이 모바일 데이터 환경에서 로딩이 너무 느리고, 막대한 CDN 트래픽 비용(Egress Cost)을 발생시키고 있습니다.",
+"question": "CDN 트래픽 비용을 획기적으로 낮추고 열악한 네트워크에서의 로딩 성능을 동시에 높이기 위한 프론트엔드/인프라 최적화 전략의 조합으로 가장 강력한 것은 무엇입니까?",
+"choices": [
+"텍스트 기반 에셋(JS, CSS, HTML)에는 Gzip보다 압축률이 약 15~20% 뛰어난 Brotli 압축 알고리즘을 적용하고, 대용량 이미지는 클라이언트 브라우저 지원 여부(Accept 헤더)에 따라 WebP 또는 AVIF 차세대 포맷으로 자동 변환하여 서빙한다.",
+"모든 이미지 해상도를 100x100 픽셀로 고정하고, JavaScript 파일은 압축하지 않고 서빙한다.",
+"사용자가 사이트에 접속할 때 '고화질', '저화질' 버튼을 선택하게 한 뒤 수동으로 로드한다.",
+"CDN 사용을 중단하고 해당 국가 내에 물리적인 자체 데이터센터를 건설하여 에셋을 직접 서빙한다."
+],
+"correct_answer": "텍스트 기반 에셋(JS, CSS, HTML)에는 Gzip보다 압축률이 약 15~20% 뛰어난 Brotli 압축 알고리즘을 적용하고, 대용량 이미지는 클라이언트 브라우저 지원 여부(Accept 헤더)에 따라 WebP 또는 AVIF 차세대 포맷으로 자동 변환하여 서빙한다.",
+"explanation": "Brotli 압축은 Gzip 대비 탁월한 텍스트 압축률을 보여 대역폭을 크게 절감하며, WebP와 AVIF(특히 AVIF는 압축률이 매우 높음) 포맷은 기존 JPEG/PNG 대비 30~50% 용량이 작아 네트워크 오버헤드와 CDN 아웃바운드 트래픽 비용을 극적으로 줄여줍니다."
+},
+{
+"question_id": 53,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "constraint_optimization",
+"category": "Architecture",
+"subcategory": "SEO & Rendering",
+"skills_required": ["Dynamic Rendering", "Puppeteer", "SEO", "CSR"],
+"scenario": "수백만 줄의 복잡한 코드로 이루어진 레거시 클라이언트 사이드 렌더링(CSR) 기반의 React SPA 프로젝트가 있습니다. 구조상 당장 SSR(Next.js 등)로 마이그레이션할 리소스나 일정이 전혀 없지만, 마케팅 부서에서 '당장 다음 주까지 네이버와 구글 검색 엔진에 페이지 정보가 노출되게 해달라'고 강력히 요구하고 있습니다. 현재 검색 엔진 봇들은 빈 HTML만 수집하고 있습니다.",
+"question": "CSR 구조를 그대로 유지하면서 단기적으로 검색 엔진 봇(Crawler)에게만 완전한 형태의 HTML을 제공하는 가장 현실적인 제약 최적화(Constraint Optimization) 방법은 무엇입니까?",
+"choices": [
+"index.html의 <meta> 태그에 모든 콘텐츠 텍스트를 숨겨서 넣는다.",
+"동적 렌더링(Dynamic Rendering) 아키텍처를 도입하여, Nginx나 로드밸런서(LB) 계층에서 User-Agent를 확인해 일반 사용자는 기존 CSR로 보내고, 검색 봇(Googlebot 등)일 경우에만 Puppeteer/Rendertron 같은 헤드리스 브라우저가 사전 렌더링한 완성된 HTML을 반환하게 한다.",
+"React 코드를 즉각 jQuery로 변환하는 자동화 스크립트를 돌려 배포한다.",
+"검색 엔진 봇이 JavaScript를 파싱할 수 있도록 setTimeout을 10초 걸어둔다."
+],
+"correct_answer": "동적 렌더링(Dynamic Rendering) 아키텍처를 도입하여, Nginx나 로드밸런서(LB) 계층에서 User-Agent를 확인해 일반 사용자는 기존 CSR로 보내고, 검색 봇(Googlebot 등)일 경우에만 Puppeteer/Rendertron 같은 헤드리스 브라우저가 사전 렌더링한 완성된 HTML을 반환하게 한다.",
+"explanation": "동적 렌더링(Dynamic Rendering)은 레거시 SPA 환경에서 구조를 뜯어고치지 않고 봇에게만 크롤링 가능한 형태의 정적 HTML을 서빙하기 위해 구글에서도 공식적으로 소개했던 우회 패턴(Workaround)입니다. (장기적으로는 SSR/SSG 도입이 권장됩니다.)"
+},
+{
+"question_id": 54,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "monitoring_strategy",
+"category": "Operations",
+"subcategory": "RUM vs Synthetic",
+"skills_required": ["RUM", "Synthetic Monitoring", "Web Vitals"],
+"scenario": "회사의 서비스가 다양한 국가와 다양한 스펙의 모바일 기기에서 사용되고 있습니다. 경영진이 '사용자들이 실제로 겪는 페이지 로딩 속도를 정확히 모니터링해 달라'고 요청했습니다. 팀 내에서 '일정 주기로 테스트 봇을 띄워 성능을 측정하는 방식(Synthetic Monitoring)'과 '실제 사용자의 브라우저에서 측정된 데이터를 수집하는 방식(RUM, Real User Monitoring)'을 두고 고민 중입니다.",
+"question": "다양한 네트워크 및 기기 파편화 환경에서 사용자 중심의 성능 병목을 정확히 파악하기 위한 모니터링 전략으로 가장 올바른 결정은 무엇입니까?",
+"choices": [
+"봇이 일정한 환경에서 측정하는 Synthetic Monitoring만 사용하여 일관된 지표를 경영진에게 보고한다.",
+"RUM(Real User Monitoring)을 도입하여 실제 사용자의 기기와 네트워크 상태에서 발생하는 Core Web Vitals(LCP, FID/INP 등) 실측 데이터를 수집하고, 브라우저 종류/국가별로 세그먼트를 나눠 병목이 심한 집단을 찾아낸다.",
+"프론트엔드 모니터링은 무의미하므로 백엔드 서버의 API 응답 시간만 모니터링한다.",
+"모든 사용자 기기에 Ping 테스트 스크립트를 설치하여 초당 네트워크 속도를 수집한다."
+],
+"correct_answer": "RUM(Real User Monitoring)을 도입하여 실제 사용자의 기기와 네트워크 상태에서 발생하는 Core Web Vitals(LCP, FID/INP 등) 실측 데이터를 수집하고, 브라우저 종류/국가별로 세그먼트를 나눠 병목이 심한 집단을 찾아낸다.",
+"explanation": "Synthetic Monitoring은 통제된 환경이므로 실제 사용자가 겪는 저사양 기기나 느린 네트워크 환경의 변수를 반영하지 못합니다. 실제 환경의 성능 문제(Field Data)를 파악하고 최적화의 우선순위를 정하려면 반드시 RUM(Real User Monitoring)을 통한 실측 데이터 수집이 필요합니다."
+},
+{
+"question_id": 55,
+"job_role": "Frontend Developer",
+"difficulty": "senior_level",
+"question_type": "system_design",
+"category": "Architecture",
+"subcategory": "Collaborative Editing",
+"skills_required": ["CRDT", "Operational Transformation", "WebSockets", "Distributed Systems"],
+"scenario": "Google Docs나 Notion과 같이 여러 명의 사용자가 동시에 하나의 문서를 편집할 수 있는 '실시간 동시 편집기'를 프론트엔드에서 구축하려고 합니다. 두 명의 사용자가 오프라인 상태에서 같은 줄의 텍스트를 다르게 수정한 뒤, 동시에 네트워크에 연결되어 변경 사항을 동기화하는 상황(충돌)이 발생합니다.",
+"question": "네트워크 지연이나 순서가 뒤섞인 메시지 속에서도 모든 클라이언트가 결국 동일한 문서 상태를 가지도록(충돌 해결 및 데이터 일관성 유지) 설계할 때, 최근 프론트엔드 생태계(Yjs, Automerge 등)에서 가장 널리 채택되는 분산 시스템 알고리즘은 무엇입니까?",
+"choices": [
+"Two-Phase Commit (2PC)",
+"Paxos 알고리즘",
+"CRDT (Conflict-free Replicated Data Type)",
+"Mutex (Mutual Exclusion) Lock"
+],
+"correct_answer": "CRDT (Conflict-free Replicated Data Type)",
+"explanation": "CRDT는 각 클라이언트가 중앙 서버의 허락(Lock) 없이 로컬에서 즉시 데이터를 수정(낙관적 업데이트)할 수 있게 하면서도, 나중에 변경 사항이 어떤 순서로 병합되든 수학적으로 항상 동일한 최종 상태(충돌 없는 일관성)를 보장하는 자료구조입니다. 과거에는 OT(Operational Transformation)가 쓰였으나 최근 실시간 협업 에디터 구축에는 Yjs 등을 이용한 CRDT가 표준 아키텍처로 자리 잡았습니다."
+}
+]

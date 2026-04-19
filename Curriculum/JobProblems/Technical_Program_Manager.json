@@ -1,0 +1,3777 @@
+[
+  {
+    "question_id": 1,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "definition",
+    "category": "Software Development Life Cycle",
+    "subcategory": "SDLC Fundamentals",
+    "skills_required": ["SDLC", "Project Management"],
+    "scenario": "소프트웨어 개발 프로젝트의 생명 주기를 관리하면서 각 단계의 목적을 명확히 정의해야 합니다.",
+    "question": "소프트웨어 개발 생명 주기(SDLC)에서 '검증(Verification)'과 '확인(Validation)'의 차이점에 대한 설명으로 가장 적절한 것은 무엇입니까?",
+    "choices": [
+      "검증은 제품이 명세서대로 만들어졌는지를 확인하는 과정이고, 확인은 제품이 사용자의 요구사항을 만족하는지를 확인하는 과정이다.",
+      "검증은 실제 코드를 실행하여 테스트하는 과정이고, 확인은 문서만 검토하는 과정이다.",
+      "검증은 개발이 끝난 후 수행하고, 확인은 개발 시작 전 설계 단계에서만 수행한다.",
+      "검증은 사용자가 직접 수행하는 테스트이고, 확인은 개발자가 수행하는 테스트이다."
+    ],
+    "correct_answer": "검증은 제품이 명세서대로 만들어졌는지를 확인하는 과정이고, 확인은 제품이 사용자의 요구사항을 만족하는지를 확인하는 과정이다.",
+    "explanation": "Verification(검증)은 'Are we building the product right?'(제품을 올바르게 만들고 있는가)에 집중하며, Validation(확인)은 'Are we building the right product?'(올바른 제품을 만들고 있는가)에 집중합니다."
+  },
+  {
+    "question_id": 2,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "definition",
+    "category": "Metrics",
+    "subcategory": "Incident Management Metrics",
+    "skills_required": ["SRE", "Operations"],
+    "scenario": "시스템 장애 대응 프로세스를 평가하기 위해 핵심 지표를 설정하려고 합니다.",
+    "question": "장애가 발생한 시점부터 운영 팀이 이를 감지할 때까지 걸린 평균 시간을 의미하는 지표는 무엇입니까?",
+    "choices": [
+      "MTTR (Mean Time To Repair)",
+      "MTTD (Mean Time To Detect)",
+      "MTBF (Mean Time Between Failures)",
+      "MTTA (Mean Time To Acknowledge)"
+    ],
+    "correct_answer": "MTTD (Mean Time To Detect)",
+    "explanation": "MTTD는 장애 발생 시점부터 인지 시점까지의 평균 시간을 의미하며, 감지 시스템의 효율성을 측정하는 지표입니다."
+  },
+  {
+    "question_id": 3,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "definition",
+    "category": "Cloud Computing",
+    "subcategory": "Cloud Service Models",
+    "skills_required": ["Cloud Computing"],
+    "scenario": "팀에서 새로운 애플리케이션을 배포하기 위한 클라우드 모델을 선정하고 있습니다.",
+    "question": "인프라(서버, 스토리지, 네트워크)를 가상화하여 제공하며, 사용자가 OS와 미들웨어를 직접 관리해야 하는 서비스 모델은 무엇입니까?",
+    "choices": [
+      "SaaS (Software as a Service)",
+      "PaaS (Platform as a Service)",
+      "IaaS (Infrastructure as a Service)",
+      "FaaS (Function as a Service)"
+    ],
+    "correct_answer": "IaaS (Infrastructure as a Service)",
+    "explanation": "IaaS는 가상화된 컴퓨팅 리소스를 제공하며, 사용자는 그 위의 운영체제, 애플리케이션, 데이터를 직접 관리합니다."
+  },
+  {
+    "question_id": 4,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "definition",
+    "category": "Network",
+    "subcategory": "HTTP Protocol",
+    "skills_required": ["Network", "HTTP"],
+    "scenario": "프론트엔드와 백엔드 개발자 사이의 API 통신 오류를 분석하고 있습니다.",
+    "question": "HTTP 상태 코드 중 '403 Forbidden'이 의미하는 바는 무엇입니까?",
+    "choices": [
+      "요청한 리소스를 서버에서 찾을 수 없음",
+      "서버가 요청을 이해했지만 승인을 거부함 (권한 없음)",
+      "서버에 일시적인 과부하가 발생함",
+      "클라이언트가 인증되지 않아 접근이 불가함"
+    ],
+    "correct_answer": "서버가 요청을 이해했지만 승인을 거부함 (권한 없음)",
+    "explanation": "403 Forbidden은 서버가 클라이언트를 알고 있지만, 특정 리소스에 대한 접근 권한이 없을 때 반환됩니다. 인증되지 않은 경우는 401 Unauthorized입니다."
+  },
+  {
+    "question_id": 5,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "definition",
+    "category": "Version Control",
+    "subcategory": "Git",
+    "skills_required": ["Git"],
+    "scenario": "여러 개발자가 협업하는 환경에서 코드 변경 이력을 관리해야 합니다.",
+    "question": "Git에서 현재 브랜치의 변경 사항을 임시로 저장하고 워킹 디렉토리를 깨끗하게 비워두고 싶을 때 사용하는 명령어는 무엇입니까?",
+    "choices": [
+      "git commit",
+      "git push",
+      "git stash",
+      "git fetch"
+    ],
+    "correct_answer": "git stash",
+    "explanation": "git stash는 아직 커밋하지 않은 변경 사항을 임시로 스택에 저장하여 나중에 다시 불러올 수 있게 합니다."
+  },
+  {
+    "question_id": 6,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "concept_check",
+    "category": "Infrastructure",
+    "subcategory": "Containerization",
+    "skills_required": ["Docker"],
+    "scenario": "애플리케이션 배포 환경의 일관성을 유지하기 위해 컨테이너 기술 도입을 검토 중입니다.",
+    "question": "Docker 컨테이너와 가상 머신(VM)의 가장 큰 차이점은 무엇입니까?",
+    "choices": [
+      "VM은 하드웨어 수준의 가상화를 제공하고 컨테이너는 OS 커널을 공유한다.",
+      "컨테이너는 VM보다 리소스 소모가 크고 실행 속도가 느리다.",
+      "VM은 격리 환경을 제공하지 않지만 컨테이너는 완벽한 격리를 제공한다.",
+      "컨테이너는 특정 하드웨어에서만 실행 가능하며 이식성이 낮다."
+    ],
+    "correct_answer": "VM은 하드웨어 수준의 가상화를 제공하고 컨테이너는 OS 커널을 공유한다.",
+    "explanation": "컨테이너는 호스트 OS의 커널을 공유하여 가볍고 빠르지만, VM은 각 인스턴스마다 독립된 게스트 OS를 가집니다."
+  },
+  {
+    "question_id": 7,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "concept_check",
+    "category": "Database",
+    "subcategory": "Relational Database",
+    "skills_required": ["Database", "SQL"],
+    "scenario": "DB 설계 회의 중 데이터 무결성을 보장하기 위한 제약 조건을 논의하고 있습니다.",
+    "question": "데이터베이스에서 테이블의 각 행을 고유하게 식별할 수 있으며, NULL 값을 가질 수 없는 속성은 무엇입니까?",
+    "choices": [
+      "외래키 (Foreign Key)",
+      "기본키 (Primary Key)",
+      "인덱스 (Index)",
+      "뷰 (View)"
+    ],
+    "correct_answer": "기본키 (Primary Key)",
+    "explanation": "Primary Key는 개체 무결성을 위해 중복된 값을 가질 수 없으며 NULL 또한 허용되지 않습니다."
+  },
+  {
+    "question_id": 8,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "concept_check",
+    "category": "Agile",
+    "subcategory": "Scrum Framework",
+    "skills_required": ["Agile", "Scrum"],
+    "scenario": "팀에 스크럼 프로세스를 도입하여 매일 진행 상황을 점검하려 합니다.",
+    "question": "데일리 스탠드업(Daily Stand-up) 미팅의 주요 목적이 아닌 것은 무엇입니까?",
+    "choices": [
+      "어제 수행한 업무 공유",
+      "오늘 수행할 계획 공유",
+      "업무 진행 중 겪고 있는 장애물(Blockers) 공유",
+      "상세한 아키텍처 설계 및 기술적 이슈 해결"
+    ],
+    "correct_answer": "상세한 아키텍처 설계 및 기술적 이슈 해결",
+    "explanation": "데일리 스탠드업은 짧게 진행 상황과 장애물을 공유하는 자리이며, 깊이 있는 기술 논의는 별도의 미팅을 통해 진행해야 합니다."
+  },
+  {
+    "question_id": 9,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "concept_check",
+    "category": "Testing",
+    "subcategory": "Test Levels",
+    "skills_required": ["Testing", "QA"],
+    "scenario": "신규 기능 출시 전 테스트 전략을 수립하고 있습니다.",
+    "question": "개발자가 작성한 개별 함수나 클래스가 의도대로 동작하는지 확인하는 가장 낮은 수준의 테스트는 무엇입니까?",
+    "choices": [
+      "통합 테스트 (Integration Test)",
+      "시스템 테스트 (System Test)",
+      "단위 테스트 (Unit Test)",
+      "인수 테스트 (Acceptance Test)"
+    ],
+    "correct_answer": "단위 테스트 (Unit Test)",
+    "explanation": "단위 테스트는 애플리케이션의 가장 작은 단위(함수, 메서드 등)를 독립적으로 검증하는 단계입니다."
+  },
+  {
+    "question_id": 10,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "concept_check",
+    "category": "Network",
+    "subcategory": "DNS",
+    "skills_required": ["Network", "DNS"],
+    "scenario": "사용자가 도메인 주소를 입력했을 때 서버 IP를 찾아가는 과정을 설명해야 합니다.",
+    "question": "도메인 이름(예: [www.google.com](https://www.google.com))을 IP 주소로 변환해주는 시스템의 명칭은 무엇입니까?",
+    "choices": [
+      "DHCP",
+      "DNS",
+      "NAT",
+      "ARP"
+    ],
+    "correct_answer": "DNS",
+    "explanation": "DNS(Domain Name System)는 사람이 읽기 쉬운 도메인 이름을 컴퓨터가 인식하는 IP 주소로 변환하는 역할을 합니다."
+  },
+  {
+    "question_id": 11,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "misconception_detection",
+    "category": "Infrastructure",
+    "subcategory": "Scalability",
+    "skills_required": ["Scalability", "System Architecture"],
+    "scenario": "시스템 부하 증가에 대비해 서버 증설 계획을 검토하고 있습니다.",
+    "question": "스케일 업(Scale-up)과 스케일 아웃(Scale-out)에 대한 설명 중 잘못된 것은 무엇입니까?",
+    "choices": [
+      "스케일 업은 기존 서버의 CPU나 RAM 성능을 높이는 방식이다.",
+      "스케일 아웃은 서버 대수를 늘려 성능을 확장하는 방식이다.",
+      "스케일 아웃은 서버 대수가 늘어나도 애플리케이션 수정이 전혀 필요 없다.",
+      "스케일 업은 단일 장비의 한계치에 도달하면 더 이상 확장이 어렵다."
+    ],
+    "correct_answer": "스케일 아웃은 서버 대수가 늘어나도 애플리케이션 수정이 전혀 필요 없다.",
+    "explanation": "스케일 아웃을 적용하려면 로드 밸런싱, 세션 관리, 데이터 일관성 등을 위해 애플리케이션이나 아키텍처 수준의 수정이 수반되는 경우가 많습니다."
+  },
+  {
+    "question_id": 12,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "misconception_detection",
+    "category": "Database",
+    "subcategory": "NoSQL vs RDBMS",
+    "skills_required": ["Database"],
+    "scenario": "새로운 데이터 저장소 도입을 위해 RDBMS와 NoSQL을 비교하고 있습니다.",
+    "question": "NoSQL 데이터베이스에 대한 흔한 오해 중 틀린 설명은 무엇입니까?",
+    "choices": [
+      "NoSQL은 데이터 스키마가 유연하여 변경이 잦은 데이터에 적합하다.",
+      "모든 NoSQL 데이터베이스는 데이터 일관성(Consistency)을 전혀 보장하지 않는다.",
+      "NoSQL은 대량의 비정형 데이터를 처리하는 데 유리하다.",
+      "NoSQL은 수평적 확장(Scale-out)이 상대적으로 용이하다."
+    ],
+    "correct_answer": "모든 NoSQL 데이터베이스는 데이터 일관성(Consistency)을 전혀 보장하지 않는다.",
+    "explanation": "NoSQL도 설정이나 종류(예: MongoDB의 Replica Set)에 따라 강한 일관성을 제공할 수 있으며, 무조건 일관성을 포기하는 것은 아닙니다."
+  },
+  {
+    "question_id": 13,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "misconception_detection",
+    "category": "Agile",
+    "subcategory": "Agile Principles",
+    "skills_required": ["Agile"],
+    "scenario": "팀의 애자일 성숙도를 높이기 위해 잘못된 관행을 수정하려 합니다.",
+    "question": "애자일 방법론에 대한 설명 중 '오개념'에 해당하는 것은 무엇입니까?",
+    "choices": [
+      "애자일은 변화하는 요구사항에 유연하게 대응하는 것을 중요하게 생각한다.",
+      "애자일 방법론을 도입하면 더 이상 문서화 작업은 전혀 수행하지 않아도 된다.",
+      "애자일은 짧은 주기의 반복(Iteration)을 통해 결과물을 지속적으로 배포한다.",
+      "애자일에서 고객과의 협력은 계약 협상보다 우선시된다."
+    ],
+    "correct_answer": "애자일 방법론을 도입하면 더 이상 문서화 작업은 전혀 수행하지 않아도 된다.",
+    "explanation": "애자일 선언문은 '포괄적인 문서보다 작동하는 소프트웨어'를 가치 있게 여기지만, 문서화를 아예 배제하는 것은 아닙니다. 필요한 수준의 문서는 여전히 중요합니다."
+  },
+  {
+    "question_id": 14,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "misconception_detection",
+    "category": "DevOps",
+    "subcategory": "CI/CD",
+    "skills_required": ["DevOps", "CI/CD"],
+    "scenario": "CI/CD 파이프라인 구축의 이점을 경영진에게 설명해야 합니다.",
+    "question": "지속적 통합(CI) 및 지속적 배포(CD)에 대한 설명 중 틀린 것은 무엇입니까?",
+    "choices": [
+      "CI는 코드 변경 사항을 공유 레포지토리에 수시로 통합하는 것이다.",
+      "CD를 도입하면 수동 개입 없이 프로덕션까지 자동으로 배포가 가능하다.",
+      "CI/CD 파이프라인이 구축되면 개발자의 테스트 코드는 작성할 필요가 없다.",
+      "배포 속도가 빨라지면 장애 발생 시 복구 속도(MTTR)도 향상될 수 있다."
+    ],
+    "correct_answer": "CI/CD 파이프라인이 구축되면 개발자의 테스트 코드는 작성할 필요가 없다.",
+    "explanation": "CI/CD 파이프라인의 핵심은 '자동화된 테스트'입니다. 개발자가 테스트 코드를 작성하지 않으면 CI 단계에서 검증이 불가능해집니다."
+  },
+  {
+    "question_id": 15,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "misconception_detection",
+    "category": "API",
+    "subcategory": "REST API",
+    "skills_required": ["API Design"],
+    "scenario": "RESTful API 설계 가이드라인을 작성하고 있습니다.",
+    "question": "REST API에 대한 설명으로 옳지 않은 것은 무엇입니까?",
+    "choices": [
+      "자원(Resource)은 URI를 통해 식별된다.",
+      "HTTP Method(GET, POST, PUT, DELETE)를 통해 행위를 표현한다.",
+      "서버는 클라이언트의 상태 정보를 메모리에 저장하여 관리해야 한다(Stateful).",
+      "표준 HTTP 프로토콜을 그대로 사용하므로 범용성이 높다."
+    ],
+    "correct_answer": "서버는 클라이언트의 상태 정보를 메모리에 저장하여 관리해야 한다(Stateful).",
+    "explanation": "REST의 주요 특징 중 하나는 '무상태성(Stateless)'입니다. 서버는 각 요청을 독립적으로 처리해야 하며 클라이언트의 상태 정보를 보관하지 않습니다."
+  },
+  {
+    "question_id": 16,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "true_false",
+    "category": "Security",
+    "subcategory": "Encryption",
+    "skills_required": ["Security"],
+    "scenario": "데이터 보호 전략을 논의하며 암호화 방식을 검토 중입니다.",
+    "question": "대칭키 암호화 방식은 암호화할 때와 복호화할 때 사용하는 키가 동일하다. (참/거짓)",
+    "choices": ["참", "거짓"],
+    "correct_answer": "참",
+    "explanation": "대칭키 암호화(Symmetric Encryption)는 동일한 키를 사용하여 정보를 암복호화하며 속도가 빠른 장점이 있습니다."
+  },
+  {
+    "question_id": 17,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "true_false",
+    "category": "Cloud Computing",
+    "subcategory": "Shared Responsibility Model",
+    "skills_required": ["Cloud Computing"],
+    "scenario": "AWS나 GCP 같은 퍼블릭 클라우드 도입 시 보안 책임 범위를 명확히 하려 합니다.",
+    "question": "클라우드 공동 책임 모델에서 물리적 데이터 센터의 보안은 클라우드 서비스 제공자(CSP)의 책임이다. (참/거짓)",
+    "choices": ["참", "거짓"],
+    "correct_answer": "참",
+    "explanation": "CSP는 클라우드 '자체'의 보안(물리 인프라, 하드웨어 등)을 책임지고, 고객은 클라우드 '내부'의 보안(데이터, 설정 등)을 책임집니다."
+  },
+  {
+    "question_id": 18,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "true_false",
+    "category": "Project Management",
+    "subcategory": "Critical Path Method",
+    "skills_required": ["Project Management"],
+    "scenario": "복잡한 프로젝트의 일정 지연 리스크를 분석하고 있습니다.",
+    "question": "주경로(Critical Path)에 있는 태스크가 지연되면 전체 프로젝트 완료 일정도 지연된다. (참/거짓)",
+    "choices": ["참", "거짓"],
+    "correct_answer": "참",
+    "explanation": "주경로는 프로젝트를 완료하기 위한 가장 긴 경로이며, 이곳의 지연은 여유 시간(Float)이 없어 바로 전체 일정 지연으로 이어집니다."
+  },
+  {
+    "question_id": 19,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "true_false",
+    "category": "Network",
+    "subcategory": "TCP/UDP",
+    "skills_required": ["Network"],
+    "scenario": "실시간 영상 스트리밍과 데이터 전송 중 적합한 프로토콜을 선택하려 합니다.",
+    "question": "UDP 프로토콜은 데이터 전송의 신뢰성보다 속도가 중요한 실시간 통신에 주로 사용된다. (참/거짓)",
+    "choices": ["참", "거짓"],
+    "correct_answer": "참",
+    "explanation": "UDP는 핸드쉐이크 과정이 없고 패킷 재전송을 보장하지 않아 신뢰성은 낮으나 오버헤드가 적어 스트리밍이나 게임 등에 적합합니다."
+  },
+  {
+    "question_id": 20,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "true_false",
+    "category": "Architecture",
+    "subcategory": "Microservices",
+    "skills_required": ["Microservices"],
+    "scenario": "모놀리식에서 MSA로의 전환 시 장단점을 파악하고 있습니다.",
+    "question": "MSA 구조에서는 각 서비스가 서로 다른 언어나 데이터베이스를 사용하는 기술 다양성을 가질 수 있다. (참/거짓)",
+    "choices": ["참", "거짓"],
+    "correct_answer": "참",
+    "explanation": "MSA의 장점 중 하나인 Polyglot Architecture는 서비스별 특성에 맞는 최적의 기술 스택을 선택할 수 있게 해줍니다."
+  },
+  {
+    "question_id": 21,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "multiple_choice",
+    "category": "Version Control",
+    "subcategory": "Git Strategies",
+    "skills_required": ["Git"],
+    "scenario": "팀의 브랜치 관리 전략으로 Git Flow를 채택했습니다.",
+    "question": "Git Flow 전략에서 다음 중 성격이 다른 하나는 무엇입니까?",
+    "choices": [
+      "main (또는 master)",
+      "develop",
+      "feature",
+      "staging"
+    ],
+    "correct_answer": "staging",
+    "explanation": "Git Flow의 표준 브랜치는 main, develop, feature, release, hotfix입니다. staging은 보통 배포 환경의 명칭입니다."
+  },
+  {
+    "question_id": 22,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "multiple_choice",
+    "category": "Security",
+    "subcategory": "Authentication",
+    "skills_required": ["Security"],
+    "scenario": "API 보안을 위해 토큰 기반 인증 방식을 도입하려 합니다.",
+    "question": "JWT(JSON Web Token)의 구조에 포함되지 않는 구성 요소는 무엇입니까?",
+    "choices": [
+      "Header",
+      "Payload",
+      "Signature",
+      "Password"
+    ],
+    "correct_answer": "Password",
+    "explanation": "JWT는 Header, Payload, Signature 세 부분으로 구성되며, 비밀번호 자체를 토큰에 담지는 않습니다."
+  },
+  {
+    "question_id": 23,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "multiple_choice",
+    "category": "Database",
+    "subcategory": "Transaction",
+    "skills_required": ["Database"],
+    "scenario": "DB 트랜잭션의 안정성을 보장하기 위한 ACID 속성을 검토 중입니다.",
+    "question": "트랜잭션 내의 모든 연산이 완벽히 수행되거나, 아니면 전혀 수행되지 않아야 함을 의미하는 속성은 무엇입니까?",
+    "choices": [
+      "Atomicity (원자성)",
+      "Consistency (일관성)",
+      "Isolation (격리성)",
+      "Durability (지속성)"
+    ],
+    "correct_answer": "Atomicity (원자성)",
+    "explanation": "원자성은 'All or Nothing'의 원칙으로, 트랜잭션이 도중에 실패하면 이전 상태로 롤백되어야 함을 보장합니다."
+  },
+  {
+    "question_id": 24,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "multiple_choice",
+    "category": "Operating System",
+    "subcategory": "Process & Thread",
+    "skills_required": ["OS"],
+    "scenario": "동시성 처리가 중요한 애플리케이션의 성능 병목을 분석 중입니다.",
+    "question": "프로세스와 스레드에 대한 설명으로 가장 적절하지 않은 것은?",
+    "choices": [
+      "프로세스는 실행 중인 프로그램의 인스턴스이다.",
+      "스레드는 프로세스 내에서 실행되는 흐름의 단위이다.",
+      "스레드 간에는 힙(Heap) 메모리 영역을 공유하지 않는다.",
+      "멀티 스레드는 컨텍스트 스위칭 오버헤드가 멀티 프로세스보다 작다."
+    ],
+    "correct_answer": "스레드 간에는 힙(Heap) 메모리 영역을 공유하지 않는다.",
+    "explanation": "스레드들은 프로세스의 힙 영역과 데이터 영역을 공유하며, 자신만의 스택(Stack) 영역을 가집니다."
+  },
+  {
+    "question_id": 25,
+    "job_role": "Technical Program Manager",
+    "difficulty": "university_level",
+    "question_type": "multiple_choice",
+    "category": "Agile",
+    "subcategory": "Artifacts",
+    "skills_required": ["Agile"],
+    "scenario": "스프린트 계획 회의에서 우선순위를 정하려 합니다.",
+    "question": "제품에 대한 요구사항을 우선순위에 따라 나열한 목록을 무엇이라고 합니까?",
+    "choices": [
+      "Sprint Backlog",
+      "Product Backlog",
+      "User Story Map",
+      "Burndown Chart"
+    ],
+    "correct_answer": "Product Backlog",
+    "explanation": "Product Backlog는 제품에서 구현해야 할 모든 기능과 요구사항을 우선순위별로 관리하는 목록입니다."
+  },
+  {
+    "question_id": 26,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "code_completion",
+    "category": "CI/CD",
+    "subcategory": "GitHub Actions",
+    "skills_required": ["CI/CD", "YAML"],
+    "scenario": "매번 메인 브랜치에 코드가 푸시될 때마다 자동으로 단위 테스트를 실행하는 파이프라인을 구축하려고 합니다.",
+    "question": "다음 GitHub Actions 워크플로우 설정 파일에서 테스트를 실행하기 위해 들어갈 트리거 조건으로 가장 적절한 것은?\n\nname: Unit Test\non:\n  push:\n    branches:\n      - __________\njobs:\n  build:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v2\n      - name: Run Test\n        run: npm test",
+    "choices": [
+      "main",
+      "*",
+      "pull_request",
+      "develop"
+    ],
+    "correct_answer": "main",
+    "explanation": "시나리오에서 '메인 브랜치'에 푸시될 때를 명시했으므로 branches 리스트에 main을 기입해야 합니다."
+  },
+  {
+    "question_id": 27,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "code_completion",
+    "category": "Infrastructure",
+    "subcategory": "Docker",
+    "skills_required": ["Docker"],
+    "scenario": "Node.js 애플리케이션을 컨테이너화하기 위해 Dockerfile을 작성 중입니다.",
+    "question": "컨테이너가 시작될 때 실행될 명령어인 'npm start'를 지정하기 위해 빈칸에 들어갈 키워드는 무엇입니까?\n\nFROM node:14\nWORKDIR /app\nCOPY . .\nRUN npm install\n__________ [\"npm\", \"start\"]",
+    "choices": [
+      "CMD",
+      "RUN",
+      "EXPOSE",
+      "ENTRYPOINT"
+    ],
+    "correct_answer": "CMD",
+    "explanation": "CMD는 컨테이너 시작 시 실행될 기본 명령을 정의합니다. RUN은 이미지를 빌드하는 동안 실행되는 명령입니다."
+  },
+  {
+    "question_id": 28,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "code_completion",
+    "category": "API",
+    "subcategory": "JSON",
+    "skills_required": ["API", "JSON"],
+    "scenario": "사용자 정보를 조회하는 API의 응답 규격을 정의하고 있습니다.",
+    "question": "이름이 '홍길동', 나이가 25세인 데이터를 표현하는 올바른 JSON 형식은?\n\n{\n  \"name\": \"홍길동\",\n  \"age\": __________\n}",
+    "choices": [
+      "25",
+      "'25'",
+      "integer(25)",
+      "25.0"
+    ],
+    "correct_answer": "25",
+    "explanation": "JSON에서 숫자는 따옴표 없이 그대로 표기합니다."
+  },
+  {
+    "question_id": 29,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "code_completion",
+    "category": "Infrastructure",
+    "subcategory": "Nginx Config",
+    "skills_required": ["Nginx"],
+    "scenario": "Nginx를 이용해 8080 포트에서 실행 중인 백엔드 서버로 요청을 전달하려고 합니다.",
+    "question": "다음 설정에서 프록시 전달을 위해 빈칸에 들어갈 지시어는?\n\nserver {\n    listen 80;\n    location /api/ {\n        __________ http://localhost:8080;\n    }\n}",
+    "choices": [
+      "proxy_pass",
+      "rewrite",
+      "redirect",
+      "upstream"
+    ],
+    "correct_answer": "proxy_pass",
+    "explanation": "Nginx에서 특정 위치로 요청을 중계(Proxying)할 때 proxy_pass 지시어를 사용합니다."
+  },
+  {
+    "question_id": 30,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "code_completion",
+    "category": "Database",
+    "subcategory": "SQL Queries",
+    "skills_required": ["SQL"],
+    "scenario": "최근 30일 이내에 가입한 사용자 수를 집계해야 합니다.",
+    "question": "다음 SQL 쿼리의 빈칸에 들어갈 구문은?\n\nSELECT COUNT(*) FROM users\nWHERE created_at __________ (CURRENT_DATE - INTERVAL '30 days');",
+    "choices": [
+      ">=",
+      "<=",
+      "IN",
+      "LIKE"
+    ],
+    "correct_answer": ">=",
+    "explanation": "최근 30일 이내이므로 생성일이 (현재 날짜 - 30일)보다 크거나 같아야 합니다."
+  },
+  {
+    "question_id": 31,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "code_output_prediction",
+    "category": "Logic",
+    "subcategory": "Timeout Handling",
+    "skills_required": ["Programming Logic"],
+    "scenario": "API 요청 시 타임아웃 처리가 어떻게 동작하는지 분석 중입니다.",
+    "question": "다음 의사코드(Pseudocode) 실행 시, 서버 응답이 5초 걸린다면 출력 결과는?\n\nSET timeout = 3\nTRY:\n  response = CALL_API_WITH_TIMEOUT(url, timeout)\n  PRINT \"Success\"\nCATCH TimeoutError:\n  PRINT \"Timeout\"\nFINALLY:\n  PRINT \"Done\"",
+    "choices": [
+      "Success\nDone",
+      "Timeout\nDone",
+      "Timeout",
+      "Success"
+    ],
+    "correct_answer": "Timeout\nDone",
+    "explanation": "타임아웃 설정은 3초인데 응답이 5초 걸리므로 예외가 발생하여 'Timeout'이 출력되고, FINALLY 블록은 항상 실행되므로 'Done'이 함께 출력됩니다."
+  },
+  {
+    "question_id": 32,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "code_output_prediction",
+    "category": "Logic",
+    "subcategory": "Retry Strategy",
+    "skills_required": ["Programming Logic"],
+    "scenario": "일시적인 네트워크 오류에 대비한 재시도 로직을 검토하고 있습니다.",
+    "question": "다음 로직에서 API가 계속 실패할 때, API 호출은 총 몇 번 발생합니까?\n\ncount = 0\nMAX_RETRY = 3\nWHILE count <= MAX_RETRY:\n  success = CALL_API()\n  IF success:\n    BREAK\n  ELSE:\n    count = count + 1",
+    "choices": [
+      "3번",
+      "4번",
+      "2번",
+      "무한 반복"
+    ],
+    "correct_answer": "4번",
+    "explanation": "count가 0, 1, 2, 3일 때 실행되므로 총 4번 호출됩니다 (첫 호출 + 3번의 재시도)."
+  },
+  {
+    "question_id": 33,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "code_output_prediction",
+    "category": "Algorithm",
+    "subcategory": "Rate Limiting",
+    "skills_required": ["Algorithm"],
+    "scenario": "고정 윈도우(Fixed Window) 방식의 처리량 제한 로직을 확인하고 있습니다.",
+    "question": "1분에 최대 2개의 요청만 허용하는 로직에서, [0:10초, 0:20초, 0:50초, 1:10초]에 요청이 들어온다면 거절되는 요청은 몇 번째입니까?",
+    "choices": [
+      "두 번째",
+      "세 번째",
+      "네 번째",
+      "없음"
+    ],
+    "correct_answer": "세 번째",
+    "explanation": "0분대(0:00~0:59)에 10초, 20초 요청이 이미 2개를 채웠으므로, 50초에 들어온 세 번째 요청은 거절됩니다. 1:10초 요청은 다음 윈도우이므로 허용됩니다."
+  },
+  {
+    "question_id": 34,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "code_output_prediction",
+    "category": "Logic",
+    "subcategory": "Health Check",
+    "skills_required": ["SRE"],
+    "scenario": "로드밸런서의 상태 확인(Health Check) 로직을 분석합니다.",
+    "question": "실패 임계값(Threshold)이 3일 때, 서버 상태가 [성공, 실패, 성공, 실패, 실패, 실패] 순으로 기록된다면 로드밸런서가 서버를 'Unhealthy'로 판단하는 시점은?",
+    "choices": [
+      "세 번째 실패가 기록된 직후",
+      "두 번째 실패가 기록된 직후",
+      "마지막 실패가 기록된 직후",
+      "판단하지 않음 (중간에 성공이 섞여서)"
+    ],
+    "correct_answer": "마지막 실패가 기록된 직후",
+    "explanation": "보통 '연속 실패 횟수'가 임계값에 도달해야 제외됩니다. 중간에 성공이 나오면 카운트가 초기화되므로, 마지막에 연속 3번 실패한 시점에 Unhealthy가 됩니다."
+  },
+  {
+    "question_id": 35,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "code_output_prediction",
+    "category": "Cloud",
+    "subcategory": "IAM Policy",
+    "skills_required": ["IAM", "Security"],
+    "scenario": "IAM 정책의 우선순위를 평가하고 있습니다.",
+    "question": "사용자에게 'S3 Read' 허용(Allow) 정책과 'S3 Read' 거부(Deny) 정책이 동시에 할당되어 있다면, 최종 권한 결과는?",
+    "choices": [
+      "허용 (Allow)",
+      "거부 (Deny)",
+      "먼저 생성된 정책을 따름",
+      "오류 발생으로 접근 불가"
+    ],
+    "correct_answer": "거부 (Deny)",
+    "explanation": "대부분의 클라우드 IAM 서비스는 '명시적 거부(Explicit Deny)'가 '허용'보다 우선권을 가집니다."
+  },
+  {
+    "question_id": 36,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "debugging",
+    "category": "API",
+    "subcategory": "CORS Issues",
+    "skills_required": ["Web Security", "CORS"],
+    "scenario": "웹 애플리케이션에서 백엔드 API를 호출할 때 브라우저 콘솔에 'Access-Control-Allow-Origin' 관련 에러가 발생합니다.",
+    "question": "이 문제를 해결하기 위해 가장 먼저 조치해야 할 사항은?",
+    "choices": [
+      "브라우저를 업데이트한다.",
+      "백엔드 서버 설정에서 허용할 Origin(도메인)을 명시한다.",
+      "API 호출 방식을 GET에서 POST로 바꾼다.",
+      "클라이언트의 로컬 스토리지를 삭제한다."
+    ],
+    "correct_answer": "백엔드 서버 설정에서 허용할 Origin(도메인)을 명시한다.",
+    "explanation": "CORS(Cross-Origin Resource Sharing) 문제는 서버 측에서 응답 헤더에 요청 도메인을 허용하도록 설정하여 해결해야 합니다."
+  },
+  {
+    "question_id": 37,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "debugging",
+    "category": "Database",
+    "subcategory": "Connection Issues",
+    "skills_required": ["Database", "Networking"],
+    "scenario": "새로 배포한 API 서버가 DB에 연결하지 못하고 'Connection Refused' 에러를 내뱉고 있습니다.",
+    "question": "네트워크 연결 문제인지 확인하기 위해 가장 먼저 체크해야 할 항목은?",
+    "choices": [
+      "DB의 인덱스가 제대로 생성되었는지 확인한다.",
+      "API 서버가 DB 서버의 IP와 포트(예: 3306)에 접근 가능한 보안 그룹(Security Group) 설정이 되어 있는지 확인한다.",
+      "SQL 쿼리문에 문법 오류가 없는지 확인한다.",
+      "DB 서버의 디스크 용량이 부족한지 확인한다."
+    ],
+    "correct_answer": "API 서버가 DB 서버의 IP와 포트(예: 3306)에 접근 가능한 보안 그룹(Security Group) 설정이 되어 있는지 확인한다.",
+    "explanation": "Connection Refused는 네트워크 경로가 차단되었거나 서버가 떠 있지 않을 때 발생하므로 방화벽/보안 그룹 설정을 최우선으로 확인해야 합니다."
+  },
+  {
+    "question_id": 38,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "debugging",
+    "category": "Git",
+    "subcategory": "Merge Conflict",
+    "skills_required": ["Git"],
+    "scenario": "두 개발자가 동일한 파일의 동일한 줄을 수정하여 병합(Merge) 충돌이 발생했습니다.",
+    "question": "이 상황에서 올바른 해결 절차는?",
+    "choices": [
+      "충돌이 난 파일을 삭제하고 새로 작성한다.",
+      "Git이 자동으로 해결해주기를 기다린다.",
+      "충돌이 난 파일을 열어 수동으로 코드를 합친 후 'git add'와 'git commit'을 수행한다.",
+      "로컬 레포지토리를 삭제하고 다시 클론한다."
+    ],
+    "correct_answer": "충돌이 난 파일을 열어 수동으로 코드를 합친 후 'git add'와 'git commit'을 수행한다.",
+    "explanation": "Merge Conflict는 시스템이 자동으로 판단할 수 없는 중복 수정이 발생한 것이므로, 사람이 직접 코드를 조율해야 합니다."
+  },
+  {
+    "question_id": 39,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "debugging",
+    "category": "Web Service",
+    "subcategory": "SSL Certificate",
+    "skills_required": ["Security", "SSL/TLS"],
+    "scenario": "사용자가 서비스에 접속할 때 '연결이 비공개로 설정되어 있지 않습니다'라는 경고창이 뜹니다.",
+    "question": "이 에러의 가장 가능성 높은 원인은?",
+    "choices": [
+      "사용자의 인터넷 속도가 너무 느림",
+      "SSL/TLS 인증서의 만료 기간이 지났거나 도메인과 불일치함",
+      "서버의 CPU 사용량이 100%임",
+      "데이터베이스 점검 중임"
+    ],
+    "correct_answer": "SSL/TLS 인증서의 만료 기간이 지났거나 도메인과 불일치함",
+    "explanation": "브라우저는 SSL 인증서가 유효하지 않거나 신뢰할 수 없는 경우 보안 경고를 표시합니다."
+  },
+  {
+    "question_id": 40,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "debugging",
+    "category": "Frontend",
+    "subcategory": "Asset Loading",
+    "skills_required": ["Web Performance"],
+    "scenario": "배포 직후 사이트의 디자인이 깨져 보인다는 리포트가 들어왔습니다.",
+    "question": "개발자 도구에서 CSS 파일이 404 에러를 기록하고 있다면, 무엇을 의심해야 합니까?",
+    "choices": [
+      "브라우저 캐시 문제",
+      "빌드 과정에서 정적 파일(Static Assets) 경로 설정 오류",
+      "서버의 RAM 부족",
+      "사용자의 쿠키 비활성화"
+    ],
+    "correct_answer": "빌드 과정에서 정적 파일(Static Assets) 경로 설정 오류",
+    "explanation": "404 Not Found는 요청한 경로에 파일이 존재하지 않는다는 뜻이므로, 배포된 파일 경로가 잘못되었을 확률이 높습니다."
+  },
+  {
+    "question_id": 41,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "error_analysis",
+    "category": "Operating System",
+    "subcategory": "Memory Management",
+    "skills_required": ["Memory Analysis"],
+    "scenario": "Java 애플리케이션 서버가 실행 중 'java.lang.OutOfMemoryError: Java heap space'를 출력하며 종료되었습니다.",
+    "question": "이 에러의 의미를 가장 잘 설명한 것은?",
+    "choices": [
+      "OS의 디스크 용량이 부족함",
+      "JVM에 할당된 힙 메모리보다 많은 객체가 생성되어 가용 메모리가 없음",
+      "네트워크 대역폭이 초과됨",
+      "동시 접속자 수가 너무 많아 스레드가 생성되지 않음"
+    ],
+    "correct_answer": "JVM에 할당된 힙 메모리보다 많은 객체가 생성되어 가용 메모리가 없음",
+    "explanation": "OutOfMemoryError는 JVM 내에서 사용할 수 있는 메모리가 고갈되었을 때 발생하며, 메모리 누수나 부적절한 힙 사이즈 설정이 원인입니다."
+  },
+  {
+    "question_id": 42,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "error_analysis",
+    "category": "Database",
+    "subcategory": "Deadlock",
+    "skills_required": ["Database", "SQL"],
+    "scenario": "로그에 'Deadlock found when trying to get lock; try restarting transaction'이라는 메시지가 반복적으로 나타납니다.",
+    "question": "교착 상태(Deadlock)가 발생하는 주된 원인은 무엇입니까?",
+    "choices": [
+      "데이터베이스의 저장 용량이 꽉 찼을 때",
+      "두 개 이상의 트랜잭션이 서로가 가진 리소스의 락(Lock)이 풀리기를 기다리며 무한 대기에 빠졌을 때",
+      "인덱스가 없는 테이블을 전체 스캔(Full Scan)했을 때",
+      "데이터베이스 백업 작업이 진행 중일 때"
+    ],
+    "correct_answer": "두 개 이상의 트랜잭션이 서로가 가진 리소스의 락(Lock)이 풀리기를 기다리며 무한 대기에 빠졌을 때",
+    "explanation": "데드락은 서로가 점유한 자원을 필요로 하며 대기하는 순환 구조가 생길 때 발생합니다."
+  },
+  {
+    "question_id": 43,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "error_analysis",
+    "category": "Infrastructure",
+    "subcategory": "Deployment Failure",
+    "skills_required": ["CI/CD", "Linux"],
+    "scenario": "배포 스크립트 실행 중 'Permission denied' 에러가 발생하여 빌드 아티팩트를 복사하지 못했습니다.",
+    "question": "이 문제를 해결하기 위해 가장 먼저 확인해야 할 사항은?",
+    "choices": [
+      "네트워크 방화벽 설정",
+      "실행 계정의 파일 쓰기 권한",
+      "하드웨어 불량 여부",
+      "소스 코드의 문법 오류"
+    ],
+    "correct_answer": "실행 계정의 파일 쓰기 권한",
+    "explanation": "Permission denied는 현재 명령을 실행하는 사용자 계정이 대상 경로에 대한 적절한 권한(Read/Write/Execute)을 가지고 있지 않을 때 발생합니다."
+  },
+  {
+    "question_id": 44,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "error_analysis",
+    "category": "Network",
+    "subcategory": "HTTP Errors",
+    "skills_required": ["Networking"],
+    "scenario": "사용자로부터 '504 Gateway Timeout' 에러가 지속적으로 발생한다는 제보를 받았습니다.",
+    "question": "이 에러가 의미하는 아키텍처상의 문제는?",
+    "choices": [
+      "클라이언트가 잘못된 URL을 요청함",
+      "서버 측 프록시(Nginx 등)가 백엔드 서버로부터 응답을 제시간에 받지 못함",
+      "서버의 데이터베이스가 손상됨",
+      "사용자가 로그인을 하지 않은 상태로 접근함"
+    ],
+    "correct_answer": "서버 측 프록시(Nginx 등)가 백엔드 서버로부터 응답을 제시간에 받지 못함",
+    "explanation": "504는 프록시 서버나 로드밸런서가 상위 서버(Upstream)로부터 응답을 기다리다 시간 초과가 났을 때 발생하는 서버 측 에러입니다."
+  },
+  {
+    "question_id": 45,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "error_analysis",
+    "category": "Programming",
+    "subcategory": "Exception Handling",
+    "skills_required": ["Programming Basics"],
+    "scenario": "프로그램이 'NullPointerException'을 발생시키며 비정상 종료되었습니다.",
+    "question": "이 에러를 방지하기 위한 가장 근본적인 코딩 습관은?",
+    "choices": [
+      "모든 변수를 전역 변수로 선언한다.",
+      "객체를 참조하기 전에 해당 객체가 null인지 확인하는 로직을 추가한다.",
+      "프로그램의 실행 속도를 높인다.",
+      "로그를 더 많이 남긴다."
+    ],
+    "correct_answer": "객체를 참조하기 전에 해당 객체가 null인지 확인하는 로직을 추가한다.",
+    "explanation": "NullPointerException은 초기화되지 않았거나 값이 비어있는(null) 참조 변수의 메서드나 필드에 접근하려 할 때 발생합니다."
+  },
+  {
+    "question_id": 46,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "log_analysis",
+    "category": "Observability",
+    "subcategory": "Web Server Logs",
+    "skills_required": ["Log Analysis"],
+    "scenario": "웹 서버 로그를 확인하던 중 다음과 같은 줄을 발견했습니다.\n'192.168.1.10 - - [10/Oct/2023:13:55:36 +0900] \"GET /api/user/123 HTTP/1.1\" 200 452'",
+    "question": "이 로그에서 '452'가 의미하는 것은 무엇입니까?",
+    "choices": [
+      "응답 상태 코드",
+      "서버가 클라이언트에게 보낸 데이터의 크기 (Bytes)",
+      "요청을 처리하는 데 걸린 시간 (ms)",
+      "클라이언트의 포트 번호"
+    ],
+    "correct_answer": "서버가 클라이언트에게 보낸 데이터의 크기 (Bytes)",
+    "explanation": "Nginx/Apache 표준 로그 형식에서 마지막 숫자는 대개 응답 바디의 크기를 의미합니다."
+  },
+  {
+    "question_id": 47,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "log_analysis",
+    "category": "Observability",
+    "subcategory": "Error Logs",
+    "skills_required": ["Log Analysis"],
+    "scenario": "애플리케이션 에러 로그에 'Too many open files'라는 문구가 찍혔습니다.",
+    "question": "이 로그가 나타내는 운영체제 수준의 병목 현상은?",
+    "choices": [
+      "CPU 사용률 임계값 초과",
+      "파일 디스크립터(File Descriptor) 한계 도달",
+      "디스크 읽기/쓰기 속도 저하",
+      "스왑 메모리 부족"
+    ],
+    "correct_answer": "파일 디스크립터(File Descriptor) 한계 도달",
+    "explanation": "리눅스 시스템은 프로세스가 동시에 열 수 있는 파일(소켓 포함)의 개수를 제한하며, 이 한계를 넘으면 해당 에러가 발생합니다."
+  },
+  {
+    "question_id": 48,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "log_analysis",
+    "category": "Security",
+    "subcategory": "Audit Logs",
+    "skills_required": ["Security", "Log Analysis"],
+    "scenario": "관리자 페이지 로그인 로그를 분석 중입니다. 짧은 시간 동안 동일한 IP에서 수백 번의 로그인 실패 로그(Status 401)가 발견되었습니다.",
+    "question": "이 상황에서 의심되는 공격 유형은?",
+    "choices": [
+      "DDoS 공격",
+      "브루트 포스(Brute Force) 공격",
+      "SQL Injection 공격",
+      "XSS 공격"
+    ],
+    "correct_answer": "브루트 포스(Brute Force) 공격",
+    "explanation": "짧은 시간 내 반복적인 인증 실패는 무차별 대입 공격을 통해 비밀번호를 알아내려는 시도로 볼 수 있습니다."
+  },
+  {
+    "question_id": 49,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "log_analysis",
+    "category": "Monitoring",
+    "subcategory": "Slow Query Logs",
+    "skills_required": ["Database Tuning"],
+    "scenario": "DB의 Slow Query 로그에 특정 SELECT 문이 10초 이상 실행된 기록이 많이 남아 있습니다.",
+    "question": "로그를 분석한 후 가장 먼저 권고해야 할 개선 조치는?",
+    "choices": [
+      "서버 하드웨어를 즉시 교체한다.",
+      "해당 쿼리의 WHERE 절 컬럼에 인덱스(Index)가 있는지 확인한다.",
+      "데이터베이스의 데이터를 모두 삭제한다.",
+      "데이터베이스 버전을 다운그레이드한다."
+    ],
+    "correct_answer": "해당 쿼리의 WHERE 절 컬럼에 인덱스(Index)가 있는지 확인한다.",
+    "explanation": "Slow Query의 가장 흔한 원인은 인덱스 부재로 인한 Full Table Scan입니다."
+  },
+  {
+    "question_id": 50,
+    "job_role": "Technical Program Manager",
+    "difficulty": "junior_level",
+    "question_type": "log_analysis",
+    "category": "Deployment",
+    "subcategory": "K8s Logs",
+    "skills_required": ["Kubernetes"],
+    "scenario": "Kubernetes 포드(Pod)가 계속 재시작되며 'CrashLoopBackOff' 상태를 보입니다. 로그 확인 결과 'standard_init_linux.go:211: exec user process caused \"no such file or directory\"'가 뜹니다.",
+    "question": "이 에러의 원인으로 가장 가능성이 높은 것은?",
+    "choices": [
+      "클러스터 노드의 메모리 부족",
+      "컨테이너 이미지의 Entrypoint 스크립트 경로가 잘못되었거나 실행 권한이 없음",
+      "네트워크 플러그인 오류",
+      "Kubernetes API 서버 다운"
+    ],
+    "correct_answer": "컨테이너 이미지의 Entrypoint 스크립트 경로가 잘못되었거나 실행 권한이 없음",
+    "explanation": "CrashLoopBackOff 상태에서 'no such file' 관련 로그는 컨테이너 내부의 실행 파일 경로 오류나 바이너리 호환성 문제일 때 주로 발생합니다."
+  },
+  {
+    "question_id": 51,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "configuration_problem",
+    "category": "Infrastructure",
+    "subcategory": "Kubernetes Resource Limits",
+    "skills_required": ["Kubernetes", "Resource Management"],
+    "scenario": "애플리케이션이 트래픽이 몰릴 때마다 OOMKilled 상태가 되며 종료됩니다. 현재 포드 설정은 requests: memory: 512Mi, limits: memory: 512Mi 입니다.",
+    "question": "가장 안정적인 운영을 위한 설정 변경 제안은?",
+    "choices": [
+      "limits를 제거하여 무제한으로 메모리를 쓰게 한다.",
+      "requests는 512Mi로 유지하되, limits를 1Gi 정도로 상향 조정한다.",
+      "CPU limits만 높인다.",
+      "아무것도 바꾸지 않고 포드 개수만 늘린다."
+    ],
+    "correct_answer": "requests는 512Mi로 유지하되, limits를 1Gi 정도로 상향 조정한다.",
+    "explanation": "requests와 limits가 같으면 메모리 여유가 전혀 없어 스파이크 발생 시 즉시 킬(Kill) 당합니다. 어느 정도의 버스트를 허용하도록 limits를 높여주는 것이 좋습니다."
+  },
+  {
+    "question_id": 52,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "configuration_problem",
+    "category": "Database",
+    "subcategory": "Connection Pooling",
+    "skills_required": ["Database", "Backend Performance"],
+    "scenario": "트래픽이 급증할 때 API 서버에서 'Timeout waiting for connection from pool' 에러가 빈번하게 발생합니다. DB 서버의 CPU와 메모리는 여유로운 상태입니다.",
+    "question": "어떤 설정을 먼저 점검해야 합니까?",
+    "choices": [
+      "DB 서버의 디스크 I/O",
+      "애플리케이션 내의 커넥션 풀(Connection Pool) 최대 크기",
+      "서버의 네트워크 대역폭",
+      "API 응답 데이터의 압축률"
+    ],
+    "correct_answer": "애플리케이션 내의 커넥션 풀(Connection Pool) 최대 크기",
+    "explanation": "DB는 여유로운데 풀에서 대기가 발생한다면, 애플리케이션이 가질 수 있는 DB 커넥션 개수가 부족하게 설정되어 병목이 발생한 것입니다."
+  },
+  {
+    "question_id": 53,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "configuration_problem",
+    "category": "CDN",
+    "subcategory": "Caching Policy",
+    "skills_required": ["CDN", "Web Performance"],
+    "scenario": "새로운 이미지 파일을 업로드했으나 사용자들이 계속 이전 이미지가 보인다고 불만을 제기합니다.",
+    "question": "CDN 설정에서 어떤 항목을 조정하거나 조치를 취해야 합니까?",
+    "choices": [
+      "CDN의 대역폭 제한을 늘린다.",
+      "파일의 캐시 만료 시간(TTL)을 확인하고 Purge(무효화)를 실행한다.",
+      "CDN을 중단하고 원본 서버로 직접 연결한다.",
+      "이미지 파일의 확장자를 변경한다."
+    ],
+    "correct_answer": "파일의 캐시 만료 시간(TTL)을 확인하고 Purge(무효화)를 실행한다.",
+    "explanation": "캐시가 남아있어 원본의 변경사항이 반영되지 않는 상황이므로, 기존 캐시를 강제로 비우는 Purge 작업이 필요합니다."
+  },
+  {
+    "question_id": 54,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "configuration_problem",
+    "category": "Auto Scaling",
+    "subcategory": "Scaling Policy",
+    "skills_required": ["Cloud Computing", "Scaling"],
+    "scenario": "CPU 사용률이 80%를 넘으면 서버를 늘리도록 설정했으나, 서버가 늘어난 직후 바로 다시 줄어드는 'Flapping' 현상이 발생합니다.",
+    "question": "이 현상을 해결하기 위해 조정해야 할 설정은?",
+    "choices": [
+      "CPU 임계값을 90%로 올린다.",
+      "쿨다운(Cooldown) 시간 또는 축소 정책의 지연 시간을 늘린다.",
+      "최소 서버 대수를 1대로 줄인다.",
+      "서버의 인스턴스 타입을 더 큰 것으로 바꾼다."
+    ],
+    "correct_answer": "쿨다운(Cooldown) 시간 또는 축소 정책의 지연 시간을 늘린다.",
+    "explanation": "스케일 인/아웃이 너무 빈번하게 발생하는 현상을 방지하기 위해 확장 후 일정 시간 동안 상태를 유지하게 하는 Cooldown 설정이 필요합니다."
+  },
+  {
+    "question_id": 55,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "configuration_problem",
+    "category": "Security",
+    "subcategory": "Firewall Rules",
+    "skills_required": ["Network Security"],
+    "scenario": "서브넷 A에 있는 서버가 서브넷 B에 있는 Redis에 접속하려고 하지만 타임아웃이 발생합니다.",
+    "question": "VPC 보안 설정을 점검할 때 가장 먼저 확인해야 할 사항은?",
+    "choices": [
+      "Redis 서버의 CPU 사용률",
+      "서브넷 B의 보안 그룹(Security Group) 인바운드 규칙에 서브넷 A의 접근이 허용되어 있는지 여부",
+      "두 서브넷의 물리적 거리",
+      "서버의 DNS 설정"
+    ],
+    "correct_answer": "서브넷 B의 보안 그룹(Security Group) 인바운드 규칙에 서브넷 A의 접근이 허용되어 있는지 여부",
+    "explanation": "서브넷 간 통신 차단은 주로 보안 그룹이나 Network ACL의 규칙 설정 문제로 발생합니다."
+  },
+  {
+    "question_id": 56,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "root_cause_analysis",
+    "category": "System Reliability",
+    "subcategory": "Latency Spikes",
+    "skills_required": ["Monitoring", "Troubleshooting"],
+    "scenario": "매일 자정만 되면 시스템의 응답 속도가 5초 이상으로 급격히 느려졌다가 10분 뒤에 정상화됩니다.",
+    "question": "이 주기적인 지연의 가장 유력한 원인은?",
+    "choices": [
+      "하드웨어 노후화",
+      "자정에 시작되는 배치(Batch) 작업이나 DB 백업으로 인한 리소스 경합",
+      "전 세계 사용자의 동시 접속",
+      "해커의 주기적인 공격"
+    ],
+    "correct_answer": "자정에 시작되는 배치(Batch) 작업이나 DB 백업으로 인한 리소스 경합",
+    "explanation": "특정 시간에 주기적으로 발생하는 문제는 대개 예약된 작업(Cron job, Backup)이 시스템 리소스를 과도하게 점유하기 때문입니다."
+  },
+  {
+    "question_id": 57,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "root_cause_analysis",
+    "category": "Data Consistency",
+    "subcategory": "Distributed Cache",
+    "skills_required": ["Redis", "Caching Strategy"],
+    "scenario": "사용자가 정보를 수정했는데, 새로고침을 할 때마다 수정된 값과 이전 값이 번갈아가며 보입니다.",
+    "question": "분산 환경에서 이러한 현상이 발생하는 근본적인 이유는?",
+    "choices": [
+      "네트워크 속도가 느려서",
+      "다중 서버 환경에서 로컬 캐시를 사용하거나, DB 복제 지연(Replication Lag)이 발생함",
+      "사용자의 브라우저 버전이 낮아서",
+      "DB 서버의 디스크 I/O가 높아서"
+    ],
+    "correct_answer": "다중 서버 환경에서 로컬 캐시를 사용하거나, DB 복제 지연(Replication Lag)이 발생함",
+    "explanation": "서버마다 데이터 상태가 다르거나(로컬 캐시 비동기), 마스터 DB의 변경 사항이 슬레이브 DB로 전달되는 동안의 시차 때문에 발생할 수 있습니다."
+  },
+  {
+    "question_id": 58,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "root_cause_analysis",
+    "category": "Application Performance",
+    "subcategory": "Thread Contention",
+    "skills_required": ["Java", "Performance Tuning"],
+    "scenario": "CPU 사용률은 낮은데 API 응답 속도가 매우 느리고, 로그에는 'Thread Pool is full' 메시지가 가득합니다.",
+    "question": "이 현상의 원인으로 가장 적절한 분석은?",
+    "choices": [
+      "CPU 성능이 부족하여 연산이 느림",
+      "외부 API 호출이나 DB 쿼리 등 I/O 작업에서 블로킹(Blocking)이 발생하여 스레드가 모두 대기 상태임",
+      "네트워크 카드 불량",
+      "애플리케이션 코드가 너무 길어서 컴파일이 늦음"
+    ],
+    "correct_answer": "외부 API 호출이나 DB 쿼리 등 I/O 작업에서 블로킹(Blocking)이 발생하여 스레드가 모두 대기 상태임",
+    "explanation": "CPU는 놀고 있는데 스레드가 부족하다면, 각 스레드가 외부 응답을 기다리는 데 시간을 다 쓰고 있음을 의미합니다."
+  },
+  {
+    "question_id": 59,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "root_cause_analysis",
+    "category": "Storage",
+    "subcategory": "Disk I/O",
+    "skills_required": ["System Administration"],
+    "scenario": "데이터베이스의 응답 속도가 갑자기 느려졌습니다. `iostat` 명령어로 확인한 결과 `%util` 값이 지속적으로 100%에 근접합니다.",
+    "question": "이 지표가 나타내는 병목의 원인은?",
+    "choices": [
+      "메모리 부족으로 인한 스왑 발생",
+      "디스크의 물리적인 쓰기/읽기 한계에 도달함",
+      "CPU 클럭 속도 저하",
+      "네트워크 패킷 손실"
+    ],
+    "correct_answer": "디스크의 물리적인 쓰기/읽기 한계에 도달함",
+    "explanation": "%util 100%는 디스크 장치가 요청을 처리하느라 쉴 틈이 없다는 뜻으로, 디스크 I/O 병목을 나타냅니다."
+  },
+  {
+    "question_id": 60,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "root_cause_analysis",
+    "category": "Cloud Infrastructure",
+    "subcategory": "DNS Resolution",
+    "skills_required": ["Networking", "DNS"],
+    "scenario": "클라우드 환경의 특정 서버에서만 외부 API 호출 시 'Unknown Host Exception'이 가끔 발생합니다.",
+    "question": "어떤 부분을 가장 먼저 의심해야 합니까?",
+    "choices": [
+      "외부 API 서버의 점검",
+      "해당 서버의 로컬 DNS 캐시 또는 VPC 내부 DNS 리졸버의 성능/설정 문제",
+      "백엔드 서버의 메모리 부족",
+      "소스 코드의 하드코딩된 IP"
+    ],
+    "correct_answer": "해당 서버의 로컬 DNS 캐시 또는 VPC 내부 DNS 리졸버의 성능/설정 문제",
+    "explanation": "Unknown Host는 도메인 이름을 IP로 바꾸지 못했다는 뜻이며, 간헐적 발생은 DNS 조회 과정에서의 지연이나 유실을 의미합니다."
+  },
+  {
+    "question_id": 61,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "data_interpretation",
+    "category": "Monitoring",
+    "subcategory": "Traffic Analysis",
+    "skills_required": ["Monitoring Tools", "Data Analysis"],
+    "scenario": "지난 1주일간의 트래픽 차트를 분석 중입니다. 매일 점심시간(12시~13시)에만 에러율이 5%로 상승했다가 이후 0.1%로 내려갑니다.",
+    "question": "이 데이터를 바탕으로 내릴 수 있는 합리적인 결론은?",
+    "choices": [
+      "점심시간에 해킹 시도가 집중된다.",
+      "현재 시스템 용량이 피크 타임(점심시간)의 트래픽을 처리하기에 부족하다.",
+      "점심시간에 서버실 온도가 올라간다.",
+      "에러율 5%는 무시해도 되는 수준이다."
+    ],
+    "correct_answer": "현재 시스템 용량이 피크 타임(점심시간)의 트래픽을 처리하기에 부족하다.",
+    "explanation": "특정 시간대 트래픽 증가와 에러율 상승이 결합된 경우, 리소스 부족이나 한계 도달을 우선적으로 의심해야 합니다."
+  },
+  {
+    "question_id": 62,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "data_interpretation",
+    "category": "Cost Management",
+    "subcategory": "Cloud Billing",
+    "skills_required": ["Cloud Cost Analysis"],
+    "scenario": "이번 달 클라우드 청구서에서 'NAT Gateway Data Processing' 비용이 평소보다 5배 증가했습니다.",
+    "question": "어떤 데이터 흐름이 증가했을 가능성이 가장 큽니까?",
+    "choices": [
+      "VPC 내부 서버 간의 통신",
+      "프라이빗 서브넷에 있는 서버가 외부(인터넷)로 대량의 데이터를 전송함",
+      "사용자가 웹사이트에 접속하는 인바운드 트래픽",
+      "데이터베이스의 백업 용량 증가"
+    ],
+    "correct_answer": "프라이빗 서브넷에 있는 서버가 외부(인터넷)로 대량의 데이터를 전송함",
+    "explanation": "NAT Gateway는 프라이빗 서브넷의 자원이 외부 인터넷과 통신할 때 사용되며, 데이터 처리량에 따라 과금됩니다."
+  },
+  {
+    "question_id": 63,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "data_interpretation",
+    "category": "Performance",
+    "subcategory": "Latency Metrics",
+    "skills_required": ["Monitoring"],
+    "scenario": "API 응답 시간의 p99 수치는 2초인 반면, 평균(Average)은 100ms입니다.",
+    "question": "이 지표가 사용자 경험에 대해 말해주는 것은 무엇입니까?",
+    "choices": [
+      "대부분의 사용자가 2초의 대기 시간을 겪고 있다.",
+      "시스템이 매우 안정적이며 모든 사용자가 빠르게 이용 중이다.",
+      "대부분은 빠르지만, 상위 1%의 요청은 2초 이상의 매우 느린 속도를 경험하고 있다.",
+      "평균이 낮으므로 p99 수치는 무시해도 된다."
+    ],
+    "correct_answer": "대부분은 빠르지만, 상위 1%의 요청은 2초 이상의 매우 느린 속도를 경험하고 있다.",
+    "explanation": "p99는 하위 99%의 요청이 끝나는 지점을 의미하므로, 꼬리 지연(Tail Latency)이 존재함을 나타냅니다."
+  },
+  {
+    "question_id": 64,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "data_interpretation",
+    "category": "DevOps",
+    "subcategory": "Build Time",
+    "skills_required": ["CI/CD"],
+    "scenario": "CI/CD 파이프라인의 각 단계 소요 시간이 다음과 같습니다: [코드 체크아웃: 10초, 의존성 설치: 5분, 단위 테스트: 1분, 빌드: 2분, 배포: 1분]",
+    "question": "파이프라인 속도 개선을 위해 가장 먼저 최적화해야 할 부분은?",
+    "choices": [
+      "코드 체크아웃",
+      "의존성 설치 (Dependency Installation)",
+      "단위 테스트",
+      "배포"
+    ],
+    "correct_answer": "의존성 설치 (Dependency Installation)",
+    "explanation": "전체 시간 중 가장 큰 비중(5분)을 차지하는 단계를 최적화(예: 캐싱 도입)하는 것이 가장 효과적입니다."
+  },
+  {
+    "question_id": 65,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "data_interpretation",
+    "category": "SRE",
+    "subcategory": "Error Budget",
+    "skills_required": ["SLO/SLA"],
+    "scenario": "가용성 목표(SLO)가 99.9%인 서비스에서 이번 달 이미 20분간 장애가 발생했습니다. (한 달을 43,200분으로 가정)",
+    "question": "남은 에러 버짓(Error Budget)은 대략 얼마입니까?",
+    "choices": [
+      "약 23분",
+      "약 5분",
+      "0분 (이미 초과함)",
+      "약 40분"
+    ],
+    "correct_answer": "약 23분",
+    "explanation": "99.9% 가용성일 때 허용되는 총 다운타임은 한 달 기준 약 43분입니다. 20분을 사용했으므로 약 23분이 남았습니다."
+  },
+  {
+    "question_id": 66,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "scenario_based",
+    "category": "Project Management",
+    "subcategory": "Scope Creep",
+    "skills_required": ["Stakeholder Management", "Project Management"],
+    "scenario": "중요한 출시를 일주일 앞두고, 임원이 아주 사소해 보이지만 기술적으로는 복잡한 추가 기능을 넣어달라고 요청했습니다.",
+    "question": "TPM으로서 취해야 할 가장 적절한 대응은?",
+    "choices": [
+      "팀원들을 설득하여 야근을 해서라도 기능을 추가한다.",
+      "임원의 요청이므로 무조건 수용하고 다른 기능을 포기한다.",
+      "해당 기능 추가 시 발생할 수 있는 리스크와 일정 지연 가능성을 데이터와 함께 설명하고, 출시 후 다음 스프린트에 반영할 것을 제안한다.",
+      "개발 팀에는 알리지 않고 출시 당일에 반영되지 않았다고 보고한다."
+    ],
+    "correct_answer": "해당 기능 추가 시 발생할 수 있는 리스크와 일정 지연 가능성을 데이터와 함께 설명하고, 출시 후 다음 스프린트에 반영할 것을 제안한다.",
+    "explanation": "TPM은 범위 확장(Scope Creep)을 경계하고, 기술적 임팩트를 분석하여 이해관계자와 협상해야 합니다."
+  },
+  {
+    "question_id": 67,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "scenario_based",
+    "category": "Resource Management",
+    "subcategory": "Cross-team Dependency",
+    "skills_required": ["Dependency Management"],
+    "scenario": "A팀의 기능 개발이 B팀에서 제공해야 하는 API가 늦어짐에 따라 2주간 중단될 위기에 처했습니다.",
+    "question": "이 의존성 문제를 해결하기 위한 조치로 부적절한 것은?",
+    "choices": [
+      "B팀에 인력을 강제로 파견하여 개발을 돕게 한다.",
+      "B팀과 협의하여 실제 구현 대신 인터페이스만 맞춘 Mock API를 먼저 제공받아 A팀이 개발을 이어가게 한다.",
+      "양 팀 리더와 미팅을 잡고 우선순위를 재조정한다.",
+      "프로젝트 로드맵 상의 리스크로 등록하고 상위에 보고한다."
+    ],
+    "correct_answer": "B팀에 인력을 강제로 파견하여 개발을 돕게 한다.",
+    "explanation": "강제 인력 파견은 팀의 컨텍스트 스위칭 비용을 높이고 팀 분위기를 저해할 수 있습니다. Mock API 활용 등이 훨씬 실무적이고 효과적인 전략입니다."
+  },
+  {
+    "question_id": 68,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "scenario_based",
+    "category": "Quality Assurance",
+    "subcategory": "Bug Triage",
+    "skills_required": ["QA Strategy"],
+    "scenario": "출시 당일 아침, 서비스 전체에 영향을 주지는 않지만 특정 구형 브라우저에서 화면이 약간 깨지는 버그가 발견되었습니다.",
+    "question": "어떤 결정을 내리시겠습니까?",
+    "choices": [
+      "버그가 발견되었으므로 무조건 출시를 취소한다.",
+      "버그를 수정할 때까지 출시를 무기한 연기한다.",
+      "비즈니스 영향도와 타겟 유저 비율을 고려하여 '알려진 이슈(Known Issue)'로 분류하고 예정대로 출시 후 패치를 진행한다.",
+      "사용자들에게 해당 브라우저를 쓰지 말라고 공지한다."
+    ],
+    "correct_answer": "비즈니스 영향도와 타겟 유저 비율을 고려하여 '알려진 이슈(Known Issue)'로 분류하고 예정대로 출시 후 패치를 진행한다.",
+    "explanation": "TPM은 완벽함과 출시 시점 사이의 트레이드오프를 결정해야 합니다. 영향도가 낮다면 출시 프로세스를 유지하는 것이 비즈니스에 유리할 수 있습니다."
+  },
+  {
+    "question_id": 69,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "scenario_based",
+    "category": "Change Management",
+    "subcategory": "Technical Debt",
+    "skills_required": ["Technical Debt Management"],
+    "scenario": "개발 팀이 현재 시스템의 기술 부채가 너무 심각하여 신규 기능 개발보다 리팩토링이 우선되어야 한다고 강력히 주장합니다.",
+    "question": "비즈니스 조직과 개발 팀 사이에서 어떻게 조율하시겠습니까?",
+    "choices": [
+      "비즈니스 가치가 없으므로 리팩토링 요청을 묵살한다.",
+      "전체 개발 시간의 일정 비율(예: 20%)을 기술 부채 해결에 고정적으로 할당하는 제도를 제안한다.",
+      "개발 팀원들을 모두 교체한다.",
+      "신규 기능 개발을 6개월간 전면 중단하고 리팩토링만 한다."
+    ],
+    "correct_answer": "전체 개발 시간의 일정 비율(예: 20%)을 기술 부채 해결에 고정적으로 할당하는 제도를 제안한다.",
+    "explanation": "기술 부채는 관리의 대상입니다. 비즈니스와 기술의 균형을 위해 지속적인 투자가 가능하도록 프로세스를 만드는 것이 TPM의 역할입니다."
+  },
+  {
+    "question_id": 70,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "scenario_based",
+    "category": "Communication",
+    "subcategory": "Incident Communication",
+    "skills_required": ["Incident Response"],
+    "scenario": "현재 서비스 장애가 발생하여 30분째 복구 중입니다. 마케팅 부서에서 광고 집행 중단 여부를 결정하기 위해 상황 설명을 요구합니다.",
+    "question": "어떻게 커뮤니케이션하는 것이 가장 좋습니까?",
+    "choices": [
+      "장애 원인에 대한 상세한 DB 쿼리문과 시스템 아키텍처를 보내준다.",
+      "현재 상황, 예상 복구 시간(ETA), 서비스 영향 범위를 비기술적인 언어로 요약하여 공유한다.",
+      "복구 중이니 방해하지 말라고 답변한다.",
+      "장애가 아니라고 거짓말을 한다."
+    ],
+    "correct_answer": "현재 상황, 예상 복구 시간(ETA), 서비스 영향 범위를 비기술적인 언어로 요약하여 공유한다.",
+    "explanation": "타 부서와의 소통에서는 기술적 디테일보다 비즈니스 관점의 영향도와 복구 시점을 명확히 전달하는 것이 중요합니다."
+  },
+  {
+    "question_id": 71,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "real_world_case",
+    "category": "Infrastructure",
+    "subcategory": "Cloud Migration",
+    "skills_required": ["Cloud Migration", "Strategy"],
+    "scenario": "온프레미스에서 클라우드로 서비스를 이전하려고 합니다. 서비스 중단 시간을 최소화하는 것이 가장 큰 목표입니다.",
+    "question": "다음 중 어떤 마이그레이션 전략이 가장 적절합니까?",
+    "choices": [
+      "Big Bang (전체를 한 번에 전환)",
+      "Blue-Green Deployment 또는 Canary 방식을 활용한 단계적 전환",
+      "데이터만 먼저 옮기고 서버는 1년 뒤에 옮김",
+      "무작정 서버를 끄고 새 서버를 켬"
+    ],
+    "correct_answer": "Blue-Green Deployment 또는 Canary 방식을 활용한 단계적 전환",
+    "explanation": "단계적 전환은 리스크를 분산시키고 문제 발생 시 빠른 롤백을 가능하게 하여 서비스 가용성을 보장합니다."
+  },
+  {
+    "question_id": 72,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "real_world_case",
+    "category": "Database",
+    "subcategory": "Global Service",
+    "skills_required": ["Database Architecture"],
+    "scenario": "한국에서 운영하던 서비스를 미국으로 확장하려고 합니다. 미국 사용자가 한국 DB에 접속하니 지연 시간이 300ms 이상 발생합니다.",
+    "question": "가장 먼저 검토해야 할 기술적 해결책은?",
+    "choices": [
+      "한국 서버의 사양을 대폭 높인다.",
+      "미국 리전에 읽기 전용 복제본(Read Replica)을 생성하거나 멀티 리전 DB 구조를 도입한다.",
+      "사용자들에게 더 빠른 인터넷을 쓰라고 권고한다.",
+      "데이터베이스의 인덱스를 재구성한다."
+    ],
+    "correct_answer": "미국 리전에 읽기 전용 복제본(Read Replica)을 생성하거나 멀티 리전 DB 구조를 도입한다.",
+    "explanation": "물리적 거리로 인한 네트워크 지연은 데이터의 물리적 위치를 사용자 근처로 이동시켜 해결해야 합니다."
+  },
+  {
+    "question_id": 73,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "real_world_case",
+    "category": "Project Management",
+    "subcategory": "Agile Transformation",
+    "skills_required": ["Agile", "Change Management"],
+    "scenario": "전통적인 워터폴(Waterfall) 방식을 고수하던 팀에 애자일을 도입하려 합니다. 팀원들이 변화에 강한 거부감을 느끼고 있습니다.",
+    "question": "TPM으로서 취해야 할 전략은?",
+    "choices": [
+      "지키지 않을 시 인사상 불이익을 주겠다고 경고한다.",
+      "한 팀이나 한 프로젝트를 파일럿(Pilot)으로 선정하여 작은 성공 사례를 먼저 만든 후 확산시킨다.",
+      "하루아침에 모든 프로세스를 애자일로 바꾼다.",
+      "애자일 관련 서적을 10권씩 읽게 한다."
+    ],
+    "correct_answer": "한 팀이나 한 프로젝트를 파일럿(Pilot)으로 선정하여 작은 성공 사례를 먼저 만든 후 확산시킨다.",
+    "explanation": "조직의 문화적 변화는 점진적인 접근과 성공 경험의 공유를 통해 신뢰를 얻는 과정이 필수적입니다."
+  },
+  {
+    "question_id": 74,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "real_world_case",
+    "category": "API",
+    "subcategory": "Third-party Integration",
+    "skills_required": ["API Strategy", "Vendor Management"],
+    "scenario": "우리 앱에서 결제 기능을 위해 외부 PG사 API를 연동했습니다. 하지만 PG사 서버가 가끔씩 느려져 우리 앱의 전체 성능까지 저하됩니다.",
+    "question": "이를 방지하기 위한 설계 패턴은?",
+    "choices": [
+      "Retry (재시도)",
+      "Circuit Breaker (서킷 브레이커)",
+      "Load Balancing (로드 밸런싱)",
+      "Caching (캐싱)"
+    ],
+    "correct_answer": "Circuit Breaker (서킷 브레이커)",
+    "explanation": "외부 시스템의 장애나 지연이 내부 시스템으로 전파되지 않도록 차단하고 대체 로직을 실행하게 하는 패턴입니다."
+  },
+  {
+    "question_id": 75,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "real_world_case",
+    "category": "Security",
+    "subcategory": "Data Privacy",
+    "skills_required": ["Security Compliance", "GDPR"],
+    "scenario": "유럽 사용자를 대상으로 서비스를 출시하게 되었습니다. 법무팀에서 GDPR 준수를 강력히 요구합니다.",
+    "question": "기술적으로 가장 먼저 점검해야 할 사항은?",
+    "choices": [
+      "서버의 방화벽 설정",
+      "개인 정보의 수집 동의 절차와 데이터의 암호화 및 삭제 권리 보장 로직",
+      "코드의 실행 속도",
+      "UI 디자인의 세련미"
+    ],
+    "correct_answer": "개인 정보의 수집 동의 절차와 데이터의 암호화 및 삭제 권리 보장 로직",
+    "explanation": "GDPR은 데이터 주체의 권리와 보호를 중시하므로, 기술적으로 데이터 관리 생명 주기가 규정에 부합하는지 확인해야 합니다."
+  },
+  {
+    "question_id": 76,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "algorithm_design",
+    "category": "System Design",
+    "subcategory": "Load Balancing",
+    "skills_required": ["Algorithm", "Architecture"],
+    "scenario": "서버들의 사양이 서로 다릅니다. (예: A서버 CPU 8코어, B서버 CPU 2코어)",
+    "question": "이 환경에서 부하를 가장 효율적으로 분산할 수 있는 로드 밸런싱 알고리즘은?",
+    "choices": [
+      "Round Robin (라운드 로빈)",
+      "Least Connection (최소 연결 방식)",
+      "Weighted Round Robin (가중치 기반 라운드 로빈)",
+      "IP Hash"
+    ],
+    "correct_answer": "Weighted Round Robin (가중치 기반 라운드 로빈)",
+    "explanation": "가중치 기반 방식은 서버의 처리 능력에 따라 더 많은 요청을 보낼 수 있도록 하여 자원을 효율적으로 활용하게 합니다."
+  },
+  {
+    "question_id": 77,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "algorithm_design",
+    "category": "Cache",
+    "subcategory": "Eviction Policy",
+    "skills_required": ["Cache Architecture"],
+    "scenario": "제한된 메모리 공간에서 캐시를 운영 중입니다. 새로운 데이터를 넣기 위해 가장 오랫동안 '사용되지 않은' 데이터를 삭제하려고 합니다.",
+    "question": "어떤 알고리즘을 적용해야 합니까?",
+    "choices": [
+      "FIFO (First In First Out)",
+      "LRU (Least Recently Used)",
+      "LFU (Least Frequently Used)",
+      "RR (Random Replacement)"
+    ],
+    "correct_answer": "LRU (Least Recently Used)",
+    "explanation": "LRU는 참조된 지 가장 오래된 항목을 먼저 교체하는 방식으로, 캐시 효율성을 높이는 데 널리 쓰입니다."
+  },
+  {
+    "question_id": 78,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "algorithm_design",
+    "category": "Network",
+    "subcategory": "Backoff Strategy",
+    "skills_required": ["Reliable Messaging"],
+    "scenario": "메시지 큐 전송 실패 시 재시도를 수행합니다. 실패가 반복될수록 재시도 간격을 점진적으로 늘려 서버의 부담을 줄이고자 합니다.",
+    "question": "이 방식의 명칭은?",
+    "choices": [
+      "Exponential Backoff (지수 백오프)",
+      "Fixed Interval Retry",
+      "Linear Backoff",
+      "Immediate Retry"
+    ],
+    "correct_answer": "Exponential Backoff (지수 백오프)",
+    "explanation": "지수 백오프는 재시도 대기 시간을 2의 거듭제곱 등으로 늘려가며 네트워크 혼잡이나 서버 과부하를 방지합니다."
+  },
+  {
+    "question_id": 79,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "algorithm_design",
+    "category": "Search",
+    "subcategory": "Full Text Search",
+    "skills_required": ["Indexing"],
+    "scenario": "수백만 건의 게시글에서 특정 단어가 포함된 글을 빠르게 찾아야 합니다. DB의 LIKE %word% 검색이 너무 느립니다.",
+    "question": "어떤 기술적 접근이 필요합니까?",
+    "choices": [
+      "데이터를 엑셀로 내려받아 찾는다.",
+      "역색인(Inverted Index) 구조를 사용하는 검색 엔진(예: Elasticsearch)을 도입한다.",
+      "모든 데이터를 메모리에 로드한다.",
+      "쿼리를 여러 번 나눠서 실행한다."
+    ],
+    "correct_answer": "역색인(Inverted Index) 구조를 사용하는 검색 엔진(예: Elasticsearch)을 도입한다.",
+    "explanation": "역색인은 본문 내의 단어들을 미리 인덱싱하여 키워드 검색 속도를 비약적으로 향상시킵니다."
+  },
+  {
+    "question_id": 80,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "algorithm_design",
+    "category": "Reliability",
+    "subcategory": "Distributed ID Generation",
+    "skills_required": ["Distributed Systems"],
+    "scenario": "여러 서버에서 동시에 생성되는 주문 번호가 중복되지 않으면서도 시간 순서대로 정렬 가능해야 합니다.",
+    "question": "어떤 방식이 가장 적절합니까?",
+    "choices": [
+      "데이터베이스의 Auto Increment",
+      "UUID v4",
+      "Snowflake ID (Timestamp + Machine ID + Sequence)",
+      "임의의 난수 생성"
+    ],
+    "correct_answer": "Snowflake ID (Timestamp + Machine ID + Sequence)",
+    "explanation": "Snowflake ID는 분산 환경에서 고유성을 보장하면서도 타임스탬프를 포함하고 있어 정렬이 가능하다는 장점이 있습니다."
+  },
+  {
+    "question_id": 81,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "performance_optimization",
+    "category": "Frontend",
+    "subcategory": "Web Vitals",
+    "skills_required": ["Frontend Performance"],
+    "scenario": "모바일 사용자들이 웹 페이지 로딩 속도가 너무 느리다고 불평합니다. 특히 첫 화면이 뜨는 데 시간이 오래 걸립니다.",
+    "question": "가장 효과적인 최적화 기법은?",
+    "choices": [
+      "이미지 지연 로딩(Lazy Loading) 및 리소스 압축",
+      "서버의 RAM 증설",
+      "폰트 크기를 줄임",
+      "자바스크립트 주석 제거"
+    ],
+    "correct_answer": "이미지 지연 로딩(Lazy Loading) 및 리소스 압축",
+    "explanation": "필요한 리소스만 먼저 불러오고 이미지 용량을 최적화하는 것이 초기 로딩 속도(LCP 등) 개선에 가장 큰 영향을 줍니다."
+  },
+  {
+    "question_id": 82,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "performance_optimization",
+    "category": "Database",
+    "subcategory": "Query Tuning",
+    "skills_required": ["Database Performance"],
+    "scenario": "특정 API 호출 시 실행되는 SQL이 'Filesort'와 'Full Table Scan'을 수행하고 있어 매우 느립니다.",
+    "question": "이 문제를 해결하기 위해 가장 먼저 해야 할 일은?",
+    "choices": [
+      "데이터를 백업하고 삭제한다.",
+      "EXPLAIN 명령어를 통해 실행 계획을 분석하고 적절한 복합 인덱스(Composite Index)를 추가한다.",
+      "데이터베이스 파라미터를 초기화한다.",
+      "서버 대수를 늘린다."
+    ],
+    "correct_answer": "EXPLAIN 명령어를 통해 실행 계획을 분석하고 적절한 복합 인덱스(Composite Index)를 추가한다.",
+    "explanation": "실행 계획 분석은 DB 성능 최적화의 첫걸음이며, 비효율적인 조인이나 정렬을 인덱스로 해결할 수 있습니다."
+  },
+  {
+    "question_id": 83,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "performance_optimization",
+    "category": "Backend",
+    "subcategory": "Caching Strategy",
+    "skills_required": ["Redis", "Backend Performance"],
+    "scenario": "메인 페이지의 베스트셀러 목록이 바뀔 때마다 DB에 과도한 부하가 발생합니다. 이 목록은 1시간에 한 번만 갱신되면 됩니다.",
+    "question": "적용할 수 있는 가장 좋은 전략은?",
+    "choices": [
+      "DB 서버를 최고 사양으로 교체한다.",
+      "목록 데이터를 Redis 캐시에 저장하고 1시간의 TTL을 설정한다.",
+      "사용자가 접속할 때마다 실시간으로 계산하게 한다.",
+      "데이터베이스의 모든 데이터를 메모리에 올린다."
+    ],
+    "correct_answer": "목록 데이터를 Redis 캐시에 저장하고 1시간의 TTL을 설정한다.",
+    "explanation": "변경 빈도가 낮고 조회 빈도가 높은 데이터는 캐싱을 통해 DB 부하를 획기적으로 줄일 수 있습니다."
+  },
+  {
+    "question_id": 84,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "performance_optimization",
+    "category": "Network",
+    "subcategory": "Payload Reduction",
+    "skills_required": ["Web Performance"],
+    "scenario": "모바일 앱의 데이터 소모량이 너무 많다는 의견이 있습니다. API 응답 데이터가 매우 큽니다.",
+    "question": "성능 개선 및 데이터 절감을 위해 고려해야 할 사항은?",
+    "choices": [
+      "모든 응답을 텍스트 파일로 보낸다.",
+      "Gzip 또는 Brotli 압축을 적용하고, 응답 데이터에서 불필요한 필드를 제거한다.",
+      "이미지를 모두 삭제한다.",
+      "API 호출 횟수를 무조건 줄인다."
+    ],
+    "correct_answer": "Gzip 또는 Brotli 압축을 적용하고, 응답 데이터에서 불필요한 필드를 제거한다.",
+    "explanation": "HTTP 압축 전송과 데이터 다이어트는 네트워크 전송 시간을 줄이고 사용자 데이터 사용량을 절감합니다."
+  },
+  {
+    "question_id": 85,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "performance_optimization",
+    "category": "Infrastructure",
+    "subcategory": "Async Processing",
+    "skills_required": ["Message Queue"],
+    "scenario": "사용자가 게시글을 올릴 때 '알림 발송', '포인트 적립', '검색 인덱스 업데이트'를 모두 처리하느라 응답 시간이 3초나 걸립니다.",
+    "question": "어떻게 개선하는 것이 가장 좋습니까?",
+    "choices": [
+      "사용자에게 3초를 기다려 달라고 안내한다.",
+      "핵심 작업(게시글 저장)만 동기적으로 처리하고, 나머지는 메시지 큐(Kafka/RabbitMQ)를 이용해 비동기로 처리한다.",
+      "성능이 좋은 언어로 전체를 다시 짠다.",
+      "모든 로직을 하나의 거대한 SQL 트리거로 처리한다."
+    ],
+    "correct_answer": "핵심 작업(게시글 저장)만 동기적으로 처리하고, 나머지는 메시지 큐(Kafka/RabbitMQ)를 이용해 비동기로 처리한다.",
+    "explanation": "사용자에게 즉각적인 응답이 필요 없는 부차적인 작업들은 비동기 처리를 통해 사용자 경험을 개선할 수 있습니다."
+  },
+  {
+    "question_id": 86,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "performance_estimation",
+    "category": "Capacity Planning",
+    "subcategory": "Throughput Calculation",
+    "skills_required": ["Performance Estimation"],
+    "scenario": "서버 한 대가 초당 100개의 요청(RPS)을 처리할 수 있고, 피크 타임 예상 트래픽은 초당 450개입니다. 안전을 위해 20%의 여유 공간(Headroom)을 두려고 합니다.",
+    "question": "최소 몇 대의 서버가 필요합니까?",
+    "choices": [
+      "5대",
+      "6대",
+      "4대",
+      "7대"
+    ],
+    "correct_answer": "6대",
+    "explanation": "450 RPS / 100 RPS = 4.5대. 여기에 20% 여유를 더하면 4.5 * 1.2 = 5.4대. 올림하여 최소 6대가 필요합니다."
+  },
+  {
+    "question_id": 87,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "performance_estimation",
+    "category": "Storage",
+    "subcategory": "Storage Sizing",
+    "skills_required": ["Storage Planning"],
+    "scenario": "매일 100만 건의 로그 데이터가 생성되며, 한 건당 평균 크기는 1KB입니다. 이 데이터를 1년간 보관해야 합니다.",
+    "question": "필요한 총 스토리지 용량은 대략 얼마입니까? (1GB = 1,000MB, 1TB = 1,000GB로 단순 계산)",
+    "choices": [
+      "약 36.5GB",
+      "약 365GB",
+      "약 3.6TB",
+      "약 36TB"
+    ],
+    "correct_answer": "약 365GB",
+    "explanation": "1,000,000 건 * 1KB = 1,000,000 KB = 1,000 MB = 1 GB (하루치). 1GB * 365일 = 365GB입니다."
+  },
+  {
+    "question_id": 88,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "performance_estimation",
+    "category": "Network",
+    "subcategory": "Bandwidth Calculation",
+    "skills_required": ["Network Planning"],
+    "scenario": "동시 접속자 1,000명이 평균 2MB 크기의 고화질 이미지를 동시에 다운로드합니다.",
+    "question": "서버 네트워크 카드가 받아내야 할 일시적인 부하는 총 얼마입니까?",
+    "choices": [
+      "200MB",
+      "2GB",
+      "20GB",
+      "200GB"
+    ],
+    "correct_answer": "2GB",
+    "explanation": "1,000명 * 2MB = 2,000MB = 2GB입니다."
+  },
+  {
+    "question_id": 89,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "performance_estimation",
+    "category": "Database",
+    "subcategory": "Concurrent Connections",
+    "skills_required": ["Database Performance"],
+    "scenario": "서버 10대가 각각 최대 50개의 DB 커넥션을 맺도록 설정되어 있습니다. DB 서버의 `max_connections` 설정값은 최소 얼마 이상이어야 합니까?",
+    "question": "운영 안정성을 고려한 최소 설정값은?",
+    "choices": [
+      "50",
+      "500",
+      "600 (여유분 포함)",
+      "100"
+    ],
+    "correct_answer": "600 (여유분 포함)",
+    "explanation": "서버 10대 * 50개 = 500개의 커넥션이 발생합니다. 운영 툴이나 백업 등을 고려하여 최소 500 초과, 보통 20% 정도의 여유를 둡니다."
+  },
+  {
+    "question_id": 90,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "performance_estimation",
+    "category": "Memory",
+    "subcategory": "Cache Sizing",
+    "skills_required": ["Redis Planning"],
+    "scenario": "사용자 세션 정보를 Redis에 저장합니다. 세션 한 개당 2KB를 차지하며, 최대 동시 접속 유저는 10만 명입니다.",
+    "question": "Redis 서버에 할당해야 할 최소 메모리 용량은?",
+    "choices": [
+      "200MB",
+      "2GB",
+      "20GB",
+      "2MB"
+    ],
+    "correct_answer": "200MB",
+    "explanation": "100,000 * 2KB = 200,000KB = 200MB입니다."
+  },
+  {
+    "question_id": 91,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "capacity_planning",
+    "category": "Infrastructure",
+    "subcategory": "Cloud Sizing",
+    "skills_required": ["Cloud Infrastructure"],
+    "scenario": "내년에 트래픽이 현재보다 3배 증가할 것으로 예상됩니다. 현재 월 클라우드 비용은 1,000만 원이며, 서버 리소스 사용률은 평균 40%입니다.",
+    "question": "TPM으로서 수립할 용량 계획으로 가장 합리적인 것은?",
+    "choices": [
+      "지금 당장 서버 대수를 3배로 늘린다.",
+      "현재 사용률이 낮으므로 트래픽 추이를 모니터링하며 오토 스케일링 정책을 최적화하고, 예약 인스턴스(RI)를 통해 비용 효율성을 높인다.",
+      "성능에 상관없이 무조건 비용을 50% 절감한다.",
+      "트래픽이 늘어날 때까지 아무 조치도 하지 않는다."
+    ],
+    "correct_answer": "현재 사용률이 낮으므로 트래픽 추이를 모니터링하며 오토 스케일링 정책을 최적화하고, 예약 인스턴스(RI)를 통해 비용 효율성을 높인다.",
+    "explanation": "현재 사용률(40%)에 여유가 있으므로 단순 증설보다는 효율적인 스케일링 정책과 구매 옵션 변경이 전략적입니다."
+  },
+  {
+    "question_id": 92,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "capacity_planning",
+    "category": "Storage",
+    "subcategory": "Disk Space Management",
+    "skills_required": ["Storage Strategy"],
+    "scenario": "DB 스토리지의 80%가 찼습니다. 현재 매달 5%씩 데이터가 늘어나는 추세입니다.",
+    "question": "증설을 고려해야 하는 가장 적절한 시점은?",
+    "choices": [
+      "100%가 되었을 때",
+      "95%가 되었을 때",
+      "안전 임계값인 85~90%에 도달하기 전인 1~2개월 이내",
+      "지금 당장 모든 데이터를 삭제하여 0%로 만든다."
+    ],
+    "correct_answer": "안전 임계값인 85~90%에 도달하기 전인 1~2개월 이내",
+    "explanation": "스토리지는 가득 차기 전에 리드 타임을 고려하여 선제적으로 대응해야 장애를 예방할 수 있습니다."
+  },
+  {
+    "question_id": 93,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "capacity_planning",
+    "category": "Compute",
+    "subcategory": "GPU Resources",
+    "skills_required": ["AI Infrastructure"],
+    "scenario": "AI 모델 추론 서비스를 운영하려 합니다. GPU 메모리 점유율이 개당 15GB인데, 보유한 GPU는 16GB 사양입니다.",
+    "question": "동시 요청을 여러 개 처리할 때 발생할 수 있는 문제는?",
+    "choices": [
+      "화면 노이즈 발생",
+      "OOM (Out Of Memory) 발생으로 인한 서비스 중단 가능성 매우 높음",
+      "네트워크 지연",
+      "디스크 용량 부족"
+    ],
+    "correct_answer": "OOM (Out Of Memory) 발생으로 인한 서비스 중단 가능성 매우 높음",
+    "explanation": "메모리 여유가 거의 없으므로 추가적인 연산 부하나 여러 요청이 겹칠 경우 바로 메모리 부족 에러가 발생합니다."
+  },
+  {
+    "question_id": 94,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "capacity_planning",
+    "category": "Network",
+    "subcategory": "IP Address Planning",
+    "skills_required": ["Networking"],
+    "scenario": "새로운 서브넷을 구축하며 /24 대역(IP 256개)을 할당했습니다. 향후 마이크로서비스 개수가 500개로 늘어날 예정입니다.",
+    "question": "이 계획의 문제점은?",
+    "choices": [
+      "IP 주소가 너무 많아 관리가 힘들다.",
+      "할당 가능한 IP 주소가 부족하여 서비스 확장에 문제가 생긴다.",
+      "네트워크 속도가 너무 빨라진다.",
+      "문제가 전혀 없다."
+    ],
+    "correct_answer": "할당 가능한 IP 주소가 부족하여 서비스 확장에 문제가 생긴다.",
+    "explanation": "/24는 최대 254개 정도의 가용 IP만 제공하므로 500개의 서비스를 수용할 수 없습니다. 더 큰 대역(/23 등)이 필요합니다."
+  },
+  {
+    "question_id": 95,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "capacity_planning",
+    "category": "Backend",
+    "subcategory": "Rate Limiting Capacity",
+    "skills_required": ["Rate Limiting"],
+    "scenario": "외부 파트너사가 우리 API를 호출할 때 초당 10회(10 TPS)로 제한을 걸어두었습니다. 파트너사가 마케팅 캠페인을 통해 초당 100회의 호출을 보낼 예정이라고 합니다.",
+    "question": "TPM으로서 가장 먼저 해야 할 일은?",
+    "choices": [
+      "무조건 제한을 푼다.",
+      "내부 시스템의 처리 용량을 검토하고, 필요한 만큼 쿼터(Quota)를 상향 조정한 후 모니터링을 강화한다.",
+      "파트너사의 요청을 무시한다.",
+      "파트너사에게 캠페인을 취소하라고 한다."
+    ],
+    "correct_answer": "내부 시스템의 처리 용량을 검토하고, 필요한 만큼 쿼터(Quota)를 상향 조정한 후 모니터링을 강화한다.",
+    "explanation": "비즈니스 요구에 맞춰 기술적 제약을 완화하되, 내부 시스템에 미칠 영향을 먼저 평가하는 것이 올바른 절차입니다."
+  },
+  {
+    "question_id": 96,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "scalability_planning",
+    "category": "Database",
+    "subcategory": "Sharding",
+    "skills_required": ["Database Scalability"],
+    "scenario": "단일 데이터베이스의 크기가 10TB를 넘어섰고 성능이 급격히 저하되고 있습니다. 수직 확장(Scale-up)은 이미 한계에 도달했습니다.",
+    "question": "권장되는 다음 단계의 아키텍처는?",
+    "choices": [
+      "DB를 하나 더 만든다.",
+      "데이터베이스 샤딩(Sharding)을 도입하여 데이터를 분산 저장한다.",
+      "모든 데이터를 텍스트 파일로 저장한다.",
+      "데이터를 압축만 한다."
+    ],
+    "correct_answer": "데이터베이스 샤딩(Sharding)을 도입하여 데이터를 분산 저장한다.",
+    "explanation": "샤딩은 데이터를 여러 DB 인스턴스에 분산하여 수평적 확장을 가능하게 하는 기법입니다."
+  },
+  {
+    "question_id": 97,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "scalability_planning",
+    "category": "Architecture",
+    "subcategory": "Stateless Application",
+    "skills_required": ["System Architecture"],
+    "scenario": "애플리케이션을 스케일 아웃(Scale-out)하려고 하는데, 사용자 세션 정보가 특정 서버의 메모리에 저장되어 있어 로드밸런싱 시 로그인이 풀리는 문제가 있습니다.",
+    "question": "확장성을 확보하기 위한 올바른 해결책은?",
+    "choices": [
+      "로드밸런서에서 'Sticky Session' 기능을 영구적으로 사용한다.",
+      "애플리케이션을 '무상태(Stateless)'로 만들고 세션 정보를 Redis와 같은 공용 저장소로 분리한다.",
+      "서버 대수를 늘리지 않는다.",
+      "사용자에게 한 서버만 접속하라고 안내한다."
+    ],
+    "correct_answer": "애플리케이션을 '무상태(Stateless)'로 만들고 세션 정보를 Redis와 같은 공용 저장소로 분리한다.",
+    "explanation": "무상태 아키텍처는 서버 확장을 자유롭게 하여 진정한 확장성을 제공합니다."
+  },
+  {
+    "question_id": 98,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "scalability_planning",
+    "category": "Infrastructure",
+    "subcategory": "Global Traffic Management",
+    "skills_required": ["Global Scalability"],
+    "scenario": "글로벌 서비스를 제공하면서 각 대륙의 사용자에게 가장 가까운 리전의 서버로 접속하게 하고 싶습니다.",
+    "question": "어떤 기술을 활용해야 합니까?",
+    "choices": [
+      "강력한 방화벽",
+      "지연 시간 기반 라우팅(Latency-based Routing) 기능을 가진 DNS",
+      "단일 고성능 라우터",
+      "전 세계에 같은 IP 주소를 부여"
+    ],
+    "correct_answer": "지연 시간 기반 라우팅(Latency-based Routing) 기능을 가진 DNS",
+    "explanation": "Route 53 등의 DNS 서비스는 사용자의 위치나 지연 시간을 계산하여 최적의 엔드포인트로 연결해줍니다."
+  },
+  {
+    "question_id": 99,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "scalability_planning",
+    "category": "Storage",
+    "subcategory": "Object Storage",
+    "skills_required": ["Storage Architecture"],
+    "scenario": "수억 개의 이미지를 저장하고 서비스해야 합니다. 기존 NFS(Network File System) 방식으로는 파일 개수가 늘어남에 따라 성능과 관리 이슈가 발생합니다.",
+    "question": "대규모 확장이 가능한 저장소 대안은?",
+    "choices": [
+      "로컬 하드디스크",
+      "클라우드 오브젝트 스토리지 (예: AWS S3)",
+      "메모리 DB",
+      "USB 메모리"
+    ],
+    "correct_answer": "클라우드 오브젝트 스토리지 (예: AWS S3)",
+    "explanation": "오브젝트 스토리지는 평면적인 구조로 되어 있어 수십억 개의 객체를 성능 저하 없이 저장하고 관리할 수 있습니다."
+  },
+  {
+    "question_id": 100,
+    "job_role": "Technical Program Manager",
+    "difficulty": "middle_level",
+    "question_type": "scalability_planning",
+    "category": "Messaging",
+    "subcategory": "Pub/Sub Scalability",
+    "skills_required": ["Message Queue"],
+    "scenario": "이벤트 처리량이 초당 수만 건으로 늘어났습니다. 기존의 단일 큐 서버가 부하를 견디지 못하고 있습니다.",
+    "question": "확장 가능한 이벤트 스트리밍 아키텍처로 적절한 것은?",
+    "choices": [
+      "로그 파일을 텍스트로 보관",
+      "파티셔닝(Partitioning)이 가능한 Kafka 클러스터 도입",
+      "이메일로 이벤트 발송",
+      "모든 이벤트를 DB 테이블 하나에 저장"
+    ],
+    "correct_answer": "파티셔닝(Partitioning)이 가능한 Kafka 클러스터 도입",
+    "explanation": "Kafka는 토픽을 여러 파티션으로 나누어 병렬 처리를 가능하게 함으로써 높은 확장성을 제공합니다."
+  },
+  {
+    "question_id": 101,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "Distributed Systems",
+    "subcategory": "High Availability",
+    "skills_required": ["System Architecture", "Availability"],
+    "scenario": "초당 100만 건의 쓰기 요청이 발생하는 글로벌 로그 수집 시스템을 설계해야 합니다. 데이터 손실은 절대 없어야 하며, 특정 리전 장애 시에도 서비스가 유지되어야 합니다.",
+    "question": "가장 적절한 아키텍처 구성 요소 조합은?",
+    "choices": [
+      "단일 고성능 MySQL + 단일 로드밸런서",
+      "다중 리전 Kafka 클러스터 + 오브젝트 스토리지 + 리전 간 복제",
+      "각 서버에 로컬 텍스트 파일로 저장 후 수동 백업",
+      "Redis 캐시 전용 서버 1대"
+    ],
+    "correct_answer": "다중 리전 Kafka 클러스터 + 오브젝트 스토리지 + 리전 간 복제",
+    "explanation": "대규모 쓰기 부하를 견디기 위해 메시지 큐(Kafka)가 필수적이며, 리전 장애 대응을 위해 멀티 리전 아키텍처와 복제 전략이 필요합니다."
+  },
+  {
+    "question_id": 102,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "Fintech",
+    "subcategory": "Consistency",
+    "skills_required": ["Distributed Transactions", "Consistency"],
+    "scenario": "은행 송금 시스템을 설계 중입니다. A 계좌에서 돈이 빠져나가고 B 계좌에 돈이 들어오는 과정에서 장애가 발생해도 데이터 불일치가 발생하면 안 됩니다.",
+    "question": "분산 환경에서 이를 보장하기 위한 가장 확실한 방법은?",
+    "choices": [
+      "성능을 위해 비동기적으로 처리하고 나중에 맞춤",
+      "2단계 커밋(2-Phase Commit) 또는 Saga 패턴을 이용한 분산 트랜잭션 관리",
+      "로그만 남기고 수동으로 복구",
+      "모든 요청을 하나의 단일 스레드 서버에서 처리"
+    ],
+    "correct_answer": "2단계 커밋(2-Phase Commit) 또는 Saga 패턴을 이용한 분산 트랜잭션 관리",
+    "explanation": "금융 서비스와 같이 높은 일관성이 요구되는 경우, 분산 트랜잭션 처리를 위해 2PC나 Saga 패턴(보상 트랜잭션)을 활용해야 합니다."
+  },
+  {
+    "question_id": 103,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "E-commerce",
+    "subcategory": "Traffic Spike",
+    "skills_required": ["Scalability", "Queuing"],
+    "scenario": "한정판 운동화 판매 이벤트로 인해 특정 시간에 평소의 1,000배가 넘는 트래픽이 몰릴 것으로 예상됩니다. 시스템 전체가 다운되는 것을 방지해야 합니다.",
+    "question": "어떤 기술적 장치를 도입하시겠습니까?",
+    "choices": [
+      "서버 대수를 실시간으로 늘리는 것만 믿고 기다림",
+      "가상 대기열(Virtual Waiting Room) 시스템과 요청 속도 제한(Rate Limiting) 도입",
+      "모든 이미지를 고해상도로 교체",
+      "DB의 모든 인덱스 삭제"
+    ],
+    "correct_answer": "가상 대기열(Virtual Waiting Room) 시스템과 요청 속도 제한(Rate Limiting) 도입",
+    "explanation": "예상 범위를 넘어서는 스파이크 트래픽 상황에서는 대기열을 통해 진입 속도를 조절하여 백엔드 시스템을 보호하는 것이 필수적입니다."
+  },
+  {
+    "question_id": 104,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "Streaming",
+    "subcategory": "Content Delivery",
+    "skills_required": ["CDN", "Network Architecture"],
+    "scenario": "전 세계 수백만 명에게 실시간 축구 중계를 스트리밍해야 합니다. 끊김 없는 시청이 최우선 과제입니다.",
+    "question": "가장 핵심적인 인프라 구성은?",
+    "choices": [
+      "중앙 집중식 단일 거대 서버",
+      "글로벌 CDN(Content Delivery Network) 활용 및 Edge Computing 적용",
+      "모든 사용자에게 VPN 설치 권장",
+      "데이터베이스 샤딩"
+    ],
+    "correct_answer": "글로벌 CDN(Content Delivery Network) 활용 및 Edge Computing 적용",
+    "explanation": "대규모 스트리밍은 지연 시간을 줄이고 대역폭을 확보하기 위해 사용자 근처(Edge)에서 데이터를 전달하는 CDN 아키텍처가 핵심입니다."
+  },
+  {
+    "question_id": 105,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "Social Media",
+    "subcategory": "Feed System",
+    "skills_required": ["NoSQL", "Data Modeling"],
+    "scenario": "팔로워가 1억 명인 연예인이 게시글을 올렸을 때, 모든 팔로워의 타임라인에 즉시 글이 나타나야 합니다. 'Write Amplification' 문제가 우려됩니다.",
+    "question": "이를 해결하기 위한 하이브리드 전략은?",
+    "choices": [
+      "모든 사용자에게 푸시 알림만 보냄",
+      "유명인은 Pull 방식(조회 시점에 생성), 일반인은 Push 방식(Fan-out)을 혼용하여 처리",
+      "모든 데이터를 관계형 DB에 넣고 Join 수행",
+      "게시글 작성을 1분간 금지"
+    ],
+    "correct_answer": "유명인은 Pull 방식(조회 시점에 생성), 일반인은 Push 방식(Fan-out)을 혼용하여 처리",
+    "explanation": "슈퍼스타의 경우 Fan-out(모든 팔로워에게 데이터 복사) 비용이 너무 크므로, 요청 시점에 가져가는 Pull 방식을 적절히 섞어 시스템 부하를 조절합니다."
+  },
+  {
+    "question_id": 106,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Cloud Strategy",
+    "subcategory": "Multi-cloud vs Hybrid",
+    "skills_required": ["Cloud Strategy", "Risk Management"],
+    "scenario": "정부 규제로 인해 모든 데이터를 클라우드에 둘 수 없지만, 급격한 트래픽 변동에는 클라우드의 유연성이 필요합니다.",
+    "question": "가장 적합한 아키텍처는?",
+    "choices": [
+      "All-in Public Cloud",
+      "On-premise only",
+      "Hybrid Cloud (민감 데이터는 On-premise, 서비스 확장은 Public Cloud)",
+      "Multi-cloud (여러 클라우드만 사용)"
+    ],
+    "correct_answer": "Hybrid Cloud (민감 데이터는 On-premise, 서비스 확장은 Public Cloud)",
+    "explanation": "하이브리드 클라우드는 보안/규제 준수와 클라우드의 확장성이라는 두 마리 토끼를 잡을 수 있는 전략적 선택입니다."
+  },
+  {
+    "question_id": 107,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Communication",
+    "subcategory": "Protocols",
+    "skills_required": ["gRPC", "REST", "Communication Protocols"],
+    "scenario": "마이크로서비스 간 통신 성능을 극대화하고 오버헤드를 줄여야 합니다. 엄격한 타입 체크도 필요합니다.",
+    "question": "어떤 통신 방식을 선택하시겠습니까?",
+    "choices": [
+      "JSON 기반의 REST API",
+      "HTTP/2 기반의 gRPC와 Protocol Buffers",
+      "XML-RPC",
+      "Simple SOAP"
+    ],
+    "correct_answer": "HTTP/2 기반의 gRPC와 Protocol Buffers",
+    "explanation": "gRPC는 바이너리 프로토콜인 Protobuf를 사용하여 JSON보다 크기가 작고 빠르며, HTTP/2를 통해 효율적인 멀티플렉싱을 제공하여 내부 통신에 적합합니다."
+  },
+  {
+    "question_id": 108,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Database",
+    "subcategory": "Consistency Models",
+    "skills_required": ["CAP Theorem", "Database Selection"],
+    "scenario": "가용성이 매우 중요하여 전 세계 어디서든 서비스가 중단되면 안 됩니다. 데이터의 최신성은 약간 늦어져도 괜찮습니다.",
+    "question": "CAP 이론에서 어떤 특성을 가진 DB를 선택해야 합니까?",
+    "choices": [
+      "CP (Consistency + Partition Tolerance)",
+      "AP (Availability + Partition Tolerance)",
+      "CA (Consistency + Availability)",
+      "ACID 기반 DB"
+    ],
+    "correct_answer": "AP (Availability + Partition Tolerance)",
+    "explanation": "네트워크 분할 상황에서도 서비스를 유지(가용성)하려면 강한 일관성을 포기하고 결과적 일관성(Eventual Consistency)을 따르는 AP 시스템이 적합합니다."
+  },
+  {
+    "question_id": 109,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Serverless",
+    "subcategory": "Compute Selection",
+    "skills_required": ["Serverless", "Cost-Performance Tradeoff"],
+    "scenario": "하루에 딱 한 번 실행되지만, 실행 시 수천 대의 병렬 연산이 필요한 데이터 분석 작업이 있습니다. 서버를 24시간 켜두는 것은 낭비입니다.",
+    "question": "어떤 기술이 가장 비용 효율적입니까?",
+    "choices": [
+      "Bare Metal 서버 구매",
+      "Serverless Functions (예: AWS Lambda)",
+      "고정된 크기의 EC2 클러스터",
+      "DB 내장 프로시저"
+    ],
+    "correct_answer": "Serverless Functions (예: AWS Lambda)",
+    "explanation": "서버리스는 실행 시간과 호출 횟수에 대해서만 과금되므로, 불규칙하거나 일시적인 대규모 병렬 처리에 매우 비용 효율적입니다."
+  },
+  {
+    "question_id": 110,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Frontend",
+    "subcategory": "Rendering Strategy",
+    "skills_required": ["SSR vs CSR", "SEO"],
+    "scenario": "검색 엔진 최적화(SEO)가 비즈니스의 핵심이며, 초기 페이지 로딩 속도가 매우 중요한 뉴스 사이트를 구축합니다.",
+    "question": "어떤 렌더링 방식을 권장하시겠습니까?",
+    "choices": [
+      "Pure Client Side Rendering (CSR)",
+      "Server Side Rendering (SSR) 또는 Static Site Generation (SSG)",
+      "Applet 기반 렌더링",
+      "Flash"
+    ],
+    "correct_answer": "Server Side Rendering (SSR) 또는 Static Site Generation (SSG)",
+    "explanation": "SSR/SSG는 서버에서 미리 HTML을 완성하여 보내므로 검색 봇이 콘텐츠를 읽기 쉽고, 사용자에게 첫 화면을 빠르게 보여줄 수 있습니다."
+  },
+  {
+    "question_id": 111,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "design_alternative_comparison",
+    "category": "Database",
+    "subcategory": "NoSQL vs RDBMS",
+    "skills_required": ["Database Strategy"],
+    "scenario": "소셜 미디어의 '좋아요' 기능을 구현하려 합니다. 초당 수십만 건의 업데이트가 발생할 수 있습니다.",
+    "question": "RDBMS와 NoSQL(Key-Value) 중 어떤 선택이 더 유리합니까?",
+    "choices": [
+      "RDBMS: 트랜잭션이 보장되므로 무조건 사용해야 함",
+      "NoSQL: 단순 카운팅 작업에 최적화되어 있고 수평 확장이 용이하여 성능상 유리함",
+      "RDBMS: 인덱스를 많이 걸면 NoSQL보다 빠름",
+      "NoSQL: 데이터가 유실될 확률이 90%이므로 사용 금지"
+    ],
+    "correct_answer": "NoSQL: 단순 카운팅 작업에 최적화되어 있고 수평 확장이 용이하여 성능상 유리함",
+    "explanation": "고빈도 단순 업데이트 작업은 RDBMS의 락(Lock) 경합보다 NoSQL의 빠른 메모리 기반 연산이 더 적합합니다."
+  },
+  {
+    "question_id": 112,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "design_alternative_comparison",
+    "category": "Deployment",
+    "subcategory": "Strategy Comparison",
+    "skills_required": ["Deployment Strategies"],
+    "scenario": "사용자에게 중단 없이 신규 버전을 배포해야 합니다. 하드웨어 자원이 넉넉하지 않은 상황입니다.",
+    "question": "Blue-Green 배포와 Rolling Update 중 무엇을 선택해야 합니까?",
+    "choices": [
+      "Blue-Green: 자원을 2배 사용하지만 배포와 롤백이 빠르고 확실함",
+      "Rolling Update: 기존 자원을 활용하여 점진적으로 교체하므로 추가 자원이 적게 듦",
+      "Blue-Green: 자원을 적게 사용함",
+      "Rolling Update: 배포 즉시 모든 트래픽이 신규 버전으로 감"
+    ],
+    "correct_answer": "Rolling Update: 기존 자원을 활용하여 점진적으로 교체하므로 추가 자원이 적게 듦",
+    "explanation": "자원이 제한적인 상황에서는 전체를 복제하는 Blue-Green보다 점진적으로 업데이트하는 Rolling Update가 효율적입니다."
+  },
+  {
+    "question_id": 113,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "design_alternative_comparison",
+    "category": "Messaging",
+    "subcategory": "Push vs Pull",
+    "skills_required": ["Communication Patterns"],
+    "scenario": "실시간 채팅 서비스를 설계합니다. 메시지가 왔을 때 클라이언트가 즉시 알아야 합니다.",
+    "question": "Polling과 WebSocket 중 어떤 기술이 더 적절합니까?",
+    "choices": [
+      "Polling: 서버 부하가 적고 실시간성이 뛰어남",
+      "WebSocket: 양방향 영구 연결을 통해 오버헤드가 적고 진정한 실시간 통신이 가능함",
+      "Polling: 구현은 복잡하지만 성능이 좋음",
+      "WebSocket: 보안상 절대 사용하면 안 됨"
+    ],
+    "correct_answer": "WebSocket: 양방향 영구 연결을 통해 오버헤드가 적고 진정한 실시간 통신이 가능함",
+    "explanation": "지속적인 상태 확인(Polling)은 불필요한 요청을 만들지만, WebSocket은 연결을 유지하며 이벤트 발생 시 즉시 데이터를 주고받을 수 있습니다."
+  },
+  {
+    "question_id": 114,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "design_alternative_comparison",
+    "category": "Cache",
+    "subcategory": "Cache Location",
+    "skills_required": ["System Architecture"],
+    "scenario": "DB 부하를 줄이기 위해 캐시를 도입하려 합니다.",
+    "question": "Local Cache와 Global(Remote) Cache의 비교로 틀린 것은?",
+    "choices": [
+      "Local Cache는 서버 간 데이터 공유가 어렵지만 응답 속도가 가장 빠르다.",
+      "Global Cache는 네트워크 오버헤드가 발생하지만 데이터 일관성 관리가 용이하다.",
+      "Local Cache는 서버가 늘어나면 캐시 정합성(Consistency) 문제가 발생할 수 있다.",
+      "Global Cache는 서버 개별 메모리를 사용하므로 전체 용량에 제한이 없다."
+    ],
+    "correct_answer": "Global Cache는 서버 개별 메모리를 사용하므로 전체 용량에 제한이 없다.",
+    "explanation": "Global Cache(예: Redis)는 별도의 전용 서버 메모리를 사용하며, 서버 개별 메모리를 사용하는 것은 Local Cache입니다."
+  },
+  {
+    "question_id": 115,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "design_alternative_comparison",
+    "category": "Security",
+    "subcategory": "Authorization",
+    "skills_required": ["Security Architecture"],
+    "scenario": "수천 개의 권한(Permission)을 효율적으로 관리해야 합니다.",
+    "question": "RBAC(Role Based Access Control)와 ABAC(Attribute Based Access Control) 중 대규모 조직의 복잡한 조건(예: 시간, 위치)을 처리하기에 더 유연한 것은?",
+    "choices": [
+      "RBAC: 역할만 지정하면 되므로 훨씬 유연함",
+      "ABAC: 속성 기반이므로 특정 시간, IP, 직위 등 상세한 조건 조합이 가능하여 유연성이 높음",
+      "RBAC: 보안성이 더 뛰어남",
+      "두 방식은 완전히 동일함"
+    ],
+    "correct_answer": "ABAC: 속성 기반이므로 특정 시간, IP, 직위 등 상세한 조건 조합이 가능하여 유연성이 높음",
+    "explanation": "RBAC는 역할이 많아질수록 관리가 폭발적으로 늘어나는 반면, ABAC는 속성들의 조합으로 세밀한 정책 수립이 가능합니다."
+  },
+  {
+    "question_id": 116,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Architecture",
+    "subcategory": "Microservices",
+    "skills_required": ["MSA", "Trade-off Analysis"],
+    "scenario": "빠른 출시를 위해 모놀리식으로 시작할지, 확장성을 위해 처음부터 MSA로 갈지 고민 중입니다.",
+    "question": "MSA 도입 시의 주요 트레이드오프가 아닌 것은?",
+    "choices": [
+      "운영 복잡도 증가 (Observability, CI/CD 난이도 상승)",
+      "네트워크 지연 및 분산 트랜잭션 처리 비용 발생",
+      "팀 간 독립적인 개발 및 배포 가능성 확보",
+      "단일 장애 지점(Single Point of Failure)의 원천적 제거 (항상 자동으로 해결됨)"
+    ],
+    "correct_answer": "단일 장애 지점(Single Point of Failure)의 원천적 제거 (항상 자동으로 해결됨)",
+    "explanation": "MSA를 한다고 해서 SPOF가 자동으로 없어지는 것은 아니며, 오히려 서비스 간 복잡한 의존성으로 인해 한 서비스의 장애가 전파될 위험이 커질 수 있습니다."
+  },
+  {
+    "question_id": 117,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Data Management",
+    "subcategory": "Normalization",
+    "skills_required": ["Database Design"],
+    "scenario": "조회 성능을 높이기 위해 DB 정규화를 포기하고 역정규화(Denormalization)를 고려하고 있습니다.",
+    "question": "역정규화의 가장 큰 리스크(Trade-off)는 무엇입니까?",
+    "choices": [
+      "저장 공간의 획기적 절약",
+      "데이터 중복에 따른 쓰기 성능 저하 및 데이터 불일치(Inconsistency) 위험 증가",
+      "조인(Join) 연산의 과도한 발생",
+      "인덱스 생성 불가"
+    ],
+    "correct_answer": "데이터 중복에 따른 쓰기 성능 저하 및 데이터 불일치(Inconsistency) 위험 증가",
+    "explanation": "역정규화는 조인 비용을 줄여 읽기 성능을 얻는 대신, 데이터가 여러 곳에 중복되어 업데이트 시 데이터 정합성을 유지하기 어렵게 만듭니다."
+  },
+  {
+    "question_id": 118,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Cost",
+    "subcategory": "Cloud Instances",
+    "skills_required": ["Cloud Optimization"],
+    "scenario": "운영 비용 절감을 위해 모든 서버를 스팟 인스턴스(Spot Instances)로 바꾸려 합니다.",
+    "question": "이 결정에 대한 비즈니스 연속성 관점의 트레이드오프는?",
+    "choices": [
+      "성능은 좋지만 가격이 너무 비쌈",
+      "언제든 클라우드 제공자에 의해 서버가 중단될 수 있어 고가용성(High Availability) 보장이 어려움",
+      "보안성이 일반 인스턴스보다 현저히 낮음",
+      "기술적으로 오토 스케일링이 불가능함"
+    ],
+    "correct_answer": "언제든 클라우드 제공자에 의해 서버가 중단될 수 있어 고가용성(High Availability) 보장이 어려움",
+    "explanation": "스팟 인스턴스는 매우 저렴하지만 자원 부족 시 강제 회수되므로, 상태가 없는(Stateless) 작업이나 장애 복구 능력이 갖춰진 시스템에만 사용해야 합니다."
+  },
+  {
+    "question_id": 119,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Security",
+    "subcategory": "Zero Trust",
+    "skills_required": ["Security Policy"],
+    "scenario": "보안 강화를 위해 모든 내부 통신에도 상호 인증(mTLS)과 엄격한 세션 만료 정책을 도입하려 합니다.",
+    "question": "이로 인해 발생할 수 있는 부정적인 영향(Trade-off)은?",
+    "choices": [
+      "해킹 위험의 증가",
+      "개발 및 운영 생산성 저하와 시스템 리소스(CPU/Latency) 오버헤드 증가",
+      "네트워크 대역폭의 획기적 절약",
+      "데이터베이스 용량 부족"
+    ],
+    "correct_answer": "개발 및 운영 생산성 저하와 시스템 리소스(CPU/Latency) 오버헤드 증가",
+    "explanation": "보안이 강화될수록 암호화 연산 부하와 인증 절차로 인한 불편함 및 시스템 복잡도가 늘어납니다."
+  },
+  {
+    "question_id": 120,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Agile",
+    "subcategory": "Sprint Quality",
+    "skills_required": ["Project Management"],
+    "scenario": "품질을 높이기 위해 모든 코드에 대해 100% 테스트 커버리지를 요구하려 합니다.",
+    "question": "이 정책의 트레이드오프는?",
+    "choices": [
+      "장기적인 유지보수성 하락",
+      "기능 개발 속도(Velocity)의 급격한 저하와 단순 로직에 대한 테스트 코드 작성 비용 증가",
+      "장애 발생 확률의 증가",
+      "서버 하드웨어 사양의 급상승"
+    ],
+    "correct_answer": "기능 개발 속도(Velocity)의 급격한 저하와 단순 로직에 대한 테스트 코드 작성 비용 증가",
+    "explanation": "100% 커버리지는 이상적이지만, 가치가 낮은 테스트를 작성하는 데 많은 시간을 소모하게 되어 비즈니스 대응 속도를 늦출 수 있습니다."
+  },
+  {
+    "question_id": 121,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "Infrastructure",
+    "subcategory": "Single Point of Failure",
+    "skills_required": ["Risk Management", "Architecture"],
+    "scenario": "전체 서비스의 모든 데이터가 한 리전의 단일 가용 영역(Availability Zone) 내 DB에 저장되어 있습니다.",
+    "question": "TPM으로서 이 상황의 리스크를 어떻게 평가하시겠습니까?",
+    "choices": [
+      "매우 안전함 (한 곳에 모여있어 관리가 쉬움)",
+      "중대한 리스크: 해당 가용 영역 전체 장애(정전, 화재 등) 발생 시 서비스 복구가 불가능하거나 매우 오래 걸림",
+      "비용 측면에서만 리스크가 있음",
+      "네트워크 속도가 빨라지는 효과가 있어 권장됨"
+    ],
+    "correct_answer": "중대한 리스크: 해당 가용 영역 전체 장애(정전, 화재 등) 발생 시 서비스 복구가 불가능하거나 매우 오래 걸림",
+    "explanation": "물리적 분리가 되어 있지 않은 단일 지점 장애(SPOF)는 비즈니스 연속성에 치명적인 위협입니다."
+  },
+  {
+    "question_id": 122,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "Dependency",
+    "subcategory": "Open Source",
+    "skills_required": ["Security Analysis", "Risk Management"],
+    "scenario": "서비스 핵심 모듈이 업데이트가 끊긴지 3년 된 오픈소스 라이브러리에 의존하고 있습니다.",
+    "question": "이 상황에서 발생할 수 있는 리스크는?",
+    "choices": [
+      "라이브러리 가격 상승",
+      "새로운 보안 취약점 발견 시 패치가 불가능하며, 최신 OS나 플랫폼 환경과의 호환성 문제 발생 가능성",
+      "개발자의 타이핑 속도 저하",
+      "오픈소스이므로 리스크가 전혀 없음"
+    ],
+    "correct_answer": "새로운 보안 취약점 발견 시 패치가 불가능하며, 최신 OS나 플랫폼 환경과의 호환성 문제 발생 가능성",
+    "explanation": "유지보수가 중단된 의존성(End-of-Life)은 잠재적인 보안 홀과 기술적 부채의 주범입니다."
+  },
+  {
+    "question_id": 123,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "Compliance",
+    "subcategory": "Data Sovereignty",
+    "skills_required": ["Compliance"],
+    "scenario": "금융 프로젝트에서 고객의 민감한 신용 정보를 해외 리전에 있는 퍼블릭 클라우드 스토리지에 저장하려 합니다.",
+    "question": "가장 큰 리스크는?",
+    "choices": [
+      "전송 속도 저하",
+      "국내법(개인정보보호법 등) 및 금융 규제 위반으로 인한 법적 처벌 및 서비스 폐쇄 리스크",
+      "클라우드 저장 공간 부족",
+      "영어 문서 읽기 어려움"
+    ],
+    "correct_answer": "국내법(개인정보보호법 등) 및 금융 규제 위반으로 인한 법적 처벌 및 서비스 폐쇄 리스크",
+    "explanation": "데이터 주권 및 규제 준수는 기술적 구현보다 우선시되는 중대한 비즈니스 리스크입니다."
+  },
+  {
+    "question_id": 124,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "Project Management",
+    "subcategory": "Resource Risk",
+    "skills_required": ["Project Management"],
+    "scenario": "프로젝트의 특정 핵심 기술을 단 한 명의 시니어 개발자만이 완벽히 이해하고 있으며, 모든 코드가 그 사람의 승인을 거쳐야 합니다.",
+    "question": "이 상황을 지칭하는 용어와 리스크는?",
+    "choices": [
+      "버스 지수(Bus Factor)가 1인 상태: 해당 인원의 부재 시 프로젝트가 중단되거나 지식 전수가 안 됨",
+      "슈퍼스타 효과: 프로젝트의 효율이 극대화됨",
+      "시니어리티 리스크: 주니어 개발자가 성장하지 못함",
+      "코드 리뷰 리스크: 배포 속도가 빨라짐"
+    ],
+    "correct_answer": "버스 지수(Bus Factor)가 1인 상태: 해당 인원의 부재 시 프로젝트가 중단되거나 지식 전수가 안 됨",
+    "explanation": "특정 개인에게 지식이 매몰된 상태는 인력 이탈이나 유고 시 시스템 전체의 유지보수를 불가능하게 만듭니다."
+  },
+  {
+    "question_id": 125,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "System Design",
+    "subcategory": "Cascading Failure",
+    "skills_required": ["Resilience Engineering"],
+    "scenario": "시스템들이 촘촘하게 연결되어 있어, 하나의 서비스가 느려지면 이를 호출하는 상위 서비스들의 스레드가 모두 점유되어 전체 시스템이 마비되는 구조입니다.",
+    "question": "이 현상을 무엇이라 하며, 어떻게 평가합니까?",
+    "choices": [
+      "병렬 처리 시스템: 매우 효율적인 구조임",
+      "연쇄 장애(Cascading Failure): 작은 부분의 지연이 전체 시스템 붕괴로 이어지는 치명적인 설계 결함",
+      "로드 밸런싱: 부하가 잘 분산되고 있음",
+      "동기식 통신의 장점: 데이터가 확실히 전달됨"
+    ],
+    "correct_answer": "연쇄 장애(Cascading Failure): 작은 부분의 지연이 전체 시스템 붕괴로 이어지는 치명적인 설계 결함",
+    "explanation": "의존성 있는 시스템 간에 격리(Isolation)와 타임아웃 처리가 미흡할 때 발생하는 전형적인 장애 리스크입니다."
+  },
+  {
+    "question_id": 126,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "failure_mode_analysis",
+    "category": "Infrastructure",
+    "subcategory": "Storage Failure",
+    "skills_required": ["High Availability", "SRE"],
+    "scenario": "AWS S3가 특정 리전에서 장애가 발생하여 해당 리전 내의 서비스들이 정적 리소스를 불러오지 못하고 있습니다.",
+    "question": "이런 상황을 대비한 '실패 모드(Failure Mode)' 설계로 가장 적절한 것은?",
+    "choices": [
+      "장애가 끝날 때까지 대기",
+      "멀티 리전(Multi-region) 복제 및 다른 리전의 엔드포인트로 자동 페일오버(Failover) 설정",
+      "S3 대신 로컬 서버 디스크만 사용하도록 변경",
+      "사용자들에게 새로고침을 계속하라고 안내"
+    ],
+    "correct_answer": "멀티 리전(Multi-region) 복제 및 다른 리전의 엔드포인트로 자동 페일오버(Failover) 설정",
+    "explanation": "클라우드 서비스 자체의 대규모 장애에 대비하려면 물리적으로 완전히 떨어진 타 리전으로의 복구 경로가 설계되어 있어야 합니다."
+  },
+  {
+    "question_id": 127,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "failure_mode_analysis",
+    "category": "Database",
+    "subcategory": "Primary DB Down",
+    "skills_required": ["Database High Availability"],
+    "scenario": "쓰기 작업을 담당하는 마스터 DB가 하드웨어 결함으로 다운되었습니다.",
+    "question": "가장 이상적인 자동 복구 시나리오는?",
+    "choices": [
+      "백업본을 찾아 새 서버에 수동으로 복구",
+      "Read Replica 중 하나를 새로운 마스터로 승격(Promotion)시키고 애플리케이션의 엔드포인트를 변경",
+      "DB를 끄고 읽기 전용 서비스로 전환",
+      "모든 쓰기 요청을 로그 파일에만 기록"
+    ],
+    "correct_answer": "Read Replica 중 하나를 새로운 마스터로 승격(Promotion)시키고 애플리케이션의 엔드포인트를 변경",
+    "explanation": "고가용성 DB 구성에서는 장애 감지 시 복제본을 마스터로 전환하는 자동 페일오버 프로세스가 필수적입니다."
+  },
+  {
+    "question_id": 128,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "failure_mode_analysis",
+    "category": "Network",
+    "subcategory": "BGP Hijacking",
+    "skills_required": ["Network Security", "Routing"],
+    "scenario": "인터넷 경로 설정 오류로 우리 서비스로 와야 할 트래픽이 엉뚱한 국가의 서버로 전달되고 있습니다.",
+    "question": "이 상황에 대한 대응 및 예방 전략은?",
+    "choices": [
+      "서버 성능 업그레이드",
+      "RPKI(Resource Public Key Infrastructure) 도입으로 경로 인증 강화 및 모니터링 경고 설정",
+      "사용자 비밀번호 강제 변경",
+      "웹 서버 소프트웨어 교체"
+    ],
+    "correct_answer": "RPKI(Resource Public Key Infrastructure) 도입으로 경로 인증 강화 및 모니터링 경고 설정",
+    "explanation": "BGP 하이재킹과 같은 네트워크 경로 공격/오류는 경로의 유효성을 검증하는 기술과 이상 징후 감지가 대응의 핵심입니다."
+  },
+  {
+    "question_id": 129,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "failure_mode_analysis",
+    "category": "Microservices",
+    "subcategory": "Dependency Outage",
+    "skills_required": ["Resilience", "Fallback Strategy"],
+    "scenario": "결제 서비스가 호출하는 '쿠폰 서비스'가 장애로 응답이 불가능합니다. 이로 인해 결제 전체가 실패하고 있습니다.",
+    "question": "이 실패 모드를 해결하기 위한 'Graceful Degradation' 전략은?",
+    "choices": [
+      "쿠폰이 없어도 결제는 가능하게 하고, 나중에 쿠폰을 적용하거나 실패 로그만 남기는 대체 로직(Fallback) 실행",
+      "결제 서비스도 같이 중단",
+      "쿠폰 서비스가 살아날 때까지 결제 요청을 무한 대기",
+      "사용자에게 쿠폰 코드 입력을 금지함"
+    ],
+    "correct_answer": "쿠폰이 없어도 결제는 가능하게 하고, 나중에 쿠폰을 적용하거나 실패 로그만 남기는 대체 로직(Fallback) 실행",
+    "explanation": "시스템의 비핵심 기능 장애가 핵심 비즈니스(결제)를 막지 않도록 성능이나 기능을 낮추어 서비스를 유지하는 전략입니다."
+  },
+  {
+    "question_id": 130,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "failure_mode_analysis",
+    "category": "Security",
+    "subcategory": "Credential Leakage",
+    "skills_required": ["Incident Response", "Security"],
+    "scenario": "개발자의 실수로 DB 접속 정보가 포함된 코드가 퍼블릭 GitHub 레포지토리에 커밋되었습니다.",
+    "question": "가장 즉각적이고 효과적인 실패 대응 조치는?",
+    "choices": [
+      "커밋만 삭제하고 덮어씌운다.",
+      "유출된 계정의 권한을 즉시 무효화(Revoke)하고, 새 비밀번호로 교체한 뒤 기존 이력을 영구 삭제한다.",
+      "레포지토리를 프라이빗으로 바꾼다.",
+      "개발자에게 주의를 준다."
+    ],
+    "correct_answer": "유출된 계정의 권한을 즉시 무효화(Revoke)하고, 새 비밀번호로 교체한 뒤 기존 이력을 영구 삭제한다.",
+    "explanation": "한 번 노출된 자격 증명은 이미 유출된 것으로 간주해야 합니다. 삭제보다 '무효화'가 우선이며, 그 후 자격 증명을 교체(Rotation)해야 합니다."
+  },
+  {
+    "question_id": 131,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "incident_response",
+    "category": "Operations",
+    "subcategory": "Major Incident Management",
+    "skills_required": ["Incident Management", "Communication"],
+    "scenario": "메인 DB의 데이터 일부가 실수로 삭제되어 서비스의 50%가 정상 동작하지 않는 '심각도 1(Sev1)' 장애가 발생했습니다.",
+    "question": "TPM으로서 장애 대응 타임라인에서 가장 먼저 수행해야 할 역할은?",
+    "choices": [
+      "누가 실수했는지 범인 찾기",
+      "장애 상황 전파, Incident Commander(지휘자) 지정 및 유관 부서(CS, PR 등)와 소통 채널 구축",
+      "삭제된 데이터를 한 땀 한 땀 수동으로 입력하기",
+      "기존에 계획된 회의 모두 진행하기"
+    ],
+    "correct_answer": "장애 상황 전파, Incident Commander(지휘자) 지정 및 유관 부서(CS, PR 등)와 소통 채널 구축",
+    "explanation": "심각한 장애 상황에서 TPM은 기술 조직이 복구에 집중할 수 있도록 상황을 통제하고 외부 커뮤니케이션을 전담하는 가교 역할을 해야 합니다."
+  },
+  {
+    "question_id": 132,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "incident_response",
+    "category": "Security",
+    "subcategory": "Ransomware",
+    "skills_required": ["Disaster Recovery", "Security"],
+    "scenario": "사내 서버 여러 대가 랜섬웨어에 감염되어 데이터가 암호화되었고 해커가 대가를 요구하고 있습니다.",
+    "question": "가장 권장되는 대응 절차는?",
+    "choices": [
+      "해커에게 돈을 지불하고 키를 받는다.",
+      "감염된 시스템을 즉시 격리(Isolation)하고, 안전함이 확인된 최신 백업본을 통해 인프라를 재구축한다.",
+      "암호화된 파일을 무시하고 서비스를 계속한다.",
+      "서버를 껐다가 다시 켜본다."
+    ],
+    "correct_answer": "감염된 시스템을 즉시 격리(Isolation)하고, 안전함이 확인된 최신 백업본을 통해 인프라를 재구축한다.",
+    "explanation": "랜섬웨어 대응의 핵심은 확산 방지(격리)와 신뢰할 수 있는 백업을 이용한 복구입니다. 대가 지불은 복구를 보장하지 않습니다."
+  },
+  {
+    "question_id": 133,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "incident_response",
+    "category": "Post-mortem",
+    "subcategory": "Blameless Culture",
+    "skills_required": ["Culture", "Process Improvement"],
+    "scenario": "장애 복구 후 원인 분석 보고서(Post-mortem)를 작성하려 합니다.",
+    "question": "이 보고서의 가장 중요한 목적은 무엇입니까?",
+    "choices": [
+      "잘못을 저지른 사람을 찾아 징계하기 위함",
+      "장애의 근본 원인(Root Cause)을 파악하고 동일한 문제가 재발하지 않도록 시스템적/프로세스적 개선책을 마련하기 위함",
+      "장애가 발생하지 않은 것처럼 문서를 꾸미기 위함",
+      "단순히 기록을 남겨 법적 책임을 피하기 위함"
+    ],
+    "correct_answer": "장애의 근본 원인(Root Cause)을 파악하고 동일한 문제가 재발하지 않도록 시스템적/프로세스적 개선책을 마련하기 위함",
+    "explanation": "건강한 엔지니어링 문화에서의 사후 분석은 비난(Blame)보다는 학습과 방어 체계 강화에 집중합니다."
+  },
+  {
+    "question_id": 134,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "incident_response",
+    "category": "Rollback Strategy",
+    "subcategory": "Deployment Risk",
+    "skills_required": ["Release Management"],
+    "scenario": "배포 후 1시간 뒤, 특정 조건에서 결제 금액이 잘못 계산되는 버그가 발견되었습니다. 이미 수만 명의 사용자가 해당 버전을 사용 중입니다.",
+    "question": "가장 먼저 취해야 할 기술적 조치는?",
+    "choices": [
+      "버그를 수정할 때까지 며칠 더 지켜본다.",
+      "즉시 직전 안정 버전으로 롤백(Rollback)하고, 이미 발생한 잘못된 데이터의 범위와 영향을 파악한다.",
+      "개발자들에게 화를 낸다.",
+      "결제 기능을 영구 삭제한다."
+    ],
+    "correct_answer": "즉시 직전 안정 버전으로 롤백(Rollback)하고, 이미 발생한 잘못된 데이터의 범위와 영향을 파악한다.",
+    "explanation": "심각한 데이터 오류가 발견되었을 때는 추가 피해를 막기 위해 안정된 상태로 되돌리는 것이 최우선입니다."
+  },
+  {
+    "question_id": 135,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "incident_response",
+    "category": "Public Communication",
+    "subcategory": "Transparency",
+    "skills_required": ["Public Relations", "Leadership"],
+    "scenario": "장애가 4시간 이상 지속되어 트위터 등 SNS에서 불만이 폭주하고 있습니다.",
+    "question": "어떤 식의 공식 공지가 가장 적절합니까?",
+    "choices": [
+      "기술적인 용어를 가득 담아 복잡하게 설명한다.",
+      "장애 사실을 인정하고, 현재 대응 상황과 예상되는 복구 시점을 명확히 하며 진정성 있게 사과한다.",
+      "아무 공지도 하지 않고 복구될 때까지 기다린다.",
+      "서버 공급 업체의 탓으로 돌린다."
+    ],
+    "correct_answer": "장애 사실을 인정하고, 현재 대응 상황과 예상되는 복구 시점을 명확히 하며 진정성 있게 사과한다.",
+    "explanation": "사용자와의 신뢰는 투명한 소통에서 나옵니다. 상황을 숨기거나 회피하는 것은 장기적으로 브랜드 가치를 훼손합니다."
+  },
+  {
+    "question_id": 136,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "security_analysis",
+    "category": "Infrastructure",
+    "subcategory": "DDoS Mitigation",
+    "skills_required": ["Network Security", "Cloud Security"],
+    "scenario": "정상적인 서비스 이용이 불가능할 정도의 대규모 분산 서비스 거부(DDoS) 공격이 들어오고 있습니다.",
+    "question": "이 상황에서 가장 효과적인 방어 체계는?",
+    "choices": [
+      "서버의 방화벽에서 IP를 하나씩 차단한다.",
+      "클라우드 전용 DDoS 방어 서비스(예: AWS Shield, Cloudflare)와 WAF를 연동하여 트래픽을 필터링한다.",
+      "모든 서버를 즉시 끈다.",
+      "공격자에게 협상을 시도한다."
+    ],
+    "correct_answer": "클라우드 전용 DDoS 방어 서비스(예: AWS Shield, Cloudflare)와 WAF를 연동하여 트래픽을 필터링한다.",
+    "explanation": "대규모 DDoS는 개별 서버 수준에서 막을 수 없습니다. 전용 인프라와 엣지 네트워크를 통한 트래픽 정화가 필요합니다."
+  },
+  {
+    "question_id": 137,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "security_analysis",
+    "category": "Application Security",
+    "subcategory": "Injection Attacks",
+    "skills_required": ["OWASP Top 10", "AppSec"],
+    "scenario": "사용자 입력값을 검증 없이 SQL 쿼리에 그대로 사용하고 있는 코드가 발견되었습니다.",
+    "question": "어떤 공격에 노출될 위험이 가장 큽니까?",
+    "choices": [
+      "XSS (Cross Site Scripting)",
+      "SQL Injection",
+      "CSRF (Cross Site Request Forgery)",
+      "Brute Force"
+    ],
+    "correct_answer": "SQL Injection",
+    "explanation": "입력 데이터가 쿼리 구조를 변조할 수 있는 SQL Injection은 데이터 유출 및 삭제의 치명적인 원인이 됩니다."
+  },
+  {
+    "question_id": 138,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "security_analysis",
+    "category": "Auth",
+    "subcategory": "OAuth 2.0",
+    "skills_required": ["Authentication Protocols"],
+    "scenario": "서드파티 애플리케이션이 우리 사용자의 데이터에 안전하게 접근할 수 있도록 권한을 위임해야 합니다.",
+    "question": "비밀번호를 직접 공유하지 않고 이를 수행할 수 있는 표준 프로토콜은?",
+    "choices": [
+      "FTP",
+      "OAuth 2.0",
+      "SNMP",
+      "LDAP"
+    ],
+    "correct_answer": "OAuth 2.0",
+    "explanation": "OAuth 2.0은 현대 웹/앱 서비스에서 권한 위임을 처리하는 업계 표준 프로토콜입니다."
+  },
+  {
+    "question_id": 139,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "security_analysis",
+    "category": "Data Security",
+    "subcategory": "Encryption at Rest",
+    "skills_required": ["Encryption", "Key Management"],
+    "scenario": "DB 서버가 물리적으로 도난당하더라도 내부의 고객 데이터를 읽을 수 없게 만들어야 합니다.",
+    "question": "어떤 조치가 필요합니까?",
+    "choices": [
+      "서버실 잠금장치 강화",
+      "저장 데이터 암호화(Encryption at Rest) 및 키 관리 시스템(KMS) 활용",
+      "데이터베이스 비밀번호 복잡도 향상",
+      "서버의 파워 서플라이 제거"
+    ],
+    "correct_answer": "저장 데이터 암호화(Encryption at Rest) 및 키 관리 시스템(KMS) 활용",
+    "explanation": "물리적 매체에 데이터가 쓰일 때 암호화하여 저장하면, 원본 파일에 직접 접근하더라도 키 없이는 내용을 볼 수 없습니다."
+  },
+  {
+    "question_id": 140,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "security_analysis",
+    "category": "Vulnerability Management",
+    "subcategory": "Software Composition Analysis",
+    "skills_required": ["SCA", "Supply Chain Security"],
+    "scenario": "개발 팀이 사용하는 수백 개의 오픈소스 라이브러리 중 보안 취약점이 있는지 전수 조사를 하려 합니다.",
+    "question": "가장 효율적인 도구 유형은?",
+    "choices": [
+      "SAST (Static Application Security Testing)",
+      "SCA (Software Composition Analysis)",
+      "Penetration Testing (침투 테스트)",
+      "DAST (Dynamic Application Security Testing)"
+    ],
+    "correct_answer": "SCA (Software Composition Analysis)",
+    "explanation": "SCA 도구는 프로젝트의 의존성 파일을 분석하여 알려진 보안 취약점(CVE)이 포함된 라이브러리를 찾아냅니다."
+  },
+  {
+    "question_id": 141,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "cost_optimization",
+    "category": "Cloud Finance",
+    "subcategory": "FinOps",
+    "skills_required": ["Cloud Cost Management"],
+    "scenario": "클라우드 비용이 매달 매출 성장세보다 가파르게 상승하고 있습니다. 비용 최적화가 시급합니다.",
+    "question": "TPM으로서 가장 먼저 실행할 액션은?",
+    "choices": [
+      "모든 개발 장비를 끄라고 명령한다.",
+      "비용 청구 항목을 분석하여 사용하지 않는 리소스(Unused Assets)를 제거하고, 인스턴스 사이즈를 사용량에 맞게 최적화(Rightsizing)한다.",
+      "클라우드를 해지하고 사무실에 서버를 산다.",
+      "가장 싼 클라우드 제공자로 당장 옮긴다."
+    ],
+    "correct_answer": "비용 청구 항목을 분석하여 사용하지 않는 리소스(Unused Assets)를 제거하고, 인스턴스 사이즈를 사용량에 맞게 최적화(Rightsizing)한다.",
+    "explanation": "비용 최적화의 기본은 가시성 확보와 낭비 제거, 그리고 리소스의 효율적인 배정(Rightsizing)입니다."
+  },
+  {
+    "question_id": 142,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "cost_optimization",
+    "category": "Infrastructure",
+    "subcategory": "Data Transfer Cost",
+    "skills_required": ["Networking", "Cost"],
+    "scenario": "리전 간(Inter-Region) 데이터 전송 비용이 전체 클라우드 비용의 30%를 차지하고 있습니다.",
+    "question": "이를 줄이기 위한 아키텍처 개선안은?",
+    "choices": [
+      "데이터 전송을 중단한다.",
+      "동일 리전 내로 서비스를 통합하거나, CDN을 활용하여 외부 전송량을 줄이고 데이터를 압축하여 전송한다.",
+      "모든 통신을 공개 인터넷(Public Internet)으로 돌린다.",
+      "네트워크 대역폭을 축소한다."
+    ],
+    "correct_answer": "동일 리전 내로 서비스를 통합하거나, CDN을 활용하여 외부 전송량을 줄이고 데이터를 압축하여 전송한다.",
+    "explanation": "리전 간 통신 비용은 비싸므로 지리적 인접성을 높이고 데이터 크기 자체를 줄이는 노력이 필요합니다."
+  },
+  {
+    "question_id": 143,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "cost_optimization",
+    "category": "Storage",
+    "subcategory": "Lifecycle Policy",
+    "skills_required": ["Storage Cost Optimization"],
+    "scenario": "S3 스토리지에 5년 전 로그 데이터가 수십 PB 저장되어 있어 유지 비용이 매우 높습니다. 이 데이터는 1년에 한 번 조회될까 말까 합니다.",
+    "question": "적용할 수 있는 가장 적절한 스토리지 정책은?",
+    "choices": [
+      "전부 삭제한다.",
+      "라이프사이클 정책을 설정하여 오래된 데이터를 S3 Glacier와 같은 저비용 아카이브 저장소로 자동 이전시킨다.",
+      "데이터를 압축해서 다시 올린다.",
+      "로컬 하드디스크에 백업받고 S3는 비운다."
+    ],
+    "correct_answer": "라이프사이클 정책을 설정하여 오래된 데이터를 S3 Glacier와 같은 저비용 아카이브 저장소로 자동 이전시킨다.",
+    "explanation": "자주 쓰지 않는 데이터는 접근 속도를 희생하더라도 보관 비용이 훨씬 저렴한 아카이브 계층으로 옮기는 것이 효율적입니다."
+  },
+  {
+    "question_id": 144,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "cost_optimization",
+    "category": "Database",
+    "subcategory": "Licensing",
+    "skills_required": ["Vendor Management", "Open Source Strategy"],
+    "scenario": "상용 DB(예: Oracle, MSSQL)의 라이선스 비용이 매년 수억 원씩 발생하고 있습니다.",
+    "question": "TPM으로서 제안할 수 있는 중장기적 비용 절감 방안은?",
+    "choices": [
+      "라이선스 비용을 지불하지 않고 버틴다.",
+      "오픈소스 기반 DB(PostgreSQL, MySQL)나 클라우드 네이티브 DB(Aurora 등)로의 전환(Database Migration)을 검토한다.",
+      "DB 사용량을 인위적으로 제한한다.",
+      "DB 관리를 중단한다."
+    ],
+    "correct_answer": "오픈소스 기반 DB(PostgreSQL, MySQL)나 클라우드 네이티브 DB(Aurora 등)로의 전환(Database Migration)을 검토한다.",
+    "explanation": "상용 DB 라이선스 비용은 고정비로 남기 때문에, 장기적으로는 관리형 오픈소스 DB로 마이그레이션하는 것이 큰 폭의 비용 절감을 가능케 합니다."
+  },
+  {
+    "question_id": 145,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "cost_optimization",
+    "category": "Compute",
+    "subcategory": "Savings Plans",
+    "skills_required": ["Cloud Procurement"],
+    "scenario": "향후 1년간은 전체 서버 사용량이 줄어들지 않고 일정하게 유지될 것으로 확신합니다.",
+    "question": "비용을 최대 70%까지 할인받기 위해 클라우드 제공자와 맺어야 할 계약 방식은?",
+    "choices": [
+      "On-demand",
+      "Reserved Instances (RI) 또는 Savings Plans",
+      "Spot Instances",
+      "Pay-as-you-go"
+    ],
+    "correct_answer": "Reserved Instances (RI) 또는 Savings Plans",
+    "explanation": "일정 기간 사용을 약정함으로써 큰 폭의 할인을 받는 방식은 예측 가능한 워크로드에 가장 적합한 비용 전략입니다."
+  },
+  {
+    "question_id": 146,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "constraint_optimization",
+    "category": "Project Management",
+    "subcategory": "Iron Triangle",
+    "skills_required": ["Project Management", "Prioritization"],
+    "scenario": "예산은 고정되어 있고 출시 기한은 단축되었는데, 요구사항은 오히려 늘어난 상황입니다.",
+    "question": "프로젝트 관리의 'Iron Triangle' 원칙에 따라 TPM이 내릴 수 있는 가장 현실적인 조치는?",
+    "choices": [
+      "개발자들에게 주말 없이 일하라고 지시한다. (리소스 한계 무시)",
+      "이해관계자들과 협의하여 핵심 기능 위주로 범위를 조정(Scope Reduction)하여 기한 내 출시한다.",
+      "품질 테스트를 생략하여 시간을 번다.",
+      "기한을 지킬 수 없다고 통보하고 아무것도 하지 않는다."
+    ],
+    "correct_answer": "이해관계자들과 협의하여 핵심 기능 위주로 범위를 조정(Scope Reduction)하여 기한 내 출시한다.",
+    "explanation": "시간, 예산, 범위는 서로 얽혀있습니다. 하나를 줄이려면 다른 하나를 조정해야 하며, 현실적인 범위 조정이 가장 효과적인 전략입니다."
+  },
+  {
+    "question_id": 147,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "constraint_optimization",
+    "category": "Resource Management",
+    "subcategory": "Talent Allocation",
+    "skills_required": ["Human Resource Management"],
+    "scenario": "가장 실력이 뛰어난 개발자 3명이 모두 한 개의 사이드 프로젝트에 투입되어 있어, 전사적 중요도가 높은 메인 프로젝트가 지연되고 있습니다.",
+    "question": "리소스 최적화 관점에서 취해야 할 행동은?",
+    "choices": [
+      "개발자들의 의사를 존중하여 그대로 둔다.",
+      "프로젝트별 비즈니스 가치와 우선순위를 재평가하여 핵심 인력을 메인 프로젝트로 재배치한다.",
+      "인력을 더 채용할 때까지 기다린다.",
+      "사이드 프로젝트를 폐기한다."
+    ],
+    "correct_answer": "프로젝트별 비즈니스 가치와 우선순위를 재평가하여 핵심 인력을 메인 프로젝트로 재배치한다.",
+    "explanation": "TPM은 한정된 기술 자원을 회사의 전략적 우선순위에 맞게 최적으로 배분할 책임이 있습니다."
+  },
+  {
+    "question_id": 148,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "constraint_optimization",
+    "category": "System Design",
+    "subcategory": "Legacy Support",
+    "skills_required": ["Architecture Strategy"],
+    "scenario": "신규 시스템을 도입하려 하지만, 매출의 20%를 차지하는 기존 구형 시스템(Legacy)과의 연동 제약 때문에 설계가 자꾸 복잡해지고 있습니다.",
+    "question": "가장 권장되는 아키텍처 패턴은?",
+    "choices": [
+      "구형 시스템을 즉시 중단",
+      "Anti-corruption Layer를 도입하여 신규 시스템의 도메인이 구형 시스템에 오염되지 않도록 격리하고 통신한다.",
+      "신규 시스템도 구형 시스템의 구조를 그대로 따른다.",
+      "연동을 포기하고 데이터를 수동으로 옮긴다."
+    ],
+    "correct_answer": "Anti-corruption Layer를 도입하여 신규 시스템의 도메인이 구형 시스템에 오염되지 않도록 격리하고 통신한다.",
+    "explanation": "제약 사항이 있는 외부/구형 시스템과 협업할 때 신규 시스템의 설계 순수성을 지키기 위한 고전적이고 효과적인 방법입니다."
+  },
+  {
+    "question_id": 149,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "constraint_optimization",
+    "category": "Deployment",
+    "subcategory": "Release Windows",
+    "skills_required": ["Release Management"],
+    "scenario": "매일 수십 번 배포하고 싶지만, QA 팀의 인력이 부족하여 수동 검증 속도가 배포 속도를 따라가지 못합니다.",
+    "question": "이 제약 조건을 해결하기 위한 기술적 방향은?",
+    "choices": [
+      "QA 팀의 인원을 10배 늘린다.",
+      "테스트 자동화(Test Automation)를 강화하고 CI 파이프라인에 통합하여 수동 검증 대상을 최소화한다.",
+      "배포 횟수를 일주일에 한 번으로 줄인다.",
+      "QA를 생략하고 바로 배포한다."
+    ],
+    "correct_answer": "테스트 자동화(Test Automation)를 강화하고 CI 파이프라인에 통합하여 수동 검증 대상을 최소화한다.",
+    "explanation": "인적 리소스의 제약은 자동화 기술을 통해 효율을 극대화함으로써 극복해야 합니다."
+  },
+  {
+    "question_id": 150,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "constraint_optimization",
+    "category": "Project Strategy",
+    "subcategory": "Time to Market",
+    "skills_required": ["Agile", "MVP Strategy"],
+    "scenario": "경쟁사가 유사한 서비스를 한 달 뒤에 출시한다는 정보를 입수했습니다. 우리 개발 계획은 원래 3개월입니다.",
+    "question": "비즈니스 제약 상황에서 TPM의 결정은?",
+    "choices": [
+      "원래 계획대로 3개월 뒤에 완벽하게 출시한다.",
+      "핵심 가치만 담은 MVP(Minimum Viable Product)를 정의하여 한 달 내에 우선 출시하고 시장 반응을 본다.",
+      "프로젝트를 포기한다.",
+      "개발자들을 협박하여 한 달 만에 3개월 분량을 다 만들게 한다."
+    ],
+    "correct_answer": "핵심 가치만 담은 MVP(Minimum Viable Product)를 정의하여 한 달 내에 우선 출시하고 시장 반응을 본다.",
+    "explanation": "시장 경쟁 상황이라는 제약 하에서는 빠른 시장 진입(Time to Market)이 중요하며, 범위를 줄여 속도를 높이는 전략이 유효합니다."
+  },
+  {
+    "question_id": 151,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "monitoring_strategy",
+    "category": "Observability",
+    "subcategory": "Golden Signals",
+    "skills_required": ["Monitoring", "SRE"],
+    "scenario": "새로운 마이크로서비스를 출시하며 모니터링 대시보드를 구성하려 합니다.",
+    "question": "SRE(Site Reliability Engineering)에서 강조하는 '4대 황금 신호(Four Golden Signals)'는 무엇입니까?",
+    "choices": [
+      "CPU, RAM, Disk, Network 사용량",
+      "Latency(지연 시간), Traffic(트래픽), Errors(에러), Saturation(포화 수준)",
+      "Commit 횟수, PR 개수, 빌드 속도, 테스트 커버리지",
+      "사용자 수, 매출액, 클릭률, 체류 시간"
+    ],
+    "correct_answer": "Latency(지연 시간), Traffic(트래픽), Errors(에러), Saturation(포화 수준)",
+    "explanation": "이 네 가지 지표는 서비스 관점에서 사용자 경험과 시스템 상태를 가장 명확히 보여주는 지표입니다."
+  },
+  {
+    "question_id": 152,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "monitoring_strategy",
+    "category": "Observability",
+    "subcategory": "Tracing",
+    "skills_required": ["Distributed Tracing", "Microservices"],
+    "scenario": "MSA 환경에서 하나의 사용자 요청이 10개의 서비스를 거쳐 처리됩니다. 어떤 서비스에서 병목이 발생하는지 찾기가 매우 힘듭니다.",
+    "question": "도입해야 할 모니터링 기술은?",
+    "choices": [
+      "중앙 집중식 로그 수집 (ELK Stack)",
+      "분산 트레이싱 (Distributed Tracing, 예: Jaeger, Zipkin)",
+      "서버별 CPU 사용량 모니터링",
+      "DB 쿼리 로그 분석"
+    ],
+    "correct_answer": "분산 트레이싱 (Distributed Tracing, 예: Jaeger, Zipkin)",
+    "explanation": "분산 트레이싱은 요청마다 고유 ID를 부여하여 전체 서비스 경로에서의 흐름과 지연 시간을 시각화해 줍니다."
+  },
+  {
+    "question_id": 153,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "monitoring_strategy",
+    "category": "Alerting",
+    "subcategory": "On-call Policy",
+    "skills_required": ["Incident Management", "SRE"],
+    "scenario": "밤마다 사소한 에러 메시지 때문에 엔지니어들의 휴대폰 알람이 울려 피로도가 극에 달해 있습니다. (Alert Fatigue)",
+    "question": "알람 전략을 어떻게 개선해야 합니까?",
+    "choices": [
+      "모든 알람을 끈다.",
+      "즉각적인 조치가 필요한 '실행 가능한(Actionable)' 에러에 대해서만 긴급 알람을 보내고, 나머지는 티켓팅 시스템으로 자동 전환한다.",
+      "밤에는 알람을 무조건 무음으로 설정한다.",
+      "알람이 올 때마다 개발자에게 보너스를 준다."
+    ],
+    "correct_answer": "즉각적인 조치가 필요한 '실행 가능한(Actionable)' 에러에 대해서만 긴급 알람을 보내고, 나머지는 티켓팅 시스템으로 자동 전환한다.",
+    "explanation": "알람 피로도는 장애 대응력을 낮춥니다. 우선순위를 명확히 하고 실제 조치가 필요한 것만 즉시 알리는 정교한 알람 설계가 필요합니다."
+  },
+  {
+    "question_id": 154,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "monitoring_strategy",
+    "category": "Observability",
+    "subcategory": "Synthetic Monitoring",
+    "skills_required": ["Monitoring", "QA"],
+    "scenario": "사용자가 아무도 없을 때도 우리 서비스의 주요 기능(로그인, 구매)이 정상 작동하는지 24시간 감시하고 싶습니다.",
+    "question": "어떤 모니터링 방식이 가장 적절합니까?",
+    "choices": [
+      "Real User Monitoring (RUM)",
+      "Synthetic Monitoring (합성 모니터링 / 외측 모니터링)",
+      "Log Aggregation",
+      "Infrastructure Monitoring"
+    ],
+    "correct_answer": "Synthetic Monitoring (합성 모니터링 / 외측 모니터링)",
+    "explanation": "합성 모니터링은 스크립트화된 로봇이 주기적으로 시나리오를 수행하여 실제 사용자 유무와 상관없이 가용성을 체크합니다."
+  },
+  {
+    "question_id": 155,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "monitoring_strategy",
+    "category": "Observability",
+    "subcategory": "Business Metrics",
+    "skills_required": ["Data Analysis", "Monitoring"],
+    "scenario": "기술 지표(CPU 등)는 정상이지만, 결제 건수가 갑자기 평소 대비 0으로 수렴하는 상황을 감지하고 싶습니다.",
+    "question": "대시보드에 추가해야 할 지표는?",
+    "choices": [
+      "네트워크 패킷 수",
+      "비즈니스 지표 모니터링 (예: 주문 완료 수, 가입 성공 수) 및 이상 탐지(Anomaly Detection)",
+      "하드웨어 온도",
+      "코드 라인 수"
+    ],
+    "correct_answer": "비즈니스 지표 모니터링 (예: 주문 완료 수, 가입 성공 수) 및 이상 탐지(Anomaly Detection)",
+    "explanation": "인프라 지표만으로는 알 수 없는 비즈니스 로직상의 오류나 연동 장애를 파악하기 위해 비즈니스 메트릭 모니터링이 필수입니다."
+  },
+  {
+    "question_id": 156,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "testing_strategy",
+    "category": "QA",
+    "subcategory": "Test Automation",
+    "skills_required": ["Testing Strategy", "SDLC"],
+    "scenario": "기능이 추가될 때마다 기존 기능들이 망가지는 회귀(Regression) 문제가 자주 발생합니다.",
+    "question": "이를 방지하기 위한 가장 효과적인 테스트 전략은?",
+    "choices": [
+      "QA 인원을 충원하여 수동 테스트를 늘린다.",
+      "자동화된 회귀 테스트(Automated Regression Test)를 구축하고 CI 파이프라인에 통합한다.",
+      "신규 기능 개발을 중단한다.",
+      "테스트를 포기하고 사용자의 제보를 기다린다."
+    ],
+    "correct_answer": "자동화된 회귀 테스트(Automated Regression Test)를 구축하고 CI 파이프라인에 통합하여 수동 검증 대상을 최소화한다.",
+    "explanation": "자동화된 회귀 테스트는 코드가 변경될 때마다 기존 기능의 안전성을 보장하는 가장 강력한 수단입니다."
+  },
+  {
+    "question_id": 157,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "testing_strategy",
+    "category": "Chaos Engineering",
+    "subcategory": "Resilience Testing",
+    "skills_required": ["Resilience", "SRE"],
+    "scenario": "운영 환경에서 예기치 못한 서버 다운이나 네트워크 단절이 발생했을 때 시스템이 정말로 잘 버티는지 확인하고 싶습니다.",
+    "question": "어떤 테스트 기법을 사용해야 합니까?",
+    "choices": [
+      "단위 테스트",
+      "부하 테스트 (Load Testing)",
+      "카오스 엔지니어링 (Chaos Engineering)",
+      "인수 테스트"
+    ],
+    "correct_answer": "카오스 엔지니어링 (Chaos Engineering)",
+    "explanation": "카오스 엔지니어링은 운영 환경에 의도적으로 장애를 주입하여 시스템의 복원력을 검증하고 약점을 찾아내는 방식입니다."
+  },
+  {
+    "question_id": 158,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "testing_strategy",
+    "category": "Performance Testing",
+    "subcategory": "Stress Testing",
+    "skills_required": ["Performance Testing"],
+    "scenario": "우리 시스템이 최대 어느 정도의 동시 접속자까지 견디다 무너지는지, 임계점을 확인하고 싶습니다.",
+    "question": "적절한 테스트 유형은?",
+    "choices": [
+      "Load Test",
+      "Stress Test",
+      "Soak Test (내구도 테스트)",
+      "Spike Test"
+    ],
+    "correct_answer": "Stress Test",
+    "explanation": "스트레스 테스트는 시스템의 한계치 이상의 부하를 주어 시스템이 언제 실패하고 어떻게 복구되는지 확인하는 테스트입니다."
+  },
+  {
+    "question_id": 159,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "testing_strategy",
+    "category": "Deployment Testing",
+    "subcategory": "Canary Deployment",
+    "skills_required": ["Release Management"],
+    "scenario": "전체 사용자에게 영향을 주지 않고, 5%의 사용자에게만 신규 기능을 노출하여 오류 여부를 먼저 확인하고 싶습니다.",
+    "question": "어떤 테스트/배포 전략입니까?",
+    "choices": [
+      "Blue-Green Deployment",
+      "Canary Deployment (카나리 배포)",
+      "A/B Testing",
+      "Shadow Deployment"
+    ],
+    "correct_answer": "Canary Deployment (카나리 배포)",
+    "explanation": "카나리 배포는 소량의 트래픽을 신규 버전에 먼저 보내 리스크를 최소화하며 검증하는 기법입니다."
+  },
+  {
+    "question_id": 160,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "testing_strategy",
+    "category": "API",
+    "subcategory": "Contract Testing",
+    "skills_required": ["Microservices", "Testing"],
+    "scenario": "두 팀이 개발하는 마이크로서비스 간의 API 규격이 일치하는지 자동으로 검증하고 싶습니다. 한 쪽이 변경되면 다른 쪽에서 즉시 알아야 합니다.",
+    "question": "추천하는 테스트 방식은?",
+    "choices": [
+      "E2E (End-to-End) 테스트",
+      "컨트랙트 테스트 (Contract Testing, 예: Pact)",
+      "수동 API 문서 확인",
+      "단위 테스트"
+    ],
+    "correct_answer": "컨트랙트 테스트 (Contract Testing, 예: Pact)",
+    "explanation": "컨트랙트 테스트는 서비스 간에 약속된 API 규격(계약)을 정의하고 양측이 이를 준수하는지 자동으로 검증하여 통합 리스크를 줄입니다."
+  },
+  {
+    "question_id": 161,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "refactoring_decision",
+    "category": "Software Quality",
+    "subcategory": "Code Smell",
+    "skills_required": ["Software Architecture", "Technical Debt"],
+    "scenario": "한 함수가 2,000줄이 넘고 50개의 조건을 처리하고 있습니다. 이 코드를 수정할 때마다 예상치 못한 버그가 계속 터집니다.",
+    "question": "TPM으로서 어떤 가이드를 주시겠습니까?",
+    "choices": [
+      "코드가 작동하니 절대 건드리지 말라고 한다.",
+      "기능 구현을 잠시 멈추고 해당 모듈을 작은 단위로 쪼개고 가독성을 높이는 리팩토링을 수행하도록 우선순위를 조정한다.",
+      "해당 개발자를 교체한다.",
+      "주석을 더 많이 달라고 한다."
+    ],
+    "correct_answer": "기능 구현을 잠시 멈추고 해당 모듈을 작은 단위로 쪼개고 가독성을 높이는 리팩토링을 수행하도록 우선순위를 조정한다.",
+    "explanation": "과도하게 복잡한 코드(Spaghetti Code)는 유지보수 비용을 기하급수적으로 높이므로 적절한 시점의 리팩토링은 필수 투자입니다."
+  },
+  {
+    "question_id": 162,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "refactoring_decision",
+    "category": "Architecture",
+    "subcategory": "Database Refactoring",
+    "skills_required": ["Database Design"],
+    "scenario": "여러 서비스가 하나의 거대한 DB 테이블을 직접 참조하고 있어 테이블 구조를 바꾸기가 불가능에 가깝습니다.",
+    "question": "이 문제를 해결하기 위한 리팩토링 방향은?",
+    "choices": [
+      "테스트용 DB를 하나 더 만든다.",
+      "각 서비스가 전용 DB/API를 갖도록 데이터를 분리(Decoupling)하고, 직접 DB 참조 대신 API 통신을 하도록 구조를 변경한다.",
+      "모든 서비스를 하나로 합친다.",
+      "DB 엔진을 바꾼다."
+    ],
+    "correct_answer": "각 서비스가 전용 DB/API를 갖도록 데이터를 분리(Decoupling)하고, 직접 DB 참조 대신 API 통신을 하도록 구조를 변경한다.",
+    "explanation": "데이터베이스 공유는 서비스 간 강한 결합도를 만들어 변화를 어렵게 합니다. 캡슐화를 통해 독립적인 확장이 가능하도록 해야 합니다."
+  },
+  {
+    "question_id": 163,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "refactoring_decision",
+    "category": "Performance",
+    "subcategory": "Redundant Operations",
+    "skills_required": ["Algorithm Optimization"],
+    "scenario": "매 요청마다 복잡한 통계치를 DB에서 실시간으로 계산하여 응답하고 있습니다. 이로 인해 CPU 점유율이 매우 높습니다.",
+    "question": "성능 최적화를 위한 리팩토링 제안은?",
+    "choices": [
+      "CPU를 64코어로 늘린다.",
+      "미리 계산된 결과를 별도 테이블에 저장해두거나(Materialized View) 캐싱을 도입한다.",
+      "통계 기능을 삭제한다.",
+      "사용자가 적은 새벽에만 접속하게 유도한다."
+    ],
+    "correct_answer": "미리 계산된 결과를 별도 테이블에 저장해두거나(Materialized View) 캐싱을 도입한다.",
+    "explanation": "반복적이고 비싼 연산은 미리 계산(Pre-computation)해두어 응답 속도를 높이고 리소스 소모를 줄여야 합니다."
+  },
+  {
+    "question_id": 164,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "refactoring_decision",
+    "category": "Legacy",
+    "subcategory": "Modernization",
+    "skills_required": ["Legacy Modernization Strategy"],
+    "scenario": "10년 된 자바 6 기반의 시스템을 자바 17과 최신 프레임워크로 옮기려 합니다. 한 번에 옮기기엔 리스크가 너무 큽니다.",
+    "question": "추천하는 전략은?",
+    "choices": [
+      "한 번에 모든 코드를 새로 짠다. (Big Bang)",
+      "Strangler Fig Pattern을 사용하여 기능을 하나씩 신규 시스템으로 옮기면서 점진적으로 교체한다.",
+      "그냥 자바 6을 계속 쓴다.",
+      "AI에게 모든 코드를 변환해달라고 시킨다."
+    ],
+    "correct_answer": "Strangler Fig Pattern을 사용하여 기능을 하나씩 신규 시스템으로 옮기면서 점진적으로 교체한다.",
+    "explanation": "점진적 교체 패턴은 서비스 중단 없이 대규모 레거시 시스템을 현대화하는 표준적인 방법입니다."
+  },
+  {
+    "question_id": 165,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "refactoring_decision",
+    "category": "Frontend",
+    "subcategory": "Component Logic",
+    "skills_required": ["Frontend Architecture"],
+    "scenario": "프론트엔드 코드에 비즈니스 로직, API 호출, 데이터 변환, UI 렌더링 코드가 모두 섞여 있어 재사용이 불가능합니다.",
+    "question": "어떤 리팩토링을 권장하시겠습니까?",
+    "choices": [
+      "UI를 모두 이미지로 대체한다.",
+      "관심사 분리(Separation of Concerns)를 적용하여 로직과 뷰를 분리하고, 재사용 가능한 공통 컴포넌트와 훅(Hook)으로 분리한다.",
+      "자바스크립트 대신 HTML만 쓴다.",
+      "파일을 더 작게 쪼개기만 한다."
+    ],
+    "correct_answer": "관심사 분리(Separation of Concerns)를 적용하여 로직과 뷰를 분리하고, 재사용 가능한 공통 컴포넌트와 훅(Hook)으로 분리한다.",
+    "explanation": "관심사 분리는 코드의 가독성, 테스트 용이성, 재사용성을 높이는 소프트웨어 설계의 기본 원칙입니다."
+  },
+  {
+    "question_id": 166,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "dependency_analysis",
+    "category": "Architecture",
+    "subcategory": "Circular Dependency",
+    "skills_required": ["System Architecture", "Dependency"],
+    "scenario": "A 서비스가 B를 호출하고, B가 C를 호출하는데, C가 다시 A를 호출하는 구조가 형성되어 배포와 테스트가 엉망이 되었습니다.",
+    "question": "이 현상을 무엇이라 하며 어떻게 해결해야 합니까?",
+    "choices": [
+      "완벽한 순환 구조: 매우 안정적임",
+      "순환 의존성(Circular Dependency): 이벤트 기반 아키텍처(Pub/Sub)를 도입하여 결합도를 낮추거나 중계 계층을 두어 의존성을 끊는다.",
+      "삼각형 구조: 자연스러운 현상임",
+      "데이터베이스 통합으로 해결"
+    ],
+    "correct_answer": "순환 의존성(Circular Dependency): 이벤트 기반 아키텍처(Pub/Sub)를 도입하여 결합도를 낮추거나 중계 계층을 두어 의존성을 끊는다.",
+    "explanation": "순환 의존성은 시스템을 하나의 거대한 덩어리로 만들어 개별 서비스의 독립성을 파괴합니다. 메시지 브로커 등을 이용해 비동기로 의존을 끊는 것이 정석입니다."
+  },
+  {
+    "question_id": 167,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "dependency_analysis",
+    "category": "Project Management",
+    "subcategory": "Risk Assessment",
+    "skills_required": ["Project Management", "Dependency"],
+    "scenario": "프로젝트 릴리즈를 위해 반드시 선행되어야 하는 타 부서의 인프라 작업이 예정보다 3주 지연되었습니다.",
+    "question": "TPM의 올바른 조치는?",
+    "choices": [
+      "지연된 만큼 우리 팀도 휴가를 간다.",
+      "지연이 프로젝트 전체 일정에 미치는 영향(Critical Path)을 분석하고, 일정을 조정하거나 선행 작업 없이 할 수 있는 업무를 먼저 수행하도록 재배치한다.",
+      "인프라 팀에게 매일 화를 낸다.",
+      "지연 사실을 숨기고 출시일에 맞춰 보고한다."
+    ],
+    "correct_answer": "지연이 프로젝트 전체 일정에 미치는 영향(Critical Path)을 분석하고, 일정을 조정하거나 선행 작업 없이 할 수 있는 업무를 먼저 수행하도록 재배치한다.",
+    "explanation": "TPM은 의존성 지연에 따른 연쇄 반응을 예측하고 리소스를 효율적으로 재분배하여 피해를 최소화해야 합니다."
+  },
+  {
+    "question_id": 168,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "dependency_analysis",
+    "category": "Vendor Management",
+    "subcategory": "Vendor Lock-in",
+    "skills_required": ["Cloud Strategy", "Vendor Management"],
+    "scenario": "특정 클라우드 제공자의 전용 DB 서비스(예: DynamoDB)를 너무 깊게 사용하여 다른 클라우드로 옮기는 데 수십억 원의 비용이 예상됩니다.",
+    "question": "이 상황을 지칭하는 용어는?",
+    "choices": [
+      "Vendor Lock-in (벤더 종속성)",
+      "Cloud Optimized",
+      "Managed Excellence",
+      "Resource Portability"
+    ],
+    "correct_answer": "Vendor Lock-in (벤더 종속성)",
+    "explanation": "특정 업체 기술에 지나치게 의존하여 대안으로 옮기기 어려운 상태를 말하며, 설계 단계에서 이 리스크와 비용 편익을 저울질해야 합니다."
+  },
+  {
+    "question_id": 169,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "dependency_analysis",
+    "category": "Software Quality",
+    "subcategory": "Coupling and Cohesion",
+    "skills_required": ["Software Design"],
+    "scenario": "하나의 클래스를 수정했는데 전혀 관련 없어 보이는 다른 5개 모듈에서 컴파일 에러가 발생합니다.",
+    "question": "이 소프트웨어의 상태를 가장 잘 설명한 것은?",
+    "choices": [
+      "High Cohesion (높은 응집도)",
+      "Low Coupling (낮은 결합도)",
+      "High Coupling (높은 결합도) 및 부수 효과(Side Effect)가 큰 상태",
+      "완벽한 모듈화"
+    ],
+    "correct_answer": "High Coupling (높은 결합도) 및 부수 효과(Side Effect)가 큰 상태",
+    "explanation": "결합도가 높으면 모듈 간의 의존성이 너무 강해 변경 시의 영향 범위를 예측하기 어렵고 유지보수가 매우 힘들어집니다."
+  },
+  {
+    "question_id": 170,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "dependency_analysis",
+    "category": "Build Management",
+    "subcategory": "Dependency Hell",
+    "skills_required": ["Build Tools"],
+    "scenario": "라이브러리 A는 라이브러리 B의 1.0 버전을 필요로 하고, 라이브러리 C는 B의 2.0 버전을 필요로 하여 빌드가 실패합니다.",
+    "question": "이를 해결하기 위한 일반적인 접근법은?",
+    "choices": [
+      "라이브러리를 모두 삭제한다.",
+      "의존성 트리를 분석하여 호환 가능한 최신 버전을 찾거나, Shading/Bundling 기법을 통해 충돌하는 버전을 격리하여 포함시킨다.",
+      "컴퓨터를 바꾼다.",
+      "빌드 도구를 사용하지 않는다."
+    ],
+    "correct_answer": "의존성 트리를 분석하여 호환 가능한 최신 버전을 찾거나, Shading/Bundling 기법을 통해 충돌하는 버전을 격리하여 포함시킨다.",
+    "explanation": "버전 충돌은 대규모 프로젝트에서 흔히 발생하며, 의존성 관리 도구의 기능을 활용하여 충돌을 해소해야 합니다."
+  },
+  {
+    "question_id": 171,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "best_practice_selection",
+    "category": "DevOps",
+    "subcategory": "Infrastrucure as Code",
+    "skills_required": ["IaC", "Terraform"],
+    "scenario": "수동으로 콘솔에서 서버를 만들다 보니 설정이 누락되거나 각 서버의 상태가 제각각인 'Snowflake Server' 문제가 발생합니다.",
+    "question": "가장 권장되는 해결책은?",
+    "choices": [
+      "서버 설정 가이드를 더 자세히 쓴다.",
+      "IaC(Infrastructure as Code, 예: Terraform)를 도입하여 모든 인프라 설정을 코드로 관리하고 버전 제어를 한다.",
+      "서버를 절대 수정하지 못하게 한다.",
+      "콘솔 접속 권한을 1명에게만 준다."
+    ],
+    "correct_answer": "IaC(Infrastructure as Code, 예: Terraform)를 도입하여 모든 인프라 설정을 코드로 관리하고 버전 제어를 한다.",
+    "explanation": "IaC는 인프라 구축의 자동화, 일관성, 가시성을 보장하며 인적 실수를 획기적으로 줄여줍니다."
+  },
+  {
+    "question_id": 172,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "best_practice_selection",
+    "category": "Operations",
+    "subcategory": "Post-mortem",
+    "skills_required": ["SRE", "Culture"],
+    "scenario": "장애 회고(Post-mortem) 회의를 진행하며 개선 방안을 도출하려 합니다.",
+    "question": "회고 문화의 모범 사례가 아닌 것은?",
+    "choices": [
+      "사람이 아닌 시스템과 프로세스에 집중한다.",
+      "장애를 일으킨 담당자가 동료들 앞에서 사과하게 한다.",
+      "타임라인을 객관적으로 구성한다.",
+      "실행 가능한 재발 방지 대책(Action Items)을 도출하고 담당자를 지정한다."
+    ],
+    "correct_answer": "장애를 일으킨 담당자가 동료들 앞에서 사과하게 한다.",
+    "explanation": "공개적인 사과 강요는 '비난 문화'를 조장하여 사람들이 실수를 숨기게 만들고 장기적으로 시스템의 안정성을 해칩니다."
+  },
+  {
+    "question_id": 173,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "best_practice_selection",
+    "category": "API",
+    "subcategory": "API Versioning",
+    "skills_required": ["API Design"],
+    "scenario": "API 스펙을 대대적으로 변경해야 합니다. 기존 앱 사용자들이 앱을 업데이트하지 않아도 서비스가 유지되어야 합니다.",
+    "question": "어떻게 대응해야 합니까?",
+    "choices": [
+      "기존 API를 즉시 삭제하고 새 스펙으로 교체한다.",
+      "API 버저닝(예: /v1, /v2)을 도입하여 구버전과 신버전을 동시에 지원하면서 점진적으로 이전을 유도한다.",
+      "업데이트하지 않은 사용자는 차단한다.",
+      "새 앱을 아예 다른 이름으로 출시한다."
+    ],
+    "correct_answer": "API 버저닝(예: /v1, /v2)을 도입하여 구버전과 신버전을 동시에 지원하면서 점진적으로 이전을 유도한다.",
+    "explanation": "하위 호환성(Backward Compatibility) 유지는 대규모 서비스 운영의 필수적인 모범 사례입니다."
+  },
+  {
+    "question_id": 174,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "best_practice_selection",
+    "category": "Security",
+    "subcategory": "Least Privilege",
+    "skills_required": ["IAM", "Security"],
+    "scenario": "모든 개발자가 모든 서버에 'root' 권한으로 접속하고 있으며, DB의 모든 테이블에 읽기/쓰기 권한을 가지고 있습니다.",
+    "question": "이 보안 상태를 개선하기 위해 적용해야 할 원칙은?",
+    "choices": [
+      "보안 제일주의",
+      "최소 권한의 원칙 (Principle of Least Privilege)",
+      "비밀번호 복잡성 원칙",
+      "다중 인격 원칙"
+    ],
+    "correct_answer": "최소 권한의 원칙 (Principle of Least Privilege)",
+    "explanation": "업무 수행에 필요한 최소한의 권한만 부여함으로써, 계정 유출이나 실수로 인한 피해 범위를 최소화해야 합니다."
+  },
+  {
+    "question_id": 175,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "best_practice_selection",
+    "category": "Code Quality",
+    "subcategory": "Documentation",
+    "skills_required": ["Technical Writing"],
+    "scenario": "신규 개발자가 입사했을 때 개발 환경을 설정하는 데만 일주일이 걸리고, 아무도 전체 아키텍처를 설명하지 못합니다.",
+    "question": "TPM으로서 어떤 문화를 정착시켜야 합니까?",
+    "choices": [
+      "기억력이 좋은 사람을 뽑는다.",
+      "README, API 명세, 아키텍처 다이어그램 등을 최신으로 유지하는 '문서화의 생활화'와 On-boarding 가이드 구축",
+      "매일 교육 세미나를 연다.",
+      "문서화를 담당하는 인력을 별도로 채용하고 개발자는 코딩만 하게 한다."
+    ],
+    "correct_answer": "README, API 명세, 아키텍처 다이어그램 등을 최신으로 유지하는 '문서화의 생활화'와 On-boarding 가이드 구축",
+    "explanation": "지식의 공유와 기록은 팀의 확장성과 생산성을 결정하는 핵심적인 엔지니어링 실천 과제입니다."
+  },
+  {
+    "question_id": 176,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "code_review",
+    "category": "Code Review",
+    "subcategory": "Technical Assessment",
+    "skills_required": ["Code Review", "Risk Management"],
+    "scenario": "대규모 트래픽이 예상되는 API의 코드 리뷰 요청이 들어왔습니다. 코드 내에 'SELECT * FROM big_table'과 같은 쿼리가 포함되어 있습니다.",
+    "question": "TPM 관점에서 이 코드 리뷰의 가장 중요한 코멘트는?",
+    "choices": [
+      "코드의 들여쓰기가 잘못되었습니다.",
+      "대량의 데이터를 실시간으로 조회하는 쿼리는 DB 부하를 초래하므로, 필요한 컬럼만 지정하고 페이징 처리나 인덱스 활용 여부를 재검토해야 합니다.",
+      "변수 이름이 마음에 들지 않습니다.",
+      "코드가 너무 짧아서 신뢰가 안 갑니다."
+    ],
+    "correct_answer": "대량의 데이터를 실시간으로 조회하는 쿼리는 DB 부하를 초래하므로, 필요한 컬럼만 지정하고 페이징 처리나 인덱스 활용 여부를 재검토해야 합니다.",
+    "explanation": "TPM의 코드 리뷰는 단순 문법보다 시스템 안정성, 성능 리스크, 운영 임팩트에 집중해야 합니다."
+  },
+  {
+    "question_id": 177,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "code_review",
+    "category": "Code Review",
+    "subcategory": "Maintainability",
+    "skills_required": ["Maintainability"],
+    "scenario": "코드 곳곳에 'if (status == 1) // 1은 활성화 상태'와 같은 매직 넘버(Magic Number)가 가득합니다.",
+    "question": "어떤 개선을 요구하시겠습니까?",
+    "choices": [
+      "주석을 더 상세히 달라고 한다.",
+      "의미가 명확한 상수(Constant)나 열거형(Enum)을 정의하여 코드의 가독성과 유지보수성을 높일 것을 요구한다.",
+      "숫자 1을 2로 바꾸라고 한다.",
+      "상관없으니 통과시킨다."
+    ],
+    "correct_answer": "의미가 명확한 상수(Constant)나 열거형(Enum)을 정의하여 코드의 가독성과 유지보수성을 높일 것을 요구한다.",
+    "explanation": "매직 넘버는 코드의 의도를 파악하기 어렵게 만들고, 변경 시 누락될 위험이 커서 지양해야 합니다."
+  },
+  {
+    "question_id": 178,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "code_review",
+    "category": "Code Review",
+    "subcategory": "Error Handling",
+    "skills_required": ["Exception Handling"],
+    "scenario": "모든 예외 처리가 'try { ... } catch (Exception e) { }'와 같이 비어있는(Empty Catch Block) 코드가 발견되었습니다.",
+    "question": "이 코드가 위험한 이유는?",
+    "choices": [
+      "코드 실행 속도가 빨라지기 때문",
+      "에러가 발생해도 아무런 로그가 남지 않아 문제 발생 시 원인을 파악할 수 없고, 시스템이 잘못된 상태로 계속 동작할 수 있음",
+      "컴파일러가 싫어하기 때문",
+      "파일 용량이 늘어나기 때문"
+    ],
+    "correct_answer": "에러가 발생해도 아무런 로그가 남지 않아 문제 발생 시 원인을 파악할 수 없고, 시스템이 잘못된 상태로 계속 동작할 수 있음",
+    "explanation": "예외를 무시하는 것은 '침묵의 실패'를 초래하여 시스템을 디버깅 불가능한 상태로 만듭니다."
+  },
+  {
+    "question_id": 179,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "code_review",
+    "category": "Code Review",
+    "subcategory": "Concurrency Issues",
+    "skills_required": ["Concurrent Programming"],
+    "scenario": "멀티스레드 환경에서 공유 자원에 접근할 때 락(Lock)을 사용하지 않는 코드가 발견되었습니다.",
+    "question": "리뷰어로서 지적해야 할 잠재적 문제는?",
+    "choices": [
+      "Race Condition(경합 상태)으로 인한 데이터 부정합 발생 가능성",
+      "프로그램의 실행 속도 저하",
+      "CPU 사용량 0% 유지",
+      "동기화가 자동으로 되어 문제없음"
+    ],
+    "correct_answer": "Race Condition(경합 상태)으로 인한 데이터 부정합 발생 가능성",
+    "explanation": "여러 스레드가 동시에 자원을 수정하면 예상치 못한 데이터 결과가 나올 수 있으므로 적절한 동기화 기법이 필요합니다."
+  },
+  {
+    "question_id": 180,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "code_review",
+    "category": "Code Review",
+    "subcategory": "Security in Code",
+    "skills_required": ["Security", "Hard-coded Secrets"],
+    "scenario": "AWS Access Key와 Secret Key가 소스 코드에 문자열로 직접 입력되어 있는 것을 발견했습니다.",
+    "question": "가장 적절한 리뷰 의견은?",
+    "choices": [
+      "키값이 복잡해서 보안에 좋다.",
+      "민감한 자격 증명은 코드에 포함하지 말고, 환경 변수나 Secret Manager와 같은 보안 저장소를 사용하도록 즉시 수정해야 한다.",
+      "비밀번호를 더 길게 만들라고 한다.",
+      "아무에게도 알려주지 말라고 주석을 단다."
+    ],
+    "correct_answer": "민감한 자격 증명은 코드에 포함하지 말고, 환경 변수나 Secret Manager와 같은 보안 저장소를 사용하도록 즉시 수정해야 한다.",
+    "explanation": "코드에 하드코딩된 비밀 정보는 소스 코드 유출 시 전체 인프라 권한을 넘겨주는 보안 참사로 이어집니다."
+  },
+  {
+    "question_id": 181,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "documentation_analysis",
+    "category": "Architecture",
+    "subcategory": "RFC / Design Docs",
+    "skills_required": ["Technical Writing", "Critical Thinking"],
+    "scenario": "새로운 결제 아키텍처에 대한 설계 문서(Design Doc)를 검토 중입니다. 문서에는 장점만 나열되어 있고, 장애 시나리오나 리스크에 대한 내용이 없습니다.",
+    "question": "TPM으로서 추가를 요구해야 할 가장 중요한 항목은?",
+    "choices": [
+      "개발자의 프로필",
+      "트레이드오프 분석(Trade-off Analysis) 및 실패 시 복구 전략(Recovery Strategy)",
+      "사용한 프로그래밍 언어의 역사",
+      "문서의 폰트 종류"
+    ],
+    "correct_answer": "트레이드오프 분석(Trade-off Analysis) 및 실패 시 복구 전략(Recovery Strategy)",
+    "explanation": "완벽한 설계는 없습니다. 선택한 방식의 한계와 장애 상황에서의 동작 방식을 명시해야 견고한 시스템을 만들 수 있습니다."
+  },
+  {
+    "question_id": 182,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "documentation_analysis",
+    "category": "SLA",
+    "subcategory": "Service Level Agreement",
+    "skills_required": ["Business Analysis", "SLA"],
+    "scenario": "파트너사와의 계약서에 가용성 99.99% 보장(SLA) 조항이 있습니다. 만약 이를 어길 경우 막대한 보상금을 지불해야 합니다.",
+    "question": "이 가용성 수준이 의미하는 연간 최대 허용 다운타임은 대략 얼마입니까?",
+    "choices": [
+      "약 8.7시간",
+      "약 52분",
+      "약 5분",
+      "약 3.6일"
+    ],
+    "correct_answer": "약 52분",
+    "explanation": "99.99%(Four Nines) 가용성은 연간 약 52.6분의 다운타임만 허용하는 매우 높은 수준의 목표입니다."
+  },
+  {
+    "question_id": 183,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "documentation_analysis",
+    "category": "Requirements",
+    "subcategory": "Non-functional Requirements",
+    "skills_required": ["Systems Thinking"],
+    "scenario": "기능 요구사항 문서(Functional Specs)만 보고 프로젝트 일정을 산정하려 합니다.",
+    "question": "기술적 성공을 위해 반드시 별도로 확인해야 할 '비기능적 요구사항'에 해당하지 않는 것은?",
+    "choices": [
+      "보안(Security) 및 개인정보 보호",
+      "확장성(Scalability) 및 성능 목표",
+      "UI의 버튼 색상 및 로고 크기",
+      "가용성(Availability) 및 재난 복구(DR) 계획"
+    ],
+    "correct_answer": "UI의 버튼 색상 및 로고 크기",
+    "explanation": "UI 디자인 요소는 보통 기능적 요구사항이나 디자인 명세에 해당하며, 비기능 요구사항은 시스템의 품질과 운영 특성에 집중합니다."
+  },
+  {
+    "question_id": 184,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "documentation_analysis",
+    "category": "API Docs",
+    "subcategory": "Swagger / OpenAPI",
+    "skills_required": ["API Strategy"],
+    "scenario": "외부 개발자들이 우리 API를 사용하여 앱을 개발해야 합니다. API 문서가 부실하여 문의가 폭주하고 있습니다.",
+    "question": "문서 품질 개선을 위한 가장 효과적인 조치는?",
+    "choices": [
+      "문의 게시판을 폐쇄한다.",
+      "Swagger나 Redoc 등을 사용하여 인터랙티브한 API 문서(OpenAPI Spec)를 자동 생성하고, 예제 코드(SDK)를 함께 제공한다.",
+      "문서를 직접 종이에 써서 보낸다.",
+      "전화로만 응대한다."
+    ],
+    "correct_answer": "Swagger나 Redoc 등을 사용하여 인터랙티브한 API 문서(OpenAPI Spec)를 자동 생성하고, 예제 코드(SDK)를 함께 제공한다.",
+    "explanation": "표준화된 자동 문서화 도구는 개발자 경험(DX)을 높이고 불필요한 커뮤니케이션 비용을 줄여줍니다."
+  },
+  {
+    "question_id": 185,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "documentation_analysis",
+    "category": "Audit",
+    "subcategory": "System Compliance",
+    "skills_required": ["Compliance", "Auditing"],
+    "scenario": "보안 감사를 앞두고 시스템 접근 제어 기록이 제대로 남고 있는지 확인해야 합니다.",
+    "question": "분석해야 할 가장 중요한 문서는?",
+    "choices": [
+      "개발자의 주간 보고서",
+      "시스템 감사 로그(Audit Logs) 및 접근 이력 보고서",
+      "서버 하드웨어 영수증",
+      "사내 식당 메뉴표"
+    ],
+    "correct_answer": "시스템 감사 로그(Audit Logs) 및 접근 이력 보고서",
+    "explanation": "감사의 핵심은 '누가, 언제, 무엇을, 어떻게' 했는지에 대한 조작 불가능한 기록(Audit Trail)을 확인하는 것입니다."
+  },
+  {
+    "question_id": 186,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "api_design",
+    "category": "API Design",
+    "subcategory": "Idempotency",
+    "skills_required": ["API Reliability", "Distributed Systems"],
+    "scenario": "결제 API 호출 시 네트워크 오류가 발생했습니다. 클라이언트가 재시도를 했을 때 중복 결제가 발생하면 안 됩니다.",
+    "question": "이러한 성질을 무엇이라 하며, 어떻게 구현합니까?",
+    "choices": [
+      "멱등성(Idempotency): 요청에 고유한 키(Idempotency-Key)를 포함하여 서버가 동일 요청을 중복 처리하지 않게 설계한다.",
+      "가용성(Availability): 서버를 여러 대 두어 해결한다.",
+      "격리성(Isolation): DB 트랜잭션을 길게 잡는다.",
+      "지속성(Durability): 하드디스크에 저장한다."
+    ],
+    "correct_answer": "멱등성(Idempotency): 요청에 고유한 키(Idempotency-Key)를 포함하여 서버가 동일 요청을 중복 처리하지 않게 설계한다.",
+    "explanation": "멱등성은 여러 번 수행해도 결과가 같은 성질로, 결제와 같은 민감한 API에서 재시도 안전성을 보장하기 위해 필수적입니다."
+  },
+  {
+    "question_id": 187,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "api_design",
+    "category": "API Design",
+    "subcategory": "Pagination Strategy",
+    "skills_required": ["Backend Performance", "API Design"],
+    "scenario": "수백만 건의 데이터를 조회하는 API를 설계합니다. 한 번에 모든 데이터를 보내면 서버와 클라이언트 모두 마비됩니다.",
+    "question": "가장 권장되는 페이징 처리 방식은?",
+    "choices": [
+      "무조건 전체 데이터 전송",
+      "Offset 기반 페이징 (데이터가 많아질수록 성능 저하 발생)",
+      "커서 기반 페이징 (Cursor-based Pagination, 이전 마지막 데이터의 ID 기반 조회)",
+      "랜덤 샘플링"
+    ],
+    "correct_answer": "커서 기반 페이징 (Cursor-based Pagination, 이전 마지막 데이터의 ID 기반 조회)",
+    "explanation": "커서 기반 페이징은 오프셋을 건너뛰는 연산이 필요 없어 대용량 데이터 조회에서 일정한 성능을 보장하며 데이터 누락 리스크도 적습니다."
+  },
+  {
+    "question_id": 188,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "api_design",
+    "category": "API Design",
+    "subcategory": "Rate Limiting Strategy",
+    "skills_required": ["System Protection"],
+    "scenario": "특정 악성 사용자가 초당 수천 번의 API 요청을 보내 전체 시스템의 성능을 저하시키고 있습니다.",
+    "question": "어떤 API 설계적 방어 장치가 필요합니까?",
+    "choices": [
+      "비밀번호 변경",
+      "API Rate Limiting (처리량 제한) 및 사용량 할당(Quota) 관리",
+      "서버 하드웨어 업그레이드",
+      "모든 사용자 차단"
+    ],
+    "correct_answer": "API Rate Limiting (처리량 제한) 및 사용량 할당(Quota) 관리",
+    "explanation": "처리량 제한은 시스템 자원을 공정하게 배분하고 과도한 요청으로부터 백엔드를 보호하는 필수 메커니즘입니다."
+  },
+  {
+    "question_id": 189,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "api_design",
+    "category": "API Design",
+    "subcategory": "Backward Compatibility",
+    "skills_required": ["Version Management"],
+    "scenario": "API 응답에서 특정 필드를 제거해야 합니다. 하지만 일부 구형 버전의 모바일 앱이 이 필드를 여전히 사용하고 있습니다.",
+    "question": "어떻게 조치해야 합니까?",
+    "choices": [
+      "즉시 삭제하고 앱 강제 업데이트 공지를 띄운다.",
+      "필드를 즉시 제거하진 않되 Deprecated 공지를 하고, 새 버전 API(v2)를 출시한 후 충분한 유예 기간을 거쳐 삭제한다.",
+      "필드를 그대로 두고 평생 유지한다.",
+      "필드 이름을 바꾼다."
+    ],
+    "correct_answer": "필드를 즉시 제거하진 않되 Deprecated 공지를 하고, 새 버전 API(v2)를 출시한 후 충분한 유예 기간을 거쳐 삭제한다.",
+    "explanation": "Breaking Change는 사용자 경험에 큰 영향을 주므로, 단계적인 폐기(Deprecation) 절차를 밟는 것이 전문적인 API 관리입니다."
+  },
+  {
+    "question_id": 190,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "api_design",
+    "category": "API Design",
+    "subcategory": "Bulk API",
+    "skills_required": ["Efficiency", "Batch Processing"],
+    "scenario": "사용자가 1,000개의 상품을 장바구니에 담으려고 합니다. 1,000번의 API 호출을 하는 대신 한 번에 처리하고 싶습니다.",
+    "question": "어떤 API 형태를 제공해야 합니까?",
+    "choices": [
+      "더 빠른 네트워크 도입",
+      "Bulk/Batch API (여러 요청을 배열 형태로 묶어 한 번에 전송)",
+      "모든 상품 정보를 쿼리 스트링으로 보냄",
+      "사용자에게 1,000번 누르라고 안내"
+    ],
+    "correct_answer": "Bulk/Batch API (여러 요청을 배열 형태로 묶어 한 번에 전송)",
+    "explanation": "네트워크 왕복(Round-trip) 시간을 줄이고 서버 부하를 최소화하기 위해 대량 작업은 벌크 형태의 API로 설계하는 것이 효율적입니다."
+  },
+  {
+    "question_id": 191,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "database_schema_design",
+    "category": "Database",
+    "subcategory": "Schema Evolution",
+    "skills_required": ["Database Design", "NoSQL"],
+    "scenario": "사용자 프로필 항목이 매주 추가되고 변경됩니다. RDBMS의 고정된 스키마로는 대응 속도가 너무 느리고 마이그레이션 부담이 큽니다.",
+    "question": "어떤 방식의 데이터 모델링을 제안하시겠습니까?",
+    "choices": [
+      "RDBMS 테이블에 컬럼을 100개 미리 만들어둔다.",
+      "스키마가 유연한 Document DB(예: MongoDB)를 사용하거나, RDBMS 내에서 JSON 타입의 컬럼을 활용한다.",
+      "데이터 저장을 포기한다.",
+      "매주 DB 점검을 하며 스키마를 변경한다."
+    ],
+    "correct_answer": "스키마가 유연한 Document DB(예: MongoDB)를 사용하거나, RDBMS 내에서 JSON 타입의 컬럼을 활용한다.",
+    "explanation": "변경이 잦은 비정형 데이터는 스키마리스(Schema-less) 특성을 가진 저장소를 활용하는 것이 운영 효율성을 크게 높입니다."
+  },
+  {
+    "question_id": 192,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "database_schema_design",
+    "category": "Database",
+    "subcategory": "Archiving Strategy",
+    "skills_required": ["Data Lifecycle"],
+    "scenario": "주문 테이블의 행 수가 10억 건을 넘어 조인 성능이 한계에 부딪혔습니다. 최근 3개월 데이터만 주로 사용됩니다.",
+    "question": "DB 스키마 및 운영 전략은?",
+    "choices": [
+      "모든 데이터를 계속 유지하며 인덱스만 늘린다.",
+      "파티셔닝(Partitioning)을 도입하여 월별로 데이터를 분할하고, 오래된 데이터는 콜드 스토리지로 아카이빙한다.",
+      "데이터를 무작위로 삭제한다.",
+      "DB를 여러 개 사서 복제한다."
+    ],
+    "correct_answer": "파티셔닝(Partitioning)을 도입하여 월별로 데이터를 분할하고, 오래된 데이터는 콜드 스토리지로 아카이빙한다.",
+    "explanation": "대용량 테이블은 물리적으로 분할하여 조회 범위를 좁히고(Partitioning), 사용 빈도가 낮은 데이터를 분리(Archiving)하여 성능을 유지해야 합니다."
+  },
+  {
+    "question_id": 193,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "database_schema_design",
+    "category": "Database",
+    "subcategory": "Polyglot Persistence",
+    "skills_required": ["Storage Strategy"],
+    "scenario": "검색은 빨라야 하고, 관계형 데이터 정합성도 중요하며, 실시간 랭킹도 보여줘야 합니다.",
+    "question": "이 모든 요구사항을 하나의 RDBMS로 처리하려는 팀에게 줄 수 있는 아키텍처 조언은?",
+    "choices": [
+      "RDBMS가 최고이니 설정을 튜닝해서 쓰자.",
+      "Polyglot Persistence: 검색은 Elasticsearch, 관계형은 MySQL, 랭킹은 Redis 등 목적에 맞는 저장소를 혼용한다.",
+      "성능을 포기하고 하나만 쓴다.",
+      "직접 메모리에 자료구조를 짜서 관리한다."
+    ],
+    "correct_answer": "Polyglot Persistence: 검색은 Elasticsearch, 관계형은 MySQL, 랭킹은 Redis 등 목적에 맞는 저장소를 혼용한다.",
+    "explanation": "현대적 아키텍처에서는 각 데이터의 특성과 서비스 요구사항에 가장 적합한 DB를 선택하여 조합하는 방식이 일반적입니다."
+  },
+  {
+    "question_id": 194,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "database_schema_design",
+    "category": "Database",
+    "subcategory": "Distributed ID",
+    "skills_required": ["Distributed Systems"],
+    "scenario": "글로벌 여러 국가에 DB가 분산되어 있습니다. 각 DB에서 생성된 주문 ID가 전 세계적으로 유일함을 보장해야 합니다.",
+    "question": "가장 적절한 PK(Primary Key) 설계는?",
+    "choices": [
+      "Auto Increment 정수값",
+      "UUID(Universally Unique Identifier) 또는 Snowflake ID",
+      "사용자의 이름과 생년월일 조합",
+      "매번 중앙 서버에 물어보고 할당받는 번호"
+    ],
+    "correct_answer": "UUID(Universally Unique Identifier) 또는 Snowflake ID",
+    "explanation": "분산 환경에서 중앙 서버 없이도 고유성을 보장하려면 충분히 큰 난수 기반의 UUID나 타임스탬프 기반의 분산 ID 생성 방식이 필요합니다."
+  },
+  {
+    "question_id": 195,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "database_schema_design",
+    "category": "Database",
+    "subcategory": "Indexes",
+    "skills_required": ["Query Optimization"],
+    "scenario": "조회 성능을 위해 한 테이블에 인덱스를 30개 생성했습니다.",
+    "question": "이로 인해 발생할 수 있는 부작용은?",
+    "choices": [
+      "조회 속도가 더 느려짐",
+      "데이터 삽입(INSERT), 수정(UPDATE), 삭제(DELETE) 성능의 급격한 저하 및 스토리지 공간 낭비",
+      "보안 취약점 발생",
+      "네트워크 트래픽 증가"
+    ],
+    "correct_answer": "데이터 삽입(INSERT), 수정(UPDATE), 삭제(DELETE) 성능의 급격한 저하 및 스토리지 공간 낭비",
+    "explanation": "인덱스는 조회 속도를 높여주지만, 데이터를 변경할 때마다 인덱스 정보도 갱신해야 하므로 쓰기 성능에는 독이 될 수 있습니다."
+  },
+  {
+    "question_id": 196,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "distributed_system_reasoning",
+    "category": "Distributed Systems",
+    "subcategory": "Consensus Algorithms",
+    "skills_required": ["Distributed Systems", "Consensus"],
+    "scenario": "분산 환경에서 여러 노드가 하나의 상태(예: 누가 리더인가?)에 대해 동의해야 합니다.",
+    "question": "이때 주로 사용되는 '합의 알고리즘'은?",
+    "choices": [
+      "Quick Sort",
+      "Paxos 또는 Raft",
+      "Dijkstra 알고리즘",
+      "Round Robin"
+    ],
+    "correct_answer": "Paxos 또는 Raft",
+    "explanation": "Paxos와 Raft는 일부 노드에 장애가 발생하더라도 전체 시스템이 일관된 결정을 내릴 수 있도록 돕는 핵심 분산 합의 알고리즘입니다."
+  },
+  {
+    "question_id": 197,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "distributed_system_reasoning",
+    "category": "Distributed Systems",
+    "subcategory": "Eventual Consistency",
+    "skills_required": ["System Architecture"],
+    "scenario": "데이터가 전 세계 서버로 복제되는 데 시간이 걸립니다. 사용자가 글을 쓰고 바로 조회했을 때 안 보일 수 있지만, 몇 초 뒤에는 반드시 보입니다.",
+    "question": "이러한 데이터 일관성 모델을 무엇이라 합니까?",
+    "choices": [
+      "Strong Consistency (강한 일관성)",
+      "Eventual Consistency (결과적 일관성)",
+      "Strict Consistency",
+      "No Consistency"
+    ],
+    "correct_answer": "Eventual Consistency (결과적 일관성)",
+    "explanation": "성능과 가용성을 위해 즉각적인 동기화 대신, 일정 시간 내에 모든 복제본이 동일해질 것임을 보장하는 모델입니다."
+  },
+  {
+    "question_id": 198,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "distributed_system_reasoning",
+    "category": "Distributed Systems",
+    "subcategory": "Split Brain",
+    "skills_required": ["High Availability", "Networking"],
+    "scenario": "네트워크 단절로 인해 하나의 클러스터가 두 개로 쪼개졌고, 양쪽 모두 자신이 리더라고 주장하며 독립적으로 데이터를 수정하고 있습니다.",
+    "question": "이 현상의 명칭과 방지 대책은?",
+    "choices": [
+      "Split Brain 현상: 쿼럼(Quorum, 과반수 동의) 메커니즘을 도입하여 과반 미만의 그룹은 동작을 멈추게 한다.",
+      "Dual Master: 매우 권장되는 고가용성 구조임",
+      "Network Partition: 무시해도 되는 일시적 오류",
+      "Brain Storming: 서버들이 스스로 협상하게 둠"
+    ],
+    "correct_answer": "Split Brain 현상: 쿼럼(Quorum, 과반수 동의) 메커니즘을 도입하여 과반 미만의 그룹은 동작을 멈추게 한다.",
+    "explanation": "스플릿 브레인은 데이터 부정합의 가장 큰 원인 중 하나로, 홀수 개의 노드 구성과 과반수 합의 원칙으로 방지해야 합니다."
+  },
+  {
+    "question_id": 199,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "distributed_system_reasoning",
+    "category": "Distributed Systems",
+    "subcategory": "Time in Distributed Systems",
+    "skills_required": ["NTP", "Clock Skew"],
+    "scenario": "분산된 서버들의 시각이 미세하게 달라 로그 분석이나 이벤트 순서 보장에 어려움을 겪고 있습니다.",
+    "question": "서버 간 시각을 동기화하기 위한 표준 프로토콜은?",
+    "choices": [
+      "HTTP",
+      "NTP (Network Time Protocol)",
+      "SMTP",
+      "DHCP"
+    ],
+    "correct_answer": "NTP (Network Time Protocol)",
+    "explanation": "NTP는 네트워크를 통해 컴퓨터 시계를 동기화하여 수 밀리초 이내의 정확도를 유지하게 해줍니다."
+  },
+  {
+    "question_id": 200,
+    "job_role": "Technical Program Manager",
+    "difficulty": "senior_level",
+    "question_type": "distributed_system_reasoning",
+    "category": "Distributed Systems",
+    "subcategory": "Saga Pattern",
+    "skills_required": ["Distributed Transactions"],
+    "scenario": "여러 마이크로서비스를 거치는 긴 비즈니스 프로세스(주문-결제-배송)에서 중간에 실패가 발생했을 때 이전 단계들을 모두 취소(롤백)해야 합니다.",
+    "question": "MSA 환경에서 이를 구현하는 가장 일반적인 패턴은?",
+    "choices": [
+      "2-Phase Commit (성능 저하 우려)",
+      "Saga 패턴 (보상 트랜잭션 기반)",
+      "DB 직접 수정",
+      "사람이 직접 수동 취소"
+    ],
+    "correct_answer": "Saga 패턴 (보상 트랜잭션 기반)",
+    "explanation": "Saga 패턴은 각 단계별로 성공 시 다음으로 넘어가고, 실패 시 이미 성공한 단계들에 대해 '보상 트랜잭션'을 실행하여 논리적 롤백을 수행합니다."
+  }
+]

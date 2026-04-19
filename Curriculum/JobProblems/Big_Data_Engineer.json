@@ -1,0 +1,3792 @@
+[
+  {
+    "question_id": 1,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "definition",
+    "category": "Distributed Systems",
+    "subcategory": "Storage",
+    "skills_required": ["HDFS"],
+    "scenario": "대규모 데이터를 저장하기 위해 분산 파일 시스템을 공부하고 있습니다.",
+    "question": "HDFS(Hadoop Distributed File System)에서 '네임노드(NameNode)'의 주요 역할은 무엇입니까?",
+    "choices": [
+      "실제 데이터 블록을 하드디스크에 저장하는 역할",
+      "파일 시스템의 메타데이터를 관리하고 데이터 노드를 제어하는 역할",
+      "사용자의 맵리듀스 작업을 스케줄링하고 자원을 할당하는 역할",
+      "데이터 블록의 복제본을 네트워크를 통해 전송하는 역할"
+    ],
+    "correct_answer": "파일 시스템의 메타데이터를 관리하고 데이터 노드를 제어하는 역할",
+    "explanation": "네임노드는 HDFS의 마스터 노드로, 파일 시스템 트리와 파일/디렉터리의 메타데이터(복제 계수, 블록 위치 등)를 관리합니다."
+  },
+  {
+    "question_id": 2,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "concept_check",
+    "category": "Data Processing",
+    "subcategory": "Batch Processing",
+    "skills_required": ["MapReduce"],
+    "scenario": "MapReduce 프레임워크의 동작 원리를 이해하려고 합니다.",
+    "question": "MapReduce 단계 중, 동일한 키를 가진 데이터를 모아서 처리하기 위해 Map 단계 이후에 반드시 일어나는 과정은?",
+    "choices": [
+      "Filtering",
+      "Shuffle and Sort",
+      "Check-pointing",
+      "Data Replication"
+    ],
+    "correct_answer": "Shuffle and Sort",
+    "explanation": "셔플(Shuffle) 단계는 Map 함수의 출력을 Reduce 함수로 전달하기 위해 키별로 정렬하고 데이터를 이동시키는 필수적인 과정입니다."
+  },
+  {
+    "question_id": 3,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "debugging",
+    "category": "Data Processing",
+    "subcategory": "Spark",
+    "skills_required": ["PySpark"],
+    "scenario": "Spark 애플리케이션을 실행 중 'AnalysisException: Table or view not found' 에러가 발생했습니다.",
+    "question": "다음 중 이 에러가 발생하는 가장 가능성 높은 이유는 무엇입니까?",
+    "choices": [
+      "Executor 메모리가 부족하여 테이블을 로드하지 못한 경우",
+      "SparkSession에서 임시 뷰(Temporary View)를 생성하기 전에 쿼리를 실행한 경우",
+      "데이터 소스인 S3의 권한이 없어 접근이 거부된 경우",
+      "클러스터의 코어 수가 너무 적어 병렬 처리가 안 되는 경우"
+    ],
+    "correct_answer": "SparkSession에서 임시 뷰(Temporary View)를 생성하기 전에 쿼리를 실행한 경우",
+    "explanation": "Spark SQL에서 테이블이나 뷰를 찾을 수 없다는 에러는 대개 createOrReplaceTempView 등을 통해 명칭을 등록하기 전에 해당 명칭으로 호출할 때 발생합니다."
+  },
+  {
+    "question_id": 4,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "performance_optimization",
+    "category": "Data Processing",
+    "subcategory": "Spark",
+    "skills_required": ["Spark", "SQL"],
+    "scenario": "특정 키에 데이터가 몰려 있는 Data Skew 현상으로 인해 Spark Job의 특정 Task만 종료되지 않고 전체 작업이 지연되고 있습니다.",
+    "question": "이 문제를 해결하기 위해 'Salting' 기법을 적용하려고 합니다. 올바른 방법은 무엇입니까?",
+    "choices": [
+      "모든 데이터를 메모리에 캐싱하여 처리 속도를 높인다",
+      "조인 키에 임의의 난수를 추가하여 데이터를 분산시킨 뒤 조인한다",
+      "Partition 수를 1로 줄여서 정렬 부하를 최소화한다",
+      "데이터를 CSV 대신 JSON 포맷으로 저장하여 파싱 속도를 높인다"
+    ],
+    "correct_answer": "조인 키에 임의의 난수를 추가하여 데이터를 분산시킨 뒤 조인한다",
+    "explanation": "솔팅(Salting)은 스큐가 발생한 키 뒤에 무작위 값을 붙여 파티션을 강제로 쪼개어 특정 익스큐터에 부하가 집중되는 것을 방지하는 기법입니다."
+  },
+  {
+    "question_id": 5,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "Architecture",
+    "subcategory": "Data Lake",
+    "skills_required": ["AWS S3", "Delta Lake", "Trino"],
+    "scenario": "PB 단위의 데이터 레이크를 설계 중입니다. 데이터 업데이트가 빈번하게 발생하고, 규제 준수를 위해 특정 사용자의 데이터를 삭제(GDPR)해야 합니다.",
+    "question": "S3 기반의 단순 저장 구조보다 Delta Lake나 Apache Iceberg와 같은 테이블 포맷을 도입했을 때 얻을 수 있는 핵심 이점은?",
+    "choices": [
+      "데이터 압축률을 90% 이상 무조건 보장한다",
+      "트랜잭션(ACID) 지원을 통해 데이터 무결성을 보장하고 효율적인 Delete/Update를 지원한다",
+      "별도의 연산 엔진 없이 S3 자체에서 SQL 쿼리를 실행할 수 있게 해준다",
+      "데이터 레이크의 보안 정책을 하드웨어 수준에서 관리한다"
+    ],
+    "correct_answer": "트랜잭션(ACID) 지원을 통해 데이터 무결성을 보장하고 효율적인 Delete/Update를 지원한다",
+    "explanation": "최신 테이블 포맷은 객체 스토리지 위에서 트랜잭션을 지원하여 원자적인 업데이트와 삭제를 가능하게 하므로, 대규모 데이터 레이크 운영 효율을 크게 높입니다."
+  },
+  {
+    "question_id": 6,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "configuration_problem",
+    "category": "Messaging",
+    "subcategory": "Kafka",
+    "skills_required": ["Kafka"],
+    "scenario": "Kafka 컨슈머가 메시지를 처리한 후에도 계속해서 동일한 메시지를 다시 읽어오는 무한 루프 현상이 발생하고 있습니다.",
+    "question": "가장 먼저 확인해야 할 설정 값이나 로직은 무엇입니까?",
+    "choices": [
+      "Producer의 acks 설정이 'all'로 되어 있는지 확인",
+      "Consumer의 auto.offset.reset 설정이 'earliest'인지 확인",
+      "Consumer가 메시지 처리 후 Offset을 Commit하는 로직이 정상인지 확인",
+      "Topic의 Replication Factor가 3인지 확인"
+    ],
+    "correct_answer": "Consumer가 메시지 처리 후 Offset을 Commit하는 로직이 정상인지 확인",
+    "explanation": "컨슈머가 메시지를 읽은 뒤 오프셋을 커밋하지 않으면, 재시작하거나 세션이 끊겼을 때 마지막으로 커밋된 지점부터 다시 읽으므로 중복 처리가 발생합니다."
+  },
+  {
+    "question_id": 7,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "root_cause_analysis",
+    "category": "Infra",
+    "subcategory": "Resource Management",
+    "skills_required": ["Kubernetes", "Spark on K8s"],
+    "scenario": "Spark on Kubernetes 환경에서 작업이 실행되다가 갑자기 'OOMKilled' 메시지와 함께 팟(Pod)이 종료되었습니다. Spark UI 상에서 드라이버 메모리는 충분해 보였습니다.",
+    "question": "이 현상의 근본 원인으로 가장 의심되는 부분은?",
+    "choices": [
+      "Spark 드라이버의 코어 할당량이 너무 많음",
+      "PySpark 이용 시 Python 프로세스가 사용하는 오프힙(Off-heap) 메모리가 컨테이너 제한을 초과함",
+      "S3에서 데이터를 읽어오는 대역폭이 부족함",
+      "Spark Executor의 개수가 너무 적어 스케줄링이 안 됨"
+    ],
+    "correct_answer": "PySpark 이용 시 Python 프로세스가 사용하는 오프힙(Off-heap) 메모리가 컨테이너 제한을 초과함",
+    "explanation": "K8s의 OOMKilled는 컨테이너에 할당된 전체 메모리 제한을 넘었을 때 발생합니다. PySpark는 JVM 외에 별도의 Python 프로세스 메모리를 사용하므로, 이 합계가 K8s limit을 넘으면 발생할 수 있습니다."
+  },
+  {
+    "question_id": 8,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Architecture",
+    "subcategory": "Real-time Processing",
+    "skills_required": ["Flink", "Spark Streaming", "Kafka"],
+    "scenario": "초당 수만 건의 결제 데이터를 실시간으로 처리하여 사기 탐지(Fraud Detection) 시스템을 구축하려 합니다. 지연 시간(Latency)은 100ms 이내여야 합니다.",
+    "question": "Spark Streaming(Micro-batch)과 Apache Flink(Native Streaming) 중 하나를 선택할 때, Flink를 선택해야 하는 가장 강력한 이유는?",
+    "choices": [
+      "Flink가 Spark보다 훨씬 더 많은 라이브러리를 제공하기 때문",
+      "Micro-batch 방식은 본질적으로 배치 처리 오버헤드로 인해 초저지연 구현에 한계가 있기 때문",
+      "Spark Streaming은 Kafka와의 연동이 불가능하기 때문",
+      "Flink는 SQL을 지원하지 않아 복잡한 로직 구현에 유리하기 때문"
+    ],
+    "correct_answer": "Micro-batch 방식은 본질적으로 배치 처리 오버헤드로 인해 초저지연 구현에 한계가 있기 때문",
+    "explanation": "Spark Streaming은 짧은 간격의 배치(Micro-batch) 방식이라 지연 시간이 수 초~수백 ms 발생할 수 있지만, Flink는 이벤트 단위 처리로 매우 낮은 지연 시간을 보장합니다."
+  },
+  {
+    "question_id": 9,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "cost_optimization",
+    "category": "Cloud",
+    "subcategory": "Storage Strategy",
+    "skills_required": ["AWS S3", "Cloud", "Cost"],
+    "scenario": "매일 10TB의 로그 데이터가 S3에 쌓이고 있습니다. 분석팀은 최근 7일 데이터만 자주 조회하며, 1년치 데이터는 감사 목적으로 보관만 해야 합니다.",
+    "question": "비용 최적화를 위한 가장 효율적인 S3 관리 전략은?",
+    "choices": [
+      "모든 데이터를 S3 Standard에 보관하고 압축을 하지 않는다",
+      "Lifecycle Policy를 설정하여 7일 후 S3 Standard-IA로, 30일 후 Glacier로 이동시킨다",
+      "데이터를 저장하지 않고 발생 즉시 삭제한다",
+      "모든 데이터를 매일 EBS 볼륨으로 복사한다"
+    ],
+    "correct_answer": "Lifecycle Policy를 설정하여 7일 후 S3 Standard-IA로, 30일 후 Glacier로 이동시킨다",
+    "explanation": "접근 빈도에 따라 스토리지 클래스를 계층화(Tiering)함으로써 저장 비용을 획기적으로 줄일 수 있는 빅데이터 운영의 필수 베스트 프랙티스입니다."
+  },
+  {
+    "question_id": 10,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "true_false",
+    "category": "Data Modeling",
+    "subcategory": "File Formats",
+    "skills_required": ["Parquet", "CSV"],
+    "scenario": "대규모 데이터 분석 성능을 위해 파일 포맷을 선택하고 있습니다.",
+    "question": "Parquet 포맷은 '열 기반(Columnar)' 저장 방식이므로, 특정 컬럼만 선택하여 읽을 때 CSV보다 성능이 우수하다. (참/거짓)",
+    "choices": [
+      "참",
+      "거짓"
+    ],
+    "correct_answer": "참",
+    "explanation": "Parquet는 컬럼 지향 저장소로, 필요한 컬럼만 I/O를 발생시켜 읽어올 수 있으므로 전체 행을 읽어야 하는 행 기반 CSV보다 분석 쿼리에 유리합니다."
+  },
+  {
+    "question_id": 11,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "incident_response",
+    "category": "Operations",
+    "subcategory": "Incident Management",
+    "skills_required": ["Kafka", "Monitoring", "Zookeeper"],
+    "scenario": "금요일 야간, Kafka 클러스터의 전체 처리량이 급감하며 프로듀서들로부터 'NetworkException'이 대량 발생하고 있습니다. 브로커 1대의 CPU 점유율이 100%입니다.",
+    "question": "당직 엔지니어로서 가장 먼저 취해야 할 적절한 조치는?",
+    "choices": [
+      "즉시 클러스터의 모든 브로커를 재시작한다",
+      "문제가 발생한 브로커를 클러스터에서 분리하고, 다른 브로커로 리더 파티션을 이동(Reassignment)시킨다",
+      "데이터를 모두 삭제하고 토픽을 새로 생성한다",
+      "네트워크 대역폭을 늘리기 위해 IDC 센터에 전화를 건다"
+    ],
+    "correct_answer": "문제가 발생한 브로커를 클러스터에서 분리하고, 다른 브로커로 리더 파티션을 이동(Reassignment)시킨다",
+    "explanation": "특정 노드 장애가 클러스터 전체 영향을 줄 때는 해당 노드를 격리하고 리더십을 가용한 노드로 옮겨 가용성을 확보하는 것이 최우선입니다."
+  },
+  {
+    "question_id": 12,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "data_interpretation",
+    "category": "Database",
+    "subcategory": "Query Optimization",
+    "skills_required": ["PostgreSQL", "Index"],
+    "scenario": "사용자 행동 로그 테이블에서 특정 UID의 최근 기록을 조회하는데 10초 이상 소요되고 있습니다. EXPLAIN ANALYZE 결과 'Seq Scan'이 발생하고 있습니다.",
+    "question": "이 상황을 해결하기 위해 가장 먼저 검토해야 할 실행 계획 수정 방법은?",
+    "choices": [
+      "서버의 RAM을 증설한다",
+      "UID 컬럼에 인덱스(B-Tree Index)가 있는지 확인하고 생성한다",
+      "데이터를 모두 메모리 DB인 Redis로 옮긴다",
+      "SELECT * 대신 SELECT COUNT(*)를 사용한다"
+    ],
+    "correct_answer": "UID 컬럼에 인덱스(B-Tree Index)가 있는지 확인하고 생성한다",
+    "explanation": "Seq Scan은 테이블 전체를 풀 스캔하고 있다는 뜻입니다. 인덱스를 생성하면 인덱스 스캔을 통해 성능을 비약적으로 향상시킬 수 있습니다."
+  },
+  {
+    "question_id": 13,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "scalability_planning",
+    "category": "Architecture",
+    "subcategory": "Scaling Strategy",
+    "skills_required": ["Redis", "Cluster", "Scalability"],
+    "scenario": "현재 단일 노드 Redis를 캐시로 사용 중인데, 트래픽이 5배 증가할 것으로 예상되어 확장성 확보가 필요합니다.",
+    "question": "데이터 규모와 처리량을 동시에 확장하기 위한 가장 적합한 아키텍처는?",
+    "choices": [
+      "Redis Master-Slave 복제 구성 (Read 전용 확장)",
+      "Redis Cluster 구성 (Sharding을 통한 Read/Write 및 용량 확장)",
+      "Redis 서버의 CPU 사양을 높임 (Vertical Scaling)",
+      "파일 시스템 기반의 캐시로 변경"
+    ],
+    "correct_answer": "Redis Cluster 구성 (Sharding을 통한 Read/Write 및 용량 확장)",
+    "explanation": "Redis Cluster는 데이터를 여러 노드에 샤딩하여 저장하므로 데이터 용량과 처리량(Write 포함)을 수평적으로 확장할 수 있는 최적의 솔루션입니다."
+  },
+  {
+    "question_id": 14,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "error_analysis",
+    "category": "Orchestration",
+    "subcategory": "Airflow",
+    "skills_required": ["Airflow", "Python"],
+    "scenario": "Airflow DAG을 작성하여 배포했는데, 스케줄러에는 등록되었으나 실행 시 'Broken DAG: No module named 'pandas'' 에러가 발생합니다.",
+    "question": "이 에러의 원인과 해결 방법으로 올바른 것은?",
+    "choices": [
+      "DAG 이름에 특수문자가 포함되어 발생하므로 이름을 수정한다",
+      "Airflow 워커(Worker) 환경에 pandas 라이브러리가 설치되지 않았으므로 설치가 필요하다",
+      "DAG 스케줄 주기가 너무 짧아서 발생하므로 주기를 늘린다",
+      "S3 버킷 권한 문제이므로 IAM Role을 수정한다"
+    ],
+    "correct_answer": "Airflow 워커(Worker) 환경에 pandas 라이브러리가 설치되지 않았으므로 설치가 필요하다",
+    "explanation": "DAG 코드 내에서 외부 라이브러리를 import하지만 실제 task가 실행되는 worker 환경에 해당 패키지가 없으면 발생하는 전형적인 환경 설정 문제입니다."
+  },
+  {
+    "question_id": 15,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "log_analysis",
+    "category": "Data Processing",
+    "subcategory": "Spark",
+    "skills_required": ["Spark", "JVM"],
+    "scenario": "Spark 실행 로그에서 'java.lang.OutOfMemoryError: GC overhead limit exceeded' 에러가 반복적으로 관찰됩니다.",
+    "question": "이 로그가 의미하는 바를 가장 정확하게 해석한 것은?",
+    "choices": [
+      "디스크 용량이 부족하여 데이터를 쓰지 못하고 있다",
+      "JVM이 가비지 컬렉션(GC)에 전체 시간의 98% 이상을 쓰고 있지만 메모리는 2%도 확보하지 못하고 있다",
+      "CPU 사용률이 낮아서 Spark가 강제로 종료되었다",
+      "네트워크 타임아웃으로 인해 노드 간 통신이 단절되었다"
+    ],
+    "correct_answer": "JVM이 가비지 컬렉션(GC)에 전체 시간의 98% 이상을 쓰고 있지만 메모리는 2%도 확보하지 못하고 있다",
+    "explanation": "GC overhead limit exceeded는 메모리가 너무 부족하여 GC가 끊임없이 돌고 있지만 실질적인 메모리 회수가 안 되어 성능이 마비된 상태를 뜻합니다."
+  },
+  {
+    "question_id": 16,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "misconception_detection",
+    "category": "Database",
+    "subcategory": "NoSQL",
+    "skills_required": ["NoSQL", "RDBMS"],
+    "scenario": "NoSQL 데이터베이스의 특징에 대해 논의하고 있습니다.",
+    "question": "다음 중 NoSQL에 대한 설명으로 **틀린** 것은?",
+    "choices": [
+      "모든 NoSQL은 SQL을 전혀 사용할 수 없다",
+      "스키마가 유연하여(Schema-less) 데이터 구조 변화에 대응하기 쉽다",
+      "대량의 데이터를 여러 노드에 분산 저장하기에 용이하다",
+      "Key-Value, Document, Graph 등 다양한 데이터 모델이 존재한다"
+    ],
+    "correct_answer": "모든 NoSQL은 SQL을 전혀 사용할 수 없다",
+    "explanation": "최근의 Cassandra(CQL), MongoDB, DynamoDB 등 많은 NoSQL 엔진들이 SQL과 유사한 쿼리 언어를 지원하거나 인터페이스를 제공합니다."
+  },
+  {
+    "question_id": 17,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "Security",
+    "subcategory": "Data Protection",
+    "skills_required": ["Cloud", "Security", "Encryption"],
+    "scenario": "금융 데이터를 퍼블릭 클라우드 데이터 레이크에 저장하려고 합니다. 보안 검토 결과 데이터 유출 시 원본 데이터 노출 위험이 지적되었습니다.",
+    "question": "빅데이터 플랫폼 설계 시 가장 먼저 적용해야 할 보안 기술적 조치는?",
+    "choices": [
+      "데이터 레이크 전체를 공개(Public)로 설정한다",
+      "저장 시 암호화(Encryption at Rest) 및 전송 시 암호화(Encryption in Transit)를 적용한다",
+      "모든 개발자에게 root 권한을 부여하여 빠른 대응을 가능케 한다",
+      "로그 분석을 중단하여 개인정보 수집을 피한다"
+    ],
+    "correct_answer": "저장 시 암호화(Encryption at Rest) 및 전송 시 암호화(Encryption in Transit)를 적용한다",
+    "explanation": "민감 정보 취급 시 저장소 자체의 암호화와 네트워크 통신 구간의 암호화는 가장 기본적이고 필수적인 보안 요구사항입니다."
+  },
+  {
+    "question_id": 18,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "architecture_decision",
+    "category": "Architecture",
+    "subcategory": "Processing Pattern",
+    "skills_required": ["Lambda Architecture", "Kappa Architecture"],
+    "scenario": "기존에 배치 처리와 실시간 처리를 별도의 레이어로 운영(Lambda Architecture)하다 보니, 동일한 로직을 두 번 구현해야 하는 유지보수 상의 어려움을 겪고 있습니다.",
+    "question": "이를 해결하기 위해 모든 데이터를 스트림으로 간주하고 단일 로직으로 처리하는 구조로 변경하고자 할 때 적합한 아키텍처는?",
+    "choices": [
+      "Monolithic Architecture",
+      "Kappa Architecture",
+      "Client-Server Architecture",
+      "Peer-to-Peer Architecture"
+    ],
+    "correct_answer": "Kappa Architecture",
+    "explanation": "카파 아키텍처(Kappa Architecture)는 배치 레이어를 제거하고 모든 데이터를 스트림 처리 엔진에서 처리함으로써 코드 복잡성을 줄이는 방식입니다."
+  },
+  {
+    "question_id": 19,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "multiple_choice",
+    "category": "Data Processing",
+    "subcategory": "SQL",
+    "skills_required": ["SQL", "Window Function"],
+    "scenario": "사용자별로 결제 금액이 가장 큰 상위 1개의 기록을 추출하는 쿼리를 작성해야 합니다.",
+    "question": "다음 중 윈도우 함수(Window Function)를 활용한 가장 적절한 구문은?",
+    "choices": [
+      "GROUP BY user_id HAVING max(amount)",
+      "ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY amount DESC)",
+      "ORDER BY amount LIMIT 1",
+      "SELECT DISTINCT user_id, amount"
+    ],
+    "correct_answer": "ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY amount DESC)",
+    "explanation": "ROW_NUMBER를 사용해 사용자별(PARTITION BY) 금액 내림차순(ORDER BY DESC)으로 순번을 매긴 뒤 1번을 필터링하는 것이 전형적인 상위 N개 추출 패턴입니다."
+  },
+  {
+    "question_id": 20,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "capacity_planning",
+    "category": "Infra",
+    "subcategory": "Resource Estimation",
+    "skills_required": ["Kafka", "Storage", "Capacity"],
+    "scenario": "초당 평균 500KB 크기의 메시지가 1,000건 발생합니다. 데이터 보관 주기(Retention)를 7일로 설정하고 복제 계수(Replication Factor)를 3으로 설정하려 합니다.",
+    "question": "필요한 최소 스토리지 용량은 약 얼마입니까? (1GB = 1,000MB, 1TB = 1,000GB로 계산)",
+    "choices": [
+      "약 300GB",
+      "약 30TB",
+      "약 900TB",
+      "약 90TB"
+    ],
+    "correct_answer": "약 900TB",
+    "explanation": "초당 데이터량: 500KB * 1,000 = 500MB/s. 일일 데이터량: 500MB * 3,600 * 24 = 43.2TB. 7일치: 43.2 * 7 = 302.4TB. 복제 계수 3 반영: 302.4 * 3 = 907.2TB. 따라서 약 900TB가 필요합니다."
+  },
+  {
+    "question_id": 21,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "best_practice_selection",
+    "category": "Data Processing",
+    "subcategory": "Spark",
+    "skills_required": ["Spark", "Data Skew"],
+    "scenario": "두 거대 테이블을 조인할 때 데이터 쏠림 현상 때문에 성능이 나오지 않습니다. 한쪽 테이블은 크기가 매우 작습니다(약 50MB).",
+    "question": "이때 성능을 최적화하기 위해 적용할 수 있는 가장 효과적인 Join 전략은?",
+    "choices": [
+      "Sort Merge Join",
+      "Broadcast Hash Join",
+      "Shuffle Hash Join",
+      "Cartesian Product Join"
+    ],
+    "correct_answer": "Broadcast Hash Join",
+    "explanation": "한쪽 테이블이 충분히 작으면 전체 노드에 복사(Broadcast)하여 셔플 없이 조인을 수행할 수 있으며, 이는 데이터 스큐 문제를 피하는 가장 효율적인 방법입니다."
+  },
+  {
+    "question_id": 22,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "code_completion",
+    "category": "Data Processing",
+    "subcategory": "Spark",
+    "skills_required": ["PySpark", "DataFrame"],
+    "scenario": "PySpark를 사용하여 데이터프레임의 결측치(Null)를 0으로 채우려고 합니다.",
+    "question": "다음 빈칸에 알맞은 메서드는? `df.______(0).show()`",
+    "choices": [
+      "dropna",
+      "fillna",
+      "filter",
+      "replace"
+    ],
+    "correct_answer": "fillna",
+    "explanation": "fillna() 메서드는 데이터프레임 내의 null 값을 지정된 값으로 교체할 때 사용됩니다."
+  },
+  {
+    "question_id": 23,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "monitoring_strategy",
+    "category": "Operations",
+    "subcategory": "Monitoring",
+    "skills_required": ["Prometheus", "Grafana", "Big Data"],
+    "scenario": "빅데이터 파이프라인의 건전성을 모니터링하기 위한 대시보드를 구성 중입니다.",
+    "question": "Kafka의 성능 지표 중 '소비 지연' 상태를 파악하기 위해 가장 핵심적으로 모니터링해야 하는 지표는?",
+    "choices": [
+      "Producer throughput",
+      "Consumer Lag",
+      "Broker Disk I/O",
+      "Zookeeper Quorum status"
+    ],
+    "correct_answer": "Consumer Lag",
+    "explanation": "컨슈머 랙(Consumer Lag)은 프로듀서가 생산한 메시지 오프셋과 컨슈머가 읽은 오프셋의 차이로, 이 수치가 커지면 실시간 처리가 지연되고 있음을 뜻합니다."
+  },
+  {
+    "question_id": 24,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "code_output_prediction",
+    "category": "Programming",
+    "subcategory": "Python",
+    "skills_required": ["Python"],
+    "scenario": "간단한 데이터 가공 파이썬 코드를 실행합니다.",
+    "question": "다음 코드의 출력 결과는? `data = [1, 2, 3]; print([x * 2 for x in data if x > 1])`",
+    "choices": [
+      "[2, 4, 6]",
+      "[4, 6]",
+      "[2, 4]",
+      "[1, 2, 3]"
+    ],
+    "correct_answer": "[4, 6]",
+    "explanation": "리스트 컴프리헨션에서 x > 1 조건에 맞는 요소는 2와 3이며, 여기에 2를 곱하면 [4, 6]이 됩니다."
+  },
+  {
+    "question_id": 25,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "failure_mode_analysis",
+    "category": "Operations",
+    "subcategory": "High Availability",
+    "skills_required": ["Zookeeper", "Hadoop", "Failover"],
+    "scenario": "Hadoop 고가용성(HA) 구성에서 Active 네임노드에 장애가 발생했지만 Standby 네임노드로 자동 전환(Failover)이 일어나지 않고 있습니다.",
+    "question": "이 현상의 원인으로 가장 가능성이 높은 것은?",
+    "choices": [
+      "데이터 노드의 디스크가 꽉 참",
+      "ZKFC(Zookeeper Failover Controller) 프로세스가 중단됨",
+      "네트워크 스위치의 L3 레이어 에러",
+      "HDFS 블록 사이즈가 너무 크게 설정됨"
+    ],
+    "correct_answer": "ZKFC(Zookeeper Failover Controller) 프로세스가 중단됨",
+    "explanation": "ZKFC는 각 네임노드의 상태를 감시하고 Zookeeper를 통해 리더 선출 및 자동 페일오버를 관리하는 핵심 컴포넌트입니다."
+  },
+  {
+    "question_id": 26,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "database_schema_design",
+    "category": "Database",
+    "subcategory": "Schema Design",
+    "skills_required": ["HBase", "NoSQL", "RowKey"],
+    "scenario": "HBase를 사용하여 시계열 데이터를 저장하려고 합니다. Row Key를 'Timestamp'로만 설정했을 때 발생할 수 있는 문제는?",
+    "question": "특정 시간대에 데이터가 집중될 때 발생하는 현상은 무엇입니까?",
+    "choices": [
+      "Region Server Hotspotting",
+      "Deadlock",
+      "Schema Corruption",
+      "Network Partitioning"
+    ],
+    "correct_answer": "Region Server Hotspotting",
+    "explanation": "HBase는 Row Key 순서대로 데이터를 저장하므로, 순차적인 타임스탬프를 키로 쓰면 특정 리전 서버에만 쓰기 부하가 몰리는 Hotspotting 현상이 발생합니다."
+  },
+  {
+    "question_id": 27,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "design_alternative_comparison",
+    "category": "Architecture",
+    "subcategory": "Data Ingestion",
+    "skills_required": ["Kafka", "RabbitMQ", "Data Pipeline"],
+    "scenario": "대규모 로그 수집 시스템을 위해 메시지 브로커를 선정 중입니다. 초당 수십만 건의 대량 데이터 처리와 데이터 보관(Replay 가능성)이 핵심 요구사항입니다.",
+    "question": "RabbitMQ보다 Kafka를 선택해야 하는 결정적인 기술적 이유는?",
+    "choices": [
+      "Kafka는 UI가 더 예쁘기 때문",
+      "Kafka는 디스크에 로그를 순차적으로 저장하여 대량의 데이터 처리와 메시지 재처리에 유리하기 때문",
+      "RabbitMQ는 클러스터링을 지원하지 않기 때문",
+      "Kafka는 오직 클라우드 환경에서만 동작하기 때문"
+    ],
+    "correct_answer": "Kafka는 디스크에 로그를 순차적으로 저장하여 대량의 데이터 처리와 메시지 재처리에 유리하기 때문",
+    "explanation": "Kafka는 로그 아펜드(Log-append) 방식의 저장 구조를 가져 처리량이 매우 높고, 오프셋 관리를 통해 과거 데이터를 다시 읽을 수 있는 강점이 있습니다."
+  },
+  {
+    "question_id": 28,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "performance_estimation",
+    "category": "Data Processing",
+    "subcategory": "Resource Management",
+    "skills_required": ["Spark", "Cluster Tuning"],
+    "scenario": "100개의 코어와 400GB RAM을 가진 클러스터에서 Spark 작업을 실행하려 합니다. 한 익스큐터당 5개 코어를 할당하는 'Fat Executor' 전략을 쓰려고 합니다.",
+    "question": "가장 적절한 익스큐터(Executor) 개수 설정 값은 (드라이버용 자원 제외)?",
+    "choices": [
+      "5개",
+      "20개",
+      "100개",
+      "1개"
+    ],
+    "correct_answer": "20개",
+    "explanation": "전체 코어 100개를 익스큐터당 5개씩 나누면 20개의 익스큐터가 생성됩니다. 이는 병렬성과 I/O 효율을 고려한 일반적인 튜닝 수치입니다."
+  },
+  {
+    "question_id": 29,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "documentation_analysis",
+    "category": "Data Processing",
+    "subcategory": "API",
+    "skills_required": ["REST API", "JSON"],
+    "scenario": "외부 API로부터 데이터를 수집하는 코드를 작성해야 합니다. API 문서를 보니 'Pagination'이 적용되어 있다고 명시되어 있습니다.",
+    "question": "이 문구가 의미하는 바는 무엇이며, 엔지니어는 어떻게 대응해야 합니까?",
+    "choices": [
+      "데이터가 암호화되어 있으므로 복호화 키를 요청해야 함",
+      "한 번의 호출로 모든 데이터를 주지 않으므로, 여러 번 루프를 돌며 페이지별로 호출해야 함",
+      "데이터가 항상 정렬되어 있으므로 별도의 정렬 로직이 필요 없음",
+      "이미지가 포함되어 있으므로 멀티파트 전송 방식을 사용해야 함"
+    ],
+    "correct_answer": "한 번의 호출로 모든 데이터를 주지 않으므로, 여러 번 루프를 돌며 페이지별로 호출해야 함",
+    "explanation": "페이지네이션은 서버 부하 방지를 위해 데이터를 쪼개서 제공하는 방식이므로, 전체 수집을 위해서는 페이지 번호나 오프셋을 바꿔가며 반복 호출해야 합니다."
+  },
+  {
+    "question_id": 30,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "distributed_system_reasoning",
+    "category": "Architecture",
+    "subcategory": "Consensus",
+    "skills_required": ["CAP Theorem", "Distributed Systems"],
+    "scenario": "네트워크 파티션 장애(Network Partition)가 발생한 분산 시스템 상황입니다. 시스템이 '가용성(Availability)'을 포기하고 '일관성(Consistency)'을 선택했습니다(CP 시스템).",
+    "question": "이때 사용자가 시스템에 데이터를 쓰려고 하면 어떤 결과가 발생합니까?",
+    "choices": [
+      "시스템은 에러를 응답하거나 성공을 보장하지 않으며 쓰기를 거부한다",
+      "어느 한 노드에라도 저장되면 즉시 성공을 응답한다",
+      "데이터가 유실되어도 상관없이 무조건 성공 처리한다",
+      "나중에 네트워크가 복구될 때까지 무한정 대기한다"
+    ],
+    "correct_answer": "시스템은 에러를 응답하거나 성공을 보장하지 않으며 쓰기를 거부한다",
+    "explanation": "CP 시스템은 일관성을 지키기 위해 노드 간 통신이 불가능한 파티션 상황에서 가용성을 희생, 즉 서비스를 일시 중단하거나 에러를 반환합니다."
+  },
+  {
+    "question_id": 31,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "definition",
+    "category": "Data Modeling",
+    "subcategory": "ETL",
+    "skills_required": ["ETL", "Data Pipeline"],
+    "scenario": "데이터 엔지니어링의 기본 프로세스인 ETL에 대해 배우고 있습니다.",
+    "question": "ETL의 각 단계인 Extract, Transform, Load의 설명으로 가장 적절한 것은?",
+    "choices": [
+      "추출, 로드, 변환 순서로 무조건 실행되어야 한다",
+      "소스 시스템에서 데이터를 가져와서, 분석 가능한 형태로 가공하고, 목적지에 저장하는 과정이다",
+      "데이터를 삭제하고, 복제하고, 다시 이름 짓는 과정이다",
+      "데이터베이스의 인덱스를 생성하고 쿼리를 최적화하는 과정이다"
+    ],
+    "correct_answer": "소스 시스템에서 데이터를 가져와서, 분석 가능한 형태로 가공하고, 목적지에 저장하는 과정이다",
+    "explanation": "ETL은 데이터 통합의 핵심 과정으로 추출(Extract), 변환(Transform), 적재(Load)를 의미합니다."
+  },
+  {
+    "question_id": 32,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "concept_check",
+    "category": "Storage",
+    "subcategory": "Cloud Storage",
+    "skills_required": ["Object Storage", "S3"],
+    "scenario": "파일 시스템과 오브젝트 스토리지의 차이점을 동료에게 설명하고 있습니다.",
+    "question": "오브젝트 스토리지(예: AWS S3)의 특징이 **아닌** 것은?",
+    "choices": [
+      "계층형 폴더 구조가 아닌 키-값 기반의 평면적 구조다",
+      "파일의 일부 내용만 직접 수정(In-place update)하는 것이 매우 효율적이다",
+      "HTTP 프로토콜을 통해 데이터에 접근한다",
+      "확장성이 매우 뛰어나 무제한에 가까운 데이터를 저장할 수 있다"
+    ],
+    "correct_answer": "파일의 일부 내용만 직접 수정(In-place update)하는 것이 매우 효율적이다",
+    "explanation": "오브젝트 스토리지는 객체 전체를 덮어쓰는 방식이므로 파일의 일부만 수정하는 작업에는 적합하지 않습니다."
+  },
+  {
+    "question_id": 33,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "algorithm_design",
+    "category": "Data Processing",
+    "subcategory": "Streaming",
+    "skills_required": ["Sliding Window", "Flink"],
+    "scenario": "최근 1시간 동안의 주식 가격 평균을 10분마다 업데이트하여 보여주는 시스템을 개발해야 합니다.",
+    "question": "이때 사용해야 할 가장 적절한 윈도우(Window) 타입은?",
+    "choices": [
+      "Tumbling Window (1시간 단위)",
+      "Sliding Window (Size: 1시간, Slide: 10분)",
+      "Session Window (Gap: 10분)",
+      "Global Window"
+    ],
+    "correct_answer": "Sliding Window (Size: 1시간, Slide: 10분)",
+    "explanation": "윈도우가 겹치면서(Sliding) 일정 주기로 결과를 내보내야 하므로 슬라이딩 윈도우가 적합합니다."
+  },
+  {
+    "question_id": 34,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "refactoring_decision",
+    "category": "Data Processing",
+    "subcategory": "Spark",
+    "skills_required": ["Spark", "UDF", "Vectorized Expression"],
+    "scenario": "기존에 Python으로 작성된 복잡한 로직의 Spark UDF(User Defined Function)가 데이터 처리 속도를 크게 저하시키고 있습니다.",
+    "question": "성능 개선을 위해 시도할 수 있는 가장 효과적인 리팩토링 방안은?",
+    "choices": [
+      "UDF를 삭제하고 모든 처리를 수작업으로 한다",
+      "Pandas UDF (Vectorized UDF)로 전환하여 Apache Arrow를 활용하도록 수정한다",
+      "UDF 내부 로직에 time.sleep()을 추가하여 부하를 줄인다",
+      "데이터를 엑셀로 뽑아서 직접 계산한다"
+    ],
+    "correct_answer": "Pandas UDF (Vectorized UDF)로 전환하여 Apache Arrow를 활용하도록 수정한다",
+    "explanation": "일반 Python UDF는 JVM과 Python 사이의 직렬화 비용이 크지만, Pandas UDF는 Arrow를 통해 벡터화된 연산을 수행하므로 훨씬 빠릅니다."
+  },
+  {
+    "question_id": 35,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "dependency_analysis",
+    "category": "Orchestration",
+    "subcategory": "Airflow",
+    "skills_required": ["Airflow", "DAG"],
+    "scenario": "A 태스크가 성공한 후에만 B 태스크가 실행되어야 하고, A가 실패하면 C 태스크(복구용)가 실행되어야 하는 워크플로우를 설계 중입니다.",
+    "question": "C 태스크에 설정해야 할 올바른 `trigger_rule`은?",
+    "choices": [
+      "all_success",
+      "one_failed",
+      "all_failed",
+      "none_failed"
+    ],
+    "correct_answer": "one_failed",
+    "explanation": "부모 태스크 중 하나라도 실패했을 때 실행되도록 하려면 one_failed(또는 상황에 따라 all_failed) 규칙을 사용합니다."
+  },
+  {
+    "question_id": 36,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "constraint_optimization",
+    "category": "Database",
+    "subcategory": "BigQuery",
+    "skills_required": ["BigQuery", "Cost", "Partitioning"],
+    "scenario": "GCP BigQuery를 사용 중인데, 쿼리 한 번당 비용이 너무 많이 나와 예산 초과 위기에 처했습니다. 테이블 크기는 수백 TB입니다.",
+    "question": "비용을 즉각적으로 줄이기 위해 테이블 스키마에 적용해야 할 핵심 전략 두 가지는?",
+    "choices": [
+      "인덱스 생성과 외래 키 설정",
+      "파티셔닝(Partitioning)과 클러스터링(Clustering) 적용",
+      "모든 컬럼을 STRING 타입으로 변경",
+      "데이터를 여러 개의 작은 프로젝트로 분산"
+    ],
+    "correct_answer": "파티셔닝(Partitioning)과 클러스터링(Clustering) 적용",
+    "explanation": "BigQuery는 스캔한 데이터 양에 따라 과금됩니다. 파티셔닝과 클러스터링은 쿼리 시 불필요한 데이터를 필터링하여 스캔 범위를 대폭 줄여줍니다."
+  },
+  {
+    "question_id": 37,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "testing_strategy",
+    "category": "Data Quality",
+    "subcategory": "CI/CD",
+    "skills_required": ["Data Quality", "Great Expectations", "Testing"],
+    "scenario": "배치 파이프라인을 통해 들어오는 데이터의 정합성(컬럼 값이 null인지, 데이터 타입이 맞는지 등)을 자동으로 체크하고 싶습니다.",
+    "question": "이러한 목적에 가장 부합하는 데이터 엔지니어링 도구/방법론은?",
+    "choices": [
+      "Unit Testing (JUnit)",
+      "Data Validation Framework (예: Great Expectations)",
+      "Integration Testing",
+      "Load Testing"
+    ],
+    "correct_answer": "Data Validation Framework (예: Great Expectations)",
+    "explanation": "Great Expectations와 같은 프레임워크는 데이터의 프로필을 생성하고 기대치(Expectation)를 정의하여 데이터 품질을 체크하는 데 특화되어 있습니다."
+  },
+  {
+    "question_id": 38,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "code_review",
+    "category": "Programming",
+    "subcategory": "SQL",
+    "skills_required": ["SQL", "Join"],
+    "scenario": "신입 엔지니어가 작성한 SQL에 `SELECT * FROM Orders A, Products B WHERE A.pid = B.pid` 문법이 보입니다.",
+    "question": "코드 리뷰 시 성능과 가독성 측면에서 권고해야 할 현대적인 SQL 작성 방식은?",
+    "choices": [
+      "그대로 두어도 상관없다",
+      "명시적인 JOIN 구문(INNER JOIN ... ON)을 사용하도록 권고한다",
+      "WHERE 절을 삭제하라고 권고한다",
+      "테이블 이름을 더 길게 쓰라고 권고한다"
+    ],
+    "correct_answer": "명시적인 JOIN 구문(INNER JOIN ... ON)을 사용하도록 권고한다",
+    "explanation": "Comma(,) 기반 조인은 가독성이 떨어지고 실수로 카티션 프로덕트를 유발할 위험이 있어 ANSI-SQL 표준인 JOIN ... ON 구문을 쓰는 것이 권장됩니다."
+  },
+  {
+    "question_id": 39,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "api_design",
+    "category": "Data Access",
+    "subcategory": "Serving Layer",
+    "skills_required": ["API Design", "Caching", "Throughput"],
+    "scenario": "초당 10,000건의 요청을 처리해야 하는 추천 시스템의 서빙 데이터 API를 설계해야 합니다. 지연 시간은 매우 짧아야 합니다.",
+    "question": "백엔드 스토리지와 API 사이의 성능 병목을 줄이기 위해 도입해야 할 핵심 컴포넌트는?",
+    "choices": [
+      "분산 파일 시스템(HDFS)",
+      "인메모리 캐시 (예: Redis/Memcached)",
+      "오브젝트 스토리지 (예: S3)",
+      "관계형 데이터베이스(MySQL)"
+    ],
+    "correct_answer": "인메모리 캐시 (예: Redis/Memcached)",
+    "explanation": "고빈도 저지연 요청 처리를 위해서는 디스크 기반 DB보다 메모리 기반 캐시 계층을 두어 응답 속도를 극대화하는 것이 일반적입니다."
+  },
+  {
+    "question_id": 40,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "multiple_choice",
+    "category": "Data Processing",
+    "subcategory": "Python",
+    "skills_required": ["Python", "Pandas"],
+    "scenario": "Pandas를 사용하여 CSV 파일을 로드하려고 합니다.",
+    "question": "가장 적절한 함수는?",
+    "choices": [
+      "pd.open_csv()",
+      "pd.read_csv()",
+      "pd.get_csv()",
+      "pd.load_csv()"
+    ],
+    "correct_answer": "pd.read_csv()",
+    "explanation": "Pandas 라이브러리에서 CSV 파일을 읽어 데이터프레임으로 변환하는 표준 함수는 read_csv()입니다."
+  },
+  {
+    "question_id": 41,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "security_analysis",
+    "category": "Cloud & Security",
+    "subcategory": "Access Control",
+    "skills_required": ["AWS IAM", "S3", "Security"],
+    "scenario": "사내 데이터 레이크(S3)에 민감한 개인정보가 포함된 데이터가 업로드되었습니다. 특정 분석가 그룹만 이 데이터에 접근해야 하며, 다른 부서원들은 해당 버킷의 목록조차 볼 수 없어야 합니다.",
+    "question": "최소 권한 원칙(Principle of Least Privilege)에 따라 IAM Policy를 설계할 때, 가장 보안상 안전한 조치는 무엇입니까?",
+    "choices": [
+      "모든 직원에게 ReadOnlyAccess 권한을 부여하고, 민감 데이터 버킷만 거부(Deny) 정책을 추가한다.",
+      "특정 분석가 그룹의 IAM Role에만 해당 버킷에 대한 's3:ListBucket' 및 's3:GetObject' 권한을 명시적으로 허용하고, 나머지는 명시적 거부 없이 기본 거부 상태를 유지한다.",
+      "버킷을 Public으로 전환하되, 파일 이름에 복잡한 난수를 섞어 추측하지 못하게 한다.",
+      "분석가들에게 root 계정 권한을 부여하여 모든 보안 설정을 직접 관리하게 한다."
+    ],
+    "correct_answer": "특정 분석가 그룹의 IAM Role에만 해당 버킷에 대한 's3:ListBucket' 및 's3:GetObject' 권한을 명시적으로 허용하고, 나머지는 명시적 거부 없이 기본 거부 상태를 유지한다.",
+    "explanation": "클라우드 보안의 기본은 모든 접근을 차단(Implicit Deny)하고 필요한 주체에게만 최소한의 권한을 명시적으로 부여(Allow)하는 것입니다."
+  },
+  {
+    "question_id": 42,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "log_analysis",
+    "category": "Messaging",
+    "subcategory": "Kafka Operations",
+    "skills_required": ["Kafka", "Consumer Group"],
+    "scenario": "Kafka 컨슈머 애플리케이션 로그에 'Attempt to heartbeat failed since group is rebalancing' 메시지가 빈번하게 발생하며 데이터 처리 지연이 발생하고 있습니다.",
+    "question": "이 로그가 의미하는 현상을 해결하기 위해 가장 먼저 검토해야 할 사항은?",
+    "choices": [
+      "브로커의 디스크 용량이 부족한지 확인한다.",
+      "컨슈머의 poll() 주기와 max.poll.interval.ms 설정값 사이의 관계를 분석하여 처리 시간이 너무 긴지 확인한다.",
+      "토픽의 파티션 수를 줄여서 관리 포인트를 줄인다.",
+      "프로듀서의 메시지 전송 방식을 비동기에서 동기로 변경한다."
+    ],
+    "correct_answer": "컨슈머의 poll() 주기와 max.poll.interval.ms 설정값 사이의 관계를 분석하여 처리 시간이 너무 긴지 확인한다.",
+    "explanation": "컨슈머가 메시지를 한 번 가져와서 처리하는 시간이 max.poll.interval.ms를 초과하면 그룹에서 탈퇴한 것으로 간주되어 불필요한 리밸런싱이 무한 반복됩니다."
+  },
+  {
+    "question_id": 43,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "concept_check",
+    "category": "Database",
+    "subcategory": "Relational Model",
+    "skills_required": ["SQL", "Join"],
+    "scenario": "두 개의 테이블을 결합하여 데이터를 조회하려고 합니다. 왼쪽 테이블의 모든 행은 유지하면서, 오른쪽 테이블에 일치하는 값이 있는 경우에만 결합하고 싶습니다.",
+    "question": "이때 사용해야 할 SQL JOIN의 종류는?",
+    "choices": [
+      "INNER JOIN",
+      "LEFT OUTER JOIN",
+      "RIGHT OUTER JOIN",
+      "FULL OUTER JOIN"
+    ],
+    "correct_answer": "LEFT OUTER JOIN",
+    "explanation": "LEFT OUTER JOIN은 왼쪽 테이블을 기준으로 모든 데이터를 가져오고, 오른쪽 테이블에 매칭되는 데이터가 없으면 NULL로 채워 결과를 반환합니다."
+  },
+  {
+    "question_id": 44,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "debugging",
+    "category": "Data Processing",
+    "subcategory": "Spark",
+    "skills_required": ["PySpark", "CSV"],
+    "scenario": "Spark를 사용하여 CSV 파일을 로드하던 중, 특정 행의 데이터에 쉼표(,)가 포함되어 있어 컬럼이 밀리는 현상이 발생했습니다.",
+    "question": "이 문제를 해결하기 위해 Spark read 옵션 중 가장 적절한 설정은 무엇입니까?",
+    "choices": [
+      ".option('header', 'true')",
+      ".option('inferSchema', 'true')",
+      ".option('quote', '\"')",
+      ".option('sep', '\\t')"
+    ],
+    "correct_answer": ".option('quote', '\"')",
+    "explanation": "데이터 내부에 구분자(쉼표)가 포함된 경우, 해당 데이터를 따옴표 등으로 감싸고(quote) 이를 인식하도록 옵션을 주면 컬럼 밀림 현상을 방지할 수 있습니다."
+  },
+  {
+    "question_id": 45,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "capacity_planning",
+    "category": "Infrastructure",
+    "subcategory": "Resource Management",
+    "skills_required": ["Hadoop", "Capacity Planning"],
+    "scenario": "현재 1PB의 원천 데이터를 보유하고 있으며, 3배 복제 정책(Replication Factor 3)을 사용하는 HDFS 클러스터를 구축하려고 합니다. OS 영역과 안전 마진을 고려해야 합니다.",
+    "question": "필요한 최소 물리적 스토리지 용량(Raw Capacity) 산정 시 가장 적절한 접근은?",
+    "choices": [
+      "1PB만 있으면 충분하다.",
+      "복제본을 포함해 3PB를 준비한다.",
+      "복제본(3PB)에 OS, 로그 영역 및 데이터 증가분(약 20~30%)을 고려하여 최소 4PB 이상을 산정한다.",
+      "클라우드이므로 용량 계획은 필요하지 않다."
+    ],
+    "correct_answer": "복제본(3PB)에 OS, 로그 영역 및 데이터 증가분(약 20~30%)을 고려하여 최소 4PB 이상을 산정한다.",
+    "explanation": "실제 가용 용량 외에도 오버헤드와 버퍼를 고려하는 것이 운영 안정성을 위한 시니어 엔지니어의 올바른 설계 방식입니다."
+  },
+  {
+    "question_id": 46,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "root_cause_analysis",
+    "category": "Orchestration",
+    "subcategory": "Airflow",
+    "skills_required": ["Airflow", "PostgreSQL"],
+    "scenario": "Airflow 스케줄러가 매우 느려지면서 'Deadlock detected' 에러가 메타데이터 DB(PostgreSQL) 로그에 찍히기 시작했습니다.",
+    "question": "이 현상의 주요 원인으로 의심해 볼 수 있는 상황은?",
+    "choices": [
+      "DAG의 개수가 너무 적어서 발생한다.",
+      "수천 개의 작은 Task들이 동시에 실행되면서 메타데이터 DB의 Row Lock을 경합하고 있다.",
+      "워커 노드의 CPU 사양이 너무 높아서 발생한다.",
+      "파이썬 버전이 최신이 아니어서 발생한다."
+    ],
+    "correct_answer": "수천 개의 작은 Task들이 동시에 실행되면서 메타데이터 DB의 Row Lock을 경합하고 있다.",
+    "explanation": "Airflow는 작업 상태를 DB에 기록하는데, 동시에 너무 많은 태스크가 상태를 업데이트하려고 하면 DB 수준에서 데드락이 발생할 수 있습니다."
+  },
+  {
+    "question_id": 47,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "failure_mode_analysis",
+    "category": "Distributed Systems",
+    "subcategory": "High Availability",
+    "skills_required": ["Consensus Algorithm", "Zookeeper"],
+    "scenario": "분산 클러스터 운영 중 네트워크 단절로 인해 노드들이 두 그룹으로 나뉘어 각각 자신이 '마스터'라고 주장하는 현상이 발생했습니다.",
+    "question": "이 'Split-brain' 현상을 방지하기 위해 분산 시스템에서 주로 사용하는 메커니즘은?",
+    "choices": [
+      "모든 노드에 가중치를 똑같이 부여하기",
+      "쿼럼(Quorum) 기반의 과반수 투표 시스템 도입",
+      "가장 사양이 좋은 노드를 무조건 마스터로 고정",
+      "장애 발생 시 모든 노드를 자동으로 종료"
+    ],
+    "correct_answer": "쿼럼(Quorum) 기반의 과반수 투표 시스템 도입",
+    "explanation": "쿼럼은 전체 노드의 과반수(n/2 + 1)가 동의해야 리더로 선출될 수 있게 하여, 네트워크가 쪼개졌을 때 양쪽 모두 리더가 되는 상황을 방지합니다."
+  },
+  {
+    "question_id": 48,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "code_completion",
+    "category": "Programming",
+    "subcategory": "Python",
+    "skills_required": ["Python", "Logging"],
+    "scenario": "파이썬으로 작성된 ETL 스크립트에서 에러 발생 시 추적을 위해 로그를 남기려고 합니다.",
+    "question": "다음 빈칸에 알맞은 코드는? `import logging; try: ... except Exception as e: logging.______(e)`",
+    "choices": [
+      "info",
+      "debug",
+      "error",
+      "print"
+    ],
+    "correct_answer": "error",
+    "explanation": "예외 상황이나 장애 발생 시에는 logging.error() 또는 logging.exception()을 사용하여 에러 레벨의 로그를 남기는 것이 표준입니다."
+  },
+  {
+    "question_id": 49,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "true_false",
+    "category": "Data Modeling",
+    "subcategory": "Data Integrity",
+    "skills_required": ["HDFS", "Immutability"],
+    "scenario": "빅데이터 저장소의 특징에 대해 공부하고 있습니다.",
+    "question": "HDFS(Hadoop Distributed File System)에 이미 저장된 파일의 중간 내용은 수정(In-place update)이 가능하다. (참/거짓)",
+    "choices": [
+      "참",
+      "거짓"
+    ],
+    "correct_answer": "거짓",
+    "explanation": "HDFS는 기본적으로 Write-once Read-many 모델을 따르며, 저장된 파일의 중간 수정은 지원하지 않고 뒤에 추가(Append)하는 것만 제한적으로 지원합니다."
+  },
+  {
+    "question_id": 50,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Architecture",
+    "subcategory": "Data Strategy",
+    "skills_required": ["Data Mesh", "Data Governance"],
+    "scenario": "회사의 규모가 커지면서 중앙 집중형 데이터 팀이 모든 부서의 데이터 요청을 처리하는 데 병목 현상이 발생하고 있습니다.",
+    "question": "데이터 소유권을 각 비즈니스 도메인 팀으로 분산하고, 데이터를 제품(Data Product)으로 관리하도록 하는 최신 아키텍처 철학은?",
+    "choices": [
+      "Data Warehouse",
+      "Data Mesh",
+      "Monolithic Data Lake",
+      "Master Data Management"
+    ],
+    "correct_answer": "Data Mesh",
+    "explanation": "데이터 메쉬는 중앙 집중식 레이크의 한계를 극복하기 위해 도메인 중심의 분산 아키텍처와 거버넌스를 강조하는 패러다임입니다."
+  },
+  {
+    "question_id": 51,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "performance_optimization",
+    "category": "Data Processing",
+    "subcategory": "Spark Tuning",
+    "skills_required": ["Spark", "Serialization"],
+    "scenario": "Spark 작업을 수행할 때 객체 직렬화(Serialization) 부하로 인해 성능이 저하되고 있습니다.",
+    "question": "Java 기본 직렬화보다 성능이 우수하여 Spark에서 권장되는 직렬화 라이브러리는?",
+    "choices": [
+      "JSON Serialization",
+      "Kryo Serialization",
+      "XML Serialization",
+      "Pickle Serialization"
+    ],
+    "correct_answer": "Kryo Serialization",
+    "explanation": "Kryo는 Java 기본 직렬화보다 훨씬 빠르고 컴팩트한 바이너리 포맷을 제공하여 네트워크 전송 및 디스크 I/O 효율을 높여줍니다."
+  },
+  {
+    "question_id": 52,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "configuration_problem",
+    "category": "Data Warehouse",
+    "subcategory": "Hive",
+    "skills_required": ["Hive", "Metastore"],
+    "scenario": "Hive를 설치하고 첫 쿼리를 실행했는데 'Could not connect to metastore' 에러가 발생했습니다.",
+    "question": "가장 먼저 확인해야 할 설정 파일은 무엇입니까?",
+    "choices": [
+      "hdfs-site.xml",
+      "core-site.xml",
+      "hive-site.xml",
+      "spark-defaults.conf"
+    ],
+    "correct_answer": "hive-site.xml",
+    "explanation": "hive-site.xml에는 Hive 메타스토어의 주소, DB 연결 정보 등 핵심 설정이 포함되어 있습니다."
+  },
+  {
+    "question_id": 53,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "incident_response",
+    "category": "Operations",
+    "subcategory": "Disaster Recovery",
+    "skills_required": ["Cloud", "S3", "Backup"],
+    "scenario": "실수로 운영 중인 S3 버킷의 중요 데이터를 삭제했습니다. 버킷에는 버전 관리(Versioning)가 활성화되어 있지 않았습니다.",
+    "question": "이 상황에서 데이터를 복구하기 위한 가장 현실적인 방안은?",
+    "choices": [
+      "삭제된 파일은 자동으로 휴지통에 가므로 휴지통을 확인한다.",
+      "AWS 고객센터에 전화하여 하드디스크 복구를 요청한다.",
+      "이전에 설정해둔 교차 리전 복제(CRR) 버킷이나 별도의 백업(AWS Backup 등)이 있는지 확인한다.",
+      "S3의 특징상 삭제된 데이터는 24시간 내에 자동으로 다시 나타난다."
+    ],
+    "correct_answer": "이전에 설정해둔 교차 리전 복제(CRR) 버킷이나 별도의 백업(AWS Backup 등)이 있는지 확인한다.",
+    "explanation": "버전 관리가 없는 상태에서 삭제된 객체는 즉시 제거되므로, 별도의 백업본이나 복제본이 없다면 복구가 불가능합니다. 이를 대비한 백업 전략 수립이 시니어의 역할입니다."
+  },
+  {
+    "question_id": 54,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "scenario_based",
+    "category": "Messaging",
+    "subcategory": "Kafka",
+    "skills_required": ["Kafka", "Throughput"],
+    "scenario": "초당 100만 건의 이벤트를 처리해야 하는 Kafka 토픽을 설계하고 있습니다. 컨슈머의 처리 속도가 프로듀서의 생산 속도를 따라가지 못하고 있습니다.",
+    "question": "가장 먼저 고려해야 할 수평 확장(Scale-out) 방법은?",
+    "choices": [
+      "브로커의 메모리를 증설한다.",
+      "토픽의 파티션 수를 늘리고 컨슈머 그룹의 인스턴스 개수를 추가한다.",
+      "프로듀서의 전송 속도를 강제로 제한한다.",
+      "메시지 크기를 줄인다."
+    ],
+    "correct_answer": "토픽의 파티션 수를 늘리고 컨슈머 그룹의 인스턴스 개수를 추가한다.",
+    "explanation": "Kafka의 병렬 처리 단위는 파티션입니다. 파티션 수를 늘려야 컨슈머 그룹 내의 컨슈머 인스턴스들이 동시에 데이터를 나누어 처리할 수 있습니다."
+  },
+  {
+    "question_id": 55,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "definition",
+    "category": "Architecture",
+    "subcategory": "Cloud Computing",
+    "skills_required": ["Serverless", "Cloud"],
+    "scenario": "서버리스(Serverless) 기술의 특징을 공부하고 있습니다.",
+    "question": "서버리스 컴퓨팅(예: AWS Lambda, Google Cloud Functions)의 주요 장점으로 가장 적절한 것은?",
+    "choices": [
+      "서버의 운영체제를 사용자가 직접 튜닝할 수 있다.",
+      "인프라 관리 부담이 적고, 사용한 만큼만 비용을 지불하며 자동 확장이 지원된다.",
+      "무한정 실행 시간이 보장되어 긴 배치 작업에 최적이다.",
+      "인터넷 연결 없이도 로컬에서 완벽하게 동작한다."
+    ],
+    "correct_answer": "인프라 관리 부담이 적고, 사용한 만큼만 비용을 지불하며 자동 확장이 지원된다.",
+    "explanation": "서버리스는 개발자가 서버 관리에 신경 쓰지 않고 코드에만 집중하게 하며, 호출 횟수와 실행 시간에 따라 비용을 지불하는 방식입니다."
+  },
+  {
+    "question_id": 56,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Architecture",
+    "subcategory": "Storage Format",
+    "skills_required": ["Avro", "Parquet", "Schema Evolution"],
+    "scenario": "실시간 스트리밍 데이터를 저장소로 보낼 때, 스키마가 자주 변경되는 특징이 있습니다.",
+    "question": "데이터의 쓰기 속도가 중요하고 스키마 진화(Schema Evolution) 대응이 용이해야 할 때, Parquet보다 Avro를 선택하는 주된 이유는?",
+    "choices": [
+      "Avro는 컬럼 기반 저장소라 분석 쿼리에 더 빠르기 때문이다.",
+      "Avro는 행 기반(Row-based) 포맷으로 쓰기 오버헤드가 적고, 스키마 정보를 데이터와 함께 저장하여 유연하기 때문이다.",
+      "Avro는 오직 텍스트 파일로만 저장되기 때문이다.",
+      "Parquet는 Python에서 읽을 수 없기 때문이다."
+    ],
+    "correct_answer": "Avro는 행 기반(Row-based) 포맷으로 쓰기 오버헤드가 적고, 스키마 정보를 데이터와 함께 저장하여 유연하기 때문이다.",
+    "explanation": "Avro는 직렬화 속도가 빠르고 스키마 변경 시 호환성 관리가 뛰어나 전송 계층이나 스키마 진화가 잦은 환경에 적합합니다."
+  },
+  {
+    "question_id": 57,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "distributed_system_reasoning",
+    "category": "Distributed Systems",
+    "subcategory": "Consistency",
+    "skills_required": ["Eventual Consistency", "NoSQL"],
+    "scenario": "분산 DB를 사용 중인데, A 노드에 데이터를 썼지만 B 노드에서 즉시 조회했을 때 데이터가 나타나지 않다가 1초 후에 나타났습니다.",
+    "question": "이러한 현상을 설명하는 분산 시스템의 용어는?",
+    "choices": [
+      "Strong Consistency (강한 일관성)",
+      "Eventual Consistency (최종 일관성)",
+      "Read-after-write Consistency",
+      "Strict Serializability"
+    ],
+    "correct_answer": "Eventual Consistency (최종 일관성)",
+    "explanation": "분산 노드 간에 데이터가 복제되는 데 시간이 걸려 일시적으로 불일치할 수 있으나 결국 일치하게 되는 상태를 최종 일관성이라고 합니다."
+  },
+  {
+    "question_id": 58,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "error_analysis",
+    "category": "Data Processing",
+    "subcategory": "Python",
+    "skills_required": ["Python", "Pandas", "Memory"],
+    "scenario": "100GB 크기의 CSV 파일을 로컬 PC의 Pandas `read_csv()`로 읽으려고 하자 'MemoryError'가 발생하며 프로그램이 종료되었습니다.",
+    "question": "PC의 RAM은 16GB입니다. 이 문제를 해결하기 위한 가장 간단한 코딩 전략은?",
+    "choices": [
+      "RAM을 128GB로 업그레이드한다.",
+      "파일을 한꺼번에 읽지 않고 `chunksize` 옵션을 사용하여 나누어서 처리한다.",
+      "파일 확장자를 .txt로 바꾼다.",
+      "컴퓨터를 재부팅하고 다시 시도한다."
+    ],
+    "correct_answer": "파일을 한꺼번에 읽지 않고 `chunksize` 옵션을 사용하여 나누어서 처리한다.",
+    "explanation": "메모리보다 큰 데이터를 다룰 때는 청크(Chunk) 단위로 쪼개어 읽고 처리함으로써 메모리 부족 문제를 피할 수 있습니다."
+  },
+  {
+    "question_id": 59,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "design_alternative_comparison",
+    "category": "Architecture",
+    "subcategory": "Processing Engine",
+    "skills_required": ["Spark", "Presto", "Trino"],
+    "scenario": "데이터 분석가들이 대화형(Interactive)으로 SQL 쿼리를 실행하여 빠르게 결과를 확인해야 하는 환경을 구축하려 합니다.",
+    "question": "복잡한 ETL 작업보다 대규모 데이터에 대한 빠른 SQL 조회에 특화된 엔진으로 가장 적합한 것은?",
+    "choices": [
+      "Apache Spark (Batch mode)",
+      "Apache Flink",
+      "Trino (구 PrestoSQL)",
+      "Hadoop MapReduce"
+    ],
+    "correct_answer": "Trino (구 PrestoSQL)",
+    "explanation": "Trino는 메모리 기반의 MPP 엔진으로 분산된 소스에 대해 매우 빠른 SQL 쿼리 성능을 제공하여 대화형 분석에 최적화되어 있습니다."
+  },
+  {
+    "question_id": 60,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "misconception_detection",
+    "category": "Data Modeling",
+    "subcategory": "Data Lake",
+    "skills_required": ["Data Lake"],
+    "scenario": "데이터 레이크에 대해 토론하고 있습니다.",
+    "question": "다음 중 데이터 레이크의 특징으로 **틀린** 것은?",
+    "choices": [
+      "정형 데이터뿐만 아니라 비정형 데이터도 원본 그대로 저장할 수 있다.",
+      "데이터를 저장하기 전에 반드시 엄격한 스키마를 정의해야만 한다.",
+      "저렴한 비용의 객체 스토리지를 기반으로 구축되는 경우가 많다.",
+      "데이터 웨어하우스에 비해 확장성이 뛰어나다."
+    ],
+    "correct_answer": "데이터를 저장하기 전에 반드시 엄격한 스키마를 정의해야만 한다.",
+    "explanation": "데이터 레이크는 읽을 때 스키마를 정의하는 'Schema-on-Read' 방식이므로 저장 시점에 스키마가 엄격할 필요가 없습니다."
+  },
+  {
+    "question_id": 61,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "monitoring_strategy",
+    "category": "Operations",
+    "subcategory": "Alerting",
+    "skills_required": ["Prometheus", "Kafka"],
+    "scenario": "Kafka 컨슈머가 멈춰서 데이터 처리가 안 되는 상황을 실시간으로 감지하고 알림을 보내고 싶습니다.",
+    "question": "어떤 지표(Metric)를 기반으로 알람 임계치를 설정하는 것이 가장 효과적입니까?",
+    "choices": [
+      "브로커의 네트워크 송수신량",
+      "컨슈머의 'records-lag-max' 지표가 특정 수치 이상으로 유지될 때",
+      "토픽의 전체 메시지 개수",
+      "Zookeeper의 세션 타임아웃 횟수"
+    ],
+    "correct_answer": "컨슈머의 'records-lag-max' 지표가 특정 수치 이상으로 유지될 때",
+    "explanation": "지연된 레코드 수(Lag)가 계속 증가한다는 것은 컨슈머가 처리를 못 하고 있다는 가장 확실한 신호입니다."
+  },
+  {
+    "question_id": 62,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "performance_estimation",
+    "category": "Data Processing",
+    "subcategory": "Spark",
+    "skills_required": ["Spark", "Partitioning"],
+    "scenario": "1TB 데이터를 처리하는 Spark 잡이 200개의 파티션으로 동작하고 있습니다. 각 태스크가 처리하는 데이터 양이 너무 많아 GC 부하가 심합니다.",
+    "question": "성능을 개선하기 위해 파티션 수를 조정한다면 어떤 방향이 적절합니까?",
+    "choices": [
+      "파티션 수를 10개로 줄인다.",
+      "파티션 수를 1,000~2,000개 정도로 늘려 개별 태스크의 부하를 줄인다.",
+      "파티션 수와 성능은 상관이 없다.",
+      "데이터를 100MB씩 쪼개서 수동으로 1만 번 실행한다."
+    ],
+    "correct_answer": "파티션 수를 1,000~2,000개 정도로 늘려 개별 태스크의 부하를 줄인다.",
+    "explanation": "파티션을 늘리면 개별 태스크가 다루는 메모리 사용량이 줄어들어 GC 효율이 좋아지고 병렬성이 극대화됩니다. 보통 파티션당 128MB~256MB 정도가 적당합니다."
+  },
+  {
+    "question_id": 63,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "best_practice_selection",
+    "category": "Programming",
+    "subcategory": "Code Quality",
+    "skills_required": ["Python", "Environment"],
+    "scenario": "동일한 서버에서 여러 개의 ETL 프로젝트를 진행하는데, 각 프로젝트마다 사용하는 라이브러리 버전이 충돌하고 있습니다.",
+    "question": "이를 해결하기 위한 파이썬 개발 환경 관리의 모범 사례는?",
+    "choices": [
+      "모든 라이브러리를 최신 버전으로 강제 업데이트한다.",
+      "가상 환경(venv, conda)이나 Docker 컨테이너를 사용하여 프로젝트별 환경을 격리한다.",
+      "라이브러리를 설치하지 않고 모든 로직을 직접 구현한다.",
+      "서버를 프로젝트 개수만큼 새로 구매한다."
+    ],
+    "correct_answer": "가상 환경(venv, conda)이나 Docker 컨테이너를 사용하여 프로젝트별 환경을 격리한다.",
+    "explanation": "환경 격리는 의존성 충돌을 방지하고 배포의 일관성을 유지하기 위한 가장 기본적인 실무 관행입니다."
+  },
+  {
+    "question_id": 64,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "cost_optimization",
+    "category": "Cloud",
+    "subcategory": "Compute Cost",
+    "skills_required": ["EC2", "Spot Instance", "Spark"],
+    "scenario": "매일 새벽에 돌아가는 대규모 배치 잡의 클라우드 비용이 너무 높게 책정되고 있습니다. 잡은 실패해도 재시작하면 큰 문제가 없는 구조입니다.",
+    "question": "성능 저하 없이 비용을 50% 이상 절감할 수 있는 가장 효과적인 방안은?",
+    "choices": [
+      "모든 인스턴스를 On-demand에서 Reserved Instance로 바꾼다.",
+      "스팟 인스턴스(Spot Instance)를 활용하여 클러스터를 구성한다.",
+      "작업 시간을 낮 시간으로 옮긴다.",
+      "Spark 대신 쉘 스크립트를 사용한다."
+    ],
+    "correct_answer": "스팟 인스턴스(Spot Instance)를 활용하여 클러스터를 구성한다.",
+    "explanation": "스팟 인스턴스는 반납 위험이 있지만 가격이 매우 저렴하므로, 내결함성이 있는 빅데이터 배치 잡에 최적의 비용 절감 수단입니다."
+  },
+  {
+    "question_id": 65,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "data_interpretation",
+    "category": "Data Quality",
+    "subcategory": "Statistics",
+    "skills_required": ["Data Analysis", "Outlier"],
+    "scenario": "사용자별 일일 결제 금액 데이터를 분석 중인데, 평균값이 중앙값(Median)보다 100배 이상 높게 나타났습니다.",
+    "question": "이 데이터 세트의 특징을 가장 잘 설명한 것은?",
+    "choices": [
+      "데이터가 정규 분포를 따르고 있다.",
+      "소수의 사용자가 매우 큰 금액을 결제한 이상치(Outlier)가 존재한다.",
+      "데이터에 Null 값이 너무 많다.",
+      "데이터가 모두 동일한 값으로 구성되어 있다."
+    ],
+    "correct_answer": "소수의 사용자가 매우 큰 금액을 결제한 이상치(Outlier)가 존재한다.",
+    "explanation": "평균이 중앙값보다 훨씬 크다는 것은 오른쪽으로 꼬리가 긴 분포이며, 극단적으로 큰 값들이 평균을 끌어올리고 있음을 의미합니다."
+  },
+  {
+    "question_id": 66,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "multiple_choice",
+    "category": "Programming",
+    "subcategory": "SQL",
+    "skills_required": ["SQL", "Aggregation"],
+    "scenario": "부서별 평균 급여를 계산하려고 합니다.",
+    "question": "올바른 SQL 구문은?",
+    "choices": [
+      "SELECT dept, avg(salary) FROM emp GROUP BY dept",
+      "SELECT dept, avg(salary) FROM emp ORDER BY dept",
+      "SELECT avg(salary) FROM emp WHERE dept = ALL",
+      "SELECT dept FROM emp HAVING avg(salary)"
+    ],
+    "correct_answer": "SELECT dept, avg(salary) FROM emp GROUP BY dept",
+    "explanation": "특정 기준(부서)으로 집계 함수를 사용할 때는 반드시 GROUP BY 절을 사용해야 합니다."
+  },
+  {
+    "question_id": 67,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "scalability_planning",
+    "category": "Database",
+    "subcategory": "NoSQL",
+    "skills_required": ["Cassandra", "Data Modeling"],
+    "scenario": "전 세계 사용자의 로그를 저장하기 위해 Apache Cassandra를 도입하려 합니다. 특정 국가(Country)의 데이터가 다른 국가보다 1000배 더 많습니다.",
+    "question": "Partition Key를 'Country'로만 설정할 경우 예상되는 심각한 문제는?",
+    "choices": [
+      "데이터 삭제가 불가능해진다.",
+      "특정 노드에 데이터가 쏠리는 데이터 불균형(Hotspot)이 발생하여 성능이 저하된다.",
+      "네트워크 대역폭이 남게 된다.",
+      "데이터 복제본이 생성되지 않는다."
+    ],
+    "correct_answer": "특정 노드에 데이터가 쏠리는 데이터 불균형(Hotspot)이 발생하여 성능이 저하된다.",
+    "explanation": "카산드라는 파티션 키를 기준으로 데이터를 분산하므로, 카디널리티가 낮고 불균형한 키를 사용하면 특정 노드에 부하가 집중됩니다."
+  },
+  {
+    "question_id": 68,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "refactoring_decision",
+    "category": "Data Processing",
+    "subcategory": "ETL Code",
+    "skills_required": ["Python", "Spark", "Modularity"],
+    "scenario": "하나의 파이썬 파일에 5,000라인의 ETL 로직이 작성되어 있어 수정할 때마다 다른 기능이 망가지는 현상이 발생합니다.",
+    "question": "코드 유지보수성을 높이기 위한 가장 시급한 리팩토링 전략은?",
+    "choices": [
+      "파일을 10,000라인으로 더 늘려서 상세히 적는다.",
+      "관심사 분리(SoC) 원칙에 따라 추출, 변환, 로드 로직을 별도 모듈이나 클래스로 분리한다.",
+      "주석을 모두 삭제하여 가독성을 높인다.",
+      "변수명을 모두 a, b, c와 같이 짧게 바꾼다."
+    ],
+    "correct_answer": "관심사 분리(SoC) 원칙에 따라 추출, 변환, 로드 로직을 별도 모듈이나 클래스로 분리한다.",
+    "explanation": "거대한 스크립트를 기능별로 모듈화하면 테스트가 용이해지고 영향 범위를 파악하기 쉬워져 유지보수 비용이 줄어듭니다."
+  },
+  {
+    "question_id": 69,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "documentation_analysis",
+    "category": "Orchestration",
+    "subcategory": "Airflow",
+    "skills_required": ["Airflow", "Backfill"],
+    "scenario": "Airflow 문서를 보니 'Catchup' 옵션이 기본적으로 True로 설정되어 있다고 합니다.",
+    "question": "이 설정을 끄지 않고 1년 전 시작일(start_date)을 가진 DAG을 활성화했을 때 발생하는 현상은?",
+    "choices": [
+      "과거 1년치 작업이 한꺼번에 실행(Backfill)되어 시스템 부하가 급증한다.",
+      "과거 작업은 무시되고 오늘부터만 실행된다.",
+      "DAG 파일이 자동으로 삭제된다.",
+      "스케줄러가 에러를 내며 멈춘다."
+    ],
+    "correct_answer": "과거 1년치 작업이 한꺼번에 실행(Backfill)되어 시스템 부하가 급증한다.",
+    "explanation": "catchup=True는 시작일부터 현재까지 실행되지 않은 모든 구간의 작업을 순차적으로 실행하려 시도하므로 주의가 필요합니다."
+  },
+  {
+    "question_id": 70,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "Architecture",
+    "subcategory": "Real-time Dashboard",
+    "skills_required": ["Kafka", "Druid", "OLAP"],
+    "scenario": "수십억 건의 로그 데이터를 실시간으로 집계하여 수초 내에 대시보드에 시각화해야 합니다. 일반적인 RDBMS로는 속도가 나오지 않습니다.",
+    "question": "이러한 실시간 OLAP 분석에 가장 적합한 데이터 기술 스택은?",
+    "choices": [
+      "Hadoop MapReduce + Hive",
+      "Kafka + Apache Druid (또는 ClickHouse)",
+      "Spark + MySQL",
+      "Python + CSV files"
+    ],
+    "correct_answer": "Kafka + Apache Druid (또는 ClickHouse)",
+    "explanation": "Druid나 ClickHouse는 대규모 데이터의 실시간 인입과 초고속 집계 쿼리에 특화된 OLAP 전용 데이터베이스입니다."
+  },
+  {
+    "question_id": 71,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "dependency_analysis",
+    "category": "Infra",
+    "subcategory": "Containers",
+    "skills_required": ["Docker", "Kubernetes", "Storage"],
+    "scenario": "쿠버네티스 환경에서 데이터베이스 Pod를 실행하려고 합니다. Pod가 재시작되어도 데이터가 사라지지 않게 해야 합니다.",
+    "question": "반드시 설정해야 하는 K8s 리소스는 무엇입니까?",
+    "choices": [
+      "Service",
+      "Persistent Volume (PV) 및 Persistent Volume Claim (PVC)",
+      "ConfigMap",
+      "Ingress"
+    ],
+    "correct_answer": "Persistent Volume (PV) 및 Persistent Volume Claim (PVC)",
+    "explanation": "컨테이너의 내부 저장소는 휘발성입니다. 데이터를 유지하려면 외부 스토리지를 연결하는 PV/PVC 설정이 필수적입니다."
+  },
+  {
+    "question_id": 72,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "concept_check",
+    "category": "Data Processing",
+    "subcategory": "Parallelism",
+    "skills_required": ["Distributed Computing"],
+    "scenario": "분산 처리 시스템에서 '가용성(Availability)'과 '확장성(Scalability)'의 차이를 이해하려 합니다.",
+    "question": "서버가 늘어남에 따라 처리 능력이 선형적으로 증가하는 특징을 무엇이라 합니까?",
+    "choices": [
+      "Reliability",
+      "Scalability",
+      "Fault Tolerance",
+      "Consistency"
+    ],
+    "correct_answer": "Scalability",
+    "explanation": "확장성(Scalability)은 시스템이 늘어나는 부하에 맞춰 자원을 추가함으로써 성능을 높일 수 있는 능력을 말합니다."
+  },
+  {
+    "question_id": 73,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "Operations",
+    "subcategory": "Deployment Strategy",
+    "skills_required": ["CI/CD", "Blue-Green", "Data Pipeline"],
+    "scenario": "기존 데이터 파이프라인의 로직을 대대적으로 수정하여 배포하려 합니다. 잘못 배포될 경우 데이터가 오염될 위험이 큽니다.",
+    "question": "리스크를 최소화하기 위한 배포 전략으로 가장 적절한 것은?",
+    "choices": [
+      "금요일 퇴근 직전에 배포하고 월요일에 확인한다.",
+      "기존 파이프라인과 병렬로 새 파이프라인을 실행(Shadow run)하여 결과를 비교 검증한 뒤 전환한다.",
+      "개발 서버에서 확인했으니 운영 서버에 바로 덮어쓴다.",
+      "배포를 포기하고 수작업으로 처리한다."
+    ],
+    "correct_answer": "기존 파이프라인과 병렬로 새 파이프라인을 실행(Shadow run)하여 결과를 비교 검증한 뒤 전환한다.",
+    "explanation": "중요한 데이터 로직 변경 시에는 실제 데이터를 이용한 비교 검증 과정을 통해 정합성을 확인하는 단계가 반드시 필요합니다."
+  },
+  {
+    "question_id": 74,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "algorithm_design",
+    "category": "Data Processing",
+    "subcategory": "Deduplication",
+    "skills_required": ["Spark", "Hashing"],
+    "scenario": "수십억 건의 로그 데이터에서 중복된 UUID를 제거해야 합니다. 메모리가 제한적이라 단순 Set에 담을 수 없습니다.",
+    "question": "근사치(Approximate)를 허용하면서도 아주 적은 메모리로 중복 여부를 판단할 수 있는 알고리즘/자료구조는?",
+    "choices": [
+      "B-Tree",
+      "Bloom Filter",
+      "Linked List",
+      "Stack"
+    ],
+    "correct_answer": "Bloom Filter",
+    "explanation": "블룸 필터는 확률적 자료구조로, 매우 적은 메모리로 특정 원소가 집합에 포함되어 있는지 여부를 빠르게 확인(존재하지 않음은 확정, 존재함은 확률적)할 수 있습니다."
+  },
+  {
+    "question_id": 75,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "code_output_prediction",
+    "category": "Database",
+    "subcategory": "SQL",
+    "skills_required": ["SQL", "Null handling"],
+    "scenario": "다음 SQL 쿼리의 결과를 예측해 보세요.",
+    "question": "Table A에 값이 (1, 2, NULL)이 있을 때, `SELECT COUNT(*) FROM A`와 `SELECT COUNT(col) FROM A`의 결과는 각각 무엇입니까?",
+    "choices": [
+      "3, 3",
+      "3, 2",
+      "2, 2",
+      "에러 발생"
+    ],
+    "correct_answer": "3, 2",
+    "explanation": "COUNT(*)은 전체 행의 수를 세지만, COUNT(컬럼명)은 해당 컬럼이 NULL이 아닌 행의 수만 집계합니다."
+  },
+  {
+    "question_id": 76,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Architecture",
+    "subcategory": "Hybrid Cloud",
+    "skills_required": ["Hybrid Cloud", "Data Transfer", "Direct Connect"],
+    "scenario": "온프레미스 데이터 센터에서 클라우드로 매일 수십 TB의 데이터를 전송해야 합니다. 공용 인터넷망으로는 속도가 느리고 보안이 불안정합니다.",
+    "question": "안정적인 대용량 데이터 전송을 위해 도입해야 할 클라우드 네트워크 서비스는?",
+    "choices": [
+      "Public VPN",
+      "AWS Direct Connect (또는 Azure ExpressRoute)",
+      "HTTP Proxy",
+      "FTP Server"
+    ],
+    "correct_answer": "AWS Direct Connect (또는 Azure ExpressRoute)",
+    "explanation": "전용선 서비스는 공용 인터넷을 거치지 않고 일관된 대역폭과 높은 보안성을 제공하여 대규모 데이터 마이그레이션에 필수적입니다."
+  },
+  {
+    "question_id": 77,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "performance_optimization",
+    "category": "Data Processing",
+    "subcategory": "Spark",
+    "skills_required": ["Spark", "Caching"],
+    "scenario": "하나의 데이터프레임을 활용하여 5개의 서로 다른 집계 작업을 연속으로 수행하고 있습니다. 매번 데이터를 원천 소스에서 다시 읽어와서 시간이 오래 걸립니다.",
+    "question": "성능 향상을 위해 해당 데이터프레임에 적용해야 할 작업은?",
+    "choices": [
+      ".collect()",
+      ".persist() 또는 .cache()",
+      ".show()",
+      ".repartition(1)"
+    ],
+    "correct_answer": ".persist() 또는 .cache()",
+    "explanation": "반복 사용되는 데이터프레임을 메모리나 디스크에 캐싱해두면, 매번 소스에서 다시 계산하는 비용을 절감할 수 있습니다."
+  },
+  {
+    "question_id": 78,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "definition",
+    "category": "Data Modeling",
+    "subcategory": "Database Theory",
+    "skills_required": ["ACID", "Transaction"],
+    "scenario": "트랜잭션의 ACID 속성을 공부하고 있습니다.",
+    "question": "트랜잭션이 성공적으로 완료되면 그 결과가 영구적으로 반영되어야 한다는 성질은?",
+    "choices": [
+      "Atomicity (원자성)",
+      "Consistency (일관성)",
+      "Isolation (고립성)",
+      "Durability (지속성)"
+    ],
+    "correct_answer": "Durability (지속성)",
+    "explanation": "지속성(Durability)은 시스템 장애가 발생하더라도 성공적으로 완료된 트랜잭션의 결과는 보존되어야 함을 뜻합니다."
+  },
+  {
+    "question_id": 79,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "debugging",
+    "category": "Programming",
+    "subcategory": "Python",
+    "skills_required": ["Python", "Boto3"],
+    "scenario": "Python의 boto3 라이브러리를 사용하여 S3 파일을 읽으려는데 'AccessDenied' 에러가 발생합니다.",
+    "question": "코드 수정 전 가장 먼저 확인해야 할 인프라 설정은?",
+    "choices": [
+      "파이썬 설치 경로",
+      "S3 버킷의 용량",
+      "현재 실행 주체의 IAM Policy 권한 부여 여부",
+      "컴퓨터의 IP 주소"
+    ],
+    "correct_answer": "현재 실행 주체의 IAM Policy 권한 부여 여부",
+    "explanation": "AccessDenied는 대개 요청자에게 해당 리소스를 사용할 권한(Policy)이 없어서 발생합니다."
+  },
+  {
+    "question_id": 80,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "incident_response",
+    "category": "Operations",
+    "subcategory": "Crisis Management",
+    "skills_required": ["Disaster Recovery", "RTO/RPO"],
+    "scenario": "메인 리전의 데이터 센터가 화재로 완전히 다운되었습니다. 비즈니스 연속성을 보장해야 합니다.",
+    "question": "복구 목표 시간(RTO)과 복구 목표 시점(RPO)을 달성하기 위해 평소에 구축해 두었어야 할 가장 높은 수준의 재해 복구(DR) 방식은?",
+    "choices": [
+      "Backup & Restore (테이프 백업)",
+      "Pilot Light (일부 핵심 기능 대기)",
+      "Multi-Site Active-Active (다중 리전 동시 운영)",
+      "Warm Standby (축소된 사본 운영)"
+    ],
+    "correct_answer": "Multi-Site Active-Active (다중 리전 동시 운영)",
+    "explanation": "Active-Active 구성은 즉각적인 트래픽 전환이 가능하여 지연 시간 없는 복구와 데이터 손실 최소화를 보장하는 가장 고도화된 DR 전략입니다."
+  },
+  {
+    "question_id": 81,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "scenario_based",
+    "category": "Data Lakehouse",
+    "subcategory": "Delta Lake",
+    "skills_required": ["Delta Lake", "ACID", "Time Travel"],
+    "scenario": "실수로 특정 테이블의 데이터를 잘못 업데이트하거나 삭제하는 운영 사고가 발생했습니다. 데이터 엔지니어는 1시간 전의 정상적인 상태로 데이터를 즉시 되돌려야 합니다.",
+    "question": "Delta Lake의 어떤 기능을 사용하여 과거 특정 시점의 스냅샷을 조회하거나 복구할 수 있습니까?",
+    "choices": [
+      "Checkpointing",
+      "Time Travel (VERSION AS OF / TIMESTAMP AS OF)",
+      "Z-Ordering",
+      "Vacuum"
+    ],
+    "correct_answer": "Time Travel (VERSION AS OF / TIMESTAMP AS OF)",
+    "explanation": "Delta Lake는 모든 트랜잭션을 로그로 기록하므로, 특정 버전이나 시점의 데이터를 쿼리할 수 있는 'Time Travel' 기능을 지원합니다."
+  },
+  {
+    "question_id": 82,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "performance_optimization",
+    "category": "Data Processing",
+    "subcategory": "Spark Tuning",
+    "skills_required": ["Spark", "Join Strategy"],
+    "scenario": "수십억 건의 팩트 테이블(Fact Table)과 크기가 매우 작은(예: 수 MB) 기준 정보 테이블을 조인하려고 합니다.",
+    "question": "네트워크 셔플(Shuffle) 발생을 방지하고 성능을 극대화하기 위해 Spark 엔진이 자동으로 선택하거나 개발자가 힌트로 줄 수 있는 가장 효율적인 조인 전략은?",
+    "choices": [
+      "Shuffle Sort Merge Join",
+      "Broadcast Hash Join",
+      "Shuffle Hash Join",
+      "Cartesian Product Join"
+    ],
+    "correct_answer": "Broadcast Hash Join",
+    "explanation": "작은 테이블을 모든 워커 노드의 메모리에 복사(Broadcast)하여 조인하면 대규모 데이터 이동(Shuffle) 없이 로컬에서 조인이 수행되어 성능이 매우 빠릅니다."
+  },
+  {
+    "question_id": 83,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "concept_check",
+    "category": "Messaging",
+    "subcategory": "Kafka",
+    "skills_required": ["Kafka", "Log Compaction"],
+    "scenario": "사용자의 최종 상태(예: 현재 주소, 최신 설정값)만을 유지하면 되는 토픽을 관리하고 있습니다. 오래된 중복 키의 데이터를 자동으로 정리하여 저장 공간을 절약하고 싶습니다.",
+    "question": "이때 사용해야 하는 Kafka의 데이터 유지 정책(Cleanup Policy)은?",
+    "choices": [
+      "Delete",
+      "Compact",
+      "Archive",
+      "Snapshot"
+    ],
+    "correct_answer": "Compact",
+    "explanation": "Log Compaction은 동일한 키를 가진 메시지들 중 가장 최신 값만 남기고 과거 레코드를 삭제하는 정책입니다."
+  },
+  {
+    "question_id": 84,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "code_completion",
+    "category": "Database",
+    "subcategory": "Advanced SQL",
+    "skills_required": ["SQL", "Window Function"],
+    "scenario": "전체 매출 데이터에서 '각 카테고리별' 매출액 기준 1위부터 10위까지의 상품을 추출하려고 합니다.",
+    "question": "다음 SQL 빈칸에 공통으로 들어갈 윈도우 함수 절은? `SELECT ... ROW_NUMBER() OVER(______)`",
+    "choices": [
+      "ORDER BY category",
+      "PARTITION BY category ORDER BY sales DESC",
+      "GROUP BY category",
+      "DISTINCT category"
+    ],
+    "correct_answer": "PARTITION BY category ORDER BY sales DESC",
+    "explanation": "그룹별 순위를 매기기 위해서는 PARTITION BY로 그룹을 나누고, ORDER BY로 정렬 기준을 명시해야 합니다."
+  },
+  {
+    "question_id": 85,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Data Pipeline",
+    "subcategory": "Design Pattern",
+    "skills_required": ["Idempotency", "Data Integrity"],
+    "scenario": "파이프라인 장애로 인해 동일한 데이터가 중복으로 인입될 수 있는 상황입니다. 여러 번 실행해도 최종 결과가 항상 같아야 합니다.",
+    "question": "이러한 파이프라인의 성질을 무엇이라고 합니까?",
+    "choices": [
+      "Scalability (확장성)",
+      "Idempotency (멱등성)",
+      "Elasticity (탄력성)",
+      "High Availability (고가용성)"
+    ],
+    "correct_answer": "Idempotency (멱등성)",
+    "explanation": "멱등성은 동일한 연산을 여러 번 수행해도 결과가 달라지지 않는 성질로, 데이터 중복 방지와 복구 자동화에 필수적입니다."
+  },
+  {
+    "question_id": 86,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "debugging",
+    "category": "Cloud & Analysis",
+    "subcategory": "Amazon Athena",
+    "skills_required": ["Athena", "Presto", "Partitioning"],
+    "scenario": "Athena를 사용하여 S3의 데이터를 조회하는데, 데이터가 늘어남에 따라 쿼리 비용이 급격히 증가하고 속도가 느려지고 있습니다. S3 경로는 `s3://my-bucket/logs/year=2023/month=10/...` 구조입니다.",
+    "question": "비용 절감과 성능 향상을 위해 쿼리 작성 시 반드시 포함해야 할 조건은?",
+    "choices": [
+      "SELECT * 대신 특정 컬럼만 지정한다.",
+      "WHERE 절에 year, month와 같은 파티션 컬럼 조건을 명시하여 'Partition Pruning'을 유도한다.",
+      "데이터를 CSV 대신 JSON으로 저장한다.",
+      "쿼리 끝에 LIMIT 10을 붙인다."
+    ],
+    "correct_answer": "WHERE 절에 year, month와 같은 파티션 컬럼 조건을 명시하여 'Partition Pruning'을 유도한다.",
+    "explanation": "파티션 조건을 사용하면 쿼리 엔진이 필요한 폴더만 스캔하므로 데이터 스캔 양이 줄어들어 비용과 속도 면에서 큰 이점을 얻습니다."
+  },
+  {
+    "question_id": 87,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "root_cause_analysis",
+    "category": "Data Processing",
+    "subcategory": "Spark",
+    "skills_required": ["Data Skew", "Salting"],
+    "scenario": "Spark 작업을 수행하는데 특정 태스크(Task) 하나만 99%에서 멈춰있고 나머지 태스크들은 모두 완료된 상태입니다. 이후 결국 Executor가 Out of Memory로 종료되었습니다.",
+    "question": "이 현상을 지칭하는 용어와 가장 권장되는 해결 방법은?",
+    "choices": [
+      "Deadlock - DB 락을 해제한다.",
+      "Data Skew(데이터 편향) - 특정 키에 데이터가 몰려있으므로 'Salting' 기술을 적용해 데이터를 분산시킨다.",
+      "Memory Leak - 코드를 처음부터 다시 작성한다.",
+      "CPU Thrashing - 워커 노드를 증설한다."
+    ],
+    "correct_answer": "Data Skew(데이터 편향) - 특정 키에 데이터가 몰려있으므로 'Salting' 기술을 적용해 데이터를 분산시킨다.",
+    "explanation": "데이터가 특정 키에 몰려 있으면 하나의 워커만 과부하가 걸리는데, 이를 해결하기 위해 키에 랜덤한 값을 섞어 분산시키는 Salting 기법을 사용합니다."
+  },
+  {
+    "question_id": 88,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "concept_check",
+    "category": "Orchestration",
+    "subcategory": "Airflow",
+    "skills_required": ["Airflow", "XCom"],
+    "scenario": "Airflow DAG 내에서 이전 Task의 수행 결과(예: 생성된 파일 경로)를 다음 Task로 전달하고 싶습니다.",
+    "question": "Airflow에서 Task 간 소량의 메타데이터를 공유하기 위해 사용하는 기능은?",
+    "choices": [
+      "Variables",
+      "XComs (Cross-Communications)",
+      "Connections",
+      "Task Groups"
+    ],
+    "correct_answer": "XComs (Cross-Communications)",
+    "explanation": "XCom은 Task 간에 데이터를 주고받을 수 있는 Airflow 고유의 메커니즘입니다."
+  },
+  {
+    "question_id": 89,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "design_alternative_comparison",
+    "category": "Data Modeling",
+    "subcategory": "SCD",
+    "skills_required": ["Slowly Changing Dimension", "DW"],
+    "scenario": "고객의 주소 정보가 변경될 때, 과거의 주소 이력도 모두 보관하면서 현재 주소도 알 수 있도록 데이터 웨어하우스를 설계해야 합니다.",
+    "question": "가장 적절한 SCD(Slowly Changing Dimension) 유형은?",
+    "choices": [
+      "SCD Type 0 (고정)",
+      "SCD Type 1 (덮어쓰기)",
+      "SCD Type 2 (새 행 추가 및 유효 기간 관리)",
+      "SCD Type 3 (이전 값 컬럼 추가)"
+    ],
+    "correct_answer": "SCD Type 2 (새 행 추가 및 유효 기간 관리)",
+    "explanation": "Type 2는 변경이 발생할 때마다 새로운 레코드를 생성하고 시작/종료일 또는 플래그를 두어 이력을 관리하는 표준적인 방식입니다."
+  },
+  {
+    "question_id": 90,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "security_analysis",
+    "category": "Cloud & Security",
+    "subcategory": "Compliance",
+    "skills_required": ["PII", "Masking"],
+    "scenario": "데이터 분석가들이 로그를 분석해야 하지만, 주민등록번호나 전화번호 같은 개인정보(PII)는 원본 그대로 노출되어서는 안 됩니다.",
+    "question": "데이터의 형식을 유지하면서 실제 값을 알아볼 수 없게 변환하여 보안을 강화하는 기술은?",
+    "choices": [
+      "Compression (압축)",
+      "Data Masking / Tokenization (마스킹 및 토큰화)",
+      "Indexing (인덱싱)",
+      "Caching (캐싱)"
+    ],
+    "correct_answer": "Data Masking / Tokenization (마스킹 및 토큰화)",
+    "explanation": "마스킹과 토큰화는 민감한 데이터를 식별할 수 없는 형태로 변환하여 데이터 활용과 보안을 동시에 만족시키는 기술입니다."
+  },
+  {
+    "question_id": 91,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "failure_mode_analysis",
+    "category": "Distributed Systems",
+    "subcategory": "Streaming",
+    "skills_required": ["Flink", "Watermarks"],
+    "scenario": "실시간 스트리밍 처리 중 네트워크 지연으로 인해 데이터가 발생 순서대로 도착하지 않고 뒤섞여서(Out-of-order) 인입되고 있습니다.",
+    "question": "시스템이 '어느 시점까지의 데이터가 다 도착했는지'를 판단하고 윈도우 계산을 마감하기 위해 사용하는 개념은?",
+    "choices": [
+      "Checkpoint",
+      "Watermark",
+      "Offset",
+      "Savepoint"
+    ],
+    "correct_answer": "Watermark",
+    "explanation": "Watermark는 이벤트 시간 기반 스트림 처리에서 지연 데이터의 허용 범위를 결정하고 진행 상태를 측정하는 지표입니다."
+  },
+  {
+    "question_id": 92,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "code_completion",
+    "category": "Programming",
+    "subcategory": "Python",
+    "skills_required": ["Python", "Generators"],
+    "scenario": "매우 큰 텍스트 파일을 한 줄씩 읽어서 처리해야 합니다. 메모리 사용량을 최소화하면서 반복 가능한 객체를 만들고 싶습니다.",
+    "question": "파이썬에서 `yield` 키워드를 사용하여 구현하는 이 기능의 이름은?",
+    "choices": [
+      "Decorator",
+      "Generator",
+      "Lambda",
+      "List Comprehension"
+    ],
+    "correct_answer": "Generator",
+    "explanation": "제너레이터는 데이터를 한꺼번에 메모리에 올리지 않고 필요할 때마다 하나씩 생성하여 반환하므로 대용량 데이터 처리에 효율적입니다."
+  },
+  {
+    "question_id": 93,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "capacity_planning",
+    "category": "Infrastructure",
+    "subcategory": "Cloud Storage",
+    "skills_required": ["S3", "Lifecycle Policy"],
+    "scenario": "S3에 저장된 데이터 중 생성된 지 90일이 지난 데이터는 자주 사용되지 않지만 규정상 보관은 해야 합니다. 비용을 최소화하고 싶습니다.",
+    "question": "가장 적절한 자동화 설정은?",
+    "choices": [
+      "데이터를 매일 수동으로 삭제한다.",
+      "S3 Lifecycle Policy를 설정하여 90일 후 S3 Glacier로 전환한다.",
+      "버킷의 버전 관리를 중단한다.",
+      "데이터를 압축해서 다시 업로드한다."
+    ],
+    "correct_answer": "S3 Lifecycle Policy를 설정하여 90일 후 S3 Glacier로 전환한다.",
+    "explanation": "S3 수명 주기 정책을 활용하면 저렴한 스토리지 클래스(Glacier 등)로 자동 이동시켜 비용을 효율적으로 관리할 수 있습니다."
+  },
+  {
+    "question_id": 94,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "concept_check",
+    "category": "Distributed Systems",
+    "subcategory": "CAP Theorem",
+    "skills_required": ["CAP Theorem"],
+    "scenario": "분산 데이터베이스 설계 시 일관성(Consistency), 가용성(Availability), 분할 내성(Partition Tolerance) 세 가지를 모두 동시에 완벽하게 만족할 수는 없다는 이론을 배우고 있습니다.",
+    "question": "이 이론의 명칭은 무엇입니까?",
+    "choices": [
+      "ACID 원칙",
+      "BASE 이론",
+      "CAP 이론",
+      "Amdahl의 법칙"
+    ],
+    "correct_answer": "CAP 이론",
+    "explanation": "CAP 이론은 분산 시스템에서 네트워크 분할이 발생했을 때 일관성과 가용성 중 하나를 선택해야 함을 설명합니다."
+  },
+  {
+    "question_id": 95,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Data Governance",
+    "subcategory": "Data Lineage",
+    "skills_required": ["Lineage", "Metadata"],
+    "scenario": "특정 원천 테이블의 스키마를 변경하려고 합니다. 이 변경이 하위의 어떤 대시보드와 파이프라인에 영향을 주는지 미리 파악해야 합니다.",
+    "question": "데이터의 흐름과 의존 관계를 시각화하여 관리하는 이것을 무엇이라 합니까?",
+    "choices": [
+      "Data Profiling",
+      "Data Lineage (데이터 계보)",
+      "Data Catalog",
+      "Data Dictionary"
+    ],
+    "correct_answer": "Data Lineage (데이터 계보)",
+    "explanation": "데이터 리니지는 데이터의 생성부터 소멸까지의 흐름을 추적하여 변경 영향도 분석과 장애 추적을 가능하게 합니다."
+  },
+  {
+    "question_id": 96,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "performance_optimization",
+    "category": "Data Processing",
+    "subcategory": "Modern Data Stack",
+    "skills_required": ["dbt", "SQL"],
+    "scenario": "데이터 웨어하우스 내에서 복잡한 SQL 변환 로직을 관리하고 있습니다. 코드의 버전 관리, 테스트, 문서화가 어렵습니다.",
+    "question": "SQL을 기반으로 'T(Transform)' 단계를 체계적으로 관리해 주는 오픈소스 프레임워크는?",
+    "choices": [
+      "Apache Airflow",
+      "dbt (data build tool)",
+      "Apache Kafka",
+      "Terraform"
+    ],
+    "correct_answer": "dbt (data build tool)",
+    "explanation": "dbt는 데이터 엔지니어가 소프트웨어 엔지니어링 방법론(버전 관리, 테스트 등)을 SQL 변환 작업에 적용할 수 있게 돕는 도구입니다."
+  },
+  {
+    "question_id": 97,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "infrastructure_design",
+    "category": "Cloud",
+    "subcategory": "IaC",
+    "skills_required": ["Terraform", "Infrastructure as Code"],
+    "scenario": "수백 개의 클라우드 리소스를 수동으로 생성하다 보니 실수가 잦고 동일한 환경을 재구축하기가 어렵습니다.",
+    "question": "인프라를 코드로 정의하고 선언적으로 관리하기 위해 사용하는 기술(IaC)의 대표적인 도구는?",
+    "choices": [
+      "Ansible",
+      "Terraform",
+      "Jenkins",
+      "Kubernetes"
+    ],
+    "correct_answer": "Terraform",
+    "explanation": "Terraform은 클라우드 인프라를 코드로 관리하여 재사용성과 일관성을 보장하는 대표적인 IaC 도구입니다."
+  },
+  {
+    "question_id": 98,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "concept_check",
+    "category": "Architecture",
+    "subcategory": "MLOps",
+    "skills_required": ["Feature Store", "Machine Learning"],
+    "scenario": "머신러닝 모델 학습과 서빙에 필요한 정제된 데이터를 여러 팀이 중복으로 만들고 있습니다. 일관된 피처(Feature)를 공유하고 관리하고 싶습니다.",
+    "question": "이 목적을 위해 구축하는 데이터 저장소의 명칭은?",
+    "choices": [
+      "Model Registry",
+      "Feature Store",
+      "Data Lake",
+      "Vector Database"
+    ],
+    "correct_answer": "Feature Store",
+    "explanation": "Feature Store는 머신러닝 피처를 중앙 집중화하여 관리함으로써 학습과 서빙 간의 데이터 불일치를 방지하고 재사용성을 높입니다."
+  },
+  {
+    "question_id": 99,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "operational_strategy",
+    "category": "Operations",
+    "subcategory": "Observability",
+    "skills_required": ["Observability", "OpenTelemetry"],
+    "scenario": "수많은 마이크로서비스와 파이프라인이 얽혀 있는 시스템에서 특정 요청이 어디서 병목이 걸리는지 전 구간을 추적하고 싶습니다.",
+    "question": "로깅, 메트릭과 함께 '관측 가능성(Observability)'의 3대 요소 중 하나로 꼽히는 이것은?",
+    "choices": [
+      "Debugging",
+      "Tracing (추적)",
+      "Alerting",
+      "Profiling"
+    ],
+    "correct_answer": "Tracing (추적)",
+    "explanation": "분산 추적(Distributed Tracing)은 하나의 요청이 여러 시스템을 거치는 경로를 추적하여 지연 시간과 장애 지점을 정확히 찾아내게 해줍니다."
+  },
+  {
+    "question_id": 100,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "architecture_decision",
+    "category": "Architecture",
+    "subcategory": "ELT vs ETL",
+    "skills_required": ["ELT", "Cloud DW"],
+    "scenario": "강력한 연산 능력을 가진 클라우드 데이터 웨어하우스(Snowflake, BigQuery 등)를 도입했습니다.",
+    "question": "데이터를 외부에서 변환해서 넣는 대신, 원본 데이터를 먼저 적재한 후 DW 내부의 SQL을 이용해 변환하는 방식은?",
+    "choices": [
+      "ETL (Extract, Transform, Load)",
+      "ELT (Extract, Load, Transform)",
+      "CDC (Change Data Capture)",
+      "EAI (Enterprise Application Integration)"
+    ],
+    "correct_answer": "ELT (Extract, Load, Transform)",
+    "explanation": "ELT는 클라우드 DW의 강력한 성능을 활용하기 위해 변환(T) 단계를 마지막으로 미루는 현대적인 데이터 처리 방식입니다."
+  },
+  {
+    "question_id": 101,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "error_analysis",
+    "category": "Cloud & Analysis",
+    "subcategory": "Storage",
+    "skills_required": ["Spark", "AWS S3", "Troubleshooting"],
+    "scenario": "Spark 작업 중 수십만 개의 작은 파일이 저장된 S3 경로에서 데이터를 읽어올 때 간헐적으로 '503 Slow Down' 에러가 발생하며 파이프라인이 실패합니다.",
+    "question": "이 문제를 해결하기 위해 가장 적절한 아키텍처 및 설정 변경은 무엇입니까?",
+    "choices": [
+      "S3 버킷의 물리적 디스크 용량을 늘린다.",
+      "S3 버킷의 접두사(Prefix)를 무작위로 분산(Randomized Prefix)시키고, Spark의 재시도(Retry) 로직과 Exponential Backoff를 설정한다.",
+      "Spark Executor의 메모리를 두 배로 늘려 캐싱 능력을 강화한다.",
+      "S3 대신 로컬 서버 디스크로 모든 데이터를 다운로드한 뒤 다시 읽어온다."
+    ],
+    "correct_answer": "S3 버킷의 접두사(Prefix)를 무작위로 분산(Randomized Prefix)시키고, Spark의 재시도(Retry) 로직과 Exponential Backoff를 설정한다.",
+    "explanation": "S3의 503 Slow Down 에러는 특정 접두사(Prefix)에 API 호출이 집중되어 할당량을 초과할 때 발생하므로, 파일 경로를 분산시키고 재시도 로직을 추가하는 것이 정석입니다."
+  },
+  {
+    "question_id": 102,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Data Pipeline",
+    "subcategory": "Data Ingestion",
+    "skills_required": ["CDC", "Kafka", "Debezium"],
+    "scenario": "운영 중인 메인 RDBMS(MySQL)의 트랜잭션 변경 내역을 실시간으로 데이터 레이크로 복제해야 합니다. 기존의 Batch Polling 방식은 DB에 쿼리 부하를 주고 지연 시간이 너무 깁니다.",
+    "question": "DB 부하를 최소화하면서 1초 미만의 지연 시간으로 데이터 변경분(Insert, Update, Delete)을 캡처하기 위한 가장 권장되는 기술 스택과 패턴은?",
+    "choices": [
+      "RDBMS에서 1초마다 SELECT * 쿼리를 수행하여 이전 데이터와 비교한다.",
+      "Debezium과 같은 CDC(Change Data Capture) 도구를 활용하여 트랜잭션 로그(Binlog)를 읽어 Kafka로 스트리밍한다.",
+      "RDBMS의 모든 테이블에 변경 트리거(Trigger)를 걸어 로그 파일로 출력한다.",
+      "Airflow를 이용하여 배치 파이프라인을 1분 주기로 단축시킨다."
+    ],
+    "correct_answer": "Debezium과 같은 CDC(Change Data Capture) 도구를 활용하여 트랜잭션 로그(Binlog)를 읽어 Kafka로 스트리밍한다.",
+    "explanation": "CDC는 데이터베이스의 쿼리 엔진을 거치지 않고 트랜잭션 로그를 직접 읽어내므로 DB 부하를 최소화하면서 완벽한 실시간 복제를 구현할 수 있습니다."
+  },
+  {
+    "question_id": 103,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "multiple_choice",
+    "category": "Programming",
+    "subcategory": "Python",
+    "skills_required": ["Pandas", "Memory Management"],
+    "scenario": "외부 기관에서 제공받은 CSV 파일의 크기가 5GB 정도 됩니다. 로컬 PC의 메모리가 부족하여 Pandas로 한 번에 열람하려 하면 프로세스가 죽어버립니다.",
+    "question": "메모리 초과(OOM)를 방지하면서 데이터를 효율적으로 나누어 읽어오기 위해 Pandas의 `read_csv` 함수에 적용해야 하는 매개변수는 무엇입니까?",
+    "choices": [
+      "memory_limit",
+      "chunksize",
+      "max_rows",
+      "ignore_index"
+    ],
+    "correct_answer": "chunksize",
+    "explanation": "chunksize 매개변수를 지정하면 대용량 파일을 지정한 행(Row) 개수만큼 나누어서 순차적으로 읽어오는 TextFileReader 객체를 반환하여 메모리 부족을 방지합니다."
+  },
+  {
+    "question_id": 104,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "concept_check",
+    "category": "Distributed Systems",
+    "subcategory": "Storage",
+    "skills_required": ["HDFS", "Replication"],
+    "scenario": "분산 파일 시스템에서 노드 장애에 대비하는 데이터 저장 방식을 설명하고 있습니다.",
+    "question": "HDFS(Hadoop Distributed File System)에서 단일 파일이 여러 블록으로 나뉘어 저장될 때, 데이터 유실을 방지하기 위해 각 블록은 기본적으로 몇 개의 복제본(Replication)을 가지도록 설정됩니까?",
+    "choices": [
+      "1개",
+      "2개",
+      "3개",
+      "5개"
+    ],
+    "correct_answer": "3개",
+    "explanation": "HDFS의 기본 복제 계수(Replication Factor)는 3이며, 일반적으로 같은 랙에 2개, 다른 랙에 1개를 저장하여 가용성을 보장합니다."
+  },
+  {
+    "question_id": 105,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "performance_optimization",
+    "category": "Data Processing",
+    "subcategory": "Spark",
+    "skills_required": ["Spark", "Database Connectivity"],
+    "scenario": "수백 개의 파티션을 가진 Spark DataFrame의 처리 결과를 운영 중인 RDBMS로 대량 삽입(Write)할 때, RDBMS 서버의 동시 연결 수(Connection)가 초과되어 데이터베이스가 다운되었습니다.",
+    "question": "RDBMS의 연결 부하를 조절하면서 쓰기 작업을 안정적으로 수행하기 위해 Spark 코드에 적용해야 할 가장 적합한 최적화 기법은?",
+    "choices": [
+      "`cache()` 메서드를 호출하여 Spark 메모리에 모두 적재한 뒤 DB에 한 번에 쓴다.",
+      "`repartition()` 또는 `coalesce()`를 사용하여 파티션 수를 RDBMS가 수용 가능한 커넥션 수 이하로 줄인 뒤 `foreachPartition`을 사용하여 일괄 삽입한다.",
+      "파티션 수를 10,000개 이상으로 극대화하여 병렬 처리 속도를 DB 한계치 이상으로 높인다.",
+      "데이터를 JSON 형식으로 묶어서 RDBMS의 단일 컬럼에 통째로 밀어넣는다."
+    ],
+    "correct_answer": "`repartition()` 또는 `coalesce()`를 사용하여 파티션 수를 RDBMS가 수용 가능한 커넥션 수 이하로 줄인 뒤 `foreachPartition`을 사용하여 일괄 삽입한다.",
+    "explanation": "Spark에서 외부 DB에 쓸 때 커넥션 수는 파티션 수에 비례합니다. 부하를 막기 위해서는 파티션 수를 물리적으로 제한하고, 파티션 단위로 커넥션을 맺어 벌크 인서트를 수행해야 합니다."
+  },
+  {
+    "question_id": 106,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "incident_response",
+    "category": "Operations",
+    "subcategory": "Kubernetes",
+    "skills_required": ["Airflow", "Kubernetes", "Resource Limits"],
+    "scenario": "Kubernetes에서 운영 중인 Airflow 파이프라인에 심각한 장애가 생겼습니다. 연말 이벤트로 처리할 데이터 양이 평소의 5배로 폭증하면서, K8s Worker Pod들이 메모리 부족으로 인한 'OOMKilled' 상태로 계속 재시작되고 있습니다.",
+    "question": "밀려있는 데이터를 안전하게 처리하고 파이프라인을 정상화하기 위해 취해야 할 가장 현실적이고 즉각적인 조치는 무엇입니까?",
+    "choices": [
+      "Airflow Scheduler 프로세스를 단순히 재시작하여 쌓인 큐를 비워버린다.",
+      "Airflow의 메타데이터 DB를 MySQL에서 PostgreSQL로 마이그레이션한다.",
+      "Airflow의 `concurrency` 및 `max_active_runs` 설정을 하향 조정하여 동시 실행되는 Task 수를 제한하고, K8s Pod의 Memory Limit을 증설한다.",
+      "데이터 처리 로직이 작성된 모든 Python 코드를 Java로 리팩토링하여 배포한다."
+    ],
+    "correct_answer": "Airflow의 `concurrency` 및 `max_active_runs` 설정을 하향 조정하여 동시 실행되는 Task 수를 제한하고, K8s Pod의 Memory Limit을 증설한다.",
+    "explanation": "급증한 트래픽으로 인한 자원 고갈 상황에서는, 스로틀링(Throttling)을 통해 시스템에 인입되는 동시 작업 부하를 조절하고 물리적인 메모리 상한을 올려주는 것이 필수적인 응급조치입니다."
+  },
+  {
+    "question_id": 107,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "code_completion",
+    "category": "Database",
+    "subcategory": "SQL",
+    "skills_required": ["SQL", "Window Function"],
+    "scenario": "사용자의 일별 결제 로그 테이블에서 '어제 결제 금액'과 '오늘 결제 금액'의 증감을 하나의 쿼리에서 비교하려고 합니다.",
+    "question": "동일한 결과 셋 안에서 이전 행(Row)의 컬럼 값을 현재 행으로 가져오기 위해 사용하는 SQL 윈도우 함수는 무엇입니까?",
+    "choices": [
+      "LEAD()",
+      "LAG()",
+      "RANK()",
+      "NTILE()"
+    ],
+    "correct_answer": "LAG()",
+    "explanation": "LAG() 함수는 파티션 내에서 현재 행보다 이전에 있는(지정된 오프셋만큼) 행의 데이터에 접근할 때 사용되며, 시계열 데이터의 전일 대비 비교 등에 필수적으로 쓰입니다."
+  },
+  {
+    "question_id": 108,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "monitoring_strategy",
+    "category": "Operations",
+    "subcategory": "Monitoring",
+    "skills_required": ["Kafka", "Monitoring"],
+    "scenario": "초당 수만 건의 이벤트가 흐르는 실시간 파이프라인(Kafka -> 스트림 처리기)의 모니터링 경보를 설계하고 있습니다. 컨슈머 프로세스가 죽지는 않았지만 로직 버그로 인해 데이터 처리 속도가 현저히 느려진 상태를 조기에 감지해야 합니다.",
+    "question": "이러한 침묵의 장애를 즉시 파악하기 위해 최우선으로 알람 임계치를 설정해야 하는 Kafka 메트릭은 무엇입니까?",
+    "choices": [
+      "Producer Network I/O Rate",
+      "Zookeeper CPU Utilization",
+      "Consumer Lag",
+      "Broker Free Disk Space"
+    ],
+    "correct_answer": "Consumer Lag",
+    "explanation": "Consumer Lag(컨슈머 랙)은 프로듀서가 넣은 최신 오프셋과 컨슈머가 처리한 오프셋의 차이로, 이 수치가 증가한다는 것은 파이프라인의 처리 지연이 심화되고 있음을 뜻하는 가장 확실한 지표입니다."
+  },
+  {
+    "question_id": 109,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "Architecture",
+    "subcategory": "Caching",
+    "skills_required": ["Redis", "Data Structures"],
+    "scenario": "글로벌 모바일 게임에서 초당 10만 건 이상의 조회가 발생하는 '실시간 전 세계 랭킹 시스템'을 설계해야 합니다. RDBMS만으로는 병목이 발생하여 응답 시간을 10ms 이하로 맞출 수 없습니다.",
+    "question": "이러한 고성능 요구사항을 만족하기 위해 가장 널리 사용되는 인메모리 저장소 아키텍처 및 자료구조 설계는?",
+    "choices": [
+      "Redis의 String 자료구조를 사용하여 사용자 ID를 키로, 점수를 값으로 단건 저장하고 애플리케이션에서 전체를 가져와 정렬한다.",
+      "Redis의 List 자료구조를 사용하여 점수가 들어올 때마다 리스트의 맨 끝에 추가(Append)한다.",
+      "Redis의 Sorted Set(ZSET) 자료구조를 활용하여 점수(Score) 기반으로 데이터를 저장하고 순위 정렬 작업을 인메모리에서 즉시 처리한다.",
+      "Redis의 Hash 자료구조를 사용하여 모든 사용자의 순위 정보를 하나의 키 안의 필드로 구성한다."
+    ],
+    "correct_answer": "Redis의 Sorted Set(ZSET) 자료구조를 활용하여 점수(Score) 기반으로 데이터를 저장하고 순위 정렬 작업을 인메모리에서 즉시 처리한다.",
+    "explanation": "Redis의 Sorted Set은 요소들을 추가/업데이트할 때 내부적으로 점수에 따라 정렬된 상태를 유지하므로, O(log(N))의 시간 복잡도로 매우 빠른 랭킹 조회가 가능합니다."
+  },
+  {
+    "question_id": 110,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "true_false",
+    "category": "Architecture",
+    "subcategory": "Cloud Computing",
+    "skills_required": ["Cloud Service Models"],
+    "scenario": "현대의 데이터 아키텍처에서 활용되는 클라우드 서비스 모델을 구분하고 있습니다.",
+    "question": "AWS EMR(Elastic MapReduce)이나 Google Cloud Dataproc과 같이, 사용자가 서버 OS나 네트워크를 직접 관리하지 않고 하둡/스파크와 같은 '빅데이터 처리 플랫폼' 자체를 제공받아 사용하는 형태는 PaaS(Platform as a Service)에 해당한다. (참/거짓)",
+    "choices": [
+      "참",
+      "거짓"
+    ],
+    "correct_answer": "참",
+    "explanation": "인프라(IaaS) 단계를 넘어 애플리케이션을 구동할 수 있는 런타임 환경과 프레임워크가 매니지드 형태로 제공되는 모델은 PaaS로 분류됩니다."
+  },
+  {
+    "question_id": 111,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "constraint_optimization",
+    "category": "Cloud & Analysis",
+    "subcategory": "Cost Optimization",
+    "skills_required": ["BigQuery", "Partitioning"],
+    "scenario": "GCP BigQuery(또는 Athena)를 사용하여 매일 쌓이는 페타바이트급 로그를 분석하고 있는데, 쿼리를 한 번 실행할 때마다 스캔 용량 기반 과금으로 인해 수십만 원의 비용이 발생하고 있습니다. 분석가들은 보통 최근 3일치 데이터만 조회합니다.",
+    "question": "테이블 설계 측면에서 데이터 스캔 비용을 극적으로 줄일 수 있는 가장 필수적인 기술은 무엇입니까?",
+    "choices": [
+      "모든 컬럼에 B-Tree 인덱스를 개별적으로 생성한다.",
+      "데이터 발생 날짜(Date) 컬럼을 기준으로 테이블 파티셔닝(Partitioning)을 적용하고, 쿼리 작성 시 파티션 필터를 필수로 요구하도록 강제한다.",
+      "데이터 저장 포맷을 Parquet에서 텍스트 형식인 CSV로 변경한다.",
+      "데이터를 조회할 때 항상 쿼리문 끝에 LIMIT 100을 붙이도록 규정을 만든다."
+    ],
+    "correct_answer": "데이터 발생 날짜(Date) 컬럼을 기준으로 테이블 파티셔닝(Partitioning)을 적용하고, 쿼리 작성 시 파티션 필터를 필수로 요구하도록 강제한다.",
+    "explanation": "클라우드 데이터 웨어하우스에서 파티셔닝은 지정된 날짜의 물리적 폴더만 읽도록 만들어주어, 풀 스캔을 방지하고 요금을 획기적으로 절감하는 핵심 기술입니다. LIMIT 구문은 출력 결과만 자를 뿐 스캔 용량을 줄여주지 않습니다."
+  },
+  {
+    "question_id": 112,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "failure_mode_analysis",
+    "category": "Distributed Systems",
+    "subcategory": "Consensus",
+    "skills_required": ["Zookeeper", "Kafka", "High Availability"],
+    "scenario": "분산 환경을 관리하는 Zookeeper 앙상블이 총 5대의 서버로 구성되어 있습니다. 네트워크 스위치 장애로 인해 이 중 3대의 서버가 완전히 오프라인 상태가 되었습니다.",
+    "question": "이 상황에서 Zookeeper에 의존하고 있는 기존 Kafka 클러스터의 동작에는 어떤 변화가 발생합니까?",
+    "choices": [
+      "남아있는 2대의 노드 중 하나가 마스터로 승격되어 서비스가 중단 없이 유지된다.",
+      "Zookeeper가 Quorum(과반수)을 상실하여 앙상블이 붕괴되므로, Kafka 역시 메타데이터 관리 및 리더 선출이 불가능해져 정상적인 클러스터 작동을 멈춘다.",
+      "Kafka 브로커들이 Zookeeper와의 연결을 끊고 즉시 자체적인 Raft 합의 알고리즘으로 전환하여 즉시 복구된다.",
+      "기존에 연결된 Consumer는 데이터를 읽을 수 없게 되지만, Producer의 쓰기 작업은 100% 정상 작동한다."
+    ],
+    "correct_answer": "Zookeeper가 Quorum(과반수)을 상실하여 앙상블이 붕괴되므로, Kafka 역시 메타데이터 관리 및 리더 선출이 불가능해져 정상적인 클러스터 작동을 멈춘다.",
+    "explanation": "Zookeeper는 총 노드 수의 과반수(Quorum)가 살아있어야 정상 동작합니다. 5대 중 3대가 죽으면 과반수(3대)를 충족하지 못해 Split-brain 방지를 위해 스스로 서비스를 중단하며, 이에 의존하는 Kafka 클러스터도 마비됩니다."
+  },
+  {
+    "question_id": 113,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "debugging",
+    "category": "Programming",
+    "subcategory": "Python",
+    "skills_required": ["Python", "Error Handling"],
+    "scenario": "Python으로 작성된 데이터 파이프라인에서 JSON 형태의 로그를 파싱하고 있습니다. 특정 필드명이 존재하지 않을 때 `KeyError` 예외가 발생하여 전체 배치 잡이 강제 종료되는 문제가 있습니다.",
+    "question": "딕셔너리에서 키를 조회할 때, 키가 없어도 에러를 발생시키지 않고 사전에 지정한 기본값(Default)을 반환하게 하려면 어떤 메서드를 사용해야 합니까?",
+    "choices": [
+      "pop()",
+      "keys()",
+      "get()",
+      "items()"
+    ],
+    "correct_answer": "get()",
+    "explanation": "딕셔너리의 `get(key, default_value)` 메서드는 키가 존재하지 않을 때 예외를 뱉는 대신 지정한 기본값(또는 None)을 반환하므로, 불완전한 데이터를 처리할 때 매우 유용합니다."
+  },
+  {
+    "question_id": 114,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "refactoring_decision",
+    "category": "Data Processing",
+    "subcategory": "Frameworks",
+    "skills_required": ["Pandas", "Spark", "Migration"],
+    "scenario": "단일 서버에서 Pandas DataFrame을 사용하여 동작하던 전처리 스크립트가 데이터 볼륨의 급증으로 인해 계속해서 메모리 부족(MemoryError) 현상을 겪고 있습니다.",
+    "question": "이 파이프라인을 분산 처리 시스템으로 마이그레이션해야 할 때, 기존 Pandas의 문법과 코드를 거의 수정하지 않고도 Spark 클러스터 위에서 구동할 수 있도록 지원하는 라이브러리는 무엇입니까?",
+    "choices": [
+      "PyTorch",
+      "NumPy",
+      "Pandas API on Spark (이전의 Koalas)",
+      "Apache Airflow"
+    ],
+    "correct_answer": "Pandas API on Spark (이전의 Koalas)",
+    "explanation": "Pandas API on Spark(구 Koalas)는 데이터 과학자와 엔지니어가 익숙한 Pandas 문법을 그대로 유지하면서 배후에서는 Spark 분산 엔진의 강력한 성능을 활용할 수 있게 해주는 호환성 레이어입니다."
+  },
+  {
+    "question_id": 115,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "Security & Governance",
+    "subcategory": "Data Migration",
+    "skills_required": ["Data Security", "PII", "Compliance"],
+    "scenario": "온프레미스 하둡 환경에서 퍼블릭 클라우드 데이터 레이크로 수백 TB의 고객 로그 데이터를 이관하는 대형 프로젝트를 리딩하고 있습니다. 이 로그 데이터 내부에는 고객의 주민등록번호와 계좌번호가 평문으로 포함되어 있는 것이 발견되었습니다.",
+    "question": "클라우드 환경으로 데이터가 이동하기 전, 법적 규제 준수 및 보안 침해 리스크를 최소화하기 위해 반드시 거쳐야 하는 아키텍처 수준의 사전 조치는 무엇입니까?",
+    "choices": [
+      "데이터의 용량이 너무 크므로 우선 S3로 빠르게 모두 이관한 뒤, 클라우드 상에서 천천히 암호화를 진행한다.",
+      "데이터 이관 파이프라인의 중간 단계(온프레미스 엣지)에서 개인정보(PII) 컬럼을 식별하고, 마스킹(Masking) 또는 토큰화(Tokenization) 처리를 한 비식별 데이터만 클라우드로 전송한다.",
+      "클라우드 벤더의 IAM 계정을 무작위 비밀번호로 설정하여 외부에서 접근하지 못하게 만든다.",
+      "문제가 생길 것을 대비해 마이그레이션을 즉각 포기하고 온프레미스 서버를 10배 증설한다."
+    ],
+    "correct_answer": "데이터 이관 파이프라인의 중간 단계(온프레미스 엣지)에서 개인정보(PII) 컬럼을 식별하고, 마스킹(Masking) 또는 토큰화(Tokenization) 처리를 한 비식별 데이터만 클라우드로 전송한다.",
+    "explanation": "가장 강력한 보안 조치는 통제 범위를 벗어난 퍼블릭 클라우드로 민감 데이터 자체가 넘어가지 못하도록 원천에서 차단(비식별화)하는 것입니다."
+  },
+  {
+    "question_id": 116,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "definition",
+    "category": "Database",
+    "subcategory": "NoSQL",
+    "skills_required": ["MongoDB", "Data Modeling"],
+    "scenario": "데이터의 성격에 따라 다양한 데이터베이스 패러다임이 존재함을 배우고 있습니다.",
+    "question": "MongoDB와 같이 관계형 스키마의 제약 없이 JSON 또는 BSON 형태의 유연하고 계층적인 데이터 구조를 원형 그대로 저장하는 데 특화된 NoSQL 데이터베이스 계열을 무엇이라고 부릅니까?",
+    "choices": [
+      "Key-Value Store (키-값 저장소)",
+      "Column-family Store (컬럼 패밀리 저장소)",
+      "Document Store (문서 지향 데이터베이스)",
+      "Graph Database (그래프 데이터베이스)"
+    ],
+    "correct_answer": "Document Store (문서 지향 데이터베이스)",
+    "explanation": "문서 지향 데이터베이스(Document Store)는 레코드를 행과 열이 아닌 하나의 문서(Document) 단위로 저장하여 복잡한 데이터를 직관적으로 다룰 수 있게 합니다."
+  },
+  {
+    "question_id": 117,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "database_schema_design",
+    "category": "Database",
+    "subcategory": "DynamoDB",
+    "skills_required": ["DynamoDB", "Data Modeling", "Partitioning"],
+    "scenario": "IoT 환경에서 AWS DynamoDB를 사용해 초당 수천 건의 센서 데이터를 기록하려 합니다. 파티션 키(Partition Key)를 `sensor_type` (예: 온도센서, 습도센서)로 설정했습니다.",
+    "question": "전국에 설치된 온도 센서의 수가 습도 센서보다 압도적으로 많아 특정 타입에 트래픽이 집중될 경우, 이 스키마 설계로 인해 발생하는 치명적인 성능 저하 현상의 이름은 무엇입니까?",
+    "choices": [
+      "캐시 히트율(Cache Hit Ratio) 저하",
+      "핫 파티션(Hot Partition) 현상으로 인한 쓰기 스로틀링(Throttling)",
+      "데드락(Deadlock)에 의한 트랜잭션 롤백",
+      "테이블 스캔 속도 향상"
+    ],
+    "correct_answer": "핫 파티션(Hot Partition) 현상으로 인한 쓰기 스로틀링(Throttling)",
+    "explanation": "DynamoDB는 파티션 키를 해싱하여 물리적 스토리지 노드를 결정합니다. 카디널리티가 낮은 키를 사용하면 요청이 한두 대의 서버로 몰려 할당된 용량을 초과하는 핫 파티션이 발생합니다."
+  },
+  {
+    "question_id": 118,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "scalability_planning",
+    "category": "Architecture",
+    "subcategory": "Log Management",
+    "skills_required": ["ELK Stack", "Kafka", "Decoupling"],
+    "scenario": "시스템 장애 시 발생하는 막대한 양의 트래픽 로그가 Logstash를 거쳐 Elasticsearch로 인덱싱되고 있습니다. 트래픽 피크 타임에 Logstash의 처리 한계와 Elasticsearch 쓰기 지연으로 인해 파이프라인에서 데이터가 유실(Drop)되고 있습니다.",
+    "question": "아키텍처 관점에서 컴포넌트 간 결합도를 낮추고(Decoupling), 트래픽 스파이크를 안전하게 완충(Buffering)하여 데이터 유실을 원천 차단하기 위해 추가해야 할 컴포넌트는 무엇입니까?",
+    "choices": [
+      "Elasticsearch 클러스터의 마스터 노드 개수를 1개로 축소한다.",
+      "로그 수집기(Filebeat 등)와 Logstash 사이에 Kafka와 같은 메시지 큐(Message Queue)를 배치하여 임시 버퍼 역할을 하도록 구성한다.",
+      "네트워크 대역폭을 줄이기 위해 로그 수집 주기를 하루에 1번으로 강제 지연시킨다.",
+      "모니터링 대시보드인 Kibana 서버를 끄고 리소스를 확보한다."
+    ],
+    "correct_answer": "로그 수집기(Filebeat 등)와 Logstash 사이에 Kafka와 같은 메시지 큐(Message Queue)를 배치하여 임시 버퍼 역할을 하도록 구성한다.",
+    "explanation": "속도가 다른 두 시스템 사이에서 발생하는 병목 현상을 해결하는 가장 검증된 패턴은 메시지 큐(Kafka, RabbitMQ 등)를 도입하여 백프레셔(Backpressure)를 견딜 수 있는 버퍼 레이어를 구축하는 것입니다."
+  },
+  {
+    "question_id": 119,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "misconception_detection",
+    "category": "Storage",
+    "subcategory": "Cloud Storage",
+    "skills_required": ["AWS S3", "Object Storage"],
+    "scenario": "주니어 엔지니어가 AWS S3 버킷에 저장된 수백 GB 크기 파일의 디렉토리 구조를 변경하기 위해 콘솔에서 파일 이동(Move) 명령을 실행했습니다. 파일 이동에 예상보다 오랜 시간이 소요되었습니다.",
+    "question": "일반적인 파일 시스템(Linux ext4 등)과 달리, S3와 같은 '객체 스토리지(Object Storage)'에서 파일의 경로명(Prefix)을 바꿀 때 내부적으로 실제로 발생하는 동작의 진실은 무엇입니까?",
+    "choices": [
+      "운영체제의 i-node 구조가 1초 만에 즉시 업데이트된다.",
+      "새로운 키(경로)로 데이터를 복제(Copy)하는 백그라운드 작업이 완료된 후, 원본 객체를 삭제(Delete)하는 두 단계의 무거운 네트워크 I/O 작업이 일어난다.",
+      "파일이 로컬 PC의 메모리로 모두 다운로드되었다가 다시 업로드된다.",
+      "버킷 내의 데이터 포맷이 자동으로 압축 해제된다."
+    ],
+    "correct_answer": "새로운 키(경로)로 데이터를 복제(Copy)하는 백그라운드 작업이 완료된 후, 원본 객체를 삭제(Delete)하는 두 단계의 무거운 네트워크 I/O 작업이 일어난다.",
+    "explanation": "오브젝트 스토리지는 계층형 디렉토리 구조가 아니라 평면적 구조를 가지므로, 파일명(Key)을 변경하는 것은 실질적으로 거대한 객체를 새로 복사하고 기존 것을 지우는 비용이 큰 작업입니다."
+  },
+  {
+    "question_id": 120,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "testing_strategy",
+    "category": "Data Quality",
+    "subcategory": "Testing Frameworks",
+    "skills_required": ["CI/CD", "Data Validation", "Great Expectations"],
+    "scenario": "자동화된 ELT 파이프라인에서 상류(Upstream) 데이터 소스의 컬럼명이 은밀하게 바뀌거나 비정상적인 Null 값이 대량 유입되어 하류의 대시보드가 망가지는 장애가 잦습니다. 이를 배포 과정에서 미리 차단하려 합니다.",
+    "question": "파이프라인의 CI/CD 워크플로우에 통합하여 데이터의 스키마 정합성, 통계적 분포, 제약조건 등을 명시적으로 정의하고 자동으로 테스트할 수 있게 해주는 데이터 엔지니어링 생태계의 대표적인 프레임워크는 무엇입니까?",
+    "choices": [
+      "Docker Swarm",
+      "Apache Maven",
+      "Great Expectations (또는 Amazon Deequ)",
+      "HashiCorp Terraform"
+    ],
+    "correct_answer": "Great Expectations (또는 Amazon Deequ)",
+    "explanation": "Great Expectations는 데이터에 대한 '기대치(규칙)'를 코드로 정의하고 파이프라인 실행 시점에 이를 검증하여, 오염된 데이터가 적재되는 것을 막아주는 데이터 품질 프레임워크입니다."
+  },
+  {
+    "question_id": 121,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "concept_check",
+    "category": "Data Lakehouse",
+    "subcategory": "Apache Iceberg",
+    "skills_required": ["Apache Iceberg", "Partitioning"],
+    "scenario": "데이터 레이크에서 테이블 파티셔닝 전략을 월별(Month)에서 일별(Day)로 변경해야 합니다. 기존 데이터와 새로 들어오는 데이터를 쿼리할 때, 사용자가 변경된 파티션 구조를 신경 쓰지 않고 동일한 쿼리를 사용하게 하고 싶습니다.",
+    "question": "Apache Iceberg가 제공하는 기능 중, 데이터 테이블의 파티션 스키마를 변경해도 기존 쿼리를 수정할 필요 없이 엔진이 자동으로 최적의 스캔을 수행하도록 돕는 기능의 이름은 무엇입니까?",
+    "choices": [
+      "Hidden Partitioning (숨겨진 파티셔닝)",
+      "Z-Ordering (Z-정렬)",
+      "Compaction (압축)",
+      "Time Travel (타임 트래블)"
+    ],
+    "correct_answer": "Hidden Partitioning (숨겨진 파티셔닝)",
+    "explanation": "Apache Iceberg의 Hidden Partitioning은 파티션 생성 로직을 메타데이터 층에 숨겨, 파티션 진화(Partition Evolution)가 발생해도 사용자의 쿼리문 수정 없이 시스템이 알아서 파티션 푸시다운을 수행하게 합니다."
+  },
+  {
+    "question_id": 122,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Distributed Systems",
+    "subcategory": "Data Serialization",
+    "skills_required": ["Avro", "Parquet", "Kafka"],
+    "scenario": "실시간 스트리밍 환경에서 Kafka를 통해 수많은 마이크로서비스 간에 데이터를 교환합니다. 데이터의 스키마가 빈번하게 추가되거나 변경(Schema Evolution)되며, 주로 레코드 단위의 쓰기(Write) 위주 작업이 발생합니다.",
+    "question": "이러한 환경에서 스키마 레지스트리(Schema Registry)와 결합하여 네트워크 대역폭을 최소화하고 직렬화/역직렬화 성능을 극대화하기에 가장 적합한 데이터 포맷은 무엇입니까?",
+    "choices": [
+      "JSON",
+      "Apache Parquet",
+      "Apache Avro",
+      "CSV"
+    ],
+    "correct_answer": "Apache Avro",
+    "explanation": "Apache Avro는 Row 기반의 바이너리 포맷으로, 쓰기 성능이 우수하고 스키마 진화(Schema Evolution)를 네이티브하게 지원하여 Kafka와 같은 메시징 시스템에서 표준적으로 사용됩니다."
+  },
+  {
+    "question_id": 123,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "code_completion",
+    "category": "Database",
+    "subcategory": "Advanced SQL",
+    "skills_required": ["SQL", "CTE"],
+    "scenario": "사원 테이블(Employees)에는 각 사원의 ID와 직속 상사의 ID(Manager_ID)가 저장되어 있습니다. 조직도의 최상단(CEO)부터 말단 직원까지의 계층 구조를 트리 형태로 모두 조회하려고 합니다.",
+    "question": "이처럼 자기 자신을 반복적으로 참조하여 계층형 데이터나 망 구조를 조회할 때 사용하는 SQL 문법은 무엇입니까?",
+    "choices": [
+      "CROSS JOIN",
+      "Recursive CTE (재귀적 공통 테이블 식)",
+      "PIVOT / UNPIVOT",
+      "Window Function (윈도우 함수)"
+    ],
+    "correct_answer": "Recursive CTE (재귀적 공통 테이블 식)",
+    "explanation": "WITH RECURSIVE 구문을 사용하는 Recursive CTE는 베이스 케이스와 재귀 스텝을 결합하여 조직도나 카테고리 트리 같은 계층형 데이터를 탐색하는 데 필수적입니다."
+  },
+  {
+    "question_id": 124,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "concept_check",
+    "category": "Orchestration",
+    "subcategory": "Airflow",
+    "skills_required": ["Airflow", "Sensors"],
+    "scenario": "Airflow 파이프라인에서 다음 Task를 실행하기 전에, 외부 파트너사가 AWS S3의 특정 버킷에 데이터를 업로드할 때까지 대기해야 합니다.",
+    "question": "일정 주기마다 외부 시스템의 상태(예: 파일 존재 여부, DB 테이블 갱신 여부)를 확인(Poking)하다가, 조건이 충족되면 다음 Task로 넘어가는 역할을 하는 Airflow의 특수한 오퍼레이터는 무엇입니까?",
+    "choices": [
+      "BranchPythonOperator",
+      "DummyOperator",
+      "Sensor (센서)",
+      "TriggerDagRunOperator"
+    ],
+    "correct_answer": "Sensor (센서)",
+    "explanation": "Sensor는 특정 조건(시간, 파일, API 응답 등)이 True가 될 때까지 주기적으로 상태를 체크(Poke)하며 대기하는 Airflow의 고유한 Operator입니다."
+  },
+  {
+    "question_id": 125,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "debugging",
+    "category": "Data Processing",
+    "subcategory": "Hadoop YARN",
+    "skills_required": ["YARN", "Resource Management"],
+    "scenario": "Hadoop 클러스터에 Spark Job을 제출(Submit)했는데, 로그를 확인해 보니 작업이 시작되지 않고 계속해서 'ACCEPTED' 상태에 머물러 있습니다.",
+    "question": "이 현상이 발생하는 가장 일반적인 원인은 무엇입니까?",
+    "choices": [
+      "Spark 코드가 무한 루프에 빠졌다.",
+      "YARN 클러스터 내에 Job을 할당할 여유 리소스(CPU/Memory)가 부족하여 큐(Queue)에서 대기 중이다.",
+      "HDFS의 권한 설정이 잘못되어 데이터를 읽을 수 없다.",
+      "Driver 프로그램의 문법(Syntax) 오류로 인해 컴파일이 실패했다."
+    ],
+    "correct_answer": "YARN 클러스터 내에 Job을 할당할 여유 리소스(CPU/Memory)가 부족하여 큐(Queue)에서 대기 중이다.",
+    "explanation": "리소스 매니저(YARN) 환경에서 Job 상태가 ACCEPTED인 것은 작업 제출은 성공했으나, 클러스터에 가용한 컨테이너(리소스)가 없어 할당받기를 기다리는 상태를 의미합니다."
+  },
+  {
+    "question_id": 126,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "security_analysis",
+    "category": "Cloud & Security",
+    "subcategory": "Networking",
+    "skills_required": ["AWS VPC", "Security"],
+    "scenario": "퍼블릭 인터넷 접속이 완전히 차단된 Private Subnet 내의 EC2 인스턴스에서 S3 버킷에 대용량 데이터를 적재해야 합니다.",
+    "question": "데이터 트래픽이 퍼블릭 인터넷 망을 타지 않고 AWS의 내부 네트워크망을 통해서만 안전하게 S3로 라우팅되도록 구성하는 가장 보안성 높은 네트워크 아키텍처는 무엇입니까?",
+    "choices": [
+      "Public Subnet에 NAT Gateway를 설치한다.",
+      "EC2 인스턴스에 Elastic IP(탄력적 IP)를 할당한다.",
+      "VPC Endpoint (Gateway 타입)를 생성하고 라우팅 테이블에 추가한다.",
+      "Internet Gateway를 Private Subnet에 직접 연결한다."
+    ],
+    "correct_answer": "VPC Endpoint (Gateway 타입)를 생성하고 라우팅 테이블에 추가한다.",
+    "explanation": "VPC Endpoint(Gateway Endpoint for S3)를 사용하면 퍼블릭 IP나 NAT Gateway 없이 AWS 프라이빗 네트워크를 통해 S3와 통신할 수 있어 보안과 네트워크 비용 측면에서 가장 유리합니다."
+  },
+  {
+    "question_id": 127,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Architecture",
+    "subcategory": "Data Mesh",
+    "skills_required": ["Data Mesh", "Domain-driven Design"],
+    "scenario": "중앙 집중화된 데이터 엔지니어링 팀이 회사의 모든 데이터 파이프라인을 관리하다 보니 심각한 병목 현상이 발생하고, 각 비즈니스 도메인의 컨텍스트를 이해하지 못해 품질이 떨어지고 있습니다.",
+    "question": "데이터를 중앙 스토리지로 모으는 대신, 데이터를 생성하는 각 도메인 팀이 데이터를 하나의 '제품(Product)'으로 취급하고 소유권을 가지도록 분산시키는 최신 데이터 아키텍처 패러다임은 무엇입니까?",
+    "choices": [
+      "Data Warehouse (데이터 웨어하우스)",
+      "Data Lake (데이터 레이크)",
+      "Data Mesh (데이터 메시)",
+      "Master Data Management (마스터 데이터 관리)"
+    ],
+    "correct_answer": "Data Mesh (데이터 메시)",
+    "explanation": "Data Mesh는 도메인 주도 설계(DDD)를 데이터 관리에 적용하여, 중앙 집중식 데이터 레이크의 한계를 극복하고 각 도메인 조직에 데이터의 생성과 관리 책임을 분산하는 사회-기술적(Socio-technical) 패러다임입니다."
+  },
+  {
+    "question_id": 128,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "performance_optimization",
+    "category": "Data Processing",
+    "subcategory": "Spark",
+    "skills_required": ["Spark", "Broadcast Variables"],
+    "scenario": "Spark에서 1TB 크기의 팩트 테이블과 5MB 크기의 국가 코드 매핑(우편번호, 국가명 등) 테이블을 조인하고 사용자 정의 함수(UDF)에서도 매핑 테이블을 참조해야 합니다.",
+    "question": "5MB 크기의 매핑 데이터를 클러스터 내의 모든 워커 노드에 한 번만 복사하여 메모리에 올려두고 효율적으로 재사용하기 위해 Spark에서 사용하는 공유 변수의 이름은 무엇입니까?",
+    "choices": [
+      "Accumulator (어큐뮬레이터)",
+      "Broadcast Variable (브로드캐스트 변수)",
+      "RDD (회복력 있는 분산 데이터셋)",
+      "DataFrame (데이터프레임)"
+    ],
+    "correct_answer": "Broadcast Variable (브로드캐스트 변수)",
+    "explanation": "Broadcast 변수는 읽기 전용 데이터를 모든 워커 노드에 캐싱하여, 태스크마다 데이터를 네트워크로 전송하는 비용(Shuffle)을 없애고 조인 및 연산 속도를 비약적으로 높입니다."
+  },
+  {
+    "question_id": 129,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "failure_mode_analysis",
+    "category": "Messaging",
+    "subcategory": "Kafka",
+    "skills_required": ["Kafka", "Exactly Once Semantics"],
+    "scenario": "Kafka Producer가 메시지를 브로커로 전송한 후, 네트워크 일시 단절로 인해 브로커의 성공 응답(ACK)을 받지 못해 재전송(Retry)을 수행했습니다. 이로 인해 토픽에 동일한 메시지가 중복으로 적재되었습니다.",
+    "question": "Kafka에서 이러한 네트워크 재시도 과정 중 발생하는 중복 저장을 방지하고, 정확히 한 번(Exactly-once) 또는 멱등성(Idempotence) 쓰기를 보장하기 위해 Producer 설정에 추가해야 하는 옵션은 무엇입니까?",
+    "choices": [
+      "acks=0",
+      "enable.idempotence=true",
+      "compression.type=gzip",
+      "retries=0"
+    ],
+    "correct_answer": "enable.idempotence=true",
+    "explanation": "enable.idempotence=true로 설정하면 프로듀서가 각 메시지에 시퀀스 번호를 부여하여 전송하며, 브로커는 이를 확인하여 이미 적재된 시퀀스 번호의 재전송 요청을 무시하므로 중복 저장을 막습니다."
+  },
+  {
+    "question_id": 130,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "incident_response",
+    "category": "Cloud",
+    "subcategory": "Terraform",
+    "skills_required": ["Terraform", "State Management", "CI/CD"],
+    "scenario": "두 명의 데이터 엔지니어가 각자의 로컬 PC에서 동시에 `terraform apply`를 실행하여 인프라를 변경하려다가, 클라우드 리소스의 상태(State)가 꼬이면서 인프라가 망가지는 사고가 발생했습니다.",
+    "question": "동시성 문제를 해결하기 위해 Terraform의 상태 파일(terraform.tfstate)을 안전하게 관리하는 모범 사례(Best Practice)는 무엇입니까?",
+    "choices": [
+      "상태 파일을 Github 리포지토리에 푸시하여 버전 관리를 한다.",
+      "상태 파일을 AWS S3와 같은 원격 저장소(Remote Backend)에 저장하고, DynamoDB를 이용해 상태 잠금(State Locking)을 구성한다.",
+      "각 엔지니어가 별도의 상태 파일을 가지도록 복사본을 분리한다.",
+      "Terraform 사용을 중단하고 AWS 콘솔에서 수동으로 작업한다."
+    ],
+    "correct_answer": "상태 파일을 AWS S3와 같은 원격 저장소(Remote Backend)에 저장하고, DynamoDB를 이용해 상태 잠금(State Locking)을 구성한다.",
+    "explanation": "Terraform의 원격 백엔드와 잠금(Lock) 기능을 활성화하면, 한 명이 작업을 수행하는 동안 다른 사람의 상태 변경 시도를 차단(Lock)하여 동시 실행으로 인한 충돌을 완벽히 방지할 수 있습니다."
+  },
+  {
+    "question_id": 131,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "concept_check",
+    "category": "Database",
+    "subcategory": "Distributed Databases",
+    "skills_required": ["Eventual Consistency", "CAP Theorem"],
+    "scenario": "NoSQL 분산 데이터베이스(예: Cassandra, DynamoDB)에 데이터를 업데이트한 직후에 조회를 수행했는데, 방금 수정한 값이 아닌 이전의 옛날 값이 반환되었습니다. 하지만 수 초가 지난 뒤 다시 조회하니 정상적으로 최신 값이 반환되었습니다.",
+    "question": "분산 시스템에서 데이터가 여러 노드로 전파되는 데 시간이 걸리지만, 결과적으로는 모든 노드가 최신 상태로 동기화됨을 의미하는 일관성 모델의 명칭은 무엇입니까?",
+    "choices": [
+      "Strong Consistency (강력한 일관성)",
+      "Eventual Consistency (최종적 일관성)",
+      "Read Committed (읽기 커밋됨)",
+      "Serializability (직렬화 가능성)"
+    ],
+    "correct_answer": "Eventual Consistency (최종적 일관성)",
+    "explanation": "최종적 일관성(Eventual Consistency)은 쓰기 성능과 가용성을 극대화하기 위해 다소간의 데이터 동기화 지연을 허용하는 NoSQL 데이터베이스의 핵심 특성입니다."
+  },
+  {
+    "question_id": 132,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "concept_check",
+    "category": "Data Pipeline",
+    "subcategory": "MLOps",
+    "skills_required": ["MLflow", "Model Registry"],
+    "scenario": "데이터 사이언티스트들이 다양한 하이퍼파라미터로 모델을 수백 번 학습시키고 있습니다. 시간이 지나면서 어떤 파라미터로 학습한 모델이 가장 성능이 좋았는지, 현재 운영 서버에 배포된 모델의 버전이 무엇인지 추적하기 어려워졌습니다.",
+    "question": "머신러닝 실험의 파라미터, 평가 지표(Metrics), 아티팩트를 기록하고 모델의 생명주기를 중앙에서 추적 관리해 주는 도구(예: MLflow, Weights & Biases)의 핵심 기능을 무엇이라 부릅니까?",
+    "choices": [
+      "Model Serving (모델 서빙)",
+      "Experiment Tracking & Model Registry (실험 추적 및 모델 레지스트리)",
+      "Feature Store (피처 스토어)",
+      "Data Annotation (데이터 라벨링)"
+    ],
+    "correct_answer": "Experiment Tracking & Model Registry (실험 추적 및 모델 레지스트리)",
+    "explanation": "MLOps 파이프라인에서 실험 추적과 모델 레지스트리는 각 학습 시도의 조건과 결과물을 기록하고, 운영 단계로 넘어갈 모델의 버전을 체계적으로 관리하는 핵심 시스템입니다."
+  },
+  {
+    "question_id": 133,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Security & Governance",
+    "subcategory": "Access Control",
+    "skills_required": ["ABAC", "RBAC", "Data Governance"],
+    "scenario": "수천 명의 직원과 수만 개의 테이블이 있는 엔터프라이즈 환경입니다. 기존의 역할 기반 접근 제어(RBAC)로는 '마케팅 팀이면서 + 유럽 지역 담당자이고 + 평일에 접속할 때만'과 같은 복잡한 보안 요구사항을 충족하기 위해 너무 많은 역할(Role)을 생성해야 하는 관리 한계에 부딪혔습니다.",
+    "question": "사용자의 속성, 데이터의 분류 태그, 환경적 요인(시간, 위치) 등 다양한 '속성'을 조합하여 동적으로 접근 권한을 결정하는 데이터 거버넌스 접근 제어 모델은 무엇입니까?",
+    "choices": [
+      "MAC (Mandatory Access Control)",
+      "DAC (Discretionary Access Control)",
+      "RBAC (Role-Based Access Control)",
+      "ABAC (Attribute-Based Access Control)"
+    ],
+    "correct_answer": "ABAC (Attribute-Based Access Control)",
+    "explanation": "ABAC는 사용자, 리소스, 환경의 속성(Attribute)을 기반으로 세밀하고 유연한 접근 제어 정책을 구현할 수 있어 복잡한 현대 데이터 거버넌스 환경에 적합합니다."
+  },
+  {
+    "question_id": 134,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "performance_optimization",
+    "category": "Data Processing",
+    "subcategory": "Spark Tuning",
+    "skills_required": ["Spark", "Vectorized UDF", "Pandas"],
+    "scenario": "PySpark에서 표준 Python 사용자 정의 함수(UDF)를 사용하여 데이터프레임의 컬럼 연산을 수행했더니, 처리 속도가 너무 느리고 직렬화 오버헤드가 심하게 발생했습니다.",
+    "question": "PySpark 환경에서 Python 코드를 사용하면서도, 데이터를 행(Row) 단위가 아닌 배치(Batch) 단위로 처리하여 JVM과 Python 프로세스 간의 통신 비용을 대폭 줄여주는 고성능 UDF는 무엇입니까?",
+    "choices": [
+      "Scala UDF",
+      "Pandas UDF (Vectorized UDF)",
+      "Lambda Function",
+      "MapReduce"
+    ],
+    "correct_answer": "Pandas UDF (Vectorized UDF)",
+    "explanation": "Pandas UDF는 Apache Arrow를 사용하여 데이터를 인메모리 바이너리 포맷으로 벡터화(Vectorized)하여 전달하므로, 표준 Python UDF에 비해 압도적으로 빠른 성능을 제공합니다."
+  },
+  {
+    "question_id": 135,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "concept_check",
+    "category": "Cloud & Analysis",
+    "subcategory": "Snowflake",
+    "skills_required": ["Snowflake", "Architecture"],
+    "scenario": "월말 결산 시즌마다 대시보드 쿼리가 폭주하여 기존 데이터베이스가 다운되거나 심각한 지연이 발생합니다. 데이터를 복제하지 않고 결산 팀 전용으로 연산 자원만 일시적으로 늘려주고 싶습니다.",
+    "question": "Snowflake, BigQuery와 같은 최신 클라우드 데이터 웨어하우스가 이러한 유연한 확장을 지원할 수 있는 핵심적인 아키텍처 특징은 무엇입니까?",
+    "choices": [
+      "Shared-Nothing Architecture (무공유 아키텍처)",
+      "Separation of Compute and Storage (컴퓨팅과 스토리지의 분리)",
+      "In-Memory Caching (인메모리 캐싱)",
+      "Data Replication (데이터 복제)"
+    ],
+    "correct_answer": "Separation of Compute and Storage (컴퓨팅과 스토리지의 분리)",
+    "explanation": "스토리지는 중앙 집중식(S3 등)으로 유지하면서 쿼리 처리를 담당하는 컴퓨팅 클러스터(Virtual Warehouse)를 독립적으로 추가/축소할 수 있는 컴퓨팅-스토리지 분리 구조 덕분에 데이터 이동 없는 유연한 확장이 가능합니다."
+  },
+  {
+    "question_id": 136,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "debugging",
+    "category": "Data Pipeline",
+    "subcategory": "CDC",
+    "skills_required": ["CDC", "PostgreSQL", "Debezium"],
+    "scenario": "PostgreSQL 데이터베이스에서 Debezium 커넥터를 이용해 CDC를 구축했습니다. 그런데 데이터베이스에서 UPDATE와 DELETE가 발생해도 Kafka 토픽으로는 INSERT 이벤트만 들어오고 변경 내역이 캡처되지 않습니다.",
+    "question": "PostgreSQL에서 트랜잭션의 변경 사항을 논리적 복제(Logical Replication)로 전송하기 위해 DB 설정 파라미터(`wal_level`)를 어떤 값으로 변경해야 합니까?",
+    "choices": [
+      "minimal",
+      "replica",
+      "logical",
+      "archive"
+    ],
+    "correct_answer": "logical",
+    "explanation": "PostgreSQL 기반의 CDC(Debezium 등)가 동작하려면 트랜잭션 로그(WAL)가 논리적 디코딩을 지원하도록 `wal_level` 파라미터가 반드시 'logical'로 설정되어 있어야 합니다."
+  },
+  {
+    "question_id": 137,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "system_design",
+    "category": "Distributed Systems",
+    "subcategory": "Stream Processing",
+    "skills_required": ["Streaming", "Windowing", "Flink"],
+    "scenario": "사용자가 앱에 접속하여 연달아 클릭하는 행위를 분석하려고 합니다. 클릭이 지속되는 동안은 하나의 단위로 묶고, 사용자가 30분 동안 아무런 행동을 하지 않으면 해당 단위를 종료된 것으로 간주하고 싶습니다.",
+    "question": "시간이 고정되지 않고, 데이터 간의 '비활동 간격(Inactivity Gap)'을 기준으로 동적으로 크기가 결정되는 스트리밍 윈도우(Window)의 유형은 무엇입니까?",
+    "choices": [
+      "Tumbling Window (텀블링 윈도우)",
+      "Sliding Window (슬라이딩 윈도우)",
+      "Session Window (세션 윈도우)",
+      "Global Window (글로벌 윈도우)"
+    ],
+    "correct_answer": "Session Window (세션 윈도우)",
+    "explanation": "세션 윈도우는 이벤트가 발생하는 간격이 지정된 시간(Gap)을 초과할 때 윈도우를 닫는 방식으로, 사용자의 세션 단위 체류 시간이나 행동 패턴을 분석할 때 주로 사용됩니다."
+  },
+  {
+    "question_id": 138,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "concept_check",
+    "category": "Operations",
+    "subcategory": "SRE",
+    "skills_required": ["SLA", "SLO", "SLI"],
+    "scenario": "데이터 엔지니어링 팀은 \"최근 30일 동안 생성된 일일 매출 리포트 중 오전 9시 이전에 정상적으로 생성이 완료된 리포트의 비율\"을 시스템의 상태를 모니터링하는 핵심 지표로 삼기로 했습니다.",
+    "question": "이처럼 서비스의 신뢰성을 측정하기 위해 실제로 수집하고 계산하는 정량적인 데이터를 SRE(사이트 신뢰성 엔지니어링) 용어로 무엇이라고 합니까?",
+    "choices": [
+      "SLA (Service Level Agreement)",
+      "SLO (Service Level Objective)",
+      "SLI (Service Level Indicator)",
+      "RCA (Root Cause Analysis)"
+    ],
+    "correct_answer": "SLI (Service Level Indicator)",
+    "explanation": "SLI(서비스 수준 지표)는 서비스의 상태를 측정하는 '실제 데이터 값'이며, 이 지표가 달성해야 하는 목표치가 SLO, 이를 어겼을 때 고객과의 계약적 보상이 얽힌 것이 SLA입니다."
+  },
+  {
+    "question_id": 139,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "security_analysis",
+    "category": "Cloud & Security",
+    "subcategory": "Encryption",
+    "skills_required": ["AWS KMS", "Envelope Encryption"],
+    "scenario": "데이터 레이크에 저장되는 모든 민감 파일은 클라우드 관리형 키 서비스(AWS KMS)를 사용하여 암호화(Encryption at Rest)해야 합니다. 하지만 파일 용량이 기가바이트(GB) 단위여서 KMS API를 통해 직접 데이터를 암호화하면 네트워크 및 성능 오버헤드가 극심합니다.",
+    "question": "대용량 데이터를 암호화할 때, KMS로부터 발급받은 '데이터 키(Data Key)'를 이용해 로컬에서 데이터를 빠르게 암호화하고, 그 데이터 키 자체만을 마스터 키(CMK)로 암호화하여 저장하는 효율적인 암호화 아키텍처는 무엇입니까?",
+    "choices": [
+      "Asymmetric Encryption (비대칭 암호화)",
+      "Envelope Encryption (봉투 암호화)",
+      "Hashing (해싱)",
+      "Transport Layer Security (전송 계층 보안)"
+    ],
+    "correct_answer": "Envelope Encryption (봉투 암호화)",
+    "explanation": "봉투 암호화는 대용량 데이터는 빠르고 저렴한 대칭 키(Data Key)로 암호화하고, 보안이 중요한 대칭 키 자체는 KMS의 마스터 키로 암호화(봉투로 감싸기)하여 저장 성능과 보안을 모두 확보하는 클라우드 표준 패턴입니다."
+  },
+  {
+    "question_id": 140,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "code_completion",
+    "category": "Programming",
+    "subcategory": "Python",
+    "skills_required": ["Python", "Multiprocessing vs Multithreading"],
+    "scenario": "Python을 사용하여 여러 개의 외부 API 서버에 동시에 HTTP GET 요청을 보내 데이터를 수집(I/O Bound 작업)하는 스크립트를 최적화하려고 합니다.",
+    "question": "Python의 GIL(Global Interpreter Lock) 환경에서도 네트워크 I/O 대기 시간을 효율적으로 활용하여 성능을 크게 향상시킬 수 있는 병렬 처리 방식은 무엇입니까?",
+    "choices": [
+      "Multiprocessing (멀티프로세싱)",
+      "Multithreading (멀티스레딩) 또는 Asyncio",
+      "NumPy Vectorization (넘파이 벡터화)",
+      "Cython 컴파일"
+    ],
+    "correct_answer": "Multithreading (멀티스레딩) 또는 Asyncio",
+    "explanation": "네트워크 응답을 기다리는 I/O 바운드 작업은 CPU 연산을 거의 하지 않으므로, GIL의 영향을 적게 받는 멀티스레딩이나 비동기(Asyncio) 처리를 도입하면 스레드 전환을 통해 처리량을 극적으로 높일 수 있습니다."
+  },
+  {
+    "question_id": 141,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Data Modeling",
+    "subcategory": "Data Vault",
+    "skills_required": ["Data Vault", "Data Warehouse", "Modeling"],
+    "scenario": "엔터프라이즈 전사 데이터 웨어하우스를 구축 중입니다. 원천 시스템이 수십 개로 매우 다양하고, 구조 변경이 잦으며, 모든 데이터의 변경 이력(History)을 감사(Audit) 목적으로 100% 추적해야 합니다.",
+    "question": "이러한 요구사항을 만족하기 위해 'Hub(비즈니스 키)', 'Link(관계)', 'Satellite(속성 및 이력)'로 데이터를 분리하여 모델링하는 민첩한 데이터 웨어하우스 설계 기법은 무엇입니까?",
+    "choices": [
+      "Star Schema (스타 스키마)",
+      "Snowflake Schema (스노우플레이크 스키마)",
+      "Data Vault (데이터 볼트)",
+      "Third Normal Form (제3정규화)"
+    ],
+    "correct_answer": "Data Vault (데이터 볼트)",
+    "explanation": "데이터 볼트 모델링은 확장성과 유연성이 뛰어나며, 원천 데이터의 변경 사항을 삽입(Insert-only) 방식으로 위변조 없이 보관하는 데 특화된 엔터프라이즈 스키마 설계 방식입니다."
+  },
+  {
+    "question_id": 142,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "error_analysis",
+    "category": "Data Processing",
+    "subcategory": "Spark",
+    "skills_required": ["Spark", "Memory Management", "Action"],
+    "scenario": "Spark 클러스터에서 50GB 크기의 데이터프레임을 전처리한 후, 결과를 확인하기 위해 `.collect()` 액션을 호출했더니 드라이버(Driver) 노드가 'java.lang.OutOfMemoryError'를 내며 강제 종료되었습니다.",
+    "question": "이 에러가 발생한 근본적인 이유는 무엇입니까?",
+    "choices": [
+      "워커 노드의 CPU 코어 수가 부족했기 때문이다.",
+      "collect() 함수가 분산된 모든 워커 노드의 데이터를 단일 드라이버 노드의 메모리로 한꺼번에 끌어왔기 때문이다.",
+      "데이터가 디스크에 저장되지 않아서 발생한 오류이다.",
+      "Spark 버전에 버그가 있기 때문이다."
+    ],
+    "correct_answer": "collect() 함수가 분산된 모든 워커 노드의 데이터를 단일 드라이버 노드의 메모리로 한꺼번에 끌어왔기 때문이다.",
+    "explanation": "collect()는 전체 분산 데이터셋을 드라이버 프로그램으로 모으는 액션이므로, 데이터 크기가 드라이버의 메모리 한계를 초과하면 즉시 OOM 장애가 발생합니다. 대용량 데이터는 take()나 외부 저장소 write()를 사용해야 합니다."
+  },
+  {
+    "question_id": 143,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "code_completion",
+    "category": "Orchestration",
+    "subcategory": "Airflow",
+    "skills_required": ["Airflow", "DAG Configuration"],
+    "scenario": "Airflow를 이용해 외부 API에서 데이터를 가져오는 Task를 작성했습니다. 외부 API 서버가 간헐적으로 502 에러를 반환하는(Transient Error) 경우가 있어, 실패 시 5분 간격으로 최대 3번까지 자동으로 다시 시도하도록 만들고 싶습니다.",
+    "question": "Airflow의 BaseOperator 속성 중 이 기능을 구현하기 위해 설정해야 하는 파라미터 조합은 무엇입니까?",
+    "choices": [
+      "retry_limit=3, wait_time=300",
+      "retries=3, retry_delay=timedelta(minutes=5)",
+      "max_runs=3, delay='5m'",
+      "restart_count=3, timeout=300"
+    ],
+    "correct_answer": "retries=3, retry_delay=timedelta(minutes=5)",
+    "explanation": "Airflow에서는 일시적인 네트워크 오류나 장애를 극복하기 위해 태스크 수준에서 retries와 retry_delay 파라미터를 사용하여 자동 재시도 로직을 쉽게 구현할 수 있습니다."
+  },
+  {
+    "question_id": 144,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "multiple_choice",
+    "category": "Data Processing",
+    "subcategory": "MapReduce",
+    "skills_required": ["Hadoop", "MapReduce"],
+    "scenario": "하둡(Hadoop) 맵리듀스 프레임워크의 내부 동작 원리를 학습하고 있습니다. 맵(Map) 단계가 끝난 후 방대한 데이터가 네트워크를 통해 리듀스(Reduce) 태스크로 전송됩니다.",
+    "question": "네트워크 대역폭을 절약하기 위해, 맵 노드 내에서 로컬로 먼저 데이터를 집계(Aggregation)해 주는 선택적 컴포넌트는 무엇입니까?",
+    "choices": [
+      "Partitioner (파티셔너)",
+      "Combiner (컴바이너)",
+      "Shuffler (셔플러)",
+      "Sorter (소터)"
+    ],
+    "correct_answer": "Combiner (컴바이너)",
+    "explanation": "컴바이너는 'Mini-Reducer'라고도 불리며, 매퍼의 출력 결과를 로컬 노드에서 미리 병합하여 리듀서로 향하는 네트워크 트래픽(Shuffle 데이터)을 크게 줄여줍니다."
+  },
+  {
+    "question_id": 145,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "incident_response",
+    "category": "Operations",
+    "subcategory": "Streaming",
+    "skills_required": ["Kafka", "Spark Streaming", "Failover"],
+    "scenario": "Kafka에서 메시지를 읽어 Spark Streaming으로 가공한 뒤 PostgreSQL에 저장하는 파이프라인이 있습니다. 갑자기 PostgreSQL 서버가 하드웨어 장애로 다운되었습니다. Spark는 계속해서 Kafka에서 데이터를 읽어오지만, DB 쓰기에 실패하여 에러 로그를 쏟아내고 있습니다.",
+    "question": "데이터 유실(Data Loss) 없이 장애를 수습하고 시스템을 정상화하기 위한 엔지니어의 가장 올바른 조치 순서는 무엇입니까?",
+    "choices": [
+      "즉시 Kafka 토픽을 비우고 DB 서버를 재부팅한다.",
+      "Spark Streaming 앱을 즉시 강제 종료(Kill)하고, DB 복구 후 앱을 재시작하여 Kafka의 마지막 커밋 오프셋(Offset)부터 다시 읽게 한다.",
+      "에러를 무시하고 DB가 복구될 때까지 Spark 앱이 계속 실패하도록 방치한다.",
+      "Spark 코드의 목적지를 DB에서 콘솔(Print)로 잠시 바꾼다."
+    ],
+    "correct_answer": "Spark Streaming 앱을 즉시 강제 종료(Kill)하고, DB 복구 후 앱을 재시작하여 Kafka의 마지막 커밋 오프셋(Offset)부터 다시 읽게 한다.",
+    "explanation": "타겟 시스템에 장애가 났을 때는 소스(Kafka)의 오프셋이 진행되지 않도록 스트리밍 앱을 안전하게 종료해야 합니다. Kafka는 데이터를 디스크에 보관하므로, 타겟 복구 후 앱을 켜면 실패한 지점부터 완벽히 재처리(At-least-once)가 가능합니다."
+  },
+  {
+    "question_id": 146,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "performance_optimization",
+    "category": "Cloud & Analysis",
+    "subcategory": "BigQuery",
+    "skills_required": ["BigQuery", "Clustering", "Partitioning"],
+    "scenario": "BigQuery에 매일 10억 건의 사용자 행동 로그가 쌓입니다. '날짜(Date)' 컬럼으로 파티셔닝이 되어 있어 특정 일자의 데이터를 조회할 때 비용은 줄었으나, 분석팀이 자주 수행하는 '특정 User_ID의 한 달 치 로그 조회' 쿼리는 여전히 속도가 느립니다.",
+    "question": "날짜 파티셔닝을 유지하면서, 특정 User_ID를 필터링하는 쿼리의 성능을 대폭 향상시키기 위해 적용해야 할 추가적인 테이블 설계 최적화 기법은 무엇입니까?",
+    "choices": [
+      "User_ID 컬럼을 기반으로 테이블을 클러스터링(Clustering)한다.",
+      "User_ID로 파티셔닝을 변경한다.",
+      "모든 데이터를 Redis로 옮긴다.",
+      "User_ID를 암호화하여 저장한다."
+    ],
+    "correct_answer": "User_ID 컬럼을 기반으로 테이블을 클러스터링(Clustering)한다.",
+    "explanation": "클러스터링은 지정된 컬럼(User_ID)의 순서대로 물리적인 데이터를 정렬하여 저장하므로, 특정 ID를 검색할 때 불필요한 데이터 블록 스캔을 건너뛰게(Block Pruning) 해주어 쿼리 속도를 극대화합니다."
+  },
+  {
+    "question_id": 147,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "cost_optimization",
+    "category": "Cloud",
+    "subcategory": "Compute",
+    "skills_required": ["AWS EMR", "Spot Instances", "Spark"],
+    "scenario": "AWS EMR 클러스터를 24시간 띄워두고 수시로 Spark Batch Job을 실행하고 있습니다. 데이터 양이 몰리는 특정 시간에만 컴퓨팅 자원이 크게 필요하고, 나머지 시간엔 유휴 상태가 많아 비용 낭비가 심합니다.",
+    "question": "안정성을 해치지 않으면서 클라우드 비용을 최소화하기 위한 EMR 클러스터 노드 구성 및 스케일링 전략으로 가장 적합한 것은?",
+    "choices": [
+      "모든 노드(Master, Core, Task)를 가장 저렴한 Spot Instance로 구성하고 자동 확장을 설정한다.",
+      "Master와 Core 노드는 안정적인 On-Demand 인스턴스로 고정하고, 연산만 담당하는 Task 노드는 Spot Instance로 구성한 뒤 Managed Scaling(자동 확장)을 적용한다.",
+      "비용 절감을 위해 모든 노드를 최소 사양의 On-Demand 인스턴스 1개로 축소한다.",
+      "클러스터를 매번 완전히 삭제하고 잡이 들어올 때마다 수동으로 생성한다."
+    ],
+    "correct_answer": "Master와 Core 노드는 안정적인 On-Demand 인스턴스로 고정하고, 연산만 담당하는 Task 노드는 Spot Instance로 구성한 뒤 Managed Scaling(자동 확장)을 적용한다.",
+    "explanation": "HDFS 데이터를 보관하는 Core 노드나 제어 노드(Master)가 Spot 회수로 중단되면 장애가 발생합니다. 따라서 데이터 유실 위험이 없는 연산 전용 Task 노드만 Spot으로 동적 확장/축소하는 것이 베스트 프랙티스입니다."
+  },
+  {
+    "question_id": 148,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "true_false",
+    "category": "Data Modeling",
+    "subcategory": "Storage Format",
+    "skills_required": ["Parquet", "Compression"],
+    "scenario": "빅데이터 플랫폼에서 스토리지 비용을 줄이고 I/O 성능을 높이기 위해 데이터 압축을 적용하려고 합니다.",
+    "question": "Apache Parquet 포맷을 사용하여 데이터를 저장할 때, 기본(Default)으로 적용되며 압축 속도와 해제 속도의 밸런스가 매우 뛰어난 압축 코덱은 'Snappy'이다. (참/거짓)",
+    "choices": [
+      "참",
+      "거짓"
+    ],
+    "correct_answer": "참",
+    "explanation": "Spark 등 대부분의 빅데이터 생태계에서 Parquet 파일을 쓸 때 기본적으로 Snappy 압축이 적용됩니다. Gzip에 비해 압축률은 조금 낮지만 CPU 오버헤드가 적어 빅데이터 I/O에 최적화되어 있습니다."
+  },
+  {
+    "question_id": 149,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Cloud & Analysis",
+    "subcategory": "GCP Data Processing",
+    "skills_required": ["GCP", "Dataflow", "Dataproc", "Apache Beam"],
+    "scenario": "Google Cloud Platform(GCP)에서 실시간 스트리밍 데이터 파이프라인을 구축해야 합니다. 인프라 노드나 클러스터 관리에 시간을 쏟고 싶지 않으며, 트래픽 스파이크에 맞춰 워커 노드가 자동으로 스케일링되는 '완전 관리형 서버리스' 환경을 원합니다. 코드는 Apache Beam SDK로 작성되었습니다.",
+    "question": "이 요구사항에 완벽하게 부합하는 GCP의 데이터 처리 서비스는 무엇입니까?",
+    "choices": [
+      "Cloud Dataproc",
+      "Cloud Dataflow",
+      "Cloud SQL",
+      "BigQuery"
+    ],
+    "correct_answer": "Cloud Dataflow",
+    "explanation": "Cloud Dataflow는 Apache Beam 파이프라인을 실행하기 위한 GCP의 완전 관리형 서버리스 데이터 처리 서비스로, 인프라 프로비저닝 없이 자동 확장(Autoscaling)을 지원합니다. (Dataproc은 관리형 Hadoop/Spark 클러스터입니다.)"
+  },
+  {
+    "question_id": 150,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "log_analysis",
+    "category": "Distributed Systems",
+    "subcategory": "Stream Processing",
+    "skills_required": ["Apache Flink", "Backpressure"],
+    "scenario": "Apache Flink 대시보드를 모니터링하던 중, 특정 오퍼레이터(Operator)의 'Backpressure(백프레셔)' 지표가 'High' 상태로 빨간색 경고등이 켜져 있는 것을 발견했습니다.",
+    "question": "스트림 처리 엔진에서 백프레셔(Backpressure) 현상이 발생했다는 것은 현재 파이프라인이 어떤 상태에 놓여 있음을 의미합니까?",
+    "choices": [
+      "소스 시스템에서 더 이상 읽어올 데이터가 없어 대기 중인 상태이다.",
+      "데이터가 너무 빨라 파이프라인이 즉시 크래시(Crash)를 일으키고 종료된 상태이다.",
+      "하류(Downstream) 태스크의 처리 속도가 느려져 버퍼가 가득 찼고, 이로 인해 상류(Upstream) 태스크의 데이터 수집 속도를 강제로 늦추고 있는 상태이다.",
+      "데이터의 압축률이 너무 높아서 해제할 수 없는 상태이다."
+    ],
+    "correct_answer": "하류(Downstream) 태스크의 처리 속도가 느려져 버퍼가 가득 찼고, 이로 인해 상류(Upstream) 태스크의 데이터 수집 속도를 강제로 늦추고 있는 상태이다.",
+    "explanation": "백프레셔는 병목 구간(예: 무거운 연산, 느린 DB 저장)으로 인해 처리가 지연될 때, 시스템 전체의 OOM을 막기 위해 데이터를 밀어넣는 속도를 스스로 늦추는 자기 방어 메커니즘입니다."
+  },
+  {
+    "question_id": 151,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "failure_mode_analysis",
+    "category": "Database",
+    "subcategory": "Cassandra",
+    "skills_required": ["Cassandra", "High Availability", "Distributed Systems"],
+    "scenario": "Cassandra 클러스터에서 3개의 노드(A, B, C)에 데이터를 복제하도록 설정했습니다. 잠시 네트워크 문제로 B 노드가 10분간 오프라인이 되었다가 복구되었습니다. 이 시간 동안 들어온 데이터 쓰기(Write) 요청들이 유실되지 않아야 합니다.",
+    "question": "B 노드가 복구된 직후, 오프라인 상태일 때 쓰지 못했던 데이터를 A와 C 노드가 B를 대신해 잠시 보관하고 있다가 자동으로 전달해 주는 Cassandra의 고가용성 메커니즘은 무엇입니까?",
+    "choices": [
+      "Gossip Protocol (가십 프로토콜)",
+      "Hinted Handoff (힌티드 핸드오프)",
+      "Read Repair (읽기 복구)",
+      "Tombstone (툼스톤)"
+    ],
+    "correct_answer": "Hinted Handoff (힌티드 핸드오프)",
+    "explanation": "Hinted Handoff는 대상 노드가 일시적으로 장애 상태일 때 코디네이터 노드가 해당 데이터를 로컬에 '힌트(Hint)' 형태로 저장해 두었다가 노드가 복구되면 즉시 밀어넣어 일관성을 유지하는 강력한 내결함성 기능입니다."
+  },
+  {
+    "question_id": 152,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "definition",
+    "category": "Data Quality",
+    "subcategory": "Data Governance",
+    "skills_required": ["Data Quality Dimensions"],
+    "scenario": "데이터 거버넌스 원칙 중 '데이터 품질 지표(Data Quality Dimensions)'에 대해 학습하고 있습니다.",
+    "question": "동일한 고객의 주소 데이터가 'CRM 시스템'과 '결제 시스템'에 서로 다르게 입력되어 충돌이 발생하는 경우, 데이터 품질의 여러 차원 중 어떤 항목이 결여되었다고 평가합니까?",
+    "choices": [
+      "Timeliness (적시성)",
+      "Consistency (일관성)",
+      "Completeness (완전성)",
+      "Uniqueness (유일성)"
+    ],
+    "correct_answer": "Consistency (일관성)",
+    "explanation": "일관성(Consistency)은 서로 다른 시스템이나 테이블 간에 존재하는 동일한 의미의 데이터가 논리적으로 일치하고 모순이 없는 상태를 의미합니다."
+  },
+  {
+    "question_id": 153,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "security_analysis",
+    "category": "Cloud & Security",
+    "subcategory": "AWS IAM",
+    "skills_required": ["AWS S3", "IAM", "Cross-account Access"],
+    "scenario": "우리 회사(Account A)의 Spark 애플리케이션이 파트너사(Account B)가 소유한 S3 버킷의 데이터를 읽어와야 합니다. 현재 파트너사로부터 해당 버킷의 이름을 전달받았습니다.",
+    "question": "두 개의 서로 다른 AWS 계정 간에 안전한 데이터 접근(Cross-Account Access)을 허용하려면 어떤 보안 설정이 필수적으로 이루어져야 합니까?",
+    "choices": [
+      "Account A의 Spark 인스턴스에 퍼블릭 IP를 할당한다.",
+      "Account B의 S3 버킷 정책(Bucket Policy)에서 Account A의 IAM Role을 명시적으로 허용(Allow)하고, Account A의 IAM Role에서도 해당 버킷에 대한 접근 권한을 부여해야 한다.",
+      "S3 버킷의 속성을 'Public Access'로 완전히 개방한다.",
+      "서로 다른 계정 간에는 통신이 불가능하므로, FTP 서버를 중간에 구축해야 한다."
+    ],
+    "correct_answer": "Account B의 S3 버킷 정책(Bucket Policy)에서 Account A의 IAM Role을 명시적으로 허용(Allow)하고, Account A의 IAM Role에서도 해당 버킷에 대한 접근 권한을 부여해야 한다.",
+    "explanation": "크로스 어카운트 환경에서는 자원을 제공하는 쪽(리소스 기반 정책 - Bucket Policy)과 자원에 접근하는 쪽(자격 증명 기반 정책 - IAM Role) 양쪽 모두에서 명시적인 권한 허용이 교차로 구성되어야만 접근이 가능합니다."
+  },
+  {
+    "question_id": 154,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Data Pipeline",
+    "subcategory": "Ingestion Strategies",
+    "skills_required": ["CDC", "Batch Polling", "ETL"],
+    "scenario": "RDBMS 데이터를 데이터 레이크로 추출할 때, 1) 변경 시간(Updated_at) 컬럼을 기준으로 5분마다 SELECT 쿼리를 날리는 방식(Polling)과 2) Debezium 같은 CDC 도구를 연동하는 방식 사이에서 고민 중입니다.",
+    "question": "두 방식을 비교할 때, Polling 방식의 한계이자 CDC 방식을 도입해야만 완벽히 해결할 수 있는 데이터 정합성 이슈는 무엇입니까?",
+    "choices": [
+      "Polling 방식은 데이터 암호화를 지원하지 못한다.",
+      "Polling 방식은 물리적으로 삭제(Hard Delete)된 레코드나, 5분 이내에 여러 번 수정된 중간 변경 이력을 감지하지 못하고 놓친다.",
+      "CDC 방식은 RDBMS에 엄청난 쿼리 부하를 주어 시스템을 마비시킨다.",
+      "CDC 방식은 오직 Oracle 데이터베이스에서만 동작한다."
+    ],
+    "correct_answer": "Polling 방식은 물리적으로 삭제(Hard Delete)된 레코드나, 5분 이내에 여러 번 수정된 중간 변경 이력을 감지하지 못하고 놓친다.",
+    "explanation": "쿼리 기반 추출(Polling)은 수행 시점의 스냅샷만 가져오므로, 삭제된 데이터나 연속적인 UPDATE 과정의 히스토리를 캡처할 수 없는 치명적 단점이 있습니다. CDC는 트랜잭션 로그를 읽으므로 모든 상태 변경을 100% 캡처합니다."
+  },
+  {
+    "question_id": 155,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "configuration_problem",
+    "category": "Infrastructure",
+    "subcategory": "Kubernetes",
+    "skills_required": ["Spark on K8s", "Storage", "Eviction"],
+    "scenario": "Kubernetes 상에서 구동되는 대용량 Spark 작업(Spark on K8s)이 메모리는 충분한데 자꾸 'Pod Evicted (DiskPressure)' 메시지와 함께 중간에 강제 종료됩니다.",
+    "question": "Spark Executor가 노드의 디스크를 가득 채워 Kubelet에 의해 축출(Eviction)되는 현상을 해결하기 위해 점검해야 할 핵심 설정은 무엇입니까?",
+    "choices": [
+      "K8s 클러스터의 전체 네트워크 대역폭 한도를 늘린다.",
+      "Spark가 셔플(Shuffle) 데이터나 쏟아짐(Spill) 데이터를 저장하는 K8s `emptyDir` 볼륨의 크기 제한(sizeLimit)이나 로컬 디스크 용량을 확인하고 확보한다.",
+      "Executor 코어 수를 두 배로 늘려 연산 속도를 높인다.",
+      "Spark 버전을 다운그레이드한다."
+    ],
+    "correct_answer": "Spark가 셔플(Shuffle) 데이터나 쏟아짐(Spill) 데이터를 저장하는 K8s `emptyDir` 볼륨의 크기 제한(sizeLimit)이나 로컬 디스크 용량을 확인하고 확보한다.",
+    "explanation": "Spark는 연산 중 메모리가 부족하면 디스크로 데이터를 내리는 Spill 작업이나 Shuffle 파일을 임시 저장합니다. 이 경로(보통 emptyDir)의 디스크 용량이 꽉 차면 K8s는 노드 보호를 위해 해당 Pod를 즉시 강제 종료시킵니다."
+  },
+  {
+    "question_id": 156,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "data_interpretation",
+    "category": "Database",
+    "subcategory": "SQL",
+    "skills_required": ["SQL", "Null Handling"],
+    "scenario": "특정 프로모션에 참여할 수 있는 유저 목록을 추출하기 위해 다음과 같은 쿼리를 작성했습니다. `SELECT user_id FROM users WHERE user_id NOT IN (SELECT blocked_id FROM block_list);`",
+    "question": "만약 서브쿼리의 결과인 `block_list` 테이블에 `NULL` 값이 단 하나라도 포함되어 있다면, 위 쿼리의 실행 결과는 어떻게 됩니까?",
+    "choices": [
+      "NULL 값을 무시하고 차단되지 않은 정상 유저 목록을 반환한다.",
+      "에러를 발생시키고 실행을 중단한다.",
+      "단 한 건의 데이터도 반환하지 않는다 (Empty Set).",
+      "모든 유저 목록을 반환한다."
+    ],
+    "correct_answer": "단 한 건의 데이터도 반환하지 않는다 (Empty Set).",
+    "explanation": "SQL에서 NOT IN 연산자에 NULL이 포함되면 결과는 항상 'UNKNOWN'이 되어 WHERE 조건을 만족하는 데이터가 없게 됩니다. 따라서 NOT EXISTS를 사용하거나 서브쿼리에서 IS NOT NULL 처리를 해주는 것이 안전합니다."
+  },
+  {
+    "question_id": 157,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "Database",
+    "subcategory": "Graph DB",
+    "skills_required": ["Graph Database", "Neo4j", "Fraud Detection"],
+    "scenario": "금융 보안팀에서 'A계좌가 B로 송금하고, B가 C로 송금한 뒤, 다시 C가 A로 돈을 보내는' 복잡한 순환 거래(Fraud Ring) 패턴을 실시간으로 탐지하고자 합니다. RDBMS의 수많은 SELF JOIN으로는 쿼리 속도가 수 분 이상 소요되어 실시간 탐지가 불가능합니다.",
+    "question": "개체 간의 깊고 복잡한 관계(Relationship)를 탐색하는 데 압도적인 성능을 자랑하며, 이러한 패턴 탐지에 가장 특화된 데이터베이스 유형은 무엇입니까?",
+    "choices": [
+      "Time-Series Database (시계열 데이터베이스)",
+      "In-Memory Key-Value Store (인메모리 키-값 저장소)",
+      "Graph Database (그래프 데이터베이스 - 예: Neo4j, Amazon Neptune)",
+      "Document Database (문서 지향 데이터베이스 - 예: MongoDB)"
+    ],
+    "correct_answer": "Graph Database (그래프 데이터베이스 - 예: Neo4j, Amazon Neptune)",
+    "explanation": "그래프 데이터베이스는 노드(데이터)와 엣지(관계)를 일급 객체로 다루므로, N단계 깊이의 지인 관계나 순환 구조 탐색 시 RDBMS의 조인 연산보다 기하급수적으로 빠른 응답 속도를 보장합니다."
+  },
+  {
+    "question_id": 158,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "dependency_analysis",
+    "category": "Data Pipeline",
+    "subcategory": "dbt",
+    "skills_required": ["dbt", "Data Modeling", "DAG"],
+    "scenario": "데이터 빌드 툴(dbt)을 사용하여 여러 SQL 모델 간의 변환 파이프라인을 구축하고 있습니다. 소스 테이블에서 중간 집계 테이블을 만들고, 이를 다시 마트 테이블에서 조회합니다.",
+    "question": "dbt에서 SQL 쿼리를 작성할 때 대상 테이블의 물리적 이름을 직접 하드코딩하지 않고, `{{ ref('model_name') }}` 함수를 사용하는 가장 핵심적인 이유는 무엇입니까?",
+    "choices": [
+      "쿼리 실행 속도를 캐싱을 통해 높여주기 때문이다.",
+      "물리적 스키마/테이블 이름을 환경(Dev/Prod)에 맞게 동적으로 렌더링하고, 모델 간의 실행 의존성(DAG)을 자동으로 파악하여 올바른 순서로 실행되게 하기 위해서이다.",
+      "SQL 문법 오류를 자동으로 수정해 주기 때문이다.",
+      "데이터베이스의 인덱스를 자동으로 생성해 주기 때문이다."
+    ],
+    "correct_answer": "물리적 스키마/테이블 이름을 환경(Dev/Prod)에 맞게 동적으로 렌더링하고, 모델 간의 실행 의존성(DAG)을 자동으로 파악하여 올바른 순서로 실행되게 하기 위해서이다.",
+    "explanation": "ref() 함수는 dbt의 가장 강력한 기능으로, 코드 내에 흩어진 테이블 관계를 스캔하여 방향성 비순환 그래프(DAG)를 그리고 어느 모델을 먼저 컴파일하고 실행할지 스마트하게 오케스트레이션합니다."
+  },
+  {
+    "question_id": 159,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "Messaging",
+    "subcategory": "Schema Registry",
+    "skills_required": ["Kafka", "Schema Evolution", "Avro"],
+    "scenario": "Kafka 환경에서 Schema Registry와 Avro를 사용 중입니다. 프로듀서 팀이 기존에 `string` 타입이던 'user_age' 필드를 숫자로 계산하기 편하게 `int` 타입으로 스키마를 무단 변경(Incompatible Change)하여 배포했습니다.",
+    "question": "이러한 하위 호환성(Backward Compatibility)을 파괴하는 스키마 변경이 발생했을 때 운영 환경의 파이프라인에는 어떤 리스크가 현실화됩니까?",
+    "choices": [
+      "아무 일도 일어나지 않으며 자동으로 타입 캐스팅(형변환)이 이루어진다.",
+      "Kafka 브로커가 자동으로 다운된다.",
+      "이전 버전의 스키마를 사용하여 메시지를 읽고 있던 기존 컨슈머(Consumer)들이 새로운 메시지를 역직렬화(Deserialize)하지 못하고 에러를 뿜으며 파이프라인이 전면 중단된다.",
+      "컨슈머의 메모리 사용량이 절반으로 줄어든다."
+    ],
+    "correct_answer": "이전 버전의 스키마를 사용하여 메시지를 읽고 있던 기존 컨슈머(Consumer)들이 새로운 메시지를 역직렬화(Deserialize)하지 못하고 에러를 뿜으며 파이프라인이 전면 중단된다.",
+    "explanation": "스키마 진화 과정에서 호환성 원칙(기본값 추가, 필드 삭제 등 허용된 규칙)을 지키지 않으면, 해당 토픽을 구독하는 다운스트림 애플리케이션들이 데이터를 읽지 못하는 치명적인 장애를 겪게 됩니다. Schema Registry의 호환성 검증 옵션으로 이를 사전에 차단해야 합니다."
+  },
+  {
+    "question_id": 160,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "documentation_analysis",
+    "category": "Security & Governance",
+    "subcategory": "CI/CD",
+    "skills_required": ["Git", "Security", "Best Practices"],
+    "scenario": "신입 데이터 엔지니어가 Airflow DAG 파일과 함께 AWS S3 접근 키(Access Key)와 데이터베이스 비밀번호가 평문으로 적힌 설정 파일을 회사의 공용 Github 저장소에 커밋(Commit)하려 합니다.",
+    "question": "이러한 심각한 보안 사고를 방지하기 위해 형상 관리 도구에서 제공하는 기능으로, 특정 파일이나 디렉토리가 Git 추적 대상에 포함되지 않도록 명시하는 파일의 이름은 무엇입니까?",
+    "choices": [
+      ".gitattributes",
+      ".env",
+      ".gitignore",
+      "docker-compose.yml"
+    ],
+    "correct_answer": ".gitignore",
+    "explanation": ".gitignore 파일에 인증 정보가 담긴 파일(*.pem, secrets.yaml 등)을 명시하면, 실수로라도 소스 코드 저장소에 민감 정보가 푸시(Push)되어 유출되는 것을 가장 기초적이고 효과적으로 방어할 수 있습니다."
+  },
+  {
+    "question_id": 161,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "tradeoff_analysis",
+    "category": "Architecture",
+    "subcategory": "Stream Processing",
+    "skills_required": ["Flink", "Spark Streaming", "Latency"],
+    "scenario": "금융권 이상 거래 탐지(FDS) 시스템을 구축해야 합니다. 데이터 지연 시간(Latency)은 50ms 미만이어야 하며, 복잡한 윈도우 연산과 상태(State) 관리가 필수적입니다.",
+    "question": "Spark Streaming(Micro-batch)과 Apache Flink(Native Streaming) 중 하나를 선택해야 할 때, Flink를 선택함으로써 감수해야 하는 주요 트래픽오프(Trade-off)는 무엇입니까?",
+    "choices": [
+      "이벤트 단위 처리로 초저지연을 얻는 대신, 마이크로 배치 방식에 비해 건당 처리 오버헤드가 커져 최대 처리량(Throughput)이 상대적으로 낮아질 수 있다.",
+      "초저지연을 얻는 대신, 윈도우 연산 기능을 전혀 사용할 수 없게 된다.",
+      "배치 처리가 가능해지는 대신, 실시간 처리를 포기해야 한다.",
+      "Exactly-once(정확히 한 번) 처리를 보장받는 대신, 메모리를 전혀 사용할 수 없게 된다."
+    ],
+    "correct_answer": "이벤트 단위 처리로 초저지연을 얻는 대신, 마이크로 배치 방식에 비해 건당 처리 오버헤드가 커져 최대 처리량(Throughput)이 상대적으로 낮아질 수 있다.",
+    "explanation": "Native Streaming(Flink)은 이벤트 발생 즉시 처리하여 지연 시간이 매우 짧지만, 일정량을 모아서 한 번에 처리하는 Micro-batch(Spark)에 비해 단위 메시지당 I/O 및 관리 오버헤드가 커서 극단적인 최대 처리량 면에서는 불리할 수 있습니다."
+  },
+  {
+    "question_id": 162,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "error_analysis",
+    "category": "Orchestration",
+    "subcategory": "Airflow",
+    "skills_required": ["Airflow", "Jinja Templating"],
+    "scenario": "Airflow DAG에서 파이썬의 `datetime.now()`를 사용하여 오늘 날짜를 기준으로 S3 경로를 생성하는 태스크를 만들었습니다. 그런데 장애가 발생하여 3일 전 데이터를 재처리(Backfill)했음에도 계속해서 '오늘' 날짜의 경로를 참조하는 오류가 발생했습니다.",
+    "question": "과거 시점의 데이터를 재실행할 때 해당 실행 시점(논리적 시간)의 날짜를 동적으로 정확하게 참조하기 위해 Airflow에서 반드시 사용해야 하는 기능은 무엇입니까?",
+    "choices": [
+      "파이썬의 time.sleep()",
+      "Airflow Variables",
+      "Jinja Templating을 이용한 {{ ds }} 또는 {{ execution_date }} 매크로",
+      "XCom (Cross-Communication)"
+    ],
+    "correct_answer": "Jinja Templating을 이용한 {{ ds }} 또는 {{ execution_date }} 매크로",
+    "explanation": "Airflow에서 `datetime.now()`를 쓰면 코드가 파싱되는 현재 물리적 시간을 반환하므로 Backfill 시 과거 시간을 참조하지 못합니다. 실행 기준일(논리적 시간)을 참조하려면 Airflow의 내장 Jinja 템플릿 변수를 사용해야 합니다."
+  },
+  {
+    "question_id": 163,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "code_output_prediction",
+    "category": "Database",
+    "subcategory": "SQL",
+    "skills_required": ["SQL", "Window Function"],
+    "scenario": "사용자별 누적 결제액을 구하기 위해 다음 SQL을 작성했습니다. `SELECT user_id, amount, SUM(amount) OVER(PARTITION BY user_id ORDER BY payment_date) as cumulative_sum FROM payments;`",
+    "question": "위 윈도우 함수에서 기본적으로 적용되는 프레임(Window Frame)의 범위는 어디부터 어디까지입니까?",
+    "choices": [
+      "파티션의 첫 행부터 마지막 행까지 (UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING)",
+      "파티션의 첫 행부터 현재 행까지 (UNBOUNDED PRECEDING AND CURRENT ROW)",
+      "현재 행부터 마지막 행까지 (CURRENT ROW AND UNBOUNDED FOLLOWING)",
+      "이전 행부터 다음 행까지 (1 PRECEDING AND 1 FOLLOWING)"
+    ],
+    "correct_answer": "파티션의 첫 행부터 현재 행까지 (UNBOUNDED PRECEDING AND CURRENT ROW)",
+    "explanation": "ORDER BY 절이 포함된 윈도우 함수의 디폴트 프레임은 파티션의 시작부터 현재 행(Current Row)까지입니다. 따라서 누적 합계를 계산하는 데 정확히 부합합니다."
+  },
+  {
+    "question_id": 164,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "definition",
+    "category": "Infrastructure",
+    "subcategory": "Hadoop",
+    "skills_required": ["YARN", "Resource Management"],
+    "scenario": "하둡(Hadoop) 에코시스템의 구성 요소를 공부하고 있습니다.",
+    "question": "하둡 2.0부터 도입되어 클러스터의 자원(CPU, Memory)을 관리하고 다양한 분산 애플리케이션(Spark, MapReduce 등)의 작업 스케줄링을 담당하는 클러스터 리소스 관리자의 이름은 무엇입니까?",
+    "choices": [
+      "HDFS",
+      "YARN (Yet Another Resource Negotiator)",
+      "Zookeeper",
+      "Sqoop"
+    ],
+    "correct_answer": "YARN (Yet Another Resource Negotiator)",
+    "explanation": "YARN은 하둡 클러스터의 분산 자원을 관리하고 스케줄링하는 중앙 관리자 역할을 수행하여 단일 클러스터에서 여러 처리 엔진을 동시에 실행할 수 있게 합니다."
+  },
+  {
+    "question_id": 165,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "failure_mode_analysis",
+    "category": "Messaging",
+    "subcategory": "Kafka",
+    "skills_required": ["Kafka", "Controller", "Failover"],
+    "scenario": "운영 중인 Kafka 클러스터에서 여러 브로커 중 클러스터의 메타데이터 변경(파티션 리더 선출 등)을 총괄하는 '컨트롤러(Controller)' 역할을 맡은 브로커가 하드웨어 장애로 갑자기 죽었습니다.",
+    "question": "이때 Kafka 클러스터 내부에서는 어떤 복구 메커니즘이 자동으로 동작합니까?",
+    "choices": [
+      "남은 브로커 중 하나가 Zookeeper(또는 KRaft)를 통해 컨트롤러 장애를 감지하고, 자신이 새로운 컨트롤러로 선출되어 역할을 즉시 이어받는다.",
+      "클러스터 전체가 읽기 전용(Read-only) 모드로 전환된다.",
+      "죽은 브로커가 복구될 때까지 모든 프로듀서와 컨슈머의 연결이 강제로 차단된다.",
+      "Zookeeper 노드 중 하나가 Kafka 컨트롤러 역할을 대신 수행한다."
+    ],
+    "correct_answer": "남은 브로커 중 하나가 Zookeeper(또는 KRaft)를 통해 컨트롤러 장애를 감지하고, 자신이 새로운 컨트롤러로 선출되어 역할을 즉시 이어받는다.",
+    "explanation": "Kafka 컨트롤러 브로커가 실패하면, Zookeeper의 임시 노드(Ephemeral Node)가 사라짐을 다른 브로커들이 감지하고 먼저 요청을 보낸 브로커가 새로운 컨트롤러로 승격하여 단일 장애점(SPOF)을 방지합니다."
+  },
+  {
+    "question_id": 166,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "capacity_planning",
+    "category": "Cloud & Analysis",
+    "subcategory": "BigQuery",
+    "skills_required": ["BigQuery", "Slots", "Capacity"],
+    "scenario": "데이터 분석가 100명이 동시에 무거운 JOIN 연산이 포함된 BigQuery SQL을 실행하고 있습니다. 주문형(On-demand) 과금제를 사용 중인데, 일부 쿼리들이 'Resources exceeded' 에러를 내며 실패하기 시작했습니다.",
+    "question": "안정적인 동시성 처리 보장과 예측 가능한 비용 관리를 위해 컴퓨팅 자원을 어떻게 변경하는 것이 가장 적절합니까?",
+    "choices": [
+      "데이터를 매일 밤 S3로 추출하여 CSV로 공유한다.",
+      "BigQuery의 예약(Reservations) 기능을 사용하여 필요한 슬롯(Slots) 용량을 정액제로 선구매하고, 부서별로 자원을 할당한다.",
+      "모든 분석가의 쿼리를 1분 간격으로 순차적으로 실행하도록 Airflow 파이프라인을 짠다.",
+      "BigQuery 스토리지에 데이터를 저장할 때 압축률을 0으로 설정한다."
+    ],
+    "correct_answer": "BigQuery의 예약(Reservations) 기능을 사용하여 필요한 슬롯(Slots) 용량을 정액제로 선구매하고, 부서별로 자원을 할당한다.",
+    "explanation": "On-demand 환경에서는 가용 슬롯을 타 사용자와 공유하므로 트래픽 스파이크 시 자원 부족이 발생할 수 있습니다. 슬롯(Slot) 예약 구매는 전용 연산 자원을 확보하여 높은 동시성을 안정적으로 보장합니다."
+  },
+  {
+    "question_id": 167,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "data_interpretation",
+    "category": "Data Processing",
+    "subcategory": "Spark",
+    "skills_required": ["Spark UI", "DAG", "Shuffle"],
+    "scenario": "Spark UI의 DAG(Directed Acyclic Graph) 시각화 탭을 분석 중입니다. 특정 Stage와 다음 Stage 사이에 'Exchange'라는 노드가 생생되어 있는 것을 확인했습니다.",
+    "question": "이 'Exchange' 단계가 의미하는 Spark 엔진 내부의 물리적인 동작은 무엇입니까?",
+    "choices": [
+      "디스크에서 메모리로 데이터를 로드하는 과정",
+      "클러스터 노드 간에 네트워크를 통해 데이터를 재분배하는 셔플(Shuffle) 과정",
+      "데이터를 압축하는 과정",
+      "Spark Executor와 Driver 간의 하트비트 통신 과정"
+    ],
+    "correct_answer": "클러스터 노드 간에 네트워크를 통해 데이터를 재분배하는 셔플(Shuffle) 과정",
+    "explanation": "Spark UI DAG에서 Exchange는 데이터의 파티셔닝 기준이 변경되어 워커 노드들 사이에 대량의 데이터 이동(Shuffle)이 일어나는 지점을 시각적으로 나타내는 핵심 지표입니다."
+  },
+  {
+    "question_id": 168,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "security_analysis",
+    "category": "Security & Governance",
+    "subcategory": "Cloud Security",
+    "skills_required": ["AWS IAM", "Security", "AssumeRole"],
+    "scenario": "외부 파트너사가 우리의 AWS S3 버킷에 데이터를 업로드해야 합니다. 파트너사에게 IAM 사용자(User)의 Access Key와 Secret Key를 직접 발급하여 이메일로 전달하는 것은 보안 규칙 위반입니다.",
+    "question": "영구적인 크리덴셜(Credential) 발급 없이, 파트너사의 AWS 계정이 우리 S3 버킷에 접근할 수 있도록 보안상 가장 안전한 위임 방식은 무엇입니까?",
+    "choices": [
+      "S3 버킷을 Public-Read-Write로 열어둔다.",
+      "파트너사 계정을 신뢰(Trust)하는 IAM Role을 생성하고, 파트너사가 해당 Role을 임시로 부여받는 'AssumeRole'을 사용하도록 구성한다.",
+      "파트너사의 IP 주소만 S3 버킷 정책에 허용한다.",
+      "AWS Cognito를 사용하여 파트너사 직원 전용 로그인 페이지를 만든다."
+    ],
+    "correct_answer": "파트너사 계정을 신뢰(Trust)하는 IAM Role을 생성하고, 파트너사가 해당 Role을 임시로 부여받는 'AssumeRole'을 사용하도록 구성한다.",
+    "explanation": "크로스 계정(Cross-Account) 접근 시, 영구 키 발급 대신 신뢰 관계가 맺어진 IAM Role을 임시 세션 자격 증명(AssumeRole)으로 활용하는 것이 자격 증명 유출 피해를 막는 클라우드 보안의 핵심 표준입니다."
+  },
+  {
+    "question_id": 169,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "multiple_choice",
+    "category": "Programming",
+    "subcategory": "Python",
+    "skills_required": ["Python", "Memory Management"],
+    "scenario": "로컬 PC에서 Python을 사용하여 10GB 텍스트 파일에 담긴 로그를 파싱하고 있습니다. 모든 로그를 파이썬 리스트(`[]`) 객체에 한 번에 `.append()`로 담으려 하자 컴퓨터 메모리가 부족해지며 멈췄습니다.",
+    "question": "대용량 파일을 다룰 때, 한 번에 한 줄씩 메모리에 올리고 버리면서 메모리 사용량을 O(1)로 유지하기 위해 파이썬에서 사용하는 가장 적절한 객체 순회 방식은?",
+    "choices": [
+      "file.read()를 호출하여 문자열로 모두 읽는다.",
+      "file.readlines()를 호출하여 리스트로 변환한다.",
+      "for line in file: 구문을 사용하여 파일 객체(Iterator)를 한 줄씩 순회한다.",
+      "파일을 ZIP으로 압축하여 메모리에 로드한다."
+    ],
+    "correct_answer": "for line in file: 구문을 사용하여 파일 객체(Iterator)를 한 줄씩 순회한다.",
+    "explanation": "파이썬의 파일 객체는 이터레이터(Iterator) 프로토콜을 지원하므로, for-in 루프를 사용하면 파일 전체를 메모리에 적재하지 않고도 한 줄씩 지연 평가(Lazy evaluation) 방식으로 안전하게 처리할 수 있습니다."
+  },
+  {
+    "question_id": 170,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "system_design",
+    "category": "Architecture",
+    "subcategory": "Real-time Messaging",
+    "skills_required": ["Redis Pub/Sub", "Redis Stream", "System Design"],
+    "scenario": "실시간 채팅 로그를 여러 컨슈머 그룹이 각각 다른 목적(알림 발송용, 아카이빙용, 분석용)으로 처리해야 합니다. 또한, 컨슈머 장애 시 읽지 못한 메시지를 나중에 이어서 처리할 수 있어야(Durability) 합니다.",
+    "question": "메모리 기반의 고속 처리 속도를 위해 Redis를 도입하려 할 때, 위의 요구사항(비동기 멀티캐스팅 및 오프셋 관리)을 만족하기 위해 채택해야 하는 Redis의 자료구조/기능은 무엇입니까?",
+    "choices": [
+      "Redis Lists (LPUSH/BRPOP)",
+      "Redis Sets",
+      "Redis Pub/Sub",
+      "Redis Streams (XADD/XREADGROUP)"
+    ],
+    "correct_answer": "Redis Streams (XADD/XREADGROUP)",
+    "explanation": "Redis Pub/Sub은 구독자가 연결되어 있지 않을 때 발생한 메시지가 즉시 유실되는 반면, Redis Streams는 로그(Append-only) 구조와 컨슈머 그룹을 지원하여 메시지 영속성과 Kafka와 유사한 오프셋 추적 기능을 제공합니다."
+  },
+  {
+    "question_id": 171,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "cost_optimization",
+    "category": "Cloud",
+    "subcategory": "Storage Strategy",
+    "skills_required": ["AWS S3", "Intelligent-Tiering", "Cost"],
+    "scenario": "회사의 데이터 레이크 S3 버킷에 수백 페타바이트의 데이터가 저장되어 있습니다. 어떤 데이터가 매일 분석되고, 어떤 데이터가 1년에 한 번 조회되는지 접근 패턴을 미리 예측하기가 매우 어렵습니다.",
+    "question": "스토리지 클래스를 수동으로 관리하지 않고, 데이터 접근 패턴을 기계 학습 기반으로 모니터링하여 자동으로 가장 저렴한 스토리지 계층으로 데이터를 이동시켜 비용을 최적화하는 S3의 기능은 무엇입니까?",
+    "choices": [
+      "S3 Standard-IA (Infrequent Access)",
+      "S3 Intelligent-Tiering",
+      "S3 Glacier Deep Archive",
+      "S3 Object Lock"
+    ],
+    "correct_answer": "S3 Intelligent-Tiering",
+    "explanation": "S3 Intelligent-Tiering은 접근 패턴을 알 수 없거나 자주 변경되는 데이터에 대해, 소정의 모니터링 비용만 내면 자동으로 빈번한 접근 계층과 아카이브 계층 간 데이터를 이동시켜 주는 가장 효율적인 비용 최적화 솔루션입니다."
+  },
+  {
+    "question_id": 172,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "debugging",
+    "category": "Data Processing",
+    "subcategory": "Spark",
+    "skills_required": ["Spark", "MemoryManagement", "Executor"],
+    "scenario": "Spark 작업을 YARN 클러스터에 배포하여 실행 중인데, 일부 Executor가 'Container killed by YARN for exceeding memory limits. 4.5 GB of 4 GB physical memory used.' 에러와 함께 강제 종료되었습니다.",
+    "question": "에러 로그를 보았을 때, 물리적 메모리 제한을 초과하여 YARN에 의해 컨테이너가 축출된 근본 원인은 무엇이며 이를 해결하기 위해 늘려야 하는 Spark 설정값은 무엇입니까?",
+    "choices": [
+      "Driver의 메모리가 부족하므로 spark.driver.memory를 늘린다.",
+      "JVM 외부에 할당되는 오프힙(Off-heap) 메모리가 초과된 것이므로 spark.yarn.executor.memoryOverhead 값을 늘린다.",
+      "하드 디스크 용량이 부족한 것이므로 spark.local.dir의 용량을 확보한다.",
+      "네트워크 대역폭이 초과된 것이므로 spark.network.timeout을 늘린다."
+    ],
+    "correct_answer": "JVM 외부에 할당되는 오프힙(Off-heap) 메모리가 초과된 것이므로 spark.yarn.executor.memoryOverhead 값을 늘린다.",
+    "explanation": "YARN은 컨테이너의 총 물리적 메모리(Heap + Overhead)를 감시합니다. JVM 힙 사이즈를 초과하지 않더라도 PySpark 파이썬 프로세스나 네이티브 라이브러리가 사용하는 오프힙 메모리가 제한을 넘으면 종료되므로 overhead 값을 상향 조정해야 합니다."
+  },
+  {
+    "question_id": 173,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "true_false",
+    "category": "Database",
+    "subcategory": "Database Theory",
+    "skills_required": ["ACID", "Database"],
+    "scenario": "데이터베이스의 트랜잭션 안전성 원칙인 ACID(Atomicity, Consistency, Isolation, Durability)를 학습하고 있습니다.",
+    "question": "트랜잭션에 포함된 여러 개의 연산 중 단 하나라도 실패하면, 이전에 성공했던 연산들까지 모두 원래 상태로 되돌려야(Rollback) 한다는 특징은 '원자성(Atomicity)'에 해당한다. (참/거짓)",
+    "choices": [
+      "참",
+      "거짓"
+    ],
+    "correct_answer": "참",
+    "explanation": "원자성(Atomicity)은 트랜잭션 내의 작업들이 '전부 성공(Commit)'하거나 '전부 실패(Rollback)'해야 함을 보장하여 데이터의 불안전한 중간 상태를 방지하는 속성입니다."
+  },
+  {
+    "question_id": 174,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "constraint_optimization",
+    "category": "Messaging",
+    "subcategory": "Kafka",
+    "skills_required": ["Kafka", "Order Guarantee", "Producer"],
+    "scenario": "주문 시스템에서 상태 변경(결제대기 -> 결제완료 -> 배송중) 이벤트를 Kafka 프로듀서로 전송합니다. 파티션은 1개로 설정하여 순서를 보장하려 했으나, 프로듀서의 비동기 전송 시 네트워크 지연으로 인해 재시도(Retry)가 발생하면서 토픽에 메시지 순서가 뒤섞이는 현상이 발생했습니다.",
+    "question": "프로듀서의 재시도(retries > 0)가 활성화된 상태에서도, 파티션 내의 메시지 전송 순서가 꼬이는 것을 방지하기 위해 반드시 '1'로 설정해야 하는 프로듀서 파라미터는 무엇입니까? (단, 멱등성 enable.idempotence=true 설정은 꺼져 있다고 가정합니다.)",
+    "choices": [
+      "linger.ms",
+      "batch.size",
+      "max.in.flight.requests.per.connection",
+      "acks"
+    ],
+    "correct_answer": "max.in.flight.requests.per.connection",
+    "explanation": "응답을 받지 않고 병렬로 전송할 수 있는 최대 요청 수(in-flight requests)가 1보다 크면, 먼저 보낸 배치가 실패하고 뒤에 보낸 배치가 성공할 경우 순서가 역전됩니다. 이 값을 1로 주어야 재시도 시에도 엄격한 순서가 보장됩니다."
+  },
+  {
+    "question_id": 175,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "algorithm_design",
+    "category": "Data Processing",
+    "subcategory": "Algorithms",
+    "skills_required": ["HyperLogLog", "Cardinality Estimation"],
+    "scenario": "수백억 건의 웹 로그 데이터에서 '하루 동안 방문한 순수 사용자 수(Unique Visitors, DAU)'를 실시간 대시보드에 집계하여 보여주어야 합니다. 메모리가 매우 제한적이며, 1~2% 정도의 오차는 비즈니스적으로 허용됩니다.",
+    "question": "각 사용자의 ID를 모두 메모리(Set)에 저장하지 않고, 해시(Hash) 함수의 확률적 특성을 이용하여 매우 적은 메모리(수 KB)로 대규모 카디널리티(고유값 개수)를 추정하는 알고리즘은 무엇입니까?",
+    "choices": [
+      "Bloom Filter (블룸 필터)",
+      "HyperLogLog (하이퍼로그로그)",
+      "Trie (트라이)",
+      "Consistent Hashing (안정 해시)"
+    ],
+    "correct_answer": "HyperLogLog (하이퍼로그로그)",
+    "explanation": "블룸 필터는 '존재 여부(Membership)'를 확인하는 데 쓰이고, 하이퍼로그로그(HyperLogLog)는 매우 적은 고정 메모리만으로 고유 요소의 총 '개수(Cardinality)'를 매우 높은 정확도로 추정할 수 있는 빅데이터 필수 알고리즘입니다."
+  },
+  {
+    "question_id": 176,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "misconception_detection",
+    "category": "Cloud",
+    "subcategory": "Storage",
+    "skills_required": ["AWS S3", "Consistency"],
+    "scenario": "AWS S3의 데이터 일관성(Consistency) 모델에 대해 토론하고 있습니다. 과거에는 새로운 파일을 쓰고 난 직후 목록을 조회(List)하면 안 보일 때가 있었습니다.",
+    "question": "현재 AWS S3 버킷에 새로운 객체를 업로드(PUT)한 직후, 곧바로 해당 객체를 조회(GET)할 때의 일관성 보장에 대한 설명 중 올바른 것은 무엇입니까?",
+    "choices": [
+      "S3는 여전히 Eventual Consistency(최종 일관성)만 제공하므로, 즉시 조회 시 에러가 날 확률이 높다.",
+      "S3는 현재 모든 GET, PUT, LIST 작업에 대해 강력한 쓰기 후 읽기 일관성(Strong Read-After-Write Consistency)을 자동으로 보장하므로 업로드 즉시 정상적으로 조회할 수 있다.",
+      "추가 비용을 내야만 즉시 조회가 가능하다.",
+      "파일 크기가 1GB 이하일 때만 즉시 조회가 가능하다."
+    ],
+    "correct_answer": "S3는 현재 모든 GET, PUT, LIST 작업에 대해 강력한 쓰기 후 읽기 일관성(Strong Read-After-Write Consistency)을 자동으로 보장하므로 업로드 즉시 정상적으로 조회할 수 있다.",
+    "explanation": "2020년 12월 업데이트 이후, AWS S3는 모든 리전에서 추가 비용 없이 객체에 대해 강력한 쓰기 후 읽기 일관성을 기본적으로 제공하도록 아키텍처가 개선되었습니다."
+  },
+  {
+    "question_id": 177,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "incident_response",
+    "category": "Infrastructure",
+    "subcategory": "Kubernetes",
+    "skills_required": ["Kubernetes", "Troubleshooting", "Pods"],
+    "scenario": "Kubernetes 환경에서 운영되는 마이크로서비스 하나가 코드 배포 직후 데이터베이스 연결 설정 오류로 인해 즉시 프로세스가 죽고 있습니다. K8s의 ReplicaSet 컨트롤러는 설정된 개수를 맞추기 위해 파드를 계속 살리려 시도합니다.",
+    "question": "이처럼 파드가 시작되자마자 에러를 내며 종료되는 과정이 무한 반복될 때, 시스템 부하를 방지하기 위해 재시도 간격(Backoff)을 점진적으로 늘리며 대기하는 K8s 파드의 상태(Status) 명칭은 무엇입니까?",
+    "choices": [
+      "Pending",
+      "ImagePullBackOff",
+      "CrashLoopBackOff",
+      "Terminating"
+    ],
+    "correct_answer": "CrashLoopBackOff",
+    "explanation": "CrashLoopBackOff는 애플리케이션 버그나 설정 문제 등으로 컨테이너가 구동 직후 계속해서 종료(Crash)되는 경우, Kubelet이 재시작 주기를 지수 시간으로 늘리며(최대 5분) 대기하는 상태를 뜻합니다."
+  },
+  {
+    "question_id": 178,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "database_schema_design",
+    "category": "Database",
+    "subcategory": "DynamoDB",
+    "skills_required": ["DynamoDB", "GSI", "Index"],
+    "scenario": "AWS DynamoDB 테이블을 생성했습니다. 기본 키(Partition Key)는 'User_ID'로 설정되어 유저 프로필을 빠르게 조회할 수 있습니다. 하지만 비즈니스 요구사항이 추가되어, 모든 유저의 '가입일(Join_Date)'을 기준으로도 빠른 검색이 필요해졌습니다.",
+    "question": "기존 테이블 구조를 변경하지 않고 완전히 새로운 속성(Join_Date)을 파티션 키로 사용하여 독립적인 보조 인덱스를 생성하려면 어떤 기능(인덱스 타입)을 사용해야 합니까?",
+    "choices": [
+      "LSI (Local Secondary Index)",
+      "GSI (Global Secondary Index)",
+      "B-Tree Index",
+      "Bitmap Index"
+    ],
+    "correct_answer": "GSI (Global Secondary Index)",
+    "explanation": "GSI(글로벌 보조 인덱스)는 원본 테이블과 파티션 키 및 정렬 키가 완전히 다를 수 있는 인덱스로, 테이블 생성 후에도 언제든 추가할 수 있어 다양한 접근 패턴 쿼리에 사용됩니다. 반면 LSI는 파티션 키가 원본과 같아야 하고 테이블 생성 시에만 만들 수 있습니다."
+  },
+  {
+    "question_id": 179,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "code_completion",
+    "category": "Data Processing",
+    "subcategory": "PySpark",
+    "skills_required": ["PySpark", "Window Function"],
+    "scenario": "PySpark 데이터프레임 `df`에서, 부서별(`department`)로 직원들을 연봉(`salary`) 내림차순으로 정렬했을 때 가장 연봉이 높은 1순위 직원을 찾으려 합니다.",
+    "question": "다음 빈칸에 들어갈 윈도우 스펙(Window Spec) 정의 코드로 가장 알맞은 것은 무엇입니까?\n`windowSpec = Window.______.______(col('salary').desc())`",
+    "choices": [
+      "orderBy('department') . partitionBy",
+      "partitionBy('department') . orderBy",
+      "groupBy('department') . sort",
+      "filter('department') . limit"
+    ],
+    "correct_answer": "partitionBy('department') . orderBy",
+    "explanation": "PySpark에서 Window 기능을 사용하려면 `Window.partitionBy()`로 그룹을 나누고 `orderBy()`로 정렬 기준을 명시하는 것이 표준 문법입니다."
+  },
+  {
+    "question_id": 180,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Data Lakehouse",
+    "subcategory": "Table Formats",
+    "skills_required": ["Apache Iceberg", "Apache Hudi", "CDC"],
+    "scenario": "수천 개의 테이블이 존재하는 거대한 데이터 레이크하우스를 구축 중입니다. 대부분의 테이블은 배치로 갱신되지만, 일부 핵심 테이블은 RDBMS에서 발생하는 대량의 CDC(Change Data Capture) 변경 내역을 수초 단위로 반영하여 빈번한 Update/Delete가 발생합니다.",
+    "question": "읽기 성능보다는 **빈번한 레코드 수준의 Upsert/Delete 처리와 실시간 스트리밍 데이터 인입(Ingestion) 최적화**에 가장 특화된 설계 철학을 가진 오픈소스 테이블 포맷은 무엇입니까?",
+    "choices": [
+      "Apache Hive",
+      "Apache Parquet (단일 포맷)",
+      "Apache Hudi (Hadoop Upserts Deletes and Incrementals)",
+      "CSV Format"
+    ],
+    "correct_answer": "Apache Hudi (Hadoop Upserts Deletes and Incrementals)",
+    "explanation": "Apache Hudi는 이름부터 명시하듯 CDC와 같은 잦은 레코드 업데이트와 삭제, 점진적(Incremental) 데이터 처리를 네이티브하게 지원하기 위해 만들어졌으며, Copy-on-Write와 Merge-on-Read 두 가지 모드를 제공하여 스트리밍 인입에 특화되어 있습니다."
+  },
+  {
+    "question_id": 181,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "monitoring_strategy",
+    "category": "Operations",
+    "subcategory": "Prometheus",
+    "skills_required": ["Prometheus", "Metrics", "SLO"],
+    "scenario": "마이크로서비스 API의 응답 속도(Latency)가 SLO(예: 99%의 요청이 200ms 이내 응답)를 충족하는지 모니터링하기 위해 Prometheus 지표(Metric)를 수집하려고 합니다.",
+    "question": "평균값(Average)에 숨겨질 수 있는 극단적인 지연 현상(Tail Latency, p99)을 계산하고 시각화하기 위해 관측 값을 사전에 정의된 버킷(Bucket)들에 나누어 담는 Prometheus의 지표 타입은 무엇입니까?",
+    "choices": [
+      "Counter (카운터)",
+      "Gauge (게이지)",
+      "Histogram (히스토그램)",
+      "Tracing (트레이싱)"
+    ],
+    "correct_answer": "Histogram (히스토그램)",
+    "explanation": "히스토그램(Histogram)은 요청 소요 시간이나 응답 크기 등의 데이터를 사전에 정의된 구간(Bucket)별로 카운팅하여 저장하므로, PromQL의 `histogram_quantile` 함수를 통해 p95, p99 등의 백분위수를 동적으로 집계하는 데 필수적입니다."
+  },
+  {
+    "question_id": 182,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "real_world_case",
+    "category": "Cloud & Analysis",
+    "subcategory": "Snowflake",
+    "skills_required": ["Snowflake", "Time Travel", "Fail-safe"],
+    "scenario": "Snowflake 데이터 웨어하우스 운영 중, 주니어 엔지니어가 실수로 가장 중요한 '매출_팩트(Sales_Fact)' 테이블을 DROP 명령어로 완전히 삭제해버렸습니다. 다행히 삭제 후 2시간밖에 지나지 않았습니다.",
+    "question": "DBA나 고객 센터의 개입 없이, 관리자 권한을 가진 엔지니어가 단 한 줄의 SQL로 즉시 테이블을 삭제 전 상태로 원상 복구하기 위해 사용하는 명령어는 무엇입니까?",
+    "choices": [
+      "ROLLBACK TO SAVEPOINT before_drop;",
+      "UNDROP TABLE Sales_Fact;",
+      "RESTORE TABLE Sales_Fact FROM BACKUP;",
+      "RECOVER TABLE Sales_Fact USING LOGS;"
+    ],
+    "correct_answer": "UNDROP TABLE Sales_Fact;",
+    "explanation": "Snowflake는 데이터 보호 기능인 타임 트래블(Time Travel)을 내장하고 있어, 테이블을 실수로 DROP 하더라도 보관 주기(Retention Period) 내라면 `UNDROP TABLE` 명령어 하나로 메타데이터 포인터를 되돌려 1초 만에 복구할 수 있습니다."
+  },
+  {
+    "question_id": 183,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "configuration_problem",
+    "category": "Orchestration",
+    "subcategory": "Airflow",
+    "skills_required": ["Airflow", "Concurrency", "Scheduling"],
+    "scenario": "매시간 실행되는 Airflow DAG가 있습니다. 외부 API 서버가 3시간 동안 다운되어 3개의 DAG 실행(DagRun)이 밀려 있었습니다. API 서버 복구 후 Airflow가 밀린 작업(Catchup)을 동시에 3개 모두 병렬로 실행시켜, 타겟 DB에 과부하를 주었습니다.",
+    "question": "동일한 DAG에 대해 동시에 실행될 수 있는 DagRun의 개수를 1개로 제한하여 병렬 실행에 의한 부하를 막으려면, DAG 객체를 정의할 때 어떤 파라미터를 설정해야 합니까?",
+    "choices": [
+      "schedule_interval='@daily'",
+      "retries=1",
+      "max_active_runs=1",
+      "concurrency=10"
+    ],
+    "correct_answer": "max_active_runs=1",
+    "explanation": "DAG 파라미터 중 `max_active_runs`는 해당 DAG의 인스턴스(DagRun)가 동시에 실행될 수 있는 최대 개수를 제어합니다. 이를 1로 설정하면 이전 시간이 처리될 때까지 다음 스케줄이 대기 상태(Queued)로 기다립니다."
+  },
+  {
+    "question_id": 184,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "concept_check",
+    "category": "Distributed Systems",
+    "subcategory": "Stream Processing",
+    "skills_required": ["Streaming", "Event Time", "Watermark"],
+    "scenario": "모바일 게임에서 '이벤트가 발생한 시간(Event Time)'을 기준으로 데이터를 윈도우에 모아 분석하고 있습니다. 단말기가 오프라인 상태이다가 나중에 인터넷에 연결되면, 이벤트가 서버에 '뒤늦게(Late)' 도착하게 됩니다.",
+    "question": "스트림 처리 시스템(Flink, Spark Streaming 등)에서 이러한 지연 데이터(Late Data)를 언제까지 기다려줄지, 즉 윈도우 계산을 어느 시점에 마감하고 결과를 내보낼지 결정하는 임계값(Threshold)의 역할을 하는 추상화 개념은 무엇입니까?",
+    "choices": [
+      "Offset (오프셋)",
+      "Watermark (워터마크)",
+      "Checkpoint (체크포인트)",
+      "Broadcast (브로드캐스트)"
+    ],
+    "correct_answer": "Watermark (워터마크)",
+    "explanation": "워터마크(Watermark)는 스트리밍 처리에서 이벤트 시간의 진행 경과를 시스템에 알려주는 개념으로, 워터마크가 특정 윈도우의 종료 시간을 넘어서면 더 이상 지연 데이터가 오지 않을 것이라 간주하고 연산을 마감(Trigger)합니다."
+  },
+  {
+    "question_id": 185,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "risk_assessment",
+    "category": "Security & Governance",
+    "subcategory": "Data Obfuscation",
+    "skills_required": ["Cryptography", "Data Masking", "Hash Collision"],
+    "scenario": "분석용 데이터 레이크를 구축하며 고객의 '전화번호'를 보안 처리하려 합니다. 분석가들은 마스킹(010-****-1234) 방식 대신, 특정 고객의 여러 활동 로그를 결합(JOIN)할 수 있도록 고유성은 유지되면서도 원본 번호는 알 수 없는 방식을 원합니다.",
+    "question": "이 요구사항을 만족하기 위해 전화번호를 SHA-256과 같은 단방향 해시(Hash) 함수로 변환하기로 했습니다. 이 방식이 여전히 취약할 수 있는 보안적 결함(Risk)과, 이를 보완하기 위한 필수적인 암호화 조치는 무엇입니까?",
+    "choices": [
+      "해시 함수는 복호화가 너무 쉬우므로, ZIP 파일로 압축해야 한다.",
+      "전화번호는 가짓수가 한정적이므로(예: 약 1억 개) 공격자가 미리 모든 해시값을 계산해 둔 레인보우 테이블(Rainbow Table) 공격에 취약하다. 이를 막기 위해 임의의 문자열(Salt)을 덧붙인 뒤 해싱해야 한다.",
+      "해싱된 값은 길이가 너무 길어져 DB에 저장할 수 없으므로, 다시 Base64로 인코딩해야 한다.",
+      "단방향 해시는 조인(JOIN) 키로 사용할 수 없으므로 양방향 대칭키 암호화(AES)만 써야 한다."
+    ],
+    "correct_answer": "전화번호는 가짓수가 한정적이므로(예: 약 1억 개) 공격자가 미리 모든 해시값을 계산해 둔 레인보우 테이블(Rainbow Table) 공격에 취약하다. 이를 막기 위해 임의의 문자열(Salt)을 덧붙인 뒤 해싱해야 한다.",
+    "explanation": "전화번호나 주민등록번호처럼 도메인(가능한 경우의 수)이 좁은 데이터는 단순 해싱만으로는 무차별 대입이나 레인보우 테이블 공격에 의해 원본 유추가 매우 쉽습니다. 따라서 반드시 랜덤한 솔트(Salt)를 추가하여 암호학적 복잡도를 높여야 합니다."
+  },
+  {
+    "question_id": 186,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "refactoring_decision",
+    "category": "Architecture",
+    "subcategory": "Microservices",
+    "skills_required": ["Decoupling", "Kafka", "Data Pipeline"],
+    "scenario": "거대한 하나의 애플리케이션(Monolithic) 내에서 데이터 수집, 정제, 모델 서빙, 알림 발송 로직이 엉켜있어, 수집 로직 하나를 수정하면 시스템 전체를 재시작해야 하는 불편함이 큽니다.",
+    "question": "이 시스템을 MSA(Microservices Architecture)로 분리하고 각 서비스 간의 결합도(Coupling)를 완전히 끊어내기 위해, 서비스들이 직접 API(HTTP REST)로 통신하는 대신 중앙에 배치해야 하는 핵심 컴포넌트는 무엇입니까?",
+    "choices": [
+      "Load Balancer (L4/L7 스위치)",
+      "Message Broker / Event Bus (예: Kafka, RabbitMQ)",
+      "Relational Database (예: Oracle DB)",
+      "API Gateway"
+    ],
+    "correct_answer": "Message Broker / Event Bus (예: Kafka, RabbitMQ)",
+    "explanation": "서비스 간 직접 통신(Synchronous HTTP)은 여전히 강한 결합을 유발하고 장애가 전파될 수 있습니다. Kafka와 같은 비동기 메시지 브로커를 도입하여 이벤트 기반 아키텍처(EDA)를 구축하면 서비스들은 서로의 존재를 몰라도 데이터(이벤트)를 생산/소비할 수 있어 완벽한 디커플링이 이루어집니다."
+  },
+  {
+    "question_id": 187,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "dependency_analysis",
+    "category": "Infrastructure",
+    "subcategory": "Kubernetes",
+    "skills_required": ["Kubernetes", "Pod Lifecycle", "Init Containers"],
+    "scenario": "Kubernetes 상에 웹 서비스 파드(Pod)를 배포하려 합니다. 이 서비스는 실행되기 직전에 외부 Github 레포지토리에서 최신 설정 파일(.conf)을 다운로드하여 특정 디렉토리에 배치하는 작업이 반드시 선행되어야 합니다.",
+    "question": "메인 애플리케이션 컨테이너가 시작되기 전에, 설정 파일 다운로드와 같은 초기화 작업을 순차적으로 먼저 실행하고 종료되도록 K8s에서 제공하는 특수한 컨테이너 타입은 무엇입니까?",
+    "choices": [
+      "Sidecar Container (사이드카 컨테이너)",
+      "Init Container (초기화 컨테이너)",
+      "DaemonSet (데몬셋)",
+      "Job (잡)"
+    ],
+    "correct_answer": "Init Container (초기화 컨테이너)",
+    "explanation": "Init 컨테이너는 메인 컨테이너가 실행되기 전에 필요한 사전 준비(스크립트 실행, 의존성 대기 등)를 수행하고 성공적으로 종료되어야만 메인 애플리케이션을 구동시키는 쿠버네티스의 필수 기능입니다."
+  },
+  {
+    "question_id": 188,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "best_practice_selection",
+    "category": "Operations",
+    "subcategory": "CI/CD",
+    "skills_required": ["Docker", "CI/CD", "Immutable Infrastructure"],
+    "scenario": "데이터 파이프라인 코드를 컨테이너화하여 Kubernetes에 배포하고 있습니다. CI/CD 파이프라인에서 Docker 이미지를 빌드하고 레지스트리에 푸시할 때, 항상 이미지 태그를 `latest`로만 덮어쓰고 있습니다.",
+    "question": "이러한 `latest` 태그 남용이 운영 환경의 롤백(Rollback) 관점에서 초래하는 가장 치명적인 문제점과 이를 해결하기 위한 모범 사례는 무엇입니까?",
+    "choices": [
+      "latest 태그는 이미지가 너무 무거워진다. 태그를 아예 사용하지 않아야 한다.",
+      "latest 태그를 쓰면 어떤 버전의 코드가 배포되었는지 추적할 수 없고, 긴급 롤백 시 이전 버전의 이미지를 찾을 수 없다. Git의 Commit Hash나 Semantic Versioning(예: v1.2.3)을 이미지 태그로 명시적으로 부여해야 한다.",
+      "최신 기능이 무조건 배포되므로 사용자가 혼란스럽다. 특정 날짜만 태그로 써야 한다.",
+      "Docker 환경에서는 태그 변경이 불가능하다."
+    ],
+    "correct_answer": "latest 태그를 쓰면 어떤 버전의 코드가 배포되었는지 추적할 수 없고, 긴급 롤백 시 이전 버전의 이미지를 찾을 수 없다. Git의 Commit Hash나 Semantic Versioning(예: v1.2.3)을 이미지 태그로 명시적으로 부여해야 한다.",
+    "explanation": "Immutable Infrastructure(불변 인프라) 원칙에 따라, 빌드된 이미지는 고유한 식별자(Commit SHA 등)를 가져야 언제든지 특정 시점의 안정적인 버전으로 즉각적인 롤백이 가능하고 재현성(Reproducibility)을 보장받을 수 있습니다."
+  },
+  {
+    "question_id": 189,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "code_review",
+    "category": "Data Processing",
+    "subcategory": "Spark",
+    "skills_required": ["PySpark", "Data Transformation"],
+    "scenario": "신입 데이터 엔지니어가 PySpark를 사용하여 '상품 가격(price)' 컬럼의 값에 세금 10%를 더하는 로직을 작성했습니다. \n`df = df.withColumn('price_with_tax', df['price'] * 1.10)`",
+    "question": "코드 리뷰 관점에서 위 로직 작성 방식에 대한 평가로 가장 적절한 것은 무엇입니까?",
+    "choices": [
+      "파이썬 내장 연산자를 바로 사용했으므로 에러가 발생한다. 반드시 UDF를 만들어야 한다.",
+      "Spark SQL의 내장 컬럼 함수(Column Expressions)를 사용하여 벡터화된 연산을 수행하므로, 매우 직관적이고 성능 최적화가 잘 된 훌륭한 코드이다.",
+      "MapReduce 잡으로 변환되므로 로직이 매우 느리게 동작할 것이다.",
+      "이 방식은 문자열 타입에만 적용되므로 타입 캐스팅(Type Casting) 에러가 발생한다."
+    ],
+    "correct_answer": "Spark SQL의 내장 컬럼 함수(Column Expressions)를 사용하여 벡터화된 연산을 수행하므로, 매우 직관적이고 성능 최적화가 잘 된 훌륭한 코드이다.",
+    "explanation": "PySpark에서 UDF(사용자 정의 함수)를 남용하는 것은 직렬화 오버헤드를 일으킵니다. 반면, DataFrame API가 제공하는 내장 컬럼 연산(`df['col'] * 1.10`)을 사용하는 것은 Catalyst 옵티마이저가 최적화할 수 있어 가장 권장되는(Best Practice) 방식입니다."
+  },
+  {
+    "question_id": 190,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "documentation_analysis",
+    "category": "Messaging",
+    "subcategory": "Kafka",
+    "skills_required": ["Kafka", "Retention Policy"],
+    "scenario": "Kafka 브로커 서버의 디스크 용량 경고가 발생했습니다. 특정 토픽에 데이터가 너무 많이 쌓여 있어 정리(Cleanup) 규칙을 수정하려 합니다. 관련 문서에서 두 가지 설정값 `log.retention.hours`와 `log.retention.bytes`를 찾았습니다.",
+    "question": "이 두 가지 파라미터를 동시에 설정했을 때, Kafka는 어떤 조건에서 과거 로그 세그먼트(Segment)를 삭제하기 시작합니까?",
+    "choices": [
+      "두 조건 중 하나라도 먼저 도달하면(OR 조건) 데이터 삭제를 시작한다.",
+      "두 조건이 모두 충족되어야만(AND 조건) 삭제를 시작한다.",
+      "시간 제약인 hours 설정이 항상 bytes 설정보다 우선시되어 적용된다.",
+      "두 설정을 동시에 사용하는 것은 문법 오류이므로 브로커가 종료된다."
+    ],
+    "correct_answer": "두 조건 중 하나라도 먼저 도달하면(OR 조건) 데이터 삭제를 시작한다.",
+    "explanation": "Kafka 보관 정책은 용량 기반(bytes)과 시간 기반(hours)을 동시에 설정할 수 있으며, 이 중 더 보수적인 조건(어느 하나라도 임계치를 넘으면)이 충족될 때 오래된 데이터부터 삭제(Delete) 작업을 수행합니다."
+  },
+  {
+    "question_id": 191,
+    "job_role": "Big Data Engineer",
+    "difficulty": "junior_level",
+    "question_type": "api_design",
+    "category": "Data Access",
+    "subcategory": "API Pagination",
+    "skills_required": ["API Design", "Cursor-based Pagination"],
+    "scenario": "새롭게 수집된 데이터 수백만 건을 협력사에게 제공할 REST API를 개발하고 있습니다. 사용자가 10,000번째 페이지를 조회할 때 성능 저하가 극심한 `OFFSET / LIMIT` 기반 페이지네이션을 대체하려 합니다.",
+    "question": "클라이언트가 직전에 받은 마지막 데이터의 식별자(예: 마지막 ID 또는 타임스탬프)를 다음 API 호출 시에 파라미터로 넘겨주어, DB 인덱스를 타고 해당 위치부터 즉시 탐색을 시작하도록 하는 고성능 페이지네이션 설계 기법은 무엇입니까?",
+    "choices": [
+      "Cursor-based Pagination (커서 기반 페이지네이션 또는 Keyset Pagination)",
+      "Full Table Scan (전체 테이블 스캔)",
+      "Caching (캐싱)",
+      "GraphQL Subscriptions (웹소켓 구독)"
+    ],
+    "correct_answer": "Cursor-based Pagination (커서 기반 페이지네이션 또는 Keyset Pagination)",
+    "explanation": "커서 기반 페이지네이션은 무거운 OFFSET 연산을 피하고 인덱스를 통해 '마지막으로 읽은 지점(Cursor)'을 즉시 찾아내어 다음 데이터를 반환하므로, 깊은 페이지를 탐색할 때도 일정한(O(1)) 응답 속도를 보장합니다."
+  },
+  {
+    "question_id": 192,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "distributed_system_reasoning",
+    "category": "Architecture",
+    "subcategory": "Zookeeper",
+    "skills_required": ["Zookeeper", "Ephemeral Nodes", "Heartbeat"],
+    "scenario": "Apache Zookeeper를 사용하여 여러 마이크로서비스 인스턴스의 '살아있음(Alive)' 상태를 중앙에서 관리하는 서비스 디스커버리(Service Discovery) 구조를 구현했습니다. 각 인스턴스는 시작 시 Zookeeper에 자신을 등록합니다.",
+    "question": "서비스 인스턴스가 비정상적으로 종료되어 Zookeeper와의 하트비트(Heartbeat) 세션이 끊어졌을 때, 해당 인스턴스의 등록 정보(ZNode)가 자동으로 삭제되어 다른 클라이언트들이 더 이상 장애가 난 서버로 트래픽을 보내지 않게 만드는 Zookeeper의 특정 노드 타입은 무엇입니까?",
+    "choices": [
+      "Persistent Node (영구 노드)",
+      "Ephemeral Node (임시 노드)",
+      "Sequential Node (순차 노드)",
+      "Container Node (컨테이너 노드)"
+    ],
+    "correct_answer": "Ephemeral Node (임시 노드)",
+    "explanation": "Zookeeper의 Ephemeral(임시) 노드는 해당 노드를 생성한 클라이언트의 세션이 활성 상태일 때만 존재하며, 네트워크 단절이나 장애로 세션이 종료되면 자동으로 삭제되므로 락(Lock) 구현이나 노드 생존 감지에 필수적인 메커니즘입니다."
+  },
+  {
+    "question_id": 193,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "performance_optimization",
+    "category": "Data Processing",
+    "subcategory": "Spark Tuning",
+    "skills_required": ["Spark", "AQE", "Optimization"],
+    "scenario": "Spark 3.x 버전을 도입하여 쿼리 성능을 최적화하고 있습니다. 과거에는 조인할 데이터의 크기를 개발자가 힌트(Hint)로 알려주거나 셔플 파티션 수를 수동으로 하드코딩해야 했습니다.",
+    "question": "런타임(Runtime) 시점에 생성된 셔플 데이터의 실제 크기와 통계를 기반으로, 셔플 파티션 수를 자동으로 병합(Coalesce)하거나 조인 전략(SortMerge -> Broadcast)을 동적으로 변경해주는 Spark 3.x의 혁신적인 최적화 엔진 기능은 무엇입니까?",
+    "choices": [
+      "Catalyst Optimizer (초기 논리 최적화)",
+      "Tungsten Execution Engine (물리적 메모리 최적화)",
+      "Adaptive Query Execution (AQE, 적응형 쿼리 실행)",
+      "Dynamic Resource Allocation (동적 자원 할당)"
+    ],
+    "correct_answer": "Adaptive Query Execution (AQE, 적응형 쿼리 실행)",
+    "explanation": "AQE(Adaptive Query Execution)는 정적인 실행 계획의 한계를 극복하고, 맵(Map) 단계가 끝난 후 물리적으로 기록된 중간 데이터의 통계를 확인하여 리듀스(Reduce) 단계의 실행 계획을 동적으로 변경하는 Spark 3.0의 핵심 성능 최적화 기능입니다."
+  },
+  {
+    "question_id": 194,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "performance_estimation",
+    "category": "Messaging",
+    "subcategory": "Kafka",
+    "skills_required": ["Kafka", "Throughput Calculation", "Partitioning"],
+    "scenario": "신규 프로젝트에서 1개의 파티션(Partition)이 낼 수 있는 최대 쓰기 속도가 10MB/s, 최대 읽기 속도가 20MB/s라는 성능 테스트 결과를 얻었습니다. 프로듀서 팀은 초당 50MB의 트래픽을 전송할 예정이며, 컨슈머 팀은 이를 즉시 소화해야 합니다.",
+    "question": "이 요구사항을 충족시키고 데이터 밀림 현상을 방지하기 위해, 토픽(Topic) 생성 시 할당해야 하는 **최소 파티션의 개수**는 몇 개로 산정하는 것이 타당합니까?",
+    "choices": [
+      "1개",
+      "3개",
+      "5개",
+      "10개"
+    ],
+    "correct_answer": "5개",
+    "explanation": "전체 타겟 쓰기 처리량(50MB/s)을 파티션 1개의 쓰기 한계(10MB/s)로 나누면 최소 5개의 파티션이 필요합니다. 읽기 측면(50MB / 20MB = 2.5개)보다 쓰기 측면의 병목 조건이 더 엄격하므로 큰 값인 5개를 선택해야 합니다."
+  },
+  {
+    "question_id": 195,
+    "job_role": "Big Data Engineer",
+    "difficulty": "university_level",
+    "question_type": "design_alternative_comparison",
+    "category": "Storage",
+    "subcategory": "Hardware",
+    "skills_required": ["HDFS", "Storage Infrastructure"],
+    "scenario": "온프레미스 Hadoop 클러스터의 데이터 노드(DataNode) 스토리지를 설계하고 있습니다. 저장할 데이터는 10PB에 달하는 대용량 시계열 로그이며, 주로 순차 쓰기(Sequential Write)와 순차 읽기(Sequential Read) 패턴이 지배적입니다.",
+    "question": "이러한 빅데이터 분석 부하의 특성을 고려할 때, 비싸고 빠른 SSD(Solid State Drive) 대신 전통적인 HDD(Hard Disk Drive)를 하둡 주 저장소로 사용하는 것이 가성비 면에서 매우 타당한 기술적 이유는 무엇입니까?",
+    "choices": [
+      "HDD가 SSD보다 전력 소모가 10배 적기 때문이다.",
+      "하둡 작업(HDFS I/O)은 주로 거대한 블록(예: 128MB) 단위의 순차적 디스크 I/O로 구성되므로, 랜덤 I/O 성능이 뛰어난 SSD의 장점이 크게 부각되지 않고 HDD로도 충분한 대역폭을 낼 수 있기 때문이다.",
+      "하둡 소프트웨어 자체가 SSD와 호환되지 않게 설계되었기 때문이다.",
+      "SSD는 데이터의 크기가 1GB를 넘으면 오류가 발생하기 때문이다."
+    ],
+    "correct_answer": "하둡 작업(HDFS I/O)은 주로 거대한 블록(예: 128MB) 단위의 순차적 디스크 I/O로 구성되므로, 랜덤 I/O 성능이 뛰어난 SSD의 장점이 크게 부각되지 않고 HDD로도 충분한 대역폭을 낼 수 있기 때문이다.",
+    "explanation": "HDFS는 작고 빈번한 랜덤 파일 접근이 아니라 대용량 데이터의 스트리밍(순차) 읽기/쓰기에 최적화되어 있습니다. 순차 I/O에서는 HDD도 충분히 높은 속도를 제공하므로, 페타바이트급 저장소에서는 용량 대비 가격이 저렴한 HDD 여러 대를 병렬로 묶어 대역폭을 확보하는 것이 표준입니다."
+  },
+  {
+    "question_id": 196,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "log_analysis",
+    "category": "Infrastructure",
+    "subcategory": "Hadoop",
+    "skills_required": ["HDFS", "Under-replicated Blocks", "Failover"],
+    "scenario": "운영 중인 HDFS 관리자(NameNode) 웹 UI와 알람 시스템에서 'Under-replicated blocks' (복제본이 부족한 블록) 지표가 갑자기 수백만 개로 급증했다는 경보가 울렸습니다.",
+    "question": "이러한 지표 급증 현상이 발생하는 가장 일반적이고 직접적인 원인은 무엇입니까?",
+    "choices": [
+      "사용자들이 데이터를 한꺼번에 너무 많이 삭제(Delete)했기 때문이다.",
+      "클러스터 내의 일부 데이터 노드(DataNode) 서버가 하드웨어 고장이나 네트워크 단절로 인해 통신이 끊어지면서 죽었기 때문이다.",
+      "메모리 부족으로 네임노드(NameNode)가 죽었기 때문이다.",
+      "데이터 복제 계수(Replication Factor)를 실수로 10에서 3으로 낮췄기 때문이다."
+    ],
+    "correct_answer": "클러스터 내의 일부 데이터 노드(DataNode) 서버가 하드웨어 고장이나 네트워크 단절로 인해 통신이 끊어지면서 죽었기 때문이다.",
+    "explanation": "데이터 노드가 죽으면 네임노드는 해당 노드에 저장되어 있던 데이터 블록들이 유실되었다고 판단하여 남은 가용 복제본의 수가 목표 복제 계수(예: 3)보다 작아진 'Under-replicated' 상태로 분류합니다. 이후 남은 노드들 사이에서 자동 복구(Re-replication) 작업이 시작됩니다."
+  },
+  {
+    "question_id": 197,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "scalability_planning",
+    "category": "Database",
+    "subcategory": "Elasticsearch",
+    "skills_required": ["Elasticsearch", "Sharding", "Capacity Planning"],
+    "scenario": "매일 1TB의 로그가 수집되는 Elasticsearch 클러스터가 있습니다. 한 번 생성된 인덱스의 물리적 파티션 단위인 기본 샤드(Primary Shard)의 개수는 생성 이후 변경할 수 없습니다.",
+    "question": "데이터 증가를 고려하여 샤드 개수를 결정할 때, 너무 적은 샤드(예: 1개)를 할당했을 때의 문제점과 너무 많은 샤드(Oversharding, 예: 1000개)를 할당했을 때 발생하는 문제점의 특징을 가장 잘 설명한 것은?",
+    "choices": [
+      "샤드가 적으면 데이터를 전혀 저장할 수 없고, 샤드가 많으면 쿼리 속도가 무한정 빨라진다.",
+      "샤드가 적으면 단일 노드에 데이터가 비대해져 클러스터 분산(Scale-out) 효과를 볼 수 없고, 샤드가 너무 많으면 각 샤드마다 발생하는 메모리 오버헤드와 마스터 노드의 메타데이터 관리 부하로 인해 클러스터 전체가 멈출 수 있다.",
+      "샤드 개수는 성능이나 용량과 전혀 무관하며 단지 데이터를 구분하는 논리적 이름일 뿐이다.",
+      "샤드가 적으면 마스터 노드가 죽고, 샤드가 많으면 데이터 노드가 자동으로 증설된다."
+    ],
+    "correct_answer": "샤드가 적으면 단일 노드에 데이터가 비대해져 클러스터 분산(Scale-out) 효과를 볼 수 없고, 샤드가 너무 많으면 각 샤드마다 발생하는 메모리 오버헤드와 마스터 노드의 메타데이터 관리 부하로 인해 클러스터 전체가 멈출 수 있다.",
+    "explanation": "Elasticsearch 샤드 설계의 핵심 트레이드오프입니다. 통상적으로 샤드 하나당 30~50GB의 데이터를 저장하도록 권장하며, 무분별한 오버샤딩은 클러스터의 'Cluster State' 크기를 키워 마스터 노드를 마비시키는 주된 장애 원인입니다."
+  },
+  {
+    "question_id": 198,
+    "job_role": "Big Data Engineer",
+    "difficulty": "middle_level",
+    "question_type": "root_cause_analysis",
+    "category": "Database",
+    "subcategory": "RDBMS Operations",
+    "skills_required": ["PostgreSQL", "Vacuum", "MVCC"],
+    "scenario": "PostgreSQL를 임시 저장소처럼 활용하여 매일 수억 건의 레코드를 삽입(INSERT)하고 지우는(DELETE) 작업을 반복하는 파이프라인이 있습니다. 어느 날부터 데이터베이스의 조회 속도가 급격히 느려지고 디스크 사용량이 줄어들지 않고 폭발적으로 증가했습니다.",
+    "question": "PostgreSQL의 MVCC(다중 버전 동시성 제어) 아키텍처 특성과 관련된 이 장애의 근본 원인과 조치 방법은 무엇입니까?",
+    "choices": [
+      "PostgreSQL은 데이터 삭제 시 공간을 즉시 회수하지 않고 '죽은 튜플(Dead Tuple)'로 남겨둔다. 자동 정리 기능인 Autovacuum이 제때 돌지 못해 발생한 테이블 비대화(Bloat) 현상이므로, Vacuuming 설정을 튜닝하거나 수동 VACUUM 작업을 실행해야 한다.",
+      "DB 연결 커넥션 수가 부족해서 생긴 문제이므로 Connection Pool을 증설해야 한다.",
+      "인덱스가 삭제되어 발생한 문제이므로 모든 컬럼에 새로 인덱스를 걸어준다.",
+      "PostgreSQL의 트랜잭션 로그(WAL)가 기록을 멈춘 것이므로 서비스를 재시작해야 한다."
+    ],
+    "correct_answer": "PostgreSQL은 데이터 삭제 시 공간을 즉시 회수하지 않고 '죽은 튜플(Dead Tuple)'로 남겨둔다. 자동 정리 기능인 Autovacuum이 제때 돌지 못해 발생한 테이블 비대화(Bloat) 현상이므로, Vacuuming 설정을 튜닝하거나 수동 VACUUM 작업을 실행해야 한다.",
+    "explanation": "PostgreSQL은 UPDATE나 DELETE 시 원본 데이터를 지우지 않고 새 버전을 씁니다. 오래된 쓸모없는 데이터를 치워주는(Vacuum) 작업이 방해받거나 지연되면, 쓸데없는 데이터 공간(Bloat)이 쌓여 풀 스캔 시간이 기하급수적으로 늘어납니다."
+  },
+  {
+    "question_id": 199,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "incident_response",
+    "category": "Security & Governance",
+    "subcategory": "Disaster Recovery",
+    "skills_required": ["AWS S3", "Object Lock", "Ransomware"],
+    "scenario": "악의적인 해커(또는 내부자)가 회사의 AWS 계정 관리자 권한을 탈취하여, 데이터 레이크 S3 버킷에 저장된 5년 치의 모든 데이터를 암호화(Ransomware)하고 기존 버전 관리 이력까지 삭제하겠다고 협박하고 있습니다.",
+    "question": "최상위 관리자(Root Account) 권한이 탈취당하는 극단적인 상황에서도, 법적 보존 기한이 끝날 때까지 그 누구도 물리적으로 원본 데이터를 덮어쓰거나 삭제할 수 없도록 원천 차단하는 가장 강력한 데이터 보호 기능은 무엇입니까?",
+    "choices": [
+      "S3 Versioning (버전 관리)",
+      "AWS IAM MFA (다중 인증)",
+      "S3 Object Lock (객체 잠금)의 Compliance Mode(규정 준수 모드)",
+      "AWS CloudTrail 로깅"
+    ],
+    "correct_answer": "S3 Object Lock (객체 잠금)의 Compliance Mode(규정 준수 모드)",
+    "explanation": "S3 Object Lock 기능 중 Compliance 모드를 설정하면, 지정된 보관 기간 동안에는 AWS의 최고 관리자(Root 사용자)라 할지라도 객체를 수정하거나 삭제할 수 없는 WORM(Write-Once-Read-Many) 모델이 강력하게 강제되어 랜섬웨어 공격으로부터 완벽히 보호받습니다."
+  },
+  {
+    "question_id": 200,
+    "job_role": "Big Data Engineer",
+    "difficulty": "senior_level",
+    "question_type": "architecture_decision",
+    "category": "Cloud & Analysis",
+    "subcategory": "Multi-Cloud Strategy",
+    "skills_required": ["Multi-Cloud", "Data Gravity", "Egress Cost"],
+    "scenario": "회사는 AWS의 S3와 EC2를 주로 사용하지만, 최근 인공지능 분석 성능이 뛰어난 GCP의 BigQuery와 Vertex AI를 부분적으로 도입하여 '멀티 클라우드(Multi-Cloud) 데이터 아키텍처'를 구성하려고 합니다.",
+    "question": "매일 수십 TB의 원천 데이터를 AWS에서 GCP로 이동시켜 분석하려 할 때, 아키텍트가 재무적 관점에서 직면하게 되는 가장 치명적인 문제(장벽)는 무엇이며 이를 지칭하는 클라우드 용어는 무엇입니까?",
+    "choices": [
+      "각 클라우드 벤더의 CPU 아키텍처가 달라 데이터가 깨지는 현상",
+      "데이터가 한곳에 방대하게 모일수록 다른 곳으로 이동시키기 어려워지는 '데이터 중력(Data Gravity)' 현상과, 데이터를 외부 인터넷으로 내보낼 때 벤더가 부과하는 막대한 '데이터 송신(Egress) 비용'",
+      "클라우드 간에 시간 동기화(NTP)가 맞지 않아 데이터 타임스탬프가 꼬이는 현상",
+      "GCP에서 AWS의 계정 비밀번호를 자동으로 초기화하는 현상"
+    ],
+    "correct_answer": "데이터가 한곳에 방대하게 모일수록 다른 곳으로 이동시키기 어려워지는 '데이터 중력(Data Gravity)' 현상과, 데이터를 외부 인터넷으로 내보낼 때 벤더가 부과하는 막대한 '데이터 송신(Egress) 비용'",
+    "explanation": "퍼블릭 클라우드 제공자들은 자사로 데이터를 들여오는(Ingress) 비용은 무료로 하지만, 외부 클라우드로 내보내는(Egress) 네트워크 대역폭 비용은 매우 비싸게 책정합니다. 대규모 데이터가 한곳에 쌓이면 다른 플랫폼으로 옮기는 것이 재무적으로 불가능해지는 '데이터 중력'이 멀티 클라우드 도입의 가장 큰 현실적 장벽입니다."
+  }
+]
