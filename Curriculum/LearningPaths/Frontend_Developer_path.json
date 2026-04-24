@@ -1,0 +1,1626 @@
+{
+  "metadata": {
+    "job_role": "Frontend_Developer",
+    "source_file": "Frontend_Developer.json",
+    "total_problems": 55,
+    "difficulty_distribution": {
+      "senior_level": 27,
+      "middle_level": 14,
+      "junior_level": 7,
+      "university_level": 7
+    },
+    "cluster_count": 53,
+    "edge_count": 17,
+    "isolated_problem_count": 40,
+    "parameters": {
+      "skill_weight": 0.6,
+      "scenario_weight": 0.4,
+      "min_combined_score": 0.15,
+      "max_prereqs_per_target": 3,
+      "same_category_bonus": 0.1
+    }
+  },
+  "clusters": [
+    {
+      "cluster_id": "React__Hooks",
+      "category": "React",
+      "subcategory": "Hooks",
+      "size": 2,
+      "question_ids": [
+        3,
+        23
+      ],
+      "common_skills": [
+        "React",
+        "useEffect",
+        "Memory Management",
+        "Race Condition"
+      ]
+    },
+    {
+      "cluster_id": "React__State Management",
+      "category": "React",
+      "subcategory": "State Management",
+      "size": 2,
+      "question_ids": [
+        12,
+        26
+      ],
+      "common_skills": [
+        "React",
+        "Immutability",
+        "State Management",
+        "Redux",
+        "Zustand"
+      ]
+    },
+    {
+      "cluster_id": "API__GraphQL vs REST",
+      "category": "API",
+      "subcategory": "GraphQL vs REST",
+      "size": 1,
+      "question_ids": [
+        30
+      ],
+      "common_skills": [
+        "GraphQL",
+        "REST",
+        "Over-fetching"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__BFF (Backend for Frontend)",
+      "category": "Architecture",
+      "subcategory": "BFF (Backend for Frontend)",
+      "size": 1,
+      "question_ids": [
+        31
+      ],
+      "common_skills": [
+        "BFF",
+        "Microservices",
+        "API Gateway"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Collaborative Editing",
+      "category": "Architecture",
+      "subcategory": "Collaborative Editing",
+      "size": 1,
+      "question_ids": [
+        55
+      ],
+      "common_skills": [
+        "CRDT",
+        "Operational Transformation",
+        "WebSockets",
+        "Distributed Systems"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Micro Frontends",
+      "category": "Architecture",
+      "subcategory": "Micro Frontends",
+      "size": 1,
+      "question_ids": [
+        1
+      ],
+      "common_skills": [
+        "React",
+        "Webpack Module Federation",
+        "CDN",
+        "CI/CD"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__PWA",
+      "category": "Architecture",
+      "subcategory": "PWA",
+      "size": 1,
+      "question_ids": [
+        45
+      ],
+      "common_skills": [
+        "Service Workers",
+        "PWA",
+        "Offline-first"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Rendering Strategies",
+      "category": "Architecture",
+      "subcategory": "Rendering Strategies",
+      "size": 1,
+      "question_ids": [
+        32
+      ],
+      "common_skills": [
+        "Next.js",
+        "SSR",
+        "SSG",
+        "ISR",
+        "SEO"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Repository Management",
+      "category": "Architecture",
+      "subcategory": "Repository Management",
+      "size": 1,
+      "question_ids": [
+        33
+      ],
+      "common_skills": [
+        "Monorepo",
+        "Turborepo",
+        "Yarn Workspaces",
+        "CI/CD"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__SEO & Rendering",
+      "category": "Architecture",
+      "subcategory": "SEO & Rendering",
+      "size": 1,
+      "question_ids": [
+        53
+      ],
+      "common_skills": [
+        "Dynamic Rendering",
+        "Puppeteer",
+        "SEO",
+        "CSR"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Web Components",
+      "category": "Architecture",
+      "subcategory": "Web Components",
+      "size": 1,
+      "question_ids": [
+        47
+      ],
+      "common_skills": [
+        "Web Components",
+        "Micro Frontends",
+        "Framework Agnostic"
+      ]
+    },
+    {
+      "cluster_id": "Authentication__JWT",
+      "category": "Authentication",
+      "subcategory": "JWT",
+      "size": 1,
+      "question_ids": [
+        16
+      ],
+      "common_skills": [
+        "JWT",
+        "Axios Interceptors",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Build System__Tree Shaking",
+      "category": "Build System",
+      "subcategory": "Tree Shaking",
+      "size": 1,
+      "question_ids": [
+        25
+      ],
+      "common_skills": [
+        "Webpack",
+        "Tree Shaking",
+        "ES Modules"
+      ]
+    },
+    {
+      "cluster_id": "Build System__Webpack",
+      "category": "Build System",
+      "subcategory": "Webpack",
+      "size": 1,
+      "question_ids": [
+        14
+      ],
+      "common_skills": [
+        "Webpack",
+        "Optimization"
+      ]
+    },
+    {
+      "cluster_id": "CSS__Box Model",
+      "category": "CSS",
+      "subcategory": "Box Model",
+      "size": 1,
+      "question_ids": [
+        8
+      ],
+      "common_skills": [
+        "CSS Box Model",
+        "Layout"
+      ]
+    },
+    {
+      "cluster_id": "HTML__Accessibility",
+      "category": "HTML",
+      "subcategory": "Accessibility",
+      "size": 1,
+      "question_ids": [
+        17
+      ],
+      "common_skills": [
+        "Web Accessibility (a11y)",
+        "HTML"
+      ]
+    },
+    {
+      "cluster_id": "Infrastructure__Bandwidth Optimization",
+      "category": "Infrastructure",
+      "subcategory": "Bandwidth Optimization",
+      "size": 1,
+      "question_ids": [
+        52
+      ],
+      "common_skills": [
+        "Compression",
+        "Brotli",
+        "Image Optimization",
+        "CDN"
+      ]
+    },
+    {
+      "cluster_id": "Infrastructure__Cloud Costs",
+      "category": "Infrastructure",
+      "subcategory": "Cloud Costs",
+      "size": 1,
+      "question_ids": [
+        39
+      ],
+      "common_skills": [
+        "SSR Cost",
+        "Cloud Architecture",
+        "Next.js"
+      ]
+    },
+    {
+      "cluster_id": "JavaScript__DOM API",
+      "category": "JavaScript",
+      "subcategory": "DOM API",
+      "size": 1,
+      "question_ids": [
+        4
+      ],
+      "common_skills": [
+        "JavaScript",
+        "Event Handling"
+      ]
+    },
+    {
+      "cluster_id": "JavaScript__Event Handling",
+      "category": "JavaScript",
+      "subcategory": "Event Handling",
+      "size": 1,
+      "question_ids": [
+        20
+      ],
+      "common_skills": [
+        "Debounce",
+        "Throttle",
+        "API Optimization"
+      ]
+    },
+    {
+      "cluster_id": "JavaScript__Event Loop",
+      "category": "JavaScript",
+      "subcategory": "Event Loop",
+      "size": 1,
+      "question_ids": [
+        6
+      ],
+      "common_skills": [
+        "JavaScript",
+        "Event Loop",
+        "Asynchronous Programming"
+      ]
+    },
+    {
+      "cluster_id": "JavaScript__Memory Management",
+      "category": "JavaScript",
+      "subcategory": "Memory Management",
+      "size": 1,
+      "question_ids": [
+        18
+      ],
+      "common_skills": [
+        "JavaScript",
+        "Memory Leak",
+        "Closures",
+        "SPA"
+      ]
+    },
+    {
+      "cluster_id": "JavaScript__Promise",
+      "category": "JavaScript",
+      "subcategory": "Promise",
+      "size": 1,
+      "question_ids": [
+        9
+      ],
+      "common_skills": [
+        "JavaScript",
+        "Promise API"
+      ]
+    },
+    {
+      "cluster_id": "Network__HTTP",
+      "category": "Network",
+      "subcategory": "HTTP",
+      "size": 1,
+      "question_ids": [
+        11
+      ],
+      "common_skills": [
+        "HTTP Methods",
+        "REST API"
+      ]
+    },
+    {
+      "cluster_id": "Network__Idempotency",
+      "category": "Network",
+      "subcategory": "Idempotency",
+      "size": 1,
+      "question_ids": [
+        43
+      ],
+      "common_skills": [
+        "Idempotency",
+        "API Integration",
+        "Payment Systems"
+      ]
+    },
+    {
+      "cluster_id": "Network__Real-time Communication",
+      "category": "Network",
+      "subcategory": "Real-time Communication",
+      "size": 1,
+      "question_ids": [
+        34
+      ],
+      "common_skills": [
+        "WebSockets",
+        "SSE",
+        "Polling",
+        "Network"
+      ]
+    },
+    {
+      "cluster_id": "Network__Security",
+      "category": "Network",
+      "subcategory": "Security",
+      "size": 1,
+      "question_ids": [
+        7
+      ],
+      "common_skills": [
+        "CORS",
+        "HTTP Headers",
+        "Browser Security"
+      ]
+    },
+    {
+      "cluster_id": "Operations__CDN",
+      "category": "Operations",
+      "subcategory": "CDN",
+      "size": 1,
+      "question_ids": [
+        36
+      ],
+      "common_skills": [
+        "CDN",
+        "Fallback Strategy",
+        "High Availability"
+      ]
+    },
+    {
+      "cluster_id": "Operations__DNS Fallback",
+      "category": "Operations",
+      "subcategory": "DNS Fallback",
+      "size": 1,
+      "question_ids": [
+        49
+      ],
+      "common_skills": [
+        "DNS",
+        "Network Resilience",
+        "Frontend Architecting"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Deployment Strategies",
+      "category": "Operations",
+      "subcategory": "Deployment Strategies",
+      "size": 1,
+      "question_ids": [
+        50
+      ],
+      "common_skills": [
+        "CI/CD",
+        "Rollback",
+        "Blue/Green Deployment"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Error Handling & Resilience",
+      "category": "Operations",
+      "subcategory": "Error Handling & Resilience",
+      "size": 1,
+      "question_ids": [
+        5
+      ],
+      "common_skills": [
+        "Frontend Error Handling",
+        "Circuit Breaker",
+        "UX",
+        "Network"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Frontend Monitoring",
+      "category": "Operations",
+      "subcategory": "Frontend Monitoring",
+      "size": 1,
+      "question_ids": [
+        41
+      ],
+      "common_skills": [
+        "Error Tracking",
+        "Sentry",
+        "Source Maps"
+      ]
+    },
+    {
+      "cluster_id": "Operations__RUM vs Synthetic",
+      "category": "Operations",
+      "subcategory": "RUM vs Synthetic",
+      "size": 1,
+      "question_ids": [
+        54
+      ],
+      "common_skills": [
+        "RUM",
+        "Synthetic Monitoring",
+        "Web Vitals"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Traffic Spike",
+      "category": "Operations",
+      "subcategory": "Traffic Spike",
+      "size": 1,
+      "question_ids": [
+        37
+      ],
+      "common_skills": [
+        "Retry Logic",
+        "Jitter",
+        "API Management"
+      ]
+    },
+    {
+      "cluster_id": "Performance__Core Web Vitals",
+      "category": "Performance",
+      "subcategory": "Core Web Vitals",
+      "size": 1,
+      "question_ids": [
+        2
+      ],
+      "common_skills": [
+        "Browser Rendering",
+        "Network",
+        "Image Optimization"
+      ]
+    },
+    {
+      "cluster_id": "Performance__Lighthouse",
+      "category": "Performance",
+      "subcategory": "Lighthouse",
+      "size": 1,
+      "question_ids": [
+        24
+      ],
+      "common_skills": [
+        "Lighthouse",
+        "Web Performance"
+      ]
+    },
+    {
+      "cluster_id": "Performance__Metrics",
+      "category": "Performance",
+      "subcategory": "Metrics",
+      "size": 1,
+      "question_ids": [
+        21
+      ],
+      "common_skills": [
+        "Web Vitals",
+        "TTI",
+        "TBT",
+        "JavaScript Parsing"
+      ]
+    },
+    {
+      "cluster_id": "Performance__Web Workers",
+      "category": "Performance",
+      "subcategory": "Web Workers",
+      "size": 1,
+      "question_ids": [
+        40
+      ],
+      "common_skills": [
+        "Web Workers",
+        "Multithreading",
+        "Performance"
+      ]
+    },
+    {
+      "cluster_id": "Performance__WebAssembly",
+      "category": "Performance",
+      "subcategory": "WebAssembly",
+      "size": 1,
+      "question_ids": [
+        46
+      ],
+      "common_skills": [
+        "WebAssembly (Wasm)",
+        "Performance",
+        "JavaScript Execution"
+      ]
+    },
+    {
+      "cluster_id": "QA__Testing",
+      "category": "QA",
+      "subcategory": "Testing",
+      "size": 1,
+      "question_ids": [
+        28
+      ],
+      "common_skills": [
+        "Unit Test",
+        "E2E Test",
+        "Jest",
+        "Cypress"
+      ]
+    },
+    {
+      "cluster_id": "React__Architecture",
+      "category": "React",
+      "subcategory": "Architecture",
+      "size": 1,
+      "question_ids": [
+        29
+      ],
+      "common_skills": [
+        "React",
+        "Refactoring",
+        "Custom Hooks"
+      ]
+    },
+    {
+      "cluster_id": "React__Concurrent Features",
+      "category": "React",
+      "subcategory": "Concurrent Features",
+      "size": 1,
+      "question_ids": [
+        42
+      ],
+      "common_skills": [
+        "React 18",
+        "useTransition",
+        "useDeferredValue"
+      ]
+    },
+    {
+      "cluster_id": "React__Optimization",
+      "category": "React",
+      "subcategory": "Optimization",
+      "size": 1,
+      "question_ids": [
+        27
+      ],
+      "common_skills": [
+        "React",
+        "useMemo",
+        "useCallback"
+      ]
+    },
+    {
+      "cluster_id": "React__Rendering",
+      "category": "React",
+      "subcategory": "Rendering",
+      "size": 1,
+      "question_ids": [
+        10
+      ],
+      "common_skills": [
+        "React",
+        "Virtual DOM"
+      ]
+    },
+    {
+      "cluster_id": "Security__CSP (Content Security Policy)",
+      "category": "Security",
+      "subcategory": "CSP (Content Security Policy)",
+      "size": 1,
+      "question_ids": [
+        51
+      ],
+      "common_skills": [
+        "CSP",
+        "Security Headers",
+        "Web Security"
+      ]
+    },
+    {
+      "cluster_id": "Security__CSRF & Cookies",
+      "category": "Security",
+      "subcategory": "CSRF & Cookies",
+      "size": 1,
+      "question_ids": [
+        38
+      ],
+      "common_skills": [
+        "CSRF",
+        "Cookies",
+        "SameSite",
+        "Authentication"
+      ]
+    },
+    {
+      "cluster_id": "Security__Supply Chain Attack",
+      "category": "Security",
+      "subcategory": "Supply Chain Attack",
+      "size": 1,
+      "question_ids": [
+        48
+      ],
+      "common_skills": [
+        "npm",
+        "Security",
+        "Supply Chain Attack"
+      ]
+    },
+    {
+      "cluster_id": "Security__XSS",
+      "category": "Security",
+      "subcategory": "XSS",
+      "size": 1,
+      "question_ids": [
+        35
+      ],
+      "common_skills": [
+        "Security",
+        "XSS",
+        "React",
+        "dangerouslySetInnerHTML"
+      ]
+    },
+    {
+      "cluster_id": "Storage__Client-side Storage",
+      "category": "Storage",
+      "subcategory": "Client-side Storage",
+      "size": 1,
+      "question_ids": [
+        22
+      ],
+      "common_skills": [
+        "IndexedDB",
+        "LocalStorage",
+        "Client Storage"
+      ]
+    },
+    {
+      "cluster_id": "Tooling__NPM",
+      "category": "Tooling",
+      "subcategory": "NPM",
+      "size": 1,
+      "question_ids": [
+        13
+      ],
+      "common_skills": [
+        "NPM",
+        "Dependency Management"
+      ]
+    },
+    {
+      "cluster_id": "UI/UX__Performance",
+      "category": "UI/UX",
+      "subcategory": "Performance",
+      "size": 1,
+      "question_ids": [
+        19
+      ],
+      "common_skills": [
+        "Virtual DOM",
+        "Virtualization",
+        "Intersection Observer"
+      ]
+    },
+    {
+      "cluster_id": "UX/UI__Optimistic UI",
+      "category": "UX/UI",
+      "subcategory": "Optimistic UI",
+      "size": 1,
+      "question_ids": [
+        44
+      ],
+      "common_skills": [
+        "Optimistic Updates",
+        "UX",
+        "State Management"
+      ]
+    },
+    {
+      "cluster_id": "Version Control__Git",
+      "category": "Version Control",
+      "subcategory": "Git",
+      "size": 1,
+      "question_ids": [
+        15
+      ],
+      "common_skills": [
+        "Git",
+        "Package Management"
+      ]
+    }
+  ],
+  "dependency_graph": {
+    "nodes": [
+      {
+        "question_id": 1,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Micro Frontends",
+        "skills_required": [
+          "React",
+          "Webpack Module Federation",
+          "CDN",
+          "CI/CD"
+        ]
+      },
+      {
+        "question_id": 2,
+        "difficulty": "middle_level",
+        "category": "Performance",
+        "subcategory": "Core Web Vitals",
+        "skills_required": [
+          "Browser Rendering",
+          "Network",
+          "Image Optimization"
+        ]
+      },
+      {
+        "question_id": 3,
+        "difficulty": "junior_level",
+        "category": "React",
+        "subcategory": "Hooks",
+        "skills_required": [
+          "React",
+          "useEffect",
+          "Memory Management"
+        ]
+      },
+      {
+        "question_id": 4,
+        "difficulty": "university_level",
+        "category": "JavaScript",
+        "subcategory": "DOM API",
+        "skills_required": [
+          "JavaScript",
+          "Event Handling"
+        ]
+      },
+      {
+        "question_id": 5,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Error Handling & Resilience",
+        "skills_required": [
+          "Frontend Error Handling",
+          "Circuit Breaker",
+          "UX",
+          "Network"
+        ]
+      },
+      {
+        "question_id": 6,
+        "difficulty": "university_level",
+        "category": "JavaScript",
+        "subcategory": "Event Loop",
+        "skills_required": [
+          "JavaScript",
+          "Event Loop",
+          "Asynchronous Programming"
+        ]
+      },
+      {
+        "question_id": 7,
+        "difficulty": "university_level",
+        "category": "Network",
+        "subcategory": "Security",
+        "skills_required": [
+          "CORS",
+          "HTTP Headers",
+          "Browser Security"
+        ]
+      },
+      {
+        "question_id": 8,
+        "difficulty": "university_level",
+        "category": "CSS",
+        "subcategory": "Box Model",
+        "skills_required": [
+          "CSS Box Model",
+          "Layout"
+        ]
+      },
+      {
+        "question_id": 9,
+        "difficulty": "university_level",
+        "category": "JavaScript",
+        "subcategory": "Promise",
+        "skills_required": [
+          "JavaScript",
+          "Promise API"
+        ]
+      },
+      {
+        "question_id": 10,
+        "difficulty": "university_level",
+        "category": "React",
+        "subcategory": "Rendering",
+        "skills_required": [
+          "React",
+          "Virtual DOM"
+        ]
+      },
+      {
+        "question_id": 11,
+        "difficulty": "university_level",
+        "category": "Network",
+        "subcategory": "HTTP",
+        "skills_required": [
+          "HTTP Methods",
+          "REST API"
+        ]
+      },
+      {
+        "question_id": 12,
+        "difficulty": "junior_level",
+        "category": "React",
+        "subcategory": "State Management",
+        "skills_required": [
+          "React",
+          "Immutability"
+        ]
+      },
+      {
+        "question_id": 13,
+        "difficulty": "junior_level",
+        "category": "Tooling",
+        "subcategory": "NPM",
+        "skills_required": [
+          "NPM",
+          "Dependency Management"
+        ]
+      },
+      {
+        "question_id": 14,
+        "difficulty": "junior_level",
+        "category": "Build System",
+        "subcategory": "Webpack",
+        "skills_required": [
+          "Webpack",
+          "Optimization"
+        ]
+      },
+      {
+        "question_id": 15,
+        "difficulty": "junior_level",
+        "category": "Version Control",
+        "subcategory": "Git",
+        "skills_required": [
+          "Git",
+          "Package Management"
+        ]
+      },
+      {
+        "question_id": 16,
+        "difficulty": "junior_level",
+        "category": "Authentication",
+        "subcategory": "JWT",
+        "skills_required": [
+          "JWT",
+          "Axios Interceptors",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 17,
+        "difficulty": "junior_level",
+        "category": "HTML",
+        "subcategory": "Accessibility",
+        "skills_required": [
+          "Web Accessibility (a11y)",
+          "HTML"
+        ]
+      },
+      {
+        "question_id": 18,
+        "difficulty": "middle_level",
+        "category": "JavaScript",
+        "subcategory": "Memory Management",
+        "skills_required": [
+          "JavaScript",
+          "Memory Leak",
+          "Closures",
+          "SPA"
+        ]
+      },
+      {
+        "question_id": 19,
+        "difficulty": "middle_level",
+        "category": "UI/UX",
+        "subcategory": "Performance",
+        "skills_required": [
+          "Virtual DOM",
+          "Virtualization",
+          "Intersection Observer"
+        ]
+      },
+      {
+        "question_id": 20,
+        "difficulty": "middle_level",
+        "category": "JavaScript",
+        "subcategory": "Event Handling",
+        "skills_required": [
+          "Debounce",
+          "Throttle",
+          "API Optimization"
+        ]
+      },
+      {
+        "question_id": 21,
+        "difficulty": "middle_level",
+        "category": "Performance",
+        "subcategory": "Metrics",
+        "skills_required": [
+          "Web Vitals",
+          "TTI",
+          "TBT",
+          "JavaScript Parsing"
+        ]
+      },
+      {
+        "question_id": 22,
+        "difficulty": "middle_level",
+        "category": "Storage",
+        "subcategory": "Client-side Storage",
+        "skills_required": [
+          "IndexedDB",
+          "LocalStorage",
+          "Client Storage"
+        ]
+      },
+      {
+        "question_id": 23,
+        "difficulty": "middle_level",
+        "category": "React",
+        "subcategory": "Hooks",
+        "skills_required": [
+          "React",
+          "useEffect",
+          "Race Condition"
+        ]
+      },
+      {
+        "question_id": 24,
+        "difficulty": "middle_level",
+        "category": "Performance",
+        "subcategory": "Lighthouse",
+        "skills_required": [
+          "Lighthouse",
+          "Web Performance"
+        ]
+      },
+      {
+        "question_id": 25,
+        "difficulty": "middle_level",
+        "category": "Build System",
+        "subcategory": "Tree Shaking",
+        "skills_required": [
+          "Webpack",
+          "Tree Shaking",
+          "ES Modules"
+        ]
+      },
+      {
+        "question_id": 26,
+        "difficulty": "middle_level",
+        "category": "React",
+        "subcategory": "State Management",
+        "skills_required": [
+          "State Management",
+          "Redux",
+          "Zustand",
+          "Context API"
+        ]
+      },
+      {
+        "question_id": 27,
+        "difficulty": "middle_level",
+        "category": "React",
+        "subcategory": "Optimization",
+        "skills_required": [
+          "React",
+          "useMemo",
+          "useCallback"
+        ]
+      },
+      {
+        "question_id": 28,
+        "difficulty": "middle_level",
+        "category": "QA",
+        "subcategory": "Testing",
+        "skills_required": [
+          "Unit Test",
+          "E2E Test",
+          "Jest",
+          "Cypress"
+        ]
+      },
+      {
+        "question_id": 29,
+        "difficulty": "middle_level",
+        "category": "React",
+        "subcategory": "Architecture",
+        "skills_required": [
+          "React",
+          "Refactoring",
+          "Custom Hooks"
+        ]
+      },
+      {
+        "question_id": 30,
+        "difficulty": "middle_level",
+        "category": "API",
+        "subcategory": "GraphQL vs REST",
+        "skills_required": [
+          "GraphQL",
+          "REST",
+          "Over-fetching"
+        ]
+      },
+      {
+        "question_id": 31,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "BFF (Backend for Frontend)",
+        "skills_required": [
+          "BFF",
+          "Microservices",
+          "API Gateway"
+        ]
+      },
+      {
+        "question_id": 32,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Rendering Strategies",
+        "skills_required": [
+          "Next.js",
+          "SSR",
+          "SSG",
+          "ISR",
+          "SEO"
+        ]
+      },
+      {
+        "question_id": 33,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Repository Management",
+        "skills_required": [
+          "Monorepo",
+          "Turborepo",
+          "Yarn Workspaces",
+          "CI/CD"
+        ]
+      },
+      {
+        "question_id": 34,
+        "difficulty": "senior_level",
+        "category": "Network",
+        "subcategory": "Real-time Communication",
+        "skills_required": [
+          "WebSockets",
+          "SSE",
+          "Polling",
+          "Network"
+        ]
+      },
+      {
+        "question_id": 35,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "XSS",
+        "skills_required": [
+          "Security",
+          "XSS",
+          "React",
+          "dangerouslySetInnerHTML"
+        ]
+      },
+      {
+        "question_id": 36,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "CDN",
+        "skills_required": [
+          "CDN",
+          "Fallback Strategy",
+          "High Availability"
+        ]
+      },
+      {
+        "question_id": 37,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Traffic Spike",
+        "skills_required": [
+          "Retry Logic",
+          "Jitter",
+          "API Management"
+        ]
+      },
+      {
+        "question_id": 38,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "CSRF & Cookies",
+        "skills_required": [
+          "CSRF",
+          "Cookies",
+          "SameSite",
+          "Authentication"
+        ]
+      },
+      {
+        "question_id": 39,
+        "difficulty": "senior_level",
+        "category": "Infrastructure",
+        "subcategory": "Cloud Costs",
+        "skills_required": [
+          "SSR Cost",
+          "Cloud Architecture",
+          "Next.js"
+        ]
+      },
+      {
+        "question_id": 40,
+        "difficulty": "senior_level",
+        "category": "Performance",
+        "subcategory": "Web Workers",
+        "skills_required": [
+          "Web Workers",
+          "Multithreading",
+          "Performance"
+        ]
+      },
+      {
+        "question_id": 41,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Frontend Monitoring",
+        "skills_required": [
+          "Error Tracking",
+          "Sentry",
+          "Source Maps"
+        ]
+      },
+      {
+        "question_id": 42,
+        "difficulty": "senior_level",
+        "category": "React",
+        "subcategory": "Concurrent Features",
+        "skills_required": [
+          "React 18",
+          "useTransition",
+          "useDeferredValue"
+        ]
+      },
+      {
+        "question_id": 43,
+        "difficulty": "senior_level",
+        "category": "Network",
+        "subcategory": "Idempotency",
+        "skills_required": [
+          "Idempotency",
+          "API Integration",
+          "Payment Systems"
+        ]
+      },
+      {
+        "question_id": 44,
+        "difficulty": "senior_level",
+        "category": "UX/UI",
+        "subcategory": "Optimistic UI",
+        "skills_required": [
+          "Optimistic Updates",
+          "UX",
+          "State Management"
+        ]
+      },
+      {
+        "question_id": 45,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "PWA",
+        "skills_required": [
+          "Service Workers",
+          "PWA",
+          "Offline-first"
+        ]
+      },
+      {
+        "question_id": 46,
+        "difficulty": "senior_level",
+        "category": "Performance",
+        "subcategory": "WebAssembly",
+        "skills_required": [
+          "WebAssembly (Wasm)",
+          "Performance",
+          "JavaScript Execution"
+        ]
+      },
+      {
+        "question_id": 47,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Web Components",
+        "skills_required": [
+          "Web Components",
+          "Micro Frontends",
+          "Framework Agnostic"
+        ]
+      },
+      {
+        "question_id": 48,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "Supply Chain Attack",
+        "skills_required": [
+          "npm",
+          "Security",
+          "Supply Chain Attack"
+        ]
+      },
+      {
+        "question_id": 49,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "DNS Fallback",
+        "skills_required": [
+          "DNS",
+          "Network Resilience",
+          "Frontend Architecting"
+        ]
+      },
+      {
+        "question_id": 50,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Deployment Strategies",
+        "skills_required": [
+          "CI/CD",
+          "Rollback",
+          "Blue/Green Deployment"
+        ]
+      },
+      {
+        "question_id": 51,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "CSP (Content Security Policy)",
+        "skills_required": [
+          "CSP",
+          "Security Headers",
+          "Web Security"
+        ]
+      },
+      {
+        "question_id": 52,
+        "difficulty": "senior_level",
+        "category": "Infrastructure",
+        "subcategory": "Bandwidth Optimization",
+        "skills_required": [
+          "Compression",
+          "Brotli",
+          "Image Optimization",
+          "CDN"
+        ]
+      },
+      {
+        "question_id": 53,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "SEO & Rendering",
+        "skills_required": [
+          "Dynamic Rendering",
+          "Puppeteer",
+          "SEO",
+          "CSR"
+        ]
+      },
+      {
+        "question_id": 54,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "RUM vs Synthetic",
+        "skills_required": [
+          "RUM",
+          "Synthetic Monitoring",
+          "Web Vitals"
+        ]
+      },
+      {
+        "question_id": 55,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Collaborative Editing",
+        "skills_required": [
+          "CRDT",
+          "Operational Transformation",
+          "WebSockets",
+          "Distributed Systems"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 3,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['react'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(React)"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 12,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['react'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(React)"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 18,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.22,
+        "Logic": "공통 스킬 ['javascript'] (Jaccard=0.20) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(JavaScript)"
+      },
+      {
+        "Preceding_ID": 9,
+        "Target_ID": 18,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.22,
+        "Logic": "공통 스킬 ['javascript'] (Jaccard=0.20) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(JavaScript)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 18,
+        "skill_overlap": 0.1667,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['javascript'] (Jaccard=0.17) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(JavaScript)"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 19,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['virtual dom'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 3,
+        "Target_ID": 23,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0291,
+        "combined_score": 0.4116,
+        "Logic": "공통 스킬 ['react', 'useeffect'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 junior_level → middle_level | 동일 카테고리(React)"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 23,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['react'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(React)"
+      },
+      {
+        "Preceding_ID": 12,
+        "Target_ID": 23,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['react'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(React)"
+      },
+      {
+        "Preceding_ID": 14,
+        "Target_ID": 25,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0234,
+        "combined_score": 0.2594,
+        "Logic": "공통 스킬 ['webpack'] (Jaccard=0.25) | 시나리오 유사도=0.02 | 난이도 junior_level → middle_level | 동일 카테고리(Build System)"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 27,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0365,
+        "combined_score": 0.2646,
+        "Logic": "공통 스킬 ['react'] (Jaccard=0.25) | 시나리오 유사도=0.04 | 난이도 university_level → middle_level | 동일 카테고리(React)"
+      },
+      {
+        "Preceding_ID": 12,
+        "Target_ID": 27,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['react'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(React)"
+      },
+      {
+        "Preceding_ID": 3,
+        "Target_ID": 27,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.22,
+        "Logic": "공통 스킬 ['react'] (Jaccard=0.20) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(React)"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 29,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['react'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(React)"
+      },
+      {
+        "Preceding_ID": 12,
+        "Target_ID": 29,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['react'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(React)"
+      },
+      {
+        "Preceding_ID": 3,
+        "Target_ID": 29,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.22,
+        "Logic": "공통 스킬 ['react'] (Jaccard=0.20) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(React)"
+      },
+      {
+        "Preceding_ID": 13,
+        "Target_ID": 48,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0263,
+        "combined_score": 0.1605,
+        "Logic": "공통 스킬 ['npm'] (Jaccard=0.25) | 시나리오 유사도=0.03 | 난이도 junior_level → senior_level"
+      }
+    ]
+  },
+  "ordered_path": [
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    3,
+    12,
+    2,
+    20,
+    21,
+    22,
+    24,
+    26,
+    28,
+    30,
+    19,
+    25,
+    18,
+    23,
+    27,
+    29,
+    1,
+    5,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    48
+  ],
+  "isolated_problems": [
+    1,
+    2,
+    5,
+    7,
+    8,
+    11,
+    15,
+    16,
+    17,
+    20,
+    21,
+    22,
+    24,
+    26,
+    28,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55
+  ]
+}

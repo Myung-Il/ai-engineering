@@ -1,0 +1,6184 @@
+{
+  "metadata": {
+    "job_role": "Blockchain_Engineer",
+    "source_file": "Blockchain_Engineer.json",
+    "total_problems": 200,
+    "difficulty_distribution": {
+      "university_level": 25,
+      "junior_level": 25,
+      "middle_level": 50,
+      "senior_level": 100
+    },
+    "cluster_count": 138,
+    "edge_count": 261,
+    "isolated_problem_count": 42,
+    "parameters": {
+      "skill_weight": 0.6,
+      "scenario_weight": 0.4,
+      "min_combined_score": 0.15,
+      "max_prereqs_per_target": 3,
+      "same_category_bonus": 0.1
+    }
+  },
+  "clusters": [
+    {
+      "cluster_id": "Smart Contract__Gas",
+      "category": "Smart Contract",
+      "subcategory": "Gas",
+      "size": 8,
+      "question_ids": [
+        29,
+        57,
+        69,
+        75,
+        115,
+        146,
+        168,
+        175
+      ],
+      "common_skills": [
+        "Solidity",
+        "Yul",
+        "Solidity Optimization",
+        "Gas Optimization",
+        "Data Structure"
+      ]
+    },
+    {
+      "cluster_id": "Smart Contract__Solidity",
+      "category": "Smart Contract",
+      "subcategory": "Solidity",
+      "size": 7,
+      "question_ids": [
+        6,
+        7,
+        17,
+        33,
+        36,
+        91,
+        187
+      ],
+      "common_skills": [
+        "Solidity",
+        "Gas Optimization",
+        "Clean Code",
+        "Code Review",
+        "Error Handling"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Node",
+      "category": "Operations",
+      "subcategory": "Node",
+      "size": 6,
+      "question_ids": [
+        8,
+        31,
+        58,
+        48,
+        65,
+        149
+      ],
+      "common_skills": [
+        "Geth",
+        "Trie",
+        "Linux",
+        "Prometheus",
+        "Grafana"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Transaction",
+      "category": "Operations",
+      "subcategory": "Transaction",
+      "size": 6,
+      "question_ids": [
+        27,
+        49,
+        93,
+        109,
+        147,
+        189
+      ],
+      "common_skills": [
+        "Nonce Management",
+        "Nonce",
+        "Gas Limit",
+        "Gas Management",
+        "Scripting"
+      ]
+    },
+    {
+      "cluster_id": "Security__Smart Contract",
+      "category": "Security",
+      "subcategory": "Smart Contract",
+      "size": 6,
+      "question_ids": [
+        25,
+        44,
+        74,
+        129,
+        170,
+        174
+      ],
+      "common_skills": [
+        "Security",
+        "Oracle",
+        "Solidity",
+        "Pause",
+        "Forta"
+      ]
+    },
+    {
+      "cluster_id": "Smart Contract__DeFi",
+      "category": "Smart Contract",
+      "subcategory": "DeFi",
+      "size": 6,
+      "question_ids": [
+        14,
+        107,
+        151,
+        171,
+        173,
+        184
+      ],
+      "common_skills": [
+        "Solidity",
+        "DEX",
+        "Flash Loan",
+        "Oracle",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Smart Contract__EVM",
+      "category": "Smart Contract",
+      "subcategory": "EVM",
+      "size": 5,
+      "question_ids": [
+        3,
+        47,
+        72,
+        145,
+        186
+      ],
+      "common_skills": [
+        "Solidity",
+        "Delegatecall",
+        "EVM",
+        "Yul",
+        "Create2"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Indexer",
+      "category": "Backend",
+      "subcategory": "Indexer",
+      "size": 4,
+      "question_ids": [
+        38,
+        102,
+        137,
+        172
+      ],
+      "common_skills": [
+        "Database",
+        "Microservices",
+        "API",
+        "Kafka",
+        "The Graph"
+      ]
+    },
+    {
+      "cluster_id": "Network__P2P",
+      "category": "Network",
+      "subcategory": "P2P",
+      "size": 4,
+      "question_ids": [
+        4,
+        119,
+        142,
+        169
+      ],
+      "common_skills": [
+        "Gossip Protocol",
+        "P2P",
+        "Distributed Systems",
+        "Security",
+        "Geth"
+      ]
+    },
+    {
+      "cluster_id": "Smart Contract__Security",
+      "category": "Smart Contract",
+      "subcategory": "Security",
+      "size": 4,
+      "question_ids": [
+        46,
+        111,
+        139,
+        188
+      ],
+      "common_skills": [
+        "Solidity",
+        "Reentrancy Guard",
+        "Formal Verification",
+        "Foundry",
+        "Invariant Testing"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Web3",
+      "category": "Backend",
+      "subcategory": "Web3",
+      "size": 3,
+      "question_ids": [
+        73,
+        156,
+        190
+      ],
+      "common_skills": [
+        "Node.js",
+        "npm",
+        "Batch Request",
+        "RPC",
+        "WebSockets"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Cross-chain",
+      "category": "Architecture",
+      "subcategory": "Cross-chain",
+      "size": 2,
+      "question_ids": [
+        101,
+        148
+      ],
+      "common_skills": [
+        "Cross-chain Bridge",
+        "Security",
+        "Bridge",
+        "Smart Contract"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Architecture",
+      "category": "Backend",
+      "subcategory": "Architecture",
+      "size": 2,
+      "question_ids": [
+        77,
+        117
+      ],
+      "common_skills": [
+        "GraphQL",
+        "WebSockets",
+        "Load Balancer",
+        "Docker"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Database",
+      "category": "Backend",
+      "subcategory": "Database",
+      "size": 2,
+      "question_ids": [
+        81,
+        197
+      ],
+      "common_skills": [
+        "Database",
+        "Indexing",
+        "Caching",
+        "Redis"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__Infra",
+      "category": "Cloud",
+      "subcategory": "Infra",
+      "size": 2,
+      "question_ids": [
+        124,
+        199
+      ],
+      "common_skills": [
+        "Load Balancer",
+        "Web3",
+        "Cloud",
+        "High Availability",
+        "Cost"
+      ]
+    },
+    {
+      "cluster_id": "Cryptography__ZKP",
+      "category": "Cryptography",
+      "subcategory": "ZKP",
+      "size": 2,
+      "question_ids": [
+        120,
+        141
+      ],
+      "common_skills": [
+        "Zero-Knowledge",
+        "Math",
+        "Zero-Knowledge Proofs"
+      ]
+    },
+    {
+      "cluster_id": "Layer 2__Rollup",
+      "category": "Layer 2",
+      "subcategory": "Rollup",
+      "size": 2,
+      "question_ids": [
+        43,
+        103
+      ],
+      "common_skills": [
+        "Optimistic Rollup",
+        "ZK Rollup"
+      ]
+    },
+    {
+      "cluster_id": "Network__TPS",
+      "category": "Network",
+      "subcategory": "TPS",
+      "size": 2,
+      "question_ids": [
+        18,
+        82
+      ],
+      "common_skills": [
+        "Scalability",
+        "Database",
+        "Layer 2"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Mempool",
+      "category": "Operations",
+      "subcategory": "Mempool",
+      "size": 2,
+      "question_ids": [
+        45,
+        152
+      ],
+      "common_skills": [
+        "Mempool",
+        "Transaction",
+        "Data Analysis"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Network",
+      "category": "Operations",
+      "subcategory": "Network",
+      "size": 2,
+      "question_ids": [
+        10,
+        95
+      ],
+      "common_skills": [
+        "Network",
+        "Docker",
+        "Linux"
+      ]
+    },
+    {
+      "cluster_id": "Security__MEV",
+      "category": "Security",
+      "subcategory": "MEV",
+      "size": 2,
+      "question_ids": [
+        104,
+        182
+      ],
+      "common_skills": [
+        "MEV",
+        "Security",
+        "PBS"
+      ]
+    },
+    {
+      "cluster_id": "Smart Contract__Architecture",
+      "category": "Smart Contract",
+      "subcategory": "Architecture",
+      "size": 2,
+      "question_ids": [
+        42,
+        112
+      ],
+      "common_skills": [
+        "Upgradability",
+        "Proxy Contract",
+        "Diamond Pattern"
+      ]
+    },
+    {
+      "cluster_id": "Smart Contract__Oracles",
+      "category": "Smart Contract",
+      "subcategory": "Oracles",
+      "size": 2,
+      "question_ids": [
+        87,
+        163
+      ],
+      "common_skills": [
+        "Chainlink",
+        "TWAP"
+      ]
+    },
+    {
+      "cluster_id": "Smart Contract__Tokenomics",
+      "category": "Smart Contract",
+      "subcategory": "Tokenomics",
+      "size": 2,
+      "question_ids": [
+        126,
+        143
+      ],
+      "common_skills": [
+        "ERC20",
+        "Inflation",
+        "Deflationary"
+      ]
+    },
+    {
+      "cluster_id": "Smart Contract__Upgradability",
+      "category": "Smart Contract",
+      "subcategory": "Upgradability",
+      "size": 2,
+      "question_ids": [
+        89,
+        138
+      ],
+      "common_skills": [
+        "Proxy Contract",
+        "Diamond Pattern"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Account Abstraction",
+      "category": "Architecture",
+      "subcategory": "Account Abstraction",
+      "size": 1,
+      "question_ids": [
+        153
+      ],
+      "common_skills": [
+        "EIP-4337"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__AppChain",
+      "category": "Architecture",
+      "subcategory": "AppChain",
+      "size": 1,
+      "question_ids": [
+        122
+      ],
+      "common_skills": [
+        "Cosmos",
+        "AppChain"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Data Availability",
+      "category": "Architecture",
+      "subcategory": "Data Availability",
+      "size": 1,
+      "question_ids": [
+        159
+      ],
+      "common_skills": [
+        "Celestia",
+        "Validium"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Decentralization",
+      "category": "Architecture",
+      "subcategory": "Decentralization",
+      "size": 1,
+      "question_ids": [
+        179
+      ],
+      "common_skills": [
+        "Blockchain Trilemma"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Key Management",
+      "category": "Architecture",
+      "subcategory": "Key Management",
+      "size": 1,
+      "question_ids": [
+        99
+      ],
+      "common_skills": [
+        "Cryptography"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Microservices",
+      "category": "Architecture",
+      "subcategory": "Microservices",
+      "size": 1,
+      "question_ids": [
+        84
+      ],
+      "common_skills": [
+        "Microservices",
+        "Queue"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Rollup",
+      "category": "Architecture",
+      "subcategory": "Rollup",
+      "size": 1,
+      "question_ids": [
+        200
+      ],
+      "common_skills": [
+        "Sequencer",
+        "L2"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Wallet",
+      "category": "Architecture",
+      "subcategory": "Wallet",
+      "size": 1,
+      "question_ids": [
+        194
+      ],
+      "common_skills": [
+        "MPC",
+        "Cryptography"
+      ]
+    },
+    {
+      "cluster_id": "Backend__API",
+      "category": "Backend",
+      "subcategory": "API",
+      "size": 1,
+      "question_ids": [
+        52
+      ],
+      "common_skills": [
+        "Database",
+        "API"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Analytics",
+      "category": "Backend",
+      "subcategory": "Analytics",
+      "size": 1,
+      "question_ids": [
+        98
+      ],
+      "common_skills": [
+        "SQL",
+        "Blockchain Data"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Blockchain Data",
+      "category": "Backend",
+      "subcategory": "Blockchain Data",
+      "size": 1,
+      "question_ids": [
+        39
+      ],
+      "common_skills": [
+        "Database Schema"
+      ]
+    },
+    {
+      "cluster_id": "Backend__CORS",
+      "category": "Backend",
+      "subcategory": "CORS",
+      "size": 1,
+      "question_ids": [
+        96
+      ],
+      "common_skills": [
+        "API",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Cloud",
+      "category": "Backend",
+      "subcategory": "Cloud",
+      "size": 1,
+      "question_ids": [
+        130
+      ],
+      "common_skills": [
+        "Cost",
+        "Auto Scaling"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Data Modeling",
+      "category": "Backend",
+      "subcategory": "Data Modeling",
+      "size": 1,
+      "question_ids": [
+        78
+      ],
+      "common_skills": [
+        "Database Schema"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Listener",
+      "category": "Backend",
+      "subcategory": "Listener",
+      "size": 1,
+      "question_ids": [
+        59
+      ],
+      "common_skills": [
+        "WebSockets",
+        "Event Driven"
+      ]
+    },
+    {
+      "cluster_id": "Backend__RPC",
+      "category": "Backend",
+      "subcategory": "RPC",
+      "size": 1,
+      "question_ids": [
+        56
+      ],
+      "common_skills": [
+        "Cache",
+        "Load Balancer"
+      ]
+    },
+    {
+      "cluster_id": "Backend__RPC Gateway",
+      "category": "Backend",
+      "subcategory": "RPC Gateway",
+      "size": 1,
+      "question_ids": [
+        133
+      ],
+      "common_skills": [
+        "Load Balancing",
+        "API Design"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Transaction Manager",
+      "category": "Backend",
+      "subcategory": "Transaction Manager",
+      "size": 1,
+      "question_ids": [
+        123
+      ],
+      "common_skills": [
+        "Microservices",
+        "Queue",
+        "Retry"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Webhooks",
+      "category": "Backend",
+      "subcategory": "Webhooks",
+      "size": 1,
+      "question_ids": [
+        177
+      ],
+      "common_skills": [
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Blockchain__Block",
+      "category": "Blockchain",
+      "subcategory": "Block",
+      "size": 1,
+      "question_ids": [
+        53
+      ],
+      "common_skills": [
+        "Web3.js"
+      ]
+    },
+    {
+      "cluster_id": "Blockchain__Block Explorer",
+      "category": "Blockchain",
+      "subcategory": "Block Explorer",
+      "size": 1,
+      "question_ids": [
+        13
+      ],
+      "common_skills": [
+        "Etherscan"
+      ]
+    },
+    {
+      "cluster_id": "Blockchain__Data Availability",
+      "category": "Blockchain",
+      "subcategory": "Data Availability",
+      "size": 1,
+      "question_ids": [
+        193
+      ],
+      "common_skills": [
+        "EIP-4844"
+      ]
+    },
+    {
+      "cluster_id": "Blockchain__Layer 2",
+      "category": "Blockchain",
+      "subcategory": "Layer 2",
+      "size": 1,
+      "question_ids": [
+        20
+      ],
+      "common_skills": [
+        "Rollup"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__Database",
+      "category": "Cloud",
+      "subcategory": "Database",
+      "size": 1,
+      "question_ids": [
+        83
+      ],
+      "common_skills": [
+        "Cloud",
+        "Storage"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__Infrastructure",
+      "category": "Cloud",
+      "subcategory": "Infrastructure",
+      "size": 1,
+      "question_ids": [
+        68
+      ],
+      "common_skills": [
+        "Cloud",
+        "Cost"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__Kubernetes",
+      "category": "Cloud",
+      "subcategory": "Kubernetes",
+      "size": 1,
+      "question_ids": [
+        158
+      ],
+      "common_skills": [
+        "Node",
+        "Hardware"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__Load Balancer",
+      "category": "Cloud",
+      "subcategory": "Load Balancer",
+      "size": 1,
+      "question_ids": [
+        191
+      ],
+      "common_skills": [
+        "RPC",
+        "Nginx"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__Network",
+      "category": "Cloud",
+      "subcategory": "Network",
+      "size": 1,
+      "question_ids": [
+        150
+      ],
+      "common_skills": [
+        "Cloud",
+        "AWS",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__Observability",
+      "category": "Cloud",
+      "subcategory": "Observability",
+      "size": 1,
+      "question_ids": [
+        110
+      ],
+      "common_skills": [
+        "Prometheus",
+        "Grafana",
+        "Node"
+      ]
+    },
+    {
+      "cluster_id": "Consensus__BFT",
+      "category": "Consensus",
+      "subcategory": "BFT",
+      "size": 1,
+      "question_ids": [
+        86
+      ],
+      "common_skills": [
+        "BFT"
+      ]
+    },
+    {
+      "cluster_id": "Consensus__BFT vs Nakamoto",
+      "category": "Consensus",
+      "subcategory": "BFT vs Nakamoto",
+      "size": 1,
+      "question_ids": [
+        162
+      ],
+      "common_skills": [
+        "Consensus"
+      ]
+    },
+    {
+      "cluster_id": "Consensus__CAP Theorem",
+      "category": "Consensus",
+      "subcategory": "CAP Theorem",
+      "size": 1,
+      "question_ids": [
+        131
+      ],
+      "common_skills": [
+        "Distributed Systems"
+      ]
+    },
+    {
+      "cluster_id": "Consensus__Ethereum 2.0",
+      "category": "Consensus",
+      "subcategory": "Ethereum 2.0",
+      "size": 1,
+      "question_ids": [
+        144
+      ],
+      "common_skills": [
+        "PoS",
+        "Ethereum"
+      ]
+    },
+    {
+      "cluster_id": "Consensus__Finality",
+      "category": "Consensus",
+      "subcategory": "Finality",
+      "size": 1,
+      "question_ids": [
+        79
+      ],
+      "common_skills": [
+        "Finality"
+      ]
+    },
+    {
+      "cluster_id": "Consensus__Network Issue",
+      "category": "Consensus",
+      "subcategory": "Network Issue",
+      "size": 1,
+      "question_ids": [
+        192
+      ],
+      "common_skills": [
+        "Validators",
+        "Slashing"
+      ]
+    },
+    {
+      "cluster_id": "Consensus__PoS",
+      "category": "Consensus",
+      "subcategory": "PoS",
+      "size": 1,
+      "question_ids": [
+        41
+      ],
+      "common_skills": [
+        "Ethereum 2.0",
+        "PoS"
+      ]
+    },
+    {
+      "cluster_id": "Consensus__PoW",
+      "category": "Consensus",
+      "subcategory": "PoW",
+      "size": 1,
+      "question_ids": [
+        2
+      ],
+      "common_skills": [
+        "Bitcoin"
+      ]
+    },
+    {
+      "cluster_id": "Consensus__Reorg",
+      "category": "Consensus",
+      "subcategory": "Reorg",
+      "size": 1,
+      "question_ids": [
+        106
+      ],
+      "common_skills": [
+        "Finality",
+        "Backend"
+      ]
+    },
+    {
+      "cluster_id": "Consensus__Trilemma",
+      "category": "Consensus",
+      "subcategory": "Trilemma",
+      "size": 1,
+      "question_ids": [
+        24
+      ],
+      "common_skills": [
+        "Blockchain Trilemma"
+      ]
+    },
+    {
+      "cluster_id": "Cryptography__Digital Signature",
+      "category": "Cryptography",
+      "subcategory": "Digital Signature",
+      "size": 1,
+      "question_ids": [
+        5
+      ],
+      "common_skills": [
+        "ECDSA"
+      ]
+    },
+    {
+      "cluster_id": "Cryptography__Hash",
+      "category": "Cryptography",
+      "subcategory": "Hash",
+      "size": 1,
+      "question_ids": [
+        1
+      ],
+      "common_skills": [
+        "SHA256"
+      ]
+    },
+    {
+      "cluster_id": "Cryptography__Merkle Patricia Trie",
+      "category": "Cryptography",
+      "subcategory": "Merkle Patricia Trie",
+      "size": 1,
+      "question_ids": [
+        155
+      ],
+      "common_skills": [
+        "Trie",
+        "Data Structure"
+      ]
+    },
+    {
+      "cluster_id": "Cryptography__Merkle Tree",
+      "category": "Cryptography",
+      "subcategory": "Merkle Tree",
+      "size": 1,
+      "question_ids": [
+        16
+      ],
+      "common_skills": [
+        "Data Structure"
+      ]
+    },
+    {
+      "cluster_id": "Cryptography__Signature",
+      "category": "Cryptography",
+      "subcategory": "Signature",
+      "size": 1,
+      "question_ids": [
+        80
+      ],
+      "common_skills": [
+        "Elliptic Curve"
+      ]
+    },
+    {
+      "cluster_id": "Cryptography__Trees",
+      "category": "Cryptography",
+      "subcategory": "Trees",
+      "size": 1,
+      "question_ids": [
+        196
+      ],
+      "common_skills": [
+        "Data Structure"
+      ]
+    },
+    {
+      "cluster_id": "DApp__Architecture",
+      "category": "DApp",
+      "subcategory": "Architecture",
+      "size": 1,
+      "question_ids": [
+        21
+      ],
+      "common_skills": [
+        "Frontend",
+        "Smart Contract"
+      ]
+    },
+    {
+      "cluster_id": "DApp__Web3 Library",
+      "category": "DApp",
+      "subcategory": "Web3 Library",
+      "size": 1,
+      "question_ids": [
+        34
+      ],
+      "common_skills": [
+        "ethers.js"
+      ]
+    },
+    {
+      "cluster_id": "Data Storage__IPFS",
+      "category": "Data Storage",
+      "subcategory": "IPFS",
+      "size": 1,
+      "question_ids": [
+        22
+      ],
+      "common_skills": [
+        "IPFS"
+      ]
+    },
+    {
+      "cluster_id": "Data Storage__UTXO vs Account",
+      "category": "Data Storage",
+      "subcategory": "UTXO vs Account",
+      "size": 1,
+      "question_ids": [
+        132
+      ],
+      "common_skills": [
+        "Database Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Data__Big Data",
+      "category": "Data",
+      "subcategory": "Big Data",
+      "size": 1,
+      "question_ids": [
+        118
+      ],
+      "common_skills": [
+        "Database Schema",
+        "ETL",
+        "Big Data"
+      ]
+    },
+    {
+      "cluster_id": "Data__Indexing",
+      "category": "Data",
+      "subcategory": "Indexing",
+      "size": 1,
+      "question_ids": [
+        178
+      ],
+      "common_skills": [
+        "Database Schema"
+      ]
+    },
+    {
+      "cluster_id": "Database__Off-chain",
+      "category": "Database",
+      "subcategory": "Off-chain",
+      "size": 1,
+      "question_ids": [
+        63
+      ],
+      "common_skills": [
+        "Database",
+        "API"
+      ]
+    },
+    {
+      "cluster_id": "DeFi__Liquidation",
+      "category": "DeFi",
+      "subcategory": "Liquidation",
+      "size": 1,
+      "question_ids": [
+        160
+      ],
+      "common_skills": [
+        "Bot",
+        "Mempool"
+      ]
+    },
+    {
+      "cluster_id": "Ethereum__EIPs",
+      "category": "Ethereum",
+      "subcategory": "EIPs",
+      "size": 1,
+      "question_ids": [
+        181
+      ],
+      "common_skills": [
+        "Account Abstraction",
+        "EVM"
+      ]
+    },
+    {
+      "cluster_id": "Ethereum__EVM",
+      "category": "Ethereum",
+      "subcategory": "EVM",
+      "size": 1,
+      "question_ids": [
+        116
+      ],
+      "common_skills": [
+        "EIP-3860",
+        "Limit"
+      ]
+    },
+    {
+      "cluster_id": "Ethereum__Upgrades",
+      "category": "Ethereum",
+      "subcategory": "Upgrades",
+      "size": 1,
+      "question_ids": [
+        76
+      ],
+      "common_skills": [
+        "EIP-4337",
+        "Account Abstraction"
+      ]
+    },
+    {
+      "cluster_id": "Ethereum__Yellow Paper",
+      "category": "Ethereum",
+      "subcategory": "Yellow Paper",
+      "size": 1,
+      "question_ids": [
+        134
+      ],
+      "common_skills": [
+        "EVM Mechanics"
+      ]
+    },
+    {
+      "cluster_id": "Incident__DeFi",
+      "category": "Incident",
+      "subcategory": "DeFi",
+      "size": 1,
+      "question_ids": [
+        195
+      ],
+      "common_skills": [
+        "Governance",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Incident__Deployment",
+      "category": "Incident",
+      "subcategory": "Deployment",
+      "size": 1,
+      "question_ids": [
+        100
+      ],
+      "common_skills": [
+        "Deployment",
+        "Truffle/Hardhat"
+      ]
+    },
+    {
+      "cluster_id": "Incident__Multichain",
+      "category": "Incident",
+      "subcategory": "Multichain",
+      "size": 1,
+      "question_ids": [
+        154
+      ],
+      "common_skills": [
+        "Private Key",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Layer 2__Bridges",
+      "category": "Layer 2",
+      "subcategory": "Bridges",
+      "size": 1,
+      "question_ids": [
+        183
+      ],
+      "common_skills": [
+        "Cross-chain",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Layer 2__EIP-4844",
+      "category": "Layer 2",
+      "subcategory": "EIP-4844",
+      "size": 1,
+      "question_ids": [
+        108
+      ],
+      "common_skills": [
+        "EIP-4844",
+        "Rollup"
+      ]
+    },
+    {
+      "cluster_id": "Layer 2__Polygon",
+      "category": "Layer 2",
+      "subcategory": "Polygon",
+      "size": 1,
+      "question_ids": [
+        88
+      ],
+      "common_skills": [
+        "Sidechain"
+      ]
+    },
+    {
+      "cluster_id": "Layer 2__Throughput",
+      "category": "Layer 2",
+      "subcategory": "Throughput",
+      "size": 1,
+      "question_ids": [
+        157
+      ],
+      "common_skills": [
+        "Scalability",
+        "Data Availability"
+      ]
+    },
+    {
+      "cluster_id": "Network__API",
+      "category": "Network",
+      "subcategory": "API",
+      "size": 1,
+      "question_ids": [
+        30
+      ],
+      "common_skills": [
+        "RPC Rate Limit",
+        "API",
+        "Cache"
+      ]
+    },
+    {
+      "cluster_id": "Network__Consensus",
+      "category": "Network",
+      "subcategory": "Consensus",
+      "size": 1,
+      "question_ids": [
+        40
+      ],
+      "common_skills": [
+        "Network Partition"
+      ]
+    },
+    {
+      "cluster_id": "Node__Archive",
+      "category": "Node",
+      "subcategory": "Archive",
+      "size": 1,
+      "question_ids": [
+        121
+      ],
+      "common_skills": [
+        "Cloud",
+        "Cost"
+      ]
+    },
+    {
+      "cluster_id": "Node__Geth",
+      "category": "Node",
+      "subcategory": "Geth",
+      "size": 1,
+      "question_ids": [
+        11
+      ],
+      "common_skills": [
+        "Geth"
+      ]
+    },
+    {
+      "cluster_id": "Node__Storage",
+      "category": "Node",
+      "subcategory": "Storage",
+      "size": 1,
+      "question_ids": [
+        19
+      ],
+      "common_skills": [
+        "Hardware"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Alerting",
+      "category": "Operations",
+      "subcategory": "Alerting",
+      "size": 1,
+      "question_ids": [
+        70
+      ],
+      "common_skills": [
+        "Prometheus",
+        "Slack"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Database",
+      "category": "Operations",
+      "subcategory": "Database",
+      "size": 1,
+      "question_ids": [
+        128
+      ],
+      "common_skills": [
+        "Docker",
+        "Storage"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Docker",
+      "category": "Operations",
+      "subcategory": "Docker",
+      "size": 1,
+      "question_ids": [
+        51
+      ],
+      "common_skills": [
+        "Docker",
+        "Network"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Hard Fork",
+      "category": "Operations",
+      "subcategory": "Hard Fork",
+      "size": 1,
+      "question_ids": [
+        97
+      ],
+      "common_skills": [
+        "Node",
+        "Upgrades"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Key Management",
+      "category": "Operations",
+      "subcategory": "Key Management",
+      "size": 1,
+      "question_ids": [
+        114
+      ],
+      "common_skills": [
+        "Security",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Kubernetes",
+      "category": "Operations",
+      "subcategory": "Kubernetes",
+      "size": 1,
+      "question_ids": [
+        105
+      ],
+      "common_skills": [
+        "Kubernetes",
+        "Node",
+        "Storage"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Observability",
+      "category": "Operations",
+      "subcategory": "Observability",
+      "size": 1,
+      "question_ids": [
+        140
+      ],
+      "common_skills": [
+        "Prometheus",
+        "Grafana",
+        "Node"
+      ]
+    },
+    {
+      "cluster_id": "Operations__RPC",
+      "category": "Operations",
+      "subcategory": "RPC",
+      "size": 1,
+      "question_ids": [
+        165
+      ],
+      "common_skills": [
+        "RPC",
+        "Load Balancing"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Traffic",
+      "category": "Operations",
+      "subcategory": "Traffic",
+      "size": 1,
+      "question_ids": [
+        66
+      ],
+      "common_skills": [
+        "Load Balancer",
+        "Network"
+      ]
+    },
+    {
+      "cluster_id": "Security__Compromised Keys",
+      "category": "Security",
+      "subcategory": "Compromised Keys",
+      "size": 1,
+      "question_ids": [
+        166
+      ],
+      "common_skills": [
+        "Security",
+        "Emergency Response"
+      ]
+    },
+    {
+      "cluster_id": "Security__DeFi",
+      "category": "Security",
+      "subcategory": "DeFi",
+      "size": 1,
+      "question_ids": [
+        64
+      ],
+      "common_skills": [
+        "Flash Loan"
+      ]
+    },
+    {
+      "cluster_id": "Security__KMS",
+      "category": "Security",
+      "subcategory": "KMS",
+      "size": 1,
+      "question_ids": [
+        85
+      ],
+      "common_skills": [
+        "KMS",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Security__Key Management",
+      "category": "Security",
+      "subcategory": "Key Management",
+      "size": 1,
+      "question_ids": [
+        136
+      ],
+      "common_skills": [
+        "HSM",
+        "KMS",
+        "Cloud"
+      ]
+    },
+    {
+      "cluster_id": "Security__Private Key",
+      "category": "Security",
+      "subcategory": "Private Key",
+      "size": 1,
+      "question_ids": [
+        35
+      ],
+      "common_skills": [
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Security__Signature",
+      "category": "Security",
+      "subcategory": "Signature",
+      "size": 1,
+      "question_ids": [
+        127
+      ],
+      "common_skills": [
+        "EIP-712",
+        "Phishing"
+      ]
+    },
+    {
+      "cluster_id": "Security__Upgradability",
+      "category": "Security",
+      "subcategory": "Upgradability",
+      "size": 1,
+      "question_ids": [
+        164
+      ],
+      "common_skills": [
+        "Proxy",
+        "Governance"
+      ]
+    },
+    {
+      "cluster_id": "Security__Wallet",
+      "category": "Security",
+      "subcategory": "Wallet",
+      "size": 1,
+      "question_ids": [
+        60
+      ],
+      "common_skills": [
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Smart Contract__ABI",
+      "category": "Smart Contract",
+      "subcategory": "ABI",
+      "size": 1,
+      "question_ids": [
+        94
+      ],
+      "common_skills": [
+        "ABI",
+        "Web3.js"
+      ]
+    },
+    {
+      "cluster_id": "Smart Contract__Access Control",
+      "category": "Smart Contract",
+      "subcategory": "Access Control",
+      "size": 1,
+      "question_ids": [
+        62
+      ],
+      "common_skills": [
+        "Solidity"
+      ]
+    },
+    {
+      "cluster_id": "Smart Contract__Assembly",
+      "category": "Smart Contract",
+      "subcategory": "Assembly",
+      "size": 1,
+      "question_ids": [
+        135
+      ],
+      "common_skills": [
+        "Solidity",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Smart Contract__Authorization",
+      "category": "Smart Contract",
+      "subcategory": "Authorization",
+      "size": 1,
+      "question_ids": [
+        67
+      ],
+      "common_skills": [
+        "Solidity",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Smart Contract__Fallback",
+      "category": "Smart Contract",
+      "subcategory": "Fallback",
+      "size": 1,
+      "question_ids": [
+        92
+      ],
+      "common_skills": [
+        "Solidity"
+      ]
+    },
+    {
+      "cluster_id": "Smart Contract__Fuzzing",
+      "category": "Smart Contract",
+      "subcategory": "Fuzzing",
+      "size": 1,
+      "question_ids": [
+        71
+      ],
+      "common_skills": [
+        "Foundry",
+        "Testing"
+      ]
+    },
+    {
+      "cluster_id": "Smart Contract__Library",
+      "category": "Smart Contract",
+      "subcategory": "Library",
+      "size": 1,
+      "question_ids": [
+        113
+      ],
+      "common_skills": [
+        "Solidity",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Smart Contract__Mathematics",
+      "category": "Smart Contract",
+      "subcategory": "Mathematics",
+      "size": 1,
+      "question_ids": [
+        180
+      ],
+      "common_skills": [
+        "Solidity",
+        "Math"
+      ]
+    },
+    {
+      "cluster_id": "Smart Contract__Randomness",
+      "category": "Smart Contract",
+      "subcategory": "Randomness",
+      "size": 1,
+      "question_ids": [
+        167
+      ],
+      "common_skills": [
+        "Solidity",
+        "VRF"
+      ]
+    },
+    {
+      "cluster_id": "Smart Contract__Solidity Updates",
+      "category": "Smart Contract",
+      "subcategory": "Solidity Updates",
+      "size": 1,
+      "question_ids": [
+        176
+      ],
+      "common_skills": [
+        "Solidity",
+        "Errors"
+      ]
+    },
+    {
+      "cluster_id": "Smart Contract__Testing",
+      "category": "Smart Contract",
+      "subcategory": "Testing",
+      "size": 1,
+      "question_ids": [
+        32
+      ],
+      "common_skills": [
+        "Hardhat",
+        "Truffle"
+      ]
+    },
+    {
+      "cluster_id": "Smart Contract__Vulnerability",
+      "category": "Smart Contract",
+      "subcategory": "Vulnerability",
+      "size": 1,
+      "question_ids": [
+        28
+      ],
+      "common_skills": [
+        "Solidity",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Standard__EIP",
+      "category": "Standard",
+      "subcategory": "EIP",
+      "size": 1,
+      "question_ids": [
+        37
+      ],
+      "common_skills": [
+        "EIP-1559"
+      ]
+    },
+    {
+      "cluster_id": "Storage__Decentralized",
+      "category": "Storage",
+      "subcategory": "Decentralized",
+      "size": 1,
+      "question_ids": [
+        125
+      ],
+      "common_skills": [
+        "Arweave",
+        "IPFS"
+      ]
+    },
+    {
+      "cluster_id": "System Design__Event Sourcing",
+      "category": "System Design",
+      "subcategory": "Event Sourcing",
+      "size": 1,
+      "question_ids": [
+        61
+      ],
+      "common_skills": [
+        "Kafka",
+        "Blockchain Data"
+      ]
+    },
+    {
+      "cluster_id": "System Design__Scalability",
+      "category": "System Design",
+      "subcategory": "Scalability",
+      "size": 1,
+      "question_ids": [
+        198
+      ],
+      "common_skills": [
+        "Throughput",
+        "TPS"
+      ]
+    },
+    {
+      "cluster_id": "Token__ERC20",
+      "category": "Token",
+      "subcategory": "ERC20",
+      "size": 1,
+      "question_ids": [
+        55
+      ],
+      "common_skills": [
+        "Solidity",
+        "ERC20"
+      ]
+    },
+    {
+      "cluster_id": "Token__NFT",
+      "category": "Token",
+      "subcategory": "NFT",
+      "size": 1,
+      "question_ids": [
+        15
+      ],
+      "common_skills": [
+        "ERC721"
+      ]
+    },
+    {
+      "cluster_id": "Token__Standard",
+      "category": "Token",
+      "subcategory": "Standard",
+      "size": 1,
+      "question_ids": [
+        23
+      ],
+      "common_skills": [
+        "ERC20",
+        "ERC721"
+      ]
+    },
+    {
+      "cluster_id": "Tokenomics__Vesting",
+      "category": "Tokenomics",
+      "subcategory": "Vesting",
+      "size": 1,
+      "question_ids": [
+        161
+      ],
+      "common_skills": [
+        "Smart Contract",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Wallet__HD Wallet",
+      "category": "Wallet",
+      "subcategory": "HD Wallet",
+      "size": 1,
+      "question_ids": [
+        12
+      ],
+      "common_skills": [
+        "BIP39",
+        "BIP44"
+      ]
+    },
+    {
+      "cluster_id": "Wallet__UX",
+      "category": "Wallet",
+      "subcategory": "UX",
+      "size": 1,
+      "question_ids": [
+        54
+      ],
+      "common_skills": [
+        "EIP-712"
+      ]
+    },
+    {
+      "cluster_id": "Web3__Event Log",
+      "category": "Web3",
+      "subcategory": "Event Log",
+      "size": 1,
+      "question_ids": [
+        50
+      ],
+      "common_skills": [
+        "Topics",
+        "Bloom Filter"
+      ]
+    },
+    {
+      "cluster_id": "Web3__IPFS",
+      "category": "Web3",
+      "subcategory": "IPFS",
+      "size": 1,
+      "question_ids": [
+        90
+      ],
+      "common_skills": [
+        "IPFS"
+      ]
+    },
+    {
+      "cluster_id": "Web3__RPC",
+      "category": "Web3",
+      "subcategory": "RPC",
+      "size": 1,
+      "question_ids": [
+        9
+      ],
+      "common_skills": [
+        "Web3.js"
+      ]
+    },
+    {
+      "cluster_id": "Web3__Transaction",
+      "category": "Web3",
+      "subcategory": "Transaction",
+      "size": 1,
+      "question_ids": [
+        26
+      ],
+      "common_skills": [
+        "Web3.js",
+        "Gas"
+      ]
+    },
+    {
+      "cluster_id": "Web3__Wallets",
+      "category": "Web3",
+      "subcategory": "Wallets",
+      "size": 1,
+      "question_ids": [
+        185
+      ],
+      "common_skills": [
+        "HD Wallet",
+        "Derivation Path"
+      ]
+    }
+  ],
+  "dependency_graph": {
+    "nodes": [
+      {
+        "question_id": 1,
+        "difficulty": "university_level",
+        "category": "Cryptography",
+        "subcategory": "Hash",
+        "skills_required": [
+          "SHA256"
+        ]
+      },
+      {
+        "question_id": 2,
+        "difficulty": "university_level",
+        "category": "Consensus",
+        "subcategory": "PoW",
+        "skills_required": [
+          "Bitcoin"
+        ]
+      },
+      {
+        "question_id": 3,
+        "difficulty": "university_level",
+        "category": "Smart Contract",
+        "subcategory": "EVM",
+        "skills_required": [
+          "EVM"
+        ]
+      },
+      {
+        "question_id": 4,
+        "difficulty": "university_level",
+        "category": "Network",
+        "subcategory": "P2P",
+        "skills_required": [
+          "P2P"
+        ]
+      },
+      {
+        "question_id": 5,
+        "difficulty": "university_level",
+        "category": "Cryptography",
+        "subcategory": "Digital Signature",
+        "skills_required": [
+          "ECDSA"
+        ]
+      },
+      {
+        "question_id": 6,
+        "difficulty": "university_level",
+        "category": "Smart Contract",
+        "subcategory": "Solidity",
+        "skills_required": [
+          "Solidity"
+        ]
+      },
+      {
+        "question_id": 7,
+        "difficulty": "university_level",
+        "category": "Smart Contract",
+        "subcategory": "Solidity",
+        "skills_required": [
+          "Solidity"
+        ]
+      },
+      {
+        "question_id": 8,
+        "difficulty": "university_level",
+        "category": "Operations",
+        "subcategory": "Node",
+        "skills_required": [
+          "Linux"
+        ]
+      },
+      {
+        "question_id": 9,
+        "difficulty": "university_level",
+        "category": "Web3",
+        "subcategory": "RPC",
+        "skills_required": [
+          "Web3.js"
+        ]
+      },
+      {
+        "question_id": 10,
+        "difficulty": "university_level",
+        "category": "Operations",
+        "subcategory": "Network",
+        "skills_required": [
+          "Network",
+          "Docker"
+        ]
+      },
+      {
+        "question_id": 11,
+        "difficulty": "university_level",
+        "category": "Node",
+        "subcategory": "Geth",
+        "skills_required": [
+          "Geth"
+        ]
+      },
+      {
+        "question_id": 12,
+        "difficulty": "university_level",
+        "category": "Wallet",
+        "subcategory": "HD Wallet",
+        "skills_required": [
+          "BIP39",
+          "BIP44"
+        ]
+      },
+      {
+        "question_id": 13,
+        "difficulty": "university_level",
+        "category": "Blockchain",
+        "subcategory": "Block Explorer",
+        "skills_required": [
+          "Etherscan"
+        ]
+      },
+      {
+        "question_id": 14,
+        "difficulty": "university_level",
+        "category": "Smart Contract",
+        "subcategory": "DeFi",
+        "skills_required": [
+          "DEX"
+        ]
+      },
+      {
+        "question_id": 15,
+        "difficulty": "university_level",
+        "category": "Token",
+        "subcategory": "NFT",
+        "skills_required": [
+          "ERC721"
+        ]
+      },
+      {
+        "question_id": 16,
+        "difficulty": "university_level",
+        "category": "Cryptography",
+        "subcategory": "Merkle Tree",
+        "skills_required": [
+          "Data Structure"
+        ]
+      },
+      {
+        "question_id": 17,
+        "difficulty": "university_level",
+        "category": "Smart Contract",
+        "subcategory": "Solidity",
+        "skills_required": [
+          "Gas Optimization"
+        ]
+      },
+      {
+        "question_id": 18,
+        "difficulty": "university_level",
+        "category": "Network",
+        "subcategory": "TPS",
+        "skills_required": [
+          "Scalability",
+          "Database"
+        ]
+      },
+      {
+        "question_id": 19,
+        "difficulty": "university_level",
+        "category": "Node",
+        "subcategory": "Storage",
+        "skills_required": [
+          "Hardware"
+        ]
+      },
+      {
+        "question_id": 20,
+        "difficulty": "university_level",
+        "category": "Blockchain",
+        "subcategory": "Layer 2",
+        "skills_required": [
+          "Rollup"
+        ]
+      },
+      {
+        "question_id": 21,
+        "difficulty": "university_level",
+        "category": "DApp",
+        "subcategory": "Architecture",
+        "skills_required": [
+          "Frontend",
+          "Smart Contract"
+        ]
+      },
+      {
+        "question_id": 22,
+        "difficulty": "university_level",
+        "category": "Data Storage",
+        "subcategory": "IPFS",
+        "skills_required": [
+          "IPFS"
+        ]
+      },
+      {
+        "question_id": 23,
+        "difficulty": "university_level",
+        "category": "Token",
+        "subcategory": "Standard",
+        "skills_required": [
+          "ERC20",
+          "ERC721"
+        ]
+      },
+      {
+        "question_id": 24,
+        "difficulty": "university_level",
+        "category": "Consensus",
+        "subcategory": "Trilemma",
+        "skills_required": [
+          "Blockchain Trilemma"
+        ]
+      },
+      {
+        "question_id": 25,
+        "difficulty": "university_level",
+        "category": "Security",
+        "subcategory": "Smart Contract",
+        "skills_required": [
+          "Security"
+        ]
+      },
+      {
+        "question_id": 26,
+        "difficulty": "junior_level",
+        "category": "Web3",
+        "subcategory": "Transaction",
+        "skills_required": [
+          "Web3.js",
+          "Gas"
+        ]
+      },
+      {
+        "question_id": 27,
+        "difficulty": "junior_level",
+        "category": "Operations",
+        "subcategory": "Transaction",
+        "skills_required": [
+          "Nonce Management"
+        ]
+      },
+      {
+        "question_id": 28,
+        "difficulty": "junior_level",
+        "category": "Smart Contract",
+        "subcategory": "Vulnerability",
+        "skills_required": [
+          "Solidity",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 29,
+        "difficulty": "junior_level",
+        "category": "Smart Contract",
+        "subcategory": "Gas",
+        "skills_required": [
+          "Solidity Optimization"
+        ]
+      },
+      {
+        "question_id": 30,
+        "difficulty": "junior_level",
+        "category": "Network",
+        "subcategory": "API",
+        "skills_required": [
+          "RPC Rate Limit",
+          "API",
+          "Cache"
+        ]
+      },
+      {
+        "question_id": 31,
+        "difficulty": "junior_level",
+        "category": "Operations",
+        "subcategory": "Node",
+        "skills_required": [
+          "Prometheus",
+          "Grafana"
+        ]
+      },
+      {
+        "question_id": 32,
+        "difficulty": "junior_level",
+        "category": "Smart Contract",
+        "subcategory": "Testing",
+        "skills_required": [
+          "Hardhat",
+          "Truffle"
+        ]
+      },
+      {
+        "question_id": 33,
+        "difficulty": "junior_level",
+        "category": "Smart Contract",
+        "subcategory": "Solidity",
+        "skills_required": [
+          "Clean Code"
+        ]
+      },
+      {
+        "question_id": 34,
+        "difficulty": "junior_level",
+        "category": "DApp",
+        "subcategory": "Web3 Library",
+        "skills_required": [
+          "ethers.js"
+        ]
+      },
+      {
+        "question_id": 35,
+        "difficulty": "junior_level",
+        "category": "Security",
+        "subcategory": "Private Key",
+        "skills_required": [
+          "Security"
+        ]
+      },
+      {
+        "question_id": 36,
+        "difficulty": "junior_level",
+        "category": "Smart Contract",
+        "subcategory": "Solidity",
+        "skills_required": [
+          "Solidity",
+          "Code Review"
+        ]
+      },
+      {
+        "question_id": 37,
+        "difficulty": "junior_level",
+        "category": "Standard",
+        "subcategory": "EIP",
+        "skills_required": [
+          "EIP-1559"
+        ]
+      },
+      {
+        "question_id": 38,
+        "difficulty": "junior_level",
+        "category": "Backend",
+        "subcategory": "Indexer",
+        "skills_required": [
+          "API",
+          "Database"
+        ]
+      },
+      {
+        "question_id": 39,
+        "difficulty": "junior_level",
+        "category": "Backend",
+        "subcategory": "Blockchain Data",
+        "skills_required": [
+          "Database Schema"
+        ]
+      },
+      {
+        "question_id": 40,
+        "difficulty": "junior_level",
+        "category": "Network",
+        "subcategory": "Consensus",
+        "skills_required": [
+          "Network Partition"
+        ]
+      },
+      {
+        "question_id": 41,
+        "difficulty": "middle_level",
+        "category": "Consensus",
+        "subcategory": "PoS",
+        "skills_required": [
+          "Ethereum 2.0",
+          "PoS"
+        ]
+      },
+      {
+        "question_id": 42,
+        "difficulty": "middle_level",
+        "category": "Smart Contract",
+        "subcategory": "Architecture",
+        "skills_required": [
+          "Proxy Contract",
+          "Upgradability"
+        ]
+      },
+      {
+        "question_id": 43,
+        "difficulty": "middle_level",
+        "category": "Layer 2",
+        "subcategory": "Rollup",
+        "skills_required": [
+          "Optimistic Rollup",
+          "ZK Rollup"
+        ]
+      },
+      {
+        "question_id": 44,
+        "difficulty": "middle_level",
+        "category": "Security",
+        "subcategory": "Smart Contract",
+        "skills_required": [
+          "Oracle"
+        ]
+      },
+      {
+        "question_id": 45,
+        "difficulty": "middle_level",
+        "category": "Operations",
+        "subcategory": "Mempool",
+        "skills_required": [
+          "Mempool",
+          "Transaction"
+        ]
+      },
+      {
+        "question_id": 46,
+        "difficulty": "middle_level",
+        "category": "Smart Contract",
+        "subcategory": "Security",
+        "skills_required": [
+          "Solidity",
+          "Reentrancy Guard"
+        ]
+      },
+      {
+        "question_id": 47,
+        "difficulty": "middle_level",
+        "category": "Smart Contract",
+        "subcategory": "EVM",
+        "skills_required": [
+          "Solidity",
+          "Delegatecall"
+        ]
+      },
+      {
+        "question_id": 48,
+        "difficulty": "middle_level",
+        "category": "Operations",
+        "subcategory": "Node",
+        "skills_required": [
+          "Geth",
+          "Trie"
+        ]
+      },
+      {
+        "question_id": 49,
+        "difficulty": "middle_level",
+        "category": "Operations",
+        "subcategory": "Transaction",
+        "skills_required": [
+          "Nonce"
+        ]
+      },
+      {
+        "question_id": 50,
+        "difficulty": "middle_level",
+        "category": "Web3",
+        "subcategory": "Event Log",
+        "skills_required": [
+          "Topics",
+          "Bloom Filter"
+        ]
+      },
+      {
+        "question_id": 51,
+        "difficulty": "junior_level",
+        "category": "Operations",
+        "subcategory": "Docker",
+        "skills_required": [
+          "Docker",
+          "Network"
+        ]
+      },
+      {
+        "question_id": 52,
+        "difficulty": "junior_level",
+        "category": "Backend",
+        "subcategory": "API",
+        "skills_required": [
+          "Database",
+          "API"
+        ]
+      },
+      {
+        "question_id": 53,
+        "difficulty": "junior_level",
+        "category": "Blockchain",
+        "subcategory": "Block",
+        "skills_required": [
+          "Web3.js"
+        ]
+      },
+      {
+        "question_id": 54,
+        "difficulty": "junior_level",
+        "category": "Wallet",
+        "subcategory": "UX",
+        "skills_required": [
+          "EIP-712"
+        ]
+      },
+      {
+        "question_id": 55,
+        "difficulty": "junior_level",
+        "category": "Token",
+        "subcategory": "ERC20",
+        "skills_required": [
+          "Solidity",
+          "ERC20"
+        ]
+      },
+      {
+        "question_id": 56,
+        "difficulty": "junior_level",
+        "category": "Backend",
+        "subcategory": "RPC",
+        "skills_required": [
+          "Cache",
+          "Load Balancer"
+        ]
+      },
+      {
+        "question_id": 57,
+        "difficulty": "junior_level",
+        "category": "Smart Contract",
+        "subcategory": "Gas",
+        "skills_required": [
+          "Gas Optimization"
+        ]
+      },
+      {
+        "question_id": 58,
+        "difficulty": "junior_level",
+        "category": "Operations",
+        "subcategory": "Node",
+        "skills_required": [
+          "Cloud",
+          "Cost"
+        ]
+      },
+      {
+        "question_id": 59,
+        "difficulty": "junior_level",
+        "category": "Backend",
+        "subcategory": "Listener",
+        "skills_required": [
+          "WebSockets",
+          "Event Driven"
+        ]
+      },
+      {
+        "question_id": 60,
+        "difficulty": "junior_level",
+        "category": "Security",
+        "subcategory": "Wallet",
+        "skills_required": [
+          "Security"
+        ]
+      },
+      {
+        "question_id": 61,
+        "difficulty": "middle_level",
+        "category": "System Design",
+        "subcategory": "Event Sourcing",
+        "skills_required": [
+          "Kafka",
+          "Blockchain Data"
+        ]
+      },
+      {
+        "question_id": 62,
+        "difficulty": "middle_level",
+        "category": "Smart Contract",
+        "subcategory": "Access Control",
+        "skills_required": [
+          "Solidity"
+        ]
+      },
+      {
+        "question_id": 63,
+        "difficulty": "middle_level",
+        "category": "Database",
+        "subcategory": "Off-chain",
+        "skills_required": [
+          "Database",
+          "API"
+        ]
+      },
+      {
+        "question_id": 64,
+        "difficulty": "middle_level",
+        "category": "Security",
+        "subcategory": "DeFi",
+        "skills_required": [
+          "Flash Loan"
+        ]
+      },
+      {
+        "question_id": 65,
+        "difficulty": "middle_level",
+        "category": "Operations",
+        "subcategory": "Node",
+        "skills_required": [
+          "Docker",
+          "Kubernetes"
+        ]
+      },
+      {
+        "question_id": 66,
+        "difficulty": "middle_level",
+        "category": "Operations",
+        "subcategory": "Traffic",
+        "skills_required": [
+          "Load Balancer",
+          "Network"
+        ]
+      },
+      {
+        "question_id": 67,
+        "difficulty": "middle_level",
+        "category": "Smart Contract",
+        "subcategory": "Authorization",
+        "skills_required": [
+          "Solidity",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 68,
+        "difficulty": "middle_level",
+        "category": "Cloud",
+        "subcategory": "Infrastructure",
+        "skills_required": [
+          "Cloud",
+          "Cost"
+        ]
+      },
+      {
+        "question_id": 69,
+        "difficulty": "middle_level",
+        "category": "Smart Contract",
+        "subcategory": "Gas",
+        "skills_required": [
+          "Solidity",
+          "Data Structure"
+        ]
+      },
+      {
+        "question_id": 70,
+        "difficulty": "middle_level",
+        "category": "Operations",
+        "subcategory": "Alerting",
+        "skills_required": [
+          "Prometheus",
+          "Slack"
+        ]
+      },
+      {
+        "question_id": 71,
+        "difficulty": "middle_level",
+        "category": "Smart Contract",
+        "subcategory": "Fuzzing",
+        "skills_required": [
+          "Foundry",
+          "Testing"
+        ]
+      },
+      {
+        "question_id": 72,
+        "difficulty": "middle_level",
+        "category": "Smart Contract",
+        "subcategory": "EVM",
+        "skills_required": [
+          "Solidity",
+          "Yul"
+        ]
+      },
+      {
+        "question_id": 73,
+        "difficulty": "middle_level",
+        "category": "Backend",
+        "subcategory": "Web3",
+        "skills_required": [
+          "Node.js",
+          "npm"
+        ]
+      },
+      {
+        "question_id": 74,
+        "difficulty": "middle_level",
+        "category": "Security",
+        "subcategory": "Smart Contract",
+        "skills_required": [
+          "Solidity",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 75,
+        "difficulty": "middle_level",
+        "category": "Smart Contract",
+        "subcategory": "Gas",
+        "skills_required": [
+          "Solidity",
+          "Code Review"
+        ]
+      },
+      {
+        "question_id": 76,
+        "difficulty": "middle_level",
+        "category": "Ethereum",
+        "subcategory": "Upgrades",
+        "skills_required": [
+          "EIP-4337",
+          "Account Abstraction"
+        ]
+      },
+      {
+        "question_id": 77,
+        "difficulty": "middle_level",
+        "category": "Backend",
+        "subcategory": "Architecture",
+        "skills_required": [
+          "GraphQL"
+        ]
+      },
+      {
+        "question_id": 78,
+        "difficulty": "middle_level",
+        "category": "Backend",
+        "subcategory": "Data Modeling",
+        "skills_required": [
+          "Database Schema"
+        ]
+      },
+      {
+        "question_id": 79,
+        "difficulty": "middle_level",
+        "category": "Consensus",
+        "subcategory": "Finality",
+        "skills_required": [
+          "Finality"
+        ]
+      },
+      {
+        "question_id": 80,
+        "difficulty": "middle_level",
+        "category": "Cryptography",
+        "subcategory": "Signature",
+        "skills_required": [
+          "Elliptic Curve"
+        ]
+      },
+      {
+        "question_id": 81,
+        "difficulty": "middle_level",
+        "category": "Backend",
+        "subcategory": "Database",
+        "skills_required": [
+          "Database",
+          "Indexing"
+        ]
+      },
+      {
+        "question_id": 82,
+        "difficulty": "middle_level",
+        "category": "Network",
+        "subcategory": "TPS",
+        "skills_required": [
+          "Scalability",
+          "Layer 2"
+        ]
+      },
+      {
+        "question_id": 83,
+        "difficulty": "middle_level",
+        "category": "Cloud",
+        "subcategory": "Database",
+        "skills_required": [
+          "Cloud",
+          "Storage"
+        ]
+      },
+      {
+        "question_id": 84,
+        "difficulty": "middle_level",
+        "category": "Architecture",
+        "subcategory": "Microservices",
+        "skills_required": [
+          "Microservices",
+          "Queue"
+        ]
+      },
+      {
+        "question_id": 85,
+        "difficulty": "middle_level",
+        "category": "Security",
+        "subcategory": "KMS",
+        "skills_required": [
+          "KMS",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 86,
+        "difficulty": "middle_level",
+        "category": "Consensus",
+        "subcategory": "BFT",
+        "skills_required": [
+          "BFT"
+        ]
+      },
+      {
+        "question_id": 87,
+        "difficulty": "middle_level",
+        "category": "Smart Contract",
+        "subcategory": "Oracles",
+        "skills_required": [
+          "Chainlink"
+        ]
+      },
+      {
+        "question_id": 88,
+        "difficulty": "middle_level",
+        "category": "Layer 2",
+        "subcategory": "Polygon",
+        "skills_required": [
+          "Sidechain"
+        ]
+      },
+      {
+        "question_id": 89,
+        "difficulty": "middle_level",
+        "category": "Smart Contract",
+        "subcategory": "Upgradability",
+        "skills_required": [
+          "Proxy Contract"
+        ]
+      },
+      {
+        "question_id": 90,
+        "difficulty": "middle_level",
+        "category": "Web3",
+        "subcategory": "IPFS",
+        "skills_required": [
+          "IPFS"
+        ]
+      },
+      {
+        "question_id": 91,
+        "difficulty": "middle_level",
+        "category": "Smart Contract",
+        "subcategory": "Solidity",
+        "skills_required": [
+          "Solidity",
+          "Error Handling"
+        ]
+      },
+      {
+        "question_id": 92,
+        "difficulty": "middle_level",
+        "category": "Smart Contract",
+        "subcategory": "Fallback",
+        "skills_required": [
+          "Solidity"
+        ]
+      },
+      {
+        "question_id": 93,
+        "difficulty": "middle_level",
+        "category": "Operations",
+        "subcategory": "Transaction",
+        "skills_required": [
+          "Gas Limit"
+        ]
+      },
+      {
+        "question_id": 94,
+        "difficulty": "middle_level",
+        "category": "Smart Contract",
+        "subcategory": "ABI",
+        "skills_required": [
+          "ABI",
+          "Web3.js"
+        ]
+      },
+      {
+        "question_id": 95,
+        "difficulty": "middle_level",
+        "category": "Operations",
+        "subcategory": "Network",
+        "skills_required": [
+          "Linux",
+          "Network"
+        ]
+      },
+      {
+        "question_id": 96,
+        "difficulty": "middle_level",
+        "category": "Backend",
+        "subcategory": "CORS",
+        "skills_required": [
+          "API",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 97,
+        "difficulty": "middle_level",
+        "category": "Operations",
+        "subcategory": "Hard Fork",
+        "skills_required": [
+          "Node",
+          "Upgrades"
+        ]
+      },
+      {
+        "question_id": 98,
+        "difficulty": "middle_level",
+        "category": "Backend",
+        "subcategory": "Analytics",
+        "skills_required": [
+          "SQL",
+          "Blockchain Data"
+        ]
+      },
+      {
+        "question_id": 99,
+        "difficulty": "middle_level",
+        "category": "Architecture",
+        "subcategory": "Key Management",
+        "skills_required": [
+          "Cryptography"
+        ]
+      },
+      {
+        "question_id": 100,
+        "difficulty": "middle_level",
+        "category": "Incident",
+        "subcategory": "Deployment",
+        "skills_required": [
+          "Deployment",
+          "Truffle/Hardhat"
+        ]
+      },
+      {
+        "question_id": 101,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Cross-chain",
+        "skills_required": [
+          "Cross-chain Bridge",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 102,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Indexer",
+        "skills_required": [
+          "Microservices",
+          "Kafka",
+          "Database"
+        ]
+      },
+      {
+        "question_id": 103,
+        "difficulty": "senior_level",
+        "category": "Layer 2",
+        "subcategory": "Rollup",
+        "skills_required": [
+          "ZK Rollup",
+          "Optimistic Rollup"
+        ]
+      },
+      {
+        "question_id": 104,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "MEV",
+        "skills_required": [
+          "MEV",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 105,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Kubernetes",
+        "skills_required": [
+          "Kubernetes",
+          "Node",
+          "Storage"
+        ]
+      },
+      {
+        "question_id": 106,
+        "difficulty": "senior_level",
+        "category": "Consensus",
+        "subcategory": "Reorg",
+        "skills_required": [
+          "Finality",
+          "Backend"
+        ]
+      },
+      {
+        "question_id": 107,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "DeFi",
+        "skills_required": [
+          "Flash Loan",
+          "Solidity"
+        ]
+      },
+      {
+        "question_id": 108,
+        "difficulty": "senior_level",
+        "category": "Layer 2",
+        "subcategory": "EIP-4844",
+        "skills_required": [
+          "EIP-4844",
+          "Rollup"
+        ]
+      },
+      {
+        "question_id": 109,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Transaction",
+        "skills_required": [
+          "Gas Management",
+          "Scripting"
+        ]
+      },
+      {
+        "question_id": 110,
+        "difficulty": "senior_level",
+        "category": "Cloud",
+        "subcategory": "Observability",
+        "skills_required": [
+          "Prometheus",
+          "Grafana",
+          "Node"
+        ]
+      },
+      {
+        "question_id": 111,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "Security",
+        "skills_required": [
+          "Formal Verification"
+        ]
+      },
+      {
+        "question_id": 112,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "Architecture",
+        "skills_required": [
+          "Diamond Pattern",
+          "Upgradability"
+        ]
+      },
+      {
+        "question_id": 113,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "Library",
+        "skills_required": [
+          "Solidity",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 114,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Key Management",
+        "skills_required": [
+          "Security",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 115,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "Gas",
+        "skills_required": [
+          "Solidity",
+          "Yul",
+          "Memory"
+        ]
+      },
+      {
+        "question_id": 116,
+        "difficulty": "senior_level",
+        "category": "Ethereum",
+        "subcategory": "EVM",
+        "skills_required": [
+          "EIP-3860",
+          "Limit"
+        ]
+      },
+      {
+        "question_id": 117,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Architecture",
+        "skills_required": [
+          "WebSockets",
+          "Load Balancer",
+          "Docker"
+        ]
+      },
+      {
+        "question_id": 118,
+        "difficulty": "senior_level",
+        "category": "Data",
+        "subcategory": "Big Data",
+        "skills_required": [
+          "Database Schema",
+          "ETL",
+          "Big Data"
+        ]
+      },
+      {
+        "question_id": 119,
+        "difficulty": "senior_level",
+        "category": "Network",
+        "subcategory": "P2P",
+        "skills_required": [
+          "Distributed Systems",
+          "Gossip Protocol"
+        ]
+      },
+      {
+        "question_id": 120,
+        "difficulty": "senior_level",
+        "category": "Cryptography",
+        "subcategory": "ZKP",
+        "skills_required": [
+          "Zero-Knowledge",
+          "Math"
+        ]
+      },
+      {
+        "question_id": 121,
+        "difficulty": "senior_level",
+        "category": "Node",
+        "subcategory": "Archive",
+        "skills_required": [
+          "Cloud",
+          "Cost"
+        ]
+      },
+      {
+        "question_id": 122,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "AppChain",
+        "skills_required": [
+          "Cosmos",
+          "AppChain"
+        ]
+      },
+      {
+        "question_id": 123,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Transaction Manager",
+        "skills_required": [
+          "Microservices",
+          "Queue",
+          "Retry"
+        ]
+      },
+      {
+        "question_id": 124,
+        "difficulty": "senior_level",
+        "category": "Cloud",
+        "subcategory": "Infra",
+        "skills_required": [
+          "Load Balancer",
+          "Web3",
+          "Cloud"
+        ]
+      },
+      {
+        "question_id": 125,
+        "difficulty": "senior_level",
+        "category": "Storage",
+        "subcategory": "Decentralized",
+        "skills_required": [
+          "Arweave",
+          "IPFS"
+        ]
+      },
+      {
+        "question_id": 126,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "Tokenomics",
+        "skills_required": [
+          "ERC20",
+          "Inflation"
+        ]
+      },
+      {
+        "question_id": 127,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "Signature",
+        "skills_required": [
+          "EIP-712",
+          "Phishing"
+        ]
+      },
+      {
+        "question_id": 128,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Database",
+        "skills_required": [
+          "Docker",
+          "Storage"
+        ]
+      },
+      {
+        "question_id": 129,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "Smart Contract",
+        "skills_required": [
+          "Pause",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 130,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Cloud",
+        "skills_required": [
+          "Cost",
+          "Auto Scaling"
+        ]
+      },
+      {
+        "question_id": 131,
+        "difficulty": "senior_level",
+        "category": "Consensus",
+        "subcategory": "CAP Theorem",
+        "skills_required": [
+          "Distributed Systems"
+        ]
+      },
+      {
+        "question_id": 132,
+        "difficulty": "senior_level",
+        "category": "Data Storage",
+        "subcategory": "UTXO vs Account",
+        "skills_required": [
+          "Database Architecture"
+        ]
+      },
+      {
+        "question_id": 133,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "RPC Gateway",
+        "skills_required": [
+          "Load Balancing",
+          "API Design"
+        ]
+      },
+      {
+        "question_id": 134,
+        "difficulty": "senior_level",
+        "category": "Ethereum",
+        "subcategory": "Yellow Paper",
+        "skills_required": [
+          "EVM Mechanics"
+        ]
+      },
+      {
+        "question_id": 135,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "Assembly",
+        "skills_required": [
+          "Solidity",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 136,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "Key Management",
+        "skills_required": [
+          "HSM",
+          "KMS",
+          "Cloud"
+        ]
+      },
+      {
+        "question_id": 137,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Indexer",
+        "skills_required": [
+          "The Graph"
+        ]
+      },
+      {
+        "question_id": 138,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "Upgradability",
+        "skills_required": [
+          "Diamond Pattern"
+        ]
+      },
+      {
+        "question_id": 139,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "Security",
+        "skills_required": [
+          "Foundry",
+          "Invariant Testing"
+        ]
+      },
+      {
+        "question_id": 140,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Observability",
+        "skills_required": [
+          "Prometheus",
+          "Grafana",
+          "Node"
+        ]
+      },
+      {
+        "question_id": 141,
+        "difficulty": "senior_level",
+        "category": "Cryptography",
+        "subcategory": "ZKP",
+        "skills_required": [
+          "Zero-Knowledge Proofs"
+        ]
+      },
+      {
+        "question_id": 142,
+        "difficulty": "senior_level",
+        "category": "Network",
+        "subcategory": "P2P",
+        "skills_required": [
+          "Gossip Protocol",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 143,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "Tokenomics",
+        "skills_required": [
+          "ERC20",
+          "Deflationary"
+        ]
+      },
+      {
+        "question_id": 144,
+        "difficulty": "senior_level",
+        "category": "Consensus",
+        "subcategory": "Ethereum 2.0",
+        "skills_required": [
+          "PoS",
+          "Ethereum"
+        ]
+      },
+      {
+        "question_id": 145,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "EVM",
+        "skills_required": [
+          "Solidity",
+          "Create2"
+        ]
+      },
+      {
+        "question_id": 146,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "Gas",
+        "skills_required": [
+          "Solidity"
+        ]
+      },
+      {
+        "question_id": 147,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Transaction",
+        "skills_required": [
+          "MEV",
+          "Mempool"
+        ]
+      },
+      {
+        "question_id": 148,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Cross-chain",
+        "skills_required": [
+          "Bridge",
+          "Smart Contract"
+        ]
+      },
+      {
+        "question_id": 149,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Node",
+        "skills_required": [
+          "Geth",
+          "Trie"
+        ]
+      },
+      {
+        "question_id": 150,
+        "difficulty": "senior_level",
+        "category": "Cloud",
+        "subcategory": "Network",
+        "skills_required": [
+          "Cloud",
+          "AWS",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 151,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "DeFi",
+        "skills_required": [
+          "Oracle",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 152,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Mempool",
+        "skills_required": [
+          "Data Analysis"
+        ]
+      },
+      {
+        "question_id": 153,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Account Abstraction",
+        "skills_required": [
+          "EIP-4337"
+        ]
+      },
+      {
+        "question_id": 154,
+        "difficulty": "senior_level",
+        "category": "Incident",
+        "subcategory": "Multichain",
+        "skills_required": [
+          "Private Key",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 155,
+        "difficulty": "senior_level",
+        "category": "Cryptography",
+        "subcategory": "Merkle Patricia Trie",
+        "skills_required": [
+          "Trie",
+          "Data Structure"
+        ]
+      },
+      {
+        "question_id": 156,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Web3",
+        "skills_required": [
+          "Batch Request",
+          "RPC"
+        ]
+      },
+      {
+        "question_id": 157,
+        "difficulty": "senior_level",
+        "category": "Layer 2",
+        "subcategory": "Throughput",
+        "skills_required": [
+          "Scalability",
+          "Data Availability"
+        ]
+      },
+      {
+        "question_id": 158,
+        "difficulty": "senior_level",
+        "category": "Cloud",
+        "subcategory": "Kubernetes",
+        "skills_required": [
+          "Node",
+          "Hardware"
+        ]
+      },
+      {
+        "question_id": 159,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Data Availability",
+        "skills_required": [
+          "Celestia",
+          "Validium"
+        ]
+      },
+      {
+        "question_id": 160,
+        "difficulty": "senior_level",
+        "category": "DeFi",
+        "subcategory": "Liquidation",
+        "skills_required": [
+          "Bot",
+          "Mempool"
+        ]
+      },
+      {
+        "question_id": 161,
+        "difficulty": "senior_level",
+        "category": "Tokenomics",
+        "subcategory": "Vesting",
+        "skills_required": [
+          "Smart Contract",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 162,
+        "difficulty": "senior_level",
+        "category": "Consensus",
+        "subcategory": "BFT vs Nakamoto",
+        "skills_required": [
+          "Consensus"
+        ]
+      },
+      {
+        "question_id": 163,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "Oracles",
+        "skills_required": [
+          "TWAP",
+          "Chainlink"
+        ]
+      },
+      {
+        "question_id": 164,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "Upgradability",
+        "skills_required": [
+          "Proxy",
+          "Governance"
+        ]
+      },
+      {
+        "question_id": 165,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "RPC",
+        "skills_required": [
+          "RPC",
+          "Load Balancing"
+        ]
+      },
+      {
+        "question_id": 166,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "Compromised Keys",
+        "skills_required": [
+          "Security",
+          "Emergency Response"
+        ]
+      },
+      {
+        "question_id": 167,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "Randomness",
+        "skills_required": [
+          "Solidity",
+          "VRF"
+        ]
+      },
+      {
+        "question_id": 168,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "Gas",
+        "skills_required": [
+          "Solidity",
+          "Yul"
+        ]
+      },
+      {
+        "question_id": 169,
+        "difficulty": "senior_level",
+        "category": "Network",
+        "subcategory": "P2P",
+        "skills_required": [
+          "Geth",
+          "Bandwidth"
+        ]
+      },
+      {
+        "question_id": 170,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "Smart Contract",
+        "skills_required": [
+          "Forta",
+          "Tenderly"
+        ]
+      },
+      {
+        "question_id": 171,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "DeFi",
+        "skills_required": [
+          "Mainnet Forking",
+          "Foundry"
+        ]
+      },
+      {
+        "question_id": 172,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Indexer",
+        "skills_required": [
+          "Microservices",
+          "CQRS"
+        ]
+      },
+      {
+        "question_id": 173,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "DeFi",
+        "skills_required": [
+          "ERC4626",
+          "Solidity"
+        ]
+      },
+      {
+        "question_id": 174,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "Smart Contract",
+        "skills_required": [
+          "Access Control"
+        ]
+      },
+      {
+        "question_id": 175,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "Gas",
+        "skills_required": [
+          "Solidity",
+          "Loops"
+        ]
+      },
+      {
+        "question_id": 176,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "Solidity Updates",
+        "skills_required": [
+          "Solidity",
+          "Errors"
+        ]
+      },
+      {
+        "question_id": 177,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Webhooks",
+        "skills_required": [
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 178,
+        "difficulty": "senior_level",
+        "category": "Data",
+        "subcategory": "Indexing",
+        "skills_required": [
+          "Database Schema"
+        ]
+      },
+      {
+        "question_id": 179,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Decentralization",
+        "skills_required": [
+          "Blockchain Trilemma"
+        ]
+      },
+      {
+        "question_id": 180,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "Mathematics",
+        "skills_required": [
+          "Solidity",
+          "Math"
+        ]
+      },
+      {
+        "question_id": 181,
+        "difficulty": "senior_level",
+        "category": "Ethereum",
+        "subcategory": "EIPs",
+        "skills_required": [
+          "Account Abstraction",
+          "EVM"
+        ]
+      },
+      {
+        "question_id": 182,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "MEV",
+        "skills_required": [
+          "PBS"
+        ]
+      },
+      {
+        "question_id": 183,
+        "difficulty": "senior_level",
+        "category": "Layer 2",
+        "subcategory": "Bridges",
+        "skills_required": [
+          "Cross-chain",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 184,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "DeFi",
+        "skills_required": [
+          "Impermanent Loss",
+          "AMM"
+        ]
+      },
+      {
+        "question_id": 185,
+        "difficulty": "senior_level",
+        "category": "Web3",
+        "subcategory": "Wallets",
+        "skills_required": [
+          "HD Wallet",
+          "Derivation Path"
+        ]
+      },
+      {
+        "question_id": 186,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "EVM",
+        "skills_required": [
+          "Solidity",
+          "Delegatecall"
+        ]
+      },
+      {
+        "question_id": 187,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "Solidity",
+        "skills_required": [
+          "Solidity",
+          "ABI Encoding"
+        ]
+      },
+      {
+        "question_id": 188,
+        "difficulty": "senior_level",
+        "category": "Smart Contract",
+        "subcategory": "Security",
+        "skills_required": [
+          "Reentrancy",
+          "ERC777"
+        ]
+      },
+      {
+        "question_id": 189,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Transaction",
+        "skills_required": [
+          "EIP-1559",
+          "Gas"
+        ]
+      },
+      {
+        "question_id": 190,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Web3",
+        "skills_required": [
+          "WebSockets",
+          "Event Listeners"
+        ]
+      },
+      {
+        "question_id": 191,
+        "difficulty": "senior_level",
+        "category": "Cloud",
+        "subcategory": "Load Balancer",
+        "skills_required": [
+          "RPC",
+          "Nginx"
+        ]
+      },
+      {
+        "question_id": 192,
+        "difficulty": "senior_level",
+        "category": "Consensus",
+        "subcategory": "Network Issue",
+        "skills_required": [
+          "Validators",
+          "Slashing"
+        ]
+      },
+      {
+        "question_id": 193,
+        "difficulty": "senior_level",
+        "category": "Blockchain",
+        "subcategory": "Data Availability",
+        "skills_required": [
+          "EIP-4844"
+        ]
+      },
+      {
+        "question_id": 194,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Wallet",
+        "skills_required": [
+          "MPC",
+          "Cryptography"
+        ]
+      },
+      {
+        "question_id": 195,
+        "difficulty": "senior_level",
+        "category": "Incident",
+        "subcategory": "DeFi",
+        "skills_required": [
+          "Governance",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 196,
+        "difficulty": "senior_level",
+        "category": "Cryptography",
+        "subcategory": "Trees",
+        "skills_required": [
+          "Data Structure"
+        ]
+      },
+      {
+        "question_id": 197,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Database",
+        "skills_required": [
+          "Caching",
+          "Redis"
+        ]
+      },
+      {
+        "question_id": 198,
+        "difficulty": "senior_level",
+        "category": "System Design",
+        "subcategory": "Scalability",
+        "skills_required": [
+          "Throughput",
+          "TPS"
+        ]
+      },
+      {
+        "question_id": 199,
+        "difficulty": "senior_level",
+        "category": "Cloud",
+        "subcategory": "Infra",
+        "skills_required": [
+          "High Availability",
+          "Cost"
+        ]
+      },
+      {
+        "question_id": 200,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Rollup",
+        "skills_required": [
+          "Sequencer",
+          "L2"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "Preceding_ID": 9,
+        "Target_ID": 26,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['web3.js'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Web3)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 28,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 28,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 28,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 17,
+        "Target_ID": 32,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1321,
+        "combined_score": 0.1528,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.13 | 난이도 university_level → junior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 35,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['security'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 36,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1959,
+        "combined_score": 0.4784,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.20 | 난이도 university_level → junior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 36,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 18,
+        "Target_ID": 38,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 40,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1266,
+        "combined_score": 0.1506,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.13 | 난이도 university_level → junior_level | 동일 카테고리(Network)"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 41,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1399,
+        "combined_score": 0.156,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.14 | 난이도 university_level → middle_level | 동일 카테고리(Consensus)"
+      },
+      {
+        "Preceding_ID": 31,
+        "Target_ID": 45,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.14,
+        "combined_score": 0.156,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.14 | 난이도 junior_level → middle_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 46,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 46,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 28,
+        "Target_ID": 46,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 47,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0975,
+        "combined_score": 0.439,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.10 | 난이도 university_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 47,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 28,
+        "Target_ID": 47,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1528,
+        "combined_score": 0.3611,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.33) | 시나리오 유사도=0.15 | 난이도 junior_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 11,
+        "Target_ID": 48,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.2081,
+        "combined_score": 0.3832,
+        "Logic": "공통 스킬 ['geth'] (Jaccard=0.50) | 시나리오 유사도=0.21 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 51,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.2538,
+        "combined_score": 0.8015,
+        "Logic": "공통 스킬 ['docker', 'network'] (Jaccard=1.00) | 시나리오 유사도=0.25 | 난이도 university_level → junior_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 51,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1898,
+        "combined_score": 0.1759,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.19 | 난이도 university_level → junior_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 18,
+        "Target_ID": 52,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 9,
+        "Target_ID": 53,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['web3.js'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 55,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 55,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 23,
+        "Target_ID": 55,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['erc20'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Token)"
+      },
+      {
+        "Preceding_ID": 17,
+        "Target_ID": 57,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.077,
+        "combined_score": 0.7308,
+        "Logic": "공통 스킬 ['gas optimization'] (Jaccard=1.00) | 시나리오 유사도=0.08 | 난이도 university_level → junior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 58,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1327,
+        "combined_score": 0.1531,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.13 | 난이도 university_level → junior_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 60,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0468,
+        "combined_score": 0.7187,
+        "Logic": "공통 스킬 ['security'] (Jaccard=1.00) | 시나리오 유사도=0.05 | 난이도 university_level → junior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 62,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 62,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 28,
+        "Target_ID": 62,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 38,
+        "Target_ID": 63,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['api', 'database'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 63,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['api', 'database'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 18,
+        "Target_ID": 63,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 51,
+        "Target_ID": 65,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0977,
+        "combined_score": 0.3391,
+        "Logic": "공통 스킬 ['docker'] (Jaccard=0.33) | 시나리오 유사도=0.10 | 난이도 junior_level → middle_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 65,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['docker'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 31,
+        "Target_ID": 65,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1633,
+        "combined_score": 0.1653,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.16 | 난이도 junior_level → middle_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 66,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 51,
+        "Target_ID": 66,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 56,
+        "Target_ID": 66,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1268,
+        "combined_score": 0.2507,
+        "Logic": "공통 스킬 ['load balancer'] (Jaccard=0.33) | 시나리오 유사도=0.13 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 28,
+        "Target_ID": 67,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['security', 'solidity'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 67,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.086,
+        "combined_score": 0.4344,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.09 | 난이도 university_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 67,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 68,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.1154,
+        "combined_score": 0.6461,
+        "Logic": "공통 스킬 ['cloud', 'cost'] (Jaccard=1.00) | 시나리오 유사도=0.12 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 69,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 69,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 16,
+        "Target_ID": 69,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0395,
+        "combined_score": 0.3158,
+        "Logic": "공통 스킬 ['data structure'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 31,
+        "Target_ID": 70,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0593,
+        "combined_score": 0.3237,
+        "Logic": "공통 스킬 ['prometheus'] (Jaccard=0.33) | 시나리오 유사도=0.06 | 난이도 junior_level → middle_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 17,
+        "Target_ID": 71,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.2053,
+        "combined_score": 0.1821,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.21 | 난이도 university_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 72,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 72,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 36,
+        "Target_ID": 72,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0834,
+        "combined_score": 0.3333,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.33) | 시나리오 유사도=0.08 | 난이도 junior_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 28,
+        "Target_ID": 74,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['security', 'solidity'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 74,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0331,
+        "combined_score": 0.4132,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 university_level → middle_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 60,
+        "Target_ID": 74,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0283,
+        "combined_score": 0.4113,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 junior_level → middle_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 36,
+        "Target_ID": 75,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.1705,
+        "combined_score": 0.7682,
+        "Logic": "공통 스킬 ['code review', 'solidity'] (Jaccard=1.00) | 시나리오 유사도=0.17 | 난이도 junior_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 75,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 75,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 39,
+        "Target_ID": 78,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0432,
+        "combined_score": 0.7173,
+        "Logic": "공통 스킬 ['database schema'] (Jaccard=1.00) | 시나리오 유사도=0.04 | 난이도 junior_level → middle_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 38,
+        "Target_ID": 81,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0625,
+        "combined_score": 0.325,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.33) | 시나리오 유사도=0.06 | 난이도 junior_level → middle_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 81,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0479,
+        "combined_score": 0.3192,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.33) | 시나리오 유사도=0.05 | 난이도 junior_level → middle_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 18,
+        "Target_ID": 81,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 18,
+        "Target_ID": 82,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0345,
+        "combined_score": 0.3138,
+        "Logic": "공통 스킬 ['scalability'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 university_level → middle_level | 동일 카테고리(Network)"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 83,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 60,
+        "Target_ID": 85,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.205,
+        "combined_score": 0.482,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.20 | 난이도 junior_level → middle_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 85,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0536,
+        "combined_score": 0.4214,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.05 | 난이도 university_level → middle_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 35,
+        "Target_ID": 85,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 86,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1341,
+        "combined_score": 0.1536,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.13 | 난이도 university_level → middle_level | 동일 카테고리(Consensus)"
+      },
+      {
+        "Preceding_ID": 32,
+        "Target_ID": 89,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.2189,
+        "combined_score": 0.1876,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.22 | 난이도 junior_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 57,
+        "Target_ID": 89,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1627,
+        "combined_score": 0.1651,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.16 | 난이도 junior_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 22,
+        "Target_ID": 90,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0795,
+        "combined_score": 0.6318,
+        "Logic": "공통 스킬 ['ipfs'] (Jaccard=1.00) | 시나리오 유사도=0.08 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 91,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0995,
+        "combined_score": 0.4398,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.10 | 난이도 university_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 91,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 36,
+        "Target_ID": 91,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0753,
+        "combined_score": 0.3301,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.33) | 시나리오 유사도=0.08 | 난이도 junior_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 92,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 92,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 28,
+        "Target_ID": 92,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 9,
+        "Target_ID": 94,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.267,
+        "combined_score": 0.4068,
+        "Logic": "공통 스킬 ['web3.js'] (Jaccard=0.50) | 시나리오 유사도=0.27 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 53,
+        "Target_ID": 94,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['web3.js'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 26,
+        "Target_ID": 94,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['web3.js'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 95,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 51,
+        "Target_ID": 95,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1103,
+        "combined_score": 0.3441,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.33) | 시나리오 유사도=0.11 | 난이도 junior_level → middle_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 95,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0787,
+        "combined_score": 0.3315,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.33) | 시나리오 유사도=0.08 | 난이도 university_level → middle_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 96,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 35,
+        "Target_ID": 96,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 38,
+        "Target_ID": 96,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['api'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 31,
+        "Target_ID": 97,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1401,
+        "combined_score": 0.1561,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.14 | 난이도 junior_level → middle_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 101,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0368,
+        "combined_score": 0.3147,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 60,
+        "Target_ID": 101,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0314,
+        "combined_score": 0.3126,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 35,
+        "Target_ID": 101,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 102,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.1329,
+        "combined_score": 0.3032,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.25) | 시나리오 유사도=0.13 | 난이도 junior_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 38,
+        "Target_ID": 102,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0905,
+        "combined_score": 0.2862,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.25) | 시나리오 유사도=0.09 | 난이도 junior_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 81,
+        "Target_ID": 102,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 43,
+        "Target_ID": 103,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['optimistic rollup', 'zk rollup'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Layer 2)"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 104,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 35,
+        "Target_ID": 104,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 60,
+        "Target_ID": 104,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 65,
+        "Target_ID": 105,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.1586,
+        "combined_score": 0.3134,
+        "Logic": "공통 스킬 ['kubernetes'] (Jaccard=0.25) | 시나리오 유사도=0.16 | 난이도 middle_level → senior_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 97,
+        "Target_ID": 105,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0298,
+        "combined_score": 0.2619,
+        "Logic": "공통 스킬 ['node'] (Jaccard=0.25) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 83,
+        "Target_ID": 105,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0826,
+        "combined_score": 0.183,
+        "Logic": "공통 스킬 ['storage'] (Jaccard=0.25) | 시나리오 유사도=0.08 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 79,
+        "Target_ID": 106,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['finality'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Consensus)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 107,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 107,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 62,
+        "Target_ID": 107,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 20,
+        "Target_ID": 108,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['rollup'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 31,
+        "Target_ID": 110,
+        "skill_overlap": 0.6667,
+        "scenario_similarity": 0.1292,
+        "combined_score": 0.4517,
+        "Logic": "공통 스킬 ['grafana', 'prometheus'] (Jaccard=0.67) | 시나리오 유사도=0.13 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 70,
+        "Target_ID": 110,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0491,
+        "combined_score": 0.1696,
+        "Logic": "공통 스킬 ['prometheus'] (Jaccard=0.25) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 97,
+        "Target_ID": 110,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0429,
+        "combined_score": 0.1672,
+        "Logic": "공통 스킬 ['node'] (Jaccard=0.25) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 32,
+        "Target_ID": 111,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1673,
+        "combined_score": 0.1669,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.17 | 난이도 junior_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 42,
+        "Target_ID": 112,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.044,
+        "combined_score": 0.3176,
+        "Logic": "공통 스킬 ['upgradability'] (Jaccard=0.33) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 33,
+        "Target_ID": 112,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.2335,
+        "combined_score": 0.1934,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.23 | 난이도 junior_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 28,
+        "Target_ID": 113,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0733,
+        "combined_score": 0.7293,
+        "Logic": "공통 스킬 ['security', 'solidity'] (Jaccard=1.00) | 시나리오 유사도=0.07 | 난이도 junior_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 67,
+        "Target_ID": 113,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['security', 'solidity'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 74,
+        "Target_ID": 113,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['security', 'solidity'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 114,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0409,
+        "combined_score": 0.3164,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 60,
+        "Target_ID": 114,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.035,
+        "combined_score": 0.314,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 35,
+        "Target_ID": 114,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 72,
+        "Target_ID": 115,
+        "skill_overlap": 0.6667,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.5,
+        "Logic": "공통 스킬 ['solidity', 'yul'] (Jaccard=0.67) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 115,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0533,
+        "combined_score": 0.3213,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.33) | 시나리오 유사도=0.05 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 115,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 76,
+        "Target_ID": 116,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1282,
+        "combined_score": 0.1513,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.13 | 난이도 middle_level → senior_level | 동일 카테고리(Ethereum)"
+      },
+      {
+        "Preceding_ID": 59,
+        "Target_ID": 117,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0823,
+        "combined_score": 0.2829,
+        "Logic": "공통 스킬 ['websockets'] (Jaccard=0.25) | 시나리오 유사도=0.08 | 난이도 junior_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 56,
+        "Target_ID": 117,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['load balancer'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 117,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['docker'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 39,
+        "Target_ID": 118,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0287,
+        "combined_score": 0.2115,
+        "Logic": "공통 스킬 ['database schema'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 78,
+        "Target_ID": 118,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0257,
+        "combined_score": 0.2103,
+        "Logic": "공통 스킬 ['database schema'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 30,
+        "Target_ID": 119,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1301,
+        "combined_score": 0.1521,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.13 | 난이도 junior_level → senior_level | 동일 카테고리(Network)"
+      },
+      {
+        "Preceding_ID": 68,
+        "Target_ID": 121,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0666,
+        "combined_score": 0.6266,
+        "Logic": "공통 스킬 ['cloud', 'cost'] (Jaccard=1.00) | 시나리오 유사도=0.07 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 121,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['cloud', 'cost'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 83,
+        "Target_ID": 121,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0753,
+        "combined_score": 0.2301,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.33) | 시나리오 유사도=0.08 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 84,
+        "Target_ID": 123,
+        "skill_overlap": 0.6667,
+        "scenario_similarity": 0.0903,
+        "combined_score": 0.4361,
+        "Logic": "공통 스킬 ['microservices', 'queue'] (Jaccard=0.67) | 시나리오 유사도=0.09 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 38,
+        "Target_ID": 123,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1275,
+        "combined_score": 0.151,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.13 | 난이도 junior_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 68,
+        "Target_ID": 124,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 83,
+        "Target_ID": 124,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 56,
+        "Target_ID": 124,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.1755,
+        "combined_score": 0.2202,
+        "Logic": "공통 스킬 ['load balancer'] (Jaccard=0.25) | 시나리오 유사도=0.18 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 22,
+        "Target_ID": 125,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1045,
+        "combined_score": 0.3418,
+        "Logic": "공통 스킬 ['ipfs'] (Jaccard=0.50) | 시나리오 유사도=0.10 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 90,
+        "Target_ID": 125,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ipfs'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 23,
+        "Target_ID": 126,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0577,
+        "combined_score": 0.2231,
+        "Logic": "공통 스킬 ['erc20'] (Jaccard=0.33) | 시나리오 유사도=0.06 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 55,
+        "Target_ID": 126,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['erc20'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 54,
+        "Target_ID": 127,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['eip-712'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 51,
+        "Target_ID": 128,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1478,
+        "combined_score": 0.3591,
+        "Logic": "공통 스킬 ['docker'] (Jaccard=0.33) | 시나리오 유사도=0.15 | 난이도 junior_level → senior_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 128,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1055,
+        "combined_score": 0.3422,
+        "Logic": "공통 스킬 ['docker'] (Jaccard=0.33) | 시나리오 유사도=0.11 | 난이도 university_level → senior_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 65,
+        "Target_ID": 128,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0276,
+        "combined_score": 0.3111,
+        "Logic": "공통 스킬 ['docker'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 129,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 35,
+        "Target_ID": 129,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 60,
+        "Target_ID": 129,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 68,
+        "Target_ID": 130,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0671,
+        "combined_score": 0.2268,
+        "Logic": "공통 스킬 ['cost'] (Jaccard=0.33) | 시나리오 유사도=0.07 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 130,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['cost'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 86,
+        "Target_ID": 131,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.3763,
+        "combined_score": 0.2505,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.38 | 난이도 middle_level → senior_level | 동일 카테고리(Consensus)"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 131,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.2101,
+        "combined_score": 0.184,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.21 | 난이도 middle_level → senior_level | 동일 카테고리(Consensus)"
+      },
+      {
+        "Preceding_ID": 24,
+        "Target_ID": 131,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1852,
+        "combined_score": 0.1741,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.19 | 난이도 university_level → senior_level | 동일 카테고리(Consensus)"
+      },
+      {
+        "Preceding_ID": 28,
+        "Target_ID": 135,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.08,
+        "combined_score": 0.732,
+        "Logic": "공통 스킬 ['security', 'solidity'] (Jaccard=1.00) | 시나리오 유사도=0.08 | 난이도 junior_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 67,
+        "Target_ID": 135,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['security', 'solidity'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 74,
+        "Target_ID": 135,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['security', 'solidity'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 85,
+        "Target_ID": 136,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.2694,
+        "combined_score": 0.3578,
+        "Logic": "공통 스킬 ['kms'] (Jaccard=0.25) | 시나리오 유사도=0.27 | 난이도 middle_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 60,
+        "Target_ID": 136,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.2898,
+        "combined_score": 0.2159,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.29 | 난이도 junior_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 136,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.1636,
+        "combined_score": 0.2154,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.25) | 시나리오 유사도=0.16 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 71,
+        "Target_ID": 139,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['foundry'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 31,
+        "Target_ID": 140,
+        "skill_overlap": 0.6667,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.5,
+        "Logic": "공통 스킬 ['grafana', 'prometheus'] (Jaccard=0.67) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 97,
+        "Target_ID": 140,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0484,
+        "combined_score": 0.2694,
+        "Logic": "공통 스킬 ['node'] (Jaccard=0.25) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 70,
+        "Target_ID": 140,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['prometheus'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 141,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.4873,
+        "combined_score": 0.1949,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.49 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 60,
+        "Target_ID": 142,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1003,
+        "combined_score": 0.3401,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.10 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 142,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 35,
+        "Target_ID": 142,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 55,
+        "Target_ID": 143,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1011,
+        "combined_score": 0.2404,
+        "Logic": "공통 스킬 ['erc20'] (Jaccard=0.33) | 시나리오 유사도=0.10 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 23,
+        "Target_ID": 143,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['erc20'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 144,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.24,
+        "combined_score": 0.396,
+        "Logic": "공통 스킬 ['pos'] (Jaccard=0.33) | 시나리오 유사도=0.24 | 난이도 middle_level → senior_level | 동일 카테고리(Consensus)"
+      },
+      {
+        "Preceding_ID": 86,
+        "Target_ID": 144,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1443,
+        "combined_score": 0.1577,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.14 | 난이도 middle_level → senior_level | 동일 카테고리(Consensus)"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 144,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1252,
+        "combined_score": 0.1501,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.13 | 난이도 university_level → senior_level | 동일 카테고리(Consensus)"
+      },
+      {
+        "Preceding_ID": 62,
+        "Target_ID": 145,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0326,
+        "combined_score": 0.413,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 145,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 145,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 92,
+        "Target_ID": 146,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.1144,
+        "combined_score": 0.7458,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=1.00) | 시나리오 유사도=0.11 | 난이도 middle_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 146,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 146,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 45,
+        "Target_ID": 147,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['mempool'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 21,
+        "Target_ID": 148,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['smart contract'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 48,
+        "Target_ID": 149,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.1359,
+        "combined_score": 0.7543,
+        "Logic": "공통 스킬 ['geth', 'trie'] (Jaccard=1.00) | 시나리오 유사도=0.14 | 난이도 middle_level → senior_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 11,
+        "Target_ID": 149,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0903,
+        "combined_score": 0.3361,
+        "Logic": "공통 스킬 ['geth'] (Jaccard=0.50) | 시나리오 유사도=0.09 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 83,
+        "Target_ID": 150,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.1109,
+        "combined_score": 0.2944,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.25) | 시나리오 유사도=0.11 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 68,
+        "Target_ID": 150,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 150,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 44,
+        "Target_ID": 151,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1495,
+        "combined_score": 0.3598,
+        "Logic": "공통 스킬 ['oracle'] (Jaccard=0.50) | 시나리오 유사도=0.15 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 151,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 28,
+        "Target_ID": 151,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 76,
+        "Target_ID": 153,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.252,
+        "combined_score": 0.4008,
+        "Logic": "공통 스킬 ['eip-4337'] (Jaccard=0.50) | 시나리오 유사도=0.25 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 60,
+        "Target_ID": 154,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1343,
+        "combined_score": 0.3537,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.13 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 154,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0326,
+        "combined_score": 0.3131,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 35,
+        "Target_ID": 154,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 16,
+        "Target_ID": 155,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['data structure'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Cryptography)"
+      },
+      {
+        "Preceding_ID": 48,
+        "Target_ID": 155,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['trie'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 69,
+        "Target_ID": 155,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['data structure'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 82,
+        "Target_ID": 157,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1181,
+        "combined_score": 0.2473,
+        "Logic": "공통 스킬 ['scalability'] (Jaccard=0.33) | 시나리오 유사도=0.12 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 18,
+        "Target_ID": 157,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['scalability'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 19,
+        "Target_ID": 158,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0871,
+        "combined_score": 0.3348,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=0.50) | 시나리오 유사도=0.09 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 97,
+        "Target_ID": 158,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0473,
+        "combined_score": 0.2189,
+        "Logic": "공통 스킬 ['node'] (Jaccard=0.33) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 45,
+        "Target_ID": 160,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['mempool'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 161,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 35,
+        "Target_ID": 161,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 60,
+        "Target_ID": 161,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 86,
+        "Target_ID": 162,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.2282,
+        "combined_score": 0.1913,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.23 | 난이도 middle_level → senior_level | 동일 카테고리(Consensus)"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 162,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.2225,
+        "combined_score": 0.189,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.22 | 난이도 university_level → senior_level | 동일 카테고리(Consensus)"
+      },
+      {
+        "Preceding_ID": 87,
+        "Target_ID": 163,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.2079,
+        "combined_score": 0.4832,
+        "Logic": "공통 스킬 ['chainlink'] (Jaccard=0.50) | 시나리오 유사도=0.21 | 난이도 middle_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 164,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.2054,
+        "combined_score": 0.1822,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.21 | 난이도 university_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 60,
+        "Target_ID": 164,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1611,
+        "combined_score": 0.1644,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.16 | 난이도 junior_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 51,
+        "Target_ID": 165,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1464,
+        "combined_score": 0.1586,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.15 | 난이도 junior_level → senior_level | 동일 카테고리(Operations)"
+      },
+      {
+        "Preceding_ID": 60,
+        "Target_ID": 166,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1066,
+        "combined_score": 0.4426,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.11 | 난이도 junior_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 166,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0236,
+        "combined_score": 0.4095,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 university_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 35,
+        "Target_ID": 166,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 167,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0383,
+        "combined_score": 0.4153,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 167,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 62,
+        "Target_ID": 167,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 72,
+        "Target_ID": 168,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0815,
+        "combined_score": 0.7326,
+        "Logic": "공통 스킬 ['solidity', 'yul'] (Jaccard=1.00) | 시나리오 유사도=0.08 | 난이도 middle_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 62,
+        "Target_ID": 168,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1073,
+        "combined_score": 0.4429,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.11 | 난이도 middle_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 168,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 11,
+        "Target_ID": 169,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1664,
+        "combined_score": 0.3666,
+        "Logic": "공통 스킬 ['geth'] (Jaccard=0.50) | 시나리오 유사도=0.17 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 48,
+        "Target_ID": 169,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1074,
+        "combined_score": 0.243,
+        "Logic": "공통 스킬 ['geth'] (Jaccard=0.33) | 시나리오 유사도=0.11 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 71,
+        "Target_ID": 171,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['foundry'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 89,
+        "Target_ID": 171,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.289,
+        "combined_score": 0.2156,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.29 | 난이도 middle_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 84,
+        "Target_ID": 172,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0875,
+        "combined_score": 0.235,
+        "Logic": "공통 스킬 ['microservices'] (Jaccard=0.33) | 시나리오 유사도=0.09 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 173,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0475,
+        "combined_score": 0.419,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.05 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 173,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 62,
+        "Target_ID": 173,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 175,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 175,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 62,
+        "Target_ID": 175,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 176,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.044,
+        "combined_score": 0.4176,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 176,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 62,
+        "Target_ID": 176,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 59,
+        "Target_ID": 177,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1442,
+        "combined_score": 0.1577,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.14 | 난이도 junior_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 39,
+        "Target_ID": 178,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0678,
+        "combined_score": 0.6271,
+        "Logic": "공통 스킬 ['database schema'] (Jaccard=1.00) | 시나리오 유사도=0.07 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 78,
+        "Target_ID": 178,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['database schema'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 24,
+        "Target_ID": 179,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.2825,
+        "combined_score": 0.713,
+        "Logic": "공통 스킬 ['blockchain trilemma'] (Jaccard=1.00) | 시나리오 유사도=0.28 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 180,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 180,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 62,
+        "Target_ID": 180,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 3,
+        "Target_ID": 181,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1667,
+        "combined_score": 0.3667,
+        "Logic": "공통 스킬 ['evm'] (Jaccard=0.50) | 시나리오 유사도=0.17 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 76,
+        "Target_ID": 181,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0909,
+        "combined_score": 0.3364,
+        "Logic": "공통 스킬 ['account abstraction'] (Jaccard=0.33) | 시나리오 유사도=0.09 | 난이도 middle_level → senior_level | 동일 카테고리(Ethereum)"
+      },
+      {
+        "Preceding_ID": 35,
+        "Target_ID": 183,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0503,
+        "combined_score": 0.3201,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.05 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 183,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 60,
+        "Target_ID": 183,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 47,
+        "Target_ID": 186,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['delegatecall', 'solidity'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 186,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 186,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 62,
+        "Target_ID": 187,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.2944,
+        "combined_score": 0.5178,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.29 | 난이도 middle_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 92,
+        "Target_ID": 187,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0454,
+        "combined_score": 0.4182,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 187,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['solidity'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Smart Contract)"
+      },
+      {
+        "Preceding_ID": 37,
+        "Target_ID": 189,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['eip-1559'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 26,
+        "Target_ID": 189,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['gas'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 59,
+        "Target_ID": 190,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['websockets'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 99,
+        "Target_ID": 194,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0165,
+        "combined_score": 0.4066,
+        "Logic": "공통 스킬 ['cryptography'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level | 동일 카테고리(Architecture)"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 195,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 35,
+        "Target_ID": 195,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 60,
+        "Target_ID": 195,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 16,
+        "Target_ID": 196,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.1471,
+        "combined_score": 0.7589,
+        "Logic": "공통 스킬 ['data structure'] (Jaccard=1.00) | 시나리오 유사도=0.15 | 난이도 university_level → senior_level | 동일 카테고리(Cryptography)"
+      },
+      {
+        "Preceding_ID": 69,
+        "Target_ID": 196,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['data structure'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 78,
+        "Target_ID": 197,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.177,
+        "combined_score": 0.1708,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.18 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 68,
+        "Target_ID": 199,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['cost'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 199,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['cost'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      }
+    ]
+  },
+  "ordered_path": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    27,
+    29,
+    30,
+    31,
+    33,
+    34,
+    37,
+    39,
+    54,
+    56,
+    59,
+    26,
+    32,
+    35,
+    38,
+    40,
+    52,
+    53,
+    57,
+    58,
+    60,
+    36,
+    51,
+    28,
+    55,
+    42,
+    43,
+    44,
+    49,
+    50,
+    61,
+    64,
+    73,
+    76,
+    77,
+    79,
+    80,
+    84,
+    87,
+    88,
+    93,
+    98,
+    99,
+    100,
+    41,
+    45,
+    48,
+    68,
+    70,
+    71,
+    78,
+    82,
+    83,
+    86,
+    90,
+    97,
+    89,
+    46,
+    47,
+    62,
+    63,
+    65,
+    66,
+    67,
+    69,
+    72,
+    74,
+    75,
+    81,
+    85,
+    91,
+    92,
+    94,
+    95,
+    96,
+    109,
+    120,
+    122,
+    132,
+    133,
+    134,
+    137,
+    138,
+    152,
+    156,
+    159,
+    170,
+    174,
+    182,
+    184,
+    185,
+    188,
+    191,
+    192,
+    193,
+    198,
+    200,
+    103,
+    106,
+    108,
+    111,
+    116,
+    119,
+    127,
+    139,
+    141,
+    147,
+    148,
+    153,
+    160,
+    163,
+    165,
+    172,
+    177,
+    179,
+    190,
+    194,
+    197,
+    112,
+    118,
+    123,
+    125,
+    126,
+    130,
+    143,
+    149,
+    157,
+    158,
+    162,
+    164,
+    169,
+    171,
+    178,
+    181,
+    189,
+    196,
+    199,
+    101,
+    102,
+    104,
+    105,
+    107,
+    110,
+    113,
+    114,
+    115,
+    117,
+    121,
+    124,
+    128,
+    129,
+    131,
+    135,
+    136,
+    140,
+    142,
+    144,
+    145,
+    146,
+    150,
+    151,
+    154,
+    155,
+    161,
+    166,
+    167,
+    168,
+    173,
+    175,
+    176,
+    180,
+    183,
+    186,
+    187,
+    195
+  ],
+  "isolated_problems": [
+    1,
+    5,
+    12,
+    13,
+    14,
+    15,
+    27,
+    29,
+    34,
+    49,
+    50,
+    61,
+    64,
+    73,
+    77,
+    80,
+    88,
+    93,
+    98,
+    100,
+    109,
+    120,
+    122,
+    132,
+    133,
+    134,
+    137,
+    138,
+    152,
+    156,
+    159,
+    170,
+    174,
+    182,
+    184,
+    185,
+    188,
+    191,
+    192,
+    193,
+    198,
+    200
+  ]
+}

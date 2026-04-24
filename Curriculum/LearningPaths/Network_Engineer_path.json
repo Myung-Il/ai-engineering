@@ -1,0 +1,6521 @@
+{
+  "metadata": {
+    "job_role": "Network_Engineer",
+    "source_file": "Network_Engineer.json",
+    "total_problems": 200,
+    "difficulty_distribution": {
+      "university_level": 25,
+      "junior_level": 25,
+      "middle_level": 50,
+      "senior_level": 100
+    },
+    "cluster_count": 198,
+    "edge_count": 174,
+    "isolated_problem_count": 76,
+    "parameters": {
+      "skill_weight": 0.6,
+      "scenario_weight": 0.4,
+      "min_combined_score": 0.15,
+      "max_prereqs_per_target": 3,
+      "same_category_bonus": 0.1
+    }
+  },
+  "clusters": [
+    {
+      "cluster_id": "Routing__BGP Best Path",
+      "category": "Routing",
+      "subcategory": "BGP Best Path",
+      "size": 2,
+      "question_ids": [
+        51,
+        91
+      ],
+      "common_skills": [
+        "BGP",
+        "Traffic Engineering"
+      ]
+    },
+    {
+      "cluster_id": "VLAN__Trunking",
+      "category": "VLAN",
+      "subcategory": "Trunking",
+      "size": 2,
+      "question_ids": [
+        10,
+        39
+      ],
+      "common_skills": [
+        "VLAN",
+        "802.1Q",
+        "Native VLAN"
+      ]
+    },
+    {
+      "cluster_id": "API__Cisco DNA Center",
+      "category": "API",
+      "subcategory": "Cisco DNA Center",
+      "size": 1,
+      "question_ids": [
+        35
+      ],
+      "common_skills": [
+        "REST API",
+        "JSON"
+      ]
+    },
+    {
+      "cluster_id": "API__Python Requests",
+      "category": "API",
+      "subcategory": "Python Requests",
+      "size": 1,
+      "question_ids": [
+        197
+      ],
+      "common_skills": [
+        "Python",
+        "REST API",
+        "HTTP Headers"
+      ]
+    },
+    {
+      "cluster_id": "ARP__Address Resolution",
+      "category": "ARP",
+      "subcategory": "Address Resolution",
+      "size": 1,
+      "question_ids": [
+        13
+      ],
+      "common_skills": [
+        "ARP",
+        "Ethernet"
+      ]
+    },
+    {
+      "cluster_id": "Application Layer__Port Numbers",
+      "category": "Application Layer",
+      "subcategory": "Port Numbers",
+      "size": 1,
+      "question_ids": [
+        21
+      ],
+      "common_skills": [
+        "Port Numbers",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Application__CDN",
+      "category": "Application",
+      "subcategory": "CDN",
+      "size": 1,
+      "question_ids": [
+        96
+      ],
+      "common_skills": [
+        "CDN",
+        "Performance"
+      ]
+    },
+    {
+      "cluster_id": "Application__DNS Issues",
+      "category": "Application",
+      "subcategory": "DNS Issues",
+      "size": 1,
+      "question_ids": [
+        59
+      ],
+      "common_skills": [
+        "DNS",
+        "UDP",
+        "MTU"
+      ]
+    },
+    {
+      "cluster_id": "Application__HTTP Error",
+      "category": "Application",
+      "subcategory": "HTTP Error",
+      "size": 1,
+      "question_ids": [
+        42
+      ],
+      "common_skills": [
+        "HTTP",
+        "Load Balancer"
+      ]
+    },
+    {
+      "cluster_id": "Application__SSH",
+      "category": "Application",
+      "subcategory": "SSH",
+      "size": 1,
+      "question_ids": [
+        38
+      ],
+      "common_skills": [
+        "SSH",
+        "ACL"
+      ]
+    },
+    {
+      "cluster_id": "Application__Web Server Logs",
+      "category": "Application",
+      "subcategory": "Web Server Logs",
+      "size": 1,
+      "question_ids": [
+        48
+      ],
+      "common_skills": [
+        "HTTP",
+        "Log Analysis"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__High Availability",
+      "category": "Architecture",
+      "subcategory": "High Availability",
+      "size": 1,
+      "question_ids": [
+        101
+      ],
+      "common_skills": [
+        "Multi-homing",
+        "BGP",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Automation__Ansible",
+      "category": "Automation",
+      "subcategory": "Ansible",
+      "size": 1,
+      "question_ids": [
+        27
+      ],
+      "common_skills": [
+        "Ansible",
+        "YAML"
+      ]
+    },
+    {
+      "cluster_id": "Automation__Ansible Idempotency",
+      "category": "Automation",
+      "subcategory": "Ansible Idempotency",
+      "size": 1,
+      "question_ids": [
+        147
+      ],
+      "common_skills": [
+        "Ansible",
+        "Idempotency",
+        "IaC"
+      ]
+    },
+    {
+      "cluster_id": "Automation__Ansible Review",
+      "category": "Automation",
+      "subcategory": "Ansible Review",
+      "size": 1,
+      "question_ids": [
+        85
+      ],
+      "common_skills": [
+        "Ansible",
+        "YAML",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Automation__CI/CD Pipeline",
+      "category": "Automation",
+      "subcategory": "CI/CD Pipeline",
+      "size": 1,
+      "question_ids": [
+        143
+      ],
+      "common_skills": [
+        "Batfish",
+        "Network CI/CD",
+        "Testing"
+      ]
+    },
+    {
+      "cluster_id": "Automation__Infrastructure as Code",
+      "category": "Automation",
+      "subcategory": "Infrastructure as Code",
+      "size": 1,
+      "question_ids": [
+        118
+      ],
+      "common_skills": [
+        "Terraform",
+        "State Management",
+        "CI/CD"
+      ]
+    },
+    {
+      "cluster_id": "Automation__Jinja2 Templates",
+      "category": "Automation",
+      "subcategory": "Jinja2 Templates",
+      "size": 1,
+      "question_ids": [
+        158
+      ],
+      "common_skills": [
+        "Jinja2",
+        "Ansible",
+        "Automation"
+      ]
+    },
+    {
+      "cluster_id": "Automation__NAPALM",
+      "category": "Automation",
+      "subcategory": "NAPALM",
+      "size": 1,
+      "question_ids": [
+        32
+      ],
+      "common_skills": [
+        "Python",
+        "NAPALM"
+      ]
+    },
+    {
+      "cluster_id": "Automation__NetDevOps",
+      "category": "Automation",
+      "subcategory": "NetDevOps",
+      "size": 1,
+      "question_ids": [
+        139
+      ],
+      "common_skills": [
+        "CI/CD",
+        "NetDevOps",
+        "Testing"
+      ]
+    },
+    {
+      "cluster_id": "Automation__Python",
+      "category": "Automation",
+      "subcategory": "Python",
+      "size": 1,
+      "question_ids": [
+        26
+      ],
+      "common_skills": [
+        "Python",
+        "Netmiko"
+      ]
+    },
+    {
+      "cluster_id": "Automation__Python Nornir",
+      "category": "Automation",
+      "subcategory": "Python Nornir",
+      "size": 1,
+      "question_ids": [
+        157
+      ],
+      "common_skills": [
+        "Python",
+        "Nornir",
+        "Concurrency"
+      ]
+    },
+    {
+      "cluster_id": "Automation__Python Scapy",
+      "category": "Automation",
+      "subcategory": "Python Scapy",
+      "size": 1,
+      "question_ids": [
+        31
+      ],
+      "common_skills": [
+        "Python",
+        "Scapy"
+      ]
+    },
+    {
+      "cluster_id": "Automation__Python ipaddress",
+      "category": "Automation",
+      "subcategory": "Python ipaddress",
+      "size": 1,
+      "question_ids": [
+        198
+      ],
+      "common_skills": [
+        "Python",
+        "ipaddress",
+        "Subnet Math"
+      ]
+    },
+    {
+      "cluster_id": "Automation__RESTCONF",
+      "category": "Automation",
+      "subcategory": "RESTCONF",
+      "size": 1,
+      "question_ids": [
+        87
+      ],
+      "common_skills": [
+        "RESTCONF",
+        "YANG",
+        "API"
+      ]
+    },
+    {
+      "cluster_id": "Automation__Terraform State",
+      "category": "Automation",
+      "subcategory": "Terraform State",
+      "size": 1,
+      "question_ids": [
+        187
+      ],
+      "common_skills": [
+        "Terraform",
+        "State Locking",
+        "Collaboration"
+      ]
+    },
+    {
+      "cluster_id": "Automation__Webhook vs Polling",
+      "category": "Automation",
+      "subcategory": "Webhook vs Polling",
+      "size": 1,
+      "question_ids": [
+        123
+      ],
+      "common_skills": [
+        "API",
+        "Webhooks",
+        "Network Automation"
+      ]
+    },
+    {
+      "cluster_id": "Automation__YANG Models",
+      "category": "Automation",
+      "subcategory": "YANG Models",
+      "size": 1,
+      "question_ids": [
+        149
+      ],
+      "common_skills": [
+        "NETCONF",
+        "RESTCONF",
+        "YANG"
+      ]
+    },
+    {
+      "cluster_id": "Availability__Anycast DNS",
+      "category": "Availability",
+      "subcategory": "Anycast DNS",
+      "size": 1,
+      "question_ids": [
+        172
+      ],
+      "common_skills": [
+        "Anycast",
+        "BGP",
+        "DNS System Design"
+      ]
+    },
+    {
+      "cluster_id": "Availability__Redundancy Protcol",
+      "category": "Availability",
+      "subcategory": "Redundancy Protcol",
+      "size": 1,
+      "question_ids": [
+        72
+      ],
+      "common_skills": [
+        "HSRP",
+        "VRRP",
+        "Gateway Redundancy"
+      ]
+    },
+    {
+      "cluster_id": "Cabling__Interface Errors",
+      "category": "Cabling",
+      "subcategory": "Interface Errors",
+      "size": 1,
+      "question_ids": [
+        43
+      ],
+      "common_skills": [
+        "Ethernet",
+        "Hardware"
+      ]
+    },
+    {
+      "cluster_id": "Capacity__Throughput Calculation",
+      "category": "Capacity",
+      "subcategory": "Throughput Calculation",
+      "size": 1,
+      "question_ids": [
+        67
+      ],
+      "common_skills": [
+        "Bandwidth",
+        "PPS",
+        "Calculation"
+      ]
+    },
+    {
+      "cluster_id": "Change Management__Backbone Update",
+      "category": "Change Management",
+      "subcategory": "Backbone Update",
+      "size": 1,
+      "question_ids": [
+        74
+      ],
+      "common_skills": [
+        "Change Control",
+        "Risk Assessment"
+      ]
+    },
+    {
+      "cluster_id": "Change Management__Core Migration",
+      "category": "Change Management",
+      "subcategory": "Core Migration",
+      "size": 1,
+      "question_ids": [
+        127
+      ],
+      "common_skills": [
+        "Migration Strategy",
+        "OSPF",
+        "Downtime"
+      ]
+    },
+    {
+      "cluster_id": "Change Management__Core Upgrade",
+      "category": "Change Management",
+      "subcategory": "Core Upgrade",
+      "size": 1,
+      "question_ids": [
+        176
+      ],
+      "common_skills": [
+        "Risk Management",
+        "Maintenance",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Chaos Engineering__Network Fault Injection",
+      "category": "Chaos Engineering",
+      "subcategory": "Network Fault Injection",
+      "size": 1,
+      "question_ids": [
+        124
+      ],
+      "common_skills": [
+        "Chaos Engineering",
+        "Resilience",
+        "Traffic Control"
+      ]
+    },
+    {
+      "cluster_id": "Chaos Engineering__Resilience Testing",
+      "category": "Chaos Engineering",
+      "subcategory": "Resilience Testing",
+      "size": 1,
+      "question_ids": [
+        183
+      ],
+      "common_skills": [
+        "Chaos Engineering",
+        "Game Day",
+        "Failover Validation"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Architecture__AWS Dependency",
+      "category": "Cloud Architecture",
+      "subcategory": "AWS Dependency",
+      "size": 1,
+      "question_ids": [
+        83
+      ],
+      "common_skills": [
+        "AWS",
+        "DNS",
+        "VPC"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Infrastructure__Terraform",
+      "category": "Cloud Infrastructure",
+      "subcategory": "Terraform",
+      "size": 1,
+      "question_ids": [
+        29
+      ],
+      "common_skills": [
+        "Terraform",
+        "AWS"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Native__Kubernetes Calico",
+      "category": "Cloud Native",
+      "subcategory": "Kubernetes Calico",
+      "size": 1,
+      "question_ids": [
+        160
+      ],
+      "common_skills": [
+        "Kubernetes",
+        "Calico",
+        "BGP"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Native__Kubernetes Ingress",
+      "category": "Cloud Native",
+      "subcategory": "Kubernetes Ingress",
+      "size": 1,
+      "question_ids": [
+        173
+      ],
+      "common_skills": [
+        "Kubernetes",
+        "Ingress",
+        "Gateway API"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Networking__AWS TGW",
+      "category": "Cloud Networking",
+      "subcategory": "AWS TGW",
+      "size": 1,
+      "question_ids": [
+        132
+      ],
+      "common_skills": [
+        "AWS Transit Gateway",
+        "Inspection VPC",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Networking__AWS VPC",
+      "category": "Cloud Networking",
+      "subcategory": "AWS VPC",
+      "size": 1,
+      "question_ids": [
+        60
+      ],
+      "common_skills": [
+        "AWS",
+        "NACL",
+        "Security Group"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Networking__AWS VPN",
+      "category": "Cloud Networking",
+      "subcategory": "AWS VPN",
+      "size": 1,
+      "question_ids": [
+        53
+      ],
+      "common_skills": [
+        "AWS",
+        "VPN",
+        "Routing"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Networking__AWS VPN Limits",
+      "category": "Cloud Networking",
+      "subcategory": "AWS VPN Limits",
+      "size": 1,
+      "question_ids": [
+        165
+      ],
+      "common_skills": [
+        "AWS VPN",
+        "BGP Limits",
+        "Route Aggregation"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Networking__Basic",
+      "category": "Cloud Networking",
+      "subcategory": "Basic",
+      "size": 1,
+      "question_ids": [
+        20
+      ],
+      "common_skills": [
+        "Cloud",
+        "Virtualization"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Networking__Direct Connect vs VPN",
+      "category": "Cloud Networking",
+      "subcategory": "Direct Connect vs VPN",
+      "size": 1,
+      "question_ids": [
+        102
+      ],
+      "common_skills": [
+        "AWS Direct Connect",
+        "Site-to-Site VPN",
+        "Cost",
+        "Performance"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Networking__Inter-Region Connectivity",
+      "category": "Cloud Networking",
+      "subcategory": "Inter-Region Connectivity",
+      "size": 1,
+      "question_ids": [
+        73
+      ],
+      "common_skills": [
+        "VPC Peering",
+        "Transit Gateway",
+        "Cloud Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Networking__Latency impact",
+      "category": "Cloud Networking",
+      "subcategory": "Latency impact",
+      "size": 1,
+      "question_ids": [
+        88
+      ],
+      "common_skills": [
+        "Quorum",
+        "Latency",
+        "Distributed Database"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Networking__Multi-Cloud",
+      "category": "Cloud Networking",
+      "subcategory": "Multi-Cloud",
+      "size": 1,
+      "question_ids": [
+        112
+      ],
+      "common_skills": [
+        "Multi-Cloud",
+        "Transit Network",
+        "Cost Optimization"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Networking__Traffic Routing",
+      "category": "Cloud Networking",
+      "subcategory": "Traffic Routing",
+      "size": 1,
+      "question_ids": [
+        141
+      ],
+      "common_skills": [
+        "AWS Transit Gateway",
+        "VPC Peering",
+        "Cost Analysis"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Networking__Transit Gateway Connect",
+      "category": "Cloud Networking",
+      "subcategory": "Transit Gateway Connect",
+      "size": 1,
+      "question_ids": [
+        106
+      ],
+      "common_skills": [
+        "AWS",
+        "TGW",
+        "Scalability"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Networking__VPC Connectivity",
+      "category": "Cloud Networking",
+      "subcategory": "VPC Connectivity",
+      "size": 1,
+      "question_ids": [
+        174
+      ],
+      "common_skills": [
+        "AWS VPC Peering",
+        "Transit Gateway",
+        "Architecture Comparison"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Networking__VPC Endpoint",
+      "category": "Cloud Networking",
+      "subcategory": "VPC Endpoint",
+      "size": 1,
+      "question_ids": [
+        90
+      ],
+      "common_skills": [
+        "AWS",
+        "VPC Endpoint",
+        "PrivateLink"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Security__Zero Trust",
+      "category": "Cloud Security",
+      "subcategory": "Zero Trust",
+      "size": 1,
+      "question_ids": [
+        108
+      ],
+      "common_skills": [
+        "Zero Trust",
+        "IAM",
+        "Infrastructure Security"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Strategy__Data Egress Cost",
+      "category": "Cloud Strategy",
+      "subcategory": "Data Egress Cost",
+      "size": 1,
+      "question_ids": [
+        180
+      ],
+      "common_skills": [
+        "AWS Direct Connect",
+        "Cloud Cost",
+        "Data Transfer"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__Data Transfer",
+      "category": "Cloud",
+      "subcategory": "Data Transfer",
+      "size": 1,
+      "question_ids": [
+        78
+      ],
+      "common_skills": [
+        "Cloud Cost",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__VPC Flow Logs",
+      "category": "Cloud",
+      "subcategory": "VPC Flow Logs",
+      "size": 1,
+      "question_ids": [
+        47
+      ],
+      "common_skills": [
+        "AWS",
+        "VPC Flow Logs"
+      ]
+    },
+    {
+      "cluster_id": "Container Networking__K8s Service",
+      "category": "Container Networking",
+      "subcategory": "K8s Service",
+      "size": 1,
+      "question_ids": [
+        133
+      ],
+      "common_skills": [
+        "Kubernetes",
+        "Service Mesh",
+        "Ingress"
+      ]
+    },
+    {
+      "cluster_id": "DDoS Mitigation__BGP Flowspec",
+      "category": "DDoS Mitigation",
+      "subcategory": "BGP Flowspec",
+      "size": 1,
+      "question_ids": [
+        115
+      ],
+      "common_skills": [
+        "BGP Flowspec",
+        "DDoS",
+        "ISP Routing"
+      ]
+    },
+    {
+      "cluster_id": "DDoS__Mitigation",
+      "category": "DDoS",
+      "subcategory": "Mitigation",
+      "size": 1,
+      "question_ids": [
+        76
+      ],
+      "common_skills": [
+        "DDoS Mitigation",
+        "RTBH"
+      ]
+    },
+    {
+      "cluster_id": "DNS__Anycast DNS",
+      "category": "DNS",
+      "subcategory": "Anycast DNS",
+      "size": 1,
+      "question_ids": [
+        134
+      ],
+      "common_skills": [
+        "Anycast",
+        "BGP",
+        "DNS",
+        "Convergence"
+      ]
+    },
+    {
+      "cluster_id": "DNS__Query Logs",
+      "category": "DNS",
+      "subcategory": "Query Logs",
+      "size": 1,
+      "question_ids": [
+        50
+      ],
+      "common_skills": [
+        "DNS",
+        "Analysis"
+      ]
+    },
+    {
+      "cluster_id": "DNS__Resolution Process",
+      "category": "DNS",
+      "subcategory": "Resolution Process",
+      "size": 1,
+      "question_ids": [
+        7
+      ],
+      "common_skills": [
+        "DNS",
+        "UDP"
+      ]
+    },
+    {
+      "cluster_id": "Data Center__BGP EVPN",
+      "category": "Data Center",
+      "subcategory": "BGP EVPN",
+      "size": 1,
+      "question_ids": [
+        152
+      ],
+      "common_skills": [
+        "EVPN",
+        "BGP",
+        "VXLAN"
+      ]
+    },
+    {
+      "cluster_id": "Data Center__Power and Cooling",
+      "category": "Data Center",
+      "subcategory": "Power and Cooling",
+      "size": 1,
+      "question_ids": [
+        110
+      ],
+      "common_skills": [
+        "Facility Management",
+        "Efficiency"
+      ]
+    },
+    {
+      "cluster_id": "Data Center__Spine-Leaf",
+      "category": "Data Center",
+      "subcategory": "Spine-Leaf",
+      "size": 1,
+      "question_ids": [
+        70
+      ],
+      "common_skills": [
+        "Spine-Leaf",
+        "Architecture",
+        "East-West Traffic"
+      ]
+    },
+    {
+      "cluster_id": "Data Center__Spine-Leaf Oversubscription",
+      "category": "Data Center",
+      "subcategory": "Spine-Leaf Oversubscription",
+      "size": 1,
+      "question_ids": [
+        170
+      ],
+      "common_skills": [
+        "Oversubscription Ratio",
+        "Data Center Design",
+        "Bandwidth"
+      ]
+    },
+    {
+      "cluster_id": "Data Center__VXLAN",
+      "category": "Data Center",
+      "subcategory": "VXLAN",
+      "size": 1,
+      "question_ids": [
+        153
+      ],
+      "common_skills": [
+        "VXLAN",
+        "VTEP",
+        "Underlay"
+      ]
+    },
+    {
+      "cluster_id": "Data Center__VXLAN EVPN",
+      "category": "Data Center",
+      "subcategory": "VXLAN EVPN",
+      "size": 1,
+      "question_ids": [
+        111
+      ],
+      "common_skills": [
+        "VXLAN",
+        "BGP EVPN",
+        "Spine-Leaf"
+      ]
+    },
+    {
+      "cluster_id": "Database__CAP Theorem",
+      "category": "Database",
+      "subcategory": "CAP Theorem",
+      "size": 1,
+      "question_ids": [
+        137
+      ],
+      "common_skills": [
+        "CAP Theorem",
+        "Network Partition",
+        "Distributed Systems"
+      ]
+    },
+    {
+      "cluster_id": "Deployment__Network Validation",
+      "category": "Deployment",
+      "subcategory": "Network Validation",
+      "size": 1,
+      "question_ids": [
+        81
+      ],
+      "common_skills": [
+        "Pre-deployment Test",
+        "Validation"
+      ]
+    },
+    {
+      "cluster_id": "Design Document__RFP Response",
+      "category": "Design Document",
+      "subcategory": "RFP Response",
+      "size": 1,
+      "question_ids": [
+        128
+      ],
+      "common_skills": [
+        "RFP",
+        "Network Design",
+        "Compliance"
+      ]
+    },
+    {
+      "cluster_id": "Enterprise Network__SD-Access",
+      "category": "Enterprise Network",
+      "subcategory": "SD-Access",
+      "size": 1,
+      "question_ids": [
+        156
+      ],
+      "common_skills": [
+        "Cisco SDA",
+        "LISP",
+        "TrustSec"
+      ]
+    },
+    {
+      "cluster_id": "Ethernet__Collision Domain",
+      "category": "Ethernet",
+      "subcategory": "Collision Domain",
+      "size": 1,
+      "question_ids": [
+        22
+      ],
+      "common_skills": [
+        "Switching",
+        "Hub"
+      ]
+    },
+    {
+      "cluster_id": "Fiber Optics__Cabling",
+      "category": "Fiber Optics",
+      "subcategory": "Cabling",
+      "size": 1,
+      "question_ids": [
+        24
+      ],
+      "common_skills": [
+        "Fiber",
+        "Cabling"
+      ]
+    },
+    {
+      "cluster_id": "HTTP__Persistent Connection",
+      "category": "HTTP",
+      "subcategory": "Persistent Connection",
+      "size": 1,
+      "question_ids": [
+        11
+      ],
+      "common_skills": [
+        "HTTP",
+        "TCP"
+      ]
+    },
+    {
+      "cluster_id": "Hardware Capacity__TCAM/FIB Limits",
+      "category": "Hardware Capacity",
+      "subcategory": "TCAM/FIB Limits",
+      "size": 1,
+      "question_ids": [
+        188
+      ],
+      "common_skills": [
+        "TCAM",
+        "FIB",
+        "Hardware Architecture"
+      ]
+    },
+    {
+      "cluster_id": "High Availability__Active-Active Firewall",
+      "category": "High Availability",
+      "subcategory": "Active-Active Firewall",
+      "size": 1,
+      "question_ids": [
+        163
+      ],
+      "common_skills": [
+        "Firewall Clustering",
+        "Asymmetric Routing",
+        "State Sync"
+      ]
+    },
+    {
+      "cluster_id": "High Availability__HA Split-Brain",
+      "category": "High Availability",
+      "subcategory": "HA Split-Brain",
+      "size": 1,
+      "question_ids": [
+        177
+      ],
+      "common_skills": [
+        "Failover",
+        "Split-brain",
+        "ARP"
+      ]
+    },
+    {
+      "cluster_id": "High Availability__Split Brain",
+      "category": "High Availability",
+      "subcategory": "Split Brain",
+      "size": 1,
+      "question_ids": [
+        114
+      ],
+      "common_skills": [
+        "HA",
+        "Split Brain",
+        "Clustering"
+      ]
+    },
+    {
+      "cluster_id": "Hybrid Cloud__Direct Connect",
+      "category": "Hybrid Cloud",
+      "subcategory": "Direct Connect",
+      "size": 1,
+      "question_ids": [
+        63
+      ],
+      "common_skills": [
+        "AWS Direct Connect",
+        "BGP",
+        "VLAN"
+      ]
+    },
+    {
+      "cluster_id": "ICMP__Troubleshooting Tools",
+      "category": "ICMP",
+      "subcategory": "Troubleshooting Tools",
+      "size": 1,
+      "question_ids": [
+        9
+      ],
+      "common_skills": [
+        "Ping",
+        "Traceroute"
+      ]
+    },
+    {
+      "cluster_id": "IP Addressing__Private IP",
+      "category": "IP Addressing",
+      "subcategory": "Private IP",
+      "size": 1,
+      "question_ids": [
+        8
+      ],
+      "common_skills": [
+        "IPv4",
+        "NAT"
+      ]
+    },
+    {
+      "cluster_id": "IP Addressing__Subnetting",
+      "category": "IP Addressing",
+      "subcategory": "Subnetting",
+      "size": 1,
+      "question_ids": [
+        3
+      ],
+      "common_skills": [
+        "IPv4",
+        "Subnet Mask"
+      ]
+    },
+    {
+      "cluster_id": "IPv6__Migration",
+      "category": "IPv6",
+      "subcategory": "Migration",
+      "size": 1,
+      "question_ids": [
+        99
+      ],
+      "common_skills": [
+        "Dual Stack",
+        "Tunneling"
+      ]
+    },
+    {
+      "cluster_id": "IPv6__Migration Strategy",
+      "category": "IPv6",
+      "subcategory": "Migration Strategy",
+      "size": 1,
+      "question_ids": [
+        144
+      ],
+      "common_skills": [
+        "IPv6",
+        "NAT64",
+        "Dual Stack"
+      ]
+    },
+    {
+      "cluster_id": "IPv6__NAT64/DNS64",
+      "category": "IPv6",
+      "subcategory": "NAT64/DNS64",
+      "size": 1,
+      "question_ids": [
+        121
+      ],
+      "common_skills": [
+        "IPv6 Transition",
+        "DNS64",
+        "NAT64"
+      ]
+    },
+    {
+      "cluster_id": "IPv6__Neighbor Discovery",
+      "category": "IPv6",
+      "subcategory": "Neighbor Discovery",
+      "size": 1,
+      "question_ids": [
+        193
+      ],
+      "common_skills": [
+        "IPv6",
+        "NDP",
+        "ICMPv6"
+      ]
+    },
+    {
+      "cluster_id": "Infrastructure Services__NTP Dependency",
+      "category": "Infrastructure Services",
+      "subcategory": "NTP Dependency",
+      "size": 1,
+      "question_ids": [
+        185
+      ],
+      "common_skills": [
+        "NTP",
+        "Kerberos",
+        "SAML",
+        "Troubleshooting"
+      ]
+    },
+    {
+      "cluster_id": "Infrastructure__CAPEX vs OPEX",
+      "category": "Infrastructure",
+      "subcategory": "CAPEX vs OPEX",
+      "size": 1,
+      "question_ids": [
+        109
+      ],
+      "common_skills": [
+        "Financial Analysis",
+        "Vendor Selection"
+      ]
+    },
+    {
+      "cluster_id": "Infrastructure__IPv6 Design",
+      "category": "Infrastructure",
+      "subcategory": "IPv6 Design",
+      "size": 1,
+      "question_ids": [
+        129
+      ],
+      "common_skills": [
+        "IPv6 Addressing",
+        "SLAAC",
+        "Subnetting"
+      ]
+    },
+    {
+      "cluster_id": "Infrastructure__Legacy Network",
+      "category": "Infrastructure",
+      "subcategory": "Legacy Network",
+      "size": 1,
+      "question_ids": [
+        82
+      ],
+      "common_skills": [
+        "Flat Network",
+        "VLAN Design"
+      ]
+    },
+    {
+      "cluster_id": "Infrastructure__Scale-out",
+      "category": "Infrastructure",
+      "subcategory": "Scale-out",
+      "size": 1,
+      "question_ids": [
+        69
+      ],
+      "common_skills": [
+        "Anycast",
+        "Routing",
+        "Scalability"
+      ]
+    },
+    {
+      "cluster_id": "Infrastructure__VPN Throughput",
+      "category": "Infrastructure",
+      "subcategory": "VPN Throughput",
+      "size": 1,
+      "question_ids": [
+        169
+      ],
+      "common_skills": [
+        "IPsec",
+        "Hardware Acceleration",
+        "Throughput"
+      ]
+    },
+    {
+      "cluster_id": "Intrusion__Port Scanning",
+      "category": "Intrusion",
+      "subcategory": "Port Scanning",
+      "size": 1,
+      "question_ids": [
+        77
+      ],
+      "common_skills": [
+        "IDS/IPS",
+        "Security Analysis"
+      ]
+    },
+    {
+      "cluster_id": "Inventory Management__Source of Truth",
+      "category": "Inventory Management",
+      "subcategory": "Source of Truth",
+      "size": 1,
+      "question_ids": [
+        190
+      ],
+      "common_skills": [
+        "Source of Truth",
+        "NetBox",
+        "Data Modeling"
+      ]
+    },
+    {
+      "cluster_id": "Kernel Networking__DPDK/eBPF",
+      "category": "Kernel Networking",
+      "subcategory": "DPDK/eBPF",
+      "size": 1,
+      "question_ids": [
+        107
+      ],
+      "common_skills": [
+        "DPDK",
+        "Kernel Bypass",
+        "High Performance"
+      ]
+    },
+    {
+      "cluster_id": "Kernel Networking__eBPF/XDP",
+      "category": "Kernel Networking",
+      "subcategory": "eBPF/XDP",
+      "size": 1,
+      "question_ids": [
+        196
+      ],
+      "common_skills": [
+        "eBPF",
+        "XDP",
+        "Linux Networking"
+      ]
+    },
+    {
+      "cluster_id": "Kubernetes__CNI",
+      "category": "Kubernetes",
+      "subcategory": "CNI",
+      "size": 1,
+      "question_ids": [
+        122
+      ],
+      "common_skills": [
+        "Kubernetes",
+        "CNI",
+        "Overlay Network"
+      ]
+    },
+    {
+      "cluster_id": "Layer 3__ICMP",
+      "category": "Layer 3",
+      "subcategory": "ICMP",
+      "size": 1,
+      "question_ids": [
+        18
+      ],
+      "common_skills": [
+        "ICMP"
+      ]
+    },
+    {
+      "cluster_id": "Linux__Commands",
+      "category": "Linux",
+      "subcategory": "Commands",
+      "size": 1,
+      "question_ids": [
+        45
+      ],
+      "common_skills": [
+        "Linux",
+        "Commands"
+      ]
+    },
+    {
+      "cluster_id": "Linux__Shell Script",
+      "category": "Linux",
+      "subcategory": "Shell Script",
+      "size": 1,
+      "question_ids": [
+        28
+      ],
+      "common_skills": [
+        "Bash",
+        "Linux"
+      ]
+    },
+    {
+      "cluster_id": "Linux__awk",
+      "category": "Linux",
+      "subcategory": "awk",
+      "size": 1,
+      "question_ids": [
+        34
+      ],
+      "common_skills": [
+        "Linux",
+        "awk"
+      ]
+    },
+    {
+      "cluster_id": "Load Balancing__Consistent Hashing",
+      "category": "Load Balancing",
+      "subcategory": "Consistent Hashing",
+      "size": 1,
+      "question_ids": [
+        120
+      ],
+      "common_skills": [
+        "Hashing",
+        "Scalability",
+        "Caching"
+      ]
+    },
+    {
+      "cluster_id": "Load Balancing__Scheduling",
+      "category": "Load Balancing",
+      "subcategory": "Scheduling",
+      "size": 1,
+      "question_ids": [
+        65
+      ],
+      "common_skills": [
+        "Load Balancer",
+        "Algorithm"
+      ]
+    },
+    {
+      "cluster_id": "Load Balancing__Session Persistence",
+      "category": "Load Balancing",
+      "subcategory": "Session Persistence",
+      "size": 1,
+      "question_ids": [
+        54
+      ],
+      "common_skills": [
+        "L4/L7 Switch",
+        "Cookie"
+      ]
+    },
+    {
+      "cluster_id": "Low Latency__HFT Network",
+      "category": "Low Latency",
+      "subcategory": "HFT Network",
+      "size": 1,
+      "question_ids": [
+        117
+      ],
+      "common_skills": [
+        "Multicast",
+        "PTP",
+        "Cut-through Switching"
+      ]
+    },
+    {
+      "cluster_id": "Management__OOB Architecture",
+      "category": "Management",
+      "subcategory": "OOB Architecture",
+      "size": 1,
+      "question_ids": [
+        186
+      ],
+      "common_skills": [
+        "OOB Management",
+        "Console Server",
+        "Resiliency"
+      ]
+    },
+    {
+      "cluster_id": "Modern Networking__SD-WAN",
+      "category": "Modern Networking",
+      "subcategory": "SD-WAN",
+      "size": 1,
+      "question_ids": [
+        64
+      ],
+      "common_skills": [
+        "SD-WAN",
+        "IPsec",
+        "Application Steering"
+      ]
+    },
+    {
+      "cluster_id": "Modern Networking__SD-WAN Architecture",
+      "category": "Modern Networking",
+      "subcategory": "SD-WAN Architecture",
+      "size": 1,
+      "question_ids": [
+        116
+      ],
+      "common_skills": [
+        "SD-WAN",
+        "Underlay/Overlay",
+        "IPsec"
+      ]
+    },
+    {
+      "cluster_id": "Modern Networking__SD-WAN vs MPLS",
+      "category": "Modern Networking",
+      "subcategory": "SD-WAN vs MPLS",
+      "size": 1,
+      "question_ids": [
+        155
+      ],
+      "common_skills": [
+        "SD-WAN",
+        "MPLS",
+        "WAN Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Monitoring__Prometheus",
+      "category": "Monitoring",
+      "subcategory": "Prometheus",
+      "size": 1,
+      "question_ids": [
+        30
+      ],
+      "common_skills": [
+        "Prometheus",
+        "YAML"
+      ]
+    },
+    {
+      "cluster_id": "Monitoring__SNMP Metrics",
+      "category": "Monitoring",
+      "subcategory": "SNMP Metrics",
+      "size": 1,
+      "question_ids": [
+        62
+      ],
+      "common_skills": [
+        "SNMP",
+        "Traffic Analysis"
+      ]
+    },
+    {
+      "cluster_id": "Multicast__IGMP",
+      "category": "Multicast",
+      "subcategory": "IGMP",
+      "size": 1,
+      "question_ids": [
+        55
+      ],
+      "common_skills": [
+        "Multicast",
+        "IGMP Snooping"
+      ]
+    },
+    {
+      "cluster_id": "Multicast__PIM Sparse Mode",
+      "category": "Multicast",
+      "subcategory": "PIM Sparse Mode",
+      "size": 1,
+      "question_ids": [
+        162
+      ],
+      "common_skills": [
+        "Multicast",
+        "PIM-SM",
+        "Rendezvous Point"
+      ]
+    },
+    {
+      "cluster_id": "NAT__Address Pool",
+      "category": "NAT",
+      "subcategory": "Address Pool",
+      "size": 1,
+      "question_ids": [
+        40
+      ],
+      "common_skills": [
+        "NAT",
+        "Troubleshooting"
+      ]
+    },
+    {
+      "cluster_id": "NAT__Function",
+      "category": "NAT",
+      "subcategory": "Function",
+      "size": 1,
+      "question_ids": [
+        14
+      ],
+      "common_skills": [
+        "NAT",
+        "PAT"
+      ]
+    },
+    {
+      "cluster_id": "Network Management__IPAM",
+      "category": "Network Management",
+      "subcategory": "IPAM",
+      "size": 1,
+      "question_ids": [
+        119
+      ],
+      "common_skills": [
+        "IPAM",
+        "Database",
+        "CIDR"
+      ]
+    },
+    {
+      "cluster_id": "Network Mapping__Graph Database",
+      "category": "Network Mapping",
+      "subcategory": "Graph Database",
+      "size": 1,
+      "question_ids": [
+        150
+      ],
+      "common_skills": [
+        "Topology",
+        "Graph DB",
+        "System Design"
+      ]
+    },
+    {
+      "cluster_id": "Network Topology__Redundancy",
+      "category": "Network Topology",
+      "subcategory": "Redundancy",
+      "size": 1,
+      "question_ids": [
+        5
+      ],
+      "common_skills": [
+        "VLAN",
+        "STP"
+      ]
+    },
+    {
+      "cluster_id": "OSI Layer__L2 Data Link",
+      "category": "OSI Layer",
+      "subcategory": "L2 Data Link",
+      "size": 1,
+      "question_ids": [
+        1
+      ],
+      "common_skills": [
+        "Ethernet",
+        "Switching"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Ransomware Defense",
+      "category": "Operations",
+      "subcategory": "Ransomware Defense",
+      "size": 1,
+      "question_ids": [
+        105
+      ],
+      "common_skills": [
+        "Incident Response",
+        "Micro-segmentation",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Operations__SLA Monitoring",
+      "category": "Operations",
+      "subcategory": "SLA Monitoring",
+      "size": 1,
+      "question_ids": [
+        80
+      ],
+      "common_skills": [
+        "ICMP",
+        "TCP Keepalive",
+        "Monitoring"
+      ]
+    },
+    {
+      "cluster_id": "Performance__Latency",
+      "category": "Performance",
+      "subcategory": "Latency",
+      "size": 1,
+      "question_ids": [
+        56
+      ],
+      "common_skills": [
+        "TCP",
+        "Packet Analysis",
+        "Wireshark"
+      ]
+    },
+    {
+      "cluster_id": "Performance__QoS Limits",
+      "category": "Performance",
+      "subcategory": "QoS Limits",
+      "size": 1,
+      "question_ids": [
+        195
+      ],
+      "common_skills": [
+        "QoS",
+        "Bandwidth",
+        "Network Limits"
+      ]
+    },
+    {
+      "cluster_id": "Programmability__Event Driven",
+      "category": "Programmability",
+      "subcategory": "Event Driven",
+      "size": 1,
+      "question_ids": [
+        189
+      ],
+      "common_skills": [
+        "Webhook",
+        "API",
+        "Event-Driven"
+      ]
+    },
+    {
+      "cluster_id": "QoS__Queue Starvation",
+      "category": "QoS",
+      "subcategory": "Queue Starvation",
+      "size": 1,
+      "question_ids": [
+        181
+      ],
+      "common_skills": [
+        "QoS",
+        "Strict Priority",
+        "CBWFQ"
+      ]
+    },
+    {
+      "cluster_id": "QoS__Traffic Shaping",
+      "category": "QoS",
+      "subcategory": "Traffic Shaping",
+      "size": 1,
+      "question_ids": [
+        136
+      ],
+      "common_skills": [
+        "QoS",
+        "Shaping",
+        "Policing"
+      ]
+    },
+    {
+      "cluster_id": "Routing Protocol__BGP Convergence",
+      "category": "Routing Protocol",
+      "subcategory": "BGP Convergence",
+      "size": 1,
+      "question_ids": [
+        191
+      ],
+      "common_skills": [
+        "BGP Convergence",
+        "Distributed Systems",
+        "Eventually Consistent"
+      ]
+    },
+    {
+      "cluster_id": "Routing Protocol__Distance Vector",
+      "category": "Routing Protocol",
+      "subcategory": "Distance Vector",
+      "size": 1,
+      "question_ids": [
+        4
+      ],
+      "common_skills": [
+        "Routing"
+      ]
+    },
+    {
+      "cluster_id": "Routing__BGP",
+      "category": "Routing",
+      "subcategory": "BGP",
+      "size": 1,
+      "question_ids": [
+        41
+      ],
+      "common_skills": [
+        "BGP",
+        "Troubleshooting"
+      ]
+    },
+    {
+      "cluster_id": "Routing__BGP Error Handling",
+      "category": "Routing",
+      "subcategory": "BGP Error Handling",
+      "size": 1,
+      "question_ids": [
+        75
+      ],
+      "common_skills": [
+        "BGP",
+        "Failure Mode"
+      ]
+    },
+    {
+      "cluster_id": "Routing__BGP Flapping",
+      "category": "Routing",
+      "subcategory": "BGP Flapping",
+      "size": 1,
+      "question_ids": [
+        58
+      ],
+      "common_skills": [
+        "BGP",
+        "Link Latency"
+      ]
+    },
+    {
+      "cluster_id": "Routing__BGP Path Selection",
+      "category": "Routing",
+      "subcategory": "BGP Path Selection",
+      "size": 1,
+      "question_ids": [
+        148
+      ],
+      "common_skills": [
+        "BGP",
+        "RFC",
+        "Troubleshooting"
+      ]
+    },
+    {
+      "cluster_id": "Routing__BGP Recursion",
+      "category": "Routing",
+      "subcategory": "BGP Recursion",
+      "size": 1,
+      "question_ids": [
+        145
+      ],
+      "common_skills": [
+        "BGP",
+        "IGP",
+        "Route Recursion"
+      ]
+    },
+    {
+      "cluster_id": "Routing__BGP Route Leak",
+      "category": "Routing",
+      "subcategory": "BGP Route Leak",
+      "size": 1,
+      "question_ids": [
+        113
+      ],
+      "common_skills": [
+        "BGP",
+        "RPKI",
+        "Route Filtering"
+      ]
+    },
+    {
+      "cluster_id": "Routing__BGP Route Reflection",
+      "category": "Routing",
+      "subcategory": "BGP Route Reflection",
+      "size": 1,
+      "question_ids": [
+        103
+      ],
+      "common_skills": [
+        "BGP",
+        "Route Reflector",
+        "Scalability"
+      ]
+    },
+    {
+      "cluster_id": "Routing__BGP Route Reflector",
+      "category": "Routing",
+      "subcategory": "BGP Route Reflector",
+      "size": 1,
+      "question_ids": [
+        171
+      ],
+      "common_skills": [
+        "BGP",
+        "Route Reflector Cluster",
+        "Scalability"
+      ]
+    },
+    {
+      "cluster_id": "Routing__ECMP Polarization",
+      "category": "Routing",
+      "subcategory": "ECMP Polarization",
+      "size": 1,
+      "question_ids": [
+        167
+      ],
+      "common_skills": [
+        "ECMP",
+        "Hashing",
+        "Traffic Engineering"
+      ]
+    },
+    {
+      "cluster_id": "Routing__EIGRP",
+      "category": "Routing",
+      "subcategory": "EIGRP",
+      "size": 1,
+      "question_ids": [
+        93
+      ],
+      "common_skills": [
+        "EIGRP",
+        "AS Number"
+      ]
+    },
+    {
+      "cluster_id": "Routing__OSPF",
+      "category": "Routing",
+      "subcategory": "OSPF",
+      "size": 1,
+      "question_ids": [
+        36
+      ],
+      "common_skills": [
+        "OSPF",
+        "Configuration"
+      ]
+    },
+    {
+      "cluster_id": "Routing__OSPF Logs",
+      "category": "Routing",
+      "subcategory": "OSPF Logs",
+      "size": 1,
+      "question_ids": [
+        49
+      ],
+      "common_skills": [
+        "OSPF",
+        "Routing"
+      ]
+    },
+    {
+      "cluster_id": "Routing__Static Routing",
+      "category": "Routing",
+      "subcategory": "Static Routing",
+      "size": 1,
+      "question_ids": [
+        16
+      ],
+      "common_skills": [
+        "Routing",
+        "Static Route"
+      ]
+    },
+    {
+      "cluster_id": "Routing__iBGP Next-Hop",
+      "category": "Routing",
+      "subcategory": "iBGP Next-Hop",
+      "size": 1,
+      "question_ids": [
+        199
+      ],
+      "common_skills": [
+        "BGP",
+        "iBGP",
+        "next-hop-self"
+      ]
+    },
+    {
+      "cluster_id": "SD-WAN__Circuit Cost",
+      "category": "SD-WAN",
+      "subcategory": "Circuit Cost",
+      "size": 1,
+      "question_ids": [
+        131
+      ],
+      "common_skills": [
+        "SD-WAN",
+        "MPLS",
+        "Cost Analysis"
+      ]
+    },
+    {
+      "cluster_id": "SDN__Control Plane Distribution",
+      "category": "SDN",
+      "subcategory": "Control Plane Distribution",
+      "size": 1,
+      "question_ids": [
+        151
+      ],
+      "common_skills": [
+        "SDN",
+        "CAP Theorem",
+        "Clustering"
+      ]
+    },
+    {
+      "cluster_id": "SaaS Connectivity__Synthetics Monitoring",
+      "category": "SaaS Connectivity",
+      "subcategory": "Synthetics Monitoring",
+      "size": 1,
+      "question_ids": [
+        182
+      ],
+      "common_skills": [
+        "Synthetic Testing",
+        "SaaS Performance",
+        "ThousandEyes"
+      ]
+    },
+    {
+      "cluster_id": "Security Architecture__ZTNA vs VPN",
+      "category": "Security Architecture",
+      "subcategory": "ZTNA vs VPN",
+      "size": 1,
+      "question_ids": [
+        194
+      ],
+      "common_skills": [
+        "ZTNA",
+        "Remote Access",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Security__DMZ Design",
+      "category": "Security",
+      "subcategory": "DMZ Design",
+      "size": 1,
+      "question_ids": [
+        71
+      ],
+      "common_skills": [
+        "DMZ",
+        "Firewall",
+        "Security Design"
+      ]
+    },
+    {
+      "cluster_id": "Security__Encryption",
+      "category": "Security",
+      "subcategory": "Encryption",
+      "size": 1,
+      "question_ids": [
+        89
+      ],
+      "common_skills": [
+        "AES",
+        "IPsec"
+      ]
+    },
+    {
+      "cluster_id": "Security__Firewall",
+      "category": "Security",
+      "subcategory": "Firewall",
+      "size": 1,
+      "question_ids": [
+        17
+      ],
+      "common_skills": [
+        "Firewall",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Security__Firewall Logs",
+      "category": "Security",
+      "subcategory": "Firewall Logs",
+      "size": 1,
+      "question_ids": [
+        94
+      ],
+      "common_skills": [
+        "Firewall",
+        "Traffic Analysis"
+      ]
+    },
+    {
+      "cluster_id": "Security__Firewall Policy",
+      "category": "Security",
+      "subcategory": "Firewall Policy",
+      "size": 1,
+      "question_ids": [
+        52
+      ],
+      "common_skills": [
+        "Firewall",
+        "NAT"
+      ]
+    },
+    {
+      "cluster_id": "Security__Firewall Teardown",
+      "category": "Security",
+      "subcategory": "Firewall Teardown",
+      "size": 1,
+      "question_ids": [
+        161
+      ],
+      "common_skills": [
+        "Cisco ASA",
+        "Syslog",
+        "TCP State"
+      ]
+    },
+    {
+      "cluster_id": "Security__IPS vs IDS",
+      "category": "Security",
+      "subcategory": "IPS vs IDS",
+      "size": 1,
+      "question_ids": [
+        175
+      ],
+      "common_skills": [
+        "IPS/IDS",
+        "Inline/Out-of-band",
+        "Network Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Security__MACsec",
+      "category": "Security",
+      "subcategory": "MACsec",
+      "size": 1,
+      "question_ids": [
+        192
+      ],
+      "common_skills": [
+        "MACsec",
+        "802.1AE",
+        "Encryption"
+      ]
+    },
+    {
+      "cluster_id": "Security__Management Plane",
+      "category": "Security",
+      "subcategory": "Management Plane",
+      "size": 1,
+      "question_ids": [
+        84
+      ],
+      "common_skills": [
+        "Security Best Practice",
+        "OOB"
+      ]
+    },
+    {
+      "cluster_id": "Security__Micro-segmentation",
+      "category": "Security",
+      "subcategory": "Micro-segmentation",
+      "size": 1,
+      "question_ids": [
+        126
+      ],
+      "common_skills": [
+        "Micro-segmentation",
+        "Zero Trust",
+        "Cloud Security"
+      ]
+    },
+    {
+      "cluster_id": "Security__PKI & Certificate",
+      "category": "Security",
+      "subcategory": "PKI & Certificate",
+      "size": 1,
+      "question_ids": [
+        166
+      ],
+      "common_skills": [
+        "SSL/TLS",
+        "PKI",
+        "Troubleshooting"
+      ]
+    },
+    {
+      "cluster_id": "Security__SSL/TLS",
+      "category": "Security",
+      "subcategory": "SSL/TLS",
+      "size": 1,
+      "question_ids": [
+        61
+      ],
+      "common_skills": [
+        "SSL/TLS",
+        "Packet Analysis",
+        "Wireshark"
+      ]
+    },
+    {
+      "cluster_id": "Security__Syslog",
+      "category": "Security",
+      "subcategory": "Syslog",
+      "size": 1,
+      "question_ids": [
+        46
+      ],
+      "common_skills": [
+        "Syslog",
+        "Monitoring"
+      ]
+    },
+    {
+      "cluster_id": "Security__Traffic Analysis",
+      "category": "Security",
+      "subcategory": "Traffic Analysis",
+      "size": 1,
+      "question_ids": [
+        164
+      ],
+      "common_skills": [
+        "NetFlow",
+        "DDoS Analysis",
+        "TCP/IP"
+      ]
+    },
+    {
+      "cluster_id": "Security__Zero Trust Architecture",
+      "category": "Security",
+      "subcategory": "Zero Trust Architecture",
+      "size": 1,
+      "question_ids": [
+        146
+      ],
+      "common_skills": [
+        "Zero Trust",
+        "Identity-Aware Proxy",
+        "VPN"
+      ]
+    },
+    {
+      "cluster_id": "Service Provider__Segment Routing",
+      "category": "Service Provider",
+      "subcategory": "Segment Routing",
+      "size": 1,
+      "question_ids": [
+        154
+      ],
+      "common_skills": [
+        "SRv6",
+        "Traffic Engineering",
+        "MPLS"
+      ]
+    },
+    {
+      "cluster_id": "Software Defined Network__SDN Controller",
+      "category": "Software Defined Network",
+      "subcategory": "SDN Controller",
+      "size": 1,
+      "question_ids": [
+        104
+      ],
+      "common_skills": [
+        "SDN",
+        "Control Plane",
+        "Risk"
+      ]
+    },
+    {
+      "cluster_id": "Standards__RFC Interpretation",
+      "category": "Standards",
+      "subcategory": "RFC Interpretation",
+      "size": 1,
+      "question_ids": [
+        86
+      ],
+      "common_skills": [
+        "RFC",
+        "IP Addressing"
+      ]
+    },
+    {
+      "cluster_id": "Storage__SAN/NAS",
+      "category": "Storage",
+      "subcategory": "SAN/NAS",
+      "size": 1,
+      "question_ids": [
+        19
+      ],
+      "common_skills": [
+        "Storage Network"
+      ]
+    },
+    {
+      "cluster_id": "Subnetting__Python ipaddress",
+      "category": "Subnetting",
+      "subcategory": "Python ipaddress",
+      "size": 1,
+      "question_ids": [
+        33
+      ],
+      "common_skills": [
+        "Python",
+        "ipaddress"
+      ]
+    },
+    {
+      "cluster_id": "Switching Architecture__STP Elimination",
+      "category": "Switching Architecture",
+      "subcategory": "STP Elimination",
+      "size": 1,
+      "question_ids": [
+        184
+      ],
+      "common_skills": [
+        "vPC",
+        "MLAG",
+        "Spanning Tree"
+      ]
+    },
+    {
+      "cluster_id": "Switching__Broadcast Domain",
+      "category": "Switching",
+      "subcategory": "Broadcast Domain",
+      "size": 1,
+      "question_ids": [
+        12
+      ],
+      "common_skills": [
+        "Switching",
+        "VLAN"
+      ]
+    },
+    {
+      "cluster_id": "Switching__EtherChannel",
+      "category": "Switching",
+      "subcategory": "EtherChannel",
+      "size": 1,
+      "question_ids": [
+        37
+      ],
+      "common_skills": [
+        "LACP",
+        "EtherChannel"
+      ]
+    },
+    {
+      "cluster_id": "Switching__Interface Statistics",
+      "category": "Switching",
+      "subcategory": "Interface Statistics",
+      "size": 1,
+      "question_ids": [
+        95
+      ],
+      "common_skills": [
+        "Collision",
+        "Duplex"
+      ]
+    },
+    {
+      "cluster_id": "Switching__MAC Learning",
+      "category": "Switching",
+      "subcategory": "MAC Learning",
+      "size": 1,
+      "question_ids": [
+        6
+      ],
+      "common_skills": [
+        "Switching"
+      ]
+    },
+    {
+      "cluster_id": "Switching__STP",
+      "category": "Switching",
+      "subcategory": "STP",
+      "size": 1,
+      "question_ids": [
+        57
+      ],
+      "common_skills": [
+        "STP",
+        "Troubleshooting"
+      ]
+    },
+    {
+      "cluster_id": "Switching__VLAN/Trunk",
+      "category": "Switching",
+      "subcategory": "VLAN/Trunk",
+      "size": 1,
+      "question_ids": [
+        92
+      ],
+      "common_skills": [
+        "VLAN",
+        "Native VLAN"
+      ]
+    },
+    {
+      "cluster_id": "TCP/IP__Transport Layer",
+      "category": "TCP/IP",
+      "subcategory": "Transport Layer",
+      "size": 1,
+      "question_ids": [
+        2
+      ],
+      "common_skills": [
+        "TCP",
+        "UDP"
+      ]
+    },
+    {
+      "cluster_id": "TCP__Flow Control",
+      "category": "TCP",
+      "subcategory": "Flow Control",
+      "size": 1,
+      "question_ids": [
+        23
+      ],
+      "common_skills": [
+        "TCP",
+        "Flow Control"
+      ]
+    },
+    {
+      "cluster_id": "Telemetry__Performance Monitoring",
+      "category": "Telemetry",
+      "subcategory": "Performance Monitoring",
+      "size": 1,
+      "question_ids": [
+        142
+      ],
+      "common_skills": [
+        "gRPC",
+        "Streaming Telemetry",
+        "SNMP"
+      ]
+    },
+    {
+      "cluster_id": "Telemetry__Streaming Telemetry",
+      "category": "Telemetry",
+      "subcategory": "Streaming Telemetry",
+      "size": 1,
+      "question_ids": [
+        125
+      ],
+      "common_skills": [
+        "Streaming Telemetry",
+        "gRPC",
+        "SNMP vs Telemetry"
+      ]
+    },
+    {
+      "cluster_id": "Transport Layer__TCP Optimization",
+      "category": "Transport Layer",
+      "subcategory": "TCP Optimization",
+      "size": 1,
+      "question_ids": [
+        168
+      ],
+      "common_skills": [
+        "TCP BBR",
+        "Throughput",
+        "Latency"
+      ]
+    },
+    {
+      "cluster_id": "Transport Layer__TCP Window",
+      "category": "Transport Layer",
+      "subcategory": "TCP Window",
+      "size": 1,
+      "question_ids": [
+        66
+      ],
+      "common_skills": [
+        "TCP",
+        "BDP",
+        "Latency"
+      ]
+    },
+    {
+      "cluster_id": "Transport__TCP Disconnect",
+      "category": "Transport",
+      "subcategory": "TCP Disconnect",
+      "size": 1,
+      "question_ids": [
+        97
+      ],
+      "common_skills": [
+        "TCP",
+        "Idle Timeout",
+        "Firewall"
+      ]
+    },
+    {
+      "cluster_id": "Transport__TCP Performance",
+      "category": "Transport",
+      "subcategory": "TCP Performance",
+      "size": 1,
+      "question_ids": [
+        135
+      ],
+      "common_skills": [
+        "TCP",
+        "Congestion Control",
+        "BBR"
+      ]
+    },
+    {
+      "cluster_id": "Troubleshooting__Asymmetric Routing",
+      "category": "Troubleshooting",
+      "subcategory": "Asymmetric Routing",
+      "size": 1,
+      "question_ids": [
+        130
+      ],
+      "common_skills": [
+        "Asymmetric Routing",
+        "Stateful Firewall",
+        "TCP"
+      ]
+    },
+    {
+      "cluster_id": "Troubleshooting__BGP Hijacking",
+      "category": "Troubleshooting",
+      "subcategory": "BGP Hijacking",
+      "size": 1,
+      "question_ids": [
+        178
+      ],
+      "common_skills": [
+        "BGP Route Leak",
+        "RPKI",
+        "Incident Response"
+      ]
+    },
+    {
+      "cluster_id": "Troubleshooting__PMTUD Blackhole",
+      "category": "Troubleshooting",
+      "subcategory": "PMTUD Blackhole",
+      "size": 1,
+      "question_ids": [
+        200
+      ],
+      "common_skills": [
+        "PMTUD",
+        "ICMP",
+        "MTU",
+        "Troubleshooting"
+      ]
+    },
+    {
+      "cluster_id": "Troubleshooting__VPN MTU",
+      "category": "Troubleshooting",
+      "subcategory": "VPN MTU",
+      "size": 1,
+      "question_ids": [
+        159
+      ],
+      "common_skills": [
+        "GRE over IPsec",
+        "MTU",
+        "OSPF"
+      ]
+    },
+    {
+      "cluster_id": "VPN Architecture__IPsec Overlapping IP",
+      "category": "VPN Architecture",
+      "subcategory": "IPsec Overlapping IP",
+      "size": 1,
+      "question_ids": [
+        138
+      ],
+      "common_skills": [
+        "IPsec",
+        "NAT",
+        "Overlapping Subnets"
+      ]
+    },
+    {
+      "cluster_id": "VPN Security__IKE Aggressive Mode",
+      "category": "VPN Security",
+      "subcategory": "IKE Aggressive Mode",
+      "size": 1,
+      "question_ids": [
+        179
+      ],
+      "common_skills": [
+        "IPsec",
+        "IKE Phase 1",
+        "Cryptography"
+      ]
+    },
+    {
+      "cluster_id": "VPN__Concurrency",
+      "category": "VPN",
+      "subcategory": "Concurrency",
+      "size": 1,
+      "question_ids": [
+        68
+      ],
+      "common_skills": [
+        "VPN",
+        "Planning"
+      ]
+    },
+    {
+      "cluster_id": "VPN__IPsec",
+      "category": "VPN",
+      "subcategory": "IPsec",
+      "size": 1,
+      "question_ids": [
+        44
+      ],
+      "common_skills": [
+        "IPsec",
+        "IKE"
+      ]
+    },
+    {
+      "cluster_id": "VPN__Tunneling",
+      "category": "VPN",
+      "subcategory": "Tunneling",
+      "size": 1,
+      "question_ids": [
+        25
+      ],
+      "common_skills": [
+        "VPN",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Voice__VoIP QoS",
+      "category": "Voice",
+      "subcategory": "VoIP QoS",
+      "size": 1,
+      "question_ids": [
+        98
+      ],
+      "common_skills": [
+        "QoS",
+        "Jitter",
+        "VoIP"
+      ]
+    },
+    {
+      "cluster_id": "Wireless__802.1x Authentication",
+      "category": "Wireless",
+      "subcategory": "802.1x Authentication",
+      "size": 1,
+      "question_ids": [
+        140
+      ],
+      "common_skills": [
+        "802.1X",
+        "RADIUS",
+        "EAP-TLS"
+      ]
+    },
+    {
+      "cluster_id": "Wireless__Channel Planning",
+      "category": "Wireless",
+      "subcategory": "Channel Planning",
+      "size": 1,
+      "question_ids": [
+        79
+      ],
+      "common_skills": [
+        "Wi-Fi",
+        "RF Planning"
+      ]
+    },
+    {
+      "cluster_id": "Wireless__Frequency Band",
+      "category": "Wireless",
+      "subcategory": "Frequency Band",
+      "size": 1,
+      "question_ids": [
+        100
+      ],
+      "common_skills": [
+        "2.4GHz",
+        "5GHz",
+        "Wi-Fi"
+      ]
+    },
+    {
+      "cluster_id": "Wireless__SSID",
+      "category": "Wireless",
+      "subcategory": "SSID",
+      "size": 1,
+      "question_ids": [
+        15
+      ],
+      "common_skills": [
+        "WiFi",
+        "Wireless"
+      ]
+    }
+  ],
+  "dependency_graph": {
+    "nodes": [
+      {
+        "question_id": 1,
+        "difficulty": "university_level",
+        "category": "OSI Layer",
+        "subcategory": "L2 Data Link",
+        "skills_required": [
+          "Ethernet",
+          "Switching"
+        ]
+      },
+      {
+        "question_id": 2,
+        "difficulty": "university_level",
+        "category": "TCP/IP",
+        "subcategory": "Transport Layer",
+        "skills_required": [
+          "TCP",
+          "UDP"
+        ]
+      },
+      {
+        "question_id": 3,
+        "difficulty": "university_level",
+        "category": "IP Addressing",
+        "subcategory": "Subnetting",
+        "skills_required": [
+          "IPv4",
+          "Subnet Mask"
+        ]
+      },
+      {
+        "question_id": 4,
+        "difficulty": "university_level",
+        "category": "Routing Protocol",
+        "subcategory": "Distance Vector",
+        "skills_required": [
+          "Routing"
+        ]
+      },
+      {
+        "question_id": 5,
+        "difficulty": "university_level",
+        "category": "Network Topology",
+        "subcategory": "Redundancy",
+        "skills_required": [
+          "VLAN",
+          "STP"
+        ]
+      },
+      {
+        "question_id": 6,
+        "difficulty": "university_level",
+        "category": "Switching",
+        "subcategory": "MAC Learning",
+        "skills_required": [
+          "Switching"
+        ]
+      },
+      {
+        "question_id": 7,
+        "difficulty": "university_level",
+        "category": "DNS",
+        "subcategory": "Resolution Process",
+        "skills_required": [
+          "DNS",
+          "UDP"
+        ]
+      },
+      {
+        "question_id": 8,
+        "difficulty": "university_level",
+        "category": "IP Addressing",
+        "subcategory": "Private IP",
+        "skills_required": [
+          "IPv4",
+          "NAT"
+        ]
+      },
+      {
+        "question_id": 9,
+        "difficulty": "university_level",
+        "category": "ICMP",
+        "subcategory": "Troubleshooting Tools",
+        "skills_required": [
+          "Ping",
+          "Traceroute"
+        ]
+      },
+      {
+        "question_id": 10,
+        "difficulty": "university_level",
+        "category": "VLAN",
+        "subcategory": "Trunking",
+        "skills_required": [
+          "802.1Q",
+          "VLAN"
+        ]
+      },
+      {
+        "question_id": 11,
+        "difficulty": "university_level",
+        "category": "HTTP",
+        "subcategory": "Persistent Connection",
+        "skills_required": [
+          "HTTP",
+          "TCP"
+        ]
+      },
+      {
+        "question_id": 12,
+        "difficulty": "university_level",
+        "category": "Switching",
+        "subcategory": "Broadcast Domain",
+        "skills_required": [
+          "Switching",
+          "VLAN"
+        ]
+      },
+      {
+        "question_id": 13,
+        "difficulty": "university_level",
+        "category": "ARP",
+        "subcategory": "Address Resolution",
+        "skills_required": [
+          "ARP",
+          "Ethernet"
+        ]
+      },
+      {
+        "question_id": 14,
+        "difficulty": "university_level",
+        "category": "NAT",
+        "subcategory": "Function",
+        "skills_required": [
+          "NAT",
+          "PAT"
+        ]
+      },
+      {
+        "question_id": 15,
+        "difficulty": "university_level",
+        "category": "Wireless",
+        "subcategory": "SSID",
+        "skills_required": [
+          "WiFi",
+          "Wireless"
+        ]
+      },
+      {
+        "question_id": 16,
+        "difficulty": "university_level",
+        "category": "Routing",
+        "subcategory": "Static Routing",
+        "skills_required": [
+          "Routing",
+          "Static Route"
+        ]
+      },
+      {
+        "question_id": 17,
+        "difficulty": "university_level",
+        "category": "Security",
+        "subcategory": "Firewall",
+        "skills_required": [
+          "Firewall",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 18,
+        "difficulty": "university_level",
+        "category": "Layer 3",
+        "subcategory": "ICMP",
+        "skills_required": [
+          "ICMP"
+        ]
+      },
+      {
+        "question_id": 19,
+        "difficulty": "university_level",
+        "category": "Storage",
+        "subcategory": "SAN/NAS",
+        "skills_required": [
+          "Storage Network"
+        ]
+      },
+      {
+        "question_id": 20,
+        "difficulty": "university_level",
+        "category": "Cloud Networking",
+        "subcategory": "Basic",
+        "skills_required": [
+          "Cloud",
+          "Virtualization"
+        ]
+      },
+      {
+        "question_id": 21,
+        "difficulty": "university_level",
+        "category": "Application Layer",
+        "subcategory": "Port Numbers",
+        "skills_required": [
+          "Port Numbers",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 22,
+        "difficulty": "university_level",
+        "category": "Ethernet",
+        "subcategory": "Collision Domain",
+        "skills_required": [
+          "Switching",
+          "Hub"
+        ]
+      },
+      {
+        "question_id": 23,
+        "difficulty": "university_level",
+        "category": "TCP",
+        "subcategory": "Flow Control",
+        "skills_required": [
+          "TCP",
+          "Flow Control"
+        ]
+      },
+      {
+        "question_id": 24,
+        "difficulty": "university_level",
+        "category": "Fiber Optics",
+        "subcategory": "Cabling",
+        "skills_required": [
+          "Fiber",
+          "Cabling"
+        ]
+      },
+      {
+        "question_id": 25,
+        "difficulty": "university_level",
+        "category": "VPN",
+        "subcategory": "Tunneling",
+        "skills_required": [
+          "VPN",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 26,
+        "difficulty": "junior_level",
+        "category": "Automation",
+        "subcategory": "Python",
+        "skills_required": [
+          "Python",
+          "Netmiko"
+        ]
+      },
+      {
+        "question_id": 27,
+        "difficulty": "junior_level",
+        "category": "Automation",
+        "subcategory": "Ansible",
+        "skills_required": [
+          "Ansible",
+          "YAML"
+        ]
+      },
+      {
+        "question_id": 28,
+        "difficulty": "junior_level",
+        "category": "Linux",
+        "subcategory": "Shell Script",
+        "skills_required": [
+          "Bash",
+          "Linux"
+        ]
+      },
+      {
+        "question_id": 29,
+        "difficulty": "junior_level",
+        "category": "Cloud Infrastructure",
+        "subcategory": "Terraform",
+        "skills_required": [
+          "Terraform",
+          "AWS"
+        ]
+      },
+      {
+        "question_id": 30,
+        "difficulty": "junior_level",
+        "category": "Monitoring",
+        "subcategory": "Prometheus",
+        "skills_required": [
+          "Prometheus",
+          "YAML"
+        ]
+      },
+      {
+        "question_id": 31,
+        "difficulty": "junior_level",
+        "category": "Automation",
+        "subcategory": "Python Scapy",
+        "skills_required": [
+          "Python",
+          "Scapy"
+        ]
+      },
+      {
+        "question_id": 32,
+        "difficulty": "junior_level",
+        "category": "Automation",
+        "subcategory": "NAPALM",
+        "skills_required": [
+          "Python",
+          "NAPALM"
+        ]
+      },
+      {
+        "question_id": 33,
+        "difficulty": "junior_level",
+        "category": "Subnetting",
+        "subcategory": "Python ipaddress",
+        "skills_required": [
+          "Python",
+          "ipaddress"
+        ]
+      },
+      {
+        "question_id": 34,
+        "difficulty": "junior_level",
+        "category": "Linux",
+        "subcategory": "awk",
+        "skills_required": [
+          "Linux",
+          "awk"
+        ]
+      },
+      {
+        "question_id": 35,
+        "difficulty": "junior_level",
+        "category": "API",
+        "subcategory": "Cisco DNA Center",
+        "skills_required": [
+          "REST API",
+          "JSON"
+        ]
+      },
+      {
+        "question_id": 36,
+        "difficulty": "junior_level",
+        "category": "Routing",
+        "subcategory": "OSPF",
+        "skills_required": [
+          "OSPF",
+          "Configuration"
+        ]
+      },
+      {
+        "question_id": 37,
+        "difficulty": "junior_level",
+        "category": "Switching",
+        "subcategory": "EtherChannel",
+        "skills_required": [
+          "LACP",
+          "EtherChannel"
+        ]
+      },
+      {
+        "question_id": 38,
+        "difficulty": "junior_level",
+        "category": "Application",
+        "subcategory": "SSH",
+        "skills_required": [
+          "SSH",
+          "ACL"
+        ]
+      },
+      {
+        "question_id": 39,
+        "difficulty": "junior_level",
+        "category": "VLAN",
+        "subcategory": "Trunking",
+        "skills_required": [
+          "VLAN",
+          "Native VLAN"
+        ]
+      },
+      {
+        "question_id": 40,
+        "difficulty": "junior_level",
+        "category": "NAT",
+        "subcategory": "Address Pool",
+        "skills_required": [
+          "NAT",
+          "Troubleshooting"
+        ]
+      },
+      {
+        "question_id": 41,
+        "difficulty": "junior_level",
+        "category": "Routing",
+        "subcategory": "BGP",
+        "skills_required": [
+          "BGP",
+          "Troubleshooting"
+        ]
+      },
+      {
+        "question_id": 42,
+        "difficulty": "junior_level",
+        "category": "Application",
+        "subcategory": "HTTP Error",
+        "skills_required": [
+          "HTTP",
+          "Load Balancer"
+        ]
+      },
+      {
+        "question_id": 43,
+        "difficulty": "junior_level",
+        "category": "Cabling",
+        "subcategory": "Interface Errors",
+        "skills_required": [
+          "Ethernet",
+          "Hardware"
+        ]
+      },
+      {
+        "question_id": 44,
+        "difficulty": "junior_level",
+        "category": "VPN",
+        "subcategory": "IPsec",
+        "skills_required": [
+          "IPsec",
+          "IKE"
+        ]
+      },
+      {
+        "question_id": 45,
+        "difficulty": "junior_level",
+        "category": "Linux",
+        "subcategory": "Commands",
+        "skills_required": [
+          "Linux",
+          "Commands"
+        ]
+      },
+      {
+        "question_id": 46,
+        "difficulty": "junior_level",
+        "category": "Security",
+        "subcategory": "Syslog",
+        "skills_required": [
+          "Syslog",
+          "Monitoring"
+        ]
+      },
+      {
+        "question_id": 47,
+        "difficulty": "junior_level",
+        "category": "Cloud",
+        "subcategory": "VPC Flow Logs",
+        "skills_required": [
+          "AWS",
+          "VPC Flow Logs"
+        ]
+      },
+      {
+        "question_id": 48,
+        "difficulty": "junior_level",
+        "category": "Application",
+        "subcategory": "Web Server Logs",
+        "skills_required": [
+          "HTTP",
+          "Log Analysis"
+        ]
+      },
+      {
+        "question_id": 49,
+        "difficulty": "junior_level",
+        "category": "Routing",
+        "subcategory": "OSPF Logs",
+        "skills_required": [
+          "OSPF",
+          "Routing"
+        ]
+      },
+      {
+        "question_id": 50,
+        "difficulty": "junior_level",
+        "category": "DNS",
+        "subcategory": "Query Logs",
+        "skills_required": [
+          "DNS",
+          "Analysis"
+        ]
+      },
+      {
+        "question_id": 51,
+        "difficulty": "middle_level",
+        "category": "Routing",
+        "subcategory": "BGP Best Path",
+        "skills_required": [
+          "BGP",
+          "Traffic Engineering"
+        ]
+      },
+      {
+        "question_id": 52,
+        "difficulty": "middle_level",
+        "category": "Security",
+        "subcategory": "Firewall Policy",
+        "skills_required": [
+          "Firewall",
+          "NAT"
+        ]
+      },
+      {
+        "question_id": 53,
+        "difficulty": "middle_level",
+        "category": "Cloud Networking",
+        "subcategory": "AWS VPN",
+        "skills_required": [
+          "AWS",
+          "VPN",
+          "Routing"
+        ]
+      },
+      {
+        "question_id": 54,
+        "difficulty": "middle_level",
+        "category": "Load Balancing",
+        "subcategory": "Session Persistence",
+        "skills_required": [
+          "L4/L7 Switch",
+          "Cookie"
+        ]
+      },
+      {
+        "question_id": 55,
+        "difficulty": "middle_level",
+        "category": "Multicast",
+        "subcategory": "IGMP",
+        "skills_required": [
+          "Multicast",
+          "IGMP Snooping"
+        ]
+      },
+      {
+        "question_id": 56,
+        "difficulty": "middle_level",
+        "category": "Performance",
+        "subcategory": "Latency",
+        "skills_required": [
+          "TCP",
+          "Packet Analysis",
+          "Wireshark"
+        ]
+      },
+      {
+        "question_id": 57,
+        "difficulty": "middle_level",
+        "category": "Switching",
+        "subcategory": "STP",
+        "skills_required": [
+          "STP",
+          "Troubleshooting"
+        ]
+      },
+      {
+        "question_id": 58,
+        "difficulty": "middle_level",
+        "category": "Routing",
+        "subcategory": "BGP Flapping",
+        "skills_required": [
+          "BGP",
+          "Link Latency"
+        ]
+      },
+      {
+        "question_id": 59,
+        "difficulty": "middle_level",
+        "category": "Application",
+        "subcategory": "DNS Issues",
+        "skills_required": [
+          "DNS",
+          "UDP",
+          "MTU"
+        ]
+      },
+      {
+        "question_id": 60,
+        "difficulty": "middle_level",
+        "category": "Cloud Networking",
+        "subcategory": "AWS VPC",
+        "skills_required": [
+          "AWS",
+          "NACL",
+          "Security Group"
+        ]
+      },
+      {
+        "question_id": 61,
+        "difficulty": "middle_level",
+        "category": "Security",
+        "subcategory": "SSL/TLS",
+        "skills_required": [
+          "SSL/TLS",
+          "Packet Analysis",
+          "Wireshark"
+        ]
+      },
+      {
+        "question_id": 62,
+        "difficulty": "middle_level",
+        "category": "Monitoring",
+        "subcategory": "SNMP Metrics",
+        "skills_required": [
+          "SNMP",
+          "Traffic Analysis"
+        ]
+      },
+      {
+        "question_id": 63,
+        "difficulty": "middle_level",
+        "category": "Hybrid Cloud",
+        "subcategory": "Direct Connect",
+        "skills_required": [
+          "AWS Direct Connect",
+          "BGP",
+          "VLAN"
+        ]
+      },
+      {
+        "question_id": 64,
+        "difficulty": "middle_level",
+        "category": "Modern Networking",
+        "subcategory": "SD-WAN",
+        "skills_required": [
+          "SD-WAN",
+          "IPsec",
+          "Application Steering"
+        ]
+      },
+      {
+        "question_id": 65,
+        "difficulty": "middle_level",
+        "category": "Load Balancing",
+        "subcategory": "Scheduling",
+        "skills_required": [
+          "Load Balancer",
+          "Algorithm"
+        ]
+      },
+      {
+        "question_id": 66,
+        "difficulty": "middle_level",
+        "category": "Transport Layer",
+        "subcategory": "TCP Window",
+        "skills_required": [
+          "TCP",
+          "BDP",
+          "Latency"
+        ]
+      },
+      {
+        "question_id": 67,
+        "difficulty": "middle_level",
+        "category": "Capacity",
+        "subcategory": "Throughput Calculation",
+        "skills_required": [
+          "Bandwidth",
+          "PPS",
+          "Calculation"
+        ]
+      },
+      {
+        "question_id": 68,
+        "difficulty": "middle_level",
+        "category": "VPN",
+        "subcategory": "Concurrency",
+        "skills_required": [
+          "VPN",
+          "Planning"
+        ]
+      },
+      {
+        "question_id": 69,
+        "difficulty": "middle_level",
+        "category": "Infrastructure",
+        "subcategory": "Scale-out",
+        "skills_required": [
+          "Anycast",
+          "Routing",
+          "Scalability"
+        ]
+      },
+      {
+        "question_id": 70,
+        "difficulty": "middle_level",
+        "category": "Data Center",
+        "subcategory": "Spine-Leaf",
+        "skills_required": [
+          "Spine-Leaf",
+          "Architecture",
+          "East-West Traffic"
+        ]
+      },
+      {
+        "question_id": 71,
+        "difficulty": "middle_level",
+        "category": "Security",
+        "subcategory": "DMZ Design",
+        "skills_required": [
+          "DMZ",
+          "Firewall",
+          "Security Design"
+        ]
+      },
+      {
+        "question_id": 72,
+        "difficulty": "middle_level",
+        "category": "Availability",
+        "subcategory": "Redundancy Protcol",
+        "skills_required": [
+          "HSRP",
+          "VRRP",
+          "Gateway Redundancy"
+        ]
+      },
+      {
+        "question_id": 73,
+        "difficulty": "middle_level",
+        "category": "Cloud Networking",
+        "subcategory": "Inter-Region Connectivity",
+        "skills_required": [
+          "VPC Peering",
+          "Transit Gateway",
+          "Cloud Architecture"
+        ]
+      },
+      {
+        "question_id": 74,
+        "difficulty": "middle_level",
+        "category": "Change Management",
+        "subcategory": "Backbone Update",
+        "skills_required": [
+          "Change Control",
+          "Risk Assessment"
+        ]
+      },
+      {
+        "question_id": 75,
+        "difficulty": "middle_level",
+        "category": "Routing",
+        "subcategory": "BGP Error Handling",
+        "skills_required": [
+          "BGP",
+          "Failure Mode"
+        ]
+      },
+      {
+        "question_id": 76,
+        "difficulty": "middle_level",
+        "category": "DDoS",
+        "subcategory": "Mitigation",
+        "skills_required": [
+          "DDoS Mitigation",
+          "RTBH"
+        ]
+      },
+      {
+        "question_id": 77,
+        "difficulty": "middle_level",
+        "category": "Intrusion",
+        "subcategory": "Port Scanning",
+        "skills_required": [
+          "IDS/IPS",
+          "Security Analysis"
+        ]
+      },
+      {
+        "question_id": 78,
+        "difficulty": "middle_level",
+        "category": "Cloud",
+        "subcategory": "Data Transfer",
+        "skills_required": [
+          "Cloud Cost",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 79,
+        "difficulty": "middle_level",
+        "category": "Wireless",
+        "subcategory": "Channel Planning",
+        "skills_required": [
+          "Wi-Fi",
+          "RF Planning"
+        ]
+      },
+      {
+        "question_id": 80,
+        "difficulty": "middle_level",
+        "category": "Operations",
+        "subcategory": "SLA Monitoring",
+        "skills_required": [
+          "ICMP",
+          "TCP Keepalive",
+          "Monitoring"
+        ]
+      },
+      {
+        "question_id": 81,
+        "difficulty": "middle_level",
+        "category": "Deployment",
+        "subcategory": "Network Validation",
+        "skills_required": [
+          "Pre-deployment Test",
+          "Validation"
+        ]
+      },
+      {
+        "question_id": 82,
+        "difficulty": "middle_level",
+        "category": "Infrastructure",
+        "subcategory": "Legacy Network",
+        "skills_required": [
+          "Flat Network",
+          "VLAN Design"
+        ]
+      },
+      {
+        "question_id": 83,
+        "difficulty": "middle_level",
+        "category": "Cloud Architecture",
+        "subcategory": "AWS Dependency",
+        "skills_required": [
+          "AWS",
+          "DNS",
+          "VPC"
+        ]
+      },
+      {
+        "question_id": 84,
+        "difficulty": "middle_level",
+        "category": "Security",
+        "subcategory": "Management Plane",
+        "skills_required": [
+          "Security Best Practice",
+          "OOB"
+        ]
+      },
+      {
+        "question_id": 85,
+        "difficulty": "middle_level",
+        "category": "Automation",
+        "subcategory": "Ansible Review",
+        "skills_required": [
+          "Ansible",
+          "YAML",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 86,
+        "difficulty": "middle_level",
+        "category": "Standards",
+        "subcategory": "RFC Interpretation",
+        "skills_required": [
+          "RFC",
+          "IP Addressing"
+        ]
+      },
+      {
+        "question_id": 87,
+        "difficulty": "middle_level",
+        "category": "Automation",
+        "subcategory": "RESTCONF",
+        "skills_required": [
+          "RESTCONF",
+          "YANG",
+          "API"
+        ]
+      },
+      {
+        "question_id": 88,
+        "difficulty": "middle_level",
+        "category": "Cloud Networking",
+        "subcategory": "Latency impact",
+        "skills_required": [
+          "Quorum",
+          "Latency",
+          "Distributed Database"
+        ]
+      },
+      {
+        "question_id": 89,
+        "difficulty": "middle_level",
+        "category": "Security",
+        "subcategory": "Encryption",
+        "skills_required": [
+          "AES",
+          "IPsec"
+        ]
+      },
+      {
+        "question_id": 90,
+        "difficulty": "middle_level",
+        "category": "Cloud Networking",
+        "subcategory": "VPC Endpoint",
+        "skills_required": [
+          "AWS",
+          "VPC Endpoint",
+          "PrivateLink"
+        ]
+      },
+      {
+        "question_id": 91,
+        "difficulty": "middle_level",
+        "category": "Routing",
+        "subcategory": "BGP Best Path",
+        "skills_required": [
+          "BGP"
+        ]
+      },
+      {
+        "question_id": 92,
+        "difficulty": "middle_level",
+        "category": "Switching",
+        "subcategory": "VLAN/Trunk",
+        "skills_required": [
+          "VLAN",
+          "Native VLAN"
+        ]
+      },
+      {
+        "question_id": 93,
+        "difficulty": "middle_level",
+        "category": "Routing",
+        "subcategory": "EIGRP",
+        "skills_required": [
+          "EIGRP",
+          "AS Number"
+        ]
+      },
+      {
+        "question_id": 94,
+        "difficulty": "middle_level",
+        "category": "Security",
+        "subcategory": "Firewall Logs",
+        "skills_required": [
+          "Firewall",
+          "Traffic Analysis"
+        ]
+      },
+      {
+        "question_id": 95,
+        "difficulty": "middle_level",
+        "category": "Switching",
+        "subcategory": "Interface Statistics",
+        "skills_required": [
+          "Collision",
+          "Duplex"
+        ]
+      },
+      {
+        "question_id": 96,
+        "difficulty": "middle_level",
+        "category": "Application",
+        "subcategory": "CDN",
+        "skills_required": [
+          "CDN",
+          "Performance"
+        ]
+      },
+      {
+        "question_id": 97,
+        "difficulty": "middle_level",
+        "category": "Transport",
+        "subcategory": "TCP Disconnect",
+        "skills_required": [
+          "TCP",
+          "Idle Timeout",
+          "Firewall"
+        ]
+      },
+      {
+        "question_id": 98,
+        "difficulty": "middle_level",
+        "category": "Voice",
+        "subcategory": "VoIP QoS",
+        "skills_required": [
+          "QoS",
+          "Jitter",
+          "VoIP"
+        ]
+      },
+      {
+        "question_id": 99,
+        "difficulty": "middle_level",
+        "category": "IPv6",
+        "subcategory": "Migration",
+        "skills_required": [
+          "Dual Stack",
+          "Tunneling"
+        ]
+      },
+      {
+        "question_id": 100,
+        "difficulty": "middle_level",
+        "category": "Wireless",
+        "subcategory": "Frequency Band",
+        "skills_required": [
+          "2.4GHz",
+          "5GHz",
+          "Wi-Fi"
+        ]
+      },
+      {
+        "question_id": 101,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "High Availability",
+        "skills_required": [
+          "Multi-homing",
+          "BGP",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 102,
+        "difficulty": "senior_level",
+        "category": "Cloud Networking",
+        "subcategory": "Direct Connect vs VPN",
+        "skills_required": [
+          "AWS Direct Connect",
+          "Site-to-Site VPN",
+          "Cost",
+          "Performance"
+        ]
+      },
+      {
+        "question_id": 103,
+        "difficulty": "senior_level",
+        "category": "Routing",
+        "subcategory": "BGP Route Reflection",
+        "skills_required": [
+          "BGP",
+          "Route Reflector",
+          "Scalability"
+        ]
+      },
+      {
+        "question_id": 104,
+        "difficulty": "senior_level",
+        "category": "Software Defined Network",
+        "subcategory": "SDN Controller",
+        "skills_required": [
+          "SDN",
+          "Control Plane",
+          "Risk"
+        ]
+      },
+      {
+        "question_id": 105,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Ransomware Defense",
+        "skills_required": [
+          "Incident Response",
+          "Micro-segmentation",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 106,
+        "difficulty": "senior_level",
+        "category": "Cloud Networking",
+        "subcategory": "Transit Gateway Connect",
+        "skills_required": [
+          "AWS",
+          "TGW",
+          "Scalability"
+        ]
+      },
+      {
+        "question_id": 107,
+        "difficulty": "senior_level",
+        "category": "Kernel Networking",
+        "subcategory": "DPDK/eBPF",
+        "skills_required": [
+          "DPDK",
+          "Kernel Bypass",
+          "High Performance"
+        ]
+      },
+      {
+        "question_id": 108,
+        "difficulty": "senior_level",
+        "category": "Cloud Security",
+        "subcategory": "Zero Trust",
+        "skills_required": [
+          "Zero Trust",
+          "IAM",
+          "Infrastructure Security"
+        ]
+      },
+      {
+        "question_id": 109,
+        "difficulty": "senior_level",
+        "category": "Infrastructure",
+        "subcategory": "CAPEX vs OPEX",
+        "skills_required": [
+          "Financial Analysis",
+          "Vendor Selection"
+        ]
+      },
+      {
+        "question_id": 110,
+        "difficulty": "senior_level",
+        "category": "Data Center",
+        "subcategory": "Power and Cooling",
+        "skills_required": [
+          "Facility Management",
+          "Efficiency"
+        ]
+      },
+      {
+        "question_id": 111,
+        "difficulty": "senior_level",
+        "category": "Data Center",
+        "subcategory": "VXLAN EVPN",
+        "skills_required": [
+          "VXLAN",
+          "BGP EVPN",
+          "Spine-Leaf"
+        ]
+      },
+      {
+        "question_id": 112,
+        "difficulty": "senior_level",
+        "category": "Cloud Networking",
+        "subcategory": "Multi-Cloud",
+        "skills_required": [
+          "Multi-Cloud",
+          "Transit Network",
+          "Cost Optimization"
+        ]
+      },
+      {
+        "question_id": 113,
+        "difficulty": "senior_level",
+        "category": "Routing",
+        "subcategory": "BGP Route Leak",
+        "skills_required": [
+          "BGP",
+          "RPKI",
+          "Route Filtering"
+        ]
+      },
+      {
+        "question_id": 114,
+        "difficulty": "senior_level",
+        "category": "High Availability",
+        "subcategory": "Split Brain",
+        "skills_required": [
+          "HA",
+          "Split Brain",
+          "Clustering"
+        ]
+      },
+      {
+        "question_id": 115,
+        "difficulty": "senior_level",
+        "category": "DDoS Mitigation",
+        "subcategory": "BGP Flowspec",
+        "skills_required": [
+          "BGP Flowspec",
+          "DDoS",
+          "ISP Routing"
+        ]
+      },
+      {
+        "question_id": 116,
+        "difficulty": "senior_level",
+        "category": "Modern Networking",
+        "subcategory": "SD-WAN Architecture",
+        "skills_required": [
+          "SD-WAN",
+          "Underlay/Overlay",
+          "IPsec"
+        ]
+      },
+      {
+        "question_id": 117,
+        "difficulty": "senior_level",
+        "category": "Low Latency",
+        "subcategory": "HFT Network",
+        "skills_required": [
+          "Multicast",
+          "PTP",
+          "Cut-through Switching"
+        ]
+      },
+      {
+        "question_id": 118,
+        "difficulty": "senior_level",
+        "category": "Automation",
+        "subcategory": "Infrastructure as Code",
+        "skills_required": [
+          "Terraform",
+          "State Management",
+          "CI/CD"
+        ]
+      },
+      {
+        "question_id": 119,
+        "difficulty": "senior_level",
+        "category": "Network Management",
+        "subcategory": "IPAM",
+        "skills_required": [
+          "IPAM",
+          "Database",
+          "CIDR"
+        ]
+      },
+      {
+        "question_id": 120,
+        "difficulty": "senior_level",
+        "category": "Load Balancing",
+        "subcategory": "Consistent Hashing",
+        "skills_required": [
+          "Hashing",
+          "Scalability",
+          "Caching"
+        ]
+      },
+      {
+        "question_id": 121,
+        "difficulty": "senior_level",
+        "category": "IPv6",
+        "subcategory": "NAT64/DNS64",
+        "skills_required": [
+          "IPv6 Transition",
+          "DNS64",
+          "NAT64"
+        ]
+      },
+      {
+        "question_id": 122,
+        "difficulty": "senior_level",
+        "category": "Kubernetes",
+        "subcategory": "CNI",
+        "skills_required": [
+          "Kubernetes",
+          "CNI",
+          "Overlay Network"
+        ]
+      },
+      {
+        "question_id": 123,
+        "difficulty": "senior_level",
+        "category": "Automation",
+        "subcategory": "Webhook vs Polling",
+        "skills_required": [
+          "API",
+          "Webhooks",
+          "Network Automation"
+        ]
+      },
+      {
+        "question_id": 124,
+        "difficulty": "senior_level",
+        "category": "Chaos Engineering",
+        "subcategory": "Network Fault Injection",
+        "skills_required": [
+          "Chaos Engineering",
+          "Resilience",
+          "Traffic Control"
+        ]
+      },
+      {
+        "question_id": 125,
+        "difficulty": "senior_level",
+        "category": "Telemetry",
+        "subcategory": "Streaming Telemetry",
+        "skills_required": [
+          "Streaming Telemetry",
+          "gRPC",
+          "SNMP vs Telemetry"
+        ]
+      },
+      {
+        "question_id": 126,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "Micro-segmentation",
+        "skills_required": [
+          "Micro-segmentation",
+          "Zero Trust",
+          "Cloud Security"
+        ]
+      },
+      {
+        "question_id": 127,
+        "difficulty": "senior_level",
+        "category": "Change Management",
+        "subcategory": "Core Migration",
+        "skills_required": [
+          "Migration Strategy",
+          "OSPF",
+          "Downtime"
+        ]
+      },
+      {
+        "question_id": 128,
+        "difficulty": "senior_level",
+        "category": "Design Document",
+        "subcategory": "RFP Response",
+        "skills_required": [
+          "RFP",
+          "Network Design",
+          "Compliance"
+        ]
+      },
+      {
+        "question_id": 129,
+        "difficulty": "senior_level",
+        "category": "Infrastructure",
+        "subcategory": "IPv6 Design",
+        "skills_required": [
+          "IPv6 Addressing",
+          "SLAAC",
+          "Subnetting"
+        ]
+      },
+      {
+        "question_id": 130,
+        "difficulty": "senior_level",
+        "category": "Troubleshooting",
+        "subcategory": "Asymmetric Routing",
+        "skills_required": [
+          "Asymmetric Routing",
+          "Stateful Firewall",
+          "TCP"
+        ]
+      },
+      {
+        "question_id": 131,
+        "difficulty": "senior_level",
+        "category": "SD-WAN",
+        "subcategory": "Circuit Cost",
+        "skills_required": [
+          "SD-WAN",
+          "MPLS",
+          "Cost Analysis"
+        ]
+      },
+      {
+        "question_id": 132,
+        "difficulty": "senior_level",
+        "category": "Cloud Networking",
+        "subcategory": "AWS TGW",
+        "skills_required": [
+          "AWS Transit Gateway",
+          "Inspection VPC",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 133,
+        "difficulty": "senior_level",
+        "category": "Container Networking",
+        "subcategory": "K8s Service",
+        "skills_required": [
+          "Kubernetes",
+          "Service Mesh",
+          "Ingress"
+        ]
+      },
+      {
+        "question_id": 134,
+        "difficulty": "senior_level",
+        "category": "DNS",
+        "subcategory": "Anycast DNS",
+        "skills_required": [
+          "Anycast",
+          "BGP",
+          "DNS",
+          "Convergence"
+        ]
+      },
+      {
+        "question_id": 135,
+        "difficulty": "senior_level",
+        "category": "Transport",
+        "subcategory": "TCP Performance",
+        "skills_required": [
+          "TCP",
+          "Congestion Control",
+          "BBR"
+        ]
+      },
+      {
+        "question_id": 136,
+        "difficulty": "senior_level",
+        "category": "QoS",
+        "subcategory": "Traffic Shaping",
+        "skills_required": [
+          "QoS",
+          "Shaping",
+          "Policing"
+        ]
+      },
+      {
+        "question_id": 137,
+        "difficulty": "senior_level",
+        "category": "Database",
+        "subcategory": "CAP Theorem",
+        "skills_required": [
+          "CAP Theorem",
+          "Network Partition",
+          "Distributed Systems"
+        ]
+      },
+      {
+        "question_id": 138,
+        "difficulty": "senior_level",
+        "category": "VPN Architecture",
+        "subcategory": "IPsec Overlapping IP",
+        "skills_required": [
+          "IPsec",
+          "NAT",
+          "Overlapping Subnets"
+        ]
+      },
+      {
+        "question_id": 139,
+        "difficulty": "senior_level",
+        "category": "Automation",
+        "subcategory": "NetDevOps",
+        "skills_required": [
+          "CI/CD",
+          "NetDevOps",
+          "Testing"
+        ]
+      },
+      {
+        "question_id": 140,
+        "difficulty": "senior_level",
+        "category": "Wireless",
+        "subcategory": "802.1x Authentication",
+        "skills_required": [
+          "802.1X",
+          "RADIUS",
+          "EAP-TLS"
+        ]
+      },
+      {
+        "question_id": 141,
+        "difficulty": "senior_level",
+        "category": "Cloud Networking",
+        "subcategory": "Traffic Routing",
+        "skills_required": [
+          "AWS Transit Gateway",
+          "VPC Peering",
+          "Cost Analysis"
+        ]
+      },
+      {
+        "question_id": 142,
+        "difficulty": "senior_level",
+        "category": "Telemetry",
+        "subcategory": "Performance Monitoring",
+        "skills_required": [
+          "gRPC",
+          "Streaming Telemetry",
+          "SNMP"
+        ]
+      },
+      {
+        "question_id": 143,
+        "difficulty": "senior_level",
+        "category": "Automation",
+        "subcategory": "CI/CD Pipeline",
+        "skills_required": [
+          "Batfish",
+          "Network CI/CD",
+          "Testing"
+        ]
+      },
+      {
+        "question_id": 144,
+        "difficulty": "senior_level",
+        "category": "IPv6",
+        "subcategory": "Migration Strategy",
+        "skills_required": [
+          "IPv6",
+          "NAT64",
+          "Dual Stack"
+        ]
+      },
+      {
+        "question_id": 145,
+        "difficulty": "senior_level",
+        "category": "Routing",
+        "subcategory": "BGP Recursion",
+        "skills_required": [
+          "BGP",
+          "IGP",
+          "Route Recursion"
+        ]
+      },
+      {
+        "question_id": 146,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "Zero Trust Architecture",
+        "skills_required": [
+          "Zero Trust",
+          "Identity-Aware Proxy",
+          "VPN"
+        ]
+      },
+      {
+        "question_id": 147,
+        "difficulty": "senior_level",
+        "category": "Automation",
+        "subcategory": "Ansible Idempotency",
+        "skills_required": [
+          "Ansible",
+          "Idempotency",
+          "IaC"
+        ]
+      },
+      {
+        "question_id": 148,
+        "difficulty": "senior_level",
+        "category": "Routing",
+        "subcategory": "BGP Path Selection",
+        "skills_required": [
+          "BGP",
+          "RFC",
+          "Troubleshooting"
+        ]
+      },
+      {
+        "question_id": 149,
+        "difficulty": "senior_level",
+        "category": "Automation",
+        "subcategory": "YANG Models",
+        "skills_required": [
+          "NETCONF",
+          "RESTCONF",
+          "YANG"
+        ]
+      },
+      {
+        "question_id": 150,
+        "difficulty": "senior_level",
+        "category": "Network Mapping",
+        "subcategory": "Graph Database",
+        "skills_required": [
+          "Topology",
+          "Graph DB",
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 151,
+        "difficulty": "senior_level",
+        "category": "SDN",
+        "subcategory": "Control Plane Distribution",
+        "skills_required": [
+          "SDN",
+          "CAP Theorem",
+          "Clustering"
+        ]
+      },
+      {
+        "question_id": 152,
+        "difficulty": "senior_level",
+        "category": "Data Center",
+        "subcategory": "BGP EVPN",
+        "skills_required": [
+          "EVPN",
+          "BGP",
+          "VXLAN"
+        ]
+      },
+      {
+        "question_id": 153,
+        "difficulty": "senior_level",
+        "category": "Data Center",
+        "subcategory": "VXLAN",
+        "skills_required": [
+          "VXLAN",
+          "VTEP",
+          "Underlay"
+        ]
+      },
+      {
+        "question_id": 154,
+        "difficulty": "senior_level",
+        "category": "Service Provider",
+        "subcategory": "Segment Routing",
+        "skills_required": [
+          "SRv6",
+          "Traffic Engineering",
+          "MPLS"
+        ]
+      },
+      {
+        "question_id": 155,
+        "difficulty": "senior_level",
+        "category": "Modern Networking",
+        "subcategory": "SD-WAN vs MPLS",
+        "skills_required": [
+          "SD-WAN",
+          "MPLS",
+          "WAN Architecture"
+        ]
+      },
+      {
+        "question_id": 156,
+        "difficulty": "senior_level",
+        "category": "Enterprise Network",
+        "subcategory": "SD-Access",
+        "skills_required": [
+          "Cisco SDA",
+          "LISP",
+          "TrustSec"
+        ]
+      },
+      {
+        "question_id": 157,
+        "difficulty": "senior_level",
+        "category": "Automation",
+        "subcategory": "Python Nornir",
+        "skills_required": [
+          "Python",
+          "Nornir",
+          "Concurrency"
+        ]
+      },
+      {
+        "question_id": 158,
+        "difficulty": "senior_level",
+        "category": "Automation",
+        "subcategory": "Jinja2 Templates",
+        "skills_required": [
+          "Jinja2",
+          "Ansible",
+          "Automation"
+        ]
+      },
+      {
+        "question_id": 159,
+        "difficulty": "senior_level",
+        "category": "Troubleshooting",
+        "subcategory": "VPN MTU",
+        "skills_required": [
+          "GRE over IPsec",
+          "MTU",
+          "OSPF"
+        ]
+      },
+      {
+        "question_id": 160,
+        "difficulty": "senior_level",
+        "category": "Cloud Native",
+        "subcategory": "Kubernetes Calico",
+        "skills_required": [
+          "Kubernetes",
+          "Calico",
+          "BGP"
+        ]
+      },
+      {
+        "question_id": 161,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "Firewall Teardown",
+        "skills_required": [
+          "Cisco ASA",
+          "Syslog",
+          "TCP State"
+        ]
+      },
+      {
+        "question_id": 162,
+        "difficulty": "senior_level",
+        "category": "Multicast",
+        "subcategory": "PIM Sparse Mode",
+        "skills_required": [
+          "Multicast",
+          "PIM-SM",
+          "Rendezvous Point"
+        ]
+      },
+      {
+        "question_id": 163,
+        "difficulty": "senior_level",
+        "category": "High Availability",
+        "subcategory": "Active-Active Firewall",
+        "skills_required": [
+          "Firewall Clustering",
+          "Asymmetric Routing",
+          "State Sync"
+        ]
+      },
+      {
+        "question_id": 164,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "Traffic Analysis",
+        "skills_required": [
+          "NetFlow",
+          "DDoS Analysis",
+          "TCP/IP"
+        ]
+      },
+      {
+        "question_id": 165,
+        "difficulty": "senior_level",
+        "category": "Cloud Networking",
+        "subcategory": "AWS VPN Limits",
+        "skills_required": [
+          "AWS VPN",
+          "BGP Limits",
+          "Route Aggregation"
+        ]
+      },
+      {
+        "question_id": 166,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "PKI & Certificate",
+        "skills_required": [
+          "SSL/TLS",
+          "PKI",
+          "Troubleshooting"
+        ]
+      },
+      {
+        "question_id": 167,
+        "difficulty": "senior_level",
+        "category": "Routing",
+        "subcategory": "ECMP Polarization",
+        "skills_required": [
+          "ECMP",
+          "Hashing",
+          "Traffic Engineering"
+        ]
+      },
+      {
+        "question_id": 168,
+        "difficulty": "senior_level",
+        "category": "Transport Layer",
+        "subcategory": "TCP Optimization",
+        "skills_required": [
+          "TCP BBR",
+          "Throughput",
+          "Latency"
+        ]
+      },
+      {
+        "question_id": 169,
+        "difficulty": "senior_level",
+        "category": "Infrastructure",
+        "subcategory": "VPN Throughput",
+        "skills_required": [
+          "IPsec",
+          "Hardware Acceleration",
+          "Throughput"
+        ]
+      },
+      {
+        "question_id": 170,
+        "difficulty": "senior_level",
+        "category": "Data Center",
+        "subcategory": "Spine-Leaf Oversubscription",
+        "skills_required": [
+          "Oversubscription Ratio",
+          "Data Center Design",
+          "Bandwidth"
+        ]
+      },
+      {
+        "question_id": 171,
+        "difficulty": "senior_level",
+        "category": "Routing",
+        "subcategory": "BGP Route Reflector",
+        "skills_required": [
+          "BGP",
+          "Route Reflector Cluster",
+          "Scalability"
+        ]
+      },
+      {
+        "question_id": 172,
+        "difficulty": "senior_level",
+        "category": "Availability",
+        "subcategory": "Anycast DNS",
+        "skills_required": [
+          "Anycast",
+          "BGP",
+          "DNS System Design"
+        ]
+      },
+      {
+        "question_id": 173,
+        "difficulty": "senior_level",
+        "category": "Cloud Native",
+        "subcategory": "Kubernetes Ingress",
+        "skills_required": [
+          "Kubernetes",
+          "Ingress",
+          "Gateway API"
+        ]
+      },
+      {
+        "question_id": 174,
+        "difficulty": "senior_level",
+        "category": "Cloud Networking",
+        "subcategory": "VPC Connectivity",
+        "skills_required": [
+          "AWS VPC Peering",
+          "Transit Gateway",
+          "Architecture Comparison"
+        ]
+      },
+      {
+        "question_id": 175,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "IPS vs IDS",
+        "skills_required": [
+          "IPS/IDS",
+          "Inline/Out-of-band",
+          "Network Architecture"
+        ]
+      },
+      {
+        "question_id": 176,
+        "difficulty": "senior_level",
+        "category": "Change Management",
+        "subcategory": "Core Upgrade",
+        "skills_required": [
+          "Risk Management",
+          "Maintenance",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 177,
+        "difficulty": "senior_level",
+        "category": "High Availability",
+        "subcategory": "HA Split-Brain",
+        "skills_required": [
+          "Failover",
+          "Split-brain",
+          "ARP"
+        ]
+      },
+      {
+        "question_id": 178,
+        "difficulty": "senior_level",
+        "category": "Troubleshooting",
+        "subcategory": "BGP Hijacking",
+        "skills_required": [
+          "BGP Route Leak",
+          "RPKI",
+          "Incident Response"
+        ]
+      },
+      {
+        "question_id": 179,
+        "difficulty": "senior_level",
+        "category": "VPN Security",
+        "subcategory": "IKE Aggressive Mode",
+        "skills_required": [
+          "IPsec",
+          "IKE Phase 1",
+          "Cryptography"
+        ]
+      },
+      {
+        "question_id": 180,
+        "difficulty": "senior_level",
+        "category": "Cloud Strategy",
+        "subcategory": "Data Egress Cost",
+        "skills_required": [
+          "AWS Direct Connect",
+          "Cloud Cost",
+          "Data Transfer"
+        ]
+      },
+      {
+        "question_id": 181,
+        "difficulty": "senior_level",
+        "category": "QoS",
+        "subcategory": "Queue Starvation",
+        "skills_required": [
+          "QoS",
+          "Strict Priority",
+          "CBWFQ"
+        ]
+      },
+      {
+        "question_id": 182,
+        "difficulty": "senior_level",
+        "category": "SaaS Connectivity",
+        "subcategory": "Synthetics Monitoring",
+        "skills_required": [
+          "Synthetic Testing",
+          "SaaS Performance",
+          "ThousandEyes"
+        ]
+      },
+      {
+        "question_id": 183,
+        "difficulty": "senior_level",
+        "category": "Chaos Engineering",
+        "subcategory": "Resilience Testing",
+        "skills_required": [
+          "Chaos Engineering",
+          "Game Day",
+          "Failover Validation"
+        ]
+      },
+      {
+        "question_id": 184,
+        "difficulty": "senior_level",
+        "category": "Switching Architecture",
+        "subcategory": "STP Elimination",
+        "skills_required": [
+          "vPC",
+          "MLAG",
+          "Spanning Tree"
+        ]
+      },
+      {
+        "question_id": 185,
+        "difficulty": "senior_level",
+        "category": "Infrastructure Services",
+        "subcategory": "NTP Dependency",
+        "skills_required": [
+          "NTP",
+          "Kerberos",
+          "SAML",
+          "Troubleshooting"
+        ]
+      },
+      {
+        "question_id": 186,
+        "difficulty": "senior_level",
+        "category": "Management",
+        "subcategory": "OOB Architecture",
+        "skills_required": [
+          "OOB Management",
+          "Console Server",
+          "Resiliency"
+        ]
+      },
+      {
+        "question_id": 187,
+        "difficulty": "senior_level",
+        "category": "Automation",
+        "subcategory": "Terraform State",
+        "skills_required": [
+          "Terraform",
+          "State Locking",
+          "Collaboration"
+        ]
+      },
+      {
+        "question_id": 188,
+        "difficulty": "senior_level",
+        "category": "Hardware Capacity",
+        "subcategory": "TCAM/FIB Limits",
+        "skills_required": [
+          "TCAM",
+          "FIB",
+          "Hardware Architecture"
+        ]
+      },
+      {
+        "question_id": 189,
+        "difficulty": "senior_level",
+        "category": "Programmability",
+        "subcategory": "Event Driven",
+        "skills_required": [
+          "Webhook",
+          "API",
+          "Event-Driven"
+        ]
+      },
+      {
+        "question_id": 190,
+        "difficulty": "senior_level",
+        "category": "Inventory Management",
+        "subcategory": "Source of Truth",
+        "skills_required": [
+          "Source of Truth",
+          "NetBox",
+          "Data Modeling"
+        ]
+      },
+      {
+        "question_id": 191,
+        "difficulty": "senior_level",
+        "category": "Routing Protocol",
+        "subcategory": "BGP Convergence",
+        "skills_required": [
+          "BGP Convergence",
+          "Distributed Systems",
+          "Eventually Consistent"
+        ]
+      },
+      {
+        "question_id": 192,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "MACsec",
+        "skills_required": [
+          "MACsec",
+          "802.1AE",
+          "Encryption"
+        ]
+      },
+      {
+        "question_id": 193,
+        "difficulty": "senior_level",
+        "category": "IPv6",
+        "subcategory": "Neighbor Discovery",
+        "skills_required": [
+          "IPv6",
+          "NDP",
+          "ICMPv6"
+        ]
+      },
+      {
+        "question_id": 194,
+        "difficulty": "senior_level",
+        "category": "Security Architecture",
+        "subcategory": "ZTNA vs VPN",
+        "skills_required": [
+          "ZTNA",
+          "Remote Access",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 195,
+        "difficulty": "senior_level",
+        "category": "Performance",
+        "subcategory": "QoS Limits",
+        "skills_required": [
+          "QoS",
+          "Bandwidth",
+          "Network Limits"
+        ]
+      },
+      {
+        "question_id": 196,
+        "difficulty": "senior_level",
+        "category": "Kernel Networking",
+        "subcategory": "eBPF/XDP",
+        "skills_required": [
+          "eBPF",
+          "XDP",
+          "Linux Networking"
+        ]
+      },
+      {
+        "question_id": 197,
+        "difficulty": "senior_level",
+        "category": "API",
+        "subcategory": "Python Requests",
+        "skills_required": [
+          "Python",
+          "REST API",
+          "HTTP Headers"
+        ]
+      },
+      {
+        "question_id": 198,
+        "difficulty": "senior_level",
+        "category": "Automation",
+        "subcategory": "Python ipaddress",
+        "skills_required": [
+          "Python",
+          "ipaddress",
+          "Subnet Math"
+        ]
+      },
+      {
+        "question_id": 199,
+        "difficulty": "senior_level",
+        "category": "Routing",
+        "subcategory": "iBGP Next-Hop",
+        "skills_required": [
+          "BGP",
+          "iBGP",
+          "next-hop-self"
+        ]
+      },
+      {
+        "question_id": 200,
+        "difficulty": "senior_level",
+        "category": "Troubleshooting",
+        "subcategory": "PMTUD Blackhole",
+        "skills_required": [
+          "PMTUD",
+          "ICMP",
+          "MTU",
+          "Troubleshooting"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 39,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0921,
+        "combined_score": 0.3369,
+        "Logic": "공통 스킬 ['vlan'] (Jaccard=0.33) | 시나리오 유사도=0.09 | 난이도 university_level → junior_level | 동일 카테고리(VLAN)"
+      },
+      {
+        "Preceding_ID": 5,
+        "Target_ID": 39,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['vlan'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 12,
+        "Target_ID": 39,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['vlan'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 14,
+        "Target_ID": 40,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['nat'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(NAT)"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 40,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0524,
+        "combined_score": 0.2209,
+        "Logic": "공통 스킬 ['nat'] (Jaccard=0.33) | 시나리오 유사도=0.05 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 11,
+        "Target_ID": 42,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['http'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 1,
+        "Target_ID": 43,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['ethernet'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 13,
+        "Target_ID": 43,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['ethernet'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 11,
+        "Target_ID": 48,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0824,
+        "combined_score": 0.2329,
+        "Logic": "공통 스킬 ['http'] (Jaccard=0.33) | 시나리오 유사도=0.08 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 49,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['routing'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 16,
+        "Target_ID": 49,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['routing'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 50,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['dns'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(DNS)"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 51,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0071,
+        "combined_score": 0.3028,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.33) | 시나리오 유사도=0.01 | 난이도 junior_level → middle_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 17,
+        "Target_ID": 52,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['firewall'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 14,
+        "Target_ID": 52,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0449,
+        "combined_score": 0.218,
+        "Logic": "공통 스킬 ['nat'] (Jaccard=0.33) | 시나리오 유사도=0.04 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 52,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0133,
+        "combined_score": 0.2053,
+        "Logic": "공통 스킬 ['nat'] (Jaccard=0.33) | 시나리오 유사도=0.01 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 53,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['routing'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 29,
+        "Target_ID": 53,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.1055,
+        "combined_score": 0.1922,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.25) | 시나리오 유사도=0.11 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 47,
+        "Target_ID": 53,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0716,
+        "combined_score": 0.1786,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.25) | 시나리오 유사도=0.07 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 23,
+        "Target_ID": 56,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.1273,
+        "combined_score": 0.2009,
+        "Logic": "공통 스킬 ['tcp'] (Jaccard=0.25) | 시나리오 유사도=0.13 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 56,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['tcp'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 11,
+        "Target_ID": 56,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['tcp'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 57,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0118,
+        "combined_score": 0.2047,
+        "Logic": "공통 스킬 ['troubleshooting'] (Jaccard=0.33) | 시나리오 유사도=0.01 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 5,
+        "Target_ID": 57,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['stp'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 40,
+        "Target_ID": 57,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['troubleshooting'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 58,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0732,
+        "combined_score": 0.3293,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.33) | 시나리오 유사도=0.07 | 난이도 junior_level → middle_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 59,
+        "skill_overlap": 0.6667,
+        "scenario_similarity": 0.0081,
+        "combined_score": 0.4032,
+        "Logic": "공통 스킬 ['dns', 'udp'] (Jaccard=0.67) | 시나리오 유사도=0.01 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 50,
+        "Target_ID": 59,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.2031,
+        "combined_score": 0.2312,
+        "Logic": "공통 스킬 ['dns'] (Jaccard=0.25) | 시나리오 유사도=0.20 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 59,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['udp'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 29,
+        "Target_ID": 60,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0507,
+        "combined_score": 0.1703,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.25) | 시나리오 유사도=0.05 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 47,
+        "Target_ID": 60,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0219,
+        "combined_score": 0.1587,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.25) | 시나리오 유사도=0.02 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 63,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0131,
+        "combined_score": 0.1552,
+        "Logic": "공통 스킬 ['vlan'] (Jaccard=0.25) | 시나리오 유사도=0.01 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 5,
+        "Target_ID": 63,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['vlan'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 12,
+        "Target_ID": 63,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['vlan'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 44,
+        "Target_ID": 64,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['ipsec'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 42,
+        "Target_ID": 65,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['load balancer'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 23,
+        "Target_ID": 66,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.062,
+        "combined_score": 0.1748,
+        "Logic": "공통 스킬 ['tcp'] (Jaccard=0.25) | 시나리오 유사도=0.06 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 66,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['tcp'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 11,
+        "Target_ID": 66,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['tcp'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 68,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['vpn'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(VPN)"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 69,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.042,
+        "combined_score": 0.2168,
+        "Logic": "공통 스킬 ['routing'] (Jaccard=0.33) | 시나리오 유사도=0.04 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 16,
+        "Target_ID": 69,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.058,
+        "combined_score": 0.1732,
+        "Logic": "공통 스킬 ['routing'] (Jaccard=0.25) | 시나리오 유사도=0.06 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 49,
+        "Target_ID": 69,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['routing'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 17,
+        "Target_ID": 71,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.1691,
+        "combined_score": 0.3176,
+        "Logic": "공통 스킬 ['firewall'] (Jaccard=0.25) | 시나리오 유사도=0.17 | 난이도 university_level → middle_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 75,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0497,
+        "combined_score": 0.3199,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.33) | 시나리오 유사도=0.05 | 난이도 junior_level → middle_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 36,
+        "Target_ID": 75,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1303,
+        "combined_score": 0.1521,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.13 | 난이도 junior_level → middle_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 15,
+        "Target_ID": 79,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.2563,
+        "combined_score": 0.2025,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.26 | 난이도 university_level → middle_level | 동일 카테고리(Wireless)"
+      },
+      {
+        "Preceding_ID": 18,
+        "Target_ID": 80,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['icmp'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 46,
+        "Target_ID": 80,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['monitoring'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 83,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0825,
+        "combined_score": 0.183,
+        "Logic": "공통 스킬 ['dns'] (Jaccard=0.25) | 시나리오 유사도=0.08 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 29,
+        "Target_ID": 83,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0467,
+        "combined_score": 0.1687,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.25) | 시나리오 유사도=0.05 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 47,
+        "Target_ID": 83,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0432,
+        "combined_score": 0.1673,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.25) | 시나리오 유사도=0.04 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 27,
+        "Target_ID": 85,
+        "skill_overlap": 0.6667,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.5,
+        "Logic": "공통 스킬 ['ansible', 'yaml'] (Jaccard=0.67) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Automation)"
+      },
+      {
+        "Preceding_ID": 17,
+        "Target_ID": 85,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 21,
+        "Target_ID": 85,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 44,
+        "Target_ID": 89,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1358,
+        "combined_score": 0.2543,
+        "Logic": "공통 스킬 ['ipsec'] (Jaccard=0.33) | 시나리오 유사도=0.14 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 29,
+        "Target_ID": 90,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0639,
+        "combined_score": 0.1756,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.25) | 시나리오 유사도=0.06 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 47,
+        "Target_ID": 90,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0591,
+        "combined_score": 0.1736,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.25) | 시나리오 유사도=0.06 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 91,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 39,
+        "Target_ID": 92,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.1314,
+        "combined_score": 0.6526,
+        "Logic": "공통 스킬 ['native vlan', 'vlan'] (Jaccard=1.00) | 시나리오 유사도=0.13 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 12,
+        "Target_ID": 92,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['vlan'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Switching)"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 92,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1274,
+        "combined_score": 0.251,
+        "Logic": "공통 스킬 ['vlan'] (Jaccard=0.33) | 시나리오 유사도=0.13 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 17,
+        "Target_ID": 94,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0702,
+        "combined_score": 0.3281,
+        "Logic": "공통 스킬 ['firewall'] (Jaccard=0.33) | 시나리오 유사도=0.07 | 난이도 university_level → middle_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 97,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['tcp'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 11,
+        "Target_ID": 97,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['tcp'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 17,
+        "Target_ID": 97,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['firewall'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 91,
+        "Target_ID": 101,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 101,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.1227,
+        "combined_score": 0.1991,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.25) | 시나리오 유사도=0.12 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 51,
+        "Target_ID": 101,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0293,
+        "combined_score": 0.1617,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.25) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 91,
+        "Target_ID": 103,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 103,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0124,
+        "combined_score": 0.255,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.25) | 시나리오 유사도=0.01 | 난이도 junior_level → senior_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 103,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0098,
+        "combined_score": 0.2539,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.25) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 17,
+        "Target_ID": 105,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 21,
+        "Target_ID": 105,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 105,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 53,
+        "Target_ID": 106,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.0366,
+        "combined_score": 0.2346,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.20) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud Networking)"
+      },
+      {
+        "Preceding_ID": 60,
+        "Target_ID": 106,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.0221,
+        "combined_score": 0.2288,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.20) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud Networking)"
+      },
+      {
+        "Preceding_ID": 90,
+        "Target_ID": 106,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.22,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.20) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud Networking)"
+      },
+      {
+        "Preceding_ID": 70,
+        "Target_ID": 111,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.0473,
+        "combined_score": 0.2389,
+        "Logic": "공통 스킬 ['spine-leaf'] (Jaccard=0.20) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level | 동일 카테고리(Data Center)"
+      },
+      {
+        "Preceding_ID": 91,
+        "Target_ID": 113,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 113,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0373,
+        "combined_score": 0.2649,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.25) | 시나리오 유사도=0.04 | 난이도 junior_level → senior_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 113,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0292,
+        "combined_score": 0.2617,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.25) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 64,
+        "Target_ID": 116,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1115,
+        "combined_score": 0.4446,
+        "Logic": "공통 스킬 ['ipsec', 'sd-wan'] (Jaccard=0.50) | 시나리오 유사도=0.11 | 난이도 middle_level → senior_level | 동일 카테고리(Modern Networking)"
+      },
+      {
+        "Preceding_ID": 89,
+        "Target_ID": 116,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0144,
+        "combined_score": 0.1558,
+        "Logic": "공통 스킬 ['ipsec'] (Jaccard=0.25) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 44,
+        "Target_ID": 116,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['ipsec'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 55,
+        "Target_ID": 117,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0509,
+        "combined_score": 0.1704,
+        "Logic": "공통 스킬 ['multicast'] (Jaccard=0.25) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 85,
+        "Target_ID": 118,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.189,
+        "combined_score": 0.1756,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.19 | 난이도 middle_level → senior_level | 동일 카테고리(Automation)"
+      },
+      {
+        "Preceding_ID": 29,
+        "Target_ID": 118,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['terraform'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 87,
+        "Target_ID": 123,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.2162,
+        "combined_score": 0.3065,
+        "Logic": "공통 스킬 ['api'] (Jaccard=0.20) | 시나리오 유사도=0.22 | 난이도 middle_level → senior_level | 동일 카테고리(Automation)"
+      },
+      {
+        "Preceding_ID": 36,
+        "Target_ID": 127,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['ospf'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 49,
+        "Target_ID": 127,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['ospf'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 23,
+        "Target_ID": 130,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0936,
+        "combined_score": 0.1874,
+        "Logic": "공통 스킬 ['tcp'] (Jaccard=0.25) | 시나리오 유사도=0.09 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 130,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['tcp'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 11,
+        "Target_ID": 130,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['tcp'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 64,
+        "Target_ID": 131,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.1016,
+        "combined_score": 0.1606,
+        "Logic": "공통 스킬 ['sd-wan'] (Jaccard=0.20) | 시나리오 유사도=0.10 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 132,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.1187,
+        "combined_score": 0.1975,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.25) | 시나리오 유사도=0.12 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 73,
+        "Target_ID": 132,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.2188,
+        "combined_score": 0.1875,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.22 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud Networking)"
+      },
+      {
+        "Preceding_ID": 17,
+        "Target_ID": 132,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.059,
+        "combined_score": 0.1736,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.25) | 시나리오 유사도=0.06 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 50,
+        "Target_ID": 134,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.0783,
+        "combined_score": 0.2513,
+        "Logic": "공통 스킬 ['dns'] (Jaccard=0.20) | 시나리오 유사도=0.08 | 난이도 junior_level → senior_level | 동일 카테고리(DNS)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 134,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.22,
+        "Logic": "공통 스킬 ['dns'] (Jaccard=0.20) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(DNS)"
+      },
+      {
+        "Preceding_ID": 69,
+        "Target_ID": 134,
+        "skill_overlap": 0.1667,
+        "scenario_similarity": 0.1377,
+        "combined_score": 0.1551,
+        "Logic": "공통 스킬 ['anycast'] (Jaccard=0.17) | 시나리오 유사도=0.14 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 97,
+        "Target_ID": 135,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.22,
+        "Logic": "공통 스킬 ['tcp'] (Jaccard=0.20) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Transport)"
+      },
+      {
+        "Preceding_ID": 66,
+        "Target_ID": 135,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.0951,
+        "combined_score": 0.1581,
+        "Logic": "공통 스킬 ['tcp'] (Jaccard=0.20) | 시나리오 유사도=0.10 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 23,
+        "Target_ID": 135,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0129,
+        "combined_score": 0.1552,
+        "Logic": "공통 스킬 ['tcp'] (Jaccard=0.25) | 시나리오 유사도=0.01 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 138,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.1477,
+        "combined_score": 0.2091,
+        "Logic": "공통 스킬 ['nat'] (Jaccard=0.25) | 시나리오 유사도=0.15 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 138,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0827,
+        "combined_score": 0.1831,
+        "Logic": "공통 스킬 ['nat'] (Jaccard=0.25) | 시나리오 유사도=0.08 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 89,
+        "Target_ID": 138,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0594,
+        "combined_score": 0.1738,
+        "Logic": "공통 스킬 ['ipsec'] (Jaccard=0.25) | 시나리오 유사도=0.06 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 73,
+        "Target_ID": 141,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.2049,
+        "combined_score": 0.302,
+        "Logic": "공통 스킬 ['vpc peering'] (Jaccard=0.20) | 시나리오 유사도=0.20 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud Networking)"
+      },
+      {
+        "Preceding_ID": 62,
+        "Target_ID": 142,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0481,
+        "combined_score": 0.1692,
+        "Logic": "공통 스킬 ['snmp'] (Jaccard=0.25) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 99,
+        "Target_ID": 144,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.05,
+        "combined_score": 0.27,
+        "Logic": "공통 스킬 ['dual stack'] (Jaccard=0.25) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level | 동일 카테고리(IPv6)"
+      },
+      {
+        "Preceding_ID": 91,
+        "Target_ID": 145,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 145,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0652,
+        "combined_score": 0.2761,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.25) | 시나리오 유사도=0.07 | 난이도 middle_level → senior_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 145,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0096,
+        "combined_score": 0.2539,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.25) | 시나리오 유사도=0.01 | 난이도 junior_level → senior_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 68,
+        "Target_ID": 146,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0909,
+        "combined_score": 0.1864,
+        "Logic": "공통 스킬 ['vpn'] (Jaccard=0.25) | 시나리오 유사도=0.09 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 146,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['vpn'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 27,
+        "Target_ID": 147,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.1219,
+        "combined_score": 0.2988,
+        "Logic": "공통 스킬 ['ansible'] (Jaccard=0.25) | 시나리오 유사도=0.12 | 난이도 junior_level → senior_level | 동일 카테고리(Automation)"
+      },
+      {
+        "Preceding_ID": 85,
+        "Target_ID": 147,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.1573,
+        "combined_score": 0.2829,
+        "Logic": "공통 스킬 ['ansible'] (Jaccard=0.20) | 시나리오 유사도=0.16 | 난이도 middle_level → senior_level | 동일 카테고리(Automation)"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 148,
+        "skill_overlap": 0.6667,
+        "scenario_similarity": 0.0426,
+        "combined_score": 0.517,
+        "Logic": "공통 스킬 ['bgp', 'troubleshooting'] (Jaccard=0.67) | 시나리오 유사도=0.04 | 난이도 junior_level → senior_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 91,
+        "Target_ID": 148,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 148,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0334,
+        "combined_score": 0.2633,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.25) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 87,
+        "Target_ID": 149,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.098,
+        "combined_score": 0.4392,
+        "Logic": "공통 스킬 ['restconf', 'yang'] (Jaccard=0.50) | 시나리오 유사도=0.10 | 난이도 middle_level → senior_level | 동일 카테고리(Automation)"
+      },
+      {
+        "Preceding_ID": 91,
+        "Target_ID": 152,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 152,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0601,
+        "combined_score": 0.174,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.25) | 시나리오 유사도=0.06 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 152,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0471,
+        "combined_score": 0.1688,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.25) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 51,
+        "Target_ID": 154,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.007,
+        "combined_score": 0.1528,
+        "Logic": "공통 스킬 ['traffic engineering'] (Jaccard=0.25) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 64,
+        "Target_ID": 155,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.1123,
+        "combined_score": 0.2649,
+        "Logic": "공통 스킬 ['sd-wan'] (Jaccard=0.20) | 시나리오 유사도=0.11 | 난이도 middle_level → senior_level | 동일 카테고리(Modern Networking)"
+      },
+      {
+        "Preceding_ID": 26,
+        "Target_ID": 157,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.1709,
+        "combined_score": 0.3184,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.25) | 시나리오 유사도=0.17 | 난이도 junior_level → senior_level | 동일 카테고리(Automation)"
+      },
+      {
+        "Preceding_ID": 31,
+        "Target_ID": 157,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0934,
+        "combined_score": 0.2874,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.25) | 시나리오 유사도=0.09 | 난이도 junior_level → senior_level | 동일 카테고리(Automation)"
+      },
+      {
+        "Preceding_ID": 32,
+        "Target_ID": 157,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(Automation)"
+      },
+      {
+        "Preceding_ID": 27,
+        "Target_ID": 158,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.2933,
+        "combined_score": 0.3673,
+        "Logic": "공통 스킬 ['ansible'] (Jaccard=0.25) | 시나리오 유사도=0.29 | 난이도 junior_level → senior_level | 동일 카테고리(Automation)"
+      },
+      {
+        "Preceding_ID": 85,
+        "Target_ID": 158,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.22,
+        "Logic": "공통 스킬 ['ansible'] (Jaccard=0.20) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Automation)"
+      },
+      {
+        "Preceding_ID": 31,
+        "Target_ID": 158,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.2323,
+        "combined_score": 0.1929,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.23 | 난이도 junior_level → senior_level | 동일 카테고리(Automation)"
+      },
+      {
+        "Preceding_ID": 36,
+        "Target_ID": 159,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.2736,
+        "combined_score": 0.2594,
+        "Logic": "공통 스킬 ['ospf'] (Jaccard=0.25) | 시나리오 유사도=0.27 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 49,
+        "Target_ID": 159,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0308,
+        "combined_score": 0.1623,
+        "Logic": "공통 스킬 ['ospf'] (Jaccard=0.25) | 시나리오 유사도=0.03 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 91,
+        "Target_ID": 160,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 75,
+        "Target_ID": 160,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0737,
+        "combined_score": 0.1795,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.25) | 시나리오 유사도=0.07 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 160,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0729,
+        "combined_score": 0.1792,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.25) | 시나리오 유사도=0.07 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 46,
+        "Target_ID": 161,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.027,
+        "combined_score": 0.2608,
+        "Logic": "공통 스킬 ['syslog'] (Jaccard=0.25) | 시나리오 유사도=0.03 | 난이도 junior_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 55,
+        "Target_ID": 162,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.133,
+        "combined_score": 0.3032,
+        "Logic": "공통 스킬 ['multicast'] (Jaccard=0.25) | 시나리오 유사도=0.13 | 난이도 middle_level → senior_level | 동일 카테고리(Multicast)"
+      },
+      {
+        "Preceding_ID": 53,
+        "Target_ID": 165,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.2622,
+        "combined_score": 0.2049,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.26 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud Networking)"
+      },
+      {
+        "Preceding_ID": 61,
+        "Target_ID": 166,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.0356,
+        "combined_score": 0.2342,
+        "Logic": "공통 스킬 ['ssl/tls'] (Jaccard=0.20) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 57,
+        "Target_ID": 166,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0337,
+        "combined_score": 0.1635,
+        "Logic": "공통 스킬 ['troubleshooting'] (Jaccard=0.25) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 40,
+        "Target_ID": 166,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['troubleshooting'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 51,
+        "Target_ID": 167,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0035,
+        "combined_score": 0.2514,
+        "Logic": "공통 스킬 ['traffic engineering'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 66,
+        "Target_ID": 168,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.2102,
+        "combined_score": 0.3041,
+        "Logic": "공통 스킬 ['latency'] (Jaccard=0.20) | 시나리오 유사도=0.21 | 난이도 middle_level → senior_level | 동일 카테고리(Transport Layer)"
+      },
+      {
+        "Preceding_ID": 89,
+        "Target_ID": 169,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.1359,
+        "combined_score": 0.2044,
+        "Logic": "공통 스킬 ['ipsec'] (Jaccard=0.25) | 시나리오 유사도=0.14 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 44,
+        "Target_ID": 169,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.1083,
+        "combined_score": 0.1933,
+        "Logic": "공통 스킬 ['ipsec'] (Jaccard=0.25) | 시나리오 유사도=0.11 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 91,
+        "Target_ID": 171,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 75,
+        "Target_ID": 171,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0312,
+        "combined_score": 0.2625,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.25) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 171,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 91,
+        "Target_ID": 172,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 69,
+        "Target_ID": 172,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.1392,
+        "combined_score": 0.1757,
+        "Logic": "공통 스킬 ['anycast'] (Jaccard=0.20) | 시나리오 유사도=0.14 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 172,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0116,
+        "combined_score": 0.1546,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.25) | 시나리오 유사도=0.01 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 73,
+        "Target_ID": 174,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.0797,
+        "combined_score": 0.2519,
+        "Logic": "공통 스킬 ['transit gateway'] (Jaccard=0.20) | 시나리오 유사도=0.08 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud Networking)"
+      },
+      {
+        "Preceding_ID": 74,
+        "Target_ID": 176,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1417,
+        "combined_score": 0.1567,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.14 | 난이도 middle_level → senior_level | 동일 카테고리(Change Management)"
+      },
+      {
+        "Preceding_ID": 78,
+        "Target_ID": 176,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0054,
+        "combined_score": 0.1522,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.25) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 13,
+        "Target_ID": 177,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['arp'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 44,
+        "Target_ID": 179,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.1596,
+        "combined_score": 0.2139,
+        "Logic": "공통 스킬 ['ipsec'] (Jaccard=0.25) | 시나리오 유사도=0.16 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 89,
+        "Target_ID": 179,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.1004,
+        "combined_score": 0.1902,
+        "Logic": "공통 스킬 ['ipsec'] (Jaccard=0.25) | 시나리오 유사도=0.10 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 78,
+        "Target_ID": 180,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.1171,
+        "combined_score": 0.1968,
+        "Logic": "공통 스킬 ['cloud cost'] (Jaccard=0.25) | 시나리오 유사도=0.12 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 29,
+        "Target_ID": 187,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.1007,
+        "combined_score": 0.1903,
+        "Logic": "공통 스킬 ['terraform'] (Jaccard=0.25) | 시나리오 유사도=0.10 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 21,
+        "Target_ID": 194,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0557,
+        "combined_score": 0.1723,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.25) | 시나리오 유사도=0.06 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 17,
+        "Target_ID": 194,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 194,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 35,
+        "Target_ID": 197,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.4134,
+        "combined_score": 0.4154,
+        "Logic": "공통 스킬 ['rest api'] (Jaccard=0.25) | 시나리오 유사도=0.41 | 난이도 junior_level → senior_level | 동일 카테고리(API)"
+      },
+      {
+        "Preceding_ID": 31,
+        "Target_ID": 197,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0636,
+        "combined_score": 0.1754,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.25) | 시나리오 유사도=0.06 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 32,
+        "Target_ID": 197,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0586,
+        "combined_score": 0.1734,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.25) | 시나리오 유사도=0.06 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 33,
+        "Target_ID": 198,
+        "skill_overlap": 0.6667,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['ipaddress', 'python'] (Jaccard=0.67) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 26,
+        "Target_ID": 198,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.2696,
+        "combined_score": 0.3579,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.25) | 시나리오 유사도=0.27 | 난이도 junior_level → senior_level | 동일 카테고리(Automation)"
+      },
+      {
+        "Preceding_ID": 31,
+        "Target_ID": 198,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(Automation)"
+      },
+      {
+        "Preceding_ID": 75,
+        "Target_ID": 199,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.2768,
+        "combined_score": 0.3607,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.25) | 시나리오 유사도=0.28 | 난이도 middle_level → senior_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 91,
+        "Target_ID": 199,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0461,
+        "combined_score": 0.3184,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.33) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 51,
+        "Target_ID": 199,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0195,
+        "combined_score": 0.2578,
+        "Logic": "공통 스킬 ['bgp'] (Jaccard=0.25) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level | 동일 카테고리(Routing)"
+      },
+      {
+        "Preceding_ID": 18,
+        "Target_ID": 200,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['icmp'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      }
+    ]
+  },
+  "ordered_path": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    41,
+    44,
+    45,
+    46,
+    47,
+    42,
+    48,
+    50,
+    40,
+    43,
+    49,
+    39,
+    54,
+    55,
+    61,
+    62,
+    67,
+    70,
+    72,
+    73,
+    74,
+    76,
+    77,
+    78,
+    81,
+    82,
+    84,
+    86,
+    87,
+    88,
+    93,
+    95,
+    96,
+    98,
+    99,
+    100,
+    51,
+    58,
+    64,
+    65,
+    68,
+    71,
+    79,
+    89,
+    91,
+    94,
+    60,
+    75,
+    80,
+    90,
+    52,
+    53,
+    56,
+    57,
+    59,
+    63,
+    66,
+    69,
+    83,
+    85,
+    92,
+    97,
+    102,
+    104,
+    107,
+    108,
+    109,
+    110,
+    112,
+    114,
+    115,
+    119,
+    120,
+    121,
+    122,
+    124,
+    125,
+    126,
+    128,
+    129,
+    133,
+    136,
+    137,
+    139,
+    140,
+    143,
+    150,
+    151,
+    153,
+    156,
+    163,
+    164,
+    170,
+    173,
+    175,
+    178,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    195,
+    196,
+    111,
+    117,
+    123,
+    131,
+    141,
+    142,
+    144,
+    149,
+    154,
+    155,
+    161,
+    162,
+    165,
+    167,
+    168,
+    174,
+    177,
+    180,
+    187,
+    200,
+    118,
+    127,
+    146,
+    147,
+    159,
+    169,
+    176,
+    179,
+    101,
+    103,
+    105,
+    106,
+    113,
+    116,
+    130,
+    132,
+    134,
+    135,
+    138,
+    145,
+    148,
+    152,
+    157,
+    158,
+    160,
+    166,
+    171,
+    172,
+    194,
+    197,
+    198,
+    199
+  ],
+  "isolated_problems": [
+    3,
+    6,
+    9,
+    19,
+    20,
+    22,
+    24,
+    28,
+    30,
+    34,
+    37,
+    38,
+    45,
+    54,
+    67,
+    72,
+    76,
+    77,
+    81,
+    82,
+    84,
+    86,
+    88,
+    93,
+    95,
+    96,
+    98,
+    100,
+    102,
+    104,
+    107,
+    108,
+    109,
+    110,
+    112,
+    114,
+    115,
+    119,
+    120,
+    121,
+    122,
+    124,
+    125,
+    126,
+    128,
+    129,
+    133,
+    136,
+    137,
+    139,
+    140,
+    143,
+    150,
+    151,
+    153,
+    156,
+    163,
+    164,
+    170,
+    173,
+    175,
+    178,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    195,
+    196
+  ]
+}

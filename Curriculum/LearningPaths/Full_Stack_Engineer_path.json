@@ -1,0 +1,6668 @@
+{
+  "metadata": {
+    "job_role": "Full_Stack_Engineer",
+    "source_file": "Full_Stack_Engineer.json",
+    "total_problems": 200,
+    "difficulty_distribution": {
+      "university_level": 25,
+      "junior_level": 25,
+      "middle_level": 50,
+      "senior_level": 100
+    },
+    "cluster_count": 145,
+    "edge_count": 311,
+    "isolated_problem_count": 25,
+    "parameters": {
+      "skill_weight": 0.6,
+      "scenario_weight": 0.4,
+      "min_combined_score": 0.15,
+      "max_prereqs_per_target": 3,
+      "same_category_bonus": 0.1
+    }
+  },
+  "clusters": [
+    {
+      "cluster_id": "Backend__Cache",
+      "category": "Backend",
+      "subcategory": "Cache",
+      "size": 5,
+      "question_ids": [
+        73,
+        120,
+        134,
+        169,
+        184
+      ],
+      "common_skills": [
+        "Redis",
+        "Memory Management",
+        "Architecture",
+        "Distributed Systems",
+        "Cache"
+      ]
+    },
+    {
+      "cluster_id": "Database__Index",
+      "category": "Database",
+      "subcategory": "Index",
+      "size": 4,
+      "question_ids": [
+        15,
+        82,
+        111,
+        186
+      ],
+      "common_skills": [
+        "SQL",
+        "Query Optimization",
+        "Index",
+        "Performance Tuning",
+        "Database Index"
+      ]
+    },
+    {
+      "cluster_id": "Frontend__JavaScript",
+      "category": "Frontend",
+      "subcategory": "JavaScript",
+      "size": 4,
+      "question_ids": [
+        3,
+        104,
+        47,
+        61
+      ],
+      "common_skills": [
+        "JavaScript",
+        "DOM"
+      ]
+    },
+    {
+      "cluster_id": "Frontend__React",
+      "category": "Frontend",
+      "subcategory": "React",
+      "size": 4,
+      "question_ids": [
+        6,
+        107,
+        121,
+        160
+      ],
+      "common_skills": [
+        "React",
+        "Performance",
+        "Hooks",
+        "State Management"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Concurrency",
+      "category": "Backend",
+      "subcategory": "Concurrency",
+      "size": 3,
+      "question_ids": [
+        36,
+        139,
+        175
+      ],
+      "common_skills": [
+        "Java",
+        "Multithreading",
+        "Spring Boot"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Database",
+      "category": "Backend",
+      "subcategory": "Database",
+      "size": 3,
+      "question_ids": [
+        50,
+        71,
+        117
+      ],
+      "common_skills": [
+        "Database",
+        "Concurrency",
+        "Connection Pool"
+      ]
+    },
+    {
+      "cluster_id": "Backend__JVM",
+      "category": "Backend",
+      "subcategory": "JVM",
+      "size": 3,
+      "question_ids": [
+        12,
+        113,
+        154
+      ],
+      "common_skills": [
+        "Java",
+        "Troubleshooting",
+        "Memory Management"
+      ]
+    },
+    {
+      "cluster_id": "CS Foundation__Data Structure",
+      "category": "CS Foundation",
+      "subcategory": "Data Structure",
+      "size": 3,
+      "question_ids": [
+        4,
+        59,
+        101
+      ],
+      "common_skills": [
+        "Data Structure",
+        "Algorithm"
+      ]
+    },
+    {
+      "cluster_id": "Database__Sharding",
+      "category": "Database",
+      "subcategory": "Sharding",
+      "size": 3,
+      "question_ids": [
+        92,
+        133,
+        178
+      ],
+      "common_skills": [
+        "Database",
+        "Architecture",
+        "Data Modeling",
+        "Scalability"
+      ]
+    },
+    {
+      "cluster_id": "API__REST",
+      "category": "API",
+      "subcategory": "REST",
+      "size": 2,
+      "question_ids": [
+        105,
+        37
+      ],
+      "common_skills": [
+        "HTTP",
+        "REST",
+        "API Design"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__API Gateway",
+      "category": "Architecture",
+      "subcategory": "API Gateway",
+      "size": 2,
+      "question_ids": [
+        126,
+        161
+      ],
+      "common_skills": [
+        "MSA",
+        "Network",
+        "Architecture",
+        "Redis",
+        "API Gateway"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__CAP Theorem",
+      "category": "Architecture",
+      "subcategory": "CAP Theorem",
+      "size": 2,
+      "question_ids": [
+        40,
+        179
+      ],
+      "common_skills": [
+        "Distributed Systems",
+        "Database"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Microservices",
+      "category": "Architecture",
+      "subcategory": "Microservices",
+      "size": 2,
+      "question_ids": [
+        21,
+        86
+      ],
+      "common_skills": [
+        "Microservices",
+        "Event-Driven",
+        "Kafka",
+        "MSA",
+        "Database"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Resilience",
+      "category": "Architecture",
+      "subcategory": "Resilience",
+      "size": 2,
+      "question_ids": [
+        156,
+        150
+      ],
+      "common_skills": [
+        "MSA",
+        "System Design",
+        "Circuit Breaker"
+      ]
+    },
+    {
+      "cluster_id": "Backend__API",
+      "category": "Backend",
+      "subcategory": "API",
+      "size": 2,
+      "question_ids": [
+        8,
+        23
+      ],
+      "common_skills": [
+        "REST API",
+        "GraphQL"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Auth",
+      "category": "Backend",
+      "subcategory": "Auth",
+      "size": 2,
+      "question_ids": [
+        14,
+        116
+      ],
+      "common_skills": [
+        "JWT",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Connection Pool",
+      "category": "Backend",
+      "subcategory": "Connection Pool",
+      "size": 2,
+      "question_ids": [
+        148,
+        188
+      ],
+      "common_skills": [
+        "Java",
+        "HikariCP",
+        "Database"
+      ]
+    },
+    {
+      "cluster_id": "Backend__ORM",
+      "category": "Backend",
+      "subcategory": "ORM",
+      "size": 2,
+      "question_ids": [
+        110,
+        155
+      ],
+      "common_skills": [
+        "Database",
+        "ORM",
+        "JPA"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Session",
+      "category": "Backend",
+      "subcategory": "Session",
+      "size": 2,
+      "question_ids": [
+        67,
+        20
+      ],
+      "common_skills": [
+        "Web",
+        "Redis",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Transaction",
+      "category": "Backend",
+      "subcategory": "Transaction",
+      "size": 2,
+      "question_ids": [
+        97,
+        194
+      ],
+      "common_skills": [
+        "Spring",
+        "Database",
+        "Java",
+        "Spring Boot"
+      ]
+    },
+    {
+      "cluster_id": "CS Foundation__OS",
+      "category": "CS Foundation",
+      "subcategory": "OS",
+      "size": 2,
+      "question_ids": [
+        44,
+        57
+      ],
+      "common_skills": [
+        "Process",
+        "Thread",
+        "OS"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__AWS",
+      "category": "Cloud",
+      "subcategory": "AWS",
+      "size": 2,
+      "question_ids": [
+        85,
+        119
+      ],
+      "common_skills": [
+        "AWS",
+        "Network"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__Storage",
+      "category": "Cloud",
+      "subcategory": "Storage",
+      "size": 2,
+      "question_ids": [
+        112,
+        130
+      ],
+      "common_skills": [
+        "AWS",
+        "System Design",
+        "Cost Optimization"
+      ]
+    },
+    {
+      "cluster_id": "Database__NoSQL",
+      "category": "Database",
+      "subcategory": "NoSQL",
+      "size": 2,
+      "question_ids": [
+        22,
+        127
+      ],
+      "common_skills": [
+        "Database Selection",
+        "DynamoDB",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Database__Normalization",
+      "category": "Database",
+      "subcategory": "Normalization",
+      "size": 2,
+      "question_ids": [
+        52,
+        39
+      ],
+      "common_skills": [
+        "Database",
+        "Data Modeling"
+      ]
+    },
+    {
+      "cluster_id": "Database__Pagination",
+      "category": "Database",
+      "subcategory": "Pagination",
+      "size": 2,
+      "question_ids": [
+        18,
+        153
+      ],
+      "common_skills": [
+        "MySQL",
+        "SQL",
+        "Algorithm"
+      ]
+    },
+    {
+      "cluster_id": "Database__SQL",
+      "category": "Database",
+      "subcategory": "SQL",
+      "size": 2,
+      "question_ids": [
+        9,
+        66
+      ],
+      "common_skills": [
+        "MySQL",
+        "SQL"
+      ]
+    },
+    {
+      "cluster_id": "Database__Transaction",
+      "category": "Database",
+      "subcategory": "Transaction",
+      "size": 2,
+      "question_ids": [
+        43,
+        103
+      ],
+      "common_skills": [
+        "ACID",
+        "Database"
+      ]
+    },
+    {
+      "cluster_id": "DevOps__Deployment",
+      "category": "DevOps",
+      "subcategory": "Deployment",
+      "size": 2,
+      "question_ids": [
+        125,
+        185
+      ],
+      "common_skills": [
+        "CI/CD",
+        "DevOps",
+        "Database"
+      ]
+    },
+    {
+      "cluster_id": "DevOps__Docker",
+      "category": "DevOps",
+      "subcategory": "Docker",
+      "size": 2,
+      "question_ids": [
+        11,
+        114
+      ],
+      "common_skills": [
+        "Docker",
+        "Database"
+      ]
+    },
+    {
+      "cluster_id": "DevOps__Git",
+      "category": "DevOps",
+      "subcategory": "Git",
+      "size": 2,
+      "question_ids": [
+        63,
+        109
+      ],
+      "common_skills": [
+        "Git"
+      ]
+    },
+    {
+      "cluster_id": "DevOps__Observability",
+      "category": "DevOps",
+      "subcategory": "Observability",
+      "size": 2,
+      "question_ids": [
+        31,
+        135
+      ],
+      "common_skills": [
+        "SRE",
+        "Metrics",
+        "Observability"
+      ]
+    },
+    {
+      "cluster_id": "DevOps__SRE",
+      "category": "DevOps",
+      "subcategory": "SRE",
+      "size": 2,
+      "question_ids": [
+        91,
+        190
+      ],
+      "common_skills": [
+        "SRE",
+        "Observability",
+        "Deployment"
+      ]
+    },
+    {
+      "cluster_id": "Frontend__CSS",
+      "category": "Frontend",
+      "subcategory": "CSS",
+      "size": 2,
+      "question_ids": [
+        48,
+        70
+      ],
+      "common_skills": [
+        "CSS"
+      ]
+    },
+    {
+      "cluster_id": "Frontend__HTML",
+      "category": "Frontend",
+      "subcategory": "HTML",
+      "size": 2,
+      "question_ids": [
+        41,
+        64
+      ],
+      "common_skills": [
+        "HTML"
+      ]
+    },
+    {
+      "cluster_id": "Infra__Kubernetes",
+      "category": "Infra",
+      "subcategory": "Kubernetes",
+      "size": 2,
+      "question_ids": [
+        128,
+        146
+      ],
+      "common_skills": [
+        "Kubernetes",
+        "Troubleshooting",
+        "DNS"
+      ]
+    },
+    {
+      "cluster_id": "Infra__Load Balancer",
+      "category": "Infra",
+      "subcategory": "Load Balancer",
+      "size": 2,
+      "question_ids": [
+        75,
+        132
+      ],
+      "common_skills": [
+        "Network",
+        "AWS"
+      ]
+    },
+    {
+      "cluster_id": "Network__HTTP",
+      "category": "Network",
+      "subcategory": "HTTP",
+      "size": 2,
+      "question_ids": [
+        1,
+        123
+      ],
+      "common_skills": [
+        "HTTP",
+        "Nginx"
+      ]
+    },
+    {
+      "cluster_id": "Security__CI/CD",
+      "category": "Security",
+      "subcategory": "CI/CD",
+      "size": 2,
+      "question_ids": [
+        159,
+        99
+      ],
+      "common_skills": [
+        "Security",
+        "DevOps",
+        "DevSecOps",
+        "CI/CD"
+      ]
+    },
+    {
+      "cluster_id": "Security__OAuth",
+      "category": "Security",
+      "subcategory": "OAuth",
+      "size": 2,
+      "question_ids": [
+        83,
+        149
+      ],
+      "common_skills": [
+        "Security",
+        "OAuth2",
+        "JWT"
+      ]
+    },
+    {
+      "cluster_id": "System Design__Coupling",
+      "category": "System Design",
+      "subcategory": "Coupling",
+      "size": 2,
+      "question_ids": [
+        34,
+        173
+      ],
+      "common_skills": [
+        "Architecture",
+        "MSA"
+      ]
+    },
+    {
+      "cluster_id": "API__Communication",
+      "category": "API",
+      "subcategory": "Communication",
+      "size": 1,
+      "question_ids": [
+        80
+      ],
+      "common_skills": [
+        "gRPC",
+        "REST"
+      ]
+    },
+    {
+      "cluster_id": "API__GraphQL",
+      "category": "API",
+      "subcategory": "GraphQL",
+      "size": 1,
+      "question_ids": [
+        142
+      ],
+      "common_skills": [
+        "GraphQL",
+        "Performance"
+      ]
+    },
+    {
+      "cluster_id": "API__Spec",
+      "category": "API",
+      "subcategory": "Spec",
+      "size": 1,
+      "question_ids": [
+        176
+      ],
+      "common_skills": [
+        "API Design",
+        "Collaboration"
+      ]
+    },
+    {
+      "cluster_id": "API__Versioning",
+      "category": "API",
+      "subcategory": "Versioning",
+      "size": 1,
+      "question_ids": [
+        196
+      ],
+      "common_skills": [
+        "API Design"
+      ]
+    },
+    {
+      "cluster_id": "APM__Monitoring",
+      "category": "APM",
+      "subcategory": "Monitoring",
+      "size": 1,
+      "question_ids": [
+        78
+      ],
+      "common_skills": [
+        "JVM",
+        "Monitoring"
+      ]
+    },
+    {
+      "cluster_id": "Algorithm__Complexity",
+      "category": "Algorithm",
+      "subcategory": "Complexity",
+      "size": 1,
+      "question_ids": [
+        51
+      ],
+      "common_skills": [
+        "Algorithm"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__API",
+      "category": "Architecture",
+      "subcategory": "API",
+      "size": 1,
+      "question_ids": [
+        192
+      ],
+      "common_skills": [
+        "MSA",
+        "API Design"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__CAP",
+      "category": "Architecture",
+      "subcategory": "CAP",
+      "size": 1,
+      "question_ids": [
+        141
+      ],
+      "common_skills": [
+        "Distributed Systems"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Clock",
+      "category": "Architecture",
+      "subcategory": "Clock",
+      "size": 1,
+      "question_ids": [
+        198
+      ],
+      "common_skills": [
+        "Distributed Systems"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Consensus",
+      "category": "Architecture",
+      "subcategory": "Consensus",
+      "size": 1,
+      "question_ids": [
+        93
+      ],
+      "common_skills": [
+        "Distributed Systems"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Hexagonal",
+      "category": "Architecture",
+      "subcategory": "Hexagonal",
+      "size": 1,
+      "question_ids": [
+        137
+      ],
+      "common_skills": [
+        "Architecture",
+        "Design Patterns"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Message Queue",
+      "category": "Architecture",
+      "subcategory": "Message Queue",
+      "size": 1,
+      "question_ids": [
+        122
+      ],
+      "common_skills": [
+        "Message Queue",
+        "Kafka",
+        "RabbitMQ"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Migration",
+      "category": "Architecture",
+      "subcategory": "Migration",
+      "size": 1,
+      "question_ids": [
+        172
+      ],
+      "common_skills": [
+        "MSA",
+        "System Design"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Observability",
+      "category": "Architecture",
+      "subcategory": "Observability",
+      "size": 1,
+      "question_ids": [
+        189
+      ],
+      "common_skills": [
+        "Microservices",
+        "Observability"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Webhooks",
+      "category": "Architecture",
+      "subcategory": "Webhooks",
+      "size": 1,
+      "question_ids": [
+        94
+      ],
+      "common_skills": [
+        "API",
+        "System Design"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Zero Trust",
+      "category": "Architecture",
+      "subcategory": "Zero Trust",
+      "size": 1,
+      "question_ids": [
+        89
+      ],
+      "common_skills": [
+        "Security",
+        "Network"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Background Job",
+      "category": "Backend",
+      "subcategory": "Background Job",
+      "size": 1,
+      "question_ids": [
+        79
+      ],
+      "common_skills": [
+        "RabbitMQ",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Clean Architecture",
+      "category": "Backend",
+      "subcategory": "Clean Architecture",
+      "size": 1,
+      "question_ids": [
+        81
+      ],
+      "common_skills": [
+        "Architecture",
+        "Design Patterns"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Git",
+      "category": "Backend",
+      "subcategory": "Git",
+      "size": 1,
+      "question_ids": [
+        49
+      ],
+      "common_skills": [
+        "Git"
+      ]
+    },
+    {
+      "cluster_id": "Backend__HTTP",
+      "category": "Backend",
+      "subcategory": "HTTP",
+      "size": 1,
+      "question_ids": [
+        45
+      ],
+      "common_skills": [
+        "HTTP Status Codes"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Idempotency",
+      "category": "Backend",
+      "subcategory": "Idempotency",
+      "size": 1,
+      "question_ids": [
+        177
+      ],
+      "common_skills": [
+        "API Design",
+        "Payment"
+      ]
+    },
+    {
+      "cluster_id": "Backend__JPA",
+      "category": "Backend",
+      "subcategory": "JPA",
+      "size": 1,
+      "question_ids": [
+        106
+      ],
+      "common_skills": [
+        "Java",
+        "Spring Boot",
+        "JPA"
+      ]
+    },
+    {
+      "cluster_id": "Backend__JavaScript",
+      "category": "Backend",
+      "subcategory": "JavaScript",
+      "size": 1,
+      "question_ids": [
+        7
+      ],
+      "common_skills": [
+        "Node.js"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Logic",
+      "category": "Backend",
+      "subcategory": "Logic",
+      "size": 1,
+      "question_ids": [
+        16
+      ],
+      "common_skills": [
+        "Algorithm"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Memory Leak",
+      "category": "Backend",
+      "subcategory": "Memory Leak",
+      "size": 1,
+      "question_ids": [
+        145
+      ],
+      "common_skills": [
+        "Java",
+        "Troubleshooting"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Node.js",
+      "category": "Backend",
+      "subcategory": "Node.js",
+      "size": 1,
+      "question_ids": [
+        65
+      ],
+      "common_skills": [
+        "Node.js"
+      ]
+    },
+    {
+      "cluster_id": "Backend__OOP",
+      "category": "Backend",
+      "subcategory": "OOP",
+      "size": 1,
+      "question_ids": [
+        53
+      ],
+      "common_skills": [
+        "Java",
+        "OOP"
+      ]
+    },
+    {
+      "cluster_id": "Backend__OS",
+      "category": "Backend",
+      "subcategory": "OS",
+      "size": 1,
+      "question_ids": [
+        5
+      ],
+      "common_skills": [
+        "OS"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Python",
+      "category": "Backend",
+      "subcategory": "Python",
+      "size": 1,
+      "question_ids": [
+        56
+      ],
+      "common_skills": [
+        "Python"
+      ]
+    },
+    {
+      "cluster_id": "Backend__REST",
+      "category": "Backend",
+      "subcategory": "REST",
+      "size": 1,
+      "question_ids": [
+        69
+      ],
+      "common_skills": [
+        "API Design"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Real-time",
+      "category": "Backend",
+      "subcategory": "Real-time",
+      "size": 1,
+      "question_ids": [
+        180
+      ],
+      "common_skills": [
+        "WebSocket",
+        "Redis",
+        "System Design"
+      ]
+    },
+    {
+      "cluster_id": "Backend__SQL",
+      "category": "Backend",
+      "subcategory": "SQL",
+      "size": 1,
+      "question_ids": [
+        46
+      ],
+      "common_skills": [
+        "SQL"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Security",
+      "category": "Backend",
+      "subcategory": "Security",
+      "size": 1,
+      "question_ids": [
+        35
+      ],
+      "common_skills": [
+        "Cryptography",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Spring",
+      "category": "Backend",
+      "subcategory": "Spring",
+      "size": 1,
+      "question_ids": [
+        62
+      ],
+      "common_skills": [
+        "Spring",
+        "Java"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Versioning",
+      "category": "Backend",
+      "subcategory": "Versioning",
+      "size": 1,
+      "question_ids": [
+        38
+      ],
+      "common_skills": [
+        "API Design",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Backend__Web Server",
+      "category": "Backend",
+      "subcategory": "Web Server",
+      "size": 1,
+      "question_ids": [
+        10
+      ],
+      "common_skills": [
+        "Nginx"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__DB",
+      "category": "Cloud",
+      "subcategory": "DB",
+      "size": 1,
+      "question_ids": [
+        88
+      ],
+      "common_skills": [
+        "AWS",
+        "Database"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__DynamoDB",
+      "category": "Cloud",
+      "subcategory": "DynamoDB",
+      "size": 1,
+      "question_ids": [
+        187
+      ],
+      "common_skills": [
+        "AWS",
+        "FinOps"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__FinOps",
+      "category": "Cloud",
+      "subcategory": "FinOps",
+      "size": 1,
+      "question_ids": [
+        29
+      ],
+      "common_skills": [
+        "AWS",
+        "Cost"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__IAM",
+      "category": "Cloud",
+      "subcategory": "IAM",
+      "size": 1,
+      "question_ids": [
+        28
+      ],
+      "common_skills": [
+        "AWS",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__Security",
+      "category": "Cloud",
+      "subcategory": "Security",
+      "size": 1,
+      "question_ids": [
+        138
+      ],
+      "common_skills": [
+        "AWS",
+        "IAM"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__Serverless",
+      "category": "Cloud",
+      "subcategory": "Serverless",
+      "size": 1,
+      "question_ids": [
+        182
+      ],
+      "common_skills": [
+        "AWS",
+        "Serverless"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__Vendor Lock-in",
+      "category": "Cloud",
+      "subcategory": "Vendor Lock-in",
+      "size": 1,
+      "question_ids": [
+        164
+      ],
+      "common_skills": [
+        "Cloud",
+        "Kubernetes",
+        "Docker"
+      ]
+    },
+    {
+      "cluster_id": "Data__CQRS",
+      "category": "Data",
+      "subcategory": "CQRS",
+      "size": 1,
+      "question_ids": [
+        163
+      ],
+      "common_skills": [
+        "Architecture",
+        "CQRS"
+      ]
+    },
+    {
+      "cluster_id": "Data__Event Driven",
+      "category": "Data",
+      "subcategory": "Event Driven",
+      "size": 1,
+      "question_ids": [
+        131
+      ],
+      "common_skills": [
+        "Architecture",
+        "Event Sourcing"
+      ]
+    },
+    {
+      "cluster_id": "Data__Kafka",
+      "category": "Data",
+      "subcategory": "Kafka",
+      "size": 1,
+      "question_ids": [
+        200
+      ],
+      "common_skills": [
+        "Kafka",
+        "Message Queue"
+      ]
+    },
+    {
+      "cluster_id": "Data__Streaming",
+      "category": "Data",
+      "subcategory": "Streaming",
+      "size": 1,
+      "question_ids": [
+        100
+      ],
+      "common_skills": [
+        "Kafka",
+        "Data"
+      ]
+    },
+    {
+      "cluster_id": "Data__View",
+      "category": "Data",
+      "subcategory": "View",
+      "size": 1,
+      "question_ids": [
+        197
+      ],
+      "common_skills": [
+        "SQL",
+        "Data Modeling"
+      ]
+    },
+    {
+      "cluster_id": "Database__Caching",
+      "category": "Database",
+      "subcategory": "Caching",
+      "size": 1,
+      "question_ids": [
+        24
+      ],
+      "common_skills": [
+        "Redis",
+        "System Design"
+      ]
+    },
+    {
+      "cluster_id": "Database__Concurrency",
+      "category": "Database",
+      "subcategory": "Concurrency",
+      "size": 1,
+      "question_ids": [
+        118
+      ],
+      "common_skills": [
+        "Database",
+        "Lock"
+      ]
+    },
+    {
+      "cluster_id": "Database__Data Warehouse",
+      "category": "Database",
+      "subcategory": "Data Warehouse",
+      "size": 1,
+      "question_ids": [
+        140
+      ],
+      "common_skills": [
+        "Data Modeling"
+      ]
+    },
+    {
+      "cluster_id": "Database__Execution Plan",
+      "category": "Database",
+      "subcategory": "Execution Plan",
+      "size": 1,
+      "question_ids": [
+        147
+      ],
+      "common_skills": [
+        "MySQL",
+        "Query Optimization"
+      ]
+    },
+    {
+      "cluster_id": "Database__Lock",
+      "category": "Database",
+      "subcategory": "Lock",
+      "size": 1,
+      "question_ids": [
+        30
+      ],
+      "common_skills": [
+        "Concurrency Control"
+      ]
+    },
+    {
+      "cluster_id": "Database__RDBMS",
+      "category": "Database",
+      "subcategory": "RDBMS",
+      "size": 1,
+      "question_ids": [
+        2
+      ],
+      "common_skills": [
+        "SQL"
+      ]
+    },
+    {
+      "cluster_id": "Database__RDBMS vs NoSQL",
+      "category": "Database",
+      "subcategory": "RDBMS vs NoSQL",
+      "size": 1,
+      "question_ids": [
+        74
+      ],
+      "common_skills": [
+        "Database"
+      ]
+    },
+    {
+      "cluster_id": "Database__Replication",
+      "category": "Database",
+      "subcategory": "Replication",
+      "size": 1,
+      "question_ids": [
+        181
+      ],
+      "common_skills": [
+        "Database",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Database__Split Brain",
+      "category": "Database",
+      "subcategory": "Split Brain",
+      "size": 1,
+      "question_ids": [
+        166
+      ],
+      "common_skills": [
+        "Distributed Systems",
+        "Redis Cluster"
+      ]
+    },
+    {
+      "cluster_id": "DevOps__CI/CD",
+      "category": "DevOps",
+      "subcategory": "CI/CD",
+      "size": 1,
+      "question_ids": [
+        68
+      ],
+      "common_skills": [
+        "CI/CD"
+      ]
+    },
+    {
+      "cluster_id": "DevOps__GitOps",
+      "category": "DevOps",
+      "subcategory": "GitOps",
+      "size": 1,
+      "question_ids": [
+        193
+      ],
+      "common_skills": [
+        "Kubernetes",
+        "CI/CD"
+      ]
+    },
+    {
+      "cluster_id": "DevOps__Kubernetes",
+      "category": "DevOps",
+      "subcategory": "Kubernetes",
+      "size": 1,
+      "question_ids": [
+        76
+      ],
+      "common_skills": [
+        "Kubernetes",
+        "Traffic"
+      ]
+    },
+    {
+      "cluster_id": "DevOps__Metrics",
+      "category": "DevOps",
+      "subcategory": "Metrics",
+      "size": 1,
+      "question_ids": [
+        170
+      ],
+      "common_skills": [
+        "Prometheus",
+        "SRE"
+      ]
+    },
+    {
+      "cluster_id": "DevOps__Monitoring",
+      "category": "DevOps",
+      "subcategory": "Monitoring",
+      "size": 1,
+      "question_ids": [
+        158
+      ],
+      "common_skills": [
+        "Observability",
+        "DevOps"
+      ]
+    },
+    {
+      "cluster_id": "Frontend__Rendering",
+      "category": "Frontend",
+      "subcategory": "Rendering",
+      "size": 1,
+      "question_ids": [
+        17
+      ],
+      "common_skills": [
+        "React",
+        "Performance"
+      ]
+    },
+    {
+      "cluster_id": "Frontend__Web",
+      "category": "Frontend",
+      "subcategory": "Web",
+      "size": 1,
+      "question_ids": [
+        55
+      ],
+      "common_skills": [
+        "HTML",
+        "JavaScript"
+      ]
+    },
+    {
+      "cluster_id": "Frontend__Webpack",
+      "category": "Frontend",
+      "subcategory": "Webpack",
+      "size": 1,
+      "question_ids": [
+        72
+      ],
+      "common_skills": [
+        "Frontend",
+        "Performance"
+      ]
+    },
+    {
+      "cluster_id": "Infra__CDN",
+      "category": "Infra",
+      "subcategory": "CDN",
+      "size": 1,
+      "question_ids": [
+        115
+      ],
+      "common_skills": [
+        "CDN",
+        "Network"
+      ]
+    },
+    {
+      "cluster_id": "Infra__Cloud",
+      "category": "Infra",
+      "subcategory": "Cloud",
+      "size": 1,
+      "question_ids": [
+        19
+      ],
+      "common_skills": [
+        "AWS",
+        "Auto Scaling"
+      ]
+    },
+    {
+      "cluster_id": "Infra__Cost",
+      "category": "Infra",
+      "subcategory": "Cost",
+      "size": 1,
+      "question_ids": [
+        168
+      ],
+      "common_skills": [
+        "AWS",
+        "Auto Scaling",
+        "FinOps"
+      ]
+    },
+    {
+      "cluster_id": "Infra__Docker",
+      "category": "Infra",
+      "subcategory": "Docker",
+      "size": 1,
+      "question_ids": [
+        84
+      ],
+      "common_skills": [
+        "Docker",
+        "OS"
+      ]
+    },
+    {
+      "cluster_id": "Infra__Linux",
+      "category": "Infra",
+      "subcategory": "Linux",
+      "size": 1,
+      "question_ids": [
+        108
+      ],
+      "common_skills": [
+        "Linux",
+        "OS"
+      ]
+    },
+    {
+      "cluster_id": "Infra__Traffic",
+      "category": "Infra",
+      "subcategory": "Traffic",
+      "size": 1,
+      "question_ids": [
+        87
+      ],
+      "common_skills": [
+        "CDN",
+        "AWS"
+      ]
+    },
+    {
+      "cluster_id": "Microservices__Data Consistency",
+      "category": "Microservices",
+      "subcategory": "Data Consistency",
+      "size": 1,
+      "question_ids": [
+        162
+      ],
+      "common_skills": [
+        "MSA",
+        "Event-Driven",
+        "Kafka"
+      ]
+    },
+    {
+      "cluster_id": "Microservices__Database",
+      "category": "Microservices",
+      "subcategory": "Database",
+      "size": 1,
+      "question_ids": [
+        191
+      ],
+      "common_skills": [
+        "MSA",
+        "System Design"
+      ]
+    },
+    {
+      "cluster_id": "Monitoring__APM",
+      "category": "Monitoring",
+      "subcategory": "APM",
+      "size": 1,
+      "question_ids": [
+        13
+      ],
+      "common_skills": [
+        "Prometheus",
+        "Grafana"
+      ]
+    },
+    {
+      "cluster_id": "Network__DNS",
+      "category": "Network",
+      "subcategory": "DNS",
+      "size": 1,
+      "question_ids": [
+        77
+      ],
+      "common_skills": [
+        "DNS",
+        "Cloud"
+      ]
+    },
+    {
+      "cluster_id": "Network__HA",
+      "category": "Network",
+      "subcategory": "HA",
+      "size": 1,
+      "question_ids": [
+        199
+      ],
+      "common_skills": [
+        "Infra",
+        "Network"
+      ]
+    },
+    {
+      "cluster_id": "Network__IP",
+      "category": "Network",
+      "subcategory": "IP",
+      "size": 1,
+      "question_ids": [
+        102
+      ],
+      "common_skills": [
+        "Network"
+      ]
+    },
+    {
+      "cluster_id": "Network__OSI Layer",
+      "category": "Network",
+      "subcategory": "OSI Layer",
+      "size": 1,
+      "question_ids": [
+        54
+      ],
+      "common_skills": [
+        "Network"
+      ]
+    },
+    {
+      "cluster_id": "Network__TCP",
+      "category": "Network",
+      "subcategory": "TCP",
+      "size": 1,
+      "question_ids": [
+        98
+      ],
+      "common_skills": [
+        "TCP",
+        "Linux",
+        "Traffic"
+      ]
+    },
+    {
+      "cluster_id": "Network__TCP/IP",
+      "category": "Network",
+      "subcategory": "TCP/IP",
+      "size": 1,
+      "question_ids": [
+        60
+      ],
+      "common_skills": [
+        "TCP"
+      ]
+    },
+    {
+      "cluster_id": "Network__TCP/UDP",
+      "category": "Network",
+      "subcategory": "TCP/UDP",
+      "size": 1,
+      "question_ids": [
+        42
+      ],
+      "common_skills": [
+        "Network"
+      ]
+    },
+    {
+      "cluster_id": "Ops__Outage",
+      "category": "Ops",
+      "subcategory": "Outage",
+      "size": 1,
+      "question_ids": [
+        27
+      ],
+      "common_skills": [
+        "Incident Management",
+        "Rollback"
+      ]
+    },
+    {
+      "cluster_id": "QA__Automation",
+      "category": "QA",
+      "subcategory": "Automation",
+      "size": 1,
+      "question_ids": [
+        32
+      ],
+      "common_skills": [
+        "Testing",
+        "CI/CD"
+      ]
+    },
+    {
+      "cluster_id": "QA__Chaos Engineering",
+      "category": "QA",
+      "subcategory": "Chaos Engineering",
+      "size": 1,
+      "question_ids": [
+        96
+      ],
+      "common_skills": [
+        "Testing",
+        "Resilience"
+      ]
+    },
+    {
+      "cluster_id": "QA__Contract Testing",
+      "category": "QA",
+      "subcategory": "Contract Testing",
+      "size": 1,
+      "question_ids": [
+        143
+      ],
+      "common_skills": [
+        "Testing",
+        "MSA"
+      ]
+    },
+    {
+      "cluster_id": "QA__Resilience",
+      "category": "QA",
+      "subcategory": "Resilience",
+      "size": 1,
+      "question_ids": [
+        171
+      ],
+      "common_skills": [
+        "Chaos Engineering",
+        "Kubernetes"
+      ]
+    },
+    {
+      "cluster_id": "QA__Unit Test",
+      "category": "QA",
+      "subcategory": "Unit Test",
+      "size": 1,
+      "question_ids": [
+        151
+      ],
+      "common_skills": [
+        "Testing",
+        "Jest"
+      ]
+    },
+    {
+      "cluster_id": "Security__Encryption",
+      "category": "Security",
+      "subcategory": "Encryption",
+      "size": 1,
+      "question_ids": [
+        58
+      ],
+      "common_skills": [
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Security__OAuth2",
+      "category": "Security",
+      "subcategory": "OAuth2",
+      "size": 1,
+      "question_ids": [
+        183
+      ],
+      "common_skills": [
+        "Security",
+        "OAuth2"
+      ]
+    },
+    {
+      "cluster_id": "Security__SQL Injection",
+      "category": "Security",
+      "subcategory": "SQL Injection",
+      "size": 1,
+      "question_ids": [
+        129
+      ],
+      "common_skills": [
+        "Security",
+        "MyBatis",
+        "Java"
+      ]
+    },
+    {
+      "cluster_id": "Security__SSRF",
+      "category": "Security",
+      "subcategory": "SSRF",
+      "size": 1,
+      "question_ids": [
+        167
+      ],
+      "common_skills": [
+        "Security",
+        "AWS"
+      ]
+    },
+    {
+      "cluster_id": "Security__Vulnerability",
+      "category": "Security",
+      "subcategory": "Vulnerability",
+      "size": 1,
+      "question_ids": [
+        25
+      ],
+      "common_skills": [
+        "Security",
+        "OWASP"
+      ]
+    },
+    {
+      "cluster_id": "Security__XSS",
+      "category": "Security",
+      "subcategory": "XSS",
+      "size": 1,
+      "question_ids": [
+        152
+      ],
+      "common_skills": [
+        "Security",
+        "Frontend"
+      ]
+    },
+    {
+      "cluster_id": "Security__Zero Trust",
+      "category": "Security",
+      "subcategory": "Zero Trust",
+      "size": 1,
+      "question_ids": [
+        174
+      ],
+      "common_skills": [
+        "Security",
+        "Network",
+        "Kubernetes"
+      ]
+    },
+    {
+      "cluster_id": "Software Engineering__Clean Code",
+      "category": "Software Engineering",
+      "subcategory": "Clean Code",
+      "size": 1,
+      "question_ids": [
+        33
+      ],
+      "common_skills": [
+        "Refactoring",
+        "Design Patterns"
+      ]
+    },
+    {
+      "cluster_id": "Software Engineering__DDD",
+      "category": "Software Engineering",
+      "subcategory": "DDD",
+      "size": 1,
+      "question_ids": [
+        136
+      ],
+      "common_skills": [
+        "DDD",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Software Engineering__Process",
+      "category": "Software Engineering",
+      "subcategory": "Process",
+      "size": 1,
+      "question_ids": [
+        195
+      ],
+      "common_skills": [
+        "Architecture",
+        "Communication"
+      ]
+    },
+    {
+      "cluster_id": "System Design__Async",
+      "category": "System Design",
+      "subcategory": "Async",
+      "size": 1,
+      "question_ids": [
+        157
+      ],
+      "common_skills": [
+        "Message Queue",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "System Design__Monolith to MSA",
+      "category": "System Design",
+      "subcategory": "Monolith to MSA",
+      "size": 1,
+      "question_ids": [
+        95
+      ],
+      "common_skills": [
+        "MSA",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "System Design__Rate Limiter",
+      "category": "System Design",
+      "subcategory": "Rate Limiter",
+      "size": 1,
+      "question_ids": [
+        90
+      ],
+      "common_skills": [
+        "Redis",
+        "API"
+      ]
+    },
+    {
+      "cluster_id": "System Design__Traffic Spikes",
+      "category": "System Design",
+      "subcategory": "Traffic Spikes",
+      "size": 1,
+      "question_ids": [
+        144
+      ],
+      "common_skills": [
+        "Architecture",
+        "Queue"
+      ]
+    },
+    {
+      "cluster_id": "System Resiliency__Bulkhead",
+      "category": "System Resiliency",
+      "subcategory": "Bulkhead",
+      "size": 1,
+      "question_ids": [
+        165
+      ],
+      "common_skills": [
+        "Architecture",
+        "Resilience"
+      ]
+    },
+    {
+      "cluster_id": "System Resiliency__Circuit Breaker",
+      "category": "System Resiliency",
+      "subcategory": "Circuit Breaker",
+      "size": 1,
+      "question_ids": [
+        26
+      ],
+      "common_skills": [
+        "MSA",
+        "Resilience"
+      ]
+    },
+    {
+      "cluster_id": "Web__Security",
+      "category": "Web",
+      "subcategory": "Security",
+      "size": 1,
+      "question_ids": [
+        124
+      ],
+      "common_skills": [
+        "Security",
+        "Web"
+      ]
+    }
+  ],
+  "dependency_graph": {
+    "nodes": [
+      {
+        "question_id": 1,
+        "difficulty": "university_level",
+        "category": "Network",
+        "subcategory": "HTTP",
+        "skills_required": [
+          "HTTP"
+        ]
+      },
+      {
+        "question_id": 2,
+        "difficulty": "university_level",
+        "category": "Database",
+        "subcategory": "RDBMS",
+        "skills_required": [
+          "SQL"
+        ]
+      },
+      {
+        "question_id": 3,
+        "difficulty": "university_level",
+        "category": "Frontend",
+        "subcategory": "JavaScript",
+        "skills_required": [
+          "JavaScript"
+        ]
+      },
+      {
+        "question_id": 4,
+        "difficulty": "university_level",
+        "category": "CS Foundation",
+        "subcategory": "Data Structure",
+        "skills_required": [
+          "Data Structure"
+        ]
+      },
+      {
+        "question_id": 5,
+        "difficulty": "university_level",
+        "category": "Backend",
+        "subcategory": "OS",
+        "skills_required": [
+          "OS"
+        ]
+      },
+      {
+        "question_id": 6,
+        "difficulty": "junior_level",
+        "category": "Frontend",
+        "subcategory": "React",
+        "skills_required": [
+          "React",
+          "Hooks"
+        ]
+      },
+      {
+        "question_id": 7,
+        "difficulty": "junior_level",
+        "category": "Backend",
+        "subcategory": "JavaScript",
+        "skills_required": [
+          "Node.js"
+        ]
+      },
+      {
+        "question_id": 8,
+        "difficulty": "junior_level",
+        "category": "Backend",
+        "subcategory": "API",
+        "skills_required": [
+          "REST API"
+        ]
+      },
+      {
+        "question_id": 9,
+        "difficulty": "junior_level",
+        "category": "Database",
+        "subcategory": "SQL",
+        "skills_required": [
+          "MySQL"
+        ]
+      },
+      {
+        "question_id": 10,
+        "difficulty": "junior_level",
+        "category": "Backend",
+        "subcategory": "Web Server",
+        "skills_required": [
+          "Nginx"
+        ]
+      },
+      {
+        "question_id": 11,
+        "difficulty": "middle_level",
+        "category": "DevOps",
+        "subcategory": "Docker",
+        "skills_required": [
+          "Docker"
+        ]
+      },
+      {
+        "question_id": 12,
+        "difficulty": "middle_level",
+        "category": "Backend",
+        "subcategory": "JVM",
+        "skills_required": [
+          "Java",
+          "Memory Management"
+        ]
+      },
+      {
+        "question_id": 13,
+        "difficulty": "middle_level",
+        "category": "Monitoring",
+        "subcategory": "APM",
+        "skills_required": [
+          "Prometheus",
+          "Grafana"
+        ]
+      },
+      {
+        "question_id": 14,
+        "difficulty": "middle_level",
+        "category": "Backend",
+        "subcategory": "Auth",
+        "skills_required": [
+          "JWT",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 15,
+        "difficulty": "middle_level",
+        "category": "Database",
+        "subcategory": "Index",
+        "skills_required": [
+          "SQL",
+          "Query Optimization"
+        ]
+      },
+      {
+        "question_id": 16,
+        "difficulty": "middle_level",
+        "category": "Backend",
+        "subcategory": "Logic",
+        "skills_required": [
+          "Algorithm"
+        ]
+      },
+      {
+        "question_id": 17,
+        "difficulty": "middle_level",
+        "category": "Frontend",
+        "subcategory": "Rendering",
+        "skills_required": [
+          "React",
+          "Performance"
+        ]
+      },
+      {
+        "question_id": 18,
+        "difficulty": "middle_level",
+        "category": "Database",
+        "subcategory": "Pagination",
+        "skills_required": [
+          "MySQL"
+        ]
+      },
+      {
+        "question_id": 19,
+        "difficulty": "middle_level",
+        "category": "Infra",
+        "subcategory": "Cloud",
+        "skills_required": [
+          "AWS",
+          "Auto Scaling"
+        ]
+      },
+      {
+        "question_id": 20,
+        "difficulty": "middle_level",
+        "category": "Backend",
+        "subcategory": "Session",
+        "skills_required": [
+          "Redis",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 21,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Microservices",
+        "skills_required": [
+          "Microservices",
+          "Event-Driven",
+          "Kafka"
+        ]
+      },
+      {
+        "question_id": 22,
+        "difficulty": "senior_level",
+        "category": "Database",
+        "subcategory": "NoSQL",
+        "skills_required": [
+          "Database Selection",
+          "DynamoDB"
+        ]
+      },
+      {
+        "question_id": 23,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "API",
+        "skills_required": [
+          "GraphQL",
+          "REST API"
+        ]
+      },
+      {
+        "question_id": 24,
+        "difficulty": "senior_level",
+        "category": "Database",
+        "subcategory": "Caching",
+        "skills_required": [
+          "Redis",
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 25,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "Vulnerability",
+        "skills_required": [
+          "Security",
+          "OWASP"
+        ]
+      },
+      {
+        "question_id": 26,
+        "difficulty": "senior_level",
+        "category": "System Resiliency",
+        "subcategory": "Circuit Breaker",
+        "skills_required": [
+          "MSA",
+          "Resilience"
+        ]
+      },
+      {
+        "question_id": 27,
+        "difficulty": "senior_level",
+        "category": "Ops",
+        "subcategory": "Outage",
+        "skills_required": [
+          "Incident Management",
+          "Rollback"
+        ]
+      },
+      {
+        "question_id": 28,
+        "difficulty": "senior_level",
+        "category": "Cloud",
+        "subcategory": "IAM",
+        "skills_required": [
+          "AWS",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 29,
+        "difficulty": "senior_level",
+        "category": "Cloud",
+        "subcategory": "FinOps",
+        "skills_required": [
+          "AWS",
+          "Cost"
+        ]
+      },
+      {
+        "question_id": 30,
+        "difficulty": "senior_level",
+        "category": "Database",
+        "subcategory": "Lock",
+        "skills_required": [
+          "Concurrency Control"
+        ]
+      },
+      {
+        "question_id": 31,
+        "difficulty": "senior_level",
+        "category": "DevOps",
+        "subcategory": "Observability",
+        "skills_required": [
+          "SRE",
+          "Metrics"
+        ]
+      },
+      {
+        "question_id": 32,
+        "difficulty": "senior_level",
+        "category": "QA",
+        "subcategory": "Automation",
+        "skills_required": [
+          "Testing",
+          "CI/CD"
+        ]
+      },
+      {
+        "question_id": 33,
+        "difficulty": "senior_level",
+        "category": "Software Engineering",
+        "subcategory": "Clean Code",
+        "skills_required": [
+          "Refactoring",
+          "Design Patterns"
+        ]
+      },
+      {
+        "question_id": 34,
+        "difficulty": "senior_level",
+        "category": "System Design",
+        "subcategory": "Coupling",
+        "skills_required": [
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 35,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Security",
+        "skills_required": [
+          "Cryptography",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 36,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Concurrency",
+        "skills_required": [
+          "Java",
+          "Multithreading"
+        ]
+      },
+      {
+        "question_id": 37,
+        "difficulty": "senior_level",
+        "category": "API",
+        "subcategory": "REST",
+        "skills_required": [
+          "API Design"
+        ]
+      },
+      {
+        "question_id": 38,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Versioning",
+        "skills_required": [
+          "API Design",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 39,
+        "difficulty": "senior_level",
+        "category": "Database",
+        "subcategory": "Normalization",
+        "skills_required": [
+          "Data Modeling"
+        ]
+      },
+      {
+        "question_id": 40,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "CAP Theorem",
+        "skills_required": [
+          "Distributed Systems"
+        ]
+      },
+      {
+        "question_id": 41,
+        "difficulty": "university_level",
+        "category": "Frontend",
+        "subcategory": "HTML",
+        "skills_required": [
+          "HTML"
+        ]
+      },
+      {
+        "question_id": 42,
+        "difficulty": "university_level",
+        "category": "Network",
+        "subcategory": "TCP/UDP",
+        "skills_required": [
+          "Network"
+        ]
+      },
+      {
+        "question_id": 43,
+        "difficulty": "university_level",
+        "category": "Database",
+        "subcategory": "Transaction",
+        "skills_required": [
+          "ACID"
+        ]
+      },
+      {
+        "question_id": 44,
+        "difficulty": "university_level",
+        "category": "CS Foundation",
+        "subcategory": "OS",
+        "skills_required": [
+          "Process",
+          "Thread"
+        ]
+      },
+      {
+        "question_id": 45,
+        "difficulty": "university_level",
+        "category": "Backend",
+        "subcategory": "HTTP",
+        "skills_required": [
+          "HTTP Status Codes"
+        ]
+      },
+      {
+        "question_id": 46,
+        "difficulty": "junior_level",
+        "category": "Backend",
+        "subcategory": "SQL",
+        "skills_required": [
+          "SQL"
+        ]
+      },
+      {
+        "question_id": 47,
+        "difficulty": "junior_level",
+        "category": "Frontend",
+        "subcategory": "JavaScript",
+        "skills_required": [
+          "JavaScript"
+        ]
+      },
+      {
+        "question_id": 48,
+        "difficulty": "junior_level",
+        "category": "Frontend",
+        "subcategory": "CSS",
+        "skills_required": [
+          "CSS"
+        ]
+      },
+      {
+        "question_id": 49,
+        "difficulty": "junior_level",
+        "category": "Backend",
+        "subcategory": "Git",
+        "skills_required": [
+          "Git"
+        ]
+      },
+      {
+        "question_id": 50,
+        "difficulty": "junior_level",
+        "category": "Backend",
+        "subcategory": "Database",
+        "skills_required": [
+          "Database"
+        ]
+      },
+      {
+        "question_id": 51,
+        "difficulty": "university_level",
+        "category": "Algorithm",
+        "subcategory": "Complexity",
+        "skills_required": [
+          "Algorithm"
+        ]
+      },
+      {
+        "question_id": 52,
+        "difficulty": "university_level",
+        "category": "Database",
+        "subcategory": "Normalization",
+        "skills_required": [
+          "Database"
+        ]
+      },
+      {
+        "question_id": 53,
+        "difficulty": "university_level",
+        "category": "Backend",
+        "subcategory": "OOP",
+        "skills_required": [
+          "Java",
+          "OOP"
+        ]
+      },
+      {
+        "question_id": 54,
+        "difficulty": "university_level",
+        "category": "Network",
+        "subcategory": "OSI Layer",
+        "skills_required": [
+          "Network"
+        ]
+      },
+      {
+        "question_id": 55,
+        "difficulty": "university_level",
+        "category": "Frontend",
+        "subcategory": "Web",
+        "skills_required": [
+          "HTML",
+          "JavaScript"
+        ]
+      },
+      {
+        "question_id": 56,
+        "difficulty": "university_level",
+        "category": "Backend",
+        "subcategory": "Python",
+        "skills_required": [
+          "Python"
+        ]
+      },
+      {
+        "question_id": 57,
+        "difficulty": "university_level",
+        "category": "CS Foundation",
+        "subcategory": "OS",
+        "skills_required": [
+          "OS"
+        ]
+      },
+      {
+        "question_id": 58,
+        "difficulty": "university_level",
+        "category": "Security",
+        "subcategory": "Encryption",
+        "skills_required": [
+          "Security"
+        ]
+      },
+      {
+        "question_id": 59,
+        "difficulty": "university_level",
+        "category": "CS Foundation",
+        "subcategory": "Data Structure",
+        "skills_required": [
+          "Data Structure"
+        ]
+      },
+      {
+        "question_id": 60,
+        "difficulty": "university_level",
+        "category": "Network",
+        "subcategory": "TCP/IP",
+        "skills_required": [
+          "TCP"
+        ]
+      },
+      {
+        "question_id": 61,
+        "difficulty": "junior_level",
+        "category": "Frontend",
+        "subcategory": "JavaScript",
+        "skills_required": [
+          "JavaScript"
+        ]
+      },
+      {
+        "question_id": 62,
+        "difficulty": "junior_level",
+        "category": "Backend",
+        "subcategory": "Spring",
+        "skills_required": [
+          "Spring",
+          "Java"
+        ]
+      },
+      {
+        "question_id": 63,
+        "difficulty": "junior_level",
+        "category": "DevOps",
+        "subcategory": "Git",
+        "skills_required": [
+          "Git"
+        ]
+      },
+      {
+        "question_id": 64,
+        "difficulty": "junior_level",
+        "category": "Frontend",
+        "subcategory": "HTML",
+        "skills_required": [
+          "HTML"
+        ]
+      },
+      {
+        "question_id": 65,
+        "difficulty": "junior_level",
+        "category": "Backend",
+        "subcategory": "Node.js",
+        "skills_required": [
+          "Node.js"
+        ]
+      },
+      {
+        "question_id": 66,
+        "difficulty": "junior_level",
+        "category": "Database",
+        "subcategory": "SQL",
+        "skills_required": [
+          "SQL"
+        ]
+      },
+      {
+        "question_id": 67,
+        "difficulty": "junior_level",
+        "category": "Backend",
+        "subcategory": "Session",
+        "skills_required": [
+          "Web"
+        ]
+      },
+      {
+        "question_id": 68,
+        "difficulty": "junior_level",
+        "category": "DevOps",
+        "subcategory": "CI/CD",
+        "skills_required": [
+          "CI/CD"
+        ]
+      },
+      {
+        "question_id": 69,
+        "difficulty": "junior_level",
+        "category": "Backend",
+        "subcategory": "REST",
+        "skills_required": [
+          "API Design"
+        ]
+      },
+      {
+        "question_id": 70,
+        "difficulty": "junior_level",
+        "category": "Frontend",
+        "subcategory": "CSS",
+        "skills_required": [
+          "CSS"
+        ]
+      },
+      {
+        "question_id": 71,
+        "difficulty": "middle_level",
+        "category": "Backend",
+        "subcategory": "Database",
+        "skills_required": [
+          "Database",
+          "Concurrency"
+        ]
+      },
+      {
+        "question_id": 72,
+        "difficulty": "middle_level",
+        "category": "Frontend",
+        "subcategory": "Webpack",
+        "skills_required": [
+          "Frontend",
+          "Performance"
+        ]
+      },
+      {
+        "question_id": 73,
+        "difficulty": "middle_level",
+        "category": "Backend",
+        "subcategory": "Cache",
+        "skills_required": [
+          "Redis",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 74,
+        "difficulty": "middle_level",
+        "category": "Database",
+        "subcategory": "RDBMS vs NoSQL",
+        "skills_required": [
+          "Database"
+        ]
+      },
+      {
+        "question_id": 75,
+        "difficulty": "middle_level",
+        "category": "Infra",
+        "subcategory": "Load Balancer",
+        "skills_required": [
+          "Network",
+          "AWS"
+        ]
+      },
+      {
+        "question_id": 76,
+        "difficulty": "middle_level",
+        "category": "DevOps",
+        "subcategory": "Kubernetes",
+        "skills_required": [
+          "Kubernetes",
+          "Traffic"
+        ]
+      },
+      {
+        "question_id": 77,
+        "difficulty": "middle_level",
+        "category": "Network",
+        "subcategory": "DNS",
+        "skills_required": [
+          "DNS",
+          "Cloud"
+        ]
+      },
+      {
+        "question_id": 78,
+        "difficulty": "middle_level",
+        "category": "APM",
+        "subcategory": "Monitoring",
+        "skills_required": [
+          "JVM",
+          "Monitoring"
+        ]
+      },
+      {
+        "question_id": 79,
+        "difficulty": "middle_level",
+        "category": "Backend",
+        "subcategory": "Background Job",
+        "skills_required": [
+          "RabbitMQ",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 80,
+        "difficulty": "middle_level",
+        "category": "API",
+        "subcategory": "Communication",
+        "skills_required": [
+          "gRPC",
+          "REST"
+        ]
+      },
+      {
+        "question_id": 81,
+        "difficulty": "middle_level",
+        "category": "Backend",
+        "subcategory": "Clean Architecture",
+        "skills_required": [
+          "Architecture",
+          "Design Patterns"
+        ]
+      },
+      {
+        "question_id": 82,
+        "difficulty": "middle_level",
+        "category": "Database",
+        "subcategory": "Index",
+        "skills_required": [
+          "SQL",
+          "Index"
+        ]
+      },
+      {
+        "question_id": 83,
+        "difficulty": "middle_level",
+        "category": "Security",
+        "subcategory": "OAuth",
+        "skills_required": [
+          "OAuth2",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 84,
+        "difficulty": "middle_level",
+        "category": "Infra",
+        "subcategory": "Docker",
+        "skills_required": [
+          "Docker",
+          "OS"
+        ]
+      },
+      {
+        "question_id": 85,
+        "difficulty": "middle_level",
+        "category": "Cloud",
+        "subcategory": "AWS",
+        "skills_required": [
+          "AWS",
+          "Network"
+        ]
+      },
+      {
+        "question_id": 86,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Microservices",
+        "skills_required": [
+          "MSA",
+          "Database",
+          "Message Queue"
+        ]
+      },
+      {
+        "question_id": 87,
+        "difficulty": "senior_level",
+        "category": "Infra",
+        "subcategory": "Traffic",
+        "skills_required": [
+          "CDN",
+          "AWS"
+        ]
+      },
+      {
+        "question_id": 88,
+        "difficulty": "senior_level",
+        "category": "Cloud",
+        "subcategory": "DB",
+        "skills_required": [
+          "AWS",
+          "Database"
+        ]
+      },
+      {
+        "question_id": 89,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Zero Trust",
+        "skills_required": [
+          "Security",
+          "Network"
+        ]
+      },
+      {
+        "question_id": 90,
+        "difficulty": "senior_level",
+        "category": "System Design",
+        "subcategory": "Rate Limiter",
+        "skills_required": [
+          "Redis",
+          "API"
+        ]
+      },
+      {
+        "question_id": 91,
+        "difficulty": "senior_level",
+        "category": "DevOps",
+        "subcategory": "SRE",
+        "skills_required": [
+          "Observability",
+          "SRE"
+        ]
+      },
+      {
+        "question_id": 92,
+        "difficulty": "senior_level",
+        "category": "Database",
+        "subcategory": "Sharding",
+        "skills_required": [
+          "Database",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 93,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Consensus",
+        "skills_required": [
+          "Distributed Systems"
+        ]
+      },
+      {
+        "question_id": 94,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Webhooks",
+        "skills_required": [
+          "API",
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 95,
+        "difficulty": "senior_level",
+        "category": "System Design",
+        "subcategory": "Monolith to MSA",
+        "skills_required": [
+          "MSA",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 96,
+        "difficulty": "senior_level",
+        "category": "QA",
+        "subcategory": "Chaos Engineering",
+        "skills_required": [
+          "Testing",
+          "Resilience"
+        ]
+      },
+      {
+        "question_id": 97,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Transaction",
+        "skills_required": [
+          "Spring",
+          "Database"
+        ]
+      },
+      {
+        "question_id": 98,
+        "difficulty": "senior_level",
+        "category": "Network",
+        "subcategory": "TCP",
+        "skills_required": [
+          "TCP",
+          "Linux",
+          "Traffic"
+        ]
+      },
+      {
+        "question_id": 99,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "CI/CD",
+        "skills_required": [
+          "DevSecOps",
+          "CI/CD"
+        ]
+      },
+      {
+        "question_id": 100,
+        "difficulty": "senior_level",
+        "category": "Data",
+        "subcategory": "Streaming",
+        "skills_required": [
+          "Kafka",
+          "Data"
+        ]
+      },
+      {
+        "question_id": 101,
+        "difficulty": "university_level",
+        "category": "CS Foundation",
+        "subcategory": "Data Structure",
+        "skills_required": [
+          "Data Structure",
+          "Algorithm"
+        ]
+      },
+      {
+        "question_id": 102,
+        "difficulty": "university_level",
+        "category": "Network",
+        "subcategory": "IP",
+        "skills_required": [
+          "Network"
+        ]
+      },
+      {
+        "question_id": 103,
+        "difficulty": "university_level",
+        "category": "Database",
+        "subcategory": "Transaction",
+        "skills_required": [
+          "Database",
+          "ACID"
+        ]
+      },
+      {
+        "question_id": 104,
+        "difficulty": "university_level",
+        "category": "Frontend",
+        "subcategory": "JavaScript",
+        "skills_required": [
+          "JavaScript",
+          "DOM"
+        ]
+      },
+      {
+        "question_id": 105,
+        "difficulty": "university_level",
+        "category": "API",
+        "subcategory": "REST",
+        "skills_required": [
+          "HTTP",
+          "REST"
+        ]
+      },
+      {
+        "question_id": 106,
+        "difficulty": "junior_level",
+        "category": "Backend",
+        "subcategory": "JPA",
+        "skills_required": [
+          "Java",
+          "Spring Boot",
+          "JPA"
+        ]
+      },
+      {
+        "question_id": 107,
+        "difficulty": "junior_level",
+        "category": "Frontend",
+        "subcategory": "React",
+        "skills_required": [
+          "React",
+          "State Management"
+        ]
+      },
+      {
+        "question_id": 108,
+        "difficulty": "junior_level",
+        "category": "Infra",
+        "subcategory": "Linux",
+        "skills_required": [
+          "Linux",
+          "OS"
+        ]
+      },
+      {
+        "question_id": 109,
+        "difficulty": "junior_level",
+        "category": "DevOps",
+        "subcategory": "Git",
+        "skills_required": [
+          "Git"
+        ]
+      },
+      {
+        "question_id": 110,
+        "difficulty": "junior_level",
+        "category": "Backend",
+        "subcategory": "ORM",
+        "skills_required": [
+          "Database",
+          "ORM"
+        ]
+      },
+      {
+        "question_id": 111,
+        "difficulty": "middle_level",
+        "category": "Database",
+        "subcategory": "Index",
+        "skills_required": [
+          "SQL",
+          "Performance Tuning"
+        ]
+      },
+      {
+        "question_id": 112,
+        "difficulty": "middle_level",
+        "category": "Cloud",
+        "subcategory": "Storage",
+        "skills_required": [
+          "AWS",
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 113,
+        "difficulty": "middle_level",
+        "category": "Backend",
+        "subcategory": "JVM",
+        "skills_required": [
+          "Java",
+          "Troubleshooting"
+        ]
+      },
+      {
+        "question_id": 114,
+        "difficulty": "middle_level",
+        "category": "DevOps",
+        "subcategory": "Docker",
+        "skills_required": [
+          "Docker",
+          "Database"
+        ]
+      },
+      {
+        "question_id": 115,
+        "difficulty": "middle_level",
+        "category": "Infra",
+        "subcategory": "CDN",
+        "skills_required": [
+          "CDN",
+          "Network"
+        ]
+      },
+      {
+        "question_id": 116,
+        "difficulty": "middle_level",
+        "category": "Backend",
+        "subcategory": "Auth",
+        "skills_required": [
+          "Security",
+          "JWT"
+        ]
+      },
+      {
+        "question_id": 117,
+        "difficulty": "middle_level",
+        "category": "Backend",
+        "subcategory": "Database",
+        "skills_required": [
+          "Database",
+          "Connection Pool"
+        ]
+      },
+      {
+        "question_id": 118,
+        "difficulty": "middle_level",
+        "category": "Database",
+        "subcategory": "Concurrency",
+        "skills_required": [
+          "Database",
+          "Lock"
+        ]
+      },
+      {
+        "question_id": 119,
+        "difficulty": "middle_level",
+        "category": "Cloud",
+        "subcategory": "AWS",
+        "skills_required": [
+          "AWS",
+          "Network"
+        ]
+      },
+      {
+        "question_id": 120,
+        "difficulty": "middle_level",
+        "category": "Backend",
+        "subcategory": "Cache",
+        "skills_required": [
+          "Redis",
+          "Memory Management"
+        ]
+      },
+      {
+        "question_id": 121,
+        "difficulty": "middle_level",
+        "category": "Frontend",
+        "subcategory": "React",
+        "skills_required": [
+          "React",
+          "Performance"
+        ]
+      },
+      {
+        "question_id": 122,
+        "difficulty": "middle_level",
+        "category": "Architecture",
+        "subcategory": "Message Queue",
+        "skills_required": [
+          "Message Queue",
+          "Kafka",
+          "RabbitMQ"
+        ]
+      },
+      {
+        "question_id": 123,
+        "difficulty": "middle_level",
+        "category": "Network",
+        "subcategory": "HTTP",
+        "skills_required": [
+          "Nginx",
+          "HTTP"
+        ]
+      },
+      {
+        "question_id": 124,
+        "difficulty": "middle_level",
+        "category": "Web",
+        "subcategory": "Security",
+        "skills_required": [
+          "Security",
+          "Web"
+        ]
+      },
+      {
+        "question_id": 125,
+        "difficulty": "middle_level",
+        "category": "DevOps",
+        "subcategory": "Deployment",
+        "skills_required": [
+          "CI/CD",
+          "DevOps"
+        ]
+      },
+      {
+        "question_id": 126,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "API Gateway",
+        "skills_required": [
+          "MSA",
+          "Network",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 127,
+        "difficulty": "senior_level",
+        "category": "Database",
+        "subcategory": "NoSQL",
+        "skills_required": [
+          "Database Selection",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 128,
+        "difficulty": "senior_level",
+        "category": "Infra",
+        "subcategory": "Kubernetes",
+        "skills_required": [
+          "Kubernetes",
+          "Troubleshooting"
+        ]
+      },
+      {
+        "question_id": 129,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "SQL Injection",
+        "skills_required": [
+          "Security",
+          "MyBatis",
+          "Java"
+        ]
+      },
+      {
+        "question_id": 130,
+        "difficulty": "senior_level",
+        "category": "Cloud",
+        "subcategory": "Storage",
+        "skills_required": [
+          "AWS",
+          "Cost Optimization"
+        ]
+      },
+      {
+        "question_id": 131,
+        "difficulty": "senior_level",
+        "category": "Data",
+        "subcategory": "Event Driven",
+        "skills_required": [
+          "Architecture",
+          "Event Sourcing"
+        ]
+      },
+      {
+        "question_id": 132,
+        "difficulty": "senior_level",
+        "category": "Infra",
+        "subcategory": "Load Balancer",
+        "skills_required": [
+          "AWS",
+          "Network"
+        ]
+      },
+      {
+        "question_id": 133,
+        "difficulty": "senior_level",
+        "category": "Database",
+        "subcategory": "Sharding",
+        "skills_required": [
+          "Database",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 134,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Cache",
+        "skills_required": [
+          "Redis",
+          "Distributed Systems"
+        ]
+      },
+      {
+        "question_id": 135,
+        "difficulty": "senior_level",
+        "category": "DevOps",
+        "subcategory": "Observability",
+        "skills_required": [
+          "SRE",
+          "Observability"
+        ]
+      },
+      {
+        "question_id": 136,
+        "difficulty": "senior_level",
+        "category": "Software Engineering",
+        "subcategory": "DDD",
+        "skills_required": [
+          "DDD",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 137,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Hexagonal",
+        "skills_required": [
+          "Architecture",
+          "Design Patterns"
+        ]
+      },
+      {
+        "question_id": 138,
+        "difficulty": "senior_level",
+        "category": "Cloud",
+        "subcategory": "Security",
+        "skills_required": [
+          "AWS",
+          "IAM"
+        ]
+      },
+      {
+        "question_id": 139,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Concurrency",
+        "skills_required": [
+          "Java",
+          "Multithreading"
+        ]
+      },
+      {
+        "question_id": 140,
+        "difficulty": "senior_level",
+        "category": "Database",
+        "subcategory": "Data Warehouse",
+        "skills_required": [
+          "Data Modeling"
+        ]
+      },
+      {
+        "question_id": 141,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "CAP",
+        "skills_required": [
+          "Distributed Systems"
+        ]
+      },
+      {
+        "question_id": 142,
+        "difficulty": "senior_level",
+        "category": "API",
+        "subcategory": "GraphQL",
+        "skills_required": [
+          "GraphQL",
+          "Performance"
+        ]
+      },
+      {
+        "question_id": 143,
+        "difficulty": "senior_level",
+        "category": "QA",
+        "subcategory": "Contract Testing",
+        "skills_required": [
+          "Testing",
+          "MSA"
+        ]
+      },
+      {
+        "question_id": 144,
+        "difficulty": "senior_level",
+        "category": "System Design",
+        "subcategory": "Traffic Spikes",
+        "skills_required": [
+          "Architecture",
+          "Queue"
+        ]
+      },
+      {
+        "question_id": 145,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Memory Leak",
+        "skills_required": [
+          "Java",
+          "Troubleshooting"
+        ]
+      },
+      {
+        "question_id": 146,
+        "difficulty": "senior_level",
+        "category": "Infra",
+        "subcategory": "Kubernetes",
+        "skills_required": [
+          "Kubernetes",
+          "DNS"
+        ]
+      },
+      {
+        "question_id": 147,
+        "difficulty": "senior_level",
+        "category": "Database",
+        "subcategory": "Execution Plan",
+        "skills_required": [
+          "MySQL",
+          "Query Optimization"
+        ]
+      },
+      {
+        "question_id": 148,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Connection Pool",
+        "skills_required": [
+          "Java",
+          "HikariCP",
+          "Database"
+        ]
+      },
+      {
+        "question_id": 149,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "OAuth",
+        "skills_required": [
+          "Security",
+          "JWT"
+        ]
+      },
+      {
+        "question_id": 150,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Resilience",
+        "skills_required": [
+          "MSA",
+          "Circuit Breaker"
+        ]
+      },
+      {
+        "question_id": 151,
+        "difficulty": "middle_level",
+        "category": "QA",
+        "subcategory": "Unit Test",
+        "skills_required": [
+          "Testing",
+          "Jest"
+        ]
+      },
+      {
+        "question_id": 152,
+        "difficulty": "middle_level",
+        "category": "Security",
+        "subcategory": "XSS",
+        "skills_required": [
+          "Security",
+          "Frontend"
+        ]
+      },
+      {
+        "question_id": 153,
+        "difficulty": "middle_level",
+        "category": "Database",
+        "subcategory": "Pagination",
+        "skills_required": [
+          "SQL",
+          "Algorithm"
+        ]
+      },
+      {
+        "question_id": 154,
+        "difficulty": "middle_level",
+        "category": "Backend",
+        "subcategory": "JVM",
+        "skills_required": [
+          "Java",
+          "Troubleshooting"
+        ]
+      },
+      {
+        "question_id": 155,
+        "difficulty": "middle_level",
+        "category": "Backend",
+        "subcategory": "ORM",
+        "skills_required": [
+          "JPA",
+          "Database"
+        ]
+      },
+      {
+        "question_id": 156,
+        "difficulty": "middle_level",
+        "category": "Architecture",
+        "subcategory": "Resilience",
+        "skills_required": [
+          "System Design",
+          "MSA"
+        ]
+      },
+      {
+        "question_id": 157,
+        "difficulty": "middle_level",
+        "category": "System Design",
+        "subcategory": "Async",
+        "skills_required": [
+          "Message Queue",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 158,
+        "difficulty": "middle_level",
+        "category": "DevOps",
+        "subcategory": "Monitoring",
+        "skills_required": [
+          "Observability",
+          "DevOps"
+        ]
+      },
+      {
+        "question_id": 159,
+        "difficulty": "middle_level",
+        "category": "Security",
+        "subcategory": "CI/CD",
+        "skills_required": [
+          "Security",
+          "DevOps"
+        ]
+      },
+      {
+        "question_id": 160,
+        "difficulty": "middle_level",
+        "category": "Frontend",
+        "subcategory": "React",
+        "skills_required": [
+          "React",
+          "Performance"
+        ]
+      },
+      {
+        "question_id": 161,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "API Gateway",
+        "skills_required": [
+          "Redis",
+          "API Gateway"
+        ]
+      },
+      {
+        "question_id": 162,
+        "difficulty": "senior_level",
+        "category": "Microservices",
+        "subcategory": "Data Consistency",
+        "skills_required": [
+          "MSA",
+          "Event-Driven",
+          "Kafka"
+        ]
+      },
+      {
+        "question_id": 163,
+        "difficulty": "senior_level",
+        "category": "Data",
+        "subcategory": "CQRS",
+        "skills_required": [
+          "Architecture",
+          "CQRS"
+        ]
+      },
+      {
+        "question_id": 164,
+        "difficulty": "senior_level",
+        "category": "Cloud",
+        "subcategory": "Vendor Lock-in",
+        "skills_required": [
+          "Cloud",
+          "Kubernetes",
+          "Docker"
+        ]
+      },
+      {
+        "question_id": 165,
+        "difficulty": "senior_level",
+        "category": "System Resiliency",
+        "subcategory": "Bulkhead",
+        "skills_required": [
+          "Architecture",
+          "Resilience"
+        ]
+      },
+      {
+        "question_id": 166,
+        "difficulty": "senior_level",
+        "category": "Database",
+        "subcategory": "Split Brain",
+        "skills_required": [
+          "Distributed Systems",
+          "Redis Cluster"
+        ]
+      },
+      {
+        "question_id": 167,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "SSRF",
+        "skills_required": [
+          "Security",
+          "AWS"
+        ]
+      },
+      {
+        "question_id": 168,
+        "difficulty": "senior_level",
+        "category": "Infra",
+        "subcategory": "Cost",
+        "skills_required": [
+          "AWS",
+          "Auto Scaling",
+          "FinOps"
+        ]
+      },
+      {
+        "question_id": 169,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Cache",
+        "skills_required": [
+          "Redis",
+          "Memory Management"
+        ]
+      },
+      {
+        "question_id": 170,
+        "difficulty": "senior_level",
+        "category": "DevOps",
+        "subcategory": "Metrics",
+        "skills_required": [
+          "Prometheus",
+          "SRE"
+        ]
+      },
+      {
+        "question_id": 171,
+        "difficulty": "senior_level",
+        "category": "QA",
+        "subcategory": "Resilience",
+        "skills_required": [
+          "Chaos Engineering",
+          "Kubernetes"
+        ]
+      },
+      {
+        "question_id": 172,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Migration",
+        "skills_required": [
+          "MSA",
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 173,
+        "difficulty": "senior_level",
+        "category": "System Design",
+        "subcategory": "Coupling",
+        "skills_required": [
+          "MSA",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 174,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "Zero Trust",
+        "skills_required": [
+          "Security",
+          "Network",
+          "Kubernetes"
+        ]
+      },
+      {
+        "question_id": 175,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Concurrency",
+        "skills_required": [
+          "Java",
+          "Spring Boot"
+        ]
+      },
+      {
+        "question_id": 176,
+        "difficulty": "senior_level",
+        "category": "API",
+        "subcategory": "Spec",
+        "skills_required": [
+          "API Design",
+          "Collaboration"
+        ]
+      },
+      {
+        "question_id": 177,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Idempotency",
+        "skills_required": [
+          "API Design",
+          "Payment"
+        ]
+      },
+      {
+        "question_id": 178,
+        "difficulty": "senior_level",
+        "category": "Database",
+        "subcategory": "Sharding",
+        "skills_required": [
+          "Data Modeling",
+          "Scalability"
+        ]
+      },
+      {
+        "question_id": 179,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "CAP Theorem",
+        "skills_required": [
+          "Distributed Systems",
+          "Database"
+        ]
+      },
+      {
+        "question_id": 180,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Real-time",
+        "skills_required": [
+          "WebSocket",
+          "Redis",
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 181,
+        "difficulty": "senior_level",
+        "category": "Database",
+        "subcategory": "Replication",
+        "skills_required": [
+          "Database",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 182,
+        "difficulty": "senior_level",
+        "category": "Cloud",
+        "subcategory": "Serverless",
+        "skills_required": [
+          "AWS",
+          "Serverless"
+        ]
+      },
+      {
+        "question_id": 183,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "OAuth2",
+        "skills_required": [
+          "Security",
+          "OAuth2"
+        ]
+      },
+      {
+        "question_id": 184,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Cache",
+        "skills_required": [
+          "Cache",
+          "Concurrency"
+        ]
+      },
+      {
+        "question_id": 185,
+        "difficulty": "senior_level",
+        "category": "DevOps",
+        "subcategory": "Deployment",
+        "skills_required": [
+          "CI/CD",
+          "Database"
+        ]
+      },
+      {
+        "question_id": 186,
+        "difficulty": "senior_level",
+        "category": "Database",
+        "subcategory": "Index",
+        "skills_required": [
+          "SQL",
+          "Database Index"
+        ]
+      },
+      {
+        "question_id": 187,
+        "difficulty": "senior_level",
+        "category": "Cloud",
+        "subcategory": "DynamoDB",
+        "skills_required": [
+          "AWS",
+          "FinOps"
+        ]
+      },
+      {
+        "question_id": 188,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Connection Pool",
+        "skills_required": [
+          "Java",
+          "HikariCP"
+        ]
+      },
+      {
+        "question_id": 189,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Observability",
+        "skills_required": [
+          "Microservices",
+          "Observability"
+        ]
+      },
+      {
+        "question_id": 190,
+        "difficulty": "senior_level",
+        "category": "DevOps",
+        "subcategory": "SRE",
+        "skills_required": [
+          "SRE",
+          "Deployment"
+        ]
+      },
+      {
+        "question_id": 191,
+        "difficulty": "senior_level",
+        "category": "Microservices",
+        "subcategory": "Database",
+        "skills_required": [
+          "MSA",
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 192,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "API",
+        "skills_required": [
+          "MSA",
+          "API Design"
+        ]
+      },
+      {
+        "question_id": 193,
+        "difficulty": "senior_level",
+        "category": "DevOps",
+        "subcategory": "GitOps",
+        "skills_required": [
+          "Kubernetes",
+          "CI/CD"
+        ]
+      },
+      {
+        "question_id": 194,
+        "difficulty": "senior_level",
+        "category": "Backend",
+        "subcategory": "Transaction",
+        "skills_required": [
+          "Java",
+          "Spring Boot"
+        ]
+      },
+      {
+        "question_id": 195,
+        "difficulty": "senior_level",
+        "category": "Software Engineering",
+        "subcategory": "Process",
+        "skills_required": [
+          "Architecture",
+          "Communication"
+        ]
+      },
+      {
+        "question_id": 196,
+        "difficulty": "senior_level",
+        "category": "API",
+        "subcategory": "Versioning",
+        "skills_required": [
+          "API Design"
+        ]
+      },
+      {
+        "question_id": 197,
+        "difficulty": "senior_level",
+        "category": "Data",
+        "subcategory": "View",
+        "skills_required": [
+          "SQL",
+          "Data Modeling"
+        ]
+      },
+      {
+        "question_id": 198,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Clock",
+        "skills_required": [
+          "Distributed Systems"
+        ]
+      },
+      {
+        "question_id": 199,
+        "difficulty": "senior_level",
+        "category": "Network",
+        "subcategory": "HA",
+        "skills_required": [
+          "Infra",
+          "Network"
+        ]
+      },
+      {
+        "question_id": 200,
+        "difficulty": "senior_level",
+        "category": "Data",
+        "subcategory": "Kafka",
+        "skills_required": [
+          "Kafka",
+          "Message Queue"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "Preceding_ID": 56,
+        "Target_ID": 7,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.2761,
+        "combined_score": 0.2104,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.28 | 난이도 university_level → junior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 62,
+        "Target_ID": 12,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1458,
+        "combined_score": 0.3583,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.33) | 시나리오 유사도=0.15 | 난이도 junior_level → middle_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 53,
+        "Target_ID": 12,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 106,
+        "Target_ID": 12,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0534,
+        "combined_score": 0.2714,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.25) | 시나리오 유사도=0.05 | 난이도 junior_level → middle_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 14,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0251,
+        "combined_score": 0.31,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 66,
+        "Target_ID": 15,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1122,
+        "combined_score": 0.4449,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.11 | 난이도 junior_level → middle_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 15,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 46,
+        "Target_ID": 15,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 51,
+        "Target_ID": 16,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.1481,
+        "combined_score": 0.6592,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=1.00) | 시나리오 유사도=0.15 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 101,
+        "Target_ID": 16,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0175,
+        "combined_score": 0.307,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 17,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1036,
+        "combined_score": 0.3414,
+        "Logic": "공통 스킬 ['react'] (Jaccard=0.33) | 시나리오 유사도=0.10 | 난이도 junior_level → middle_level | 동일 카테고리(Frontend)"
+      },
+      {
+        "Preceding_ID": 107,
+        "Target_ID": 17,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['react'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Frontend)"
+      },
+      {
+        "Preceding_ID": 9,
+        "Target_ID": 18,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['mysql'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 122,
+        "Target_ID": 21,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.22,
+        "Logic": "공통 스킬 ['kafka'] (Jaccard=0.20) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Architecture)"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 23,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0525,
+        "combined_score": 0.421,
+        "Logic": "공통 스킬 ['rest api'] (Jaccard=0.50) | 시나리오 유사도=0.05 | 난이도 junior_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 73,
+        "Target_ID": 24,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1032,
+        "combined_score": 0.2413,
+        "Logic": "공통 스킬 ['redis'] (Jaccard=0.33) | 시나리오 유사도=0.10 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 120,
+        "Target_ID": 24,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0972,
+        "combined_score": 0.2389,
+        "Logic": "공통 스킬 ['redis'] (Jaccard=0.33) | 시나리오 유사도=0.10 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 20,
+        "Target_ID": 24,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0592,
+        "combined_score": 0.2237,
+        "Logic": "공통 스킬 ['redis'] (Jaccard=0.33) | 시나리오 유사도=0.06 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 25,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 159,
+        "Target_ID": 25,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0471,
+        "combined_score": 0.3189,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.33) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 83,
+        "Target_ID": 25,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 156,
+        "Target_ID": 26,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.4072,
+        "combined_score": 0.3629,
+        "Logic": "공통 스킬 ['msa'] (Jaccard=0.33) | 시나리오 유사도=0.41 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 119,
+        "Target_ID": 28,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0417,
+        "combined_score": 0.3167,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.33) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 85,
+        "Target_ID": 28,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0371,
+        "combined_score": 0.3149,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.33) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 112,
+        "Target_ID": 28,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0349,
+        "combined_score": 0.314,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 85,
+        "Target_ID": 29,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 112,
+        "Target_ID": 29,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 119,
+        "Target_ID": 29,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 151,
+        "Target_ID": 32,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0724,
+        "combined_score": 0.329,
+        "Logic": "공통 스킬 ['testing'] (Jaccard=0.33) | 시나리오 유사도=0.07 | 난이도 middle_level → senior_level | 동일 카테고리(QA)"
+      },
+      {
+        "Preceding_ID": 68,
+        "Target_ID": 32,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ci/cd'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 125,
+        "Target_ID": 32,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['ci/cd'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 81,
+        "Target_ID": 33,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['design patterns'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 157,
+        "Target_ID": 34,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0112,
+        "combined_score": 0.4045,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level | 동일 카테고리(System Design)"
+      },
+      {
+        "Preceding_ID": 73,
+        "Target_ID": 34,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0678,
+        "combined_score": 0.3271,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.50) | 시나리오 유사도=0.07 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 79,
+        "Target_ID": 34,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0099,
+        "combined_score": 0.304,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 116,
+        "Target_ID": 35,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0763,
+        "combined_score": 0.3305,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.33) | 시나리오 유사도=0.08 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 35,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 14,
+        "Target_ID": 35,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 12,
+        "Target_ID": 36,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0565,
+        "combined_score": 0.3226,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.33) | 시나리오 유사도=0.06 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 62,
+        "Target_ID": 36,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0541,
+        "combined_score": 0.3216,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.33) | 시나리오 유사도=0.05 | 난이도 junior_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 154,
+        "Target_ID": 36,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0296,
+        "combined_score": 0.3118,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 69,
+        "Target_ID": 37,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['api design'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 69,
+        "Target_ID": 38,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['api design'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 73,
+        "Target_ID": 38,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0604,
+        "combined_score": 0.3242,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.06 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 79,
+        "Target_ID": 38,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.012,
+        "combined_score": 0.3048,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 46,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0213,
+        "combined_score": 0.6085,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=1.00) | 시나리오 유사도=0.02 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 3,
+        "Target_ID": 47,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['javascript'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Frontend)"
+      },
+      {
+        "Preceding_ID": 55,
+        "Target_ID": 47,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['javascript'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Frontend)"
+      },
+      {
+        "Preceding_ID": 104,
+        "Target_ID": 47,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['javascript'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Frontend)"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 50,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0198,
+        "combined_score": 0.6079,
+        "Logic": "공통 스킬 ['database'] (Jaccard=1.00) | 시나리오 유사도=0.02 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 103,
+        "Target_ID": 50,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0238,
+        "combined_score": 0.3095,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 3,
+        "Target_ID": 61,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['javascript'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Frontend)"
+      },
+      {
+        "Preceding_ID": 55,
+        "Target_ID": 61,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['javascript'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Frontend)"
+      },
+      {
+        "Preceding_ID": 104,
+        "Target_ID": 61,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['javascript'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Frontend)"
+      },
+      {
+        "Preceding_ID": 53,
+        "Target_ID": 62,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 64,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0181,
+        "combined_score": 0.7072,
+        "Logic": "공통 스킬 ['html'] (Jaccard=1.00) | 시나리오 유사도=0.02 | 난이도 university_level → junior_level | 동일 카테고리(Frontend)"
+      },
+      {
+        "Preceding_ID": 55,
+        "Target_ID": 64,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0261,
+        "combined_score": 0.4104,
+        "Logic": "공통 스킬 ['html'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 university_level → junior_level | 동일 카테고리(Frontend)"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 66,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 50,
+        "Target_ID": 71,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0688,
+        "combined_score": 0.4275,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.07 | 난이도 junior_level → middle_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 71,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 110,
+        "Target_ID": 71,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 74,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['database'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 50,
+        "Target_ID": 74,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['database'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 103,
+        "Target_ID": 74,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 102,
+        "Target_ID": 75,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.037,
+        "combined_score": 0.3148,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 54,
+        "Target_ID": 75,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0197,
+        "combined_score": 0.3079,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 42,
+        "Target_ID": 75,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 80,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['rest'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(API)"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 82,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1355,
+        "combined_score": 0.4542,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.14 | 난이도 university_level → middle_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 66,
+        "Target_ID": 82,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 46,
+        "Target_ID": 82,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 83,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0197,
+        "combined_score": 0.4079,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 university_level → middle_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 108,
+        "Target_ID": 84,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.069,
+        "combined_score": 0.3276,
+        "Logic": "공통 스킬 ['os'] (Jaccard=0.33) | 시나리오 유사도=0.07 | 난이도 junior_level → middle_level | 동일 카테고리(Infra)"
+      },
+      {
+        "Preceding_ID": 5,
+        "Target_ID": 84,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['os'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 57,
+        "Target_ID": 84,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['os'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 42,
+        "Target_ID": 85,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0717,
+        "combined_score": 0.3287,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.07 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 54,
+        "Target_ID": 85,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 102,
+        "Target_ID": 85,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 156,
+        "Target_ID": 86,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0691,
+        "combined_score": 0.2776,
+        "Logic": "공통 스킬 ['msa'] (Jaccard=0.25) | 시나리오 유사도=0.07 | 난이도 middle_level → senior_level | 동일 카테고리(Architecture)"
+      },
+      {
+        "Preceding_ID": 122,
+        "Target_ID": 86,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.22,
+        "Logic": "공통 스킬 ['message queue'] (Jaccard=0.20) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Architecture)"
+      },
+      {
+        "Preceding_ID": 74,
+        "Target_ID": 86,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0447,
+        "combined_score": 0.2179,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.33) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 115,
+        "Target_ID": 87,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0445,
+        "combined_score": 0.3178,
+        "Logic": "공통 스킬 ['cdn'] (Jaccard=0.33) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level | 동일 카테고리(Infra)"
+      },
+      {
+        "Preceding_ID": 19,
+        "Target_ID": 87,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Infra)"
+      },
+      {
+        "Preceding_ID": 75,
+        "Target_ID": 87,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Infra)"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 88,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 50,
+        "Target_ID": 88,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 74,
+        "Target_ID": 88,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 102,
+        "Target_ID": 89,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0879,
+        "combined_score": 0.3351,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.09 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 42,
+        "Target_ID": 89,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 54,
+        "Target_ID": 89,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 73,
+        "Target_ID": 90,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0234,
+        "combined_score": 0.2094,
+        "Logic": "공통 스킬 ['redis'] (Jaccard=0.33) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 20,
+        "Target_ID": 90,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['redis'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 120,
+        "Target_ID": 90,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['redis'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 158,
+        "Target_ID": 91,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0105,
+        "combined_score": 0.3042,
+        "Logic": "공통 스킬 ['observability'] (Jaccard=0.33) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level | 동일 카테고리(DevOps)"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 92,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0431,
+        "combined_score": 0.4172,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 university_level → senior_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 74,
+        "Target_ID": 92,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.013,
+        "combined_score": 0.4052,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 118,
+        "Target_ID": 92,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0104,
+        "combined_score": 0.3042,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.33) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 156,
+        "Target_ID": 94,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1206,
+        "combined_score": 0.3482,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.33) | 시나리오 유사도=0.12 | 난이도 middle_level → senior_level | 동일 카테고리(Architecture)"
+      },
+      {
+        "Preceding_ID": 112,
+        "Target_ID": 94,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 157,
+        "Target_ID": 95,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0166,
+        "combined_score": 0.3066,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level | 동일 카테고리(System Design)"
+      },
+      {
+        "Preceding_ID": 79,
+        "Target_ID": 95,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0146,
+        "combined_score": 0.2058,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 20,
+        "Target_ID": 95,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 151,
+        "Target_ID": 96,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0202,
+        "combined_score": 0.3081,
+        "Logic": "공통 스킬 ['testing'] (Jaccard=0.33) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level | 동일 카테고리(QA)"
+      },
+      {
+        "Preceding_ID": 50,
+        "Target_ID": 97,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 155,
+        "Target_ID": 97,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0395,
+        "combined_score": 0.3158,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.33) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 97,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 60,
+        "Target_ID": 98,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['tcp'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Network)"
+      },
+      {
+        "Preceding_ID": 108,
+        "Target_ID": 98,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 76,
+        "Target_ID": 98,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['traffic'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 68,
+        "Target_ID": 99,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ci/cd'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 125,
+        "Target_ID": 99,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['ci/cd'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 122,
+        "Target_ID": 100,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0422,
+        "combined_score": 0.1669,
+        "Logic": "공통 스킬 ['kafka'] (Jaccard=0.25) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 53,
+        "Target_ID": 106,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 5,
+        "Target_ID": 108,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['os'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 57,
+        "Target_ID": 108,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['os'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 110,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0138,
+        "combined_score": 0.3055,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 103,
+        "Target_ID": 110,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0166,
+        "combined_score": 0.2066,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.33) | 시나리오 유사도=0.02 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 111,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 66,
+        "Target_ID": 111,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 46,
+        "Target_ID": 111,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 53,
+        "Target_ID": 113,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 62,
+        "Target_ID": 113,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 106,
+        "Target_ID": 113,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 114,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 50,
+        "Target_ID": 114,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 103,
+        "Target_ID": 114,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 54,
+        "Target_ID": 115,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0171,
+        "combined_score": 0.3069,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 42,
+        "Target_ID": 115,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 102,
+        "Target_ID": 115,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 116,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 50,
+        "Target_ID": 117,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0921,
+        "combined_score": 0.4368,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.09 | 난이도 junior_level → middle_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 117,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 110,
+        "Target_ID": 117,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 118,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 103,
+        "Target_ID": 118,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 50,
+        "Target_ID": 118,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 102,
+        "Target_ID": 119,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1234,
+        "combined_score": 0.3494,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.12 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 42,
+        "Target_ID": 119,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 54,
+        "Target_ID": 119,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 121,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0806,
+        "combined_score": 0.3322,
+        "Logic": "공통 스킬 ['react'] (Jaccard=0.33) | 시나리오 유사도=0.08 | 난이도 junior_level → middle_level | 동일 카테고리(Frontend)"
+      },
+      {
+        "Preceding_ID": 107,
+        "Target_ID": 121,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['react'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Frontend)"
+      },
+      {
+        "Preceding_ID": 1,
+        "Target_ID": 123,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['http'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Network)"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 123,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1134,
+        "combined_score": 0.3454,
+        "Logic": "공통 스킬 ['nginx'] (Jaccard=0.50) | 시나리오 유사도=0.11 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 123,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0671,
+        "combined_score": 0.2268,
+        "Logic": "공통 스킬 ['http'] (Jaccard=0.33) | 시나리오 유사도=0.07 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 124,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 67,
+        "Target_ID": 124,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['web'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 68,
+        "Target_ID": 125,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['ci/cd'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(DevOps)"
+      },
+      {
+        "Preceding_ID": 156,
+        "Target_ID": 126,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['msa'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Architecture)"
+      },
+      {
+        "Preceding_ID": 42,
+        "Target_ID": 126,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 54,
+        "Target_ID": 126,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 20,
+        "Target_ID": 127,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.047,
+        "combined_score": 0.2188,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 157,
+        "Target_ID": 127,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0231,
+        "combined_score": 0.2092,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 79,
+        "Target_ID": 127,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0204,
+        "combined_score": 0.2081,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 154,
+        "Target_ID": 128,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.023,
+        "combined_score": 0.2092,
+        "Logic": "공통 스킬 ['troubleshooting'] (Jaccard=0.33) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 76,
+        "Target_ID": 128,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['kubernetes'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 113,
+        "Target_ID": 128,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['troubleshooting'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 129,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 83,
+        "Target_ID": 129,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 152,
+        "Target_ID": 129,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 85,
+        "Target_ID": 130,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0342,
+        "combined_score": 0.3137,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 119,
+        "Target_ID": 130,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0292,
+        "combined_score": 0.3117,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 112,
+        "Target_ID": 130,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 81,
+        "Target_ID": 131,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0261,
+        "combined_score": 0.2104,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 157,
+        "Target_ID": 131,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0194,
+        "combined_score": 0.2078,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 79,
+        "Target_ID": 131,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0081,
+        "combined_score": 0.2032,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 75,
+        "Target_ID": 132,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['aws', 'network'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Infra)"
+      },
+      {
+        "Preceding_ID": 85,
+        "Target_ID": 132,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0301,
+        "combined_score": 0.612,
+        "Logic": "공통 스킬 ['aws', 'network'] (Jaccard=1.00) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 119,
+        "Target_ID": 132,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0257,
+        "combined_score": 0.6103,
+        "Logic": "공통 스킬 ['aws', 'network'] (Jaccard=1.00) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 133,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0421,
+        "combined_score": 0.4168,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 university_level → senior_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 74,
+        "Target_ID": 133,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 103,
+        "Target_ID": 133,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 120,
+        "Target_ID": 134,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1181,
+        "combined_score": 0.3472,
+        "Logic": "공통 스킬 ['redis'] (Jaccard=0.33) | 시나리오 유사도=0.12 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 20,
+        "Target_ID": 134,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0453,
+        "combined_score": 0.3181,
+        "Logic": "공통 스킬 ['redis'] (Jaccard=0.33) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 73,
+        "Target_ID": 134,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0449,
+        "combined_score": 0.318,
+        "Logic": "공통 스킬 ['redis'] (Jaccard=0.33) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 158,
+        "Target_ID": 135,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['observability'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(DevOps)"
+      },
+      {
+        "Preceding_ID": 81,
+        "Target_ID": 136,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0363,
+        "combined_score": 0.2145,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 157,
+        "Target_ID": 136,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0111,
+        "combined_score": 0.2045,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 20,
+        "Target_ID": 136,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 81,
+        "Target_ID": 137,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.2123,
+        "combined_score": 0.6849,
+        "Logic": "공통 스킬 ['architecture', 'design patterns'] (Jaccard=1.00) | 시나리오 유사도=0.21 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 20,
+        "Target_ID": 137,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 73,
+        "Target_ID": 137,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 85,
+        "Target_ID": 138,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0694,
+        "combined_score": 0.3278,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.33) | 시나리오 유사도=0.07 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 119,
+        "Target_ID": 138,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0686,
+        "combined_score": 0.3274,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.33) | 시나리오 유사도=0.07 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 112,
+        "Target_ID": 138,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0095,
+        "combined_score": 0.3038,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.33) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 113,
+        "Target_ID": 139,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1137,
+        "combined_score": 0.3455,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.33) | 시나리오 유사도=0.11 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 12,
+        "Target_ID": 139,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0528,
+        "combined_score": 0.3211,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.33) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 53,
+        "Target_ID": 139,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 17,
+        "Target_ID": 142,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['performance'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 72,
+        "Target_ID": 142,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['performance'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 121,
+        "Target_ID": 142,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['performance'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 151,
+        "Target_ID": 143,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['testing'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(QA)"
+      },
+      {
+        "Preceding_ID": 156,
+        "Target_ID": 143,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0395,
+        "combined_score": 0.2158,
+        "Logic": "공통 스킬 ['msa'] (Jaccard=0.33) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 157,
+        "Target_ID": 144,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0106,
+        "combined_score": 0.3042,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level | 동일 카테고리(System Design)"
+      },
+      {
+        "Preceding_ID": 73,
+        "Target_ID": 144,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0563,
+        "combined_score": 0.2225,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.06 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 81,
+        "Target_ID": 144,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.03,
+        "combined_score": 0.212,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 154,
+        "Target_ID": 145,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0819,
+        "combined_score": 0.7328,
+        "Logic": "공통 스킬 ['java', 'troubleshooting'] (Jaccard=1.00) | 시나리오 유사도=0.08 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 113,
+        "Target_ID": 145,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['java', 'troubleshooting'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 12,
+        "Target_ID": 145,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1695,
+        "combined_score": 0.3678,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.33) | 시나리오 유사도=0.17 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 77,
+        "Target_ID": 146,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0461,
+        "combined_score": 0.2185,
+        "Logic": "공통 스킬 ['dns'] (Jaccard=0.33) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 76,
+        "Target_ID": 146,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['kubernetes'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 18,
+        "Target_ID": 147,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0463,
+        "combined_score": 0.4185,
+        "Logic": "공통 스킬 ['mysql'] (Jaccard=0.50) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 9,
+        "Target_ID": 147,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['mysql'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 15,
+        "Target_ID": 147,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['query optimization'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 50,
+        "Target_ID": 148,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.013,
+        "combined_score": 0.3052,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.33) | 시나리오 유사도=0.01 | 난이도 junior_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 12,
+        "Target_ID": 148,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0404,
+        "combined_score": 0.2661,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.25) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 117,
+        "Target_ID": 148,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0329,
+        "combined_score": 0.2632,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.25) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 116,
+        "Target_ID": 149,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0509,
+        "combined_score": 0.6203,
+        "Logic": "공통 스킬 ['jwt', 'security'] (Jaccard=1.00) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 14,
+        "Target_ID": 149,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['jwt', 'security'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 149,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 156,
+        "Target_ID": 150,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1074,
+        "combined_score": 0.3429,
+        "Logic": "공통 스킬 ['msa'] (Jaccard=0.33) | 시나리오 유사도=0.11 | 난이도 middle_level → senior_level | 동일 카테고리(Architecture)"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 152,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 153,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0469,
+        "combined_score": 0.4188,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.05 | 난이도 university_level → middle_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 66,
+        "Target_ID": 153,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0417,
+        "combined_score": 0.4167,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 junior_level → middle_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 51,
+        "Target_ID": 153,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0522,
+        "combined_score": 0.3209,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=0.50) | 시나리오 유사도=0.05 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 62,
+        "Target_ID": 154,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0764,
+        "combined_score": 0.3306,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.33) | 시나리오 유사도=0.08 | 난이도 junior_level → middle_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 53,
+        "Target_ID": 154,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 106,
+        "Target_ID": 154,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.028,
+        "combined_score": 0.2612,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.25) | 시나리오 유사도=0.03 | 난이도 junior_level → middle_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 50,
+        "Target_ID": 155,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0146,
+        "combined_score": 0.4059,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 junior_level → middle_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 110,
+        "Target_ID": 155,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.2167,
+        "combined_score": 0.3867,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.33) | 시나리오 유사도=0.22 | 난이도 junior_level → middle_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 155,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0128,
+        "combined_score": 0.3051,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 159,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0208,
+        "combined_score": 0.4083,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 university_level → middle_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 160,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0741,
+        "combined_score": 0.3297,
+        "Logic": "공통 스킬 ['react'] (Jaccard=0.33) | 시나리오 유사도=0.07 | 난이도 junior_level → middle_level | 동일 카테고리(Frontend)"
+      },
+      {
+        "Preceding_ID": 107,
+        "Target_ID": 160,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['react'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Frontend)"
+      },
+      {
+        "Preceding_ID": 73,
+        "Target_ID": 161,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0383,
+        "combined_score": 0.2153,
+        "Logic": "공통 스킬 ['redis'] (Jaccard=0.33) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 20,
+        "Target_ID": 161,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['redis'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 120,
+        "Target_ID": 161,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['redis'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 156,
+        "Target_ID": 162,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0247,
+        "combined_score": 0.1599,
+        "Logic": "공통 스킬 ['msa'] (Jaccard=0.25) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 73,
+        "Target_ID": 163,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0487,
+        "combined_score": 0.2195,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 157,
+        "Target_ID": 163,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.011,
+        "combined_score": 0.2044,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 79,
+        "Target_ID": 163,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0097,
+        "combined_score": 0.2039,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 77,
+        "Target_ID": 164,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.1497,
+        "combined_score": 0.2099,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.25) | 시나리오 유사도=0.15 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 11,
+        "Target_ID": 164,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['docker'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 76,
+        "Target_ID": 164,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0341,
+        "combined_score": 0.1636,
+        "Logic": "공통 스킬 ['kubernetes'] (Jaccard=0.25) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 20,
+        "Target_ID": 165,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0344,
+        "combined_score": 0.2138,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 157,
+        "Target_ID": 165,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.01,
+        "combined_score": 0.204,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 73,
+        "Target_ID": 165,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 167,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 152,
+        "Target_ID": 167,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0263,
+        "combined_score": 0.3105,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 159,
+        "Target_ID": 167,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0203,
+        "combined_score": 0.3081,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.33) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 19,
+        "Target_ID": 168,
+        "skill_overlap": 0.6667,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.5,
+        "Logic": "공통 스킬 ['auto scaling', 'aws'] (Jaccard=0.67) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Infra)"
+      },
+      {
+        "Preceding_ID": 75,
+        "Target_ID": 168,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0119,
+        "combined_score": 0.2548,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.25) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level | 동일 카테고리(Infra)"
+      },
+      {
+        "Preceding_ID": 112,
+        "Target_ID": 168,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0533,
+        "combined_score": 0.1713,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.25) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 120,
+        "Target_ID": 169,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0456,
+        "combined_score": 0.7182,
+        "Logic": "공통 스킬 ['memory management', 'redis'] (Jaccard=1.00) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 20,
+        "Target_ID": 169,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0251,
+        "combined_score": 0.31,
+        "Logic": "공통 스킬 ['redis'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 12,
+        "Target_ID": 169,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['memory management'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 13,
+        "Target_ID": 170,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0454,
+        "combined_score": 0.2182,
+        "Logic": "공통 스킬 ['prometheus'] (Jaccard=0.33) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 76,
+        "Target_ID": 171,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0413,
+        "combined_score": 0.2165,
+        "Logic": "공통 스킬 ['kubernetes'] (Jaccard=0.33) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 156,
+        "Target_ID": 172,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['msa', 'system design'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Architecture)"
+      },
+      {
+        "Preceding_ID": 112,
+        "Target_ID": 172,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0095,
+        "combined_score": 0.2038,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.33) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 157,
+        "Target_ID": 173,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(System Design)"
+      },
+      {
+        "Preceding_ID": 156,
+        "Target_ID": 173,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0363,
+        "combined_score": 0.2145,
+        "Logic": "공통 스킬 ['msa'] (Jaccard=0.33) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 20,
+        "Target_ID": 173,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 174,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 159,
+        "Target_ID": 174,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0346,
+        "combined_score": 0.2639,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.25) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 83,
+        "Target_ID": 174,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 106,
+        "Target_ID": 175,
+        "skill_overlap": 0.6667,
+        "scenario_similarity": 0.033,
+        "combined_score": 0.5132,
+        "Logic": "공통 스킬 ['java', 'spring boot'] (Jaccard=0.67) | 시나리오 유사도=0.03 | 난이도 junior_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 62,
+        "Target_ID": 175,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1435,
+        "combined_score": 0.3574,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.33) | 시나리오 유사도=0.14 | 난이도 junior_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 12,
+        "Target_ID": 175,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0942,
+        "combined_score": 0.3377,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.33) | 시나리오 유사도=0.09 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 69,
+        "Target_ID": 176,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['api design'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 69,
+        "Target_ID": 177,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0355,
+        "combined_score": 0.4142,
+        "Logic": "공통 스킬 ['api design'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 junior_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 50,
+        "Target_ID": 179,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0124,
+        "combined_score": 0.305,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 179,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0108,
+        "combined_score": 0.3043,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 74,
+        "Target_ID": 179,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 20,
+        "Target_ID": 180,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['redis'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 73,
+        "Target_ID": 180,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['redis'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 120,
+        "Target_ID": 180,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['redis'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 181,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 74,
+        "Target_ID": 181,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 118,
+        "Target_ID": 181,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0174,
+        "combined_score": 0.307,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.33) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 85,
+        "Target_ID": 182,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0693,
+        "combined_score": 0.3277,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.33) | 시나리오 유사도=0.07 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 119,
+        "Target_ID": 182,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0684,
+        "combined_score": 0.3274,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.33) | 시나리오 유사도=0.07 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 112,
+        "Target_ID": 182,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 83,
+        "Target_ID": 183,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0964,
+        "combined_score": 0.7385,
+        "Logic": "공통 스킬 ['oauth2', 'security'] (Jaccard=1.00) | 시나리오 유사도=0.10 | 난이도 middle_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 183,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 152,
+        "Target_ID": 183,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 71,
+        "Target_ID": 184,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0647,
+        "combined_score": 0.3259,
+        "Logic": "공통 스킬 ['concurrency'] (Jaccard=0.33) | 시나리오 유사도=0.06 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 68,
+        "Target_ID": 185,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['ci/cd'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(DevOps)"
+      },
+      {
+        "Preceding_ID": 125,
+        "Target_ID": 185,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1272,
+        "combined_score": 0.3509,
+        "Logic": "공통 스킬 ['ci/cd'] (Jaccard=0.33) | 시나리오 유사도=0.13 | 난이도 middle_level → senior_level | 동일 카테고리(DevOps)"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 185,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 186,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 66,
+        "Target_ID": 186,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 15,
+        "Target_ID": 186,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0989,
+        "combined_score": 0.3395,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.33) | 시나리오 유사도=0.10 | 난이도 middle_level → senior_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 119,
+        "Target_ID": 187,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0819,
+        "combined_score": 0.3328,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.33) | 시나리오 유사도=0.08 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 85,
+        "Target_ID": 187,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0299,
+        "combined_score": 0.312,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 112,
+        "Target_ID": 187,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['aws'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud)"
+      },
+      {
+        "Preceding_ID": 53,
+        "Target_ID": 188,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 62,
+        "Target_ID": 188,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 12,
+        "Target_ID": 188,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 158,
+        "Target_ID": 189,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['observability'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 156,
+        "Target_ID": 191,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['msa', 'system design'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 112,
+        "Target_ID": 191,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 69,
+        "Target_ID": 192,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['api design'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 156,
+        "Target_ID": 192,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['msa'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Architecture)"
+      },
+      {
+        "Preceding_ID": 68,
+        "Target_ID": 193,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['ci/cd'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(DevOps)"
+      },
+      {
+        "Preceding_ID": 125,
+        "Target_ID": 193,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.052,
+        "combined_score": 0.3208,
+        "Logic": "공통 스킬 ['ci/cd'] (Jaccard=0.33) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level | 동일 카테고리(DevOps)"
+      },
+      {
+        "Preceding_ID": 76,
+        "Target_ID": 193,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['kubernetes'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(DevOps)"
+      },
+      {
+        "Preceding_ID": 106,
+        "Target_ID": 194,
+        "skill_overlap": 0.6667,
+        "scenario_similarity": 0.008,
+        "combined_score": 0.5032,
+        "Logic": "공통 스킬 ['java', 'spring boot'] (Jaccard=0.67) | 시나리오 유사도=0.01 | 난이도 junior_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 53,
+        "Target_ID": 194,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 62,
+        "Target_ID": 194,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['java'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(Backend)"
+      },
+      {
+        "Preceding_ID": 81,
+        "Target_ID": 195,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0596,
+        "combined_score": 0.2238,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.06 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 157,
+        "Target_ID": 195,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0135,
+        "combined_score": 0.2054,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 20,
+        "Target_ID": 195,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 69,
+        "Target_ID": 196,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['api design'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 197,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.013,
+        "combined_score": 0.3052,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 46,
+        "Target_ID": 197,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0095,
+        "combined_score": 0.3038,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 66,
+        "Target_ID": 197,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 102,
+        "Target_ID": 199,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0286,
+        "combined_score": 0.4114,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 university_level → senior_level | 동일 카테고리(Network)"
+      },
+      {
+        "Preceding_ID": 42,
+        "Target_ID": 199,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Network)"
+      },
+      {
+        "Preceding_ID": 54,
+        "Target_ID": 199,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Network)"
+      },
+      {
+        "Preceding_ID": 122,
+        "Target_ID": 200,
+        "skill_overlap": 0.6667,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['kafka', 'message queue'] (Jaccard=0.67) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 157,
+        "Target_ID": 200,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['message queue'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      }
+    ]
+  },
+  "ordered_path": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    41,
+    42,
+    43,
+    44,
+    45,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    101,
+    102,
+    103,
+    104,
+    105,
+    6,
+    8,
+    9,
+    10,
+    48,
+    49,
+    63,
+    65,
+    67,
+    68,
+    69,
+    70,
+    107,
+    109,
+    7,
+    46,
+    62,
+    66,
+    106,
+    50,
+    64,
+    108,
+    110,
+    47,
+    61,
+    11,
+    13,
+    19,
+    20,
+    72,
+    73,
+    76,
+    77,
+    78,
+    79,
+    81,
+    112,
+    120,
+    122,
+    151,
+    156,
+    157,
+    158,
+    14,
+    18,
+    80,
+    83,
+    116,
+    125,
+    152,
+    159,
+    16,
+    17,
+    121,
+    124,
+    160,
+    12,
+    15,
+    71,
+    74,
+    75,
+    82,
+    84,
+    85,
+    111,
+    113,
+    114,
+    115,
+    117,
+    118,
+    119,
+    123,
+    153,
+    154,
+    155,
+    22,
+    27,
+    30,
+    31,
+    39,
+    40,
+    93,
+    140,
+    141,
+    166,
+    178,
+    190,
+    198,
+    21,
+    23,
+    26,
+    33,
+    37,
+    91,
+    96,
+    100,
+    135,
+    150,
+    162,
+    170,
+    171,
+    176,
+    177,
+    184,
+    189,
+    196,
+    94,
+    99,
+    143,
+    146,
+    172,
+    191,
+    192,
+    200,
+    24,
+    25,
+    28,
+    29,
+    32,
+    34,
+    35,
+    36,
+    38,
+    86,
+    87,
+    88,
+    89,
+    90,
+    92,
+    95,
+    97,
+    98,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    136,
+    137,
+    138,
+    139,
+    142,
+    144,
+    145,
+    147,
+    148,
+    149,
+    161,
+    163,
+    164,
+    165,
+    167,
+    168,
+    169,
+    173,
+    174,
+    175,
+    179,
+    180,
+    181,
+    182,
+    183,
+    185,
+    186,
+    187,
+    188,
+    193,
+    194,
+    195,
+    197,
+    199
+  ],
+  "isolated_problems": [
+    4,
+    22,
+    27,
+    30,
+    31,
+    39,
+    40,
+    43,
+    44,
+    45,
+    48,
+    49,
+    59,
+    63,
+    65,
+    70,
+    78,
+    93,
+    109,
+    140,
+    141,
+    166,
+    178,
+    190,
+    198
+  ]
+}

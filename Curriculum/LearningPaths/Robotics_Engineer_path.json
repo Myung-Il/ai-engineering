@@ -1,0 +1,7019 @@
+{
+  "metadata": {
+    "job_role": "Robotics_Engineer",
+    "source_file": "Robotics_Engineer.json",
+    "total_problems": 200,
+    "difficulty_distribution": {
+      "university_level": 25,
+      "junior_level": 25,
+      "middle_level": 50,
+      "senior_level": 100
+    },
+    "cluster_count": 156,
+    "edge_count": 355,
+    "isolated_problem_count": 19,
+    "parameters": {
+      "skill_weight": 0.6,
+      "scenario_weight": 0.4,
+      "min_combined_score": 0.15,
+      "max_prereqs_per_target": 3,
+      "same_category_bonus": 0.1
+    }
+  },
+  "clusters": [
+    {
+      "cluster_id": "Programming__C++",
+      "category": "Programming",
+      "subcategory": "C++",
+      "size": 6,
+      "question_ids": [
+        22,
+        27,
+        32,
+        35,
+        37,
+        79
+      ],
+      "common_skills": [
+        "C++"
+      ]
+    },
+    {
+      "cluster_id": "Algorithm__Path Planning",
+      "category": "Algorithm",
+      "subcategory": "Path Planning",
+      "size": 4,
+      "question_ids": [
+        7,
+        18,
+        74,
+        138
+      ],
+      "common_skills": [
+        "Algorithm",
+        "Math"
+      ]
+    },
+    {
+      "cluster_id": "Programming__Python",
+      "category": "Programming",
+      "subcategory": "Python",
+      "size": 4,
+      "question_ids": [
+        26,
+        31,
+        40,
+        77
+      ],
+      "common_skills": [
+        "Python",
+        "ROS"
+      ]
+    },
+    {
+      "cluster_id": "Sensors__Camera",
+      "category": "Sensors",
+      "subcategory": "Camera",
+      "size": 4,
+      "question_ids": [
+        16,
+        39,
+        49,
+        83
+      ],
+      "common_skills": [
+        "Linux",
+        "Hardware",
+        "Udev",
+        "Computer Vision"
+      ]
+    },
+    {
+      "cluster_id": "System__Timing",
+      "category": "System",
+      "subcategory": "Timing",
+      "size": 4,
+      "question_ids": [
+        44,
+        84,
+        157,
+        183
+      ],
+      "common_skills": [
+        "Linux",
+        "NTP",
+        "ROS",
+        "Sensors",
+        "System Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Algorithm__Control",
+      "category": "Algorithm",
+      "subcategory": "Control",
+      "size": 3,
+      "question_ids": [
+        108,
+        144,
+        199
+      ],
+      "common_skills": [
+        "Math",
+        "Control Theory",
+        "Optimization",
+        "Algorithm"
+      ]
+    },
+    {
+      "cluster_id": "Algorithm__SLAM",
+      "category": "Algorithm",
+      "subcategory": "SLAM",
+      "size": 3,
+      "question_ids": [
+        14,
+        53,
+        63
+      ],
+      "common_skills": [
+        "SLAM",
+        "Algorithm",
+        "Optimization"
+      ]
+    },
+    {
+      "cluster_id": "Algorithm__Vision",
+      "category": "Algorithm",
+      "subcategory": "Vision",
+      "size": 3,
+      "question_ids": [
+        115,
+        134,
+        172
+      ],
+      "common_skills": [
+        "C++",
+        "CUDA",
+        "GPU",
+        "Computer Vision"
+      ]
+    },
+    {
+      "cluster_id": "Software__Build",
+      "category": "Software",
+      "subcategory": "Build",
+      "size": 3,
+      "question_ids": [
+        91,
+        148,
+        161
+      ],
+      "common_skills": [
+        "Linux",
+        "CMake",
+        "Docker",
+        "C++"
+      ]
+    },
+    {
+      "cluster_id": "Software__Middleware",
+      "category": "Software",
+      "subcategory": "Middleware",
+      "size": 3,
+      "question_ids": [
+        64,
+        119,
+        132
+      ],
+      "common_skills": [
+        "ROS2",
+        "System Architecture",
+        "System Design"
+      ]
+    },
+    {
+      "cluster_id": "Software__ROS2",
+      "category": "Software",
+      "subcategory": "ROS2",
+      "size": 3,
+      "question_ids": [
+        68,
+        113,
+        158
+      ],
+      "common_skills": [
+        "ROS2",
+        "Security",
+        "System Design",
+        "Network"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Cloud",
+      "category": "Architecture",
+      "subcategory": "Cloud",
+      "size": 2,
+      "question_ids": [
+        131,
+        189
+      ],
+      "common_skills": [
+        "Cloud",
+        "Kubernetes",
+        "Docker",
+        "AWS"
+      ]
+    },
+    {
+      "cluster_id": "Control__Kinematics",
+      "category": "Control",
+      "subcategory": "Kinematics",
+      "size": 2,
+      "question_ids": [
+        75,
+        97
+      ],
+      "common_skills": [
+        "Math"
+      ]
+    },
+    {
+      "cluster_id": "Control__PID",
+      "category": "Control",
+      "subcategory": "PID",
+      "size": 2,
+      "question_ids": [
+        2,
+        11
+      ],
+      "common_skills": [
+        "Control Theory"
+      ]
+    },
+    {
+      "cluster_id": "Git__Version Control",
+      "category": "Git",
+      "subcategory": "Version Control",
+      "size": 2,
+      "question_ids": [
+        24,
+        80
+      ],
+      "common_skills": [
+        "Git"
+      ]
+    },
+    {
+      "cluster_id": "Hardware__Compute",
+      "category": "Hardware",
+      "subcategory": "Compute",
+      "size": 2,
+      "question_ids": [
+        120,
+        159
+      ],
+      "common_skills": [
+        "System Design"
+      ]
+    },
+    {
+      "cluster_id": "Hardware__Datasheet",
+      "category": "Hardware",
+      "subcategory": "Datasheet",
+      "size": 2,
+      "question_ids": [
+        104,
+        151
+      ],
+      "common_skills": [
+        "Hardware"
+      ]
+    },
+    {
+      "cluster_id": "Hardware__Sensors",
+      "category": "Hardware",
+      "subcategory": "Sensors",
+      "size": 2,
+      "question_ids": [
+        67,
+        135
+      ],
+      "common_skills": [
+        "System Design",
+        "Safety"
+      ]
+    },
+    {
+      "cluster_id": "Math__Kinematics",
+      "category": "Math",
+      "subcategory": "Kinematics",
+      "size": 2,
+      "question_ids": [
+        15,
+        71
+      ],
+      "common_skills": [
+        "Math",
+        "Linear Algebra"
+      ]
+    },
+    {
+      "cluster_id": "Math__Numpy",
+      "category": "Math",
+      "subcategory": "Numpy",
+      "size": 2,
+      "question_ids": [
+        30,
+        34
+      ],
+      "common_skills": [
+        "Python",
+        "Math"
+      ]
+    },
+    {
+      "cluster_id": "OS__Linux",
+      "category": "OS",
+      "subcategory": "Linux",
+      "size": 2,
+      "question_ids": [
+        21,
+        78
+      ],
+      "common_skills": [
+        "Linux"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Fleet",
+      "category": "Operations",
+      "subcategory": "Fleet",
+      "size": 2,
+      "question_ids": [
+        125,
+        155
+      ],
+      "common_skills": [
+        "Cloud",
+        "System Design",
+        "Message Broker"
+      ]
+    },
+    {
+      "cluster_id": "Sensors__IMU",
+      "category": "Sensors",
+      "subcategory": "IMU",
+      "size": 2,
+      "question_ids": [
+        9,
+        54
+      ],
+      "common_skills": [
+        "Sensors",
+        "Math"
+      ]
+    },
+    {
+      "cluster_id": "Sensors__LiDAR",
+      "category": "Sensors",
+      "subcategory": "LiDAR",
+      "size": 2,
+      "question_ids": [
+        3,
+        51
+      ],
+      "common_skills": [
+        "Hardware",
+        "Data Analysis"
+      ]
+    },
+    {
+      "cluster_id": "Software__REST",
+      "category": "Software",
+      "subcategory": "REST",
+      "size": 2,
+      "question_ids": [
+        123,
+        152
+      ],
+      "common_skills": [
+        "Software Engineering",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Software__ROS",
+      "category": "Software",
+      "subcategory": "ROS",
+      "size": 2,
+      "question_ids": [
+        147,
+        188
+      ],
+      "common_skills": [
+        "Software Engineering"
+      ]
+    },
+    {
+      "cluster_id": "Algorithm__Complexity",
+      "category": "Algorithm",
+      "subcategory": "Complexity",
+      "size": 1,
+      "question_ids": [
+        128
+      ],
+      "common_skills": [
+        "Algorithm"
+      ]
+    },
+    {
+      "cluster_id": "Algorithm__Filtering",
+      "category": "Algorithm",
+      "subcategory": "Filtering",
+      "size": 1,
+      "question_ids": [
+        162
+      ],
+      "common_skills": [
+        "Algorithm",
+        "Math"
+      ]
+    },
+    {
+      "cluster_id": "Algorithm__Localization",
+      "category": "Algorithm",
+      "subcategory": "Localization",
+      "size": 1,
+      "question_ids": [
+        60
+      ],
+      "common_skills": [
+        "Algorithm"
+      ]
+    },
+    {
+      "cluster_id": "Algorithm__Mapping",
+      "category": "Algorithm",
+      "subcategory": "Mapping",
+      "size": 1,
+      "question_ids": [
+        117
+      ],
+      "common_skills": [
+        "SLAM"
+      ]
+    },
+    {
+      "cluster_id": "Algorithm__Motion Planning",
+      "category": "Algorithm",
+      "subcategory": "Motion Planning",
+      "size": 1,
+      "question_ids": [
+        121
+      ],
+      "common_skills": [
+        "Math",
+        "Algorithm"
+      ]
+    },
+    {
+      "cluster_id": "Algorithm__Navigation",
+      "category": "Algorithm",
+      "subcategory": "Navigation",
+      "size": 1,
+      "question_ids": [
+        114
+      ],
+      "common_skills": [
+        "Navigation",
+        "Safety"
+      ]
+    },
+    {
+      "cluster_id": "Algorithm__Performance",
+      "category": "Algorithm",
+      "subcategory": "Performance",
+      "size": 1,
+      "question_ids": [
+        178
+      ],
+      "common_skills": [
+        "C++"
+      ]
+    },
+    {
+      "cluster_id": "Algorithm__Safety",
+      "category": "Algorithm",
+      "subcategory": "Safety",
+      "size": 1,
+      "question_ids": [
+        156
+      ],
+      "common_skills": [
+        "Algorithm"
+      ]
+    },
+    {
+      "cluster_id": "Algorithm__Sensor Fusion",
+      "category": "Algorithm",
+      "subcategory": "Sensor Fusion",
+      "size": 1,
+      "question_ids": [
+        149
+      ],
+      "common_skills": [
+        "Math",
+        "SLAM"
+      ]
+    },
+    {
+      "cluster_id": "Algorithm__TF",
+      "category": "Algorithm",
+      "subcategory": "TF",
+      "size": 1,
+      "question_ids": [
+        43
+      ],
+      "common_skills": [
+        "ROS",
+        "TF"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Cloud Robotics",
+      "category": "Architecture",
+      "subcategory": "Cloud Robotics",
+      "size": 1,
+      "question_ids": [
+        61
+      ],
+      "common_skills": [
+        "Cloud",
+        "ROS",
+        "Networking"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Consensus",
+      "category": "Architecture",
+      "subcategory": "Consensus",
+      "size": 1,
+      "question_ids": [
+        141
+      ],
+      "common_skills": [
+        "System Design",
+        "Cloud"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Database",
+      "category": "Architecture",
+      "subcategory": "Database",
+      "size": 1,
+      "question_ids": [
+        146
+      ],
+      "common_skills": [
+        "Database",
+        "Cloud"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Edge",
+      "category": "Architecture",
+      "subcategory": "Edge",
+      "size": 1,
+      "question_ids": [
+        101
+      ],
+      "common_skills": [
+        "Cloud",
+        "Edge"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Middleware",
+      "category": "Architecture",
+      "subcategory": "Middleware",
+      "size": 1,
+      "question_ids": [
+        57
+      ],
+      "common_skills": [
+        "System Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Node",
+      "category": "Architecture",
+      "subcategory": "Node",
+      "size": 1,
+      "question_ids": [
+        93
+      ],
+      "common_skills": [
+        "ROS"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__State",
+      "category": "Architecture",
+      "subcategory": "State",
+      "size": 1,
+      "question_ids": [
+        180
+      ],
+      "common_skills": [
+        "Cloud",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__Compute",
+      "category": "Cloud",
+      "subcategory": "Compute",
+      "size": 1,
+      "question_ids": [
+        166
+      ],
+      "common_skills": [
+        "Cloud",
+        "Kubernetes"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__Data Pipeline",
+      "category": "Cloud",
+      "subcategory": "Data Pipeline",
+      "size": 1,
+      "question_ids": [
+        137
+      ],
+      "common_skills": [
+        "Cloud",
+        "AWS"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__Fleet Management",
+      "category": "Cloud",
+      "subcategory": "Fleet Management",
+      "size": 1,
+      "question_ids": [
+        69
+      ],
+      "common_skills": [
+        "Cloud",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__Microservices",
+      "category": "Cloud",
+      "subcategory": "Microservices",
+      "size": 1,
+      "question_ids": [
+        126
+      ],
+      "common_skills": [
+        "Docker",
+        "Kubernetes"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__Network",
+      "category": "Cloud",
+      "subcategory": "Network",
+      "size": 1,
+      "question_ids": [
+        192
+      ],
+      "common_skills": [
+        "Network",
+        "Cloud"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__Processing",
+      "category": "Cloud",
+      "subcategory": "Processing",
+      "size": 1,
+      "question_ids": [
+        173
+      ],
+      "common_skills": [
+        "Cloud",
+        "Edge"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__Storage",
+      "category": "Cloud",
+      "subcategory": "Storage",
+      "size": 1,
+      "question_ids": [
+        111
+      ],
+      "common_skills": [
+        "System Design",
+        "Cloud"
+      ]
+    },
+    {
+      "cluster_id": "Control__Dynamics",
+      "category": "Control",
+      "subcategory": "Dynamics",
+      "size": 1,
+      "question_ids": [
+        6
+      ],
+      "common_skills": [
+        "Physics"
+      ]
+    },
+    {
+      "cluster_id": "Control__Motor",
+      "category": "Control",
+      "subcategory": "Motor",
+      "size": 1,
+      "question_ids": [
+        17
+      ],
+      "common_skills": [
+        "Hardware"
+      ]
+    },
+    {
+      "cluster_id": "Control__Network",
+      "category": "Control",
+      "subcategory": "Network",
+      "size": 1,
+      "question_ids": [
+        42
+      ],
+      "common_skills": [
+        "Network",
+        "Linux"
+      ]
+    },
+    {
+      "cluster_id": "Control__Plot",
+      "category": "Control",
+      "subcategory": "Plot",
+      "size": 1,
+      "question_ids": [
+        52
+      ],
+      "common_skills": [
+        "Data Analysis"
+      ]
+    },
+    {
+      "cluster_id": "Control__Real-time",
+      "category": "Control",
+      "subcategory": "Real-time",
+      "size": 1,
+      "question_ids": [
+        112
+      ],
+      "common_skills": [
+        "System Architecture",
+        "C++"
+      ]
+    },
+    {
+      "cluster_id": "Control__Safety",
+      "category": "Control",
+      "subcategory": "Safety",
+      "size": 1,
+      "question_ids": [
+        59
+      ],
+      "common_skills": [
+        "Hardware",
+        "Software"
+      ]
+    },
+    {
+      "cluster_id": "Control__Topology",
+      "category": "Control",
+      "subcategory": "Topology",
+      "size": 1,
+      "question_ids": [
+        182
+      ],
+      "common_skills": [
+        "System Architecture",
+        "Hardware"
+      ]
+    },
+    {
+      "cluster_id": "Data Pipeline__Logging",
+      "category": "Data Pipeline",
+      "subcategory": "Logging",
+      "size": 1,
+      "question_ids": [
+        62
+      ],
+      "common_skills": [
+        "Database",
+        "System Design"
+      ]
+    },
+    {
+      "cluster_id": "Data Pipeline__Storage",
+      "category": "Data Pipeline",
+      "subcategory": "Storage",
+      "size": 1,
+      "question_ids": [
+        181
+      ],
+      "common_skills": [
+        "Database",
+        "Cloud"
+      ]
+    },
+    {
+      "cluster_id": "Data__Logging",
+      "category": "Data",
+      "subcategory": "Logging",
+      "size": 1,
+      "question_ids": [
+        110
+      ],
+      "common_skills": [
+        "Database"
+      ]
+    },
+    {
+      "cluster_id": "Data__Time-Series",
+      "category": "Data",
+      "subcategory": "Time-Series",
+      "size": 1,
+      "question_ids": [
+        153
+      ],
+      "common_skills": [
+        "Database"
+      ]
+    },
+    {
+      "cluster_id": "Database__Cache",
+      "category": "Database",
+      "subcategory": "Cache",
+      "size": 1,
+      "question_ids": [
+        195
+      ],
+      "common_skills": [
+        "Database",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Database__Query",
+      "category": "Database",
+      "subcategory": "Query",
+      "size": 1,
+      "question_ids": [
+        87
+      ],
+      "common_skills": [
+        "Database"
+      ]
+    },
+    {
+      "cluster_id": "Docker__Permissions",
+      "category": "Docker",
+      "subcategory": "Permissions",
+      "size": 1,
+      "question_ids": [
+        47
+      ],
+      "common_skills": [
+        "Docker",
+        "Linux"
+      ]
+    },
+    {
+      "cluster_id": "Hardware__Diagnostics",
+      "category": "Hardware",
+      "subcategory": "Diagnostics",
+      "size": 1,
+      "question_ids": [
+        177
+      ],
+      "common_skills": [
+        "System Design"
+      ]
+    },
+    {
+      "cluster_id": "Hardware__HIL",
+      "category": "Hardware",
+      "subcategory": "HIL",
+      "size": 1,
+      "question_ids": [
+        99
+      ],
+      "common_skills": [
+        "Hardware",
+        "Testing"
+      ]
+    },
+    {
+      "cluster_id": "Hardware__I2C",
+      "category": "Hardware",
+      "subcategory": "I2C",
+      "size": 1,
+      "question_ids": [
+        96
+      ],
+      "common_skills": [
+        "Hardware"
+      ]
+    },
+    {
+      "cluster_id": "Hardware__Interfaces",
+      "category": "Hardware",
+      "subcategory": "Interfaces",
+      "size": 1,
+      "question_ids": [
+        25
+      ],
+      "common_skills": [
+        "Hardware"
+      ]
+    },
+    {
+      "cluster_id": "Hardware__Networking",
+      "category": "Hardware",
+      "subcategory": "Networking",
+      "size": 1,
+      "question_ids": [
+        82
+      ],
+      "common_skills": [
+        "Linux",
+        "Network"
+      ]
+    },
+    {
+      "cluster_id": "Hardware__Power",
+      "category": "Hardware",
+      "subcategory": "Power",
+      "size": 1,
+      "question_ids": [
+        167
+      ],
+      "common_skills": [
+        "System Design"
+      ]
+    },
+    {
+      "cluster_id": "Hardware__Thermal",
+      "category": "Hardware",
+      "subcategory": "Thermal",
+      "size": 1,
+      "question_ids": [
+        184
+      ],
+      "common_skills": [
+        "System Design"
+      ]
+    },
+    {
+      "cluster_id": "Hardware__Wiring",
+      "category": "Hardware",
+      "subcategory": "Wiring",
+      "size": 1,
+      "question_ids": [
+        109
+      ],
+      "common_skills": [
+        "Hardware"
+      ]
+    },
+    {
+      "cluster_id": "Kinematics__Forward Kinematics",
+      "category": "Kinematics",
+      "subcategory": "Forward Kinematics",
+      "size": 1,
+      "question_ids": [
+        1
+      ],
+      "common_skills": [
+        "Math"
+      ]
+    },
+    {
+      "cluster_id": "Kinematics__Singularity",
+      "category": "Kinematics",
+      "subcategory": "Singularity",
+      "size": 1,
+      "question_ids": [
+        73
+      ],
+      "common_skills": [
+        "Math"
+      ]
+    },
+    {
+      "cluster_id": "Kinematics__TF",
+      "category": "Kinematics",
+      "subcategory": "TF",
+      "size": 1,
+      "question_ids": [
+        106
+      ],
+      "common_skills": [
+        "ROS",
+        "Math"
+      ]
+    },
+    {
+      "cluster_id": "Math__Probability",
+      "category": "Math",
+      "subcategory": "Probability",
+      "size": 1,
+      "question_ids": [
+        20
+      ],
+      "common_skills": [
+        "Math"
+      ]
+    },
+    {
+      "cluster_id": "Math__Quaternion",
+      "category": "Math",
+      "subcategory": "Quaternion",
+      "size": 1,
+      "question_ids": [
+        10
+      ],
+      "common_skills": [
+        "Math"
+      ]
+    },
+    {
+      "cluster_id": "Math__Transformations",
+      "category": "Math",
+      "subcategory": "Transformations",
+      "size": 1,
+      "question_ids": [
+        5
+      ],
+      "common_skills": [
+        "Linear Algebra"
+      ]
+    },
+    {
+      "cluster_id": "Navigation__Costmap",
+      "category": "Navigation",
+      "subcategory": "Costmap",
+      "size": 1,
+      "question_ids": [
+        41
+      ],
+      "common_skills": [
+        "ROS",
+        "Navigation"
+      ]
+    },
+    {
+      "cluster_id": "Navigation__Localization",
+      "category": "Navigation",
+      "subcategory": "Localization",
+      "size": 1,
+      "question_ids": [
+        175
+      ],
+      "common_skills": [
+        "SLAM"
+      ]
+    },
+    {
+      "cluster_id": "Navigation__Parameters",
+      "category": "Navigation",
+      "subcategory": "Parameters",
+      "size": 1,
+      "question_ids": [
+        48
+      ],
+      "common_skills": [
+        "ROS",
+        "Navigation"
+      ]
+    },
+    {
+      "cluster_id": "Navigation__Recovery",
+      "category": "Navigation",
+      "subcategory": "Recovery",
+      "size": 1,
+      "question_ids": [
+        56
+      ],
+      "common_skills": [
+        "ROS",
+        "Navigation"
+      ]
+    },
+    {
+      "cluster_id": "Network__Bandwidth",
+      "category": "Network",
+      "subcategory": "Bandwidth",
+      "size": 1,
+      "question_ids": [
+        140
+      ],
+      "common_skills": [
+        "System Design",
+        "Network"
+      ]
+    },
+    {
+      "cluster_id": "Network__Firewall",
+      "category": "Network",
+      "subcategory": "Firewall",
+      "size": 1,
+      "question_ids": [
+        127
+      ],
+      "common_skills": [
+        "Security",
+        "Network"
+      ]
+    },
+    {
+      "cluster_id": "Network__IP",
+      "category": "Network",
+      "subcategory": "IP",
+      "size": 1,
+      "question_ids": [
+        95
+      ],
+      "common_skills": [
+        "Network"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Chaos",
+      "category": "Operations",
+      "subcategory": "Chaos",
+      "size": 1,
+      "question_ids": [
+        194
+      ],
+      "common_skills": [
+        "DevOps"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Database",
+      "category": "Operations",
+      "subcategory": "Database",
+      "size": 1,
+      "question_ids": [
+        176
+      ],
+      "common_skills": [
+        "Database",
+        "Cloud"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Deployment",
+      "category": "Operations",
+      "subcategory": "Deployment",
+      "size": 1,
+      "question_ids": [
+        70
+      ],
+      "common_skills": [
+        "DevOps",
+        "Linux"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Docker",
+      "category": "Operations",
+      "subcategory": "Docker",
+      "size": 1,
+      "question_ids": [
+        85
+      ],
+      "common_skills": [
+        "Docker"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Failure",
+      "category": "Operations",
+      "subcategory": "Failure",
+      "size": 1,
+      "question_ids": [
+        133
+      ],
+      "common_skills": [
+        "DevOps",
+        "Linux"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Memory",
+      "category": "Operations",
+      "subcategory": "Memory",
+      "size": 1,
+      "question_ids": [
+        118
+      ],
+      "common_skills": [
+        "Linux",
+        "C++"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Observability",
+      "category": "Operations",
+      "subcategory": "Observability",
+      "size": 1,
+      "question_ids": [
+        143
+      ],
+      "common_skills": [
+        "DevOps",
+        "Cloud"
+      ]
+    },
+    {
+      "cluster_id": "Path Planning__Spline",
+      "category": "Path Planning",
+      "subcategory": "Spline",
+      "size": 1,
+      "question_ids": [
+        86
+      ],
+      "common_skills": [
+        "Math",
+        "Algorithm"
+      ]
+    },
+    {
+      "cluster_id": "Perception__Computer Vision",
+      "category": "Perception",
+      "subcategory": "Computer Vision",
+      "size": 1,
+      "question_ids": [
+        12
+      ],
+      "common_skills": [
+        "OpenCV"
+      ]
+    },
+    {
+      "cluster_id": "Perception__Edge",
+      "category": "Perception",
+      "subcategory": "Edge",
+      "size": 1,
+      "question_ids": [
+        154
+      ],
+      "common_skills": [
+        "Computer Vision",
+        "Edge"
+      ]
+    },
+    {
+      "cluster_id": "Perception__OpenCV",
+      "category": "Perception",
+      "subcategory": "OpenCV",
+      "size": 1,
+      "question_ids": [
+        29
+      ],
+      "common_skills": [
+        "Python",
+        "OpenCV"
+      ]
+    },
+    {
+      "cluster_id": "Perception__Sensor",
+      "category": "Perception",
+      "subcategory": "Sensor",
+      "size": 1,
+      "question_ids": [
+        186
+      ],
+      "common_skills": [
+        "Hardware",
+        "Vision"
+      ]
+    },
+    {
+      "cluster_id": "Perception__Vision",
+      "category": "Perception",
+      "subcategory": "Vision",
+      "size": 1,
+      "question_ids": [
+        65
+      ],
+      "common_skills": [
+        "CUDA",
+        "C++",
+        "Vision"
+      ]
+    },
+    {
+      "cluster_id": "Planning__Graph",
+      "category": "Planning",
+      "subcategory": "Graph",
+      "size": 1,
+      "question_ids": [
+        190
+      ],
+      "common_skills": [
+        "Algorithm"
+      ]
+    },
+    {
+      "cluster_id": "Planning__Trajectory",
+      "category": "Planning",
+      "subcategory": "Trajectory",
+      "size": 1,
+      "question_ids": [
+        168
+      ],
+      "common_skills": [
+        "Algorithm",
+        "Control"
+      ]
+    },
+    {
+      "cluster_id": "Programming__Bash",
+      "category": "Programming",
+      "subcategory": "Bash",
+      "size": 1,
+      "question_ids": [
+        33
+      ],
+      "common_skills": [
+        "Linux"
+      ]
+    },
+    {
+      "cluster_id": "Programming__Concurrency",
+      "category": "Programming",
+      "subcategory": "Concurrency",
+      "size": 1,
+      "question_ids": [
+        100
+      ],
+      "common_skills": [
+        "C++"
+      ]
+    },
+    {
+      "cluster_id": "Programming__Memory",
+      "category": "Programming",
+      "subcategory": "Memory",
+      "size": 1,
+      "question_ids": [
+        45
+      ],
+      "common_skills": [
+        "C++",
+        "Linux"
+      ]
+    },
+    {
+      "cluster_id": "Programming__OOP",
+      "category": "Programming",
+      "subcategory": "OOP",
+      "size": 1,
+      "question_ids": [
+        103
+      ],
+      "common_skills": [
+        "C++"
+      ]
+    },
+    {
+      "cluster_id": "ROS2__DDS",
+      "category": "ROS2",
+      "subcategory": "DDS",
+      "size": 1,
+      "question_ids": [
+        46
+      ],
+      "common_skills": [
+        "ROS2",
+        "Network"
+      ]
+    },
+    {
+      "cluster_id": "ROS2__Nav2",
+      "category": "ROS2",
+      "subcategory": "Nav2",
+      "size": 1,
+      "question_ids": [
+        81
+      ],
+      "common_skills": [
+        "ROS2",
+        "Navigation"
+      ]
+    },
+    {
+      "cluster_id": "ROS2__QoS",
+      "category": "ROS2",
+      "subcategory": "QoS",
+      "size": 1,
+      "question_ids": [
+        23
+      ],
+      "common_skills": [
+        "ROS2"
+      ]
+    },
+    {
+      "cluster_id": "ROS__Architecture",
+      "category": "ROS",
+      "subcategory": "Architecture",
+      "size": 1,
+      "question_ids": [
+        13
+      ],
+      "common_skills": [
+        "ROS"
+      ]
+    },
+    {
+      "cluster_id": "ROS__Bag",
+      "category": "ROS",
+      "subcategory": "Bag",
+      "size": 1,
+      "question_ids": [
+        98
+      ],
+      "common_skills": [
+        "Data Analysis"
+      ]
+    },
+    {
+      "cluster_id": "ROS__Communication",
+      "category": "ROS",
+      "subcategory": "Communication",
+      "size": 1,
+      "question_ids": [
+        4
+      ],
+      "common_skills": [
+        "ROS"
+      ]
+    },
+    {
+      "cluster_id": "ROS__Messages",
+      "category": "ROS",
+      "subcategory": "Messages",
+      "size": 1,
+      "question_ids": [
+        19
+      ],
+      "common_skills": [
+        "ROS"
+      ]
+    },
+    {
+      "cluster_id": "ROS__Nodes",
+      "category": "ROS",
+      "subcategory": "Nodes",
+      "size": 1,
+      "question_ids": [
+        36
+      ],
+      "common_skills": [
+        "Python",
+        "ROS"
+      ]
+    },
+    {
+      "cluster_id": "ROS__Publisher",
+      "category": "ROS",
+      "subcategory": "Publisher",
+      "size": 1,
+      "question_ids": [
+        76
+      ],
+      "common_skills": [
+        "C++",
+        "ROS"
+      ]
+    },
+    {
+      "cluster_id": "ROS__Service",
+      "category": "ROS",
+      "subcategory": "Service",
+      "size": 1,
+      "question_ids": [
+        8
+      ],
+      "common_skills": [
+        "ROS"
+      ]
+    },
+    {
+      "cluster_id": "ROS__TF2",
+      "category": "ROS",
+      "subcategory": "TF2",
+      "size": 1,
+      "question_ids": [
+        28
+      ],
+      "common_skills": [
+        "ROS",
+        "C++"
+      ]
+    },
+    {
+      "cluster_id": "ROS__Topic",
+      "category": "ROS",
+      "subcategory": "Topic",
+      "size": 1,
+      "question_ids": [
+        38
+      ],
+      "common_skills": [
+        "ROS"
+      ]
+    },
+    {
+      "cluster_id": "Security__Network",
+      "category": "Security",
+      "subcategory": "Network",
+      "size": 1,
+      "question_ids": [
+        136
+      ],
+      "common_skills": [
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Security__OTA",
+      "category": "Security",
+      "subcategory": "OTA",
+      "size": 1,
+      "question_ids": [
+        116
+      ],
+      "common_skills": [
+        "Security",
+        "System Design"
+      ]
+    },
+    {
+      "cluster_id": "Security__Physical",
+      "category": "Security",
+      "subcategory": "Physical",
+      "size": 1,
+      "question_ids": [
+        185
+      ],
+      "common_skills": [
+        "Security",
+        "Network"
+      ]
+    },
+    {
+      "cluster_id": "Sensors__Filter",
+      "category": "Sensors",
+      "subcategory": "Filter",
+      "size": 1,
+      "question_ids": [
+        107
+      ],
+      "common_skills": [
+        "Algorithm"
+      ]
+    },
+    {
+      "cluster_id": "Sensors__Motor",
+      "category": "Sensors",
+      "subcategory": "Motor",
+      "size": 1,
+      "question_ids": [
+        72
+      ],
+      "common_skills": [
+        "Hardware"
+      ]
+    },
+    {
+      "cluster_id": "Sensors__Odometry",
+      "category": "Sensors",
+      "subcategory": "Odometry",
+      "size": 1,
+      "question_ids": [
+        94
+      ],
+      "common_skills": [
+        "Control"
+      ]
+    },
+    {
+      "cluster_id": "Software__Communication",
+      "category": "Software",
+      "subcategory": "Communication",
+      "size": 1,
+      "question_ids": [
+        142
+      ],
+      "common_skills": [
+        "Network",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Software__Concurrency",
+      "category": "Software",
+      "subcategory": "Concurrency",
+      "size": 1,
+      "question_ids": [
+        150
+      ],
+      "common_skills": [
+        "C++",
+        "System Design"
+      ]
+    },
+    {
+      "cluster_id": "Software__Deployment",
+      "category": "Software",
+      "subcategory": "Deployment",
+      "size": 1,
+      "question_ids": [
+        198
+      ],
+      "common_skills": [
+        "Docker",
+        "CI/CD"
+      ]
+    },
+    {
+      "cluster_id": "Software__Design Pattern",
+      "category": "Software",
+      "subcategory": "Design Pattern",
+      "size": 1,
+      "question_ids": [
+        129
+      ],
+      "common_skills": [
+        "Software Engineering"
+      ]
+    },
+    {
+      "cluster_id": "Software__Error Handling",
+      "category": "Software",
+      "subcategory": "Error Handling",
+      "size": 1,
+      "question_ids": [
+        165
+      ],
+      "common_skills": [
+        "Software Engineering"
+      ]
+    },
+    {
+      "cluster_id": "Software__Exceptions",
+      "category": "Software",
+      "subcategory": "Exceptions",
+      "size": 1,
+      "question_ids": [
+        130
+      ],
+      "common_skills": [
+        "C++"
+      ]
+    },
+    {
+      "cluster_id": "Software__GraphQL",
+      "category": "Software",
+      "subcategory": "GraphQL",
+      "size": 1,
+      "question_ids": [
+        179
+      ],
+      "common_skills": [
+        "Architecture",
+        "API"
+      ]
+    },
+    {
+      "cluster_id": "Software__Integration",
+      "category": "Software",
+      "subcategory": "Integration",
+      "size": 1,
+      "question_ids": [
+        171
+      ],
+      "common_skills": [
+        "DevOps",
+        "ROS"
+      ]
+    },
+    {
+      "cluster_id": "Software__Interface",
+      "category": "Software",
+      "subcategory": "Interface",
+      "size": 1,
+      "question_ids": [
+        105
+      ],
+      "common_skills": [
+        "System Design"
+      ]
+    },
+    {
+      "cluster_id": "Software__OOP",
+      "category": "Software",
+      "subcategory": "OOP",
+      "size": 1,
+      "question_ids": [
+        169
+      ],
+      "common_skills": [
+        "C++",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Software__OS",
+      "category": "Software",
+      "subcategory": "OS",
+      "size": 1,
+      "question_ids": [
+        174
+      ],
+      "common_skills": [
+        "System Design",
+        "Linux"
+      ]
+    },
+    {
+      "cluster_id": "Software__Parameters",
+      "category": "Software",
+      "subcategory": "Parameters",
+      "size": 1,
+      "question_ids": [
+        90
+      ],
+      "common_skills": [
+        "ROS",
+        "Software Engineering"
+      ]
+    },
+    {
+      "cluster_id": "Software__Patterns",
+      "category": "Software",
+      "subcategory": "Patterns",
+      "size": 1,
+      "question_ids": [
+        191
+      ],
+      "common_skills": [
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Software__Simulation",
+      "category": "Software",
+      "subcategory": "Simulation",
+      "size": 1,
+      "question_ids": [
+        89
+      ],
+      "common_skills": [
+        "CI/CD",
+        "ROS"
+      ]
+    },
+    {
+      "cluster_id": "Software__Tracing",
+      "category": "Software",
+      "subcategory": "Tracing",
+      "size": 1,
+      "question_ids": [
+        187
+      ],
+      "common_skills": [
+        "Cloud",
+        "System Design"
+      ]
+    },
+    {
+      "cluster_id": "System__Architecture",
+      "category": "System",
+      "subcategory": "Architecture",
+      "size": 1,
+      "question_ids": [
+        200
+      ],
+      "common_skills": [
+        "System Architecture"
+      ]
+    },
+    {
+      "cluster_id": "System__Authentication",
+      "category": "System",
+      "subcategory": "Authentication",
+      "size": 1,
+      "question_ids": [
+        193
+      ],
+      "common_skills": [
+        "Security",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "System__Bandwidth",
+      "category": "System",
+      "subcategory": "Bandwidth",
+      "size": 1,
+      "question_ids": [
+        88
+      ],
+      "common_skills": [
+        "Network"
+      ]
+    },
+    {
+      "cluster_id": "System__Battery",
+      "category": "System",
+      "subcategory": "Battery",
+      "size": 1,
+      "question_ids": [
+        58
+      ],
+      "common_skills": [
+        "System Design"
+      ]
+    },
+    {
+      "cluster_id": "System__Clock",
+      "category": "System",
+      "subcategory": "Clock",
+      "size": 1,
+      "question_ids": [
+        197
+      ],
+      "common_skills": [
+        "System Design"
+      ]
+    },
+    {
+      "cluster_id": "System__Compute",
+      "category": "System",
+      "subcategory": "Compute",
+      "size": 1,
+      "question_ids": [
+        164
+      ],
+      "common_skills": [
+        "Algorithm"
+      ]
+    },
+    {
+      "cluster_id": "System__Diagnostics",
+      "category": "System",
+      "subcategory": "Diagnostics",
+      "size": 1,
+      "question_ids": [
+        102
+      ],
+      "common_skills": [
+        "ROS"
+      ]
+    },
+    {
+      "cluster_id": "System__Kernel",
+      "category": "System",
+      "subcategory": "Kernel",
+      "size": 1,
+      "question_ids": [
+        124
+      ],
+      "common_skills": [
+        "Linux",
+        "C++"
+      ]
+    },
+    {
+      "cluster_id": "System__Memory",
+      "category": "System",
+      "subcategory": "Memory",
+      "size": 1,
+      "question_ids": [
+        139
+      ],
+      "common_skills": [
+        "Linux",
+        "C++"
+      ]
+    },
+    {
+      "cluster_id": "System__Network",
+      "category": "System",
+      "subcategory": "Network",
+      "size": 1,
+      "question_ids": [
+        170
+      ],
+      "common_skills": [
+        "Linux",
+        "Network"
+      ]
+    },
+    {
+      "cluster_id": "System__Networking",
+      "category": "System",
+      "subcategory": "Networking",
+      "size": 1,
+      "question_ids": [
+        66
+      ],
+      "common_skills": [
+        "Linux",
+        "Network"
+      ]
+    },
+    {
+      "cluster_id": "System__OS",
+      "category": "System",
+      "subcategory": "OS",
+      "size": 1,
+      "question_ids": [
+        163
+      ],
+      "common_skills": [
+        "Security",
+        "Linux"
+      ]
+    },
+    {
+      "cluster_id": "System__Process",
+      "category": "System",
+      "subcategory": "Process",
+      "size": 1,
+      "question_ids": [
+        160
+      ],
+      "common_skills": [
+        "Linux",
+        "ROS"
+      ]
+    },
+    {
+      "cluster_id": "System__Profiling",
+      "category": "System",
+      "subcategory": "Profiling",
+      "size": 1,
+      "question_ids": [
+        55
+      ],
+      "common_skills": [
+        "Linux"
+      ]
+    },
+    {
+      "cluster_id": "System__Real-time",
+      "category": "System",
+      "subcategory": "Real-time",
+      "size": 1,
+      "question_ids": [
+        50
+      ],
+      "common_skills": [
+        "Linux",
+        "Kernel"
+      ]
+    },
+    {
+      "cluster_id": "System__Reliability",
+      "category": "System",
+      "subcategory": "Reliability",
+      "size": 1,
+      "question_ids": [
+        122
+      ],
+      "common_skills": [
+        "DevOps"
+      ]
+    },
+    {
+      "cluster_id": "System__Storage",
+      "category": "System",
+      "subcategory": "Storage",
+      "size": 1,
+      "question_ids": [
+        196
+      ],
+      "common_skills": [
+        "Cloud"
+      ]
+    },
+    {
+      "cluster_id": "System__Thermal",
+      "category": "System",
+      "subcategory": "Thermal",
+      "size": 1,
+      "question_ids": [
+        92
+      ],
+      "common_skills": [
+        "Hardware"
+      ]
+    },
+    {
+      "cluster_id": "System__Validation",
+      "category": "System",
+      "subcategory": "Validation",
+      "size": 1,
+      "question_ids": [
+        145
+      ],
+      "common_skills": [
+        "CI/CD",
+        "Testing"
+      ]
+    }
+  ],
+  "dependency_graph": {
+    "nodes": [
+      {
+        "question_id": 1,
+        "difficulty": "university_level",
+        "category": "Kinematics",
+        "subcategory": "Forward Kinematics",
+        "skills_required": [
+          "Math"
+        ]
+      },
+      {
+        "question_id": 2,
+        "difficulty": "university_level",
+        "category": "Control",
+        "subcategory": "PID",
+        "skills_required": [
+          "Control Theory"
+        ]
+      },
+      {
+        "question_id": 3,
+        "difficulty": "university_level",
+        "category": "Sensors",
+        "subcategory": "LiDAR",
+        "skills_required": [
+          "Hardware"
+        ]
+      },
+      {
+        "question_id": 4,
+        "difficulty": "university_level",
+        "category": "ROS",
+        "subcategory": "Communication",
+        "skills_required": [
+          "ROS"
+        ]
+      },
+      {
+        "question_id": 5,
+        "difficulty": "university_level",
+        "category": "Math",
+        "subcategory": "Transformations",
+        "skills_required": [
+          "Linear Algebra"
+        ]
+      },
+      {
+        "question_id": 6,
+        "difficulty": "university_level",
+        "category": "Control",
+        "subcategory": "Dynamics",
+        "skills_required": [
+          "Physics"
+        ]
+      },
+      {
+        "question_id": 7,
+        "difficulty": "university_level",
+        "category": "Algorithm",
+        "subcategory": "Path Planning",
+        "skills_required": [
+          "Algorithm"
+        ]
+      },
+      {
+        "question_id": 8,
+        "difficulty": "university_level",
+        "category": "ROS",
+        "subcategory": "Service",
+        "skills_required": [
+          "ROS"
+        ]
+      },
+      {
+        "question_id": 9,
+        "difficulty": "university_level",
+        "category": "Sensors",
+        "subcategory": "IMU",
+        "skills_required": [
+          "Sensors"
+        ]
+      },
+      {
+        "question_id": 10,
+        "difficulty": "university_level",
+        "category": "Math",
+        "subcategory": "Quaternion",
+        "skills_required": [
+          "Math"
+        ]
+      },
+      {
+        "question_id": 11,
+        "difficulty": "university_level",
+        "category": "Control",
+        "subcategory": "PID",
+        "skills_required": [
+          "Control Theory"
+        ]
+      },
+      {
+        "question_id": 12,
+        "difficulty": "university_level",
+        "category": "Perception",
+        "subcategory": "Computer Vision",
+        "skills_required": [
+          "OpenCV"
+        ]
+      },
+      {
+        "question_id": 13,
+        "difficulty": "university_level",
+        "category": "ROS",
+        "subcategory": "Architecture",
+        "skills_required": [
+          "ROS"
+        ]
+      },
+      {
+        "question_id": 14,
+        "difficulty": "university_level",
+        "category": "Algorithm",
+        "subcategory": "SLAM",
+        "skills_required": [
+          "Algorithm"
+        ]
+      },
+      {
+        "question_id": 15,
+        "difficulty": "university_level",
+        "category": "Math",
+        "subcategory": "Kinematics",
+        "skills_required": [
+          "Math"
+        ]
+      },
+      {
+        "question_id": 16,
+        "difficulty": "university_level",
+        "category": "Sensors",
+        "subcategory": "Camera",
+        "skills_required": [
+          "Hardware"
+        ]
+      },
+      {
+        "question_id": 17,
+        "difficulty": "university_level",
+        "category": "Control",
+        "subcategory": "Motor",
+        "skills_required": [
+          "Hardware"
+        ]
+      },
+      {
+        "question_id": 18,
+        "difficulty": "university_level",
+        "category": "Algorithm",
+        "subcategory": "Path Planning",
+        "skills_required": [
+          "Algorithm"
+        ]
+      },
+      {
+        "question_id": 19,
+        "difficulty": "university_level",
+        "category": "ROS",
+        "subcategory": "Messages",
+        "skills_required": [
+          "ROS"
+        ]
+      },
+      {
+        "question_id": 20,
+        "difficulty": "university_level",
+        "category": "Math",
+        "subcategory": "Probability",
+        "skills_required": [
+          "Math"
+        ]
+      },
+      {
+        "question_id": 21,
+        "difficulty": "junior_level",
+        "category": "OS",
+        "subcategory": "Linux",
+        "skills_required": [
+          "Linux"
+        ]
+      },
+      {
+        "question_id": 22,
+        "difficulty": "junior_level",
+        "category": "Programming",
+        "subcategory": "C++",
+        "skills_required": [
+          "C++"
+        ]
+      },
+      {
+        "question_id": 23,
+        "difficulty": "junior_level",
+        "category": "ROS2",
+        "subcategory": "QoS",
+        "skills_required": [
+          "ROS2"
+        ]
+      },
+      {
+        "question_id": 24,
+        "difficulty": "junior_level",
+        "category": "Git",
+        "subcategory": "Version Control",
+        "skills_required": [
+          "Git"
+        ]
+      },
+      {
+        "question_id": 25,
+        "difficulty": "junior_level",
+        "category": "Hardware",
+        "subcategory": "Interfaces",
+        "skills_required": [
+          "Hardware"
+        ]
+      },
+      {
+        "question_id": 26,
+        "difficulty": "junior_level",
+        "category": "Programming",
+        "subcategory": "Python",
+        "skills_required": [
+          "Python",
+          "ROS"
+        ]
+      },
+      {
+        "question_id": 27,
+        "difficulty": "junior_level",
+        "category": "Programming",
+        "subcategory": "C++",
+        "skills_required": [
+          "C++"
+        ]
+      },
+      {
+        "question_id": 28,
+        "difficulty": "junior_level",
+        "category": "ROS",
+        "subcategory": "TF2",
+        "skills_required": [
+          "ROS",
+          "C++"
+        ]
+      },
+      {
+        "question_id": 29,
+        "difficulty": "junior_level",
+        "category": "Perception",
+        "subcategory": "OpenCV",
+        "skills_required": [
+          "Python",
+          "OpenCV"
+        ]
+      },
+      {
+        "question_id": 30,
+        "difficulty": "junior_level",
+        "category": "Math",
+        "subcategory": "Numpy",
+        "skills_required": [
+          "Python",
+          "Math"
+        ]
+      },
+      {
+        "question_id": 31,
+        "difficulty": "junior_level",
+        "category": "Programming",
+        "subcategory": "Python",
+        "skills_required": [
+          "Python"
+        ]
+      },
+      {
+        "question_id": 32,
+        "difficulty": "junior_level",
+        "category": "Programming",
+        "subcategory": "C++",
+        "skills_required": [
+          "C++"
+        ]
+      },
+      {
+        "question_id": 33,
+        "difficulty": "junior_level",
+        "category": "Programming",
+        "subcategory": "Bash",
+        "skills_required": [
+          "Linux"
+        ]
+      },
+      {
+        "question_id": 34,
+        "difficulty": "junior_level",
+        "category": "Math",
+        "subcategory": "Numpy",
+        "skills_required": [
+          "Python"
+        ]
+      },
+      {
+        "question_id": 35,
+        "difficulty": "junior_level",
+        "category": "Programming",
+        "subcategory": "C++",
+        "skills_required": [
+          "C++"
+        ]
+      },
+      {
+        "question_id": 36,
+        "difficulty": "junior_level",
+        "category": "ROS",
+        "subcategory": "Nodes",
+        "skills_required": [
+          "Python",
+          "ROS"
+        ]
+      },
+      {
+        "question_id": 37,
+        "difficulty": "junior_level",
+        "category": "Programming",
+        "subcategory": "C++",
+        "skills_required": [
+          "C++"
+        ]
+      },
+      {
+        "question_id": 38,
+        "difficulty": "junior_level",
+        "category": "ROS",
+        "subcategory": "Topic",
+        "skills_required": [
+          "ROS"
+        ]
+      },
+      {
+        "question_id": 39,
+        "difficulty": "junior_level",
+        "category": "Sensors",
+        "subcategory": "Camera",
+        "skills_required": [
+          "Linux"
+        ]
+      },
+      {
+        "question_id": 40,
+        "difficulty": "junior_level",
+        "category": "Programming",
+        "subcategory": "Python",
+        "skills_required": [
+          "Python"
+        ]
+      },
+      {
+        "question_id": 41,
+        "difficulty": "middle_level",
+        "category": "Navigation",
+        "subcategory": "Costmap",
+        "skills_required": [
+          "ROS",
+          "Navigation"
+        ]
+      },
+      {
+        "question_id": 42,
+        "difficulty": "middle_level",
+        "category": "Control",
+        "subcategory": "Network",
+        "skills_required": [
+          "Network",
+          "Linux"
+        ]
+      },
+      {
+        "question_id": 43,
+        "difficulty": "middle_level",
+        "category": "Algorithm",
+        "subcategory": "TF",
+        "skills_required": [
+          "ROS",
+          "TF"
+        ]
+      },
+      {
+        "question_id": 44,
+        "difficulty": "middle_level",
+        "category": "System",
+        "subcategory": "Timing",
+        "skills_required": [
+          "Linux",
+          "NTP"
+        ]
+      },
+      {
+        "question_id": 45,
+        "difficulty": "middle_level",
+        "category": "Programming",
+        "subcategory": "Memory",
+        "skills_required": [
+          "C++",
+          "Linux"
+        ]
+      },
+      {
+        "question_id": 46,
+        "difficulty": "middle_level",
+        "category": "ROS2",
+        "subcategory": "DDS",
+        "skills_required": [
+          "ROS2",
+          "Network"
+        ]
+      },
+      {
+        "question_id": 47,
+        "difficulty": "middle_level",
+        "category": "Docker",
+        "subcategory": "Permissions",
+        "skills_required": [
+          "Docker",
+          "Linux"
+        ]
+      },
+      {
+        "question_id": 48,
+        "difficulty": "middle_level",
+        "category": "Navigation",
+        "subcategory": "Parameters",
+        "skills_required": [
+          "ROS",
+          "Navigation"
+        ]
+      },
+      {
+        "question_id": 49,
+        "difficulty": "middle_level",
+        "category": "Sensors",
+        "subcategory": "Camera",
+        "skills_required": [
+          "Linux",
+          "Udev"
+        ]
+      },
+      {
+        "question_id": 50,
+        "difficulty": "middle_level",
+        "category": "System",
+        "subcategory": "Real-time",
+        "skills_required": [
+          "Linux",
+          "Kernel"
+        ]
+      },
+      {
+        "question_id": 51,
+        "difficulty": "middle_level",
+        "category": "Sensors",
+        "subcategory": "LiDAR",
+        "skills_required": [
+          "Data Analysis"
+        ]
+      },
+      {
+        "question_id": 52,
+        "difficulty": "middle_level",
+        "category": "Control",
+        "subcategory": "Plot",
+        "skills_required": [
+          "Data Analysis"
+        ]
+      },
+      {
+        "question_id": 53,
+        "difficulty": "middle_level",
+        "category": "Algorithm",
+        "subcategory": "SLAM",
+        "skills_required": [
+          "SLAM"
+        ]
+      },
+      {
+        "question_id": 54,
+        "difficulty": "middle_level",
+        "category": "Sensors",
+        "subcategory": "IMU",
+        "skills_required": [
+          "Math"
+        ]
+      },
+      {
+        "question_id": 55,
+        "difficulty": "middle_level",
+        "category": "System",
+        "subcategory": "Profiling",
+        "skills_required": [
+          "Linux"
+        ]
+      },
+      {
+        "question_id": 56,
+        "difficulty": "middle_level",
+        "category": "Navigation",
+        "subcategory": "Recovery",
+        "skills_required": [
+          "ROS",
+          "Navigation"
+        ]
+      },
+      {
+        "question_id": 57,
+        "difficulty": "middle_level",
+        "category": "Architecture",
+        "subcategory": "Middleware",
+        "skills_required": [
+          "System Architecture"
+        ]
+      },
+      {
+        "question_id": 58,
+        "difficulty": "middle_level",
+        "category": "System",
+        "subcategory": "Battery",
+        "skills_required": [
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 59,
+        "difficulty": "middle_level",
+        "category": "Control",
+        "subcategory": "Safety",
+        "skills_required": [
+          "Hardware",
+          "Software"
+        ]
+      },
+      {
+        "question_id": 60,
+        "difficulty": "middle_level",
+        "category": "Algorithm",
+        "subcategory": "Localization",
+        "skills_required": [
+          "Algorithm"
+        ]
+      },
+      {
+        "question_id": 61,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Cloud Robotics",
+        "skills_required": [
+          "Cloud",
+          "ROS",
+          "Networking"
+        ]
+      },
+      {
+        "question_id": 62,
+        "difficulty": "senior_level",
+        "category": "Data Pipeline",
+        "subcategory": "Logging",
+        "skills_required": [
+          "Database",
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 63,
+        "difficulty": "senior_level",
+        "category": "Algorithm",
+        "subcategory": "SLAM",
+        "skills_required": [
+          "SLAM",
+          "Optimization"
+        ]
+      },
+      {
+        "question_id": 64,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "Middleware",
+        "skills_required": [
+          "ROS2",
+          "System Architecture"
+        ]
+      },
+      {
+        "question_id": 65,
+        "difficulty": "senior_level",
+        "category": "Perception",
+        "subcategory": "Vision",
+        "skills_required": [
+          "CUDA",
+          "C++",
+          "Vision"
+        ]
+      },
+      {
+        "question_id": 66,
+        "difficulty": "senior_level",
+        "category": "System",
+        "subcategory": "Networking",
+        "skills_required": [
+          "Linux",
+          "Network"
+        ]
+      },
+      {
+        "question_id": 67,
+        "difficulty": "senior_level",
+        "category": "Hardware",
+        "subcategory": "Sensors",
+        "skills_required": [
+          "System Design",
+          "Safety"
+        ]
+      },
+      {
+        "question_id": 68,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "ROS2",
+        "skills_required": [
+          "Security",
+          "ROS2"
+        ]
+      },
+      {
+        "question_id": 69,
+        "difficulty": "senior_level",
+        "category": "Cloud",
+        "subcategory": "Fleet Management",
+        "skills_required": [
+          "Cloud",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 70,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Deployment",
+        "skills_required": [
+          "DevOps",
+          "Linux"
+        ]
+      },
+      {
+        "question_id": 71,
+        "difficulty": "university_level",
+        "category": "Math",
+        "subcategory": "Kinematics",
+        "skills_required": [
+          "Linear Algebra"
+        ]
+      },
+      {
+        "question_id": 72,
+        "difficulty": "university_level",
+        "category": "Sensors",
+        "subcategory": "Motor",
+        "skills_required": [
+          "Hardware"
+        ]
+      },
+      {
+        "question_id": 73,
+        "difficulty": "university_level",
+        "category": "Kinematics",
+        "subcategory": "Singularity",
+        "skills_required": [
+          "Math"
+        ]
+      },
+      {
+        "question_id": 74,
+        "difficulty": "university_level",
+        "category": "Algorithm",
+        "subcategory": "Path Planning",
+        "skills_required": [
+          "Algorithm"
+        ]
+      },
+      {
+        "question_id": 75,
+        "difficulty": "university_level",
+        "category": "Control",
+        "subcategory": "Kinematics",
+        "skills_required": [
+          "Math"
+        ]
+      },
+      {
+        "question_id": 76,
+        "difficulty": "junior_level",
+        "category": "ROS",
+        "subcategory": "Publisher",
+        "skills_required": [
+          "C++",
+          "ROS"
+        ]
+      },
+      {
+        "question_id": 77,
+        "difficulty": "junior_level",
+        "category": "Programming",
+        "subcategory": "Python",
+        "skills_required": [
+          "Python"
+        ]
+      },
+      {
+        "question_id": 78,
+        "difficulty": "junior_level",
+        "category": "OS",
+        "subcategory": "Linux",
+        "skills_required": [
+          "Linux"
+        ]
+      },
+      {
+        "question_id": 79,
+        "difficulty": "junior_level",
+        "category": "Programming",
+        "subcategory": "C++",
+        "skills_required": [
+          "C++"
+        ]
+      },
+      {
+        "question_id": 80,
+        "difficulty": "junior_level",
+        "category": "Git",
+        "subcategory": "Version Control",
+        "skills_required": [
+          "Git"
+        ]
+      },
+      {
+        "question_id": 81,
+        "difficulty": "middle_level",
+        "category": "ROS2",
+        "subcategory": "Nav2",
+        "skills_required": [
+          "ROS2",
+          "Navigation"
+        ]
+      },
+      {
+        "question_id": 82,
+        "difficulty": "middle_level",
+        "category": "Hardware",
+        "subcategory": "Networking",
+        "skills_required": [
+          "Linux",
+          "Network"
+        ]
+      },
+      {
+        "question_id": 83,
+        "difficulty": "middle_level",
+        "category": "Sensors",
+        "subcategory": "Camera",
+        "skills_required": [
+          "Computer Vision"
+        ]
+      },
+      {
+        "question_id": 84,
+        "difficulty": "middle_level",
+        "category": "System",
+        "subcategory": "Timing",
+        "skills_required": [
+          "ROS",
+          "Sensors"
+        ]
+      },
+      {
+        "question_id": 85,
+        "difficulty": "middle_level",
+        "category": "Operations",
+        "subcategory": "Docker",
+        "skills_required": [
+          "Docker"
+        ]
+      },
+      {
+        "question_id": 86,
+        "difficulty": "middle_level",
+        "category": "Path Planning",
+        "subcategory": "Spline",
+        "skills_required": [
+          "Math",
+          "Algorithm"
+        ]
+      },
+      {
+        "question_id": 87,
+        "difficulty": "middle_level",
+        "category": "Database",
+        "subcategory": "Query",
+        "skills_required": [
+          "Database"
+        ]
+      },
+      {
+        "question_id": 88,
+        "difficulty": "middle_level",
+        "category": "System",
+        "subcategory": "Bandwidth",
+        "skills_required": [
+          "Network"
+        ]
+      },
+      {
+        "question_id": 89,
+        "difficulty": "middle_level",
+        "category": "Software",
+        "subcategory": "Simulation",
+        "skills_required": [
+          "CI/CD",
+          "ROS"
+        ]
+      },
+      {
+        "question_id": 90,
+        "difficulty": "middle_level",
+        "category": "Software",
+        "subcategory": "Parameters",
+        "skills_required": [
+          "ROS",
+          "Software Engineering"
+        ]
+      },
+      {
+        "question_id": 91,
+        "difficulty": "middle_level",
+        "category": "Software",
+        "subcategory": "Build",
+        "skills_required": [
+          "Linux",
+          "CMake"
+        ]
+      },
+      {
+        "question_id": 92,
+        "difficulty": "middle_level",
+        "category": "System",
+        "subcategory": "Thermal",
+        "skills_required": [
+          "Hardware"
+        ]
+      },
+      {
+        "question_id": 93,
+        "difficulty": "middle_level",
+        "category": "Architecture",
+        "subcategory": "Node",
+        "skills_required": [
+          "ROS"
+        ]
+      },
+      {
+        "question_id": 94,
+        "difficulty": "middle_level",
+        "category": "Sensors",
+        "subcategory": "Odometry",
+        "skills_required": [
+          "Control"
+        ]
+      },
+      {
+        "question_id": 95,
+        "difficulty": "middle_level",
+        "category": "Network",
+        "subcategory": "IP",
+        "skills_required": [
+          "Network"
+        ]
+      },
+      {
+        "question_id": 96,
+        "difficulty": "middle_level",
+        "category": "Hardware",
+        "subcategory": "I2C",
+        "skills_required": [
+          "Hardware"
+        ]
+      },
+      {
+        "question_id": 97,
+        "difficulty": "middle_level",
+        "category": "Control",
+        "subcategory": "Kinematics",
+        "skills_required": [
+          "Math"
+        ]
+      },
+      {
+        "question_id": 98,
+        "difficulty": "middle_level",
+        "category": "ROS",
+        "subcategory": "Bag",
+        "skills_required": [
+          "Data Analysis"
+        ]
+      },
+      {
+        "question_id": 99,
+        "difficulty": "middle_level",
+        "category": "Hardware",
+        "subcategory": "HIL",
+        "skills_required": [
+          "Hardware",
+          "Testing"
+        ]
+      },
+      {
+        "question_id": 100,
+        "difficulty": "middle_level",
+        "category": "Programming",
+        "subcategory": "Concurrency",
+        "skills_required": [
+          "C++"
+        ]
+      },
+      {
+        "question_id": 101,
+        "difficulty": "middle_level",
+        "category": "Architecture",
+        "subcategory": "Edge",
+        "skills_required": [
+          "Cloud",
+          "Edge"
+        ]
+      },
+      {
+        "question_id": 102,
+        "difficulty": "middle_level",
+        "category": "System",
+        "subcategory": "Diagnostics",
+        "skills_required": [
+          "ROS"
+        ]
+      },
+      {
+        "question_id": 103,
+        "difficulty": "middle_level",
+        "category": "Programming",
+        "subcategory": "OOP",
+        "skills_required": [
+          "C++"
+        ]
+      },
+      {
+        "question_id": 104,
+        "difficulty": "middle_level",
+        "category": "Hardware",
+        "subcategory": "Datasheet",
+        "skills_required": [
+          "Hardware"
+        ]
+      },
+      {
+        "question_id": 105,
+        "difficulty": "middle_level",
+        "category": "Software",
+        "subcategory": "Interface",
+        "skills_required": [
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 106,
+        "difficulty": "middle_level",
+        "category": "Kinematics",
+        "subcategory": "TF",
+        "skills_required": [
+          "ROS",
+          "Math"
+        ]
+      },
+      {
+        "question_id": 107,
+        "difficulty": "middle_level",
+        "category": "Sensors",
+        "subcategory": "Filter",
+        "skills_required": [
+          "Algorithm"
+        ]
+      },
+      {
+        "question_id": 108,
+        "difficulty": "middle_level",
+        "category": "Algorithm",
+        "subcategory": "Control",
+        "skills_required": [
+          "Control Theory"
+        ]
+      },
+      {
+        "question_id": 109,
+        "difficulty": "middle_level",
+        "category": "Hardware",
+        "subcategory": "Wiring",
+        "skills_required": [
+          "Hardware"
+        ]
+      },
+      {
+        "question_id": 110,
+        "difficulty": "middle_level",
+        "category": "Data",
+        "subcategory": "Logging",
+        "skills_required": [
+          "Database"
+        ]
+      },
+      {
+        "question_id": 111,
+        "difficulty": "senior_level",
+        "category": "Cloud",
+        "subcategory": "Storage",
+        "skills_required": [
+          "System Design",
+          "Cloud"
+        ]
+      },
+      {
+        "question_id": 112,
+        "difficulty": "senior_level",
+        "category": "Control",
+        "subcategory": "Real-time",
+        "skills_required": [
+          "System Architecture",
+          "C++"
+        ]
+      },
+      {
+        "question_id": 113,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "ROS2",
+        "skills_required": [
+          "System Design",
+          "ROS2"
+        ]
+      },
+      {
+        "question_id": 114,
+        "difficulty": "senior_level",
+        "category": "Algorithm",
+        "subcategory": "Navigation",
+        "skills_required": [
+          "Navigation",
+          "Safety"
+        ]
+      },
+      {
+        "question_id": 115,
+        "difficulty": "senior_level",
+        "category": "Algorithm",
+        "subcategory": "Vision",
+        "skills_required": [
+          "C++",
+          "CUDA"
+        ]
+      },
+      {
+        "question_id": 116,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "OTA",
+        "skills_required": [
+          "Security",
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 117,
+        "difficulty": "senior_level",
+        "category": "Algorithm",
+        "subcategory": "Mapping",
+        "skills_required": [
+          "SLAM"
+        ]
+      },
+      {
+        "question_id": 118,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Memory",
+        "skills_required": [
+          "Linux",
+          "C++"
+        ]
+      },
+      {
+        "question_id": 119,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "Middleware",
+        "skills_required": [
+          "System Architecture"
+        ]
+      },
+      {
+        "question_id": 120,
+        "difficulty": "senior_level",
+        "category": "Hardware",
+        "subcategory": "Compute",
+        "skills_required": [
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 121,
+        "difficulty": "senior_level",
+        "category": "Algorithm",
+        "subcategory": "Motion Planning",
+        "skills_required": [
+          "Math",
+          "Algorithm"
+        ]
+      },
+      {
+        "question_id": 122,
+        "difficulty": "senior_level",
+        "category": "System",
+        "subcategory": "Reliability",
+        "skills_required": [
+          "DevOps"
+        ]
+      },
+      {
+        "question_id": 123,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "REST",
+        "skills_required": [
+          "Software Engineering"
+        ]
+      },
+      {
+        "question_id": 124,
+        "difficulty": "senior_level",
+        "category": "System",
+        "subcategory": "Kernel",
+        "skills_required": [
+          "Linux",
+          "C++"
+        ]
+      },
+      {
+        "question_id": 125,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Fleet",
+        "skills_required": [
+          "System Design",
+          "Cloud"
+        ]
+      },
+      {
+        "question_id": 126,
+        "difficulty": "senior_level",
+        "category": "Cloud",
+        "subcategory": "Microservices",
+        "skills_required": [
+          "Docker",
+          "Kubernetes"
+        ]
+      },
+      {
+        "question_id": 127,
+        "difficulty": "senior_level",
+        "category": "Network",
+        "subcategory": "Firewall",
+        "skills_required": [
+          "Security",
+          "Network"
+        ]
+      },
+      {
+        "question_id": 128,
+        "difficulty": "senior_level",
+        "category": "Algorithm",
+        "subcategory": "Complexity",
+        "skills_required": [
+          "Algorithm"
+        ]
+      },
+      {
+        "question_id": 129,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "Design Pattern",
+        "skills_required": [
+          "Software Engineering"
+        ]
+      },
+      {
+        "question_id": 130,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "Exceptions",
+        "skills_required": [
+          "C++"
+        ]
+      },
+      {
+        "question_id": 131,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Cloud",
+        "skills_required": [
+          "Kubernetes",
+          "Docker",
+          "Cloud"
+        ]
+      },
+      {
+        "question_id": 132,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "Middleware",
+        "skills_required": [
+          "System Design",
+          "ROS2"
+        ]
+      },
+      {
+        "question_id": 133,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Failure",
+        "skills_required": [
+          "DevOps",
+          "Linux"
+        ]
+      },
+      {
+        "question_id": 134,
+        "difficulty": "senior_level",
+        "category": "Algorithm",
+        "subcategory": "Vision",
+        "skills_required": [
+          "CUDA",
+          "C++",
+          "GPU"
+        ]
+      },
+      {
+        "question_id": 135,
+        "difficulty": "senior_level",
+        "category": "Hardware",
+        "subcategory": "Sensors",
+        "skills_required": [
+          "System Design",
+          "Safety"
+        ]
+      },
+      {
+        "question_id": 136,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "Network",
+        "skills_required": [
+          "Security"
+        ]
+      },
+      {
+        "question_id": 137,
+        "difficulty": "senior_level",
+        "category": "Cloud",
+        "subcategory": "Data Pipeline",
+        "skills_required": [
+          "Cloud",
+          "AWS"
+        ]
+      },
+      {
+        "question_id": 138,
+        "difficulty": "senior_level",
+        "category": "Algorithm",
+        "subcategory": "Path Planning",
+        "skills_required": [
+          "Algorithm",
+          "Math"
+        ]
+      },
+      {
+        "question_id": 139,
+        "difficulty": "senior_level",
+        "category": "System",
+        "subcategory": "Memory",
+        "skills_required": [
+          "Linux",
+          "C++"
+        ]
+      },
+      {
+        "question_id": 140,
+        "difficulty": "senior_level",
+        "category": "Network",
+        "subcategory": "Bandwidth",
+        "skills_required": [
+          "System Design",
+          "Network"
+        ]
+      },
+      {
+        "question_id": 141,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Consensus",
+        "skills_required": [
+          "System Design",
+          "Cloud"
+        ]
+      },
+      {
+        "question_id": 142,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "Communication",
+        "skills_required": [
+          "Network",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 143,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Observability",
+        "skills_required": [
+          "DevOps",
+          "Cloud"
+        ]
+      },
+      {
+        "question_id": 144,
+        "difficulty": "senior_level",
+        "category": "Algorithm",
+        "subcategory": "Control",
+        "skills_required": [
+          "Math",
+          "Optimization"
+        ]
+      },
+      {
+        "question_id": 145,
+        "difficulty": "senior_level",
+        "category": "System",
+        "subcategory": "Validation",
+        "skills_required": [
+          "CI/CD",
+          "Testing"
+        ]
+      },
+      {
+        "question_id": 146,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Database",
+        "skills_required": [
+          "Database",
+          "Cloud"
+        ]
+      },
+      {
+        "question_id": 147,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "ROS",
+        "skills_required": [
+          "Software Engineering"
+        ]
+      },
+      {
+        "question_id": 148,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "Build",
+        "skills_required": [
+          "Docker",
+          "Linux"
+        ]
+      },
+      {
+        "question_id": 149,
+        "difficulty": "senior_level",
+        "category": "Algorithm",
+        "subcategory": "Sensor Fusion",
+        "skills_required": [
+          "Math",
+          "SLAM"
+        ]
+      },
+      {
+        "question_id": 150,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "Concurrency",
+        "skills_required": [
+          "C++",
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 151,
+        "difficulty": "senior_level",
+        "category": "Hardware",
+        "subcategory": "Datasheet",
+        "skills_required": [
+          "Hardware"
+        ]
+      },
+      {
+        "question_id": 152,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "REST",
+        "skills_required": [
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 153,
+        "difficulty": "senior_level",
+        "category": "Data",
+        "subcategory": "Time-Series",
+        "skills_required": [
+          "Database"
+        ]
+      },
+      {
+        "question_id": 154,
+        "difficulty": "senior_level",
+        "category": "Perception",
+        "subcategory": "Edge",
+        "skills_required": [
+          "Computer Vision",
+          "Edge"
+        ]
+      },
+      {
+        "question_id": 155,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Fleet",
+        "skills_required": [
+          "Cloud",
+          "Message Broker"
+        ]
+      },
+      {
+        "question_id": 156,
+        "difficulty": "senior_level",
+        "category": "Algorithm",
+        "subcategory": "Safety",
+        "skills_required": [
+          "Algorithm"
+        ]
+      },
+      {
+        "question_id": 157,
+        "difficulty": "senior_level",
+        "category": "System",
+        "subcategory": "Timing",
+        "skills_required": [
+          "System Architecture"
+        ]
+      },
+      {
+        "question_id": 158,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "ROS2",
+        "skills_required": [
+          "Network",
+          "ROS2"
+        ]
+      },
+      {
+        "question_id": 159,
+        "difficulty": "senior_level",
+        "category": "Hardware",
+        "subcategory": "Compute",
+        "skills_required": [
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 160,
+        "difficulty": "senior_level",
+        "category": "System",
+        "subcategory": "Process",
+        "skills_required": [
+          "Linux",
+          "ROS"
+        ]
+      },
+      {
+        "question_id": 161,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "Build",
+        "skills_required": [
+          "C++",
+          "CMake"
+        ]
+      },
+      {
+        "question_id": 162,
+        "difficulty": "senior_level",
+        "category": "Algorithm",
+        "subcategory": "Filtering",
+        "skills_required": [
+          "Algorithm",
+          "Math"
+        ]
+      },
+      {
+        "question_id": 163,
+        "difficulty": "senior_level",
+        "category": "System",
+        "subcategory": "OS",
+        "skills_required": [
+          "Security",
+          "Linux"
+        ]
+      },
+      {
+        "question_id": 164,
+        "difficulty": "senior_level",
+        "category": "System",
+        "subcategory": "Compute",
+        "skills_required": [
+          "Algorithm"
+        ]
+      },
+      {
+        "question_id": 165,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "Error Handling",
+        "skills_required": [
+          "Software Engineering"
+        ]
+      },
+      {
+        "question_id": 166,
+        "difficulty": "senior_level",
+        "category": "Cloud",
+        "subcategory": "Compute",
+        "skills_required": [
+          "Cloud",
+          "Kubernetes"
+        ]
+      },
+      {
+        "question_id": 167,
+        "difficulty": "senior_level",
+        "category": "Hardware",
+        "subcategory": "Power",
+        "skills_required": [
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 168,
+        "difficulty": "senior_level",
+        "category": "Planning",
+        "subcategory": "Trajectory",
+        "skills_required": [
+          "Algorithm",
+          "Control"
+        ]
+      },
+      {
+        "question_id": 169,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "OOP",
+        "skills_required": [
+          "C++",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 170,
+        "difficulty": "senior_level",
+        "category": "System",
+        "subcategory": "Network",
+        "skills_required": [
+          "Linux",
+          "Network"
+        ]
+      },
+      {
+        "question_id": 171,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "Integration",
+        "skills_required": [
+          "DevOps",
+          "ROS"
+        ]
+      },
+      {
+        "question_id": 172,
+        "difficulty": "senior_level",
+        "category": "Algorithm",
+        "subcategory": "Vision",
+        "skills_required": [
+          "Computer Vision"
+        ]
+      },
+      {
+        "question_id": 173,
+        "difficulty": "senior_level",
+        "category": "Cloud",
+        "subcategory": "Processing",
+        "skills_required": [
+          "Cloud",
+          "Edge"
+        ]
+      },
+      {
+        "question_id": 174,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "OS",
+        "skills_required": [
+          "System Design",
+          "Linux"
+        ]
+      },
+      {
+        "question_id": 175,
+        "difficulty": "senior_level",
+        "category": "Navigation",
+        "subcategory": "Localization",
+        "skills_required": [
+          "SLAM"
+        ]
+      },
+      {
+        "question_id": 176,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Database",
+        "skills_required": [
+          "Database",
+          "Cloud"
+        ]
+      },
+      {
+        "question_id": 177,
+        "difficulty": "senior_level",
+        "category": "Hardware",
+        "subcategory": "Diagnostics",
+        "skills_required": [
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 178,
+        "difficulty": "senior_level",
+        "category": "Algorithm",
+        "subcategory": "Performance",
+        "skills_required": [
+          "C++"
+        ]
+      },
+      {
+        "question_id": 179,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "GraphQL",
+        "skills_required": [
+          "Architecture",
+          "API"
+        ]
+      },
+      {
+        "question_id": 180,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "State",
+        "skills_required": [
+          "Cloud",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 181,
+        "difficulty": "senior_level",
+        "category": "Data Pipeline",
+        "subcategory": "Storage",
+        "skills_required": [
+          "Database",
+          "Cloud"
+        ]
+      },
+      {
+        "question_id": 182,
+        "difficulty": "senior_level",
+        "category": "Control",
+        "subcategory": "Topology",
+        "skills_required": [
+          "System Architecture",
+          "Hardware"
+        ]
+      },
+      {
+        "question_id": 183,
+        "difficulty": "senior_level",
+        "category": "System",
+        "subcategory": "Timing",
+        "skills_required": [
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 184,
+        "difficulty": "senior_level",
+        "category": "Hardware",
+        "subcategory": "Thermal",
+        "skills_required": [
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 185,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "Physical",
+        "skills_required": [
+          "Security",
+          "Network"
+        ]
+      },
+      {
+        "question_id": 186,
+        "difficulty": "senior_level",
+        "category": "Perception",
+        "subcategory": "Sensor",
+        "skills_required": [
+          "Hardware",
+          "Vision"
+        ]
+      },
+      {
+        "question_id": 187,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "Tracing",
+        "skills_required": [
+          "Cloud",
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 188,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "ROS",
+        "skills_required": [
+          "Software Engineering"
+        ]
+      },
+      {
+        "question_id": 189,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Cloud",
+        "skills_required": [
+          "Cloud",
+          "AWS"
+        ]
+      },
+      {
+        "question_id": 190,
+        "difficulty": "senior_level",
+        "category": "Planning",
+        "subcategory": "Graph",
+        "skills_required": [
+          "Algorithm"
+        ]
+      },
+      {
+        "question_id": 191,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "Patterns",
+        "skills_required": [
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 192,
+        "difficulty": "senior_level",
+        "category": "Cloud",
+        "subcategory": "Network",
+        "skills_required": [
+          "Network",
+          "Cloud"
+        ]
+      },
+      {
+        "question_id": 193,
+        "difficulty": "senior_level",
+        "category": "System",
+        "subcategory": "Authentication",
+        "skills_required": [
+          "Security",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 194,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Chaos",
+        "skills_required": [
+          "DevOps"
+        ]
+      },
+      {
+        "question_id": 195,
+        "difficulty": "senior_level",
+        "category": "Database",
+        "subcategory": "Cache",
+        "skills_required": [
+          "Database",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 196,
+        "difficulty": "senior_level",
+        "category": "System",
+        "subcategory": "Storage",
+        "skills_required": [
+          "Cloud"
+        ]
+      },
+      {
+        "question_id": 197,
+        "difficulty": "senior_level",
+        "category": "System",
+        "subcategory": "Clock",
+        "skills_required": [
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 198,
+        "difficulty": "senior_level",
+        "category": "Software",
+        "subcategory": "Deployment",
+        "skills_required": [
+          "Docker",
+          "CI/CD"
+        ]
+      },
+      {
+        "question_id": 199,
+        "difficulty": "senior_level",
+        "category": "Algorithm",
+        "subcategory": "Control",
+        "skills_required": [
+          "Math",
+          "Algorithm"
+        ]
+      },
+      {
+        "question_id": 200,
+        "difficulty": "senior_level",
+        "category": "System",
+        "subcategory": "Architecture",
+        "skills_required": [
+          "System Architecture"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "Preceding_ID": 3,
+        "Target_ID": 25,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 16,
+        "Target_ID": 25,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 17,
+        "Target_ID": 25,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 26,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 26,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 13,
+        "Target_ID": 26,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 28,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(ROS)"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 28,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(ROS)"
+      },
+      {
+        "Preceding_ID": 13,
+        "Target_ID": 28,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(ROS)"
+      },
+      {
+        "Preceding_ID": 12,
+        "Target_ID": 29,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['opencv'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Perception)"
+      },
+      {
+        "Preceding_ID": 20,
+        "Target_ID": 30,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0698,
+        "combined_score": 0.4279,
+        "Logic": "공통 스킬 ['math'] (Jaccard=0.50) | 시나리오 유사도=0.07 | 난이도 university_level → junior_level | 동일 카테고리(Math)"
+      },
+      {
+        "Preceding_ID": 15,
+        "Target_ID": 30,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0566,
+        "combined_score": 0.4226,
+        "Logic": "공통 스킬 ['math'] (Jaccard=0.50) | 시나리오 유사도=0.06 | 난이도 university_level → junior_level | 동일 카테고리(Math)"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 30,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['math'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Math)"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 36,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0684,
+        "combined_score": 0.4274,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.07 | 난이도 university_level → junior_level | 동일 카테고리(ROS)"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 36,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(ROS)"
+      },
+      {
+        "Preceding_ID": 13,
+        "Target_ID": 36,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(ROS)"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 38,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(ROS)"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 38,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(ROS)"
+      },
+      {
+        "Preceding_ID": 13,
+        "Target_ID": 38,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(ROS)"
+      },
+      {
+        "Preceding_ID": 16,
+        "Target_ID": 39,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.177,
+        "combined_score": 0.1708,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.18 | 난이도 university_level → junior_level | 동일 카테고리(Sensors)"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 41,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 41,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 13,
+        "Target_ID": 41,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 39,
+        "Target_ID": 42,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1816,
+        "combined_score": 0.3727,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.18 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 33,
+        "Target_ID": 42,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.151,
+        "combined_score": 0.3604,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.15 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 78,
+        "Target_ID": 42,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.033,
+        "combined_score": 0.3132,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 13,
+        "Target_ID": 43,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.025,
+        "combined_score": 0.31,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 43,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 43,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 78,
+        "Target_ID": 44,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0332,
+        "combined_score": 0.3133,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 39,
+        "Target_ID": 44,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0294,
+        "combined_score": 0.3118,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 21,
+        "Target_ID": 44,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.029,
+        "combined_score": 0.3116,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 37,
+        "Target_ID": 45,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0344,
+        "combined_score": 0.4138,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 junior_level → middle_level | 동일 카테고리(Programming)"
+      },
+      {
+        "Preceding_ID": 22,
+        "Target_ID": 45,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0311,
+        "combined_score": 0.4125,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 junior_level → middle_level | 동일 카테고리(Programming)"
+      },
+      {
+        "Preceding_ID": 32,
+        "Target_ID": 45,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0298,
+        "combined_score": 0.4119,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 junior_level → middle_level | 동일 카테고리(Programming)"
+      },
+      {
+        "Preceding_ID": 23,
+        "Target_ID": 46,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.165,
+        "combined_score": 0.466,
+        "Logic": "공통 스킬 ['ros2'] (Jaccard=0.50) | 시나리오 유사도=0.16 | 난이도 junior_level → middle_level | 동일 카테고리(ROS2)"
+      },
+      {
+        "Preceding_ID": 39,
+        "Target_ID": 47,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.2381,
+        "combined_score": 0.3952,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.24 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 21,
+        "Target_ID": 47,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0557,
+        "combined_score": 0.3223,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.06 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 33,
+        "Target_ID": 47,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 13,
+        "Target_ID": 48,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0295,
+        "combined_score": 0.3118,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 48,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 48,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 39,
+        "Target_ID": 49,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1217,
+        "combined_score": 0.4487,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.12 | 난이도 junior_level → middle_level | 동일 카테고리(Sensors)"
+      },
+      {
+        "Preceding_ID": 21,
+        "Target_ID": 49,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 33,
+        "Target_ID": 49,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 21,
+        "Target_ID": 50,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0553,
+        "combined_score": 0.3221,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.06 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 33,
+        "Target_ID": 50,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 39,
+        "Target_ID": 50,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 17,
+        "Target_ID": 52,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1615,
+        "combined_score": 0.1646,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.16 | 난이도 university_level → middle_level | 동일 카테고리(Control)"
+      },
+      {
+        "Preceding_ID": 74,
+        "Target_ID": 53,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.2154,
+        "combined_score": 0.1862,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.22 | 난이도 university_level → middle_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 20,
+        "Target_ID": 54,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0749,
+        "combined_score": 0.63,
+        "Logic": "공통 스킬 ['math'] (Jaccard=1.00) | 시나리오 유사도=0.07 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 15,
+        "Target_ID": 54,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0607,
+        "combined_score": 0.6243,
+        "Logic": "공통 스킬 ['math'] (Jaccard=1.00) | 시나리오 유사도=0.06 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 1,
+        "Target_ID": 54,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['math'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 21,
+        "Target_ID": 55,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 33,
+        "Target_ID": 55,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 39,
+        "Target_ID": 55,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 56,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 56,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 13,
+        "Target_ID": 56,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 17,
+        "Target_ID": 59,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Control)"
+      },
+      {
+        "Preceding_ID": 3,
+        "Target_ID": 59,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0332,
+        "combined_score": 0.3133,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 16,
+        "Target_ID": 59,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 60,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 14,
+        "Target_ID": 60,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 18,
+        "Target_ID": 60,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 93,
+        "Target_ID": 61,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Architecture)"
+      },
+      {
+        "Preceding_ID": 101,
+        "Target_ID": 61,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Architecture)"
+      },
+      {
+        "Preceding_ID": 102,
+        "Target_ID": 61,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0325,
+        "combined_score": 0.213,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 62,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1422,
+        "combined_score": 0.3569,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.14 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 87,
+        "Target_ID": 62,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.136,
+        "combined_score": 0.3544,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.14 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 62,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 53,
+        "Target_ID": 63,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0811,
+        "combined_score": 0.4324,
+        "Logic": "공통 스킬 ['slam'] (Jaccard=0.50) | 시나리오 유사도=0.08 | 난이도 middle_level → senior_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 23,
+        "Target_ID": 64,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros2'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 57,
+        "Target_ID": 64,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['system architecture'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 46,
+        "Target_ID": 64,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0203,
+        "combined_score": 0.2081,
+        "Logic": "공통 스킬 ['ros2'] (Jaccard=0.33) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 32,
+        "Target_ID": 65,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.116,
+        "combined_score": 0.2464,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.33) | 시나리오 유사도=0.12 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 22,
+        "Target_ID": 65,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 27,
+        "Target_ID": 65,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 82,
+        "Target_ID": 66,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0905,
+        "combined_score": 0.6362,
+        "Logic": "공통 스킬 ['linux', 'network'] (Jaccard=1.00) | 시나리오 유사도=0.09 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 42,
+        "Target_ID": 66,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['linux', 'network'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 55,
+        "Target_ID": 66,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(System)"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 67,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 67,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 104,
+        "Target_ID": 67,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.2911,
+        "combined_score": 0.2164,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.29 | 난이도 middle_level → senior_level | 동일 카테고리(Hardware)"
+      },
+      {
+        "Preceding_ID": 23,
+        "Target_ID": 68,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros2'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 46,
+        "Target_ID": 68,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1288,
+        "combined_score": 0.2515,
+        "Logic": "공통 스킬 ['ros2'] (Jaccard=0.33) | 시나리오 유사도=0.13 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 81,
+        "Target_ID": 68,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0482,
+        "combined_score": 0.2193,
+        "Logic": "공통 스킬 ['ros2'] (Jaccard=0.33) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 101,
+        "Target_ID": 69,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0903,
+        "combined_score": 0.2361,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.33) | 시나리오 유사도=0.09 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 78,
+        "Target_ID": 70,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1079,
+        "combined_score": 0.3432,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.11 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 33,
+        "Target_ID": 70,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0944,
+        "combined_score": 0.3378,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.09 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 21,
+        "Target_ID": 70,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0864,
+        "combined_score": 0.3346,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.09 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 13,
+        "Target_ID": 76,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.2728,
+        "combined_score": 0.5091,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.27 | 난이도 university_level → junior_level | 동일 카테고리(ROS)"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 76,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(ROS)"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 76,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(ROS)"
+      },
+      {
+        "Preceding_ID": 23,
+        "Target_ID": 81,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['ros2'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(ROS2)"
+      },
+      {
+        "Preceding_ID": 21,
+        "Target_ID": 82,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 33,
+        "Target_ID": 82,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 39,
+        "Target_ID": 82,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 84,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0894,
+        "combined_score": 0.3357,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.09 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 13,
+        "Target_ID": 84,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0263,
+        "combined_score": 0.3105,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 84,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 74,
+        "Target_ID": 86,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.2588,
+        "combined_score": 0.4035,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=0.50) | 시나리오 유사도=0.26 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 18,
+        "Target_ID": 86,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1186,
+        "combined_score": 0.3474,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=0.50) | 시나리오 유사도=0.12 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 86,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1146,
+        "combined_score": 0.3458,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=0.50) | 시나리오 유사도=0.11 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 89,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 89,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 13,
+        "Target_ID": 89,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 90,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 90,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 13,
+        "Target_ID": 90,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 21,
+        "Target_ID": 91,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 33,
+        "Target_ID": 91,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 39,
+        "Target_ID": 91,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 3,
+        "Target_ID": 92,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.1056,
+        "combined_score": 0.6422,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=1.00) | 시나리오 유사도=0.11 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 16,
+        "Target_ID": 92,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 17,
+        "Target_ID": 92,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 93,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.1545,
+        "combined_score": 0.6618,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=1.00) | 시나리오 유사도=0.15 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 93,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 13,
+        "Target_ID": 93,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 9,
+        "Target_ID": 94,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.2008,
+        "combined_score": 0.1803,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.20 | 난이도 university_level → middle_level | 동일 카테고리(Sensors)"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 96,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Hardware)"
+      },
+      {
+        "Preceding_ID": 3,
+        "Target_ID": 96,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0921,
+        "combined_score": 0.6369,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=1.00) | 시나리오 유사도=0.09 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 16,
+        "Target_ID": 96,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 75,
+        "Target_ID": 97,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['math'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Control)"
+      },
+      {
+        "Preceding_ID": 73,
+        "Target_ID": 97,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.2216,
+        "combined_score": 0.6887,
+        "Logic": "공통 스킬 ['math'] (Jaccard=1.00) | 시나리오 유사도=0.22 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 1,
+        "Target_ID": 97,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['math'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 99,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1412,
+        "combined_score": 0.4565,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=0.50) | 시나리오 유사도=0.14 | 난이도 junior_level → middle_level | 동일 카테고리(Hardware)"
+      },
+      {
+        "Preceding_ID": 17,
+        "Target_ID": 99,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0947,
+        "combined_score": 0.3379,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=0.50) | 시나리오 유사도=0.09 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 3,
+        "Target_ID": 99,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 22,
+        "Target_ID": 100,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Programming)"
+      },
+      {
+        "Preceding_ID": 27,
+        "Target_ID": 100,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Programming)"
+      },
+      {
+        "Preceding_ID": 32,
+        "Target_ID": 100,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Programming)"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 102,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 102,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 13,
+        "Target_ID": 102,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 37,
+        "Target_ID": 103,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.1106,
+        "combined_score": 0.7443,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=1.00) | 시나리오 유사도=0.11 | 난이도 junior_level → middle_level | 동일 카테고리(Programming)"
+      },
+      {
+        "Preceding_ID": 22,
+        "Target_ID": 103,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.1002,
+        "combined_score": 0.7401,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=1.00) | 시나리오 유사도=0.10 | 난이도 junior_level → middle_level | 동일 카테고리(Programming)"
+      },
+      {
+        "Preceding_ID": 32,
+        "Target_ID": 103,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0267,
+        "combined_score": 0.7107,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=1.00) | 시나리오 유사도=0.03 | 난이도 junior_level → middle_level | 동일 카테고리(Programming)"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 104,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Hardware)"
+      },
+      {
+        "Preceding_ID": 3,
+        "Target_ID": 104,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.105,
+        "combined_score": 0.642,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=1.00) | 시나리오 유사도=0.10 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 16,
+        "Target_ID": 104,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 73,
+        "Target_ID": 106,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0444,
+        "combined_score": 0.4178,
+        "Logic": "공통 스킬 ['math'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 university_level → middle_level | 동일 카테고리(Kinematics)"
+      },
+      {
+        "Preceding_ID": 1,
+        "Target_ID": 106,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0388,
+        "combined_score": 0.4155,
+        "Logic": "공통 스킬 ['math'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 university_level → middle_level | 동일 카테고리(Kinematics)"
+      },
+      {
+        "Preceding_ID": 13,
+        "Target_ID": 106,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0362,
+        "combined_score": 0.3145,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 107,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 14,
+        "Target_ID": 107,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 18,
+        "Target_ID": 107,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 108,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['control theory'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 11,
+        "Target_ID": 108,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['control theory'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 109,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Hardware)"
+      },
+      {
+        "Preceding_ID": 3,
+        "Target_ID": 109,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 16,
+        "Target_ID": 109,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 111,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0433,
+        "combined_score": 0.3173,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 111,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 101,
+        "Target_ID": 111,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0769,
+        "combined_score": 0.2308,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.33) | 시나리오 유사도=0.08 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 37,
+        "Target_ID": 112,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0894,
+        "combined_score": 0.3358,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.50) | 시나리오 유사도=0.09 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 22,
+        "Target_ID": 112,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.081,
+        "combined_score": 0.3324,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.50) | 시나리오 유사도=0.08 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 103,
+        "Target_ID": 112,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0614,
+        "combined_score": 0.3246,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.50) | 시나리오 유사도=0.06 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 113,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0762,
+        "combined_score": 0.4305,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.08 | 난이도 middle_level → senior_level | 동일 카테고리(Software)"
+      },
+      {
+        "Preceding_ID": 23,
+        "Target_ID": 113,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros2'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 113,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 114,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.18,
+        "combined_score": 0.272,
+        "Logic": "공통 스킬 ['navigation'] (Jaccard=0.33) | 시나리오 유사도=0.18 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 56,
+        "Target_ID": 114,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1374,
+        "combined_score": 0.255,
+        "Logic": "공통 스킬 ['navigation'] (Jaccard=0.33) | 시나리오 유사도=0.14 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 81,
+        "Target_ID": 114,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0431,
+        "combined_score": 0.2173,
+        "Logic": "공통 스킬 ['navigation'] (Jaccard=0.33) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 37,
+        "Target_ID": 115,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0258,
+        "combined_score": 0.3103,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 22,
+        "Target_ID": 115,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0234,
+        "combined_score": 0.3094,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 32,
+        "Target_ID": 115,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0223,
+        "combined_score": 0.3089,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 116,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 116,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 53,
+        "Target_ID": 117,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0989,
+        "combined_score": 0.7396,
+        "Logic": "공통 스킬 ['slam'] (Jaccard=1.00) | 시나리오 유사도=0.10 | 난이도 middle_level → senior_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 117,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.154,
+        "combined_score": 0.1616,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.15 | 난이도 university_level → senior_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 45,
+        "Target_ID": 118,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0152,
+        "combined_score": 0.6061,
+        "Logic": "공통 스킬 ['c++', 'linux'] (Jaccard=1.00) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 22,
+        "Target_ID": 118,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.2233,
+        "combined_score": 0.3893,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.50) | 시나리오 유사도=0.22 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 37,
+        "Target_ID": 118,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0198,
+        "combined_score": 0.3079,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 57,
+        "Target_ID": 119,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['system architecture'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 120,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0386,
+        "combined_score": 0.6154,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=1.00) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 120,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 86,
+        "Target_ID": 121,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['algorithm', 'math'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 121,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 14,
+        "Target_ID": 121,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 90,
+        "Target_ID": 123,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['software engineering'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Software)"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 123,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.292,
+        "combined_score": 0.2168,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.29 | 난이도 middle_level → senior_level | 동일 카테고리(Software)"
+      },
+      {
+        "Preceding_ID": 45,
+        "Target_ID": 124,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0172,
+        "combined_score": 0.6069,
+        "Logic": "공통 스킬 ['c++', 'linux'] (Jaccard=1.00) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 55,
+        "Target_ID": 124,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.118,
+        "combined_score": 0.4472,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.12 | 난이도 middle_level → senior_level | 동일 카테고리(System)"
+      },
+      {
+        "Preceding_ID": 21,
+        "Target_ID": 124,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0797,
+        "combined_score": 0.3319,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.08 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 125,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 125,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 101,
+        "Target_ID": 125,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 85,
+        "Target_ID": 126,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['docker'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 47,
+        "Target_ID": 126,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['docker'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 95,
+        "Target_ID": 127,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Network)"
+      },
+      {
+        "Preceding_ID": 88,
+        "Target_ID": 127,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 42,
+        "Target_ID": 127,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 18,
+        "Target_ID": 128,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.1171,
+        "combined_score": 0.7468,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=1.00) | 시나리오 유사도=0.12 | 난이도 university_level → senior_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 128,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0886,
+        "combined_score": 0.7354,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=1.00) | 시나리오 유사도=0.09 | 난이도 university_level → senior_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 74,
+        "Target_ID": 128,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0774,
+        "combined_score": 0.731,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=1.00) | 시나리오 유사도=0.08 | 난이도 university_level → senior_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 90,
+        "Target_ID": 129,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1041,
+        "combined_score": 0.4416,
+        "Logic": "공통 스킬 ['software engineering'] (Jaccard=0.50) | 시나리오 유사도=0.10 | 난이도 middle_level → senior_level | 동일 카테고리(Software)"
+      },
+      {
+        "Preceding_ID": 100,
+        "Target_ID": 130,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.114,
+        "combined_score": 0.6456,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=1.00) | 시나리오 유사도=0.11 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 35,
+        "Target_ID": 130,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0688,
+        "combined_score": 0.6275,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=1.00) | 시나리오 유사도=0.07 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 22,
+        "Target_ID": 130,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 101,
+        "Target_ID": 131,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Architecture)"
+      },
+      {
+        "Preceding_ID": 85,
+        "Target_ID": 131,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0908,
+        "combined_score": 0.2363,
+        "Logic": "공통 스킬 ['docker'] (Jaccard=0.33) | 시나리오 유사도=0.09 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 47,
+        "Target_ID": 131,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['docker'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 132,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Software)"
+      },
+      {
+        "Preceding_ID": 23,
+        "Target_ID": 132,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros2'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 132,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 78,
+        "Target_ID": 133,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0189,
+        "combined_score": 0.3076,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 39,
+        "Target_ID": 133,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0167,
+        "combined_score": 0.3067,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 21,
+        "Target_ID": 133,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0165,
+        "combined_score": 0.3066,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 22,
+        "Target_ID": 134,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 27,
+        "Target_ID": 134,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 32,
+        "Target_ID": 134,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 135,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 135,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 101,
+        "Target_ID": 137,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.2301,
+        "combined_score": 0.292,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.33) | 시나리오 유사도=0.23 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 86,
+        "Target_ID": 138,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0756,
+        "combined_score": 0.6303,
+        "Logic": "공통 스킬 ['algorithm', 'math'] (Jaccard=1.00) | 시나리오 유사도=0.08 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 138,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.2428,
+        "combined_score": 0.4971,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=0.50) | 시나리오 유사도=0.24 | 난이도 university_level → senior_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 74,
+        "Target_ID": 138,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.2007,
+        "combined_score": 0.4803,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=0.50) | 시나리오 유사도=0.20 | 난이도 university_level → senior_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 45,
+        "Target_ID": 139,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.2155,
+        "combined_score": 0.6862,
+        "Logic": "공통 스킬 ['c++', 'linux'] (Jaccard=1.00) | 시나리오 유사도=0.22 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 22,
+        "Target_ID": 139,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.2916,
+        "combined_score": 0.4167,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.50) | 시나리오 유사도=0.29 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 55,
+        "Target_ID": 139,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(System)"
+      },
+      {
+        "Preceding_ID": 95,
+        "Target_ID": 140,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Network)"
+      },
+      {
+        "Preceding_ID": 88,
+        "Target_ID": 140,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1041,
+        "combined_score": 0.3416,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.10 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 140,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 141,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1483,
+        "combined_score": 0.3593,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.15 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 141,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 101,
+        "Target_ID": 141,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Architecture)"
+      },
+      {
+        "Preceding_ID": 88,
+        "Target_ID": 142,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 95,
+        "Target_ID": 142,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 42,
+        "Target_ID": 142,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0275,
+        "combined_score": 0.211,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 101,
+        "Target_ID": 143,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 73,
+        "Target_ID": 144,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.2378,
+        "combined_score": 0.3951,
+        "Logic": "공통 스킬 ['math'] (Jaccard=0.50) | 시나리오 유사도=0.24 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 97,
+        "Target_ID": 144,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0989,
+        "combined_score": 0.3396,
+        "Logic": "공통 스킬 ['math'] (Jaccard=0.50) | 시나리오 유사도=0.10 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 20,
+        "Target_ID": 144,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0465,
+        "combined_score": 0.3186,
+        "Logic": "공통 스킬 ['math'] (Jaccard=0.50) | 시나리오 유사도=0.05 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 99,
+        "Target_ID": 145,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0525,
+        "combined_score": 0.221,
+        "Logic": "공통 스킬 ['testing'] (Jaccard=0.33) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 89,
+        "Target_ID": 145,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['ci/cd'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 110,
+        "Target_ID": 146,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.112,
+        "combined_score": 0.3448,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.11 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 87,
+        "Target_ID": 146,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0388,
+        "combined_score": 0.3155,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 101,
+        "Target_ID": 146,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Architecture)"
+      },
+      {
+        "Preceding_ID": 90,
+        "Target_ID": 147,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['software engineering'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Software)"
+      },
+      {
+        "Preceding_ID": 47,
+        "Target_ID": 148,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['docker', 'linux'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 91,
+        "Target_ID": 148,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.092,
+        "combined_score": 0.3368,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.33) | 시나리오 유사도=0.09 | 난이도 middle_level → senior_level | 동일 카테고리(Software)"
+      },
+      {
+        "Preceding_ID": 78,
+        "Target_ID": 148,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0826,
+        "combined_score": 0.333,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.08 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 53,
+        "Target_ID": 149,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['slam'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 20,
+        "Target_ID": 149,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.075,
+        "combined_score": 0.33,
+        "Logic": "공통 스킬 ['math'] (Jaccard=0.50) | 시나리오 유사도=0.07 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 1,
+        "Target_ID": 149,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['math'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 150,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Software)"
+      },
+      {
+        "Preceding_ID": 22,
+        "Target_ID": 150,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.2384,
+        "combined_score": 0.3954,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.50) | 시나리오 유사도=0.24 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 37,
+        "Target_ID": 150,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1015,
+        "combined_score": 0.3406,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.50) | 시나리오 유사도=0.10 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 25,
+        "Target_ID": 151,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.2948,
+        "combined_score": 0.8179,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=1.00) | 시나리오 유사도=0.29 | 난이도 junior_level → senior_level | 동일 카테고리(Hardware)"
+      },
+      {
+        "Preceding_ID": 96,
+        "Target_ID": 151,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Hardware)"
+      },
+      {
+        "Preceding_ID": 104,
+        "Target_ID": 151,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Hardware)"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 152,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.2554,
+        "combined_score": 0.2022,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.26 | 난이도 middle_level → senior_level | 동일 카테고리(Software)"
+      },
+      {
+        "Preceding_ID": 110,
+        "Target_ID": 153,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0331,
+        "combined_score": 0.7133,
+        "Logic": "공통 스킬 ['database'] (Jaccard=1.00) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Data)"
+      },
+      {
+        "Preceding_ID": 87,
+        "Target_ID": 153,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0364,
+        "combined_score": 0.6145,
+        "Logic": "공통 스킬 ['database'] (Jaccard=1.00) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 83,
+        "Target_ID": 154,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['computer vision'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 101,
+        "Target_ID": 154,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0975,
+        "combined_score": 0.239,
+        "Logic": "공통 스킬 ['edge'] (Jaccard=0.33) | 시나리오 유사도=0.10 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 101,
+        "Target_ID": 155,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 156,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 14,
+        "Target_ID": 156,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 18,
+        "Target_ID": 156,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 57,
+        "Target_ID": 157,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0486,
+        "combined_score": 0.6194,
+        "Logic": "공통 스킬 ['system architecture'] (Jaccard=1.00) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 44,
+        "Target_ID": 157,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1777,
+        "combined_score": 0.1711,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.18 | 난이도 middle_level → senior_level | 동일 카테고리(System)"
+      },
+      {
+        "Preceding_ID": 46,
+        "Target_ID": 158,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.1059,
+        "combined_score": 0.6424,
+        "Logic": "공통 스킬 ['network', 'ros2'] (Jaccard=1.00) | 시나리오 유사도=0.11 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 23,
+        "Target_ID": 158,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.2061,
+        "combined_score": 0.3825,
+        "Logic": "공통 스킬 ['ros2'] (Jaccard=0.50) | 시나리오 유사도=0.21 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 88,
+        "Target_ID": 158,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 159,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 159,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 102,
+        "Target_ID": 160,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0797,
+        "combined_score": 0.4319,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.08 | 난이도 middle_level → senior_level | 동일 카테고리(System)"
+      },
+      {
+        "Preceding_ID": 55,
+        "Target_ID": 160,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(System)"
+      },
+      {
+        "Preceding_ID": 21,
+        "Target_ID": 160,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0604,
+        "combined_score": 0.3241,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.06 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 37,
+        "Target_ID": 161,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0232,
+        "combined_score": 0.3093,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 22,
+        "Target_ID": 161,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.021,
+        "combined_score": 0.3084,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 32,
+        "Target_ID": 161,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0201,
+        "combined_score": 0.308,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 86,
+        "Target_ID": 162,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['algorithm', 'math'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 162,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 14,
+        "Target_ID": 162,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 55,
+        "Target_ID": 163,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(System)"
+      },
+      {
+        "Preceding_ID": 44,
+        "Target_ID": 163,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0214,
+        "combined_score": 0.3086,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.33) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level | 동일 카테고리(System)"
+      },
+      {
+        "Preceding_ID": 78,
+        "Target_ID": 163,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0207,
+        "combined_score": 0.3083,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 14,
+        "Target_ID": 164,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.2043,
+        "combined_score": 0.6817,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=1.00) | 시나리오 유사도=0.20 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 164,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.1089,
+        "combined_score": 0.6436,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=1.00) | 시나리오 유사도=0.11 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 74,
+        "Target_ID": 164,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0952,
+        "combined_score": 0.6381,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=1.00) | 시나리오 유사도=0.10 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 90,
+        "Target_ID": 165,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.026,
+        "combined_score": 0.4104,
+        "Logic": "공통 스킬 ['software engineering'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Software)"
+      },
+      {
+        "Preceding_ID": 101,
+        "Target_ID": 166,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 167,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0861,
+        "combined_score": 0.6344,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=1.00) | 시나리오 유사도=0.09 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 167,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 18,
+        "Target_ID": 168,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1567,
+        "combined_score": 0.3627,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=0.50) | 시나리오 유사도=0.16 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 168,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1394,
+        "combined_score": 0.3557,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=0.50) | 시나리오 유사도=0.14 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 14,
+        "Target_ID": 168,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 35,
+        "Target_ID": 169,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0621,
+        "combined_score": 0.3248,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.50) | 시나리오 유사도=0.06 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 22,
+        "Target_ID": 169,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 27,
+        "Target_ID": 169,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 42,
+        "Target_ID": 170,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.019,
+        "combined_score": 0.6076,
+        "Logic": "공통 스킬 ['linux', 'network'] (Jaccard=1.00) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 82,
+        "Target_ID": 170,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['linux', 'network'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 55,
+        "Target_ID": 170,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(System)"
+      },
+      {
+        "Preceding_ID": 90,
+        "Target_ID": 171,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0564,
+        "combined_score": 0.3226,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.33) | 시나리오 유사도=0.06 | 난이도 middle_level → senior_level | 동일 카테고리(Software)"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 171,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 171,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ros'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 83,
+        "Target_ID": 172,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.1545,
+        "combined_score": 0.6618,
+        "Logic": "공통 스킬 ['computer vision'] (Jaccard=1.00) | 시나리오 유사도=0.15 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 101,
+        "Target_ID": 173,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['cloud', 'edge'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 174,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Software)"
+      },
+      {
+        "Preceding_ID": 21,
+        "Target_ID": 174,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0683,
+        "combined_score": 0.3273,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.07 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 78,
+        "Target_ID": 174,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0218,
+        "combined_score": 0.3087,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 53,
+        "Target_ID": 175,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['slam'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 87,
+        "Target_ID": 176,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1236,
+        "combined_score": 0.3494,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.12 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 110,
+        "Target_ID": 176,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0316,
+        "combined_score": 0.3126,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 101,
+        "Target_ID": 176,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 177,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 177,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 100,
+        "Target_ID": 178,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0562,
+        "combined_score": 0.6225,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=1.00) | 시나리오 유사도=0.06 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 22,
+        "Target_ID": 178,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 27,
+        "Target_ID": 178,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['c++'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 179,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.3216,
+        "combined_score": 0.2286,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.32 | 난이도 middle_level → senior_level | 동일 카테고리(Software)"
+      },
+      {
+        "Preceding_ID": 101,
+        "Target_ID": 180,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Architecture)"
+      },
+      {
+        "Preceding_ID": 87,
+        "Target_ID": 181,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 110,
+        "Target_ID": 181,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 101,
+        "Target_ID": 181,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 17,
+        "Target_ID": 182,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Control)"
+      },
+      {
+        "Preceding_ID": 3,
+        "Target_ID": 182,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0266,
+        "combined_score": 0.3106,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 59,
+        "Target_ID": 182,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0159,
+        "combined_score": 0.3064,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=0.33) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level | 동일 카테고리(Control)"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 183,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.047,
+        "combined_score": 0.7188,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=1.00) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level | 동일 카테고리(System)"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 183,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 92,
+        "Target_ID": 183,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1326,
+        "combined_score": 0.153,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.13 | 난이도 middle_level → senior_level | 동일 카테고리(System)"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 184,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 184,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 88,
+        "Target_ID": 185,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 95,
+        "Target_ID": 185,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 46,
+        "Target_ID": 185,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1055,
+        "combined_score": 0.2422,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.33) | 시나리오 유사도=0.11 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 104,
+        "Target_ID": 186,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1193,
+        "combined_score": 0.3477,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=0.50) | 시나리오 유사도=0.12 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 3,
+        "Target_ID": 186,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0658,
+        "combined_score": 0.3263,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=0.50) | 시나리오 유사도=0.07 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 92,
+        "Target_ID": 186,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0371,
+        "combined_score": 0.3148,
+        "Logic": "공통 스킬 ['hardware'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 187,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0929,
+        "combined_score": 0.4371,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.09 | 난이도 middle_level → senior_level | 동일 카테고리(Software)"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 187,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 101,
+        "Target_ID": 187,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 90,
+        "Target_ID": 188,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['software engineering'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Software)"
+      },
+      {
+        "Preceding_ID": 101,
+        "Target_ID": 189,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Architecture)"
+      },
+      {
+        "Preceding_ID": 74,
+        "Target_ID": 190,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.1436,
+        "combined_score": 0.6575,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=1.00) | 시나리오 유사도=0.14 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 18,
+        "Target_ID": 190,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0696,
+        "combined_score": 0.6278,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=1.00) | 시나리오 유사도=0.07 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 190,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0672,
+        "combined_score": 0.6269,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=1.00) | 시나리오 유사도=0.07 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 88,
+        "Target_ID": 192,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 95,
+        "Target_ID": 192,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 46,
+        "Target_ID": 192,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1116,
+        "combined_score": 0.2446,
+        "Logic": "공통 스킬 ['network'] (Jaccard=0.33) | 시나리오 유사도=0.11 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 87,
+        "Target_ID": 195,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0665,
+        "combined_score": 0.4266,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.07 | 난이도 middle_level → senior_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 110,
+        "Target_ID": 195,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 101,
+        "Target_ID": 196,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1075,
+        "combined_score": 0.343,
+        "Logic": "공통 스킬 ['cloud'] (Jaccard=0.50) | 시나리오 유사도=0.11 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 197,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(System)"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 197,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0625,
+        "combined_score": 0.625,
+        "Logic": "공통 스킬 ['system design'] (Jaccard=1.00) | 시나리오 유사도=0.06 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 85,
+        "Target_ID": 198,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0634,
+        "combined_score": 0.3253,
+        "Logic": "공통 스킬 ['docker'] (Jaccard=0.50) | 시나리오 유사도=0.06 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 89,
+        "Target_ID": 198,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['ci/cd'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Software)"
+      },
+      {
+        "Preceding_ID": 47,
+        "Target_ID": 198,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['docker'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 86,
+        "Target_ID": 199,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['algorithm', 'math'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 199,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 14,
+        "Target_ID": 199,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['algorithm'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Algorithm)"
+      },
+      {
+        "Preceding_ID": 57,
+        "Target_ID": 200,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['system architecture'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      }
+    ]
+  },
+  "ordered_path": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    71,
+    72,
+    73,
+    74,
+    75,
+    21,
+    22,
+    23,
+    24,
+    27,
+    31,
+    32,
+    33,
+    34,
+    35,
+    37,
+    40,
+    77,
+    78,
+    79,
+    80,
+    29,
+    39,
+    25,
+    26,
+    28,
+    30,
+    36,
+    38,
+    76,
+    51,
+    57,
+    58,
+    83,
+    85,
+    87,
+    88,
+    95,
+    98,
+    101,
+    105,
+    110,
+    46,
+    52,
+    53,
+    81,
+    94,
+    108,
+    41,
+    42,
+    43,
+    44,
+    45,
+    47,
+    48,
+    49,
+    50,
+    54,
+    55,
+    56,
+    59,
+    60,
+    82,
+    84,
+    86,
+    89,
+    90,
+    91,
+    92,
+    93,
+    96,
+    97,
+    99,
+    100,
+    102,
+    103,
+    104,
+    106,
+    107,
+    109,
+    122,
+    136,
+    191,
+    193,
+    194,
+    63,
+    69,
+    119,
+    129,
+    137,
+    143,
+    147,
+    152,
+    155,
+    165,
+    166,
+    172,
+    173,
+    175,
+    179,
+    180,
+    188,
+    189,
+    196,
+    200,
+    116,
+    117,
+    120,
+    123,
+    126,
+    135,
+    145,
+    153,
+    154,
+    157,
+    159,
+    167,
+    177,
+    184,
+    195,
+    197,
+    61,
+    62,
+    64,
+    65,
+    66,
+    67,
+    68,
+    70,
+    111,
+    112,
+    113,
+    114,
+    115,
+    118,
+    121,
+    124,
+    125,
+    127,
+    128,
+    130,
+    131,
+    132,
+    133,
+    134,
+    138,
+    139,
+    140,
+    141,
+    142,
+    144,
+    146,
+    148,
+    149,
+    150,
+    151,
+    156,
+    158,
+    160,
+    161,
+    162,
+    163,
+    164,
+    168,
+    169,
+    170,
+    171,
+    174,
+    176,
+    178,
+    181,
+    182,
+    183,
+    185,
+    186,
+    187,
+    190,
+    192,
+    198,
+    199
+  ],
+  "isolated_problems": [
+    5,
+    6,
+    19,
+    24,
+    31,
+    34,
+    40,
+    51,
+    71,
+    72,
+    77,
+    79,
+    80,
+    98,
+    122,
+    136,
+    191,
+    193,
+    194
+  ]
+}

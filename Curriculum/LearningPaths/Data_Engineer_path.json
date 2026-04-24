@@ -1,0 +1,6997 @@
+{
+  "metadata": {
+    "job_role": "Data_Engineer",
+    "source_file": "Data_Engineer.json",
+    "total_problems": 200,
+    "difficulty_distribution": {
+      "university_level": 25,
+      "junior_level": 25,
+      "middle_level": 50,
+      "senior_level": 100
+    },
+    "cluster_count": 193,
+    "edge_count": 287,
+    "isolated_problem_count": 34,
+    "parameters": {
+      "skill_weight": 0.6,
+      "scenario_weight": 0.4,
+      "min_combined_score": 0.15,
+      "max_prereqs_per_target": 3,
+      "same_category_bonus": 0.1
+    }
+  },
+  "clusters": [
+    {
+      "cluster_id": "Orchestration__Airflow",
+      "category": "Orchestration",
+      "subcategory": "Airflow",
+      "size": 3,
+      "question_ids": [
+        51,
+        55,
+        11
+      ],
+      "common_skills": [
+        "Apache Airflow",
+        "Python",
+        "CeleryExecutor",
+        "Redis"
+      ]
+    },
+    {
+      "cluster_id": "Data Quality__Data Profiling",
+      "category": "Data Quality",
+      "subcategory": "Data Profiling",
+      "size": 2,
+      "question_ids": [
+        58,
+        89
+      ],
+      "common_skills": [
+        "SQL",
+        "Data Profiling"
+      ]
+    },
+    {
+      "cluster_id": "Data Warehouse__BigQuery",
+      "category": "Data Warehouse",
+      "subcategory": "BigQuery",
+      "size": 2,
+      "question_ids": [
+        9,
+        81
+      ],
+      "common_skills": [
+        "Google BigQuery",
+        "SQL",
+        "Cloud + Cost",
+        "BigQuery"
+      ]
+    },
+    {
+      "cluster_id": "Database__NoSQL",
+      "category": "Database",
+      "subcategory": "NoSQL",
+      "size": 2,
+      "question_ids": [
+        32,
+        88
+      ],
+      "common_skills": [
+        "NoSQL",
+        "Data Modeling",
+        "Apache Cassandra"
+      ]
+    },
+    {
+      "cluster_id": "Scripting__Python",
+      "category": "Scripting",
+      "subcategory": "Python",
+      "size": 2,
+      "question_ids": [
+        40,
+        8
+      ],
+      "common_skills": [
+        "Python",
+        "Data Structures",
+        "Memory Management"
+      ]
+    },
+    {
+      "cluster_id": "Security__Data Privacy",
+      "category": "Security",
+      "subcategory": "Data Privacy",
+      "size": 2,
+      "question_ids": [
+        100,
+        28
+      ],
+      "common_skills": [
+        "Security",
+        "Cloud IAM",
+        "Data Masking"
+      ]
+    },
+    {
+      "cluster_id": "API Integration__Rate Limiting",
+      "category": "API Integration",
+      "subcategory": "Rate Limiting",
+      "size": 1,
+      "question_ids": [
+        189
+      ],
+      "common_skills": [
+        "Python",
+        "API Interaction"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__CDC (Change Data Capture)",
+      "category": "Architecture",
+      "subcategory": "CDC (Change Data Capture)",
+      "size": 1,
+      "question_ids": [
+        14
+      ],
+      "common_skills": [
+        "Debezium",
+        "Kafka",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Consensus",
+      "category": "Architecture",
+      "subcategory": "Consensus",
+      "size": 1,
+      "question_ids": [
+        130
+      ],
+      "common_skills": [
+        "Distributed Systems",
+        "Zookeeper / etcd"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Data Lake vs Data Warehouse",
+      "category": "Architecture",
+      "subcategory": "Data Lake vs Data Warehouse",
+      "size": 1,
+      "question_ids": [
+        66
+      ],
+      "common_skills": [
+        "Data Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Fraud Detection",
+      "category": "Architecture",
+      "subcategory": "Fraud Detection",
+      "size": 1,
+      "question_ids": [
+        180
+      ],
+      "common_skills": [
+        "Machine Learning",
+        "Streaming"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Lambda vs Kappa",
+      "category": "Architecture",
+      "subcategory": "Lambda vs Kappa",
+      "size": 1,
+      "question_ids": [
+        80
+      ],
+      "common_skills": [
+        "Data Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Leader Election",
+      "category": "Architecture",
+      "subcategory": "Leader Election",
+      "size": 1,
+      "question_ids": [
+        199
+      ],
+      "common_skills": [
+        "Zookeeper",
+        "Distributed Systems"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Monolith ETL",
+      "category": "Architecture",
+      "subcategory": "Monolith ETL",
+      "size": 1,
+      "question_ids": [
+        152
+      ],
+      "common_skills": [
+        "System Design",
+        "Airflow"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Monolith to Microservices",
+      "category": "Architecture",
+      "subcategory": "Monolith to Microservices",
+      "size": 1,
+      "question_ids": [
+        123
+      ],
+      "common_skills": [
+        "Database + API",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Real-time Analytics",
+      "category": "Architecture",
+      "subcategory": "Real-time Analytics",
+      "size": 1,
+      "question_ids": [
+        141
+      ],
+      "common_skills": [
+        "Kafka",
+        "ClickHouse",
+        "System Design"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Real-time Dashboard",
+      "category": "Architecture",
+      "subcategory": "Real-time Dashboard",
+      "size": 1,
+      "question_ids": [
+        21
+      ],
+      "common_skills": [
+        "Kafka",
+        "Flink",
+        "Redis",
+        "WebSockets"
+      ]
+    },
+    {
+      "cluster_id": "Architecture__Streaming vs Batch",
+      "category": "Architecture",
+      "subcategory": "Streaming vs Batch",
+      "size": 1,
+      "question_ids": [
+        183
+      ],
+      "common_skills": [
+        "Data Pipeline"
+      ]
+    },
+    {
+      "cluster_id": "Big Data__HDFS",
+      "category": "Big Data",
+      "subcategory": "HDFS",
+      "size": 1,
+      "question_ids": [
+        3
+      ],
+      "common_skills": [
+        "Hadoop",
+        "HDFS"
+      ]
+    },
+    {
+      "cluster_id": "CI/CD__Data Pipelines",
+      "category": "CI/CD",
+      "subcategory": "Data Pipelines",
+      "size": 1,
+      "question_ids": [
+        154
+      ],
+      "common_skills": [
+        "DevOps",
+        "dbt"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Architecture__Cross-account Access",
+      "category": "Cloud Architecture",
+      "subcategory": "Cross-account Access",
+      "size": 1,
+      "question_ids": [
+        147
+      ],
+      "common_skills": [
+        "AWS IAM",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Architecture__Serverless Data Prep",
+      "category": "Cloud Architecture",
+      "subcategory": "Serverless Data Prep",
+      "size": 1,
+      "question_ids": [
+        161
+      ],
+      "common_skills": [
+        "AWS Lambda",
+        "AWS Glue"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Computing__Auto Scaling",
+      "category": "Cloud Computing",
+      "subcategory": "Auto Scaling",
+      "size": 1,
+      "question_ids": [
+        97
+      ],
+      "common_skills": [
+        "Cloud + Cost",
+        "Auto Scaling"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Computing__Data Transfer Cost",
+      "category": "Cloud Computing",
+      "subcategory": "Data Transfer Cost",
+      "size": 1,
+      "question_ids": [
+        134
+      ],
+      "common_skills": [
+        "Cloud + Cost",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Computing__Disaster Recovery",
+      "category": "Cloud Computing",
+      "subcategory": "Disaster Recovery",
+      "size": 1,
+      "question_ids": [
+        131
+      ],
+      "common_skills": [
+        "Architecture",
+        "High Availability"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Computing__EMR Spot Scaling",
+      "category": "Cloud Computing",
+      "subcategory": "EMR Spot Scaling",
+      "size": 1,
+      "question_ids": [
+        188
+      ],
+      "common_skills": [
+        "Cloud + Cost",
+        "AWS EMR"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Computing__FinOps",
+      "category": "Cloud Computing",
+      "subcategory": "FinOps",
+      "size": 1,
+      "question_ids": [
+        29
+      ],
+      "common_skills": [
+        "AWS EMR",
+        "Spot Instances"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Computing__IAM",
+      "category": "Cloud Computing",
+      "subcategory": "IAM",
+      "size": 1,
+      "question_ids": [
+        108
+      ],
+      "common_skills": [
+        "Security",
+        "AWS IAM"
+      ]
+    },
+    {
+      "cluster_id": "Cloud Computing__Spot Instances",
+      "category": "Cloud Computing",
+      "subcategory": "Spot Instances",
+      "size": 1,
+      "question_ids": [
+        102
+      ],
+      "common_skills": [
+        "Cloud + Cost",
+        "FinOps"
+      ]
+    },
+    {
+      "cluster_id": "Cloud__Data Storage",
+      "category": "Cloud",
+      "subcategory": "Data Storage",
+      "size": 1,
+      "question_ids": [
+        37
+      ],
+      "common_skills": [
+        "Cloud Computing"
+      ]
+    },
+    {
+      "cluster_id": "Code Quality__PySpark Refactoring",
+      "category": "Code Quality",
+      "subcategory": "PySpark Refactoring",
+      "size": 1,
+      "question_ids": [
+        172
+      ],
+      "common_skills": [
+        "PySpark",
+        "Clean Code"
+      ]
+    },
+    {
+      "cluster_id": "Code Quality__Spark Unit Test",
+      "category": "Code Quality",
+      "subcategory": "Spark Unit Test",
+      "size": 1,
+      "question_ids": [
+        191
+      ],
+      "common_skills": [
+        "PySpark",
+        "Unit Testing"
+      ]
+    },
+    {
+      "cluster_id": "Compliance__Data Dictionary",
+      "category": "Compliance",
+      "subcategory": "Data Dictionary",
+      "size": 1,
+      "question_ids": [
+        156
+      ],
+      "common_skills": [
+        "Data Governance"
+      ]
+    },
+    {
+      "cluster_id": "Compliance__PII Exposure",
+      "category": "Compliance",
+      "subcategory": "PII Exposure",
+      "size": 1,
+      "question_ids": [
+        184
+      ],
+      "common_skills": [
+        "Data Governance",
+        "Anonymization"
+      ]
+    },
+    {
+      "cluster_id": "Data Access__Bulk Export API",
+      "category": "Data Access",
+      "subcategory": "Bulk Export API",
+      "size": 1,
+      "question_ids": [
+        197
+      ],
+      "common_skills": [
+        "System Design",
+        "Database + API"
+      ]
+    },
+    {
+      "cluster_id": "Data Access__Data as a Service",
+      "category": "Data Access",
+      "subcategory": "Data as a Service",
+      "size": 1,
+      "question_ids": [
+        157
+      ],
+      "common_skills": [
+        "API Design",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Data Access__REST vs GraphQL",
+      "category": "Data Access",
+      "subcategory": "REST vs GraphQL",
+      "size": 1,
+      "question_ids": [
+        177
+      ],
+      "common_skills": [
+        "GraphQL",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Data Architecture__Data Mesh",
+      "category": "Data Architecture",
+      "subcategory": "Data Mesh",
+      "size": 1,
+      "question_ids": [
+        112
+      ],
+      "common_skills": [
+        "Data Mesh",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Data Formats__Compression",
+      "category": "Data Formats",
+      "subcategory": "Compression",
+      "size": 1,
+      "question_ids": [
+        103
+      ],
+      "common_skills": [
+        "Data Formats",
+        "Hadoop"
+      ]
+    },
+    {
+      "cluster_id": "Data Formats__Schema Evolution",
+      "category": "Data Formats",
+      "subcategory": "Schema Evolution",
+      "size": 1,
+      "question_ids": [
+        153
+      ],
+      "common_skills": [
+        "Apache Avro",
+        "Kafka"
+      ]
+    },
+    {
+      "cluster_id": "Data Formats__Serialization",
+      "category": "Data Formats",
+      "subcategory": "Serialization",
+      "size": 1,
+      "question_ids": [
+        67
+      ],
+      "common_skills": [
+        "Data Formats"
+      ]
+    },
+    {
+      "cluster_id": "Data Governance__Data Catalog",
+      "category": "Data Governance",
+      "subcategory": "Data Catalog",
+      "size": 1,
+      "question_ids": [
+        125
+      ],
+      "common_skills": [
+        "Data Governance",
+        "Metadata Management"
+      ]
+    },
+    {
+      "cluster_id": "Data Integration__API Rate Limits",
+      "category": "Data Integration",
+      "subcategory": "API Rate Limits",
+      "size": 1,
+      "question_ids": [
+        110
+      ],
+      "common_skills": [
+        "API Interaction",
+        "Python"
+      ]
+    },
+    {
+      "cluster_id": "Data Integration__CDC Methods",
+      "category": "Data Integration",
+      "subcategory": "CDC Methods",
+      "size": 1,
+      "question_ids": [
+        98
+      ],
+      "common_skills": [
+        "CDC"
+      ]
+    },
+    {
+      "cluster_id": "Data Integration__Data Loss Recovery",
+      "category": "Data Integration",
+      "subcategory": "Data Loss Recovery",
+      "size": 1,
+      "question_ids": [
+        27
+      ],
+      "common_skills": [
+        "Kafka",
+        "Offset Management"
+      ]
+    },
+    {
+      "cluster_id": "Data Integration__ETL Tools",
+      "category": "Data Integration",
+      "subcategory": "ETL Tools",
+      "size": 1,
+      "question_ids": [
+        70
+      ],
+      "common_skills": [
+        "ETL"
+      ]
+    },
+    {
+      "cluster_id": "Data Integration__ETL vs Zero-ETL",
+      "category": "Data Integration",
+      "subcategory": "ETL vs Zero-ETL",
+      "size": 1,
+      "question_ids": [
+        143
+      ],
+      "common_skills": [
+        "Data Warehouse",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Data Integration__Event-Driven Architecture",
+      "category": "Data Integration",
+      "subcategory": "Event-Driven Architecture",
+      "size": 1,
+      "question_ids": [
+        160
+      ],
+      "common_skills": [
+        "CDC",
+        "Kafka",
+        "Elasticsearch"
+      ]
+    },
+    {
+      "cluster_id": "Data Lakehouse__Iceberg vs Hive",
+      "category": "Data Lakehouse",
+      "subcategory": "Iceberg vs Hive",
+      "size": 1,
+      "question_ids": [
+        113
+      ],
+      "common_skills": [
+        "Apache Iceberg",
+        "Hive Metastore"
+      ]
+    },
+    {
+      "cluster_id": "Data Lakehouse__Table Formats",
+      "category": "Data Lakehouse",
+      "subcategory": "Table Formats",
+      "size": 1,
+      "question_ids": [
+        22
+      ],
+      "common_skills": [
+        "Iceberg",
+        "Hudi",
+        "Delta Lake"
+      ]
+    },
+    {
+      "cluster_id": "Data Modeling__Data Vault",
+      "category": "Data Modeling",
+      "subcategory": "Data Vault",
+      "size": 1,
+      "question_ids": [
+        82
+      ],
+      "common_skills": [
+        "Data Vault",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Data Modeling__Deduplication",
+      "category": "Data Modeling",
+      "subcategory": "Deduplication",
+      "size": 1,
+      "question_ids": [
+        16
+      ],
+      "common_skills": [
+        "SQL",
+        "Window Functions"
+      ]
+    },
+    {
+      "cluster_id": "Data Modeling__Fact Tables",
+      "category": "Data Modeling",
+      "subcategory": "Fact Tables",
+      "size": 1,
+      "question_ids": [
+        76
+      ],
+      "common_skills": [
+        "Data Warehouse"
+      ]
+    },
+    {
+      "cluster_id": "Data Modeling__Naming Conventions",
+      "category": "Data Modeling",
+      "subcategory": "Naming Conventions",
+      "size": 1,
+      "question_ids": [
+        194
+      ],
+      "common_skills": [
+        "Data Governance"
+      ]
+    },
+    {
+      "cluster_id": "Data Modeling__Schema Design",
+      "category": "Data Modeling",
+      "subcategory": "Schema Design",
+      "size": 1,
+      "question_ids": [
+        4
+      ],
+      "common_skills": [
+        "Data Warehouse",
+        "Star Schema"
+      ]
+    },
+    {
+      "cluster_id": "Data Modeling__Slowly Changing Dimensions",
+      "category": "Data Modeling",
+      "subcategory": "Slowly Changing Dimensions",
+      "size": 1,
+      "question_ids": [
+        59
+      ],
+      "common_skills": [
+        "Data Warehouse",
+        "SCD"
+      ]
+    },
+    {
+      "cluster_id": "Data Modeling__Snowflake Schema",
+      "category": "Data Modeling",
+      "subcategory": "Snowflake Schema",
+      "size": 1,
+      "question_ids": [
+        178
+      ],
+      "common_skills": [
+        "Data Warehouse",
+        "Dimensional Modeling"
+      ]
+    },
+    {
+      "cluster_id": "Data Modeling__Surrogate Keys",
+      "category": "Data Modeling",
+      "subcategory": "Surrogate Keys",
+      "size": 1,
+      "question_ids": [
+        158
+      ],
+      "common_skills": [
+        "Data Warehouse"
+      ]
+    },
+    {
+      "cluster_id": "Data Pipeline__Data Contracts",
+      "category": "Data Pipeline",
+      "subcategory": "Data Contracts",
+      "size": 1,
+      "question_ids": [
+        151
+      ],
+      "common_skills": [
+        "Data Governance",
+        "dbt"
+      ]
+    },
+    {
+      "cluster_id": "Data Pipeline__Stateless",
+      "category": "Data Pipeline",
+      "subcategory": "Stateless",
+      "size": 1,
+      "question_ids": [
+        65
+      ],
+      "common_skills": [
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Data Processing__Approximation",
+      "category": "Data Processing",
+      "subcategory": "Approximation",
+      "size": 1,
+      "question_ids": [
+        139
+      ],
+      "common_skills": [
+        "Big Data Algorithms"
+      ]
+    },
+    {
+      "cluster_id": "Data Processing__Batch vs Streaming",
+      "category": "Data Processing",
+      "subcategory": "Batch vs Streaming",
+      "size": 1,
+      "question_ids": [
+        2
+      ],
+      "common_skills": [
+        "Data Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Data Processing__Cron",
+      "category": "Data Processing",
+      "subcategory": "Cron",
+      "size": 1,
+      "question_ids": [
+        63
+      ],
+      "common_skills": [
+        "Linux",
+        "Cron"
+      ]
+    },
+    {
+      "cluster_id": "Data Processing__Idempotency",
+      "category": "Data Processing",
+      "subcategory": "Idempotency",
+      "size": 1,
+      "question_ids": [
+        174
+      ],
+      "common_skills": [
+        "Data Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Data Processing__Low Latency vs High Volume",
+      "category": "Data Processing",
+      "subcategory": "Low Latency vs High Volume",
+      "size": 1,
+      "question_ids": [
+        149
+      ],
+      "common_skills": [
+        "System Design",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Data Processing__Merge Logic",
+      "category": "Data Processing",
+      "subcategory": "Merge Logic",
+      "size": 1,
+      "question_ids": [
+        77
+      ],
+      "common_skills": [
+        "SQL",
+        "BigQuery/Snowflake"
+      ]
+    },
+    {
+      "cluster_id": "Data Processing__Micro-batching",
+      "category": "Data Processing",
+      "subcategory": "Micro-batching",
+      "size": 1,
+      "question_ids": [
+        99
+      ],
+      "common_skills": [
+        "Spark Streaming"
+      ]
+    },
+    {
+      "cluster_id": "Data Processing__Pandas",
+      "category": "Data Processing",
+      "subcategory": "Pandas",
+      "size": 1,
+      "question_ids": [
+        53
+      ],
+      "common_skills": [
+        "Python",
+        "Pandas"
+      ]
+    },
+    {
+      "cluster_id": "Data Processing__Pandas vs Spark",
+      "category": "Data Processing",
+      "subcategory": "Pandas vs Spark",
+      "size": 1,
+      "question_ids": [
+        175
+      ],
+      "common_skills": [
+        "Python",
+        "Spark"
+      ]
+    },
+    {
+      "cluster_id": "Data Processing__PySpark Window",
+      "category": "Data Processing",
+      "subcategory": "PySpark Window",
+      "size": 1,
+      "question_ids": [
+        86
+      ],
+      "common_skills": [
+        "PySpark",
+        "Window Functions"
+      ]
+    },
+    {
+      "cluster_id": "Data Processing__Spark",
+      "category": "Data Processing",
+      "subcategory": "Spark",
+      "size": 1,
+      "question_ids": [
+        38
+      ],
+      "common_skills": [
+        "Apache Spark"
+      ]
+    },
+    {
+      "cluster_id": "Data Processing__Spark Optimization",
+      "category": "Data Processing",
+      "subcategory": "Spark Optimization",
+      "size": 1,
+      "question_ids": [
+        17
+      ],
+      "common_skills": [
+        "Apache Spark",
+        "Broadcast Join"
+      ]
+    },
+    {
+      "cluster_id": "Data Processing__Spark OutOfMemory",
+      "category": "Data Processing",
+      "subcategory": "Spark OutOfMemory",
+      "size": 1,
+      "question_ids": [
+        57
+      ],
+      "common_skills": [
+        "Apache Spark"
+      ]
+    },
+    {
+      "cluster_id": "Data Processing__Spark SQL",
+      "category": "Data Processing",
+      "subcategory": "Spark SQL",
+      "size": 1,
+      "question_ids": [
+        6
+      ],
+      "common_skills": [
+        "Apache Spark",
+        "Python",
+        "PySpark"
+      ]
+    },
+    {
+      "cluster_id": "Data Quality__Anomaly Detection",
+      "category": "Data Quality",
+      "subcategory": "Anomaly Detection",
+      "size": 1,
+      "question_ids": [
+        13
+      ],
+      "common_skills": [
+        "SQL",
+        "Statistics"
+      ]
+    },
+    {
+      "cluster_id": "Data Quality__Data Backfill",
+      "category": "Data Quality",
+      "subcategory": "Data Backfill",
+      "size": 1,
+      "question_ids": [
+        186
+      ],
+      "common_skills": [
+        "Airflow",
+        "Data Modeling"
+      ]
+    },
+    {
+      "cluster_id": "Data Quality__Data Contracts",
+      "category": "Data Quality",
+      "subcategory": "Data Contracts",
+      "size": 1,
+      "question_ids": [
+        105
+      ],
+      "common_skills": [
+        "Data Pipeline"
+      ]
+    },
+    {
+      "cluster_id": "Data Quality__Data Freshness",
+      "category": "Data Quality",
+      "subcategory": "Data Freshness",
+      "size": 1,
+      "question_ids": [
+        150
+      ],
+      "common_skills": [
+        "Observability",
+        "Data Reliability"
+      ]
+    },
+    {
+      "cluster_id": "Data Quality__Duplicates",
+      "category": "Data Quality",
+      "subcategory": "Duplicates",
+      "size": 1,
+      "question_ids": [
+        75
+      ],
+      "common_skills": [
+        "SQL",
+        "ETL"
+      ]
+    },
+    {
+      "cluster_id": "Data Quality__Great Expectations",
+      "category": "Data Quality",
+      "subcategory": "Great Expectations",
+      "size": 1,
+      "question_ids": [
+        171
+      ],
+      "common_skills": [
+        "Data Testing",
+        "Great Expectations"
+      ]
+    },
+    {
+      "cluster_id": "Data Storage__Data Types",
+      "category": "Data Storage",
+      "subcategory": "Data Types",
+      "size": 1,
+      "question_ids": [
+        49
+      ],
+      "common_skills": [
+        "Data Modeling"
+      ]
+    },
+    {
+      "cluster_id": "Data Storage__File Formats",
+      "category": "Data Storage",
+      "subcategory": "File Formats",
+      "size": 1,
+      "question_ids": [
+        31
+      ],
+      "common_skills": [
+        "Parquet",
+        "Big Data"
+      ]
+    },
+    {
+      "cluster_id": "Data Streaming__Kafka",
+      "category": "Data Streaming",
+      "subcategory": "Kafka",
+      "size": 1,
+      "question_ids": [
+        10
+      ],
+      "common_skills": [
+        "Apache Kafka"
+      ]
+    },
+    {
+      "cluster_id": "Data Warehouse__FinOps",
+      "category": "Data Warehouse",
+      "subcategory": "FinOps",
+      "size": 1,
+      "question_ids": [
+        119
+      ],
+      "common_skills": [
+        "Cloud + Cost",
+        "BigQuery"
+      ]
+    },
+    {
+      "cluster_id": "Data Warehouse__OLAP vs OLTP",
+      "category": "Data Warehouse",
+      "subcategory": "OLAP vs OLTP",
+      "size": 1,
+      "question_ids": [
+        39
+      ],
+      "common_skills": [
+        "Data Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Data Warehouse__Redshift vs Snowflake",
+      "category": "Data Warehouse",
+      "subcategory": "Redshift vs Snowflake",
+      "size": 1,
+      "question_ids": [
+        162
+      ],
+      "common_skills": [
+        "Snowflake",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Data Warehouse__Snowflake Compute",
+      "category": "Data Warehouse",
+      "subcategory": "Snowflake Compute",
+      "size": 1,
+      "question_ids": [
+        148
+      ],
+      "common_skills": [
+        "Snowflake",
+        "FinOps"
+      ]
+    },
+    {
+      "cluster_id": "Data Warehouse__Trino/Presto",
+      "category": "Data Warehouse",
+      "subcategory": "Trino/Presto",
+      "size": 1,
+      "question_ids": [
+        133
+      ],
+      "common_skills": [
+        "Trino",
+        "Resource Management"
+      ]
+    },
+    {
+      "cluster_id": "Database__Connections",
+      "category": "Database",
+      "subcategory": "Connections",
+      "size": 1,
+      "question_ids": [
+        54
+      ],
+      "common_skills": [
+        "RDBMS"
+      ]
+    },
+    {
+      "cluster_id": "Database__Data Types",
+      "category": "Database",
+      "subcategory": "Data Types",
+      "size": 1,
+      "question_ids": [
+        64
+      ],
+      "common_skills": [
+        "Database"
+      ]
+    },
+    {
+      "cluster_id": "Database__DynamoDB FinOps",
+      "category": "Database",
+      "subcategory": "DynamoDB FinOps",
+      "size": 1,
+      "question_ids": [
+        168
+      ],
+      "common_skills": [
+        "Amazon DynamoDB",
+        "Cloud + Cost"
+      ]
+    },
+    {
+      "cluster_id": "Database__Indexes",
+      "category": "Database",
+      "subcategory": "Indexes",
+      "size": 1,
+      "question_ids": [
+        41
+      ],
+      "common_skills": [
+        "RDBMS"
+      ]
+    },
+    {
+      "cluster_id": "Database__Normalization",
+      "category": "Database",
+      "subcategory": "Normalization",
+      "size": 1,
+      "question_ids": [
+        36
+      ],
+      "common_skills": [
+        "Relational Database"
+      ]
+    },
+    {
+      "cluster_id": "Database__Normalization vs Denormalization",
+      "category": "Database",
+      "subcategory": "Normalization vs Denormalization",
+      "size": 1,
+      "question_ids": [
+        163
+      ],
+      "common_skills": [
+        "Data Modeling"
+      ]
+    },
+    {
+      "cluster_id": "Database__Pagination",
+      "category": "Database",
+      "subcategory": "Pagination",
+      "size": 1,
+      "question_ids": [
+        128
+      ],
+      "common_skills": [
+        "Database + API",
+        "System Design"
+      ]
+    },
+    {
+      "cluster_id": "Database__Query Optimization",
+      "category": "Database",
+      "subcategory": "Query Optimization",
+      "size": 1,
+      "question_ids": [
+        62
+      ],
+      "common_skills": [
+        "SQL"
+      ]
+    },
+    {
+      "cluster_id": "Database__Scaling",
+      "category": "Database",
+      "subcategory": "Scaling",
+      "size": 1,
+      "question_ids": [
+        20
+      ],
+      "common_skills": [
+        "RDBMS",
+        "Read Replica"
+      ]
+    },
+    {
+      "cluster_id": "Database__Split-Brain",
+      "category": "Database",
+      "subcategory": "Split-Brain",
+      "size": 1,
+      "question_ids": [
+        116
+      ],
+      "common_skills": [
+        "High Availability",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Database__Transactions",
+      "category": "Database",
+      "subcategory": "Transactions",
+      "size": 1,
+      "question_ids": [
+        1
+      ],
+      "common_skills": [
+        "RDBMS",
+        "ACID"
+      ]
+    },
+    {
+      "cluster_id": "Deployment__Spark on K8s",
+      "category": "Deployment",
+      "subcategory": "Spark on K8s",
+      "size": 1,
+      "question_ids": [
+        181
+      ],
+      "common_skills": [
+        "Docker + Kubernetes",
+        "Apache Spark"
+      ]
+    },
+    {
+      "cluster_id": "Distributed Processing__Dynamic Allocation",
+      "category": "Distributed Processing",
+      "subcategory": "Dynamic Allocation",
+      "size": 1,
+      "question_ids": [
+        138
+      ],
+      "common_skills": [
+        "Apache Spark",
+        "YARN"
+      ]
+    },
+    {
+      "cluster_id": "Distributed Processing__Skewed Join",
+      "category": "Distributed Processing",
+      "subcategory": "Skewed Join",
+      "size": 1,
+      "question_ids": [
+        126
+      ],
+      "common_skills": [
+        "Apache Spark",
+        "Performance Tuning"
+      ]
+    },
+    {
+      "cluster_id": "Distributed Processing__Spark",
+      "category": "Distributed Processing",
+      "subcategory": "Spark",
+      "size": 1,
+      "question_ids": [
+        12
+      ],
+      "common_skills": [
+        "Apache Spark",
+        "Shuffle"
+      ]
+    },
+    {
+      "cluster_id": "Distributed Processing__Spark Hardware",
+      "category": "Distributed Processing",
+      "subcategory": "Spark Hardware",
+      "size": 1,
+      "question_ids": [
+        93
+      ],
+      "common_skills": [
+        "GPU + Memory",
+        "Spark"
+      ]
+    },
+    {
+      "cluster_id": "Distributed Processing__Spark Memory",
+      "category": "Distributed Processing",
+      "subcategory": "Spark Memory",
+      "size": 1,
+      "question_ids": [
+        95
+      ],
+      "common_skills": [
+        "Apache Spark"
+      ]
+    },
+    {
+      "cluster_id": "Distributed Processing__Spark Serialization",
+      "category": "Distributed Processing",
+      "subcategory": "Spark Serialization",
+      "size": 1,
+      "question_ids": [
+        73
+      ],
+      "common_skills": [
+        "Apache Spark",
+        "Python"
+      ]
+    },
+    {
+      "cluster_id": "Distributed Processing__Spark Spill",
+      "category": "Distributed Processing",
+      "subcategory": "Spark Spill",
+      "size": 1,
+      "question_ids": [
+        145
+      ],
+      "common_skills": [
+        "Apache Spark",
+        "Performance Tuning"
+      ]
+    },
+    {
+      "cluster_id": "Distributed Processing__Spark UDF",
+      "category": "Distributed Processing",
+      "subcategory": "Spark UDF",
+      "size": 1,
+      "question_ids": [
+        155
+      ],
+      "common_skills": [
+        "PySpark",
+        "Performance Tuning"
+      ]
+    },
+    {
+      "cluster_id": "Distributed Processing__Spark Window Limit",
+      "category": "Distributed Processing",
+      "subcategory": "Spark Window Limit",
+      "size": 1,
+      "question_ids": [
+        169
+      ],
+      "common_skills": [
+        "Apache Spark",
+        "Performance Tuning"
+      ]
+    },
+    {
+      "cluster_id": "Distributed Systems__CAP Theorem",
+      "category": "Distributed Systems",
+      "subcategory": "CAP Theorem",
+      "size": 1,
+      "question_ids": [
+        114
+      ],
+      "common_skills": [
+        "Distributed Systems",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Distributed Systems__Consistency Models",
+      "category": "Distributed Systems",
+      "subcategory": "Consistency Models",
+      "size": 1,
+      "question_ids": [
+        179
+      ],
+      "common_skills": [
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Distributed Systems__Network Partition",
+      "category": "Distributed Systems",
+      "subcategory": "Network Partition",
+      "size": 1,
+      "question_ids": [
+        185
+      ],
+      "common_skills": [
+        "Architecture",
+        "Zookeeper"
+      ]
+    },
+    {
+      "cluster_id": "Distributed Systems__Vector Clocks",
+      "category": "Distributed Systems",
+      "subcategory": "Vector Clocks",
+      "size": 1,
+      "question_ids": [
+        159
+      ],
+      "common_skills": [
+        "Architecture",
+        "DynamoDB"
+      ]
+    },
+    {
+      "cluster_id": "ETL vs ELT__Data Integration",
+      "category": "ETL vs ELT",
+      "subcategory": "Data Integration",
+      "size": 1,
+      "question_ids": [
+        23
+      ],
+      "common_skills": [
+        "Cloud Data Warehouse",
+        "ELT"
+      ]
+    },
+    {
+      "cluster_id": "ETL__Airflow",
+      "category": "ETL",
+      "subcategory": "Airflow",
+      "size": 1,
+      "question_ids": [
+        7
+      ],
+      "common_skills": [
+        "Apache Airflow",
+        "DAG"
+      ]
+    },
+    {
+      "cluster_id": "ETL__Data Loading",
+      "category": "ETL",
+      "subcategory": "Data Loading",
+      "size": 1,
+      "question_ids": [
+        79
+      ],
+      "common_skills": [
+        "Database",
+        "Bulk Load"
+      ]
+    },
+    {
+      "cluster_id": "ETL__Data Pipeline",
+      "category": "ETL",
+      "subcategory": "Data Pipeline",
+      "size": 1,
+      "question_ids": [
+        35
+      ],
+      "common_skills": [
+        "ETL"
+      ]
+    },
+    {
+      "cluster_id": "End-to-End__Modern Data Stack",
+      "category": "End-to-End",
+      "subcategory": "Modern Data Stack",
+      "size": 1,
+      "question_ids": [
+        200
+      ],
+      "common_skills": [
+        "Airflow",
+        "Kafka",
+        "Snowflake",
+        "dbt"
+      ]
+    },
+    {
+      "cluster_id": "General__HTTP Status",
+      "category": "General",
+      "subcategory": "HTTP Status",
+      "size": 1,
+      "question_ids": [
+        48
+      ],
+      "common_skills": [
+        "Networking API"
+      ]
+    },
+    {
+      "cluster_id": "Git__Version Control",
+      "category": "Git",
+      "subcategory": "Version Control",
+      "size": 1,
+      "question_ids": [
+        50
+      ],
+      "common_skills": [
+        "Git"
+      ]
+    },
+    {
+      "cluster_id": "Hadoop Ecosystem__YARN",
+      "category": "Hadoop Ecosystem",
+      "subcategory": "YARN",
+      "size": 1,
+      "question_ids": [
+        34
+      ],
+      "common_skills": [
+        "Hadoop",
+        "YARN"
+      ]
+    },
+    {
+      "cluster_id": "Infrastructure__Kubernetes",
+      "category": "Infrastructure",
+      "subcategory": "Kubernetes",
+      "size": 1,
+      "question_ids": [
+        25
+      ],
+      "common_skills": [
+        "Kubernetes",
+        "StatefulSet"
+      ]
+    },
+    {
+      "cluster_id": "Infrastructure__Kubernetes Resilience",
+      "category": "Infrastructure",
+      "subcategory": "Kubernetes Resilience",
+      "size": 1,
+      "question_ids": [
+        117
+      ],
+      "common_skills": [
+        "Docker + Kubernetes",
+        "Incident Management"
+      ]
+    },
+    {
+      "cluster_id": "Infrastructure__Vendor Lock-in",
+      "category": "Infrastructure",
+      "subcategory": "Vendor Lock-in",
+      "size": 1,
+      "question_ids": [
+        164
+      ],
+      "common_skills": [
+        "Cloud Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Linux__CLI Commands",
+      "category": "Linux",
+      "subcategory": "CLI Commands",
+      "size": 1,
+      "question_ids": [
+        42
+      ],
+      "common_skills": [
+        "Linux"
+      ]
+    },
+    {
+      "cluster_id": "Messaging__Kafka Producer",
+      "category": "Messaging",
+      "subcategory": "Kafka Producer",
+      "size": 1,
+      "question_ids": [
+        56
+      ],
+      "common_skills": [
+        "Apache Kafka"
+      ]
+    },
+    {
+      "cluster_id": "Network__Firewall",
+      "category": "Network",
+      "subcategory": "Firewall",
+      "size": 1,
+      "question_ids": [
+        92
+      ],
+      "common_skills": [
+        "Network + Security"
+      ]
+    },
+    {
+      "cluster_id": "Network__VPC Connectivity",
+      "category": "Network",
+      "subcategory": "VPC Connectivity",
+      "size": 1,
+      "question_ids": [
+        118
+      ],
+      "common_skills": [
+        "Network + Security",
+        "Cloud Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Network__VPC Endpoints",
+      "category": "Network",
+      "subcategory": "VPC Endpoints",
+      "size": 1,
+      "question_ids": [
+        187
+      ],
+      "common_skills": [
+        "AWS S3",
+        "Network + Security"
+      ]
+    },
+    {
+      "cluster_id": "Network__Webhooks",
+      "category": "Network",
+      "subcategory": "Webhooks",
+      "size": 1,
+      "question_ids": [
+        135
+      ],
+      "common_skills": [
+        "Network + Security"
+      ]
+    },
+    {
+      "cluster_id": "NoSQL__DynamoDB Single Table",
+      "category": "NoSQL",
+      "subcategory": "DynamoDB Single Table",
+      "size": 1,
+      "question_ids": [
+        129
+      ],
+      "common_skills": [
+        "Amazon DynamoDB",
+        "Data Modeling"
+      ]
+    },
+    {
+      "cluster_id": "Observability__Data Anomaly",
+      "category": "Observability",
+      "subcategory": "Data Anomaly",
+      "size": 1,
+      "question_ids": [
+        170
+      ],
+      "common_skills": [
+        "Data Observability",
+        "Machine Learning"
+      ]
+    },
+    {
+      "cluster_id": "Observability__Distributed Tracing",
+      "category": "Observability",
+      "subcategory": "Distributed Tracing",
+      "size": 1,
+      "question_ids": [
+        121
+      ],
+      "common_skills": [
+        "Observability",
+        "Microservices"
+      ]
+    },
+    {
+      "cluster_id": "Observability__Prometheus & Grafana",
+      "category": "Observability",
+      "subcategory": "Prometheus & Grafana",
+      "size": 1,
+      "question_ids": [
+        190
+      ],
+      "common_skills": [
+        "Apache Kafka",
+        "Prometheus"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Airflow Backfill",
+      "category": "Operations",
+      "subcategory": "Airflow Backfill",
+      "size": 1,
+      "question_ids": [
+        101
+      ],
+      "common_skills": [
+        "Apache Airflow"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Container OOM",
+      "category": "Operations",
+      "subcategory": "Container OOM",
+      "size": 1,
+      "question_ids": [
+        91
+      ],
+      "common_skills": [
+        "Docker + Kubernetes",
+        "Python"
+      ]
+    },
+    {
+      "cluster_id": "Operations__OOM",
+      "category": "Operations",
+      "subcategory": "OOM",
+      "size": 1,
+      "question_ids": [
+        26
+      ],
+      "common_skills": [
+        "Docker",
+        "Kubernetes",
+        "Memory Management"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Pipeline Failure",
+      "category": "Operations",
+      "subcategory": "Pipeline Failure",
+      "size": 1,
+      "question_ids": [
+        146
+      ],
+      "common_skills": [
+        "Airflow",
+        "Data Backfill"
+      ]
+    },
+    {
+      "cluster_id": "Operations__Runbook",
+      "category": "Operations",
+      "subcategory": "Runbook",
+      "size": 1,
+      "question_ids": [
+        196
+      ],
+      "common_skills": [
+        "SRE",
+        "Incident Management"
+      ]
+    },
+    {
+      "cluster_id": "Operations__SLA & Error Budget",
+      "category": "Operations",
+      "subcategory": "SLA & Error Budget",
+      "size": 1,
+      "question_ids": [
+        127
+      ],
+      "common_skills": [
+        "SRE",
+        "Service Level Agreement"
+      ]
+    },
+    {
+      "cluster_id": "Operations__SLO/SLI",
+      "category": "Operations",
+      "subcategory": "SLO/SLI",
+      "size": 1,
+      "question_ids": [
+        176
+      ],
+      "common_skills": [
+        "SRE",
+        "Observability"
+      ]
+    },
+    {
+      "cluster_id": "Orchestration__Airflow + Spark",
+      "category": "Orchestration",
+      "subcategory": "Airflow + Spark",
+      "size": 1,
+      "question_ids": [
+        71
+      ],
+      "common_skills": [
+        "Airflow",
+        "Spark",
+        "EMR/Dataproc"
+      ]
+    },
+    {
+      "cluster_id": "Orchestration__Airflow DAGs",
+      "category": "Orchestration",
+      "subcategory": "Airflow DAGs",
+      "size": 1,
+      "question_ids": [
+        106
+      ],
+      "common_skills": [
+        "Apache Airflow",
+        "Python"
+      ]
+    },
+    {
+      "cluster_id": "Orchestration__Airflow Operators",
+      "category": "Orchestration",
+      "subcategory": "Airflow Operators",
+      "size": 1,
+      "question_ids": [
+        69
+      ],
+      "common_skills": [
+        "Airflow",
+        "Python"
+      ]
+    },
+    {
+      "cluster_id": "Orchestration__Airflow Providers",
+      "category": "Orchestration",
+      "subcategory": "Airflow Providers",
+      "size": 1,
+      "question_ids": [
+        173
+      ],
+      "common_skills": [
+        "Apache Airflow",
+        "Python"
+      ]
+    },
+    {
+      "cluster_id": "Orchestration__Airflow Scheduler",
+      "category": "Orchestration",
+      "subcategory": "Airflow Scheduler",
+      "size": 1,
+      "question_ids": [
+        165
+      ],
+      "common_skills": [
+        "Apache Airflow"
+      ]
+    },
+    {
+      "cluster_id": "Orchestration__Airflow Sensors",
+      "category": "Orchestration",
+      "subcategory": "Airflow Sensors",
+      "size": 1,
+      "question_ids": [
+        136
+      ],
+      "common_skills": [
+        "Apache Airflow",
+        "Resource Starvation"
+      ]
+    },
+    {
+      "cluster_id": "Orchestration__Airflow XCom",
+      "category": "Orchestration",
+      "subcategory": "Airflow XCom",
+      "size": 1,
+      "question_ids": [
+        85
+      ],
+      "common_skills": [
+        "Apache Airflow"
+      ]
+    },
+    {
+      "cluster_id": "Orchestration__DAG Coupling",
+      "category": "Orchestration",
+      "subcategory": "DAG Coupling",
+      "size": 1,
+      "question_ids": [
+        193
+      ],
+      "common_skills": [
+        "Apache Airflow",
+        "Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Orchestration__Tool Selection",
+      "category": "Orchestration",
+      "subcategory": "Tool Selection",
+      "size": 1,
+      "question_ids": [
+        142
+      ],
+      "common_skills": [
+        "Airflow",
+        "Dagster",
+        "Prefect"
+      ]
+    },
+    {
+      "cluster_id": "Python__Data Types",
+      "category": "Python",
+      "subcategory": "Data Types",
+      "size": 1,
+      "question_ids": [
+        45
+      ],
+      "common_skills": [
+        "Python"
+      ]
+    },
+    {
+      "cluster_id": "Python__Exceptions",
+      "category": "Python",
+      "subcategory": "Exceptions",
+      "size": 1,
+      "question_ids": [
+        47
+      ],
+      "common_skills": [
+        "Python"
+      ]
+    },
+    {
+      "cluster_id": "Python__Pandas",
+      "category": "Python",
+      "subcategory": "Pandas",
+      "size": 1,
+      "question_ids": [
+        44
+      ],
+      "common_skills": [
+        "Python",
+        "Pandas"
+      ]
+    },
+    {
+      "cluster_id": "RDBMS__Partitioning Strategy",
+      "category": "RDBMS",
+      "subcategory": "Partitioning Strategy",
+      "size": 1,
+      "question_ids": [
+        198
+      ],
+      "common_skills": [
+        "PostgreSQL",
+        "Database Administration"
+      ]
+    },
+    {
+      "cluster_id": "Reliability__Chaos Engineering",
+      "category": "Reliability",
+      "subcategory": "Chaos Engineering",
+      "size": 1,
+      "question_ids": [
+        122
+      ],
+      "common_skills": [
+        "Resilience Testing"
+      ]
+    },
+    {
+      "cluster_id": "SQL__Aggregation",
+      "category": "SQL",
+      "subcategory": "Aggregation",
+      "size": 1,
+      "question_ids": [
+        33
+      ],
+      "common_skills": [
+        "SQL"
+      ]
+    },
+    {
+      "cluster_id": "SQL__CTE Optimization",
+      "category": "SQL",
+      "subcategory": "CTE Optimization",
+      "size": 1,
+      "question_ids": [
+        195
+      ],
+      "common_skills": [
+        "SQL",
+        "Performance Tuning"
+      ]
+    },
+    {
+      "cluster_id": "SQL__DML",
+      "category": "SQL",
+      "subcategory": "DML",
+      "size": 1,
+      "question_ids": [
+        43
+      ],
+      "common_skills": [
+        "SQL"
+      ]
+    },
+    {
+      "cluster_id": "SQL__Join Types",
+      "category": "SQL",
+      "subcategory": "Join Types",
+      "size": 1,
+      "question_ids": [
+        68
+      ],
+      "common_skills": [
+        "SQL"
+      ]
+    },
+    {
+      "cluster_id": "SQL__Joins",
+      "category": "SQL",
+      "subcategory": "Joins",
+      "size": 1,
+      "question_ids": [
+        5
+      ],
+      "common_skills": [
+        "SQL",
+        "Relational Algebra"
+      ]
+    },
+    {
+      "cluster_id": "SQL__N+1 Problem",
+      "category": "SQL",
+      "subcategory": "N+1 Problem",
+      "size": 1,
+      "question_ids": [
+        109
+      ],
+      "common_skills": [
+        "Database + API"
+      ]
+    },
+    {
+      "cluster_id": "SQL__Null Handling",
+      "category": "SQL",
+      "subcategory": "Null Handling",
+      "size": 1,
+      "question_ids": [
+        52
+      ],
+      "common_skills": [
+        "SQL"
+      ]
+    },
+    {
+      "cluster_id": "SQL__Ranking",
+      "category": "SQL",
+      "subcategory": "Ranking",
+      "size": 1,
+      "question_ids": [
+        61
+      ],
+      "common_skills": [
+        "SQL",
+        "Window Functions"
+      ]
+    },
+    {
+      "cluster_id": "SQL__Recursive CTE",
+      "category": "SQL",
+      "subcategory": "Recursive CTE",
+      "size": 1,
+      "question_ids": [
+        94
+      ],
+      "common_skills": [
+        "SQL"
+      ]
+    },
+    {
+      "cluster_id": "SQL__Syntax",
+      "category": "SQL",
+      "subcategory": "Syntax",
+      "size": 1,
+      "question_ids": [
+        46
+      ],
+      "common_skills": [
+        "SQL"
+      ]
+    },
+    {
+      "cluster_id": "Scheduling__Dependency Management",
+      "category": "Scheduling",
+      "subcategory": "Dependency Management",
+      "size": 1,
+      "question_ids": [
+        30
+      ],
+      "common_skills": [
+        "Airflow",
+        "DAG Dependency"
+      ]
+    },
+    {
+      "cluster_id": "Security__Credentials",
+      "category": "Security",
+      "subcategory": "Credentials",
+      "size": 1,
+      "question_ids": [
+        78
+      ],
+      "common_skills": [
+        "Cloud Architecture"
+      ]
+    },
+    {
+      "cluster_id": "Security__Data Encryption",
+      "category": "Security",
+      "subcategory": "Data Encryption",
+      "size": 1,
+      "question_ids": [
+        144
+      ],
+      "common_skills": [
+        "AWS KMS",
+        "Data Security"
+      ]
+    },
+    {
+      "cluster_id": "Security__Encryption in Transit",
+      "category": "Security",
+      "subcategory": "Encryption in Transit",
+      "size": 1,
+      "question_ids": [
+        167
+      ],
+      "common_skills": [
+        "Network + Security"
+      ]
+    },
+    {
+      "cluster_id": "Security__GDPR",
+      "category": "Security",
+      "subcategory": "GDPR",
+      "size": 1,
+      "question_ids": [
+        115
+      ],
+      "common_skills": [
+        "Data Governance",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Security__Secrets Management",
+      "category": "Security",
+      "subcategory": "Secrets Management",
+      "size": 1,
+      "question_ids": [
+        192
+      ],
+      "common_skills": [
+        "Airflow",
+        "Security"
+      ]
+    },
+    {
+      "cluster_id": "Storage__Cloud Storage",
+      "category": "Storage",
+      "subcategory": "Cloud Storage",
+      "size": 1,
+      "question_ids": [
+        60
+      ],
+      "common_skills": [
+        "AWS S3"
+      ]
+    },
+    {
+      "cluster_id": "Storage__Data Format",
+      "category": "Storage",
+      "subcategory": "Data Format",
+      "size": 1,
+      "question_ids": [
+        182
+      ],
+      "common_skills": [
+        "Parquet",
+        "Avro",
+        "ORC"
+      ]
+    },
+    {
+      "cluster_id": "Storage__Data Lake",
+      "category": "Storage",
+      "subcategory": "Data Lake",
+      "size": 1,
+      "question_ids": [
+        15
+      ],
+      "common_skills": [
+        "AWS S3",
+        "Parquet",
+        "Athena"
+      ]
+    },
+    {
+      "cluster_id": "Storage__Data Tiering",
+      "category": "Storage",
+      "subcategory": "Data Tiering",
+      "size": 1,
+      "question_ids": [
+        120
+      ],
+      "common_skills": [
+        "Architecture",
+        "Storage Management"
+      ]
+    },
+    {
+      "cluster_id": "Storage__Retention Strategy",
+      "category": "Storage",
+      "subcategory": "Retention Strategy",
+      "size": 1,
+      "question_ids": [
+        19
+      ],
+      "common_skills": [
+        "Data Lifecycle Management",
+        "Storage Cost"
+      ]
+    },
+    {
+      "cluster_id": "Storage__S3 Partitioning",
+      "category": "Storage",
+      "subcategory": "S3 Partitioning",
+      "size": 1,
+      "question_ids": [
+        72
+      ],
+      "common_skills": [
+        "AWS S3",
+        "Hive Partitioning"
+      ]
+    },
+    {
+      "cluster_id": "Storage__S3 Throughput",
+      "category": "Storage",
+      "subcategory": "S3 Throughput",
+      "size": 1,
+      "question_ids": [
+        140
+      ],
+      "common_skills": [
+        "AWS S3",
+        "Performance Optimization"
+      ]
+    },
+    {
+      "cluster_id": "Streaming__Exactly-Once Processing",
+      "category": "Streaming",
+      "subcategory": "Exactly-Once Processing",
+      "size": 1,
+      "question_ids": [
+        111
+      ],
+      "common_skills": [
+        "Apache Flink",
+        "Kafka"
+      ]
+    },
+    {
+      "cluster_id": "Streaming__Exactly-once Semantics",
+      "category": "Streaming",
+      "subcategory": "Exactly-once Semantics",
+      "size": 1,
+      "question_ids": [
+        24
+      ],
+      "common_skills": [
+        "Kafka",
+        "Exactly-once"
+      ]
+    },
+    {
+      "cluster_id": "Streaming__Kafka Cluster",
+      "category": "Streaming",
+      "subcategory": "Kafka Cluster",
+      "size": 1,
+      "question_ids": [
+        132
+      ],
+      "common_skills": [
+        "Apache Kafka"
+      ]
+    },
+    {
+      "cluster_id": "Streaming__Kafka Consumer Lag",
+      "category": "Streaming",
+      "subcategory": "Kafka Consumer Lag",
+      "size": 1,
+      "question_ids": [
+        74
+      ],
+      "common_skills": [
+        "Apache Kafka",
+        "Monitoring"
+      ]
+    },
+    {
+      "cluster_id": "Streaming__Kafka Incident",
+      "category": "Streaming",
+      "subcategory": "Kafka Incident",
+      "size": 1,
+      "question_ids": [
+        166
+      ],
+      "common_skills": [
+        "Apache Kafka"
+      ]
+    },
+    {
+      "cluster_id": "Streaming__Kafka Monitoring",
+      "category": "Streaming",
+      "subcategory": "Kafka Monitoring",
+      "size": 1,
+      "question_ids": [
+        104
+      ],
+      "common_skills": [
+        "Monitoring",
+        "Apache Kafka"
+      ]
+    },
+    {
+      "cluster_id": "Streaming__Kafka Rebalance",
+      "category": "Streaming",
+      "subcategory": "Kafka Rebalance",
+      "size": 1,
+      "question_ids": [
+        84
+      ],
+      "common_skills": [
+        "Apache Kafka"
+      ]
+    },
+    {
+      "cluster_id": "Streaming__Kafka Storage",
+      "category": "Streaming",
+      "subcategory": "Kafka Storage",
+      "size": 1,
+      "question_ids": [
+        96
+      ],
+      "common_skills": [
+        "Apache Kafka",
+        "Capacity Planning"
+      ]
+    },
+    {
+      "cluster_id": "Streaming__Kafka Throughput",
+      "category": "Streaming",
+      "subcategory": "Kafka Throughput",
+      "size": 1,
+      "question_ids": [
+        18
+      ],
+      "common_skills": [
+        "Apache Kafka",
+        "Throughput"
+      ]
+    },
+    {
+      "cluster_id": "System__API Dependencies",
+      "category": "System",
+      "subcategory": "API Dependencies",
+      "size": 1,
+      "question_ids": [
+        124
+      ],
+      "common_skills": [
+        "System Design",
+        "Fault Tolerance"
+      ]
+    },
+    {
+      "cluster_id": "System__Caching",
+      "category": "System",
+      "subcategory": "Caching",
+      "size": 1,
+      "question_ids": [
+        83
+      ],
+      "common_skills": [
+        "Cache + Load Balancer",
+        "Redis"
+      ]
+    },
+    {
+      "cluster_id": "System__Clock Drift",
+      "category": "System",
+      "subcategory": "Clock Drift",
+      "size": 1,
+      "question_ids": [
+        137
+      ],
+      "common_skills": [
+        "Distributed Systems"
+      ]
+    },
+    {
+      "cluster_id": "System__DB Selection",
+      "category": "System",
+      "subcategory": "DB Selection",
+      "size": 1,
+      "question_ids": [
+        90
+      ],
+      "common_skills": [
+        "RDBMS",
+        "NoSQL"
+      ]
+    },
+    {
+      "cluster_id": "System__Deadlock",
+      "category": "System",
+      "subcategory": "Deadlock",
+      "size": 1,
+      "question_ids": [
+        87
+      ],
+      "common_skills": [
+        "Database + API",
+        "RDBMS"
+      ]
+    },
+    {
+      "cluster_id": "System__Python Packages",
+      "category": "System",
+      "subcategory": "Python Packages",
+      "size": 1,
+      "question_ids": [
+        107
+      ],
+      "common_skills": [
+        "Python",
+        "Docker"
+      ]
+    }
+  ],
+  "dependency_graph": {
+    "nodes": [
+      {
+        "question_id": 1,
+        "difficulty": "university_level",
+        "category": "Database",
+        "subcategory": "Transactions",
+        "skills_required": [
+          "RDBMS",
+          "ACID"
+        ]
+      },
+      {
+        "question_id": 2,
+        "difficulty": "university_level",
+        "category": "Data Processing",
+        "subcategory": "Batch vs Streaming",
+        "skills_required": [
+          "Data Architecture"
+        ]
+      },
+      {
+        "question_id": 3,
+        "difficulty": "university_level",
+        "category": "Big Data",
+        "subcategory": "HDFS",
+        "skills_required": [
+          "Hadoop",
+          "HDFS"
+        ]
+      },
+      {
+        "question_id": 4,
+        "difficulty": "university_level",
+        "category": "Data Modeling",
+        "subcategory": "Schema Design",
+        "skills_required": [
+          "Data Warehouse",
+          "Star Schema"
+        ]
+      },
+      {
+        "question_id": 5,
+        "difficulty": "university_level",
+        "category": "SQL",
+        "subcategory": "Joins",
+        "skills_required": [
+          "SQL",
+          "Relational Algebra"
+        ]
+      },
+      {
+        "question_id": 6,
+        "difficulty": "junior_level",
+        "category": "Data Processing",
+        "subcategory": "Spark SQL",
+        "skills_required": [
+          "Apache Spark",
+          "Python",
+          "PySpark"
+        ]
+      },
+      {
+        "question_id": 7,
+        "difficulty": "junior_level",
+        "category": "ETL",
+        "subcategory": "Airflow",
+        "skills_required": [
+          "Apache Airflow",
+          "DAG"
+        ]
+      },
+      {
+        "question_id": 8,
+        "difficulty": "junior_level",
+        "category": "Scripting",
+        "subcategory": "Python",
+        "skills_required": [
+          "Python",
+          "Memory Management"
+        ]
+      },
+      {
+        "question_id": 9,
+        "difficulty": "junior_level",
+        "category": "Data Warehouse",
+        "subcategory": "BigQuery",
+        "skills_required": [
+          "Google BigQuery",
+          "SQL"
+        ]
+      },
+      {
+        "question_id": 10,
+        "difficulty": "junior_level",
+        "category": "Data Streaming",
+        "subcategory": "Kafka",
+        "skills_required": [
+          "Apache Kafka"
+        ]
+      },
+      {
+        "question_id": 11,
+        "difficulty": "middle_level",
+        "category": "Orchestration",
+        "subcategory": "Airflow",
+        "skills_required": [
+          "Apache Airflow",
+          "CeleryExecutor",
+          "Redis"
+        ]
+      },
+      {
+        "question_id": 12,
+        "difficulty": "middle_level",
+        "category": "Distributed Processing",
+        "subcategory": "Spark",
+        "skills_required": [
+          "Apache Spark",
+          "Shuffle"
+        ]
+      },
+      {
+        "question_id": 13,
+        "difficulty": "middle_level",
+        "category": "Data Quality",
+        "subcategory": "Anomaly Detection",
+        "skills_required": [
+          "SQL",
+          "Statistics"
+        ]
+      },
+      {
+        "question_id": 14,
+        "difficulty": "middle_level",
+        "category": "Architecture",
+        "subcategory": "CDC (Change Data Capture)",
+        "skills_required": [
+          "Debezium",
+          "Kafka",
+          "PostgreSQL"
+        ]
+      },
+      {
+        "question_id": 15,
+        "difficulty": "middle_level",
+        "category": "Storage",
+        "subcategory": "Data Lake",
+        "skills_required": [
+          "AWS S3",
+          "Parquet",
+          "Athena"
+        ]
+      },
+      {
+        "question_id": 16,
+        "difficulty": "middle_level",
+        "category": "Data Modeling",
+        "subcategory": "Deduplication",
+        "skills_required": [
+          "SQL",
+          "Window Functions"
+        ]
+      },
+      {
+        "question_id": 17,
+        "difficulty": "middle_level",
+        "category": "Data Processing",
+        "subcategory": "Spark Optimization",
+        "skills_required": [
+          "Apache Spark",
+          "Broadcast Join"
+        ]
+      },
+      {
+        "question_id": 18,
+        "difficulty": "middle_level",
+        "category": "Streaming",
+        "subcategory": "Kafka Throughput",
+        "skills_required": [
+          "Apache Kafka",
+          "Throughput"
+        ]
+      },
+      {
+        "question_id": 19,
+        "difficulty": "middle_level",
+        "category": "Storage",
+        "subcategory": "Retention Strategy",
+        "skills_required": [
+          "Data Lifecycle Management",
+          "Storage Cost"
+        ]
+      },
+      {
+        "question_id": 20,
+        "difficulty": "middle_level",
+        "category": "Database",
+        "subcategory": "Scaling",
+        "skills_required": [
+          "RDBMS",
+          "Read Replica"
+        ]
+      },
+      {
+        "question_id": 21,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Real-time Dashboard",
+        "skills_required": [
+          "Kafka",
+          "Flink",
+          "Redis",
+          "WebSockets"
+        ]
+      },
+      {
+        "question_id": 22,
+        "difficulty": "senior_level",
+        "category": "Data Lakehouse",
+        "subcategory": "Table Formats",
+        "skills_required": [
+          "Iceberg",
+          "Hudi",
+          "Delta Lake"
+        ]
+      },
+      {
+        "question_id": 23,
+        "difficulty": "senior_level",
+        "category": "ETL vs ELT",
+        "subcategory": "Data Integration",
+        "skills_required": [
+          "Cloud Data Warehouse",
+          "ELT"
+        ]
+      },
+      {
+        "question_id": 24,
+        "difficulty": "senior_level",
+        "category": "Streaming",
+        "subcategory": "Exactly-once Semantics",
+        "skills_required": [
+          "Kafka",
+          "Exactly-once"
+        ]
+      },
+      {
+        "question_id": 25,
+        "difficulty": "senior_level",
+        "category": "Infrastructure",
+        "subcategory": "Kubernetes",
+        "skills_required": [
+          "Kubernetes",
+          "StatefulSet"
+        ]
+      },
+      {
+        "question_id": 26,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "OOM",
+        "skills_required": [
+          "Docker",
+          "Kubernetes",
+          "Memory Management"
+        ]
+      },
+      {
+        "question_id": 27,
+        "difficulty": "senior_level",
+        "category": "Data Integration",
+        "subcategory": "Data Loss Recovery",
+        "skills_required": [
+          "Kafka",
+          "Offset Management"
+        ]
+      },
+      {
+        "question_id": 28,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "Data Privacy",
+        "skills_required": [
+          "Cloud IAM",
+          "Data Masking"
+        ]
+      },
+      {
+        "question_id": 29,
+        "difficulty": "senior_level",
+        "category": "Cloud Computing",
+        "subcategory": "FinOps",
+        "skills_required": [
+          "AWS EMR",
+          "Spot Instances"
+        ]
+      },
+      {
+        "question_id": 30,
+        "difficulty": "senior_level",
+        "category": "Scheduling",
+        "subcategory": "Dependency Management",
+        "skills_required": [
+          "Airflow",
+          "DAG Dependency"
+        ]
+      },
+      {
+        "question_id": 31,
+        "difficulty": "university_level",
+        "category": "Data Storage",
+        "subcategory": "File Formats",
+        "skills_required": [
+          "Parquet",
+          "Big Data"
+        ]
+      },
+      {
+        "question_id": 32,
+        "difficulty": "university_level",
+        "category": "Database",
+        "subcategory": "NoSQL",
+        "skills_required": [
+          "NoSQL",
+          "Data Modeling"
+        ]
+      },
+      {
+        "question_id": 33,
+        "difficulty": "university_level",
+        "category": "SQL",
+        "subcategory": "Aggregation",
+        "skills_required": [
+          "SQL"
+        ]
+      },
+      {
+        "question_id": 34,
+        "difficulty": "university_level",
+        "category": "Hadoop Ecosystem",
+        "subcategory": "YARN",
+        "skills_required": [
+          "Hadoop",
+          "YARN"
+        ]
+      },
+      {
+        "question_id": 35,
+        "difficulty": "university_level",
+        "category": "ETL",
+        "subcategory": "Data Pipeline",
+        "skills_required": [
+          "ETL"
+        ]
+      },
+      {
+        "question_id": 36,
+        "difficulty": "university_level",
+        "category": "Database",
+        "subcategory": "Normalization",
+        "skills_required": [
+          "Relational Database"
+        ]
+      },
+      {
+        "question_id": 37,
+        "difficulty": "university_level",
+        "category": "Cloud",
+        "subcategory": "Data Storage",
+        "skills_required": [
+          "Cloud Computing"
+        ]
+      },
+      {
+        "question_id": 38,
+        "difficulty": "university_level",
+        "category": "Data Processing",
+        "subcategory": "Spark",
+        "skills_required": [
+          "Apache Spark"
+        ]
+      },
+      {
+        "question_id": 39,
+        "difficulty": "university_level",
+        "category": "Data Warehouse",
+        "subcategory": "OLAP vs OLTP",
+        "skills_required": [
+          "Data Architecture"
+        ]
+      },
+      {
+        "question_id": 40,
+        "difficulty": "university_level",
+        "category": "Scripting",
+        "subcategory": "Python",
+        "skills_required": [
+          "Python",
+          "Data Structures"
+        ]
+      },
+      {
+        "question_id": 41,
+        "difficulty": "university_level",
+        "category": "Database",
+        "subcategory": "Indexes",
+        "skills_required": [
+          "RDBMS"
+        ]
+      },
+      {
+        "question_id": 42,
+        "difficulty": "university_level",
+        "category": "Linux",
+        "subcategory": "CLI Commands",
+        "skills_required": [
+          "Linux"
+        ]
+      },
+      {
+        "question_id": 43,
+        "difficulty": "university_level",
+        "category": "SQL",
+        "subcategory": "DML",
+        "skills_required": [
+          "SQL"
+        ]
+      },
+      {
+        "question_id": 44,
+        "difficulty": "university_level",
+        "category": "Python",
+        "subcategory": "Pandas",
+        "skills_required": [
+          "Python",
+          "Pandas"
+        ]
+      },
+      {
+        "question_id": 45,
+        "difficulty": "university_level",
+        "category": "Python",
+        "subcategory": "Data Types",
+        "skills_required": [
+          "Python"
+        ]
+      },
+      {
+        "question_id": 46,
+        "difficulty": "university_level",
+        "category": "SQL",
+        "subcategory": "Syntax",
+        "skills_required": [
+          "SQL"
+        ]
+      },
+      {
+        "question_id": 47,
+        "difficulty": "university_level",
+        "category": "Python",
+        "subcategory": "Exceptions",
+        "skills_required": [
+          "Python"
+        ]
+      },
+      {
+        "question_id": 48,
+        "difficulty": "university_level",
+        "category": "General",
+        "subcategory": "HTTP Status",
+        "skills_required": [
+          "Networking API"
+        ]
+      },
+      {
+        "question_id": 49,
+        "difficulty": "university_level",
+        "category": "Data Storage",
+        "subcategory": "Data Types",
+        "skills_required": [
+          "Data Modeling"
+        ]
+      },
+      {
+        "question_id": 50,
+        "difficulty": "university_level",
+        "category": "Git",
+        "subcategory": "Version Control",
+        "skills_required": [
+          "Git"
+        ]
+      },
+      {
+        "question_id": 51,
+        "difficulty": "junior_level",
+        "category": "Orchestration",
+        "subcategory": "Airflow",
+        "skills_required": [
+          "Python",
+          "Apache Airflow"
+        ]
+      },
+      {
+        "question_id": 52,
+        "difficulty": "junior_level",
+        "category": "SQL",
+        "subcategory": "Null Handling",
+        "skills_required": [
+          "SQL"
+        ]
+      },
+      {
+        "question_id": 53,
+        "difficulty": "junior_level",
+        "category": "Data Processing",
+        "subcategory": "Pandas",
+        "skills_required": [
+          "Python",
+          "Pandas"
+        ]
+      },
+      {
+        "question_id": 54,
+        "difficulty": "junior_level",
+        "category": "Database",
+        "subcategory": "Connections",
+        "skills_required": [
+          "RDBMS"
+        ]
+      },
+      {
+        "question_id": 55,
+        "difficulty": "junior_level",
+        "category": "Orchestration",
+        "subcategory": "Airflow",
+        "skills_required": [
+          "Apache Airflow"
+        ]
+      },
+      {
+        "question_id": 56,
+        "difficulty": "junior_level",
+        "category": "Messaging",
+        "subcategory": "Kafka Producer",
+        "skills_required": [
+          "Apache Kafka"
+        ]
+      },
+      {
+        "question_id": 57,
+        "difficulty": "junior_level",
+        "category": "Data Processing",
+        "subcategory": "Spark OutOfMemory",
+        "skills_required": [
+          "Apache Spark"
+        ]
+      },
+      {
+        "question_id": 58,
+        "difficulty": "junior_level",
+        "category": "Data Quality",
+        "subcategory": "Data Profiling",
+        "skills_required": [
+          "SQL"
+        ]
+      },
+      {
+        "question_id": 59,
+        "difficulty": "junior_level",
+        "category": "Data Modeling",
+        "subcategory": "Slowly Changing Dimensions",
+        "skills_required": [
+          "Data Warehouse",
+          "SCD"
+        ]
+      },
+      {
+        "question_id": 60,
+        "difficulty": "junior_level",
+        "category": "Storage",
+        "subcategory": "Cloud Storage",
+        "skills_required": [
+          "AWS S3"
+        ]
+      },
+      {
+        "question_id": 61,
+        "difficulty": "junior_level",
+        "category": "SQL",
+        "subcategory": "Ranking",
+        "skills_required": [
+          "SQL",
+          "Window Functions"
+        ]
+      },
+      {
+        "question_id": 62,
+        "difficulty": "junior_level",
+        "category": "Database",
+        "subcategory": "Query Optimization",
+        "skills_required": [
+          "SQL"
+        ]
+      },
+      {
+        "question_id": 63,
+        "difficulty": "junior_level",
+        "category": "Data Processing",
+        "subcategory": "Cron",
+        "skills_required": [
+          "Linux",
+          "Cron"
+        ]
+      },
+      {
+        "question_id": 64,
+        "difficulty": "junior_level",
+        "category": "Database",
+        "subcategory": "Data Types",
+        "skills_required": [
+          "Database"
+        ]
+      },
+      {
+        "question_id": 65,
+        "difficulty": "junior_level",
+        "category": "Data Pipeline",
+        "subcategory": "Stateless",
+        "skills_required": [
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 66,
+        "difficulty": "junior_level",
+        "category": "Architecture",
+        "subcategory": "Data Lake vs Data Warehouse",
+        "skills_required": [
+          "Data Architecture"
+        ]
+      },
+      {
+        "question_id": 67,
+        "difficulty": "junior_level",
+        "category": "Data Formats",
+        "subcategory": "Serialization",
+        "skills_required": [
+          "Data Formats"
+        ]
+      },
+      {
+        "question_id": 68,
+        "difficulty": "junior_level",
+        "category": "SQL",
+        "subcategory": "Join Types",
+        "skills_required": [
+          "SQL"
+        ]
+      },
+      {
+        "question_id": 69,
+        "difficulty": "junior_level",
+        "category": "Orchestration",
+        "subcategory": "Airflow Operators",
+        "skills_required": [
+          "Airflow",
+          "Python"
+        ]
+      },
+      {
+        "question_id": 70,
+        "difficulty": "junior_level",
+        "category": "Data Integration",
+        "subcategory": "ETL Tools",
+        "skills_required": [
+          "ETL"
+        ]
+      },
+      {
+        "question_id": 71,
+        "difficulty": "middle_level",
+        "category": "Orchestration",
+        "subcategory": "Airflow + Spark",
+        "skills_required": [
+          "Airflow",
+          "Spark",
+          "EMR/Dataproc"
+        ]
+      },
+      {
+        "question_id": 72,
+        "difficulty": "middle_level",
+        "category": "Storage",
+        "subcategory": "S3 Partitioning",
+        "skills_required": [
+          "AWS S3",
+          "Hive Partitioning"
+        ]
+      },
+      {
+        "question_id": 73,
+        "difficulty": "middle_level",
+        "category": "Distributed Processing",
+        "subcategory": "Spark Serialization",
+        "skills_required": [
+          "Apache Spark",
+          "Python"
+        ]
+      },
+      {
+        "question_id": 74,
+        "difficulty": "middle_level",
+        "category": "Streaming",
+        "subcategory": "Kafka Consumer Lag",
+        "skills_required": [
+          "Apache Kafka",
+          "Monitoring"
+        ]
+      },
+      {
+        "question_id": 75,
+        "difficulty": "middle_level",
+        "category": "Data Quality",
+        "subcategory": "Duplicates",
+        "skills_required": [
+          "SQL",
+          "ETL"
+        ]
+      },
+      {
+        "question_id": 76,
+        "difficulty": "middle_level",
+        "category": "Data Modeling",
+        "subcategory": "Fact Tables",
+        "skills_required": [
+          "Data Warehouse"
+        ]
+      },
+      {
+        "question_id": 77,
+        "difficulty": "middle_level",
+        "category": "Data Processing",
+        "subcategory": "Merge Logic",
+        "skills_required": [
+          "SQL",
+          "BigQuery/Snowflake"
+        ]
+      },
+      {
+        "question_id": 78,
+        "difficulty": "middle_level",
+        "category": "Security",
+        "subcategory": "Credentials",
+        "skills_required": [
+          "Cloud Architecture"
+        ]
+      },
+      {
+        "question_id": 79,
+        "difficulty": "middle_level",
+        "category": "ETL",
+        "subcategory": "Data Loading",
+        "skills_required": [
+          "Database",
+          "Bulk Load"
+        ]
+      },
+      {
+        "question_id": 80,
+        "difficulty": "middle_level",
+        "category": "Architecture",
+        "subcategory": "Lambda vs Kappa",
+        "skills_required": [
+          "Data Architecture"
+        ]
+      },
+      {
+        "question_id": 81,
+        "difficulty": "middle_level",
+        "category": "Data Warehouse",
+        "subcategory": "BigQuery",
+        "skills_required": [
+          "Cloud + Cost",
+          "BigQuery"
+        ]
+      },
+      {
+        "question_id": 82,
+        "difficulty": "middle_level",
+        "category": "Data Modeling",
+        "subcategory": "Data Vault",
+        "skills_required": [
+          "Data Vault",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 83,
+        "difficulty": "middle_level",
+        "category": "System",
+        "subcategory": "Caching",
+        "skills_required": [
+          "Cache + Load Balancer",
+          "Redis"
+        ]
+      },
+      {
+        "question_id": 84,
+        "difficulty": "middle_level",
+        "category": "Streaming",
+        "subcategory": "Kafka Rebalance",
+        "skills_required": [
+          "Apache Kafka"
+        ]
+      },
+      {
+        "question_id": 85,
+        "difficulty": "middle_level",
+        "category": "Orchestration",
+        "subcategory": "Airflow XCom",
+        "skills_required": [
+          "Apache Airflow"
+        ]
+      },
+      {
+        "question_id": 86,
+        "difficulty": "middle_level",
+        "category": "Data Processing",
+        "subcategory": "PySpark Window",
+        "skills_required": [
+          "PySpark",
+          "Window Functions"
+        ]
+      },
+      {
+        "question_id": 87,
+        "difficulty": "middle_level",
+        "category": "System",
+        "subcategory": "Deadlock",
+        "skills_required": [
+          "Database + API",
+          "RDBMS"
+        ]
+      },
+      {
+        "question_id": 88,
+        "difficulty": "middle_level",
+        "category": "Database",
+        "subcategory": "NoSQL",
+        "skills_required": [
+          "Apache Cassandra",
+          "NoSQL"
+        ]
+      },
+      {
+        "question_id": 89,
+        "difficulty": "middle_level",
+        "category": "Data Quality",
+        "subcategory": "Data Profiling",
+        "skills_required": [
+          "Data Profiling"
+        ]
+      },
+      {
+        "question_id": 90,
+        "difficulty": "middle_level",
+        "category": "System",
+        "subcategory": "DB Selection",
+        "skills_required": [
+          "RDBMS",
+          "NoSQL"
+        ]
+      },
+      {
+        "question_id": 91,
+        "difficulty": "middle_level",
+        "category": "Operations",
+        "subcategory": "Container OOM",
+        "skills_required": [
+          "Docker + Kubernetes",
+          "Python"
+        ]
+      },
+      {
+        "question_id": 92,
+        "difficulty": "middle_level",
+        "category": "Network",
+        "subcategory": "Firewall",
+        "skills_required": [
+          "Network + Security"
+        ]
+      },
+      {
+        "question_id": 93,
+        "difficulty": "middle_level",
+        "category": "Distributed Processing",
+        "subcategory": "Spark Hardware",
+        "skills_required": [
+          "GPU + Memory",
+          "Spark"
+        ]
+      },
+      {
+        "question_id": 94,
+        "difficulty": "middle_level",
+        "category": "SQL",
+        "subcategory": "Recursive CTE",
+        "skills_required": [
+          "SQL"
+        ]
+      },
+      {
+        "question_id": 95,
+        "difficulty": "middle_level",
+        "category": "Distributed Processing",
+        "subcategory": "Spark Memory",
+        "skills_required": [
+          "Apache Spark"
+        ]
+      },
+      {
+        "question_id": 96,
+        "difficulty": "middle_level",
+        "category": "Streaming",
+        "subcategory": "Kafka Storage",
+        "skills_required": [
+          "Apache Kafka",
+          "Capacity Planning"
+        ]
+      },
+      {
+        "question_id": 97,
+        "difficulty": "middle_level",
+        "category": "Cloud Computing",
+        "subcategory": "Auto Scaling",
+        "skills_required": [
+          "Cloud + Cost",
+          "Auto Scaling"
+        ]
+      },
+      {
+        "question_id": 98,
+        "difficulty": "middle_level",
+        "category": "Data Integration",
+        "subcategory": "CDC Methods",
+        "skills_required": [
+          "CDC"
+        ]
+      },
+      {
+        "question_id": 99,
+        "difficulty": "middle_level",
+        "category": "Data Processing",
+        "subcategory": "Micro-batching",
+        "skills_required": [
+          "Spark Streaming"
+        ]
+      },
+      {
+        "question_id": 100,
+        "difficulty": "middle_level",
+        "category": "Security",
+        "subcategory": "Data Privacy",
+        "skills_required": [
+          "Security"
+        ]
+      },
+      {
+        "question_id": 101,
+        "difficulty": "middle_level",
+        "category": "Operations",
+        "subcategory": "Airflow Backfill",
+        "skills_required": [
+          "Apache Airflow"
+        ]
+      },
+      {
+        "question_id": 102,
+        "difficulty": "middle_level",
+        "category": "Cloud Computing",
+        "subcategory": "Spot Instances",
+        "skills_required": [
+          "Cloud + Cost",
+          "FinOps"
+        ]
+      },
+      {
+        "question_id": 103,
+        "difficulty": "middle_level",
+        "category": "Data Formats",
+        "subcategory": "Compression",
+        "skills_required": [
+          "Data Formats",
+          "Hadoop"
+        ]
+      },
+      {
+        "question_id": 104,
+        "difficulty": "middle_level",
+        "category": "Streaming",
+        "subcategory": "Kafka Monitoring",
+        "skills_required": [
+          "Monitoring",
+          "Apache Kafka"
+        ]
+      },
+      {
+        "question_id": 105,
+        "difficulty": "middle_level",
+        "category": "Data Quality",
+        "subcategory": "Data Contracts",
+        "skills_required": [
+          "Data Pipeline"
+        ]
+      },
+      {
+        "question_id": 106,
+        "difficulty": "middle_level",
+        "category": "Orchestration",
+        "subcategory": "Airflow DAGs",
+        "skills_required": [
+          "Apache Airflow",
+          "Python"
+        ]
+      },
+      {
+        "question_id": 107,
+        "difficulty": "middle_level",
+        "category": "System",
+        "subcategory": "Python Packages",
+        "skills_required": [
+          "Python",
+          "Docker"
+        ]
+      },
+      {
+        "question_id": 108,
+        "difficulty": "middle_level",
+        "category": "Cloud Computing",
+        "subcategory": "IAM",
+        "skills_required": [
+          "Security",
+          "AWS IAM"
+        ]
+      },
+      {
+        "question_id": 109,
+        "difficulty": "middle_level",
+        "category": "SQL",
+        "subcategory": "N+1 Problem",
+        "skills_required": [
+          "Database + API"
+        ]
+      },
+      {
+        "question_id": 110,
+        "difficulty": "middle_level",
+        "category": "Data Integration",
+        "subcategory": "API Rate Limits",
+        "skills_required": [
+          "API Interaction",
+          "Python"
+        ]
+      },
+      {
+        "question_id": 111,
+        "difficulty": "senior_level",
+        "category": "Streaming",
+        "subcategory": "Exactly-Once Processing",
+        "skills_required": [
+          "Apache Flink",
+          "Kafka"
+        ]
+      },
+      {
+        "question_id": 112,
+        "difficulty": "senior_level",
+        "category": "Data Architecture",
+        "subcategory": "Data Mesh",
+        "skills_required": [
+          "Data Mesh",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 113,
+        "difficulty": "senior_level",
+        "category": "Data Lakehouse",
+        "subcategory": "Iceberg vs Hive",
+        "skills_required": [
+          "Apache Iceberg",
+          "Hive Metastore"
+        ]
+      },
+      {
+        "question_id": 114,
+        "difficulty": "senior_level",
+        "category": "Distributed Systems",
+        "subcategory": "CAP Theorem",
+        "skills_required": [
+          "Distributed Systems",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 115,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "GDPR",
+        "skills_required": [
+          "Data Governance",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 116,
+        "difficulty": "senior_level",
+        "category": "Database",
+        "subcategory": "Split-Brain",
+        "skills_required": [
+          "High Availability",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 117,
+        "difficulty": "senior_level",
+        "category": "Infrastructure",
+        "subcategory": "Kubernetes Resilience",
+        "skills_required": [
+          "Docker + Kubernetes",
+          "Incident Management"
+        ]
+      },
+      {
+        "question_id": 118,
+        "difficulty": "senior_level",
+        "category": "Network",
+        "subcategory": "VPC Connectivity",
+        "skills_required": [
+          "Network + Security",
+          "Cloud Architecture"
+        ]
+      },
+      {
+        "question_id": 119,
+        "difficulty": "senior_level",
+        "category": "Data Warehouse",
+        "subcategory": "FinOps",
+        "skills_required": [
+          "Cloud + Cost",
+          "BigQuery"
+        ]
+      },
+      {
+        "question_id": 120,
+        "difficulty": "senior_level",
+        "category": "Storage",
+        "subcategory": "Data Tiering",
+        "skills_required": [
+          "Architecture",
+          "Storage Management"
+        ]
+      },
+      {
+        "question_id": 121,
+        "difficulty": "senior_level",
+        "category": "Observability",
+        "subcategory": "Distributed Tracing",
+        "skills_required": [
+          "Observability",
+          "Microservices"
+        ]
+      },
+      {
+        "question_id": 122,
+        "difficulty": "senior_level",
+        "category": "Reliability",
+        "subcategory": "Chaos Engineering",
+        "skills_required": [
+          "Resilience Testing"
+        ]
+      },
+      {
+        "question_id": 123,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Monolith to Microservices",
+        "skills_required": [
+          "Database + API",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 124,
+        "difficulty": "senior_level",
+        "category": "System",
+        "subcategory": "API Dependencies",
+        "skills_required": [
+          "System Design",
+          "Fault Tolerance"
+        ]
+      },
+      {
+        "question_id": 125,
+        "difficulty": "senior_level",
+        "category": "Data Governance",
+        "subcategory": "Data Catalog",
+        "skills_required": [
+          "Data Governance",
+          "Metadata Management"
+        ]
+      },
+      {
+        "question_id": 126,
+        "difficulty": "senior_level",
+        "category": "Distributed Processing",
+        "subcategory": "Skewed Join",
+        "skills_required": [
+          "Apache Spark",
+          "Performance Tuning"
+        ]
+      },
+      {
+        "question_id": 127,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "SLA & Error Budget",
+        "skills_required": [
+          "SRE",
+          "Service Level Agreement"
+        ]
+      },
+      {
+        "question_id": 128,
+        "difficulty": "senior_level",
+        "category": "Database",
+        "subcategory": "Pagination",
+        "skills_required": [
+          "Database + API",
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 129,
+        "difficulty": "senior_level",
+        "category": "NoSQL",
+        "subcategory": "DynamoDB Single Table",
+        "skills_required": [
+          "Amazon DynamoDB",
+          "Data Modeling"
+        ]
+      },
+      {
+        "question_id": 130,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Consensus",
+        "skills_required": [
+          "Distributed Systems",
+          "Zookeeper / etcd"
+        ]
+      },
+      {
+        "question_id": 131,
+        "difficulty": "senior_level",
+        "category": "Cloud Computing",
+        "subcategory": "Disaster Recovery",
+        "skills_required": [
+          "Architecture",
+          "High Availability"
+        ]
+      },
+      {
+        "question_id": 132,
+        "difficulty": "senior_level",
+        "category": "Streaming",
+        "subcategory": "Kafka Cluster",
+        "skills_required": [
+          "Apache Kafka"
+        ]
+      },
+      {
+        "question_id": 133,
+        "difficulty": "senior_level",
+        "category": "Data Warehouse",
+        "subcategory": "Trino/Presto",
+        "skills_required": [
+          "Trino",
+          "Resource Management"
+        ]
+      },
+      {
+        "question_id": 134,
+        "difficulty": "senior_level",
+        "category": "Cloud Computing",
+        "subcategory": "Data Transfer Cost",
+        "skills_required": [
+          "Cloud + Cost",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 135,
+        "difficulty": "senior_level",
+        "category": "Network",
+        "subcategory": "Webhooks",
+        "skills_required": [
+          "Network + Security"
+        ]
+      },
+      {
+        "question_id": 136,
+        "difficulty": "senior_level",
+        "category": "Orchestration",
+        "subcategory": "Airflow Sensors",
+        "skills_required": [
+          "Apache Airflow",
+          "Resource Starvation"
+        ]
+      },
+      {
+        "question_id": 137,
+        "difficulty": "senior_level",
+        "category": "System",
+        "subcategory": "Clock Drift",
+        "skills_required": [
+          "Distributed Systems"
+        ]
+      },
+      {
+        "question_id": 138,
+        "difficulty": "senior_level",
+        "category": "Distributed Processing",
+        "subcategory": "Dynamic Allocation",
+        "skills_required": [
+          "Apache Spark",
+          "YARN"
+        ]
+      },
+      {
+        "question_id": 139,
+        "difficulty": "senior_level",
+        "category": "Data Processing",
+        "subcategory": "Approximation",
+        "skills_required": [
+          "Big Data Algorithms"
+        ]
+      },
+      {
+        "question_id": 140,
+        "difficulty": "senior_level",
+        "category": "Storage",
+        "subcategory": "S3 Throughput",
+        "skills_required": [
+          "AWS S3",
+          "Performance Optimization"
+        ]
+      },
+      {
+        "question_id": 141,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Real-time Analytics",
+        "skills_required": [
+          "Kafka",
+          "ClickHouse",
+          "System Design"
+        ]
+      },
+      {
+        "question_id": 142,
+        "difficulty": "senior_level",
+        "category": "Orchestration",
+        "subcategory": "Tool Selection",
+        "skills_required": [
+          "Airflow",
+          "Dagster",
+          "Prefect"
+        ]
+      },
+      {
+        "question_id": 143,
+        "difficulty": "senior_level",
+        "category": "Data Integration",
+        "subcategory": "ETL vs Zero-ETL",
+        "skills_required": [
+          "Data Warehouse",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 144,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "Data Encryption",
+        "skills_required": [
+          "AWS KMS",
+          "Data Security"
+        ]
+      },
+      {
+        "question_id": 145,
+        "difficulty": "senior_level",
+        "category": "Distributed Processing",
+        "subcategory": "Spark Spill",
+        "skills_required": [
+          "Apache Spark",
+          "Performance Tuning"
+        ]
+      },
+      {
+        "question_id": 146,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Pipeline Failure",
+        "skills_required": [
+          "Airflow",
+          "Data Backfill"
+        ]
+      },
+      {
+        "question_id": 147,
+        "difficulty": "senior_level",
+        "category": "Cloud Architecture",
+        "subcategory": "Cross-account Access",
+        "skills_required": [
+          "AWS IAM",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 148,
+        "difficulty": "senior_level",
+        "category": "Data Warehouse",
+        "subcategory": "Snowflake Compute",
+        "skills_required": [
+          "Snowflake",
+          "FinOps"
+        ]
+      },
+      {
+        "question_id": 149,
+        "difficulty": "senior_level",
+        "category": "Data Processing",
+        "subcategory": "Low Latency vs High Volume",
+        "skills_required": [
+          "System Design",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 150,
+        "difficulty": "senior_level",
+        "category": "Data Quality",
+        "subcategory": "Data Freshness",
+        "skills_required": [
+          "Observability",
+          "Data Reliability"
+        ]
+      },
+      {
+        "question_id": 151,
+        "difficulty": "senior_level",
+        "category": "Data Pipeline",
+        "subcategory": "Data Contracts",
+        "skills_required": [
+          "Data Governance",
+          "dbt"
+        ]
+      },
+      {
+        "question_id": 152,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Monolith ETL",
+        "skills_required": [
+          "System Design",
+          "Airflow"
+        ]
+      },
+      {
+        "question_id": 153,
+        "difficulty": "senior_level",
+        "category": "Data Formats",
+        "subcategory": "Schema Evolution",
+        "skills_required": [
+          "Apache Avro",
+          "Kafka"
+        ]
+      },
+      {
+        "question_id": 154,
+        "difficulty": "senior_level",
+        "category": "CI/CD",
+        "subcategory": "Data Pipelines",
+        "skills_required": [
+          "DevOps",
+          "dbt"
+        ]
+      },
+      {
+        "question_id": 155,
+        "difficulty": "senior_level",
+        "category": "Distributed Processing",
+        "subcategory": "Spark UDF",
+        "skills_required": [
+          "PySpark",
+          "Performance Tuning"
+        ]
+      },
+      {
+        "question_id": 156,
+        "difficulty": "senior_level",
+        "category": "Compliance",
+        "subcategory": "Data Dictionary",
+        "skills_required": [
+          "Data Governance"
+        ]
+      },
+      {
+        "question_id": 157,
+        "difficulty": "senior_level",
+        "category": "Data Access",
+        "subcategory": "Data as a Service",
+        "skills_required": [
+          "API Design",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 158,
+        "difficulty": "senior_level",
+        "category": "Data Modeling",
+        "subcategory": "Surrogate Keys",
+        "skills_required": [
+          "Data Warehouse"
+        ]
+      },
+      {
+        "question_id": 159,
+        "difficulty": "senior_level",
+        "category": "Distributed Systems",
+        "subcategory": "Vector Clocks",
+        "skills_required": [
+          "Architecture",
+          "DynamoDB"
+        ]
+      },
+      {
+        "question_id": 160,
+        "difficulty": "senior_level",
+        "category": "Data Integration",
+        "subcategory": "Event-Driven Architecture",
+        "skills_required": [
+          "CDC",
+          "Kafka",
+          "Elasticsearch"
+        ]
+      },
+      {
+        "question_id": 161,
+        "difficulty": "senior_level",
+        "category": "Cloud Architecture",
+        "subcategory": "Serverless Data Prep",
+        "skills_required": [
+          "AWS Lambda",
+          "AWS Glue"
+        ]
+      },
+      {
+        "question_id": 162,
+        "difficulty": "senior_level",
+        "category": "Data Warehouse",
+        "subcategory": "Redshift vs Snowflake",
+        "skills_required": [
+          "Snowflake",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 163,
+        "difficulty": "senior_level",
+        "category": "Database",
+        "subcategory": "Normalization vs Denormalization",
+        "skills_required": [
+          "Data Modeling"
+        ]
+      },
+      {
+        "question_id": 164,
+        "difficulty": "senior_level",
+        "category": "Infrastructure",
+        "subcategory": "Vendor Lock-in",
+        "skills_required": [
+          "Cloud Architecture"
+        ]
+      },
+      {
+        "question_id": 165,
+        "difficulty": "senior_level",
+        "category": "Orchestration",
+        "subcategory": "Airflow Scheduler",
+        "skills_required": [
+          "Apache Airflow"
+        ]
+      },
+      {
+        "question_id": 166,
+        "difficulty": "senior_level",
+        "category": "Streaming",
+        "subcategory": "Kafka Incident",
+        "skills_required": [
+          "Apache Kafka"
+        ]
+      },
+      {
+        "question_id": 167,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "Encryption in Transit",
+        "skills_required": [
+          "Network + Security"
+        ]
+      },
+      {
+        "question_id": 168,
+        "difficulty": "senior_level",
+        "category": "Database",
+        "subcategory": "DynamoDB FinOps",
+        "skills_required": [
+          "Amazon DynamoDB",
+          "Cloud + Cost"
+        ]
+      },
+      {
+        "question_id": 169,
+        "difficulty": "senior_level",
+        "category": "Distributed Processing",
+        "subcategory": "Spark Window Limit",
+        "skills_required": [
+          "Apache Spark",
+          "Performance Tuning"
+        ]
+      },
+      {
+        "question_id": 170,
+        "difficulty": "senior_level",
+        "category": "Observability",
+        "subcategory": "Data Anomaly",
+        "skills_required": [
+          "Data Observability",
+          "Machine Learning"
+        ]
+      },
+      {
+        "question_id": 171,
+        "difficulty": "senior_level",
+        "category": "Data Quality",
+        "subcategory": "Great Expectations",
+        "skills_required": [
+          "Data Testing",
+          "Great Expectations"
+        ]
+      },
+      {
+        "question_id": 172,
+        "difficulty": "senior_level",
+        "category": "Code Quality",
+        "subcategory": "PySpark Refactoring",
+        "skills_required": [
+          "PySpark",
+          "Clean Code"
+        ]
+      },
+      {
+        "question_id": 173,
+        "difficulty": "senior_level",
+        "category": "Orchestration",
+        "subcategory": "Airflow Providers",
+        "skills_required": [
+          "Apache Airflow",
+          "Python"
+        ]
+      },
+      {
+        "question_id": 174,
+        "difficulty": "senior_level",
+        "category": "Data Processing",
+        "subcategory": "Idempotency",
+        "skills_required": [
+          "Data Architecture"
+        ]
+      },
+      {
+        "question_id": 175,
+        "difficulty": "senior_level",
+        "category": "Data Processing",
+        "subcategory": "Pandas vs Spark",
+        "skills_required": [
+          "Python",
+          "Spark"
+        ]
+      },
+      {
+        "question_id": 176,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "SLO/SLI",
+        "skills_required": [
+          "SRE",
+          "Observability"
+        ]
+      },
+      {
+        "question_id": 177,
+        "difficulty": "senior_level",
+        "category": "Data Access",
+        "subcategory": "REST vs GraphQL",
+        "skills_required": [
+          "GraphQL",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 178,
+        "difficulty": "senior_level",
+        "category": "Data Modeling",
+        "subcategory": "Snowflake Schema",
+        "skills_required": [
+          "Data Warehouse",
+          "Dimensional Modeling"
+        ]
+      },
+      {
+        "question_id": 179,
+        "difficulty": "senior_level",
+        "category": "Distributed Systems",
+        "subcategory": "Consistency Models",
+        "skills_required": [
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 180,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Fraud Detection",
+        "skills_required": [
+          "Machine Learning",
+          "Streaming"
+        ]
+      },
+      {
+        "question_id": 181,
+        "difficulty": "senior_level",
+        "category": "Deployment",
+        "subcategory": "Spark on K8s",
+        "skills_required": [
+          "Docker + Kubernetes",
+          "Apache Spark"
+        ]
+      },
+      {
+        "question_id": 182,
+        "difficulty": "senior_level",
+        "category": "Storage",
+        "subcategory": "Data Format",
+        "skills_required": [
+          "Parquet",
+          "Avro",
+          "ORC"
+        ]
+      },
+      {
+        "question_id": 183,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Streaming vs Batch",
+        "skills_required": [
+          "Data Pipeline"
+        ]
+      },
+      {
+        "question_id": 184,
+        "difficulty": "senior_level",
+        "category": "Compliance",
+        "subcategory": "PII Exposure",
+        "skills_required": [
+          "Data Governance",
+          "Anonymization"
+        ]
+      },
+      {
+        "question_id": 185,
+        "difficulty": "senior_level",
+        "category": "Distributed Systems",
+        "subcategory": "Network Partition",
+        "skills_required": [
+          "Architecture",
+          "Zookeeper"
+        ]
+      },
+      {
+        "question_id": 186,
+        "difficulty": "senior_level",
+        "category": "Data Quality",
+        "subcategory": "Data Backfill",
+        "skills_required": [
+          "Airflow",
+          "Data Modeling"
+        ]
+      },
+      {
+        "question_id": 187,
+        "difficulty": "senior_level",
+        "category": "Network",
+        "subcategory": "VPC Endpoints",
+        "skills_required": [
+          "AWS S3",
+          "Network + Security"
+        ]
+      },
+      {
+        "question_id": 188,
+        "difficulty": "senior_level",
+        "category": "Cloud Computing",
+        "subcategory": "EMR Spot Scaling",
+        "skills_required": [
+          "Cloud + Cost",
+          "AWS EMR"
+        ]
+      },
+      {
+        "question_id": 189,
+        "difficulty": "senior_level",
+        "category": "API Integration",
+        "subcategory": "Rate Limiting",
+        "skills_required": [
+          "Python",
+          "API Interaction"
+        ]
+      },
+      {
+        "question_id": 190,
+        "difficulty": "senior_level",
+        "category": "Observability",
+        "subcategory": "Prometheus & Grafana",
+        "skills_required": [
+          "Apache Kafka",
+          "Prometheus"
+        ]
+      },
+      {
+        "question_id": 191,
+        "difficulty": "senior_level",
+        "category": "Code Quality",
+        "subcategory": "Spark Unit Test",
+        "skills_required": [
+          "PySpark",
+          "Unit Testing"
+        ]
+      },
+      {
+        "question_id": 192,
+        "difficulty": "senior_level",
+        "category": "Security",
+        "subcategory": "Secrets Management",
+        "skills_required": [
+          "Airflow",
+          "Security"
+        ]
+      },
+      {
+        "question_id": 193,
+        "difficulty": "senior_level",
+        "category": "Orchestration",
+        "subcategory": "DAG Coupling",
+        "skills_required": [
+          "Apache Airflow",
+          "Architecture"
+        ]
+      },
+      {
+        "question_id": 194,
+        "difficulty": "senior_level",
+        "category": "Data Modeling",
+        "subcategory": "Naming Conventions",
+        "skills_required": [
+          "Data Governance"
+        ]
+      },
+      {
+        "question_id": 195,
+        "difficulty": "senior_level",
+        "category": "SQL",
+        "subcategory": "CTE Optimization",
+        "skills_required": [
+          "SQL",
+          "Performance Tuning"
+        ]
+      },
+      {
+        "question_id": 196,
+        "difficulty": "senior_level",
+        "category": "Operations",
+        "subcategory": "Runbook",
+        "skills_required": [
+          "SRE",
+          "Incident Management"
+        ]
+      },
+      {
+        "question_id": 197,
+        "difficulty": "senior_level",
+        "category": "Data Access",
+        "subcategory": "Bulk Export API",
+        "skills_required": [
+          "System Design",
+          "Database + API"
+        ]
+      },
+      {
+        "question_id": 198,
+        "difficulty": "senior_level",
+        "category": "RDBMS",
+        "subcategory": "Partitioning Strategy",
+        "skills_required": [
+          "PostgreSQL",
+          "Database Administration"
+        ]
+      },
+      {
+        "question_id": 199,
+        "difficulty": "senior_level",
+        "category": "Architecture",
+        "subcategory": "Leader Election",
+        "skills_required": [
+          "Zookeeper",
+          "Distributed Systems"
+        ]
+      },
+      {
+        "question_id": 200,
+        "difficulty": "senior_level",
+        "category": "End-to-End",
+        "subcategory": "Modern Data Stack",
+        "skills_required": [
+          "Airflow",
+          "Kafka",
+          "Snowflake",
+          "dbt"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "Preceding_ID": 38,
+        "Target_ID": 6,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Data Processing)"
+      },
+      {
+        "Preceding_ID": 45,
+        "Target_ID": 6,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 47,
+        "Target_ID": 6,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 47,
+        "Target_ID": 8,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0533,
+        "combined_score": 0.3213,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.50) | 시나리오 유사도=0.05 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 40,
+        "Target_ID": 8,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Scripting)"
+      },
+      {
+        "Preceding_ID": 45,
+        "Target_ID": 8,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 46,
+        "Target_ID": 9,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0651,
+        "combined_score": 0.326,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.07 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 33,
+        "Target_ID": 9,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 43,
+        "Target_ID": 9,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 55,
+        "Target_ID": 11,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.057,
+        "combined_score": 0.3228,
+        "Logic": "공통 스킬 ['apache airflow'] (Jaccard=0.33) | 시나리오 유사도=0.06 | 난이도 junior_level → middle_level | 동일 카테고리(Orchestration)"
+      },
+      {
+        "Preceding_ID": 51,
+        "Target_ID": 11,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0077,
+        "combined_score": 0.2531,
+        "Logic": "공통 스킬 ['apache airflow'] (Jaccard=0.25) | 시나리오 유사도=0.01 | 난이도 junior_level → middle_level | 동일 카테고리(Orchestration)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 11,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['apache airflow'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 57,
+        "Target_ID": 12,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.053,
+        "combined_score": 0.3212,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.50) | 시나리오 유사도=0.05 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 38,
+        "Target_ID": 12,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0346,
+        "combined_score": 0.3138,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 12,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 13,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Data Quality)"
+      },
+      {
+        "Preceding_ID": 33,
+        "Target_ID": 13,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 43,
+        "Target_ID": 13,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 60,
+        "Target_ID": 15,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0943,
+        "combined_score": 0.3377,
+        "Logic": "공통 스킬 ['aws s3'] (Jaccard=0.33) | 시나리오 유사도=0.09 | 난이도 junior_level → middle_level | 동일 카테고리(Storage)"
+      },
+      {
+        "Preceding_ID": 31,
+        "Target_ID": 15,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0136,
+        "combined_score": 0.1554,
+        "Logic": "공통 스킬 ['parquet'] (Jaccard=0.25) | 시나리오 유사도=0.01 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 61,
+        "Target_ID": 16,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.019,
+        "combined_score": 0.6076,
+        "Logic": "공통 스킬 ['sql', 'window functions'] (Jaccard=1.00) | 시나리오 유사도=0.02 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 16,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0154,
+        "combined_score": 0.3062,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 33,
+        "Target_ID": 16,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 38,
+        "Target_ID": 17,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0358,
+        "combined_score": 0.4143,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 university_level → middle_level | 동일 카테고리(Data Processing)"
+      },
+      {
+        "Preceding_ID": 57,
+        "Target_ID": 17,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0279,
+        "combined_score": 0.4112,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 junior_level → middle_level | 동일 카테고리(Data Processing)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 17,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0369,
+        "combined_score": 0.2648,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.25) | 시나리오 유사도=0.04 | 난이도 junior_level → middle_level | 동일 카테고리(Data Processing)"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 18,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1019,
+        "combined_score": 0.3407,
+        "Logic": "공통 스킬 ['apache kafka'] (Jaccard=0.50) | 시나리오 유사도=0.10 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 56,
+        "Target_ID": 18,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0374,
+        "combined_score": 0.3149,
+        "Logic": "공통 스킬 ['apache kafka'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 20,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['rdbms'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 54,
+        "Target_ID": 20,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['rdbms'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 1,
+        "Target_ID": 20,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0109,
+        "combined_score": 0.3043,
+        "Logic": "공통 스킬 ['rdbms'] (Jaccard=0.33) | 시나리오 유사도=0.01 | 난이도 university_level → middle_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 14,
+        "Target_ID": 21,
+        "skill_overlap": 0.1667,
+        "scenario_similarity": 0.0195,
+        "combined_score": 0.2078,
+        "Logic": "공통 스킬 ['kafka'] (Jaccard=0.17) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level | 동일 카테고리(Architecture)"
+      },
+      {
+        "Preceding_ID": 83,
+        "Target_ID": 21,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.1202,
+        "combined_score": 0.1681,
+        "Logic": "공통 스킬 ['redis'] (Jaccard=0.20) | 시나리오 유사도=0.12 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 14,
+        "Target_ID": 24,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0211,
+        "combined_score": 0.1584,
+        "Logic": "공통 스킬 ['kafka'] (Jaccard=0.25) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 107,
+        "Target_ID": 26,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0092,
+        "combined_score": 0.1537,
+        "Logic": "공통 스킬 ['docker'] (Jaccard=0.25) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 26,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['memory management'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 14,
+        "Target_ID": 27,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0474,
+        "combined_score": 0.1689,
+        "Logic": "공통 스킬 ['kafka'] (Jaccard=0.25) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 100,
+        "Target_ID": 28,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.2618,
+        "combined_score": 0.2047,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.26 | 난이도 middle_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 69,
+        "Target_ID": 30,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0284,
+        "combined_score": 0.2114,
+        "Logic": "공통 스킬 ['airflow'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 71,
+        "Target_ID": 30,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0193,
+        "combined_score": 0.1577,
+        "Logic": "공통 스킬 ['airflow'] (Jaccard=0.25) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 45,
+        "Target_ID": 51,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0156,
+        "combined_score": 0.3062,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 47,
+        "Target_ID": 51,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0146,
+        "combined_score": 0.3059,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 44,
+        "Target_ID": 51,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0162,
+        "combined_score": 0.2065,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.33) | 시나리오 유사도=0.02 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 43,
+        "Target_ID": 52,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0644,
+        "combined_score": 0.7258,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=1.00) | 시나리오 유사도=0.06 | 난이도 university_level → junior_level | 동일 카테고리(SQL)"
+      },
+      {
+        "Preceding_ID": 33,
+        "Target_ID": 52,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(SQL)"
+      },
+      {
+        "Preceding_ID": 46,
+        "Target_ID": 52,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(SQL)"
+      },
+      {
+        "Preceding_ID": 44,
+        "Target_ID": 53,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['pandas', 'python'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 45,
+        "Target_ID": 53,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 47,
+        "Target_ID": 53,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 54,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['rdbms'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 1,
+        "Target_ID": 54,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['rdbms'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 38,
+        "Target_ID": 57,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0382,
+        "combined_score": 0.7153,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=1.00) | 시나리오 유사도=0.04 | 난이도 university_level → junior_level | 동일 카테고리(Data Processing)"
+      },
+      {
+        "Preceding_ID": 33,
+        "Target_ID": 58,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0272,
+        "combined_score": 0.6109,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=1.00) | 시나리오 유사도=0.03 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 43,
+        "Target_ID": 58,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 46,
+        "Target_ID": 58,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 59,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['data warehouse'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(Data Modeling)"
+      },
+      {
+        "Preceding_ID": 46,
+        "Target_ID": 61,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1129,
+        "combined_score": 0.4452,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.11 | 난이도 university_level → junior_level | 동일 카테고리(SQL)"
+      },
+      {
+        "Preceding_ID": 43,
+        "Target_ID": 61,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0918,
+        "combined_score": 0.4367,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.09 | 난이도 university_level → junior_level | 동일 카테고리(SQL)"
+      },
+      {
+        "Preceding_ID": 33,
+        "Target_ID": 61,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(SQL)"
+      },
+      {
+        "Preceding_ID": 33,
+        "Target_ID": 62,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0143,
+        "combined_score": 0.6057,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=1.00) | 시나리오 유사도=0.01 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 43,
+        "Target_ID": 62,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 46,
+        "Target_ID": 62,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 42,
+        "Target_ID": 63,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1353,
+        "combined_score": 0.3541,
+        "Logic": "공통 스킬 ['linux'] (Jaccard=0.50) | 시나리오 유사도=0.14 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 39,
+        "Target_ID": 66,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0209,
+        "combined_score": 0.6084,
+        "Logic": "공통 스킬 ['data architecture'] (Jaccard=1.00) | 시나리오 유사도=0.02 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 66,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0195,
+        "combined_score": 0.6078,
+        "Logic": "공통 스킬 ['data architecture'] (Jaccard=1.00) | 시나리오 유사도=0.02 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 33,
+        "Target_ID": 68,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(SQL)"
+      },
+      {
+        "Preceding_ID": 43,
+        "Target_ID": 68,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(SQL)"
+      },
+      {
+        "Preceding_ID": 46,
+        "Target_ID": 68,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → junior_level | 동일 카테고리(SQL)"
+      },
+      {
+        "Preceding_ID": 45,
+        "Target_ID": 69,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0217,
+        "combined_score": 0.3087,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 47,
+        "Target_ID": 69,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0204,
+        "combined_score": 0.3082,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 44,
+        "Target_ID": 69,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0226,
+        "combined_score": 0.2091,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.33) | 시나리오 유사도=0.02 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 35,
+        "Target_ID": 70,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0672,
+        "combined_score": 0.6269,
+        "Logic": "공통 스킬 ['etl'] (Jaccard=1.00) | 시나리오 유사도=0.07 | 난이도 university_level → junior_level"
+      },
+      {
+        "Preceding_ID": 69,
+        "Target_ID": 71,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0405,
+        "combined_score": 0.2662,
+        "Logic": "공통 스킬 ['airflow'] (Jaccard=0.25) | 시나리오 유사도=0.04 | 난이도 junior_level → middle_level | 동일 카테고리(Orchestration)"
+      },
+      {
+        "Preceding_ID": 60,
+        "Target_ID": 72,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0998,
+        "combined_score": 0.4399,
+        "Logic": "공통 스킬 ['aws s3'] (Jaccard=0.50) | 시나리오 유사도=0.10 | 난이도 junior_level → middle_level | 동일 카테고리(Storage)"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 73,
+        "skill_overlap": 0.6667,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['apache spark', 'python'] (Jaccard=0.67) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 38,
+        "Target_ID": 73,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 45,
+        "Target_ID": 73,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 74,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1424,
+        "combined_score": 0.357,
+        "Logic": "공통 스킬 ['apache kafka'] (Jaccard=0.50) | 시나리오 유사도=0.14 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 56,
+        "Target_ID": 74,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0333,
+        "combined_score": 0.3133,
+        "Logic": "공통 스킬 ['apache kafka'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 75,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0137,
+        "combined_score": 0.4055,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 junior_level → middle_level | 동일 카테고리(Data Quality)"
+      },
+      {
+        "Preceding_ID": 68,
+        "Target_ID": 75,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1379,
+        "combined_score": 0.3552,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.14 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 70,
+        "Target_ID": 75,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0151,
+        "combined_score": 0.306,
+        "Logic": "공통 스킬 ['etl'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 59,
+        "Target_ID": 76,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0114,
+        "combined_score": 0.4046,
+        "Logic": "공통 스킬 ['data warehouse'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 junior_level → middle_level | 동일 카테고리(Data Modeling)"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 76,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['data warehouse'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(Data Modeling)"
+      },
+      {
+        "Preceding_ID": 58,
+        "Target_ID": 77,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1,
+        "combined_score": 0.34,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.10 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 62,
+        "Target_ID": 77,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0148,
+        "combined_score": 0.3059,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 77,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0129,
+        "combined_score": 0.3052,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 64,
+        "Target_ID": 79,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.019,
+        "combined_score": 0.3076,
+        "Logic": "공통 스킬 ['database'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 66,
+        "Target_ID": 80,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['data architecture'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level | 동일 카테고리(Architecture)"
+      },
+      {
+        "Preceding_ID": 39,
+        "Target_ID": 80,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0196,
+        "combined_score": 0.6078,
+        "Logic": "공통 스킬 ['data architecture'] (Jaccard=1.00) | 시나리오 유사도=0.02 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 80,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0183,
+        "combined_score": 0.6073,
+        "Logic": "공통 스킬 ['data architecture'] (Jaccard=1.00) | 시나리오 유사도=0.02 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 9,
+        "Target_ID": 81,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.167,
+        "combined_score": 0.1668,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.17 | 난이도 junior_level → middle_level | 동일 카테고리(Data Warehouse)"
+      },
+      {
+        "Preceding_ID": 65,
+        "Target_ID": 82,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 84,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.1595,
+        "combined_score": 0.6638,
+        "Logic": "공통 스킬 ['apache kafka'] (Jaccard=1.00) | 시나리오 유사도=0.16 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 56,
+        "Target_ID": 84,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.1303,
+        "combined_score": 0.6521,
+        "Logic": "공통 스킬 ['apache kafka'] (Jaccard=1.00) | 시나리오 유사도=0.13 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 55,
+        "Target_ID": 85,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.1402,
+        "combined_score": 0.7561,
+        "Logic": "공통 스킬 ['apache airflow'] (Jaccard=1.00) | 시나리오 유사도=0.14 | 난이도 junior_level → middle_level | 동일 카테고리(Orchestration)"
+      },
+      {
+        "Preceding_ID": 51,
+        "Target_ID": 85,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.458,
+        "combined_score": 0.5832,
+        "Logic": "공통 스킬 ['apache airflow'] (Jaccard=0.50) | 시나리오 유사도=0.46 | 난이도 junior_level → middle_level | 동일 카테고리(Orchestration)"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 85,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0398,
+        "combined_score": 0.3159,
+        "Logic": "공통 스킬 ['apache airflow'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 86,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.1854,
+        "combined_score": 0.3242,
+        "Logic": "공통 스킬 ['pyspark'] (Jaccard=0.25) | 시나리오 유사도=0.19 | 난이도 junior_level → middle_level | 동일 카테고리(Data Processing)"
+      },
+      {
+        "Preceding_ID": 61,
+        "Target_ID": 86,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0224,
+        "combined_score": 0.209,
+        "Logic": "공통 스킬 ['window functions'] (Jaccard=0.33) | 시나리오 유사도=0.02 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 87,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['rdbms'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 54,
+        "Target_ID": 87,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['rdbms'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 1,
+        "Target_ID": 87,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0128,
+        "combined_score": 0.2051,
+        "Logic": "공통 스킬 ['rdbms'] (Jaccard=0.33) | 시나리오 유사도=0.01 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 32,
+        "Target_ID": 88,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0184,
+        "combined_score": 0.3074,
+        "Logic": "공통 스킬 ['nosql'] (Jaccard=0.33) | 시나리오 유사도=0.02 | 난이도 university_level → middle_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 54,
+        "Target_ID": 90,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0176,
+        "combined_score": 0.307,
+        "Logic": "공통 스킬 ['rdbms'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 41,
+        "Target_ID": 90,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['rdbms'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 1,
+        "Target_ID": 90,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['rdbms'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 47,
+        "Target_ID": 91,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0534,
+        "combined_score": 0.3214,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.50) | 시나리오 유사도=0.05 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 45,
+        "Target_ID": 91,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0175,
+        "combined_score": 0.307,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 91,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0386,
+        "combined_score": 0.2154,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.33) | 시나리오 유사도=0.04 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 33,
+        "Target_ID": 94,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.013,
+        "combined_score": 0.7052,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=1.00) | 시나리오 유사도=0.01 | 난이도 university_level → middle_level | 동일 카테고리(SQL)"
+      },
+      {
+        "Preceding_ID": 52,
+        "Target_ID": 94,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0117,
+        "combined_score": 0.7047,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=1.00) | 시나리오 유사도=0.01 | 난이도 junior_level → middle_level | 동일 카테고리(SQL)"
+      },
+      {
+        "Preceding_ID": 43,
+        "Target_ID": 94,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → middle_level | 동일 카테고리(SQL)"
+      },
+      {
+        "Preceding_ID": 38,
+        "Target_ID": 95,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0544,
+        "combined_score": 0.6217,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=1.00) | 시나리오 유사도=0.05 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 57,
+        "Target_ID": 95,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0307,
+        "combined_score": 0.6123,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=1.00) | 시나리오 유사도=0.03 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 95,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 56,
+        "Target_ID": 96,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.036,
+        "combined_score": 0.3144,
+        "Logic": "공통 스킬 ['apache kafka'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 96,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0297,
+        "combined_score": 0.3119,
+        "Logic": "공통 스킬 ['apache kafka'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 99,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1512,
+        "combined_score": 0.1605,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.15 | 난이도 university_level → middle_level | 동일 카테고리(Data Processing)"
+      },
+      {
+        "Preceding_ID": 55,
+        "Target_ID": 101,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['apache airflow'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 7,
+        "Target_ID": 101,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0188,
+        "combined_score": 0.3075,
+        "Logic": "공통 스킬 ['apache airflow'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 51,
+        "Target_ID": 101,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['apache airflow'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 67,
+        "Target_ID": 103,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0271,
+        "combined_score": 0.4109,
+        "Logic": "공통 스킬 ['data formats'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 junior_level → middle_level | 동일 카테고리(Data Formats)"
+      },
+      {
+        "Preceding_ID": 34,
+        "Target_ID": 103,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0667,
+        "combined_score": 0.2267,
+        "Logic": "공통 스킬 ['hadoop'] (Jaccard=0.33) | 시나리오 유사도=0.07 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 3,
+        "Target_ID": 103,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0251,
+        "combined_score": 0.21,
+        "Logic": "공통 스킬 ['hadoop'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 104,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0843,
+        "combined_score": 0.3337,
+        "Logic": "공통 스킬 ['apache kafka'] (Jaccard=0.50) | 시나리오 유사도=0.08 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 56,
+        "Target_ID": 104,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0397,
+        "combined_score": 0.3159,
+        "Logic": "공통 스킬 ['apache kafka'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 51,
+        "Target_ID": 106,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0082,
+        "combined_score": 0.7033,
+        "Logic": "공통 스킬 ['apache airflow', 'python'] (Jaccard=1.00) | 시나리오 유사도=0.01 | 난이도 junior_level → middle_level | 동일 카테고리(Orchestration)"
+      },
+      {
+        "Preceding_ID": 55,
+        "Target_ID": 106,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0093,
+        "combined_score": 0.4037,
+        "Logic": "공통 스킬 ['apache airflow'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 junior_level → middle_level | 동일 카테고리(Orchestration)"
+      },
+      {
+        "Preceding_ID": 47,
+        "Target_ID": 106,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0556,
+        "combined_score": 0.3222,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.50) | 시나리오 유사도=0.06 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 47,
+        "Target_ID": 107,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0466,
+        "combined_score": 0.3186,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.50) | 시나리오 유사도=0.05 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 45,
+        "Target_ID": 107,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0153,
+        "combined_score": 0.3061,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 8,
+        "Target_ID": 107,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0337,
+        "combined_score": 0.2135,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 junior_level → middle_level"
+      },
+      {
+        "Preceding_ID": 45,
+        "Target_ID": 110,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0171,
+        "combined_score": 0.3068,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 47,
+        "Target_ID": 110,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0161,
+        "combined_score": 0.3064,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 40,
+        "Target_ID": 110,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0369,
+        "combined_score": 0.2148,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.33) | 시나리오 유사도=0.04 | 난이도 university_level → middle_level"
+      },
+      {
+        "Preceding_ID": 14,
+        "Target_ID": 111,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.02,
+        "combined_score": 0.158,
+        "Logic": "공통 스킬 ['kafka'] (Jaccard=0.25) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 65,
+        "Target_ID": 112,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 82,
+        "Target_ID": 112,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.025,
+        "combined_score": 0.21,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 65,
+        "Target_ID": 114,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 82,
+        "Target_ID": 114,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0298,
+        "combined_score": 0.2119,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 100,
+        "Target_ID": 115,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0161,
+        "combined_score": 0.4064,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 108,
+        "Target_ID": 115,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 65,
+        "Target_ID": 116,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 82,
+        "Target_ID": 116,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 91,
+        "Target_ID": 117,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1489,
+        "combined_score": 0.2596,
+        "Logic": "공통 스킬 ['docker + kubernetes'] (Jaccard=0.33) | 시나리오 유사도=0.15 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 92,
+        "Target_ID": 118,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1824,
+        "combined_score": 0.473,
+        "Logic": "공통 스킬 ['network + security'] (Jaccard=0.50) | 시나리오 유사도=0.18 | 난이도 middle_level → senior_level | 동일 카테고리(Network)"
+      },
+      {
+        "Preceding_ID": 78,
+        "Target_ID": 118,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['cloud architecture'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 81,
+        "Target_ID": 119,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0836,
+        "combined_score": 0.7334,
+        "Logic": "공통 스킬 ['bigquery', 'cloud + cost'] (Jaccard=1.00) | 시나리오 유사도=0.08 | 난이도 middle_level → senior_level | 동일 카테고리(Data Warehouse)"
+      },
+      {
+        "Preceding_ID": 102,
+        "Target_ID": 119,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0977,
+        "combined_score": 0.2391,
+        "Logic": "공통 스킬 ['cloud + cost'] (Jaccard=0.33) | 시나리오 유사도=0.10 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 97,
+        "Target_ID": 119,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0718,
+        "combined_score": 0.2287,
+        "Logic": "공통 스킬 ['cloud + cost'] (Jaccard=0.33) | 시나리오 유사도=0.07 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 65,
+        "Target_ID": 120,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 82,
+        "Target_ID": 120,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0088,
+        "combined_score": 0.2035,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 19,
+        "Target_ID": 120,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.2084,
+        "combined_score": 0.1834,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.21 | 난이도 middle_level → senior_level | 동일 카테고리(Storage)"
+      },
+      {
+        "Preceding_ID": 109,
+        "Target_ID": 123,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0546,
+        "combined_score": 0.3218,
+        "Logic": "공통 스킬 ['database + api'] (Jaccard=0.50) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 65,
+        "Target_ID": 123,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 87,
+        "Target_ID": 123,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0691,
+        "combined_score": 0.2276,
+        "Logic": "공통 스킬 ['database + api'] (Jaccard=0.33) | 시나리오 유사도=0.07 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 95,
+        "Target_ID": 126,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0762,
+        "combined_score": 0.4305,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.50) | 시나리오 유사도=0.08 | 난이도 middle_level → senior_level | 동일 카테고리(Distributed Processing)"
+      },
+      {
+        "Preceding_ID": 12,
+        "Target_ID": 126,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0416,
+        "combined_score": 0.3166,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.33) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level | 동일 카테고리(Distributed Processing)"
+      },
+      {
+        "Preceding_ID": 38,
+        "Target_ID": 126,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.04,
+        "combined_score": 0.316,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 109,
+        "Target_ID": 128,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0424,
+        "combined_score": 0.317,
+        "Logic": "공통 스킬 ['database + api'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 87,
+        "Target_ID": 128,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0537,
+        "combined_score": 0.2215,
+        "Logic": "공통 스킬 ['database + api'] (Jaccard=0.33) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 49,
+        "Target_ID": 129,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0182,
+        "combined_score": 0.3073,
+        "Logic": "공통 스킬 ['data modeling'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 32,
+        "Target_ID": 129,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['data modeling'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 65,
+        "Target_ID": 131,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0105,
+        "combined_score": 0.3042,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 82,
+        "Target_ID": 131,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0201,
+        "combined_score": 0.208,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 84,
+        "Target_ID": 132,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0269,
+        "combined_score": 0.7107,
+        "Logic": "공통 스킬 ['apache kafka'] (Jaccard=1.00) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Streaming)"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 132,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0417,
+        "combined_score": 0.6167,
+        "Logic": "공통 스킬 ['apache kafka'] (Jaccard=1.00) | 시나리오 유사도=0.04 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 56,
+        "Target_ID": 132,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.037,
+        "combined_score": 0.6148,
+        "Logic": "공통 스킬 ['apache kafka'] (Jaccard=1.00) | 시나리오 유사도=0.04 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 102,
+        "Target_ID": 134,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1159,
+        "combined_score": 0.3463,
+        "Logic": "공통 스킬 ['cloud + cost'] (Jaccard=0.33) | 시나리오 유사도=0.12 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud Computing)"
+      },
+      {
+        "Preceding_ID": 97,
+        "Target_ID": 134,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0851,
+        "combined_score": 0.3341,
+        "Logic": "공통 스킬 ['cloud + cost'] (Jaccard=0.33) | 시나리오 유사도=0.09 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud Computing)"
+      },
+      {
+        "Preceding_ID": 65,
+        "Target_ID": 134,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0113,
+        "combined_score": 0.3045,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 92,
+        "Target_ID": 135,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.1079,
+        "combined_score": 0.7432,
+        "Logic": "공통 스킬 ['network + security'] (Jaccard=1.00) | 시나리오 유사도=0.11 | 난이도 middle_level → senior_level | 동일 카테고리(Network)"
+      },
+      {
+        "Preceding_ID": 55,
+        "Target_ID": 136,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1456,
+        "combined_score": 0.4582,
+        "Logic": "공통 스킬 ['apache airflow'] (Jaccard=0.50) | 시나리오 유사도=0.15 | 난이도 junior_level → senior_level | 동일 카테고리(Orchestration)"
+      },
+      {
+        "Preceding_ID": 85,
+        "Target_ID": 136,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.052,
+        "combined_score": 0.4208,
+        "Logic": "공통 스킬 ['apache airflow'] (Jaccard=0.50) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level | 동일 카테고리(Orchestration)"
+      },
+      {
+        "Preceding_ID": 51,
+        "Target_ID": 136,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0561,
+        "combined_score": 0.3224,
+        "Logic": "공통 스킬 ['apache airflow'] (Jaccard=0.33) | 시나리오 유사도=0.06 | 난이도 junior_level → senior_level | 동일 카테고리(Orchestration)"
+      },
+      {
+        "Preceding_ID": 95,
+        "Target_ID": 138,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0274,
+        "combined_score": 0.411,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Distributed Processing)"
+      },
+      {
+        "Preceding_ID": 38,
+        "Target_ID": 138,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0341,
+        "combined_score": 0.3136,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 57,
+        "Target_ID": 138,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0266,
+        "combined_score": 0.3106,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 86,
+        "Target_ID": 139,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1261,
+        "combined_score": 0.1504,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.13 | 난이도 middle_level → senior_level | 동일 카테고리(Data Processing)"
+      },
+      {
+        "Preceding_ID": 60,
+        "Target_ID": 140,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1054,
+        "combined_score": 0.4421,
+        "Logic": "공통 스킬 ['aws s3'] (Jaccard=0.50) | 시나리오 유사도=0.11 | 난이도 junior_level → senior_level | 동일 카테고리(Storage)"
+      },
+      {
+        "Preceding_ID": 72,
+        "Target_ID": 140,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.2575,
+        "combined_score": 0.403,
+        "Logic": "공통 스킬 ['aws s3'] (Jaccard=0.33) | 시나리오 유사도=0.26 | 난이도 middle_level → senior_level | 동일 카테고리(Storage)"
+      },
+      {
+        "Preceding_ID": 15,
+        "Target_ID": 140,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.25,
+        "Logic": "공통 스킬 ['aws s3'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Storage)"
+      },
+      {
+        "Preceding_ID": 14,
+        "Target_ID": 141,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.0215,
+        "combined_score": 0.2286,
+        "Logic": "공통 스킬 ['kafka'] (Jaccard=0.20) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level | 동일 카테고리(Architecture)"
+      },
+      {
+        "Preceding_ID": 69,
+        "Target_ID": 142,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0441,
+        "combined_score": 0.2676,
+        "Logic": "공통 스킬 ['airflow'] (Jaccard=0.25) | 시나리오 유사도=0.04 | 난이도 junior_level → senior_level | 동일 카테고리(Orchestration)"
+      },
+      {
+        "Preceding_ID": 71,
+        "Target_ID": 142,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.0299,
+        "combined_score": 0.232,
+        "Logic": "공통 스킬 ['airflow'] (Jaccard=0.20) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Orchestration)"
+      },
+      {
+        "Preceding_ID": 51,
+        "Target_ID": 142,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1585,
+        "combined_score": 0.1634,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.16 | 난이도 junior_level → senior_level | 동일 카테고리(Orchestration)"
+      },
+      {
+        "Preceding_ID": 76,
+        "Target_ID": 143,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0179,
+        "combined_score": 0.3072,
+        "Logic": "공통 스킬 ['data warehouse'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 65,
+        "Target_ID": 143,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 143,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['data warehouse'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 95,
+        "Target_ID": 145,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0249,
+        "combined_score": 0.41,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level | 동일 카테고리(Distributed Processing)"
+      },
+      {
+        "Preceding_ID": 12,
+        "Target_ID": 145,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1746,
+        "combined_score": 0.3699,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.33) | 시나리오 유사도=0.17 | 난이도 middle_level → senior_level | 동일 카테고리(Distributed Processing)"
+      },
+      {
+        "Preceding_ID": 57,
+        "Target_ID": 145,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0475,
+        "combined_score": 0.319,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.50) | 시나리오 유사도=0.05 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 69,
+        "Target_ID": 146,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['airflow'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 71,
+        "Target_ID": 146,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['airflow'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 108,
+        "Target_ID": 147,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.188,
+        "combined_score": 0.6752,
+        "Logic": "공통 스킬 ['aws iam', 'security'] (Jaccard=1.00) | 시나리오 유사도=0.19 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 100,
+        "Target_ID": 147,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 102,
+        "Target_ID": 148,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['finops'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 65,
+        "Target_ID": 149,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 82,
+        "Target_ID": 149,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 69,
+        "Target_ID": 152,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['airflow'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 71,
+        "Target_ID": 152,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['airflow'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 14,
+        "Target_ID": 153,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['kafka'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 86,
+        "Target_ID": 155,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['pyspark'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 155,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['pyspark'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 65,
+        "Target_ID": 157,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0125,
+        "combined_score": 0.305,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 82,
+        "Target_ID": 157,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0238,
+        "combined_score": 0.2095,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 76,
+        "Target_ID": 158,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['data warehouse'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Data Modeling)"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 158,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['data warehouse'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level | 동일 카테고리(Data Modeling)"
+      },
+      {
+        "Preceding_ID": 59,
+        "Target_ID": 158,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['data warehouse'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(Data Modeling)"
+      },
+      {
+        "Preceding_ID": 65,
+        "Target_ID": 159,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0523,
+        "combined_score": 0.3209,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.50) | 시나리오 유사도=0.05 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 82,
+        "Target_ID": 159,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 98,
+        "Target_ID": 160,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0343,
+        "combined_score": 0.3137,
+        "Logic": "공통 스킬 ['cdc'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Data Integration)"
+      },
+      {
+        "Preceding_ID": 65,
+        "Target_ID": 162,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0129,
+        "combined_score": 0.3052,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 82,
+        "Target_ID": 162,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0994,
+        "combined_score": 0.2397,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.10 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 49,
+        "Target_ID": 163,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['data modeling'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 32,
+        "Target_ID": 163,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0134,
+        "combined_score": 0.4054,
+        "Logic": "공통 스킬 ['data modeling'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 university_level → senior_level | 동일 카테고리(Database)"
+      },
+      {
+        "Preceding_ID": 78,
+        "Target_ID": 164,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['cloud architecture'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 55,
+        "Target_ID": 165,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0087,
+        "combined_score": 0.7035,
+        "Logic": "공통 스킬 ['apache airflow'] (Jaccard=1.00) | 시나리오 유사도=0.01 | 난이도 junior_level → senior_level | 동일 카테고리(Orchestration)"
+      },
+      {
+        "Preceding_ID": 85,
+        "Target_ID": 165,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['apache airflow'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Orchestration)"
+      },
+      {
+        "Preceding_ID": 101,
+        "Target_ID": 165,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.6,
+        "Logic": "공통 스킬 ['apache airflow'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 84,
+        "Target_ID": 166,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0682,
+        "combined_score": 0.7273,
+        "Logic": "공통 스킬 ['apache kafka'] (Jaccard=1.00) | 시나리오 유사도=0.07 | 난이도 middle_level → senior_level | 동일 카테고리(Streaming)"
+      },
+      {
+        "Preceding_ID": 56,
+        "Target_ID": 166,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0644,
+        "combined_score": 0.6258,
+        "Logic": "공통 스킬 ['apache kafka'] (Jaccard=1.00) | 시나리오 유사도=0.06 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 166,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0274,
+        "combined_score": 0.611,
+        "Logic": "공통 스킬 ['apache kafka'] (Jaccard=1.00) | 시나리오 유사도=0.03 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 92,
+        "Target_ID": 167,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0918,
+        "combined_score": 0.6367,
+        "Logic": "공통 스킬 ['network + security'] (Jaccard=1.00) | 시나리오 유사도=0.09 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 97,
+        "Target_ID": 168,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0925,
+        "combined_score": 0.237,
+        "Logic": "공통 스킬 ['cloud + cost'] (Jaccard=0.33) | 시나리오 유사도=0.09 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 102,
+        "Target_ID": 168,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0778,
+        "combined_score": 0.2311,
+        "Logic": "공통 스킬 ['cloud + cost'] (Jaccard=0.33) | 시나리오 유사도=0.08 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 81,
+        "Target_ID": 168,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0666,
+        "combined_score": 0.2266,
+        "Logic": "공통 스킬 ['cloud + cost'] (Jaccard=0.33) | 시나리오 유사도=0.07 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 95,
+        "Target_ID": 169,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0414,
+        "combined_score": 0.4165,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level | 동일 카테고리(Distributed Processing)"
+      },
+      {
+        "Preceding_ID": 73,
+        "Target_ID": 169,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0345,
+        "combined_score": 0.3138,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Distributed Processing)"
+      },
+      {
+        "Preceding_ID": 12,
+        "Target_ID": 169,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0181,
+        "combined_score": 0.3072,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.33) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level | 동일 카테고리(Distributed Processing)"
+      },
+      {
+        "Preceding_ID": 86,
+        "Target_ID": 172,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['pyspark'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 172,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['pyspark'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 51,
+        "Target_ID": 173,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0404,
+        "combined_score": 0.7162,
+        "Logic": "공통 스킬 ['apache airflow', 'python'] (Jaccard=1.00) | 시나리오 유사도=0.04 | 난이도 junior_level → senior_level | 동일 카테고리(Orchestration)"
+      },
+      {
+        "Preceding_ID": 106,
+        "Target_ID": 173,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.7,
+        "Logic": "공통 스킬 ['apache airflow', 'python'] (Jaccard=1.00) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Orchestration)"
+      },
+      {
+        "Preceding_ID": 55,
+        "Target_ID": 173,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0462,
+        "combined_score": 0.4185,
+        "Logic": "공통 스킬 ['apache airflow'] (Jaccard=0.50) | 시나리오 유사도=0.05 | 난이도 junior_level → senior_level | 동일 카테고리(Orchestration)"
+      },
+      {
+        "Preceding_ID": 2,
+        "Target_ID": 174,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0359,
+        "combined_score": 0.7144,
+        "Logic": "공통 스킬 ['data architecture'] (Jaccard=1.00) | 시나리오 유사도=0.04 | 난이도 university_level → senior_level | 동일 카테고리(Data Processing)"
+      },
+      {
+        "Preceding_ID": 39,
+        "Target_ID": 174,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0385,
+        "combined_score": 0.6154,
+        "Logic": "공통 스킬 ['data architecture'] (Jaccard=1.00) | 시나리오 유사도=0.04 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 66,
+        "Target_ID": 174,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0209,
+        "combined_score": 0.6084,
+        "Logic": "공통 스킬 ['data architecture'] (Jaccard=1.00) | 시나리오 유사도=0.02 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 47,
+        "Target_ID": 175,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0377,
+        "combined_score": 0.3151,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 45,
+        "Target_ID": 175,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0123,
+        "combined_score": 0.3049,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 53,
+        "Target_ID": 175,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(Data Processing)"
+      },
+      {
+        "Preceding_ID": 65,
+        "Target_ID": 177,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0084,
+        "combined_score": 0.3034,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.50) | 시나리오 유사도=0.01 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 82,
+        "Target_ID": 177,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 76,
+        "Target_ID": 178,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['data warehouse'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Data Modeling)"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 178,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0843,
+        "combined_score": 0.3337,
+        "Logic": "공통 스킬 ['data warehouse'] (Jaccard=0.33) | 시나리오 유사도=0.08 | 난이도 university_level → senior_level | 동일 카테고리(Data Modeling)"
+      },
+      {
+        "Preceding_ID": 59,
+        "Target_ID": 178,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['data warehouse'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level | 동일 카테고리(Data Modeling)"
+      },
+      {
+        "Preceding_ID": 65,
+        "Target_ID": 179,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0105,
+        "combined_score": 0.6042,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=1.00) | 시나리오 유사도=0.01 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 82,
+        "Target_ID": 179,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 38,
+        "Target_ID": 181,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0318,
+        "combined_score": 0.3127,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 95,
+        "Target_ID": 181,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0255,
+        "combined_score": 0.3102,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 57,
+        "Target_ID": 181,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0248,
+        "combined_score": 0.3099,
+        "Logic": "공통 스킬 ['apache spark'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 15,
+        "Target_ID": 182,
+        "skill_overlap": 0.2,
+        "scenario_similarity": 0.0247,
+        "combined_score": 0.2299,
+        "Logic": "공통 스킬 ['parquet'] (Jaccard=0.20) | 시나리오 유사도=0.02 | 난이도 middle_level → senior_level | 동일 카테고리(Storage)"
+      },
+      {
+        "Preceding_ID": 31,
+        "Target_ID": 182,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0151,
+        "combined_score": 0.156,
+        "Logic": "공통 스킬 ['parquet'] (Jaccard=0.25) | 시나리오 유사도=0.02 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 105,
+        "Target_ID": 183,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.0096,
+        "combined_score": 0.6038,
+        "Logic": "공통 스킬 ['data pipeline'] (Jaccard=1.00) | 시나리오 유사도=0.01 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 65,
+        "Target_ID": 185,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 82,
+        "Target_ID": 185,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['architecture'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 49,
+        "Target_ID": 186,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['data modeling'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 32,
+        "Target_ID": 186,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['data modeling'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 69,
+        "Target_ID": 186,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['airflow'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 92,
+        "Target_ID": 187,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.1909,
+        "combined_score": 0.4764,
+        "Logic": "공통 스킬 ['network + security'] (Jaccard=0.50) | 시나리오 유사도=0.19 | 난이도 middle_level → senior_level | 동일 카테고리(Network)"
+      },
+      {
+        "Preceding_ID": 60,
+        "Target_ID": 187,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0565,
+        "combined_score": 0.3226,
+        "Logic": "공통 스킬 ['aws s3'] (Jaccard=0.50) | 시나리오 유사도=0.06 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 72,
+        "Target_ID": 187,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['aws s3'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 102,
+        "Target_ID": 188,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0801,
+        "combined_score": 0.332,
+        "Logic": "공통 스킬 ['cloud + cost'] (Jaccard=0.33) | 시나리오 유사도=0.08 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud Computing)"
+      },
+      {
+        "Preceding_ID": 97,
+        "Target_ID": 188,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0653,
+        "combined_score": 0.3261,
+        "Logic": "공통 스킬 ['cloud + cost'] (Jaccard=0.33) | 시나리오 유사도=0.07 | 난이도 middle_level → senior_level | 동일 카테고리(Cloud Computing)"
+      },
+      {
+        "Preceding_ID": 81,
+        "Target_ID": 188,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0516,
+        "combined_score": 0.2207,
+        "Logic": "공통 스킬 ['cloud + cost'] (Jaccard=0.33) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 110,
+        "Target_ID": 189,
+        "skill_overlap": 1.0,
+        "scenario_similarity": 0.1044,
+        "combined_score": 0.6418,
+        "Logic": "공통 스킬 ['api interaction', 'python'] (Jaccard=1.00) | 시나리오 유사도=0.10 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 47,
+        "Target_ID": 189,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.022,
+        "combined_score": 0.3088,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 45,
+        "Target_ID": 189,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.3,
+        "Logic": "공통 스킬 ['python'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 university_level → senior_level"
+      },
+      {
+        "Preceding_ID": 56,
+        "Target_ID": 190,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0536,
+        "combined_score": 0.3215,
+        "Logic": "공통 스킬 ['apache kafka'] (Jaccard=0.50) | 시나리오 유사도=0.05 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 10,
+        "Target_ID": 190,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0442,
+        "combined_score": 0.3177,
+        "Logic": "공통 스킬 ['apache kafka'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 84,
+        "Target_ID": 190,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0389,
+        "combined_score": 0.3156,
+        "Logic": "공통 스킬 ['apache kafka'] (Jaccard=0.50) | 시나리오 유사도=0.04 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 86,
+        "Target_ID": 191,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['pyspark'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 6,
+        "Target_ID": 191,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.15,
+        "Logic": "공통 스킬 ['pyspark'] (Jaccard=0.25) | 시나리오 유사도=0.00 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 100,
+        "Target_ID": 192,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.4,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.50) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level | 동일 카테고리(Security)"
+      },
+      {
+        "Preceding_ID": 69,
+        "Target_ID": 192,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0311,
+        "combined_score": 0.2125,
+        "Logic": "공통 스킬 ['airflow'] (Jaccard=0.33) | 시나리오 유사도=0.03 | 난이도 junior_level → senior_level"
+      },
+      {
+        "Preceding_ID": 108,
+        "Target_ID": 192,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0,
+        "combined_score": 0.2,
+        "Logic": "공통 스킬 ['security'] (Jaccard=0.33) | 시나리오 유사도=0.00 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 85,
+        "Target_ID": 193,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0261,
+        "combined_score": 0.4104,
+        "Logic": "공통 스킬 ['apache airflow'] (Jaccard=0.50) | 시나리오 유사도=0.03 | 난이도 middle_level → senior_level | 동일 카테고리(Orchestration)"
+      },
+      {
+        "Preceding_ID": 55,
+        "Target_ID": 193,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0221,
+        "combined_score": 0.4088,
+        "Logic": "공통 스킬 ['apache airflow'] (Jaccard=0.50) | 시나리오 유사도=0.02 | 난이도 junior_level → senior_level | 동일 카테고리(Orchestration)"
+      },
+      {
+        "Preceding_ID": 106,
+        "Target_ID": 193,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.0648,
+        "combined_score": 0.3259,
+        "Logic": "공통 스킬 ['apache airflow'] (Jaccard=0.33) | 시나리오 유사도=0.06 | 난이도 middle_level → senior_level | 동일 카테고리(Orchestration)"
+      },
+      {
+        "Preceding_ID": 4,
+        "Target_ID": 194,
+        "skill_overlap": 0.0,
+        "scenario_similarity": 0.1505,
+        "combined_score": 0.1602,
+        "Logic": "스킬 Jaccard=0.00 | 시나리오 유사도=0.15 | 난이도 university_level → senior_level | 동일 카테고리(Data Modeling)"
+      },
+      {
+        "Preceding_ID": 68,
+        "Target_ID": 195,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.06,
+        "combined_score": 0.424,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.06 | 난이도 junior_level → senior_level | 동일 카테고리(SQL)"
+      },
+      {
+        "Preceding_ID": 46,
+        "Target_ID": 195,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0597,
+        "combined_score": 0.4239,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.06 | 난이도 university_level → senior_level | 동일 카테고리(SQL)"
+      },
+      {
+        "Preceding_ID": 43,
+        "Target_ID": 195,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0486,
+        "combined_score": 0.4194,
+        "Logic": "공통 스킬 ['sql'] (Jaccard=0.50) | 시나리오 유사도=0.05 | 난이도 university_level → senior_level | 동일 카테고리(SQL)"
+      },
+      {
+        "Preceding_ID": 109,
+        "Target_ID": 197,
+        "skill_overlap": 0.5,
+        "scenario_similarity": 0.0884,
+        "combined_score": 0.3354,
+        "Logic": "공통 스킬 ['database + api'] (Jaccard=0.50) | 시나리오 유사도=0.09 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 87,
+        "Target_ID": 197,
+        "skill_overlap": 0.3333,
+        "scenario_similarity": 0.1118,
+        "combined_score": 0.2447,
+        "Logic": "공통 스킬 ['database + api'] (Jaccard=0.33) | 시나리오 유사도=0.11 | 난이도 middle_level → senior_level"
+      },
+      {
+        "Preceding_ID": 14,
+        "Target_ID": 198,
+        "skill_overlap": 0.25,
+        "scenario_similarity": 0.052,
+        "combined_score": 0.1708,
+        "Logic": "공통 스킬 ['postgresql'] (Jaccard=0.25) | 시나리오 유사도=0.05 | 난이도 middle_level → senior_level"
+      }
+    ]
+  },
+  "ordered_path": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    7,
+    10,
+    55,
+    56,
+    60,
+    64,
+    65,
+    67,
+    57,
+    59,
+    63,
+    70,
+    54,
+    66,
+    6,
+    8,
+    9,
+    51,
+    52,
+    53,
+    58,
+    61,
+    62,
+    68,
+    69,
+    14,
+    19,
+    78,
+    83,
+    89,
+    92,
+    93,
+    97,
+    98,
+    100,
+    102,
+    105,
+    108,
+    109,
+    71,
+    72,
+    79,
+    81,
+    82,
+    88,
+    99,
+    15,
+    18,
+    74,
+    76,
+    84,
+    86,
+    96,
+    104,
+    11,
+    12,
+    13,
+    16,
+    17,
+    20,
+    73,
+    75,
+    77,
+    80,
+    85,
+    87,
+    90,
+    91,
+    94,
+    95,
+    101,
+    103,
+    106,
+    107,
+    110,
+    22,
+    23,
+    25,
+    29,
+    113,
+    121,
+    122,
+    124,
+    125,
+    127,
+    130,
+    133,
+    137,
+    144,
+    150,
+    151,
+    154,
+    156,
+    161,
+    170,
+    171,
+    176,
+    180,
+    184,
+    196,
+    199,
+    200,
+    24,
+    27,
+    28,
+    111,
+    117,
+    135,
+    139,
+    141,
+    148,
+    153,
+    160,
+    164,
+    167,
+    183,
+    194,
+    198,
+    21,
+    26,
+    30,
+    112,
+    114,
+    115,
+    116,
+    118,
+    128,
+    129,
+    131,
+    146,
+    147,
+    149,
+    152,
+    155,
+    157,
+    159,
+    162,
+    163,
+    172,
+    177,
+    179,
+    182,
+    185,
+    191,
+    197,
+    119,
+    120,
+    123,
+    126,
+    132,
+    134,
+    136,
+    138,
+    140,
+    142,
+    143,
+    145,
+    158,
+    165,
+    166,
+    168,
+    169,
+    173,
+    174,
+    175,
+    178,
+    181,
+    186,
+    187,
+    188,
+    189,
+    190,
+    192,
+    193,
+    195
+  ],
+  "isolated_problems": [
+    5,
+    22,
+    23,
+    25,
+    29,
+    36,
+    37,
+    48,
+    50,
+    89,
+    93,
+    113,
+    121,
+    122,
+    124,
+    125,
+    127,
+    130,
+    133,
+    137,
+    144,
+    150,
+    151,
+    154,
+    156,
+    161,
+    170,
+    171,
+    176,
+    180,
+    184,
+    196,
+    199,
+    200
+  ]
+}
